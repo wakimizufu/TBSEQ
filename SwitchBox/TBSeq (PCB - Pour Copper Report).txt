@@ -1,0 +1,14 @@
+Pour Copper Report
+------------------
+
+Report Written:     Monday, April 26, 2021
+Project Path:       C:\workspace\DesignSpark PCB 9.0\work\TBSeq\TBSeq.prj
+Design Path:        C:\workspace\DesignSpark PCB 9.0\work\TBSeq\TBSeq.pcb
+Design Title:       
+Created:            2021/04/19 20:51:52
+Last Saved:         2021/04/26 20:28:29
+Editing Time:       1128 min
+Units:              mm (precision 4)
+
+
+End Of Report.

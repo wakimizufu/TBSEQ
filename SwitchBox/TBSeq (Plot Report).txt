@@ -1,0 +1,255 @@
+Plot Report
+-----------
+
+Report Written:     Tuesday, April 27, 2021
+Project Path:       C:\workspace\DesignSpark PCB 9.0\work\TBSeq\TBSeq.prj
+Design Path:        C:\workspace\DesignSpark PCB 9.0\work\TBSeq\TBSeq.pcb
+Design Title:       
+Created:            2021/04/19 20:51:52
+Last Saved:         2021/04/27 0:14:43
+Editing Time:       1379 min
+Units:              mm (precision 4)
+
+
+Device Settings
+===============
+
+
+Gerber Settings
+===============
+
+    Leading zero suppression.
+    G01 assumed throughout.
+    Line termination <*> <CR> <LF>.
+    3.5 format absolute inches.
+    Format commands defined in Gerber file.
+    Aperture table defined in Gerber file.
+    Hardware arcs allowed.
+
+
+Drill Settings
+==============
+
+    Excellon Format 2
+    Format 3.5 absolute in inches.
+    Zero suppression Leading
+
+
+
+Plots Output
+============
+
+    Plot Job: "C:\workspace\DesignSpark PCB 9.0\work\TBSeq\TBSeq.mop"
+
+
+Gerber Output
+=============
+
+C:\workspace\DesignSpark PCB 9.0\work\TBSeq\TBSeq - Top Copper.gbr
+
+    Layers:
+    --------------
+    Top Copper
+
+    D-Code Shape  (thou)
+    ----------------------------------------------
+    D10    Round 12.00
+    D11    Round 10.00
+    D12    Round 40.00
+    D13    Square 45.63
+    D14    Round 45.63
+    D15    Round 59.06
+    D16    Round 64.96
+    D17    Round 56.34
+    D18    Rectangle 29.53 X 55.12  Rotation 90
+    D19    Rectangle 41.34 X 70.87  Rotation 90
+    D70    Round 124.57
+    D71    Rectangle 41.34 X 70.87
+    D20    Rectangle 42.13 X 71.65
+    D21    Square 60.00
+    D23    Square 67.91
+    D24    Round 67.91
+
+Gerber Output
+=============
+
+C:\workspace\DesignSpark PCB 9.0\work\TBSeq\TBSeq - Top Copper (Resist).gbr
+
+    Layers:
+    --------------
+    Top Copper
+
+    D-Code Shape  (thou)
+    ----------------------------------------------
+    D25    Square 55.63
+    D26    Round 55.63
+    D27    Round 69.06
+    D28    Round 74.96
+    D29    Round 66.34
+    D72    Rectangle 39.53 X 65.12  Rotation 90
+    D73    Rectangle 51.34 X 80.87  Rotation 90
+    D74    Round 134.57
+    D75    Rectangle 51.34 X 80.87
+    D76    Rectangle 52.13 X 81.65
+    D77    Square 70.00
+    D78    Square 77.91
+    D79    Round 77.91
+
+Gerber Output
+=============
+
+C:\workspace\DesignSpark PCB 9.0\work\TBSeq\TBSeq - Top Copper (Paste).gbr
+
+    Layers:
+    --------------
+    Top Copper
+
+    D-Code Shape  (thou)
+    ----------------------------------------------
+    D80    Rectangle 25.53 X 51.12  Rotation 90
+    D81    Rectangle 37.34 X 66.87  Rotation 90
+    D82    Rectangle 37.34 X 66.87
+    D83    Rectangle 38.13 X 67.65
+
+Gerber Output
+=============
+
+C:\workspace\DesignSpark PCB 9.0\work\TBSeq\TBSeq - Top Silkscreen.gbr
+
+    Layers:
+    ------------------
+    Top Silkscreen
+
+    D-Code Shape  (thou)
+    -----------------------
+    D11    Round 10.00
+    D22    Round 5.00
+    D84    Round 7.87
+    D85    Round 3.94
+
+Gerber Output
+=============
+
+C:\workspace\DesignSpark PCB 9.0\work\TBSeq\TBSeq - Documentation.gbr
+
+    Layers:
+    -----------------
+    Documentation
+
+    D-Code Shape  (thou)
+    -----------------------
+    D85    Round 3.94
+    D86    Round 1.97
+
+Gerber Output
+=============
+
+C:\workspace\DesignSpark PCB 9.0\work\TBSeq\TBSeq - Bottom Copper.gbr
+
+    Layers:
+    -----------------
+    Bottom Copper
+
+    D-Code Shape  (thou)
+    -----------------------
+    D10    Round 12.00
+    D11    Round 10.00
+    D12    Round 40.00
+    D13    Square 45.63
+    D14    Round 45.63
+    D15    Round 59.06
+    D16    Round 64.96
+    D17    Round 56.34
+    D70    Round 124.57
+    D21    Square 60.00
+    D23    Square 67.91
+    D24    Round 67.91
+
+Gerber Output
+=============
+
+C:\workspace\DesignSpark PCB 9.0\work\TBSeq\TBSeq - Bottom Copper (Resist).gbr
+
+    Layers:
+    -----------------
+    Bottom Copper
+
+    D-Code Shape  (thou)
+    -----------------------
+    D25    Square 55.63
+    D26    Round 55.63
+    D27    Round 69.06
+    D28    Round 74.96
+    D29    Round 66.34
+    D74    Round 134.57
+    D77    Square 70.00
+    D78    Square 77.91
+    D79    Round 77.91
+
+Gerber Output
+=============
+
+C:\workspace\DesignSpark PCB 9.0\work\TBSeq\TBSeq - Bottom Copper (Paste).gbr
+
+    Layers:
+    -----------------
+    Bottom Copper
+
+    D-Code Shape  (thou)
+    -----------------------
+
+Gerber Output
+=============
+
+C:\workspace\DesignSpark PCB 9.0\work\TBSeq\TBSeq - Bottom Silkscreen.gbr
+
+    Layers:
+    ---------------------
+    Bottom Silkscreen
+
+    D-Code Shape  (thou)
+    -----------------------
+    D84    Round 7.87
+    D85    Round 3.94
+
+NC Drill Output
+===============
+
+C:\workspace\DesignSpark PCB 9.0\work\TBSeq\TBSeq - Drill Data - [Through Hole].drl
+
+    Output:
+    -----------------------------
+    Plated Round Drill Holes
+    Unplated Round Drill Holes
+    Plated Slots
+    Unplated Slots
+
+    Tool  Size           Count   ID
+    --------------------------------------
+    T001  0.02400 inches 222   A
+    T002  0.02988 inches 56    B
+    T003  0.03500 inches 9     G
+    T004  0.03622 inches 9     E
+    T005  0.03937 inches 131   C
+    T006  0.04331 inches 64    D
+    T007  0.04528 inches 80    H
+    T008  0.08305 inches 2     F
+    --------------------------------------
+    Total                573
+    --------------------------------------
+
+
+Gerber Output
+=============
+
+C:\workspace\DesignSpark PCB 9.0\work\TBSeq\TBSeq - OutLine.gbr
+
+    Layers:
+    ------------------
+    Board Outlines
+
+    D-Code Shape  (thou)
+    -----------------------
+    D10    Round 12.00
+
+End Of Report.

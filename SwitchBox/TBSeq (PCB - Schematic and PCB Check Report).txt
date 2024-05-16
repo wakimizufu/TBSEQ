@@ -1,0 +1,20 @@
+Schematic and PCB Check Report
+------------------------------
+
+Report Written:     Tuesday, April 27, 2021
+Project Path:       C:\workspace\DesignSpark PCB 9.0\work\TBSeq\TBSeq.prj
+Design Path:        C:\workspace\DesignSpark PCB 9.0\work\TBSeq\TBSeq.pcb
+Design Title:       
+Created:            2021/04/19 20:51:52
+Last Saved:         2021/04/27 0:14:43
+Editing Time:       1371 min
+Units:              mm (precision 4)
+
+
+Checking integrity of Schematic "C:\workspace\DesignSpark PCB 9.0\work\TBSeq\TBSeq.sch" with PCB "C:\workspace\DesignSpark PCB 9.0\work\TBSeq\TBSeq.pcb"
+========================================================================================================================================================
+
+The designs are the same.
+
+
+End Of Report.

@@ -1,0 +1,16 @@
+Transfer from Schematic to PCB.
+-------------------------------
+
+Report Written:     Monday, April 19, 2021
+Design Path:        C:\workspace\DesignSpark PCB 9.0\work\TBSeq\TBSeq.pcb
+Design Title:       
+Created:            2021/04/19 20:51:52
+Last Saved:         2021/04/19 20:52:52
+Editing Time:       1 min
+Units:              mm (precision 3)
+
+Net class "Signal" was not defined, but has been created. Please check the values in the PCB design.
+Net class "Ground" was not defined, but has been created. Please check the values in the PCB design.
+Net class "Power" was not defined, but has been created. Please check the values in the PCB design.
+
+End Of Report.

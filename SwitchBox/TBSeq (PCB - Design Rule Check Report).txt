@@ -1,0 +1,66 @@
+Design Rule Check Report
+------------------------
+
+Report Written:     Monday, April 26, 2021
+Project Path:       C:\workspace\DesignSpark PCB 9.0\work\TBSeq\TBSeq.prj
+Design Path:        C:\workspace\DesignSpark PCB 9.0\work\TBSeq\TBSeq.pcb
+Design Title:       
+Created:            2021/04/19 20:51:52
+Last Saved:         2021/04/26 20:46:00
+Editing Time:       1144 min
+Units:              mm (precision 4)
+
+
+Results
+=======
+
+
+No errors found
+
+
+Settings
+========
+
+
+Spacings
+
+=========
+
+Tracks        Yes
+Pads and Vias Yes
+Shapes        Yes
+Text          Yes
+Board         Yes
+Drills        Yes
+Components    Yes
+
+
+Manufacturing
+
+==============
+
+Drill Breakout                  Yes
+Drill Backoff                   Yes
+Silkscreen Overlap              Yes
+Copper Text In Board            Yes
+Min Track Width                 Yes
+Min Annular Ring                Yes
+Min Paste Size                  Yes
+Vias In Pads                    Yes
+Unplated Vias                   Yes
+Unplated Pads With Inner Tracks Yes
+
+
+Nets
+
+=====
+
+Net Completion               Yes
+Dangling Tracks              Yes
+Net Track Length Differences No
+Nets without Components      No
+Nets on No Connect pins      No
+
+
+
+End Of Report.

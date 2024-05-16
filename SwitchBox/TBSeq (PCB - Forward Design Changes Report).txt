@@ -1,0 +1,58 @@
+Forward Design Changes Report
+-----------------------------
+
+Report Written:     Sunday, April 25, 2021
+Project Path:       C:\workspace\DesignSpark PCB 9.0\work\TBSeq\TBSeq.prj
+Design Path:        C:\workspace\DesignSpark PCB 9.0\work\TBSeq\TBSeq.pcb
+Design Title:       
+Created:            2021/04/19 20:51:52
+Last Saved:         2021/04/25 16:55:33
+Editing Time:       1042 min
+Units:              mm (precision 3)
+
+Connected pin "J1.1" to net "VDD".
+Connected pin "J1.3" to net "SCL".
+Connected pin "J1.5" to net "SDA".
+Connected pin "J1.2" to net "VSS".
+Connected pin "J1.4" to net "VSS".
+Connected pin "J1.6" to net "VSS".
+Connected pin "J1.8" to net "VSS".
+Connected pin "J1.10" to net "VSS".
+Connected pin "J1.12" to net "VSS".
+Connected pin "J1.14" to net "VSS".
+Connected pin "J1.16" to net "VSS".
+Connected pin "J1.18" to net "VSS".
+Connected pin "J1.20" to net "VSS".
+Connected pin "J1.22" to net "VSS".
+Connected pin "J1.24" to net "VSS".
+Connected pin "J1.26" to net "VSS".
+Connected pin "J1.28" to net "VSS".
+Connected pin "J1.30" to net "VSS".
+Connected pin "J1.32" to net "VSS".
+Connected pin "J1.34" to net "VSS".
+Connected pin "J1.36" to net "VSS".
+Connected pin "J1.38" to net "VSS".
+Connected pin "J1.40" to net "VSS".
+Connected pin "J2.1" to net "VSS".
+Connected pin "J2.3" to net "VSS".
+Connected pin "J2.5" to net "VSS".
+Connected pin "J2.7" to net "VSS".
+Connected pin "J2.9" to net "VSS".
+Connected pin "J2.11" to net "VSS".
+Connected pin "J2.13" to net "VSS".
+Connected pin "J2.15" to net "VSS".
+Connected pin "J2.17" to net "VSS".
+Connected pin "J2.19" to net "VSS".
+Connected pin "J2.21" to net "VSS".
+Connected pin "J2.23" to net "VSS".
+Connected pin "J2.25" to net "VSS".
+Connected pin "J2.27" to net "VSS".
+Connected pin "J2.29" to net "VSS".
+Connected pin "J2.31" to net "VSS".
+Connected pin "J2.33" to net "VSS".
+Connected pin "J2.35" to net "VSS".
+Connected pin "J2.37" to net "VSS".
+Connected pin "J2.39" to net "VSS".
+
+
+End Of Report.

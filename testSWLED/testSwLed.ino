@@ -30,6 +30,7 @@ char valueSwitch[SW_MAX_ROW]; //最新の値
 //#define LED_MAX_ROW 4
 //char valueLED[LED_MAX_ROW]; //最新の値
 
+//マトリクスLED
 matrixLED cMatrixLed;
 
 bool toggle_panelWR(void *) {

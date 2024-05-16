@@ -7,6 +7,8 @@
 
 #include <Wire.h>
 
+#include "matrixLED.h"
+
 
 //I2Cアドレス
 const char I2C_ADDR_SW  = 0x20; //MCP27017:マトリクススイッチ
@@ -25,9 +27,10 @@ char valueSwitch[SW_MAX_ROW]; //最新の値
 
 //マトリクスLED
 //LED行数 (0~設定値-1)
-#define LED_MAX_ROW 4
-char valueLED[LED_MAX_ROW]; //最新の値
+//#define LED_MAX_ROW 4
+//char valueLED[LED_MAX_ROW]; //最新の値
 
+matrixLED cMatrixLed;
 
 bool toggle_panelWR(void *) {
   digitalWrite(LED_BUILTIN, !digitalRead(LED_BUILTIN)); // toggle the LED
@@ -38,6 +41,7 @@ bool toggle_panelWR(void *) {
 /*
 マトリクススイッチ,マトリクスLED関連配列を初期化
 */
+/*
 void init_PanelArray(){
 
   char sampleSwitch = 0;
@@ -56,15 +60,14 @@ void init_PanelArray(){
     valueLED[l]  = 0xFF;
   }
 }
+*/
 
 
 
 void setup() {
-  init_PanelArray();  //マトリクススイッチ,マトリクスLED関連配列を初期化
 
   pinMode(LED_BUILTIN, OUTPUT); // set LED pin to OUTPUT
   Wire.begin(); //I2C使用開始
-
 
 }
 

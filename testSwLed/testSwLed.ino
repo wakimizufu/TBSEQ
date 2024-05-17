@@ -7,19 +7,20 @@
 
 #include <Wire.h>
 
-#include "matrixLED.h"
-#include "matrixSW.h"
+#include "panelManager.h"
+#include "voltage.h"
+#include "sequenceMap.h"
 
 //I2Cアドレス
 const char I2C_ADDR_SW  = 0x20; //MCP27017:マトリクススイッチ
 const char I2C_ADDR_LED = 0x21; //MCP27017:LEDスイッチ
 const char I2C_ADDR_EEPROM = 0x50; //24LC256
 
-//マトリクスLED
-matrixLED cMatrixLed;
+//グローバル変数定義
+panelManager _panelManager;
+sequenceMap _sequenceMap;
+voltage _voltage;
 
-//マトリクススイッチ
-Switch cSwitch;
 
 bool toggle_panelWR(void *) {
   digitalWrite(LED_BUILTIN, !digitalRead(LED_BUILTIN)); // toggle the LED

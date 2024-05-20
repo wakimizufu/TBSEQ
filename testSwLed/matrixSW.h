@@ -5,9 +5,6 @@
 #ifndef matrixSwitch_h
 #define matrixSwitch_h
 
-
-//#include <Arduino.h>
-
 //マトリクススイッチ要素数
 #define SW_INDEX_MAX 32
 

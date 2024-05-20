@@ -5,10 +5,13 @@
 #ifndef panelManager_h
 #define panelManager_h
 
-/*#include <iostream>*/
 
-/* #include "Arduino.h" */
-#include <Wire.h>
+#if defined(DEBUG_ARDUINO)
+    #include <Wire.h>
+#else
+    #include <iostream>
+#endif
+
 #include "countTriger.h"
 #include "matrixLED.h"
 #include "matrixSW.h"
@@ -66,16 +69,21 @@ class panelManager: public countTriger
 
                     //I2C::スイッチ入力
                     char _SW_Value;
-                    /*
-                    Wire.requestFrom(2, 6);    // Request 6 bytes from slave device number two
-                    while(Wire.available()) {
-                        _SW_Value = Wire.read();    // Receive a byte as character
-                    }
-                    */
-
                     int _SW_Row = ((_seq_value * 2) + _seq_mod) % 4;
 
-                    //std::cout << "panelManager::_matrixSwitch.setRow() scan:" << _matrixSwitch.getScan() << " _SW_Row:" << _SW_Row << " _SW_Value:" << _SW_Value << std::endl;
+                    #if defined(DEBUG_ARDUINO)
+                        Wire.requestFrom(2, 6);    // Request 6 bytes from slave device number two
+                        while(Wire.available()) {
+                            _SW_Value = Wire.read();    // Receive a byte as character
+                        }
+                    #else
+                    #endif
+
+                    #if defined(DEBUG_ARDUINO)
+                    #else
+                        std::cout << "panelManager::_matrixSwitch.setRow() scan:" << _matrixSwitch.getScan() << " _SW_Row:" << _SW_Row << " _SW_Value:" << _SW_Value << std::endl;
+                    #endif
+
                     _matrixSwitch.setRow ( _matrixSwitch.getScan() , _SW_Row , _SW_Value );
                  }
 
@@ -88,11 +96,21 @@ class panelManager: public countTriger
 
                     //I2C::LED出力 
                     char _LED_Row_value;
-                    //std::cout << "panelManager::_matrixLED.setRow row:" << _seq_value << " _LED_Row_value:" << _LED_Row_value << std::endl;
+
+                    #if defined(DEBUG_ARDUINO)
+                    #else
+                        std::cout << "panelManager::_matrixLED.setRow row:" << _seq_value << " _LED_Row_value:" << _LED_Row_value << std::endl;
+                    #endif
+
                     _matrixLED.setRow(_seq_value , _LED_Row_value );
-                    //Wire.beginTransmission(44);  // Transmit to device number 44 (0x2C)
-                    //Wire.write(_LED_Row_value);  // Sends value byte
-                    //Wire.endTransmission();      // Stop transmitting
+
+                    #if defined(DEBUG_ARDUINO)
+                        Wire.beginTransmission(44);  // Transmit to device number 44 (0x2C)
+                        Wire.write(_LED_Row_value);  // Sends value byte
+                        Wire.endTransmission();      // Stop transmitting
+                    #else
+                    #endif
+
                  }
 
             //次回スイッチスキャン回数を更新

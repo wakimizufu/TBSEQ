@@ -5,8 +5,6 @@
 #ifndef matrixLED_h
 #define matrixLED_h
 
-//#include <Arduino.h>
-
 //マトリクスLED要素数
 #define LED_INDEX_MAX 32
 

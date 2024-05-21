@@ -15,7 +15,7 @@ class paternPlay: public mode{
 		ptPanelManager:panelManagerクラスポインタ
 		ptVoltage     :voltageクラスポインタ
     */
-    explicit paternPlay(	panelManager * ptPanelManager , voltage * ptVoltage	):mode(MODE_NAME::PATERN_PLAY	,	ptPanelManager	,	ptVoltage	){
+    explicit paternPlay(	panelManager * ptPanelManager , voltage * ptVoltage	,sequenceMap * ptSequenceMap ):mode(MODE_NAME::PATERN_PLAY	,	ptPanelManager	,	ptVoltage , ptSequenceMap	){
 
 			//各状態を初期値に変更する
     	_pattern	=	PATTERN_START_IDX;						//指定パターン
@@ -32,10 +32,10 @@ class paternPlay: public mode{
 			_voltage->reset();
 
 			//LED出力をクリア
-			_panelManager->setRow(LED_ROW_0,0x00);
-			_panelManager->setRow(LED_ROW_1,0x00);
-			_panelManager->setRow(LED_ROW_2,0x60);
-			_panelManager->setRow(LED_ROW_3,0x00);
+			_panelManager->setLEDRow(LED_ROW_0,0x00);
+			_panelManager->setLEDRow(LED_ROW_1,0x00);
+			_panelManager->setLEDRow(LED_ROW_2,0x60);
+			_panelManager->setLEDRow(LED_ROW_3,0x00);
     }
 
 		/*
@@ -86,7 +86,7 @@ class paternPlay: public mode{
 
 				//現在ステップが最終カウントを超えたら開始ステップに戻す
 				if	(	_step	>=	PATERN_STEP_LENGTH	)	{
-					_step	=	PATERN_START_IDX;
+					_step	=	PATTERN_START_IDX;
 				}
 				
 			}
@@ -162,13 +162,13 @@ class paternPlay: public mode{
 				
 				//ラン/ストップフラグ:ラン
 				if	(	_run_stop	==	RUN_STOP::STOP	)	{
-					_run_stop	=	RUN_STOP::RUN
+					_run_stop	=	RUN_STOP::RUN;
 					_panelManager->setLED(static_cast<int>(LED::RUN),true);
 					_midiclock_16note=MIDICLOCK_START_16NOTE;	
 
 				//ラン/ストップフラグ:ストップ
 				}	else	if	(	_run_stop	==	RUN_STOP::RUN	)	{
-					_run_stop	=	RUN_STOP::STOP
+					_run_stop	=	RUN_STOP::STOP;
 					_panelManager->setLED(static_cast<int>(LED::RUN),false);
 					_midiclock_16note=MIDICLOCK_START_16NOTE;	
 				}
@@ -192,10 +192,10 @@ class paternPlay: public mode{
 		*/
 		void _gate_off_16note()	{
 			
-			bool	_sSlide	=	_sequenceMap->paterns[_pattern]->steps[_step].slide;
+			bool	_sSlide	=	_sequenceMap->paterns[_pattern].steps[_step].slide;
 
 			if	(	(	_midiclock_16note	==	MIDICLOCK_GATEOFF_16NOTE	)	&&	(	!_sSlide	)	)	{
-				_voltage.gate(false);
+				_voltage->gate(false);
 			}
 		}
 
@@ -203,34 +203,35 @@ class paternPlay: public mode{
 		指定パターンに応じたclass:LED値を取得
 		*/
 		int	_get_pattrn_LED(int pattern)	{
-			int	result	=	static_cast<int>LED::C;
+			int	result	=	static_cast<int>(LED::C);
 			
 			switch	(	pattern	)	{
 				case 0:
-				  result	=	static_cast<int>LED::C;
+				  result	=	static_cast<int>(LED::C);
 				  break;
 				case 1:
-				  result	=	static_cast<int>LED::D;
+				  result	=	static_cast<int>(LED::D);
 				  break;
 				case 2:
-				  result	=	static_cast<int>LED::E;
+				  result	=	static_cast<int>(LED::E);
 				  break;
 				case 3:
-				  result	=	static_cast<int>LED::F;
+				  result	=	static_cast<int>(LED::F);
 				  break;
 				case 4:
-				  result	=	static_cast<int>LED::G;
+				  result	=	static_cast<int>(LED::G);
 				  break;
 				case 5:
-				  result	=	static_cast<int>LED::A;
+				  result	=	static_cast<int>(LED::A);
 				  break;
 				case 6:
-				  result	=	static_cast<int>LED::B;
+				  result	=	static_cast<int>(LED::B);
 				  break;
 				case 7:
-				  result	=	static_cast<int>LED::C2;
+				  result	=	static_cast<int>(LED::C2);
 				  break;
 				default:
+				  break;
 			}
 
 			return	result;

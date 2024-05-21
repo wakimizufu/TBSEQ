@@ -6,7 +6,7 @@
 
 
 //arduino ideでコンパイルする際は以下をコメント解除する
-#define DEBUG_ARDUINO 0
+//#define DEBUG_ARDUINO 0
 
 #if defined(DEBUG_ARDUINO)
   #include <Wire.h>

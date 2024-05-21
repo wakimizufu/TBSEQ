@@ -17,12 +17,13 @@
 int main(int argc, char const *argv[])
 {
   std::cout << "Hello World!" << std::endl;
-  midiClock _midiClock;
+  midiClock _midiClock(1000);
   tempo _tempo;
   panelManager _panelManager;
+  voltage _voltage;
   sequenceMap _sequenceMap;
 
-  mode * _currentMode = new paternPlay();
+  mode * _currentMode = new paternPlay( &_panelManager, &_voltage,  &_sequenceMap);
   delete _currentMode;
 
   patern tempPatern =_sequenceMap.paterns[0];

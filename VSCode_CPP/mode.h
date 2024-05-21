@@ -5,6 +5,10 @@
 #ifndef mode_h
 #define mode_h
 
+#include "voltage.h"
+#include "panelManager.h"
+#include "sequenceMap.h"
+
 
 //16音符毎MIDIクロックカウント 16分音符:6クロック 開始クロック
 #define MIDICLOCK_START_16NOTE	1

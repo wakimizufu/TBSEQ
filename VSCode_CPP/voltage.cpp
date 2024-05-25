@@ -2,11 +2,11 @@
 CV/GATE等の電圧出力を行う
 */
 #include "voltage.h"
-
+#include <iostream>
 /*
 コンストラクタ
 */
-explicit voltage::voltage(){
+voltage::voltage(){
 	_note2PWM[0]	=		17;	//F0
 	_note2PWM[1]	=		21;	//F#0
 	_note2PWM[2]	=		26;	//G0
@@ -57,7 +57,7 @@ explicit voltage::voltage(){
 	_note2PWM[47]	=		218; //E4	
 
 	//出力内容をリセット
-	reset();
+	//reset();
 }
 
 /*

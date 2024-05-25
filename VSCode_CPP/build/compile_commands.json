@@ -1,0 +1,8 @@
+[
+{
+  "directory": "C:/workspace/git_TBSEQ/VSCode_CPP/build",
+  "command": "C:\\MinGW\\bin\\g++.exe   -g -o CMakeFiles\\HelloWorld.dir\\HelloWorld.cpp.obj -c C:\\workspace\\git_TBSEQ\\VSCode_CPP\\HelloWorld.cpp",
+  "file": "C:/workspace/git_TBSEQ/VSCode_CPP/HelloWorld.cpp",
+  "output": "CMakeFiles/HelloWorld.dir/HelloWorld.cpp.obj"
+}
+]

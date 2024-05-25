@@ -23,8 +23,8 @@ int main(int argc, char const *argv[])
   voltage _voltage;
   sequenceMap _sequenceMap;
 
-  mode * _currentMode = new paternPlay( &_panelManager, &_voltage,  &_sequenceMap);
-  delete _currentMode;
+  //mode * _currentMode = new paternPlay( &_panelManager, &_voltage,  &_sequenceMap);
+  //delete _currentMode;
 
   patern tempPatern =_sequenceMap.paterns[0];
   step tempStep =tempPatern.steps[2];

@@ -84,7 +84,8 @@ class voltage
 		/*
 		コンストラクタ
 		*/
-		explicit voltage();
+		//explicit voltage();
+		voltage();
 	
 		/*
 		出力内容をリセット

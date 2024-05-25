@@ -1,48 +1,79 @@
 {
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
     "tasks": [
+        // ************ //
+        // debugビルド
+        // ************ //
         {
-            "type": "cppbuild",
-            "label": "C/C++: gcc.exe アクティブなファイルのビルド",
-            "command": "C:\\MinGW\\bin\\g++.exe",
+            "label": "build-debug",   //変更点①
+            "type": "shell",
+            "command": "powershell",    //変更点②
             "args": [
-                "-fdiagnostics-color=always",
-                "-g",
-                "${file}",
-                "-o",
-                "${fileDirname}\\${fileBasenameNoExtension}.exe"
+                "-Command",
+                "\"cmake -DCMAKE_BUILD_TYPE=Debug -G \\\"MinGW Makefiles\\\" ..; mingw32-make.exe -f Makefile\""   //変更点③ cmake,mingwへのパス設定済み
             ],
+            //変更点④
             "options": {
-                "cwd": "${fileDirname}"
+                "cwd": "${workspaceRoot}/debug"
             },
-            "problemMatcher": [
-                "$gcc"
-            ],
             "group": "build",
-            "detail": "デバッガーによって生成されたタスク。"
+            "presentation": {
+                // Reveal the output only if unrecognized errors occur.
+                "reveal": "always"
+            },
+            // Use the standard MS compiler pattern to detect errors, warnings and infos
+            //変更点⑤
+            "problemMatcher": {
+                "owner": "gcc",
+                "fileLocation": "absolute",
+                "pattern": {
+                    "regexp": "^(.*):(\\d+):(\\d+):\\s+(.*):\\s+(.*)$",
+                    "file": 1,
+                    "line": 2,
+                    "column": 3,
+                    "endLine": 2,
+                    "endColumn": 3,
+                    "severity": 4,
+                    "message": 5
+                }
+            }
         },
+        // ************ //
+        // releaseビルド
+        // ************ //
         {
-            "type": "cppbuild",
-            "label": "C/C++: g++.exe アクティブなファイルのビルド",
-            "command": "C:/MinGW/bin/g++.exe",
+            "label": "build-release",
+            "type": "shell",
+            "command": "powershell",
             "args": [
-                "-fdiagnostics-color=always",
-                "-g",
-                "${file}",
-                "-o",
-                "${fileDirname}\\${fileBasenameNoExtension}.exe"
+                "-Command",
+                "\"cmake -DCMAKE_BUILD_TYPE=Release -G \\\"MinGW Makefiles\\\" ..; mingw32-make.exe -f Makefile\""   //変更点③ cmake,mingwへのパス設定済み
             ],
             "options": {
-                "cwd": "C:/MinGW/bin"
+                "cwd": "${workspaceRoot}/release"
             },
-            "problemMatcher": [
-                "$gcc"
-            ],
-            "group": {
-                "kind": "build",
-                "isDefault": true
+            "group": "build",
+            "presentation": {
+                // Reveal the output only if unrecognized errors occur.
+                "reveal": "always"
             },
-            "detail": "デバッガーによって生成されたタスク。"
+            // Use the standard MS compiler pattern to detect errors, warnings and infos
+            "problemMatcher": {
+                "owner": "gcc",
+                "fileLocation": "absolute",
+                "pattern": {
+                    "regexp": "^(.*):(\\d+):(\\d+):\\s+(.*):\\s+(.*)$",
+                    "file": 1,
+                    "line": 2,
+                    "column": 3,
+                    "endLine": 2,
+                    "endColumn": 3,
+                    "severity": 4,
+                    "message": 5
+                }
+            }
         }
-    ],
-    "version": "2.0.0"
+    ]
 }

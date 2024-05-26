@@ -70,6 +70,10 @@
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IncludePath>C:\workspace\git_TBSEQ\VS2022_CPP\include;$(IncludePath)</IncludePath>
+    <SourcePath>C:\workspace\git_TBSEQ\VS2022_CPP\code;$(SourcePath)</SourcePath>
+  </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
@@ -127,26 +131,39 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="countTriger.h" />
-    <ClInclude Include="matrixLED.h" />
-    <ClInclude Include="matrixSwitch.h" />
-    <ClInclude Include="midiClock.h" />
-    <ClInclude Include="midiConst.h" />
-    <ClInclude Include="midiSender.h" />
-    <ClInclude Include="mode.h" />
-    <ClInclude Include="modeManager.h" />
-    <ClInclude Include="panelManager.h" />
-    <ClInclude Include="paternPlay.h" />
-    <ClInclude Include="paternWrite.h" />
-    <ClInclude Include="sequenceMap.h" />
-    <ClInclude Include="tempo.h" />
-    <ClInclude Include="trackPlay.h" />
-    <ClInclude Include="trackWrite.h" />
-    <ClInclude Include="voltage.h" />
+    <ClCompile Include="code\countTriger.cpp" />
+    <ClCompile Include="code\matrixLED.cpp" />
+    <ClCompile Include="code\matrixSwitch.cpp" />
+    <ClCompile Include="code\midiClock.cpp" />
+    <ClCompile Include="code\midiSender.cpp" />
+    <ClCompile Include="code\mode.cpp" />
+    <ClCompile Include="code\modeManager.cpp" />
+    <ClCompile Include="code\panelManager.cpp" />
+    <ClCompile Include="code\paternPlay.cpp" />
+    <ClCompile Include="code\paternWrite.cpp" />
+    <ClCompile Include="code\tempo.cpp" />
+    <ClCompile Include="code\trackPlay.cpp" />
+    <ClCompile Include="code\trackWrite.cpp" />
+    <ClCompile Include="code\voltage.cpp" />
+    <ClCompile Include="HelloWorld.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="HelloWorld.cpp" />
-    <ClCompile Include="voltage.cpp" />
+    <ClInclude Include="include\countTriger.h" />
+    <ClInclude Include="include\matrixLED.h" />
+    <ClInclude Include="include\matrixSwitch.h" />
+    <ClInclude Include="include\midiClock.h" />
+    <ClInclude Include="include\midiConst.h" />
+    <ClInclude Include="include\midiSender.h" />
+    <ClInclude Include="include\mode.h" />
+    <ClInclude Include="include\modeManager.h" />
+    <ClInclude Include="include\panelManager.h" />
+    <ClInclude Include="include\paternPlay.h" />
+    <ClInclude Include="include\paternWrite.h" />
+    <ClInclude Include="include\sequenceMap.h" />
+    <ClInclude Include="include\tempo.h" />
+    <ClInclude Include="include\trackPlay.h" />
+    <ClInclude Include="include\trackWrite.h" />
+    <ClInclude Include="include\voltage.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

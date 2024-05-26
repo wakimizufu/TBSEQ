@@ -1,0 +1,81 @@
+﻿/*
+各種モード切替/管理する
+*/
+
+#ifndef modeManager_h
+#define modeManager_h
+
+#include <iostream>
+
+/* #include "Arduino.h" */
+/* #include "Wire.h" */
+#include "mode.h"
+#include "paternPlay.h"
+#include "paternWrite.h"
+#include "trackPlay.h"
+#include "trackWrite.h"
+
+//読み取り間隔カウンタ閾値 10msec (500ns * 20000カウント)
+#define THD_MODE_MANAGER 20000
+
+
+
+class modeManager: public countTriger
+{
+  public:
+
+		/*
+		コンストラクタ
+		ptPanelManager:panelManagerクラスポインタ
+		ptVoltage     :voltageクラスポインタ
+		noteThredhold :MIDIクロックカウンタ閾値
+		start         :カウンタ開始値(デフォルト=0)
+		*/
+	  modeManager(panelManager* ptPanelManager, voltage* ptVoltage, unsigned int noteThredhold, unsigned int start);
+
+		/*
+		[仮想関数]カウンタ閾値に達した⇒MIDIクロックがカウントアップをセット
+		*/
+	  virtual void trigger();
+
+		/*
+		MIDIクロックカウンタをインクリメントする
+		⇒MIDIクロックカウンタをインクリメントした結果閾値に達したらMIDIクロックカウンタを0に設定する
+		戻り値：true=>MIDIクロックカウンタ＝閾値, false=>MIDIクロックカウンタ＜閾値
+		*/
+	  bool clockCountUp();
+
+
+		/*
+		MIDIクロックカウンタ閾値を設定する
+		noteThredhold :MIDIクロックカウンタ閾値
+		戻り値：なし
+		*/
+	  void	setNoteThredhold(unsigned int noteThredhold);
+
+		/*
+		押下されたボタン状況を反映する(true->押下中,false->未押下)
+		戻り値:modeモード名
+		*/
+	  MODE_NAME getModeName();
+		
+
+  private:
+	  mode * _currentMode;					//現在のモードクラス
+		panelManager * _panelManager;	//【コンストラクタで設定】panelManagerクラスポインタ
+		voltage * _voltage;						//【コンストラクタで設定】voltageクラスポインタ
+		sequenceMap _sequenceMap;			//シークエンスマップ
+
+    unsigned int _clockCount;			//現在のMIDIクロックカウンタ値
+    unsigned int _noteThredhold;	//音符カウンタ閾値
+
+		/*
+		モード切替判定を行う
+		bool	_track;		判断時：トラックボタン状態
+		bool	_patern;	判断時：パターンボタン状態
+		bool	_write;		判断時：ライトボタン状態
+		*/
+	void	_changeMode(bool _track, bool _patern, bool _write);
+};
+
+#endif

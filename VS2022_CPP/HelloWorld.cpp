@@ -17,9 +17,9 @@
 int main(int argc, char const *argv[])
 {
   std::cout << "Hello World!" << std::endl;
-  midiClock _midiClock(1000);
-  tempo _tempo;
-  panelManager _panelManager;
+  midiClock _midiClock(1000,0);
+  tempo _tempo(0);
+  panelManager _panelManager(0);
   voltage _voltage;
   sequenceMap _sequenceMap;
 

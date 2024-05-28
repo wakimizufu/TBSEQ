@@ -6,7 +6,7 @@ CV/GATE等の電圧出力を行う
 #define voltage_h
 
 #include <Wire.h>
-
+#include "boradConst.h"
 
 
 //GATE設定 (GATE_ON:5V ,GATE_OFF:0V)

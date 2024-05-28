@@ -7,6 +7,7 @@
 
 #include <Wire.h>
 
+#include "boradConst.h"
 #include "../trigger/countTriger.h"
 #include "../mode/matrixLED.h"
 #include "../mode/matrixSwitch.h"

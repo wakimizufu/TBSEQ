@@ -2,7 +2,7 @@
 CV/GATE等の電圧出力を行う
 */
 #include "voltage.h"
-#include <iostream>
+
 /*
 コンストラクタ
 */

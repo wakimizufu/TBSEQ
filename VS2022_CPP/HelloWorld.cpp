@@ -1,7 +1,12 @@
-/* #include "Arduino.h" */
-/* #include "Wire.h" */
+//arduino ideでコンパイルする際は以下をコメント解除する
+//#define DEBUG_ARDUINO 0
 
-#include <iostream>
+#if defined(DEBUG_ARDUINO)
+    #include <Wire.h>
+#else
+    #include <iostream>
+#endif
+
 
 #include "countTriger.h"
 #include "midiClock.h"

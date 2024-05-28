@@ -5,7 +5,11 @@ CV/GATE等の電圧出力を行う
 #ifndef voltage_h
 #define voltage_h
 
-//#include <Arduino.h>
+#if defined(DEBUG_ARDUINO)
+	#include <Wire.h>
+#else
+	#include <iostream>
+#endif
 
 
 //GATE設定 (GATE_ON:5V ,GATE_OFF:0V)

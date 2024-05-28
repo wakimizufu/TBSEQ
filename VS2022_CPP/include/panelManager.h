@@ -5,10 +5,12 @@
 #ifndef panelManager_h
 #define panelManager_h
 
+#if defined(DEBUG_ARDUINO)
+#include <Wire.h>
+#else
 #include <iostream>
+#endif
 
-/* #include "Arduino.h" */
-/* #include "Wire.h" */
 #include "countTriger.h"
 #include "matrixLED.h"
 #include "matrixSwitch.h"

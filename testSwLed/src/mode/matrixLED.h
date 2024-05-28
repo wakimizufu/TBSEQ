@@ -5,6 +5,7 @@
 #ifndef matrixLED_h
 #define matrixLED_h
 
+
 //マトリクスLED要素数
 #define LED_INDEX_MAX 32
 
@@ -64,45 +65,16 @@ public:
     /*
     コンストラクタ
     */
-    explicit matrixLED(){
-        for ( int i = 0;i<LED_INDEX_MAX;i++){
-            _currentLED[i]=false;
-        }
-    }
+    matrixLED();
 
-    void setRow(int row,char value){
-        int _rowIndex=row*LED_COL_MAX;
-        char _maskbit;
- 
-        for ( int i=0;i<LED_COL_MAX;i++){
-            _maskbit=1<<i;
-            _currentLED[_rowIndex+i]= _maskbit & value;
-        }
-    }
+    void setRow(int row, char value);
 
-    char getRow(int row){
-        char _ret = 0x00;
-        int _rowIndex=row*LED_COL_MAX;
+    char getRow(int row);
+  
 
-        //bit7-1を_retに設定
-        for ( int i=LED_COL_MAX-1;1<=i;i--){
-            _ret=_ret + (char)_currentLED[_rowIndex+i];
-            _ret=_ret<<1;
-        }
+    void set(int index, bool value);
 
-        //bit0を_retに設定
-        _ret=_ret + (char)_currentLED[_rowIndex];
-
-        return _ret;
-    }
-
-    void set(int index,bool value){
-        _currentLED[index]=value;
-    }
-
-    bool get(int index){
-        return _currentLED[index];
-    }
+    bool get(int index);
 
 private:
     bool _currentLED[LED_INDEX_MAX];

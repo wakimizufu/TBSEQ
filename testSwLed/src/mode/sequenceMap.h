@@ -5,7 +5,6 @@
 #ifndef sequenceMap_h
 #define sequenceMap_h
 
-#include "voltage.h"
 
 /*
 step ステップの各種情報を定義

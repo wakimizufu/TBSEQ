@@ -6,7 +6,7 @@ CV/GATE等の電圧出力を行う
 /*
 コンストラクタ
 */
-explicit voltage::voltage(){
+voltage::voltage(){
 	_note2PWM[0]	=		17;	//F0
 	_note2PWM[1]	=		21;	//F#0
 	_note2PWM[2]	=		26;	//G0
@@ -76,11 +76,7 @@ CVを設定する
 void	voltage::cv(int note){
 	//Timer2 PMWを0～255の範囲で設定する
 	if	(	note < SIZE_NOTE2PWM ) {
-        #if defined(DEBUG_ARDUINO)
-	        analogWrite(_note2PWM[note]);
-        #else
-        	std::cout << "voltage::cv() : note:" << note << " PWM:" << _note2PWM[note] << std::endl;
-        #endif
+		//analogWrite(_note2PWM[note]);
 	}
 	
 }
@@ -90,10 +86,7 @@ void	voltage::cv(int note){
 GATEを設定する
 */
 void	voltage::gate(int value){
-    #if defined(DEBUG_ARDUINO)
-        DigitalWrite(value);
-    #else
-    #endif
+	//digitalWrite(value);
 }
 
 		
@@ -101,10 +94,7 @@ void	voltage::gate(int value){
 ACCENTを設定する
 */
 void	voltage::accent(int value){
-    #if defined(DEBUG_ARDUINO)
-        DigitalWrite(value);
-    #else
-    #endif
+	//digitalWrite(value);
 }
 
 
@@ -112,9 +102,6 @@ void	voltage::accent(int value){
 SLIDEを設定する
 */
 void	voltage::slide(int value){
-    #if defined(DEBUG_ARDUINO)
-        DigitalWrite(value);
-    #else
-    #endif
+	//digitalWrite(value);
 }
 		

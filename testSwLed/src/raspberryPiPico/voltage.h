@@ -5,6 +5,10 @@ CV/GATE等の電圧出力を行う
 #ifndef voltage_h
 #define voltage_h
 
+#include <Wire.h>
+
+
+
 //GATE設定 (GATE_ON:5V ,GATE_OFF:0V)
 #define GATE_ON 1
 #define GATE_OFF 0
@@ -81,7 +85,8 @@ class voltage
 		/*
 		コンストラクタ
 		*/
-		explicit voltage();
+		//explicit voltage();
+		voltage();
 	
 		/*
 		出力内容をリセット

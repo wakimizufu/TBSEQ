@@ -76,7 +76,7 @@ CVを設定する
 void	voltage::cv(int note){
 	//Timer2 PMWを0～255の範囲で設定する
 	if	(	note < SIZE_NOTE2PWM ) {
-		//analogWrite(_note2PWM[note]);
+		analogWrite(PIN_CV,_note2PWM[note]);
 	}
 	
 }
@@ -86,7 +86,7 @@ void	voltage::cv(int note){
 GATEを設定する
 */
 void	voltage::gate(int value){
-	//digitalWrite(value);
+	digitalWrite(PIN_GATE,value);
 }
 
 		
@@ -94,7 +94,7 @@ void	voltage::gate(int value){
 ACCENTを設定する
 */
 void	voltage::accent(int value){
-	//digitalWrite(value);
+	digitalWrite(PIN_ACCENT,value);
 }
 
 
@@ -102,6 +102,6 @@ void	voltage::accent(int value){
 SLIDEを設定する
 */
 void	voltage::slide(int value){
-	//digitalWrite(value);
+	digitalWrite(PIN_SLIDE,value);
 }
 		

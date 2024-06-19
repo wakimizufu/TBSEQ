@@ -101,17 +101,17 @@ class voltage
 		/*
 		GATEを設定する
 		*/
-		void	gate(int value);
+		void	gate(bool value);
 		
 		/*
 		ACCENTを設定する
 		*/
-		void	accent(int value);
+		void	accent(bool value);
 		
 		/*
 		SLIDEを設定する
 		*/
-		void	slide(int value);
+		void	slide(bool value);
 		
 		
   private:

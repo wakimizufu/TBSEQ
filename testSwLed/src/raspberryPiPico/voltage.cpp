@@ -85,23 +85,26 @@ void	voltage::cv(int note){
 /*
 GATEを設定する
 */
-void	voltage::gate(int value){
-	digitalWrite(PIN_GATE,value);
+void	voltage::gate(bool value){
+	//digitalWrite(PIN_GATE,value);
+	gpio_put(PIN_GATE,value);
 }
 
 		
 /*
 ACCENTを設定する
 */
-void	voltage::accent(int value){
-	digitalWrite(PIN_ACCENT,value);
+void	voltage::accent(bool value){
+	//digitalWrite(PIN_ACCENT,value);
+	gpio_put(PIN_ACCENT,value);
 }
 
 
 /*
 SLIDEを設定する
 */
-void	voltage::slide(int value){
-	digitalWrite(PIN_SLIDE,value);
+void	voltage::slide(bool value){
+	//digitalWrite(PIN_SLIDE,value);
+	gpio_put(PIN_SLIDE,value);
 }
 		

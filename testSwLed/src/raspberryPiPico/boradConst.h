@@ -1,12 +1,15 @@
 #ifndef boradConst_h
 #define boradConst_h
 
-//I2CƒAƒhƒŒƒX
-const char I2C_ADDR_SW  = 0x20; //MCP27017:ƒ}ƒgƒŠƒNƒXƒXƒCƒbƒ`
-const char I2C_ADDR_LED = 0x21; //MCP27017:LEDƒXƒCƒbƒ`
+//I2Cï¿½Aï¿½hï¿½ï¿½ï¿½X
+const char I2C_ADDR_SW  = 0x20; //MCP27017:ï¿½}ï¿½gï¿½ï¿½ï¿½Nï¿½Xï¿½Xï¿½Cï¿½bï¿½`
+const char I2C_ADDR_LED = 0x21; //MCP27017:LEDï¿½Xï¿½Cï¿½bï¿½`
 const char I2C_ADDR_EEPROM = 0x50; //24LC256
 
-//GPIOƒsƒ“
+const char I2C_WIRE0_SDA = 0; //Wire.setSDA
+const char I2C_WIRE0_SCL = 1; //Wire.setSCL
+
+//GPIOï¿½sï¿½ï¿½
 const int PIN_GATE	=	18;		//GATE
 const int PIN_ACCENT	=	19;	//ACCENT
 const int PIN_SLIDE	=	20;		//SLIDE

@@ -1,5 +1,6 @@
 #include "pico/stdlib.h"
-#include <Wire.h>
+#include <Wire.h>  
+
 
 /*c:\Users\yosem\OneDrive\ドキュメント\Arduino\testSwLed\src\raspberryPiPico\voltage.cpp
 テストモード：スイッチ&LEDパネル
@@ -8,6 +9,7 @@
 */
  #include "src/raspberryPiPico/panelManager.h"
  #include "src/raspberryPiPico/voltage.h"
+ #include "src/trigger/tempo.h"
  #include "src/mode/sequenceMap.h"
 
 
@@ -22,7 +24,7 @@ struct repeating_timer st_timer;
 bool timer_flag = false;
 
 //タイマー割り込み関数
-bool toggle_panelWR(void *) {
+bool toggle_panelWR(struct repeating_timer *t) {
   timer_flag = true;
   return true; // repeat? true
 }
@@ -60,6 +62,7 @@ Wire.setSCL(I2C_WIRE0_SCL);
 analogWriteFreq(10000); //fc=10kHz
 analogWriteRange(256);  //解像度=8bit
 pinMode(PIN_CV, OUTPUT);  //CV
+analogWrite(PIN_CV,100);
 
 //タイマー割り込み/* タイマーの初期化(割込み間隔はusで指定) */
 add_repeating_timer_us(1000000, toggle_panelWR, NULL, &st_timer);

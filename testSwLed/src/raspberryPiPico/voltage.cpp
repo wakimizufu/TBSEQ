@@ -76,7 +76,7 @@ CVを設定する
 void	voltage::cv(int note){
 	//Timer2 PMWを0～255の範囲で設定する
 	if	(	note < SIZE_NOTE2PWM ) {
-		analogWrite(PIN_CV,_note2PWM[note]);
+ 		analogWrite(PIN_CV,_note2PWM[note]);
 	}
 	
 }

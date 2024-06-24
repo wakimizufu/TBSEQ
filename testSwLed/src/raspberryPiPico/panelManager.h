@@ -5,7 +5,8 @@
 #ifndef panelManager_h
 #define panelManager_h
 
-#include <Wire.h>
+#include "pico/stdlib.h"
+#include <Wire.h> 
 
 #include "boradConst.h"
 #include "../trigger/countTriger.h"

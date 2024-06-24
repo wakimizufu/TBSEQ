@@ -5,9 +5,10 @@ CV/GATE等の電圧出力を行う
 #ifndef voltage_h
 #define voltage_h
 
-#include <Wire.h>
-#include "boradConst.h"
 
+#include <arduino.h>
+#include "pico/stdlib.h"
+#include "boradConst.h"
 
 //GATE設定 (GATE_ON:5V ,GATE_OFF:0V)
 #define GATE_ON 1

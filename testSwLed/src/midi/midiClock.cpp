@@ -1,23 +1,23 @@
 #include "midiClock.h"
 
 /*
-ƒRƒ“ƒXƒgƒ‰ƒNƒ^
-thredhold :ƒJƒEƒ“ƒ^è‡’l
-start     :ƒJƒEƒ“ƒ^ŠJn’l(ƒfƒtƒHƒ‹ƒg=0)
+ã‚³ãƒ³ã‚¹ãƒˆãƒ©ã‚¯ã‚¿
+thredhold :ã‚«ã‚¦ãƒ³ã‚¿é–¾å€¤
+start     :ã‚«ã‚¦ãƒ³ã‚¿é–‹å§‹å€¤(ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆ=0)
 */
 midiClock::midiClock(unsigned int thredhold, unsigned int start = 0) :countTriger(thredhold, start) {
 	_count_up = false;
 }
 
 /*
-[‰¼‘zŠÖ”]ƒJƒEƒ“ƒ^è‡’l‚É’B‚µ‚½ËMIDIƒNƒƒbƒN‚ªƒJƒEƒ“ƒgƒAƒbƒv‚ğƒZƒbƒg
+[ä»®æƒ³é–¢æ•°]ã‚«ã‚¦ãƒ³ã‚¿é–¾å€¤ã«é”ã—ãŸâ‡’MIDIã‚¯ãƒ­ãƒƒã‚¯ãŒã‚«ã‚¦ãƒ³ãƒˆã‚¢ãƒƒãƒ—ã‚’ã‚»ãƒƒãƒˆ
 */
 void  midiClock::trigger() {
 	_count_up = true;
 };
 
 /*
-ƒJƒEƒ“ƒgƒAƒbƒvƒtƒ‰ƒO‚ğƒAƒbƒv‘Ò‚¿‚É•ÏX&ƒJƒEƒ“ƒ^‚ğ0ƒNƒŠƒA
+ã‚«ã‚¦ãƒ³ãƒˆã‚¢ãƒƒãƒ—ãƒ•ãƒ©ã‚°ã‚’ã‚¢ãƒƒãƒ—å¾…ã¡ã«å¤‰æ›´&ã‚«ã‚¦ãƒ³ã‚¿ã‚’0ã‚¯ãƒªã‚¢
 */
 void	midiClock::clear() {
 	_count_up = false;
@@ -26,8 +26,8 @@ void	midiClock::clear() {
 
 
 /*
-ƒJƒEƒ“ƒgƒAƒbƒvƒtƒ‰ƒO‚ğæ“¾‚·‚é
-–ß‚è’l:ƒJƒEƒ“ƒgƒAƒbƒvƒtƒ‰ƒO true->ƒJƒEƒ“ƒgƒAƒbƒvÏ, false->ƒAƒbƒv‘Ò‚¿
+ã‚«ã‚¦ãƒ³ãƒˆã‚¢ãƒƒãƒ—ãƒ•ãƒ©ã‚°ã‚’å–å¾—ã™ã‚‹
+æˆ»ã‚Šå€¤:ã‚«ã‚¦ãƒ³ãƒˆã‚¢ãƒƒãƒ—ãƒ•ãƒ©ã‚° true->ã‚«ã‚¦ãƒ³ãƒˆã‚¢ãƒƒãƒ—æ¸ˆ, false->ã‚¢ãƒƒãƒ—å¾…ã¡
 */
 bool midiClock::getCountUp() {
 	return	_count_up;
@@ -35,13 +35,13 @@ bool midiClock::getCountUp() {
 
 
 /*
-ƒeƒ“ƒ|‚É‰‚¶‚½MIDIƒNƒƒbƒN:ƒJƒEƒ“ƒ^è‡’l‚ğ•ÏX‚·‚é
-value:•ÏX‚·‚éMIDIƒNƒƒbƒN:ƒJƒEƒ“ƒ^è‡’l
+ãƒ†ãƒ³ãƒã«å¿œã˜ãŸMIDIã‚¯ãƒ­ãƒƒã‚¯:ã‚«ã‚¦ãƒ³ã‚¿é–¾å€¤ã‚’å¤‰æ›´ã™ã‚‹
+value:å¤‰æ›´ã™ã‚‹MIDIã‚¯ãƒ­ãƒƒã‚¯:ã‚«ã‚¦ãƒ³ã‚¿é–¾å€¤
 */
 void	midiClock::setTempo2Threshold(int	value) {
 	_thredhold = value;
 
-	//ƒJƒEƒ“ƒg’l‚ªè‡’l‚ğ’´‚¦‚½‚çƒJƒEƒ“ƒgƒAƒbƒv‚Æ‚·‚é
+	//ã‚«ã‚¦ãƒ³ãƒˆå€¤ãŒé–¾å€¤ã‚’è¶…ãˆãŸã‚‰ã‚«ã‚¦ãƒ³ãƒˆã‚¢ãƒƒãƒ—ã¨ã™ã‚‹
 	if (_count >= _thredhold) {
 		_count_up = true;
 		_count = 0;

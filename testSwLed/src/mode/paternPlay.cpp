@@ -1,27 +1,27 @@
 #include "paternPlay.h"
 
 /*
-ƒRƒ“ƒXƒgƒ‰ƒNƒ^
-	ptPanelManager:panelManagerƒNƒ‰ƒXƒ|ƒCƒ“ƒ^
-	ptVoltage     :voltageƒNƒ‰ƒXƒ|ƒCƒ“ƒ^
+ã‚³ãƒ³ã‚¹ãƒˆãƒ©ã‚¯ã‚¿
+	ptPanelManager:panelManagerã‚¯ãƒ©ã‚¹ãƒã‚¤ãƒ³ã‚¿
+	ptVoltage     :voltageã‚¯ãƒ©ã‚¹ãƒã‚¤ãƒ³ã‚¿
 */
 paternPlay::paternPlay(panelManager* ptPanelManager, voltage* ptVoltage, sequenceMap* ptSequenceMap) :mode(MODE_NAME::PATERN_PLAY, ptPanelManager, ptVoltage, ptSequenceMap) {
 
-	//Šeó‘Ô‚ğ‰Šú’l‚É•ÏX‚·‚é
-	_pattern = PATTERN_START_IDX;						//w’èƒpƒ^[ƒ“
-	_step = STEP_START_IDX;								//Œ»İƒXƒeƒbƒv
-	_LEDCount = 0;														//LED“_–ÅƒJƒEƒ“ƒg
-	_pushRunSW = false;												//ƒ‰ƒ“/ƒXƒgƒbƒv‘O‰ñó‘Ôƒtƒ‰ƒO
-	_keyborad = false;												//ƒL[ƒ{[ƒhƒtƒ‰ƒO
-	_midiclock_16note = MIDICLOCK_START_16NOTE;	//16‰¹•„–ˆMIDIƒNƒƒbƒNƒJƒEƒ“ƒg
+	//å„çŠ¶æ…‹ã‚’åˆæœŸå€¤ã«å¤‰æ›´ã™ã‚‹
+	_pattern = PATTERN_START_IDX;						//æŒ‡å®šãƒ‘ã‚¿ãƒ¼ãƒ³
+	_step = STEP_START_IDX;								//ç¾åœ¨ã‚¹ãƒ†ãƒƒãƒ—
+	_LEDCount = 0;														//LEDç‚¹æ»…ã‚«ã‚¦ãƒ³ãƒˆ
+	_pushRunSW = false;												//ãƒ©ãƒ³/ã‚¹ãƒˆãƒƒãƒ—å‰å›çŠ¶æ…‹ãƒ•ãƒ©ã‚°
+	_keyborad = false;												//ã‚­ãƒ¼ãƒœãƒ¼ãƒ‰ãƒ•ãƒ©ã‚°
+	_midiclock_16note = MIDICLOCK_START_16NOTE;	//16éŸ³ç¬¦æ¯MIDIã‚¯ãƒ­ãƒƒã‚¯ã‚«ã‚¦ãƒ³ãƒˆ
 
-	//ƒ‰ƒ“/ƒXƒgƒbƒvƒtƒ‰ƒO©ƒXƒgƒbƒv
+	//ãƒ©ãƒ³/ã‚¹ãƒˆãƒƒãƒ—ãƒ•ãƒ©ã‚°â†ã‚¹ãƒˆãƒƒãƒ—
 	_run_stop = RUN_STOP::STOP;
 
-	//voltageƒNƒ‰ƒX o—Í“à—e‚ğƒŠƒZƒbƒg
+	//voltageã‚¯ãƒ©ã‚¹ å‡ºåŠ›å†…å®¹ã‚’ãƒªã‚»ãƒƒãƒˆ
 	_voltage->reset();
 
-	//LEDo—Í‚ğƒNƒŠƒA
+	//LEDå‡ºåŠ›ã‚’ã‚¯ãƒªã‚¢
 	_panelManager->setLEDRow(LED_ROW_0, 0x00);
 	_panelManager->setLEDRow(LED_ROW_1, 0x00);
 	_panelManager->setLEDRow(LED_ROW_2, 0x60);
@@ -29,22 +29,22 @@ paternPlay::paternPlay(panelManager* ptPanelManager, voltage* ptVoltage, sequenc
 }
 
 /*
-[‰¼‘zŠÖ”]ƒJƒEƒ“ƒgè‡’l’B¬‚ÉÀs‚³‚ê‚éƒAƒvƒŠƒP[ƒVƒ‡ƒ“‚ğÀ{‚·‚é
+[ä»®æƒ³é–¢æ•°]ã‚«ã‚¦ãƒ³ãƒˆé–¾å€¤é”æˆæ™‚ã«å®Ÿè¡Œã•ã‚Œã‚‹ã‚¢ãƒ—ãƒªã‚±ãƒ¼ã‚·ãƒ§ãƒ³ã‚’å®Ÿæ–½ã™ã‚‹
 */
 void paternPlay::runSequence() {
 
-	//ƒ‰ƒ“/ƒXƒgƒbƒvØ‘Öƒ`ƒFƒbƒN
+	//ãƒ©ãƒ³/ã‚¹ãƒˆãƒƒãƒ—åˆ‡æ›¿ãƒã‚§ãƒƒã‚¯
 	changeRunStop();
 
-	//w’èƒpƒ^[ƒ“‚É‘Î‰‚µ‚½LED‚ğƒŠƒZƒbƒg
+	//æŒ‡å®šãƒ‘ã‚¿ãƒ¼ãƒ³ã«å¯¾å¿œã—ãŸLEDã‚’ãƒªã‚»ãƒƒãƒˆ
 	_panelManager->setLEDRow(LED_ROW_0, 0x00);
 	_panelManager->setLEDRow(LED_ROW_1, 0x00);
 
-	//ƒ‰ƒ“/ƒXƒgƒbƒvƒtƒ‰ƒO:ƒ‰ƒ“
+	//ãƒ©ãƒ³/ã‚¹ãƒˆãƒƒãƒ—ãƒ•ãƒ©ã‚°:ãƒ©ãƒ³
 	if (_run_stop == RUN_STOP::RUN) {
 		execRunSequence();
 
-		//ƒ‰ƒ“/ƒXƒgƒbƒvƒtƒ‰ƒO:ƒXƒgƒbƒv
+		//ãƒ©ãƒ³/ã‚¹ãƒˆãƒƒãƒ—ãƒ•ãƒ©ã‚°:ã‚¹ãƒˆãƒƒãƒ—
 	}
 	else	if (_run_stop == RUN_STOP::STOP) {
 		execStopSequence();
@@ -52,31 +52,31 @@ void paternPlay::runSequence() {
 }
 
 /*
-[‰¼‘zŠÖ”]MIDIƒNƒƒbƒNƒJƒEƒ“ƒgè‡’l’B¬‚ÉÀs‚³‚ê‚éƒAƒvƒŠƒP[ƒVƒ‡ƒ“‚ğÀ{‚·‚é
+[ä»®æƒ³é–¢æ•°]MIDIã‚¯ãƒ­ãƒƒã‚¯ã‚«ã‚¦ãƒ³ãƒˆé–¾å€¤é”æˆæ™‚ã«å®Ÿè¡Œã•ã‚Œã‚‹ã‚¢ãƒ—ãƒªã‚±ãƒ¼ã‚·ãƒ§ãƒ³ã‚’å®Ÿæ–½ã™ã‚‹
 */
 void paternPlay::runClock() {
 
-	//ƒ‰ƒ“/ƒXƒgƒbƒvƒtƒ‰ƒO:ƒ‰ƒ“
+	//ãƒ©ãƒ³/ã‚¹ãƒˆãƒƒãƒ—ãƒ•ãƒ©ã‚°:ãƒ©ãƒ³
 	if (_run_stop == RUN_STOP::RUN) {
 		execRunClock();
 
-		//ƒ‰ƒ“/ƒXƒgƒbƒvƒtƒ‰ƒO:ƒXƒgƒbƒv
+		//ãƒ©ãƒ³/ã‚¹ãƒˆãƒƒãƒ—ãƒ•ãƒ©ã‚°:ã‚¹ãƒˆãƒƒãƒ—
 	}
 	else	if (_run_stop == RUN_STOP::STOP) {
 		execStopClock();
 	}
 
-	//16‰¹•„–ˆMIDIƒNƒƒbƒNƒJƒEƒ“ƒg‚ğXV
+	//16éŸ³ç¬¦æ¯MIDIã‚¯ãƒ­ãƒƒã‚¯ã‚«ã‚¦ãƒ³ãƒˆã‚’æ›´æ–°
 	_midiclock_16note++;
 
-	//16‰¹•„–ˆMIDIƒNƒƒbƒNƒJƒEƒ“ƒg‚ª7ƒJƒEƒ“ƒg–Ú‚È‚ç1ƒJƒEƒ“ƒg‚É–ß‚·
+	//16éŸ³ç¬¦æ¯MIDIã‚¯ãƒ­ãƒƒã‚¯ã‚«ã‚¦ãƒ³ãƒˆãŒ7ã‚«ã‚¦ãƒ³ãƒˆç›®ãªã‚‰1ã‚«ã‚¦ãƒ³ãƒˆã«æˆ»ã™
 	if (_midiclock_16note > MIDICLOCK_STOP_16NOTE) {
 		_midiclock_16note = MIDICLOCK_START_16NOTE;
 
-		//16‰¹•„–ˆMIDIƒNƒƒbƒNƒAƒbƒv‚µ‚½‚çŒ»İƒXƒeƒbƒv‚ğƒCƒ“ƒNƒŠƒƒ“ƒg
+		//16éŸ³ç¬¦æ¯MIDIã‚¯ãƒ­ãƒƒã‚¯ã‚¢ãƒƒãƒ—ã—ãŸã‚‰ç¾åœ¨ã‚¹ãƒ†ãƒƒãƒ—ã‚’ã‚¤ãƒ³ã‚¯ãƒªãƒ¡ãƒ³ãƒˆ
 		_step++;
 
-		//Œ»İƒXƒeƒbƒv‚ªÅIƒJƒEƒ“ƒg‚ğ’´‚¦‚½‚çŠJnƒXƒeƒbƒv‚É–ß‚·
+		//ç¾åœ¨ã‚¹ãƒ†ãƒƒãƒ—ãŒæœ€çµ‚ã‚«ã‚¦ãƒ³ãƒˆã‚’è¶…ãˆãŸã‚‰é–‹å§‹ã‚¹ãƒ†ãƒƒãƒ—ã«æˆ»ã™
 		if (_step >= PATERN_STEP_LENGTH) {
 			_step = PATTERN_START_IDX;
 		}
@@ -86,18 +86,18 @@ void paternPlay::runClock() {
 
 
 /*
-ƒ‰ƒ“/ƒXƒgƒbƒvƒtƒ‰ƒO:ƒ‰ƒ“ ƒV[ƒNƒGƒ“ƒXˆ—‚ğÀs
+ãƒ©ãƒ³/ã‚¹ãƒˆãƒƒãƒ—ãƒ•ãƒ©ã‚°:ãƒ©ãƒ³ ã‚·ãƒ¼ã‚¯ã‚¨ãƒ³ã‚¹å‡¦ç†ã‚’å®Ÿè¡Œ
 */
 void	paternPlay::execRunSequence() {
 	_panelManager->setLED(_get_pattrn_LED(_pattern), true);
 }
 
 /*
-ƒ‰ƒ“/ƒXƒgƒbƒvƒtƒ‰ƒO:ƒXƒgƒbƒv ƒV[ƒNƒGƒ“ƒXˆ—‚ğÀs
+ãƒ©ãƒ³/ã‚¹ãƒˆãƒƒãƒ—ãƒ•ãƒ©ã‚°:ã‚¹ãƒˆãƒƒãƒ— ã‚·ãƒ¼ã‚¯ã‚¨ãƒ³ã‚¹å‡¦ç†ã‚’å®Ÿè¡Œ
 */
 void	paternPlay::execStopSequence() {
 
-	//ƒpƒ^[ƒ“‘I‘ğ‚ğƒ`ƒFƒbƒN
+	//ãƒ‘ã‚¿ãƒ¼ãƒ³é¸æŠã‚’ãƒã‚§ãƒƒã‚¯
 	if (_panelManager->getSwitch(static_cast<int>(Switch::C))) {
 		_pattern = 0;
 
@@ -130,42 +130,42 @@ void	paternPlay::execStopSequence() {
 		_pattern = 7;
 	}
 
-	//ƒpƒ^[ƒ“‘I‘ğLED‚ğ“_“”
+	//ãƒ‘ã‚¿ãƒ¼ãƒ³é¸æŠLEDã‚’ç‚¹ç¯
 	_panelManager->setLED(_get_pattrn_LED(_pattern), true);
 
 }
 
 /*
-ƒ‰ƒ“/ƒXƒgƒbƒvƒtƒ‰ƒO:ƒ‰ƒ“ MIDIƒNƒƒbƒNƒJƒEƒ“ƒgˆ—‚ğÀs
+ãƒ©ãƒ³/ã‚¹ãƒˆãƒƒãƒ—ãƒ•ãƒ©ã‚°:ãƒ©ãƒ³ MIDIã‚¯ãƒ­ãƒƒã‚¯ã‚«ã‚¦ãƒ³ãƒˆå‡¦ç†ã‚’å®Ÿè¡Œ
 */
 void	paternPlay::execRunClock() {
 }
 
 /*
-ƒ‰ƒ“/ƒXƒgƒbƒvƒtƒ‰ƒO:ƒXƒgƒbƒv MIDIƒNƒƒbƒNƒJƒEƒ“ƒgˆ—‚ğÀs
+ãƒ©ãƒ³/ã‚¹ãƒˆãƒƒãƒ—ãƒ•ãƒ©ã‚°:ã‚¹ãƒˆãƒƒãƒ— MIDIã‚¯ãƒ­ãƒƒã‚¯ã‚«ã‚¦ãƒ³ãƒˆå‡¦ç†ã‚’å®Ÿè¡Œ
 */
 void	paternPlay::execStopClock() {
 }
 
 
 /*
-ƒ‰ƒ“/ƒXƒgƒbƒvØ‘Öƒ`ƒFƒbƒN
+ãƒ©ãƒ³/ã‚¹ãƒˆãƒƒãƒ—åˆ‡æ›¿ãƒã‚§ãƒƒã‚¯
 */
 void	paternPlay::changeRunStop() {
 
-	//Œ»İ‚Ìƒ‰ƒ“/ƒXƒgƒbƒvSWó‘Ô
+	//ç¾åœ¨ã®ãƒ©ãƒ³/ã‚¹ãƒˆãƒƒãƒ—SWçŠ¶æ…‹
 	bool	nowRunSW = _panelManager->getSwitch(static_cast<int>(Switch::RUN));
 
-	//‘O‰ñó‘Ô=OFF,Œ»İó‘Ô=ON ‚È‚çƒ‚[ƒhØ‘Ö‚ğs‚¤
+	//å‰å›çŠ¶æ…‹=OFF,ç¾åœ¨çŠ¶æ…‹=ON ãªã‚‰ãƒ¢ãƒ¼ãƒ‰åˆ‡æ›¿ã‚’è¡Œã†
 	if ((!_pushRunSW) && (nowRunSW)) {
 
-		//ƒ‰ƒ“/ƒXƒgƒbƒvƒtƒ‰ƒO:ƒ‰ƒ“
+		//ãƒ©ãƒ³/ã‚¹ãƒˆãƒƒãƒ—ãƒ•ãƒ©ã‚°:ãƒ©ãƒ³
 		if (_run_stop == RUN_STOP::STOP) {
 			_run_stop = RUN_STOP::RUN;
 			_panelManager->setLED(static_cast<int>(LED::RUN), true);
 			_midiclock_16note = MIDICLOCK_START_16NOTE;
 
-			//ƒ‰ƒ“/ƒXƒgƒbƒvƒtƒ‰ƒO:ƒXƒgƒbƒv
+			//ãƒ©ãƒ³/ã‚¹ãƒˆãƒƒãƒ—ãƒ•ãƒ©ã‚°:ã‚¹ãƒˆãƒƒãƒ—
 		}
 		else	if (_run_stop == RUN_STOP::RUN) {
 			_run_stop = RUN_STOP::STOP;
@@ -174,14 +174,14 @@ void	paternPlay::changeRunStop() {
 		}
 	}
 
-	//‘O‰ñó‘Ô©Œ»İó‘Ô
+	//å‰å›çŠ¶æ…‹â†ç¾åœ¨çŠ¶æ…‹
 	_pushRunSW = nowRunSW;
 
 }
 
 
 	  /*
-	  16‰¹•„–ˆMIDIƒNƒƒbƒNƒJƒEƒ“ƒg‚ªŒã”¼ƒNƒƒbƒN‚É‚È‚Á‚½‚çƒQ[ƒg‚ğƒIƒt‚·‚é
+	  16éŸ³ç¬¦æ¯MIDIã‚¯ãƒ­ãƒƒã‚¯ã‚«ã‚¦ãƒ³ãƒˆãŒå¾ŒåŠã‚¯ãƒ­ãƒƒã‚¯ã«ãªã£ãŸã‚‰ã‚²ãƒ¼ãƒˆã‚’ã‚ªãƒ•ã™ã‚‹
 	  */
 	  void paternPlay::_gate_off_16note() {
 
@@ -193,7 +193,7 @@ void	paternPlay::changeRunStop() {
 	  }
 
 	  /*
-	  w’èƒpƒ^[ƒ“‚É‰‚¶‚½class:LED’l‚ğæ“¾
+	  æŒ‡å®šãƒ‘ã‚¿ãƒ¼ãƒ³ã«å¿œã˜ãŸclass:LEDå€¤ã‚’å–å¾—
 	  */
 	  int	paternPlay::_get_pattrn_LED(int pattern) {
 		  int	result = static_cast<int>(LED::C);

@@ -1,21 +1,21 @@
 #include "trackPlay.h"
 
 /*
-ƒRƒ“ƒXƒgƒ‰ƒNƒ^
-	ptPanelManager:panelManagerƒNƒ‰ƒXƒ|ƒCƒ“ƒ^
-	ptVoltage     :voltageƒNƒ‰ƒXƒ|ƒCƒ“ƒ^
+ã‚³ãƒ³ã‚¹ãƒˆãƒ©ã‚¯ã‚¿
+	ptPanelManager:panelManagerã‚¯ãƒ©ã‚¹ãƒã‚¤ãƒ³ã‚¿
+	ptVoltage     :voltageã‚¯ãƒ©ã‚¹ãƒã‚¤ãƒ³ã‚¿
 */
 trackPlay::trackPlay(panelManager* ptPanelManager, voltage* ptVoltage, sequenceMap* ptSequenceMap) :mode(MODE_NAME::TRACK_PLAY, ptPanelManager, ptVoltage, ptSequenceMap) {
 }
 
 /*
-[‰¼‘zŠÖ”]ƒJƒEƒ“ƒgè‡’l’B¬Žž‚ÉŽÀs‚³‚ê‚éƒAƒvƒŠƒP[ƒVƒ‡ƒ“‚ðŽÀŽ{‚·‚é
+[ä»®æƒ³é–¢æ•°]ã‚«ã‚¦ãƒ³ãƒˆé–¾å€¤é”æˆæ™‚ã«å®Ÿè¡Œã•ã‚Œã‚‹ã‚¢ãƒ—ãƒªã‚±ãƒ¼ã‚·ãƒ§ãƒ³ã‚’å®Ÿæ–½ã™ã‚‹
 */
 void trackPlay::runSequence() {
 }
 
 /*
-[‰¼‘zŠÖ”]MIDIƒNƒƒbƒNƒJƒEƒ“ƒgè‡’l’B¬Žž‚ÉŽÀs‚³‚ê‚éƒAƒvƒŠƒP[ƒVƒ‡ƒ“‚ðŽÀŽ{‚·‚é
+[ä»®æƒ³é–¢æ•°]MIDIã‚¯ãƒ­ãƒƒã‚¯ã‚«ã‚¦ãƒ³ãƒˆé–¾å€¤é”æˆæ™‚ã«å®Ÿè¡Œã•ã‚Œã‚‹ã‚¢ãƒ—ãƒªã‚±ãƒ¼ã‚·ãƒ§ãƒ³ã‚’å®Ÿæ–½ã™ã‚‹
 */
 void trackPlay::runClock() {
 }

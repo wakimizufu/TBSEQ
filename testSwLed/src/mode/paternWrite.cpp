@@ -2,22 +2,22 @@
 
 paternWrite::paternWrite(panelManager* ptPanelManager, voltage* ptVoltage, sequenceMap* ptSequenceMap) :mode(MODE_NAME::PATERN_WRITE, ptPanelManager, ptVoltage, ptSequenceMap) {
 
-	//Šeó‘Ô‚ð‰Šú’l‚É•ÏX‚·‚é
-	_run_stop = RUN_STOP::STOP;		//ƒ‰ƒ“/ƒXƒgƒbƒvƒtƒ‰ƒO
-	_pattern = 0;	//Žw’èƒpƒ^[ƒ“
-	_step = 0;	//Œ»ÝƒXƒeƒbƒv
+	//å„çŠ¶æ…‹ã‚’åˆæœŸå€¤ã«å¤‰æ›´ã™ã‚‹
+	_run_stop = RUN_STOP::STOP;		//ãƒ©ãƒ³/ã‚¹ãƒˆãƒƒãƒ—ãƒ•ãƒ©ã‚°
+	_pattern = 0;	//æŒ‡å®šãƒ‘ã‚¿ãƒ¼ãƒ³
+	_step = 0;	//ç¾åœ¨ã‚¹ãƒ†ãƒƒãƒ—
 }
 
 /*
-[‰¼‘zŠÖ”]ƒJƒEƒ“ƒgè‡’l’B¬Žž‚ÉŽÀs‚³‚ê‚éƒAƒvƒŠƒP[ƒVƒ‡ƒ“‚ðŽÀŽ{‚·‚é
+[ä»®æƒ³é–¢æ•°]ã‚«ã‚¦ãƒ³ãƒˆé–¾å€¤é”æˆæ™‚ã«å®Ÿè¡Œã•ã‚Œã‚‹ã‚¢ãƒ—ãƒªã‚±ãƒ¼ã‚·ãƒ§ãƒ³ã‚’å®Ÿæ–½ã™ã‚‹
 */
 void paternWrite::runSequence() {
 
-	//ƒ‰ƒ“/ƒXƒgƒbƒvƒtƒ‰ƒO:ƒ‰ƒ“
+	//ãƒ©ãƒ³/ã‚¹ãƒˆãƒƒãƒ—ãƒ•ãƒ©ã‚°:ãƒ©ãƒ³
 	if (_run_stop == RUN_STOP::RUN) {
 		execRunSequence();
 
-		//ƒ‰ƒ“/ƒXƒgƒbƒvƒtƒ‰ƒO:ƒXƒgƒbƒv
+		//ãƒ©ãƒ³/ã‚¹ãƒˆãƒƒãƒ—ãƒ•ãƒ©ã‚°:ã‚¹ãƒˆãƒƒãƒ—
 	}
 	else	if (_run_stop == RUN_STOP::STOP) {
 		execStopSequence();
@@ -26,15 +26,15 @@ void paternWrite::runSequence() {
 
 
 /*
-[‰¼‘zŠÖ”]MIDIƒNƒƒbƒNƒJƒEƒ“ƒgè‡’l’B¬Žž‚ÉŽÀs‚³‚ê‚éƒAƒvƒŠƒP[ƒVƒ‡ƒ“‚ðŽÀŽ{‚·‚é
+[ä»®æƒ³é–¢æ•°]MIDIã‚¯ãƒ­ãƒƒã‚¯ã‚«ã‚¦ãƒ³ãƒˆé–¾å€¤é”æˆæ™‚ã«å®Ÿè¡Œã•ã‚Œã‚‹ã‚¢ãƒ—ãƒªã‚±ãƒ¼ã‚·ãƒ§ãƒ³ã‚’å®Ÿæ–½ã™ã‚‹
 */
 void paternWrite::runClock() {
 
-	//ƒ‰ƒ“/ƒXƒgƒbƒvƒtƒ‰ƒO:ƒ‰ƒ“
+	//ãƒ©ãƒ³/ã‚¹ãƒˆãƒƒãƒ—ãƒ•ãƒ©ã‚°:ãƒ©ãƒ³
 	if (_run_stop == RUN_STOP::RUN) {
 		execRunClock();
 
-		//ƒ‰ƒ“/ƒXƒgƒbƒvƒtƒ‰ƒO:ƒXƒgƒbƒv
+		//ãƒ©ãƒ³/ã‚¹ãƒˆãƒƒãƒ—ãƒ•ãƒ©ã‚°:ã‚¹ãƒˆãƒƒãƒ—
 	}
 	else	if (_run_stop == RUN_STOP::STOP) {
 		execStopClock();
@@ -43,25 +43,25 @@ void paternWrite::runClock() {
 
 
 /*
-ƒ‰ƒ“/ƒXƒgƒbƒvƒtƒ‰ƒO:ƒ‰ƒ“ ƒV[ƒNƒGƒ“ƒXˆ—‚ðŽÀs
+ãƒ©ãƒ³/ã‚¹ãƒˆãƒƒãƒ—ãƒ•ãƒ©ã‚°:ãƒ©ãƒ³ ã‚·ãƒ¼ã‚¯ã‚¨ãƒ³ã‚¹å‡¦ç†ã‚’å®Ÿè¡Œ
 */
 void	paternWrite::execRunSequence() {
 }
 
 /*
-ƒ‰ƒ“/ƒXƒgƒbƒvƒtƒ‰ƒO:ƒXƒgƒbƒv ƒV[ƒNƒGƒ“ƒXˆ—‚ðŽÀs
+ãƒ©ãƒ³/ã‚¹ãƒˆãƒƒãƒ—ãƒ•ãƒ©ã‚°:ã‚¹ãƒˆãƒƒãƒ— ã‚·ãƒ¼ã‚¯ã‚¨ãƒ³ã‚¹å‡¦ç†ã‚’å®Ÿè¡Œ
 */
 void	paternWrite::execStopSequence() {
 }
 
 /*
-ƒ‰ƒ“/ƒXƒgƒbƒvƒtƒ‰ƒO:ƒ‰ƒ“ MIDIƒNƒƒbƒNƒJƒEƒ“ƒgˆ—‚ðŽÀs
+ãƒ©ãƒ³/ã‚¹ãƒˆãƒƒãƒ—ãƒ•ãƒ©ã‚°:ãƒ©ãƒ³ MIDIã‚¯ãƒ­ãƒƒã‚¯ã‚«ã‚¦ãƒ³ãƒˆå‡¦ç†ã‚’å®Ÿè¡Œ
 */
 void	paternWrite::execRunClock() {
 }
 
 /*
-ƒ‰ƒ“/ƒXƒgƒbƒvƒtƒ‰ƒO:ƒXƒgƒbƒv MIDIƒNƒƒbƒNƒJƒEƒ“ƒgˆ—‚ðŽÀs
+ãƒ©ãƒ³/ã‚¹ãƒˆãƒƒãƒ—ãƒ•ãƒ©ã‚°:ã‚¹ãƒˆãƒƒãƒ— MIDIã‚¯ãƒ­ãƒƒã‚¯ã‚«ã‚¦ãƒ³ãƒˆå‡¦ç†ã‚’å®Ÿè¡Œ
 */
 void	paternWrite::execStopClock() {
 }

@@ -1,14 +1,14 @@
 #include "midiSender.h"
 
 midiSender::midiSender() {
-	_NoteOn = NOTE_OFF;		//ƒm[ƒg‘—Mƒtƒ‰ƒO
-	_note = 0x40;				//Œ»İƒm[ƒg’l
-	_accent = ACCENT_OFF;	//Œ»İƒAƒNƒZƒ“ƒgƒtƒ‰ƒO
-	_portament = SLIDE_OFF;	//Œ»İƒ|ƒ‹ƒ^ƒƒ“ƒgƒtƒ‰ƒO
+	_NoteOn = NOTE_OFF;		//ãƒãƒ¼ãƒˆé€ä¿¡ãƒ•ãƒ©ã‚°
+	_note = 0x40;				//ç¾åœ¨ãƒãƒ¼ãƒˆå€¤
+	_accent = ACCENT_OFF;	//ç¾åœ¨ã‚¢ã‚¯ã‚»ãƒ³ãƒˆãƒ•ãƒ©ã‚°
+	_portament = SLIDE_OFF;	//ç¾åœ¨ãƒãƒ«ã‚¿ãƒ¡ãƒ³ãƒˆãƒ•ãƒ©ã‚°
 }
 
 /*
-ƒVƒXƒeƒ€ƒŠƒAƒ‹ƒ^ƒCƒ€ƒƒbƒZ[ƒWFMIDIƒNƒƒbƒN‚ğ‘—M
+ã‚·ã‚¹ãƒ†ãƒ ãƒªã‚¢ãƒ«ã‚¿ã‚¤ãƒ ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ï¼šMIDIã‚¯ãƒ­ãƒƒã‚¯ã‚’é€ä¿¡
 */
 void	midiSender::clock() {
 	_sendMessage(MIDI_STATUS_CLOCK, EMPTY_DATA, EMPTY_DATA);
@@ -16,21 +16,21 @@ void	midiSender::clock() {
 
 
 /*
-ƒVƒXƒeƒ€ƒŠƒAƒ‹ƒ^ƒCƒ€ƒƒbƒZ[ƒWFƒXƒ^[ƒg‚ğ‘—M
+ã‚·ã‚¹ãƒ†ãƒ ãƒªã‚¢ãƒ«ã‚¿ã‚¤ãƒ ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ï¼šã‚¹ã‚¿ãƒ¼ãƒˆã‚’é€ä¿¡
 */
 void	midiSender::srt_start() {
 	_sendMessage(MIDI_STATUS_START, EMPTY_DATA, EMPTY_DATA);
 }
 
 /*
-ƒVƒXƒeƒ€ƒŠƒAƒ‹ƒ^ƒCƒ€ƒƒbƒZ[ƒWFƒRƒ“ƒeƒBƒjƒ…[‚ğ‘—M
+ã‚·ã‚¹ãƒ†ãƒ ãƒªã‚¢ãƒ«ã‚¿ã‚¤ãƒ ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ï¼šã‚³ãƒ³ãƒ†ã‚£ãƒ‹ãƒ¥ãƒ¼ã‚’é€ä¿¡
 */
 void	midiSender::srt_continue() {
 	_sendMessage(MIDI_STATUS_CONTINUE, EMPTY_DATA, EMPTY_DATA);
 }
 
 /*
-ƒVƒXƒeƒ€ƒŠƒAƒ‹ƒ^ƒCƒ€ƒƒbƒZ[ƒWFƒXƒgƒbƒv‚ğ‘—M
+ã‚·ã‚¹ãƒ†ãƒ ãƒªã‚¢ãƒ«ã‚¿ã‚¤ãƒ ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ï¼šã‚¹ãƒˆãƒƒãƒ—ã‚’é€ä¿¡
 */
 void	midiSender::srt_stop() {
 	_sendMessage(MIDI_STATUS_STOP, EMPTY_DATA, EMPTY_DATA);
@@ -38,38 +38,38 @@ void	midiSender::srt_stop() {
 
 
 /*
-ƒ`ƒƒƒ“ƒlƒ‹ƒ{ƒCƒXƒƒbƒZ[ƒWFƒm[ƒgƒIƒ“‚ğ‘—M
+ãƒãƒ£ãƒ³ãƒãƒ«ãƒœã‚¤ã‚¹ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ï¼šãƒãƒ¼ãƒˆã‚ªãƒ³ã‚’é€ä¿¡
 */
 void	midiSender::cb_noteOn(int	senderChannel, int note, bool	accent, bool	slide) {
-	_NoteOn = NOTE_ON;			//ƒm[ƒg‘—Mƒtƒ‰ƒO
+	_NoteOn = NOTE_ON;			//ãƒãƒ¼ãƒˆé€ä¿¡ãƒ•ãƒ©ã‚°
 
-	//ƒm[ƒgƒIƒ“
+	//ãƒãƒ¼ãƒˆã‚ªãƒ³
 	_sendMessage(MIDI_STATUS_NOTEON || _senderChannel, note, VEROCITY_ON);
-	_note = note;					//Œ»İƒm[ƒg’l
+	_note = note;					//ç¾åœ¨ãƒãƒ¼ãƒˆå€¤
 
-	//ƒ|ƒ‹ƒ^ƒƒ“ƒgƒtƒ‰ƒO
+	//ãƒãƒ«ã‚¿ãƒ¡ãƒ³ãƒˆãƒ•ãƒ©ã‚°
 	if (_portament != slide) {
 		_sendMessage(MIDI_STATUS_CONTROL || _senderChannel, slide << PORTAMENT_LEFT_SHIFT, EMPTY_DATA);
-		_portament = slide;					//Œ»İƒ|ƒ‹ƒ^ƒƒ“ƒgƒtƒ‰ƒO
+		_portament = slide;					//ç¾åœ¨ãƒãƒ«ã‚¿ãƒ¡ãƒ³ãƒˆãƒ•ãƒ©ã‚°
 	}
 
-	_accent = accent;				//Œ»İƒAƒNƒZƒ“ƒgƒtƒ‰ƒO
-	_senderChannel = senderChannel;	//Œ»İ‘—Mƒ`ƒƒƒlƒ‹
+	_accent = accent;				//ç¾åœ¨ã‚¢ã‚¯ã‚»ãƒ³ãƒˆãƒ•ãƒ©ã‚°
+	_senderChannel = senderChannel;	//ç¾åœ¨é€ä¿¡ãƒãƒ£ãƒãƒ«
 
 }
 
 /*
-ƒ`ƒƒƒ“ƒlƒ‹ƒ{ƒCƒXƒƒbƒZ[ƒWFƒm[ƒgƒIƒt‚ğ‘—M
+ãƒãƒ£ãƒ³ãƒãƒ«ãƒœã‚¤ã‚¹ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ï¼šãƒãƒ¼ãƒˆã‚ªãƒ•ã‚’é€ä¿¡
 */
 void	midiSender::cb_noteOff() {
-	_NoteOn = NOTE_OFF;			//ƒm[ƒg‘—Mƒtƒ‰ƒO
+	_NoteOn = NOTE_OFF;			//ãƒãƒ¼ãƒˆé€ä¿¡ãƒ•ãƒ©ã‚°
 
-	//ƒm[ƒgƒIƒt(³Šm‚É‚ÍƒxƒƒVƒeƒB‚ğ0‚Åƒm[ƒgƒIƒ“‚·‚é)
+	//ãƒãƒ¼ãƒˆã‚ªãƒ•(æ­£ç¢ºã«ã¯ãƒ™ãƒ­ã‚·ãƒ†ã‚£ã‚’0ã§ãƒãƒ¼ãƒˆã‚ªãƒ³ã™ã‚‹)
 	_sendMessage(MIDI_STATUS_NOTEON || _senderChannel, _note, VEROCITY_OFF);
 }
 
   /*
-  MIDIƒƒbƒZ[ƒW‘—M
+  MIDIãƒ¡ãƒƒã‚»ãƒ¼ã‚¸é€ä¿¡
   */
 	  void	midiSender::_sendMessage(int	status, int	dataOne, int	dateTwo) {
 

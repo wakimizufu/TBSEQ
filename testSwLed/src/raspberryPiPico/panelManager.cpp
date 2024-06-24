@@ -1,8 +1,8 @@
 #include "panelManager.h"
 
 /*
-ƒRƒ“ƒXƒgƒ‰ƒNƒ^
-start     :ƒJƒEƒ“ƒ^ŠJn’l(ƒfƒtƒHƒ‹ƒg=0)
+ã‚³ãƒ³ã‚¹ãƒˆãƒ©ã‚¯ã‚¿
+start     :ã‚«ã‚¦ãƒ³ã‚¿é–‹å§‹å€¤(ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆ=0)
 */
 panelManager::panelManager(unsigned int start = 0) :countTriger(THD_PANEL_MANAGER, start) {
     _sequence = static_cast<int>(PANEL_MANAGER_SEQ::SW_1ST_ROW0);
@@ -10,13 +10,13 @@ panelManager::panelManager(unsigned int start = 0) :countTriger(THD_PANEL_MANAGE
 }
 
 /*
-[‰¼‘zŠÖ”]ƒJƒEƒ“ƒ^è‡’l‚É’B‚µ‚½ËMIDIƒNƒƒbƒN‚ªƒJƒEƒ“ƒgƒAƒbƒv‚ğƒZƒbƒg
+[ä»®æƒ³é–¢æ•°]ã‚«ã‚¦ãƒ³ã‚¿é–¾å€¤ã«é”ã—ãŸâ‡’MIDIã‚¯ãƒ­ãƒƒã‚¯ãŒã‚«ã‚¦ãƒ³ãƒˆã‚¢ãƒƒãƒ—ã‚’ã‚»ãƒƒãƒˆ
 */
 void panelManager::trigger() {
     int _seq_value = _sequence / 3;
     int _seq_mod = _sequence % 3;
 
-    //ƒXƒCƒbƒ`“ü—Í
+    //ã‚¹ã‚¤ãƒƒãƒå…¥åŠ›
     if ((_sequence == static_cast<int>(PANEL_MANAGER_SEQ::SW_1ST_ROW0)) ||
         (_sequence == static_cast<int>(PANEL_MANAGER_SEQ::SW_1ST_ROW1)) ||
         (_sequence == static_cast<int>(PANEL_MANAGER_SEQ::SW_1ST_ROW2)) ||
@@ -26,7 +26,7 @@ void panelManager::trigger() {
         (_sequence == static_cast<int>(PANEL_MANAGER_SEQ::SW_2ST_ROW2)) ||
         (_sequence == static_cast<int>(PANEL_MANAGER_SEQ::SW_2ST_ROW3))) {
 
-        //I2C::ƒXƒCƒbƒ`“ü—Í
+        //I2C::ã‚¹ã‚¤ãƒƒãƒå…¥åŠ›
         char _SW_Value = 0x00;
 
         Wire.requestFrom(2, 6);    // Request 6 bytes from slave device number two
@@ -39,13 +39,13 @@ void panelManager::trigger() {
     }
 
 
-    //LEDo—Í
+    //LEDå‡ºåŠ›
     if ((_sequence == static_cast<int>(PANEL_MANAGER_SEQ::LED_ROW0)) ||
         (_sequence == static_cast<int>(PANEL_MANAGER_SEQ::LED_ROW1)) ||
         (_sequence == static_cast<int>(PANEL_MANAGER_SEQ::LED_ROW2)) ||
         (_sequence == static_cast<int>(PANEL_MANAGER_SEQ::LED_ROW3))) {
 
-        //I2C::LEDo—Í 
+        //I2C::LEDå‡ºåŠ› 
         char _LED_Row_value = 0x00;
         _matrixLED.setRow(_seq_value, _LED_Row_value);
 
@@ -54,19 +54,19 @@ void panelManager::trigger() {
         Wire.endTransmission();      // Stop transmitting
     }
 
-    //Ÿ‰ñƒXƒCƒbƒ`ƒXƒLƒƒƒ“‰ñ”‚ğXV
+    //æ¬¡å›ã‚¹ã‚¤ãƒƒãƒã‚¹ã‚­ãƒ£ãƒ³å›æ•°ã‚’æ›´æ–°
     if ((_sequence == static_cast<int>(PANEL_MANAGER_SEQ::SW_1ST_ROW3)) ||
         (_sequence == static_cast<int>(PANEL_MANAGER_SEQ::SW_2ST_ROW3))) {
         _matrixSwitch.nextScan();
 
-        //SWƒXƒLƒƒƒ“ƒCƒ“ƒfƒbƒNƒXFŒˆ’è ‚È‚çƒXƒCƒbƒ`“ü—Í‚ğŠm’è‚·‚é
+        //SWã‚¹ã‚­ãƒ£ãƒ³ã‚¤ãƒ³ãƒ‡ãƒƒã‚¯ã‚¹ï¼šæ±ºå®š ãªã‚‰ã‚¹ã‚¤ãƒƒãƒå…¥åŠ›ã‚’ç¢ºå®šã™ã‚‹
         if (_matrixSwitch.getScan() == static_cast<int>(SwitchScan::Finalize)) {
             _matrixSwitch.finalize();
             _matrixSwitch.nextScan();
         }
     }
 
-    //Ÿ‰ñƒV[ƒNƒGƒ“ƒX&ƒV[ƒNƒGƒ“ƒX1üŠ®—¹ƒtƒ‰ƒO‚ğİ’è
+    //æ¬¡å›ã‚·ãƒ¼ã‚¯ã‚¨ãƒ³ã‚¹&ã‚·ãƒ¼ã‚¯ã‚¨ãƒ³ã‚¹1å‘¨å®Œäº†ãƒ•ãƒ©ã‚°ã‚’è¨­å®š
     if (_sequence == static_cast<int>(PANEL_MANAGER_SEQ::LED_ROW3)) {
         _sequence = static_cast<int>(PANEL_MANAGER_SEQ::SW_1ST_ROW0);
         _sequence_up = true;
@@ -77,20 +77,20 @@ void panelManager::trigger() {
 };
 
 /*
-w’èLEDƒCƒ“ƒfƒbƒNƒX‚Ö‚Ìİ’è‚ğs‚¤
-indexFenum class LED
-valueFtrue=>“_“” , false=>Á“”
-–ß‚è’lF‚È‚µ
+æŒ‡å®šLEDã‚¤ãƒ³ãƒ‡ãƒƒã‚¯ã‚¹ã¸ã®è¨­å®šã‚’è¡Œã†
+indexï¼šenum class LED
+valueï¼štrue=>ç‚¹ç¯ , false=>æ¶ˆç¯
+æˆ»ã‚Šå€¤ï¼šãªã—
 */
 void panelManager::setLED(int index, bool value) {
     _matrixLED.set(index, value);
 }
 
 /*
-w’èLEDs‚Ì’l(bit7`0)‚ğæ“¾‚·‚é
-indexFw’èLEDs
-valueFchar w’èLEDs‚Ì’l(bit7`0)
-–ß‚è’lF‚È‚µ
+æŒ‡å®šLEDè¡Œã®å€¤(bit7ï½0)ã‚’å–å¾—ã™ã‚‹
+indexï¼šæŒ‡å®šLEDè¡Œ
+valueï¼šchar æŒ‡å®šLEDè¡Œã®å€¤(bit7ï½0)
+æˆ»ã‚Šå€¤ï¼šãªã—
 */
 void panelManager::setLEDRow(int row, char value) {
     _matrixLED.setRow(row, value);
@@ -98,50 +98,50 @@ void panelManager::setLEDRow(int row, char value) {
 
 
 /*
-w’èLEDƒCƒ“ƒfƒbƒNƒX‚Ì’l‚ğæ“¾‚·‚é
-indexFenum class LED
-–ß‚è’lFbool true=>“_“” , false=>Á“”
+æŒ‡å®šLEDã‚¤ãƒ³ãƒ‡ãƒƒã‚¯ã‚¹ã®å€¤ã‚’å–å¾—ã™ã‚‹
+indexï¼šenum class LED
+æˆ»ã‚Šå€¤ï¼šbool true=>ç‚¹ç¯ , false=>æ¶ˆç¯
 */
 bool panelManager::getLED(int index) {
     return _matrixLED.get(index);
 }
 
 /*
-w’èLEDs‚Ì’l(bit7`0)‚ğæ“¾‚·‚é
-indexFw’èLEDs
-–ß‚è’lFchar w’èLEDs‚Ì’l(bit7`0)
+æŒ‡å®šLEDè¡Œã®å€¤(bit7ï½0)ã‚’å–å¾—ã™ã‚‹
+indexï¼šæŒ‡å®šLEDè¡Œ
+æˆ»ã‚Šå€¤ï¼šchar æŒ‡å®šLEDè¡Œã®å€¤(bit7ï½0)
 */
 char panelManager::getLEDRow(int row) {
     return _matrixLED.getRow(row);
 }
 
 /*
-w’èƒXƒCƒbƒ`ƒCƒ“ƒfƒbƒNƒX‚Ì’l‚ğæ“¾‚·‚é
-indexFenum class Switch
-–ß‚è’lFbool true=>‰Ÿ‰º , false=>ŠJ•ú
+æŒ‡å®šã‚¹ã‚¤ãƒƒãƒã‚¤ãƒ³ãƒ‡ãƒƒã‚¯ã‚¹ã®å€¤ã‚’å–å¾—ã™ã‚‹
+indexï¼šenum class Switch
+æˆ»ã‚Šå€¤ï¼šbool true=>æŠ¼ä¸‹ , false=>é–‹æ”¾
 */
 bool panelManager::getSwitch(int index) {
     return _matrixSwitch.get(index);
 }
 
 /*
-w’èƒXƒCƒbƒ`s‚Ì’l(bit7`0)‚ğæ“¾‚·‚é
-indexFw’èƒXƒCƒbƒ`s
-–ß‚è’lFchar w’èƒXƒCƒbƒ`s‚Ì’l(bit7`0)
+æŒ‡å®šã‚¹ã‚¤ãƒƒãƒè¡Œã®å€¤(bit7ï½0)ã‚’å–å¾—ã™ã‚‹
+indexï¼šæŒ‡å®šã‚¹ã‚¤ãƒƒãƒè¡Œ
+æˆ»ã‚Šå€¤ï¼šchar æŒ‡å®šã‚¹ã‚¤ãƒƒãƒè¡Œã®å€¤(bit7ï½0)
 */
 char panelManager::getSwitchRow(int row) {
     return _matrixSwitch.getRow(row);
 }
 
 /*
-ƒV[ƒNƒGƒ“ƒX1üŠ®—¹ƒtƒ‰ƒO‚ğŠ®—¹‘Ò‚¿‚É•ÏX
+ã‚·ãƒ¼ã‚¯ã‚¨ãƒ³ã‚¹1å‘¨å®Œäº†ãƒ•ãƒ©ã‚°ã‚’å®Œäº†å¾…ã¡ã«å¤‰æ›´
 */
 void panelManager::clear() {
     _sequence_up = false;
 }
 
 /*
-ƒV[ƒNƒGƒ“ƒX1üŠ®—¹ƒtƒ‰ƒO‚ğæ“¾
+ã‚·ãƒ¼ã‚¯ã‚¨ãƒ³ã‚¹1å‘¨å®Œäº†ãƒ•ãƒ©ã‚°ã‚’å–å¾—
 */
 bool panelManager::getSequenceUp() {
     return _sequence_up;

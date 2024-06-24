@@ -1,43 +1,43 @@
 #include "modeManager.h"
 
 /*
-ƒRƒ“ƒXƒgƒ‰ƒNƒ^
-ptPanelManager:panelManagerƒNƒ‰ƒXƒ|ƒCƒ“ƒ^
-ptVoltage     :voltageƒNƒ‰ƒXƒ|ƒCƒ“ƒ^
-noteThredhold :MIDIƒNƒƒbƒNƒJƒEƒ“ƒ^è‡’l
-start         :ƒJƒEƒ“ƒ^ŠJn’l(ƒfƒtƒHƒ‹ƒg=0)
+ã‚³ãƒ³ã‚¹ãƒˆãƒ©ã‚¯ã‚¿
+ptPanelManager:panelManagerã‚¯ãƒ©ã‚¹ãƒã‚¤ãƒ³ã‚¿
+ptVoltage     :voltageã‚¯ãƒ©ã‚¹ãƒã‚¤ãƒ³ã‚¿
+noteThredhold :MIDIã‚¯ãƒ­ãƒƒã‚¯ã‚«ã‚¦ãƒ³ã‚¿é–¾å€¤
+start         :ã‚«ã‚¦ãƒ³ã‚¿é–‹å§‹å€¤(ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆ=0)
 */
 modeManager::modeManager(panelManager* ptPanelManager, voltage* ptVoltage, unsigned int noteThredhold, unsigned int start = 0) :countTriger(THD_PANEL_MANAGER, start) {
 
-	_panelManager = ptPanelManager;		//panelManagerƒNƒ‰ƒXƒ|ƒCƒ“ƒ^
-	_voltage = ptVoltage;						//yƒRƒ“ƒXƒgƒ‰ƒNƒ^‚Åİ’èzvoltageƒNƒ‰ƒXƒ|ƒCƒ“ƒ^
+	_panelManager = ptPanelManager;		//panelManagerã‚¯ãƒ©ã‚¹ãƒã‚¤ãƒ³ã‚¿
+	_voltage = ptVoltage;						//ã€ã‚³ãƒ³ã‚¹ãƒˆãƒ©ã‚¯ã‚¿ã§è¨­å®šã€‘voltageã‚¯ãƒ©ã‚¹ãƒã‚¤ãƒ³ã‚¿
 
-	//Œ»İ‚Ìƒ‚[ƒhƒNƒ‰ƒX‚Ì‰Šú’l‚ğİ’è‚·‚é
+	//ç¾åœ¨ã®ãƒ¢ãƒ¼ãƒ‰ã‚¯ãƒ©ã‚¹ã®åˆæœŸå€¤ã‚’è¨­å®šã™ã‚‹
 	_currentMode = new paternWrite( _panelManager, _voltage, &_sequenceMap);
 
-	_clockCount = 0;							//Œ»İ‚ÌMIDIƒNƒƒbƒNƒJƒEƒ“ƒ^’l
-	_noteThredhold = noteThredhold;	//MIDIƒNƒƒbƒNƒJƒEƒ“ƒ^è‡’l
+	_clockCount = 0;							//ç¾åœ¨ã®MIDIã‚¯ãƒ­ãƒƒã‚¯ã‚«ã‚¦ãƒ³ã‚¿å€¤
+	_noteThredhold = noteThredhold;	//MIDIã‚¯ãƒ­ãƒƒã‚¯ã‚«ã‚¦ãƒ³ã‚¿é–¾å€¤
 }
 
 /*
-[‰¼‘zŠÖ”]ƒJƒEƒ“ƒ^è‡’l‚É’B‚µ‚½ËMIDIƒNƒƒbƒN‚ªƒJƒEƒ“ƒgƒAƒbƒv‚ğƒZƒbƒg
+[ä»®æƒ³é–¢æ•°]ã‚«ã‚¦ãƒ³ã‚¿é–¾å€¤ã«é”ã—ãŸâ‡’MIDIã‚¯ãƒ­ãƒƒã‚¯ãŒã‚«ã‚¦ãƒ³ãƒˆã‚¢ãƒƒãƒ—ã‚’ã‚»ãƒƒãƒˆ
 */
 void modeManager::trigger() {
 	bool _track = _panelManager->getSwitch(static_cast<int>(Switch::TRACK));
 	bool _patern = _panelManager->getSwitch(static_cast<int>(Switch::PATTERN));
 	bool _write = _panelManager->getSwitch(static_cast<int>(Switch::WRITE));
 
-	//ƒ‚[ƒhØ‘Ö”»’è‚ğs‚¤
+	//ãƒ¢ãƒ¼ãƒ‰åˆ‡æ›¿åˆ¤å®šã‚’è¡Œã†
 	_changeMode(_track, _patern, _write);
 
-	//ƒ‚[ƒh‚É‘Î‚µ‚ÄƒJƒEƒ“ƒgè‡’l’B¬‚ÉÀs‚³‚ê‚éƒAƒvƒŠƒP[ƒVƒ‡ƒ“‚ğÀ{‚·‚é
+	//ãƒ¢ãƒ¼ãƒ‰ã«å¯¾ã—ã¦ã‚«ã‚¦ãƒ³ãƒˆé–¾å€¤é”æˆæ™‚ã«å®Ÿè¡Œã•ã‚Œã‚‹ã‚¢ãƒ—ãƒªã‚±ãƒ¼ã‚·ãƒ§ãƒ³ã‚’å®Ÿæ–½ã™ã‚‹
 	_currentMode->runSequence();
 }
 
 /*
-MIDIƒNƒƒbƒNƒJƒEƒ“ƒ^‚ğƒCƒ“ƒNƒŠƒƒ“ƒg‚·‚é
-ËMIDIƒNƒƒbƒNƒJƒEƒ“ƒ^‚ğƒCƒ“ƒNƒŠƒƒ“ƒg‚µ‚½Œ‹‰Êè‡’l‚É’B‚µ‚½‚çMIDIƒNƒƒbƒNƒJƒEƒ“ƒ^‚ğ0‚Éİ’è‚·‚é
-–ß‚è’lFtrue=>MIDIƒNƒƒbƒNƒJƒEƒ“ƒ^è‡’l, false=>MIDIƒNƒƒbƒNƒJƒEƒ“ƒ^ƒè‡’l
+MIDIã‚¯ãƒ­ãƒƒã‚¯ã‚«ã‚¦ãƒ³ã‚¿ã‚’ã‚¤ãƒ³ã‚¯ãƒªãƒ¡ãƒ³ãƒˆã™ã‚‹
+â‡’MIDIã‚¯ãƒ­ãƒƒã‚¯ã‚«ã‚¦ãƒ³ã‚¿ã‚’ã‚¤ãƒ³ã‚¯ãƒªãƒ¡ãƒ³ãƒˆã—ãŸçµæœé–¾å€¤ã«é”ã—ãŸã‚‰MIDIã‚¯ãƒ­ãƒƒã‚¯ã‚«ã‚¦ãƒ³ã‚¿ã‚’0ã«è¨­å®šã™ã‚‹
+æˆ»ã‚Šå€¤ï¼štrue=>MIDIã‚¯ãƒ­ãƒƒã‚¯ã‚«ã‚¦ãƒ³ã‚¿ï¼é–¾å€¤, false=>MIDIã‚¯ãƒ­ãƒƒã‚¯ã‚«ã‚¦ãƒ³ã‚¿ï¼œé–¾å€¤
 */
 bool modeManager::clockCountUp() {
 	_clockCount++;
@@ -53,9 +53,9 @@ bool modeManager::clockCountUp() {
 
 
 /*
-MIDIƒNƒƒbƒNƒJƒEƒ“ƒ^è‡’l‚ğİ’è‚·‚é
-noteThredhold :MIDIƒNƒƒbƒNƒJƒEƒ“ƒ^è‡’l
-–ß‚è’lF‚È‚µ
+MIDIã‚¯ãƒ­ãƒƒã‚¯ã‚«ã‚¦ãƒ³ã‚¿é–¾å€¤ã‚’è¨­å®šã™ã‚‹
+noteThredhold :MIDIã‚¯ãƒ­ãƒƒã‚¯ã‚«ã‚¦ãƒ³ã‚¿é–¾å€¤
+æˆ»ã‚Šå€¤ï¼šãªã—
 */
 void	modeManager::setNoteThredhold(unsigned int noteThredhold) {
 	_noteThredhold = noteThredhold;
@@ -67,8 +67,8 @@ void	modeManager::setNoteThredhold(unsigned int noteThredhold) {
 }
 
 /*
-‰Ÿ‰º‚³‚ê‚½ƒ{ƒ^ƒ“ó‹µ‚ğ”½‰f‚·‚é(true->‰Ÿ‰º’†,false->–¢‰Ÿ‰º)
-–ß‚è’l:modeƒ‚[ƒh–¼
+æŠ¼ä¸‹ã•ã‚ŒãŸãƒœã‚¿ãƒ³çŠ¶æ³ã‚’åæ˜ ã™ã‚‹(true->æŠ¼ä¸‹ä¸­,false->æœªæŠ¼ä¸‹)
+æˆ»ã‚Šå€¤:modeãƒ¢ãƒ¼ãƒ‰å
 */
 MODE_NAME modeManager::getModeName() {
 	return	_currentMode->getModeName();
@@ -76,22 +76,22 @@ MODE_NAME modeManager::getModeName() {
 
 
 	  /*
-	  ƒ‚[ƒhØ‘Ö”»’è‚ğs‚¤
-	  bool	_track;		”»’fFƒgƒ‰ƒbƒNƒ{ƒ^ƒ“ó‘Ô
-	  bool	_patern;	”»’fFƒpƒ^[ƒ“ƒ{ƒ^ƒ“ó‘Ô
-	  bool	_write;		”»’fFƒ‰ƒCƒgƒ{ƒ^ƒ“ó‘Ô
+	  ãƒ¢ãƒ¼ãƒ‰åˆ‡æ›¿åˆ¤å®šã‚’è¡Œã†
+	  bool	_track;		åˆ¤æ–­æ™‚ï¼šãƒˆãƒ©ãƒƒã‚¯ãƒœã‚¿ãƒ³çŠ¶æ…‹
+	  bool	_patern;	åˆ¤æ–­æ™‚ï¼šãƒ‘ã‚¿ãƒ¼ãƒ³ãƒœã‚¿ãƒ³çŠ¶æ…‹
+	  bool	_write;		åˆ¤æ–­æ™‚ï¼šãƒ©ã‚¤ãƒˆãƒœã‚¿ãƒ³çŠ¶æ…‹
 	  */
 	  void	modeManager::_changeMode(bool _track, bool _patern, bool _write) {
 
-		  //ƒ‰ƒ“/ƒXƒgƒbƒvó‘Ô‚ªƒ‰ƒ“‚È‚çØ‘Öˆ—‚Ís‚í‚È‚¢
+		  //ãƒ©ãƒ³/ã‚¹ãƒˆãƒƒãƒ—çŠ¶æ…‹ãŒãƒ©ãƒ³ãªã‚‰åˆ‡æ›¿å‡¦ç†ã¯è¡Œã‚ãªã„
 		  if (RUN_STOP::STOP == _currentMode->getRunStop()) {
 			  return;
 		  }
 
-		  //Œ»İ‚Ìƒ‚[ƒh–¼‚ğæ“¾‚·‚é
+		  //ç¾åœ¨ã®ãƒ¢ãƒ¼ãƒ‰åã‚’å–å¾—ã™ã‚‹
 		  MODE_NAME	mode = _currentMode->getModeName();
 
-		  //ƒ{ƒ^ƒ“‰Ÿ‰ºó‹µ‚É‰‚¶‚½ƒ‚[ƒh–¼‚ğİ’è
+		  //ãƒœã‚¿ãƒ³æŠ¼ä¸‹çŠ¶æ³ã«å¿œã˜ãŸãƒ¢ãƒ¼ãƒ‰åã‚’è¨­å®š
 		  MODE_NAME changeMode = MODE_NAME::NONE;
 
 		  if (_patern && !_write) {
@@ -110,18 +110,18 @@ MODE_NAME modeManager::getModeName() {
 			  changeMode = MODE_NAME::TRACK_WRITE;
 		  }
 
-		  //ƒ‚[ƒh–¢‘I‘ğ‚È‚çØ‘Ö‚È‚µ
+		  //ãƒ¢ãƒ¼ãƒ‰æœªé¸æŠãªã‚‰åˆ‡æ›¿ãªã—
 		  if (MODE_NAME::NONE == changeMode) {
 			  return;
 
-			  //Œ»İƒ‚[ƒh‚ÆØ‘Öƒ‚[ƒh‚ªˆê‚È‚çØ‘Ö‚È‚µ
+			  //ç¾åœ¨ãƒ¢ãƒ¼ãƒ‰ã¨åˆ‡æ›¿æ™‚ãƒ¢ãƒ¼ãƒ‰ãŒä¸€ç·’ãªã‚‰åˆ‡æ›¿ãªã—
 		  }
 		  else if (mode == changeMode) {
 			  return;
 		  }
 
 
-		  //ˆÙ‚È‚éƒ‚[ƒh‚ª‘I‘ğ‚³‚ê‚½‚çƒ‚[ƒh‚ğØ‚è‘Ö‚¦‚é
+		  //ç•°ãªã‚‹ãƒ¢ãƒ¼ãƒ‰ãŒé¸æŠã•ã‚ŒãŸã‚‰ãƒ¢ãƒ¼ãƒ‰ã‚’åˆ‡ã‚Šæ›¿ãˆã‚‹
 		  delete	_currentMode;
 
 		  if (MODE_NAME::PATERN_PLAY == changeMode) {

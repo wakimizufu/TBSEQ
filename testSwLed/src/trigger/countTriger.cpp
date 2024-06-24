@@ -1,9 +1,9 @@
 #include "countTriger.h"
 
 /*
-ƒRƒ“ƒXƒgƒ‰ƒNƒ^
-thredhold :ƒJƒEƒ“ƒ^è‡’l
-start     :ƒJƒEƒ“ƒ^ŠJŽn’l(ƒfƒtƒHƒ‹ƒg=0)
+ã‚³ãƒ³ã‚¹ãƒˆãƒ©ã‚¯ã‚¿
+thredhold :ã‚«ã‚¦ãƒ³ã‚¿é–¾å€¤
+start     :ã‚«ã‚¦ãƒ³ã‚¿é–‹å§‹å€¤(ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆ=0)
 */
 countTriger::countTriger(unsigned int thredhold, unsigned int start = 0) {
 	_thredhold = thredhold;
@@ -11,15 +11,15 @@ countTriger::countTriger(unsigned int thredhold, unsigned int start = 0) {
 }
 
 /*
-[‰¼‘zŠÖ”]ƒfƒXƒgƒ‰ƒNƒ^
+[ä»®æƒ³é–¢æ•°]ãƒ‡ã‚¹ãƒˆãƒ©ã‚¯ã‚¿
 */
 countTriger::~countTriger() {
 }
 
 /*
-ƒJƒEƒ“ƒ^‚ðƒCƒ“ƒNƒŠƒƒ“ƒg‚·‚é
-ËƒJƒEƒ“ƒ^‚ðƒCƒ“ƒNƒŠƒƒ“ƒg‚µ‚½Œ‹‰Êè‡’l‚É’B‚µ‚½‚çƒJƒEƒ“ƒ^‚ð0‚ÉÝ’è‚·‚é
-–ß‚è’lFtrue=>ƒJƒEƒ“ƒ^è‡’l, false=>ƒJƒEƒ“ƒ^ƒè‡’l
+ã‚«ã‚¦ãƒ³ã‚¿ã‚’ã‚¤ãƒ³ã‚¯ãƒªãƒ¡ãƒ³ãƒˆã™ã‚‹
+â‡’ã‚«ã‚¦ãƒ³ã‚¿ã‚’ã‚¤ãƒ³ã‚¯ãƒªãƒ¡ãƒ³ãƒˆã—ãŸçµæžœé–¾å€¤ã«é”ã—ãŸã‚‰ã‚«ã‚¦ãƒ³ã‚¿ã‚’0ã«è¨­å®šã™ã‚‹
+æˆ»ã‚Šå€¤ï¼štrue=>ã‚«ã‚¦ãƒ³ã‚¿ï¼é–¾å€¤, false=>ã‚«ã‚¦ãƒ³ã‚¿ï¼œé–¾å€¤
 */
 bool countTriger::countUp() {
 	_count++;

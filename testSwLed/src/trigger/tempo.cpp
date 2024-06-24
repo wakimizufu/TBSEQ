@@ -1,15 +1,15 @@
 #include "tempo.h"
 
 /*
-ƒRƒ“ƒXƒgƒ‰ƒNƒ^
-start     :ƒJƒEƒ“ƒ^ŠJn’l(ƒfƒtƒHƒ‹ƒg=0)
+ã‚³ãƒ³ã‚¹ãƒˆãƒ©ã‚¯ã‚¿
+start     :ã‚«ã‚¦ãƒ³ã‚¿é–‹å§‹å€¤(ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆ=0)
 */
 tempo::tempo(unsigned int start = 0) :countTriger(THD_TEMPO, start) {
 	_adc_value = 0;
 }
 
 /*
-[‰¼‘zŠÖ”]ƒJƒEƒ“ƒ^è‡’l‚É’B‚µ‚½ËMIDIƒNƒƒbƒN‚ªƒJƒEƒ“ƒgƒAƒbƒv‚ğƒZƒbƒg
+[ä»®æƒ³é–¢æ•°]ã‚«ã‚¦ãƒ³ã‚¿é–¾å€¤ã«é”ã—ãŸâ‡’MIDIã‚¯ãƒ­ãƒƒã‚¯ãŒã‚«ã‚¦ãƒ³ãƒˆã‚¢ãƒƒãƒ—ã‚’ã‚»ãƒƒãƒˆ
 */
 void tempo::trigger() {
 	//_adc_value	=	analogRead(0);
@@ -17,16 +17,16 @@ void tempo::trigger() {
 };
 
 /*
-ƒeƒ“ƒ|’l‚ğæ“¾‚·‚é
-–ß‚è’l:ƒeƒ“ƒ|’l(30`285)
+ãƒ†ãƒ³ãƒå€¤ã‚’å–å¾—ã™ã‚‹
+æˆ»ã‚Šå€¤:ãƒ†ãƒ³ãƒå€¤(30ï½285)
 */
 int	tempo::getTempo() {
 	return	convertArray[_adc_value][TEMPO_COL_TEMPO];
 }
 
 /*
-ƒeƒ“ƒ|‚É‘Î‚·‚é500nsƒJƒEƒ“ƒgè‡’l‚ğæ“¾‚·‚é
-–ß‚è’l:500nsƒJƒEƒ“ƒgè‡’l
+ãƒ†ãƒ³ãƒã«å¯¾ã™ã‚‹500nsã‚«ã‚¦ãƒ³ãƒˆé–¾å€¤ã‚’å–å¾—ã™ã‚‹
+æˆ»ã‚Šå€¤:500nsã‚«ã‚¦ãƒ³ãƒˆé–¾å€¤
 */
 int	tempo::getCountThd() {
 	return	convertArray[_adc_value][TEMPO_COL_COUNT];

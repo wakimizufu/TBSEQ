@@ -1,33 +1,33 @@
 #include "mode.h"
 
 /*
-ƒRƒ“ƒXƒgƒ‰ƒNƒ^
-modename      :ƒ‚[ƒh–¼(Class MODE_NAME)
-	ptPanelManager:panelManagerƒNƒ‰ƒXƒ|ƒCƒ“ƒ^
-	ptVoltage     :voltageƒNƒ‰ƒXƒ|ƒCƒ“ƒ^
-	ptSequenceMap :sequenceMapƒNƒ‰ƒXƒ|ƒCƒ“ƒ^
+ã‚³ãƒ³ã‚¹ãƒˆãƒ©ã‚¯ã‚¿
+modename      :ãƒ¢ãƒ¼ãƒ‰å(Class MODE_NAME)
+	ptPanelManager:panelManagerã‚¯ãƒ©ã‚¹ãƒã‚¤ãƒ³ã‚¿
+	ptVoltage     :voltageã‚¯ãƒ©ã‚¹ãƒã‚¤ãƒ³ã‚¿
+	ptSequenceMap :sequenceMapã‚¯ãƒ©ã‚¹ãƒã‚¤ãƒ³ã‚¿
 */
 mode::mode(MODE_NAME modename, panelManager* ptPanelManager, voltage* ptVoltage, sequenceMap* ptSequenceMap) {
 	_modeName = modename;
-	_panelManager = ptPanelManager;		//panelManagerƒNƒ‰ƒXƒ|ƒCƒ“ƒ^
-	_voltage = ptVoltage;						//yƒRƒ“ƒXƒgƒ‰ƒNƒ^‚Åİ’èzvoltageƒNƒ‰ƒXƒ|ƒCƒ“ƒ^
-	_sequenceMap = ptSequenceMap;		//yƒRƒ“ƒXƒgƒ‰ƒNƒ^‚Åİ’èzsequenceMapƒNƒ‰ƒXƒ|ƒCƒ“ƒ^
+	_panelManager = ptPanelManager;		//panelManagerã‚¯ãƒ©ã‚¹ãƒã‚¤ãƒ³ã‚¿
+	_voltage = ptVoltage;						//ã€ã‚³ãƒ³ã‚¹ãƒˆãƒ©ã‚¯ã‚¿ã§è¨­å®šã€‘voltageã‚¯ãƒ©ã‚¹ãƒã‚¤ãƒ³ã‚¿
+	_sequenceMap = ptSequenceMap;		//ã€ã‚³ãƒ³ã‚¹ãƒˆãƒ©ã‚¯ã‚¿ã§è¨­å®šã€‘sequenceMapã‚¯ãƒ©ã‚¹ãƒã‚¤ãƒ³ã‚¿
 
 	_run_stop = RUN_STOP::STOP;
 	_midiclock_16note = MIDICLOCK_START_16NOTE;
 }
 
 /*
-ƒ‚[ƒh–¼‚ğæ“¾‚·‚é
-–ß‚è’lFƒ‚[ƒh–¼(Class MODE_NAME)
+ãƒ¢ãƒ¼ãƒ‰åã‚’å–å¾—ã™ã‚‹
+æˆ»ã‚Šå€¤ï¼šãƒ¢ãƒ¼ãƒ‰å(Class MODE_NAME)
 */
 MODE_NAME	mode::getModeName() {
 	return	_modeName;
 }
 
 /*
-ƒ‰ƒ“/ƒXƒgƒbƒvƒtƒ‰ƒO‚ğæ“¾‚·‚é
-–ß‚è’lFƒ‰ƒ“/ƒXƒgƒbƒvƒtƒ‰ƒO(Class RUN_STOP)
+ãƒ©ãƒ³/ã‚¹ãƒˆãƒƒãƒ—ãƒ•ãƒ©ã‚°ã‚’å–å¾—ã™ã‚‹
+æˆ»ã‚Šå€¤ï¼šãƒ©ãƒ³/ã‚¹ãƒˆãƒƒãƒ—ãƒ•ãƒ©ã‚°(Class RUN_STOP)
 */
 RUN_STOP	mode::getRunStop() {
 	return	_run_stop;

@@ -1,7 +1,7 @@
 #include "matrixSwitch.h"
 
 /*
-ƒRƒ“ƒXƒgƒ‰ƒNƒ^
+ã‚³ãƒ³ã‚¹ãƒˆãƒ©ã‚¯ã‚¿
 */
 matrixSwitch::matrixSwitch() {
     _scan = static_cast<int>(SwitchScan::Scan1st);
@@ -14,14 +14,14 @@ matrixSwitch::matrixSwitch() {
 }
 
 /*
-Œ»İ‚ÌƒXƒLƒƒƒ“ó‘Ô‚ğæ“¾
+ç¾åœ¨ã®ã‚¹ã‚­ãƒ£ãƒ³çŠ¶æ…‹ã‚’å–å¾—
 */
 int matrixSwitch::getScan() {
     return _scan;
 }
 
 /*
-Ÿ‚ÌƒXƒLƒƒƒ“ó‘Ô‚ğİ’è•æ“¾
+æ¬¡ã®ã‚¹ã‚­ãƒ£ãƒ³çŠ¶æ…‹ã‚’è¨­å®šï¼†å–å¾—
 */
 void matrixSwitch::nextScan() {
     if (_scan == static_cast<int>(SwitchScan::Finalize)) {
@@ -34,7 +34,7 @@ void matrixSwitch::nextScan() {
 
 
 /*
-w’èƒXƒLƒƒƒ“,s‚ÌƒXƒCƒbƒ`ó‘Ô—ñ‚ğİ’è‚·‚é
+æŒ‡å®šã‚¹ã‚­ãƒ£ãƒ³,è¡Œã®ã‚¹ã‚¤ãƒƒãƒçŠ¶æ…‹åˆ—ã‚’è¨­å®šã™ã‚‹
 */
 void matrixSwitch::setRow(int scan, int row, char value) {
 
@@ -52,7 +52,7 @@ void matrixSwitch::setRow(int scan, int row, char value) {
 }
 
 /*
-ƒXƒLƒƒƒ“‰ñ”‚æ‚èŒˆ’è‚ğİ’è‚·‚é
+ã‚¹ã‚­ãƒ£ãƒ³å›æ•°ã‚ˆã‚Šæ±ºå®šã‚’è¨­å®šã™ã‚‹
 */
 void matrixSwitch::finalize() {
 
@@ -69,27 +69,27 @@ void matrixSwitch::finalize() {
 
 
 /*
-ƒXƒLƒƒƒ“:Œˆ’è ‚æ‚èw’ès‚ÌƒXƒCƒbƒ`ó‘Ô—ñ‚ğæ“¾‚·‚é
+ã‚¹ã‚­ãƒ£ãƒ³:æ±ºå®š ã‚ˆã‚ŠæŒ‡å®šè¡Œã®ã‚¹ã‚¤ãƒƒãƒçŠ¶æ…‹åˆ—ã‚’å–å¾—ã™ã‚‹
 */
 char matrixSwitch::getRow(int row) {
     char _ret = 0x00;
     int _rowIndex = row * SW_COL_MAX;
     int _scanFinal = static_cast<int>(SwitchScan::Finalize);
 
-    //bit7-1‚ğ_ret‚Éİ’è
+    //bit7-1ã‚’_retã«è¨­å®š
     for (int i = SW_COL_MAX - 1;1 <= i;i--) {
         _ret = _ret + (char)_currentSwtich[_scanFinal][_rowIndex + i];
         _ret = _ret << 1;
     }
 
-    //bit0‚ğ_ret‚Éİ’è
+    //bit0ã‚’_retã«è¨­å®š
     _ret = _ret + (char)_currentSwtich[_scanFinal][_rowIndex];
 
     return _ret;
 }
 
 /*
-ƒXƒLƒƒƒ“:Œˆ’è ‚æ‚èw’èƒCƒ“ƒfƒbƒNƒX‚ÌƒXƒCƒbƒ`ó‘Ô‚ğæ“¾‚·‚é
+ã‚¹ã‚­ãƒ£ãƒ³:æ±ºå®š ã‚ˆã‚ŠæŒ‡å®šã‚¤ãƒ³ãƒ‡ãƒƒã‚¯ã‚¹ã®ã‚¹ã‚¤ãƒƒãƒçŠ¶æ…‹ã‚’å–å¾—ã™ã‚‹
 */
 bool matrixSwitch::get(int index) {
     return _currentSwtich[static_cast<int>(SwitchScan::Finalize)][index];

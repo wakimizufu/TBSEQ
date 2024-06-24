@@ -1,56 +1,56 @@
 /*
-MIDIŠÖ˜Aƒ}ƒNƒ‚ð’è‹`
+MIDIé–¢é€£ãƒžã‚¯ãƒ­ã‚’å®šç¾©
 */
 
 #ifndef midiConst_h
 #define midiConst_h
 
-//-----------------yMIDIƒƒbƒZ[ƒW:ƒXƒe[ƒ^ƒXƒoƒCƒgz-----------------
+//-----------------ã€MIDIãƒ¡ãƒƒã‚»ãƒ¼ã‚¸:ã‚¹ãƒ†ãƒ¼ã‚¿ã‚¹ãƒã‚¤ãƒˆã€‘-----------------
 
-//ƒm[ƒgƒIƒ“
+//ãƒŽãƒ¼ãƒˆã‚ªãƒ³
 #define MIDI_STATUS_NOTEON	0x80
 
-//ƒRƒ“ƒgƒ[ƒ‹ƒ`ƒFƒ“ƒW
+//ã‚³ãƒ³ãƒˆãƒ­ãƒ¼ãƒ«ãƒã‚§ãƒ³ã‚¸
 #define MIDI_STATUS_CONTROL	0xB0
 
-//MIDIƒNƒƒbƒN
+//MIDIã‚¯ãƒ­ãƒƒã‚¯
 #define MIDI_STATUS_CLOCK	0xF8
 
-//ƒXƒ^[ƒg
+//ã‚¹ã‚¿ãƒ¼ãƒˆ
 #define MIDI_STATUS_START	0xFA
 
-//ƒRƒ“ƒeƒBƒjƒ…[
+//ã‚³ãƒ³ãƒ†ã‚£ãƒ‹ãƒ¥ãƒ¼
 #define MIDI_STATUS_CONTINUE	0xFB
 
-//ƒXƒgƒbƒv
+//ã‚¹ãƒˆãƒƒãƒ—
 #define MIDI_STATUS_STOP	0xFC
 
-//-----------------yMIDIƒƒbƒZ[ƒW:ƒRƒ“ƒgƒ[ƒ‹ƒ`ƒFƒ“ƒWz-----------------
+//-----------------ã€MIDIãƒ¡ãƒƒã‚»ãƒ¼ã‚¸:ã‚³ãƒ³ãƒˆãƒ­ãƒ¼ãƒ«ãƒã‚§ãƒ³ã‚¸ã€‘-----------------
 
-//ƒ|ƒ‹ƒ^ƒƒ“ƒgOn/Off(63ˆÈ‰º:ƒIƒt 64ˆÈã:ƒIƒ“)
+//ãƒãƒ«ã‚¿ãƒ¡ãƒ³ãƒˆOn/Off(63ä»¥ä¸‹:ã‚ªãƒ• 64ä»¥ä¸Š:ã‚ªãƒ³)
 #define MIDI_CONTROL_PORTAMENT	0x41
 
-//ƒXƒ‰ƒCƒh(ƒ|ƒ‹ƒ^ƒƒ“ƒg)ƒtƒ‰ƒO‚ð(63ˆÈ‰º:ƒIƒt 64ˆÈã:ƒIƒ“)‚É‚·‚é‚Ì‚Å¶ƒVƒtƒg‚·‚é
+//ã‚¹ãƒ©ã‚¤ãƒ‰(ãƒãƒ«ã‚¿ãƒ¡ãƒ³ãƒˆ)ãƒ•ãƒ©ã‚°ã‚’(63ä»¥ä¸‹:ã‚ªãƒ• 64ä»¥ä¸Š:ã‚ªãƒ³)ã«ã™ã‚‹ã®ã§å·¦ã‚·ãƒ•ãƒˆã™ã‚‹
 #define PORTAMENT_LEFT_SHIFT 6
 
-//-----------------ymidiSender/midiReceverŠÖ˜Az-----------------
+//-----------------ã€midiSender/midiReceveré–¢é€£ã€‘-----------------
 
-//ƒm[ƒg‘—Mƒtƒ‰ƒO
+//ãƒŽãƒ¼ãƒˆé€ä¿¡ãƒ•ãƒ©ã‚°
 #define NOTE_ON true
 #define NOTE_OFF false
 
-//ƒAƒNƒZƒ“ƒgƒtƒ‰ƒO
+//ã‚¢ã‚¯ã‚»ãƒ³ãƒˆãƒ•ãƒ©ã‚°
 #define ACCENT_ON true
 #define ACCENT_OFF false
 
-//ƒXƒ‰ƒCƒh(ƒ|ƒ‹ƒ^ƒƒ“ƒg)ƒtƒ‰ƒO
+//ã‚¹ãƒ©ã‚¤ãƒ‰(ãƒãƒ«ã‚¿ãƒ¡ãƒ³ãƒˆ)ãƒ•ãƒ©ã‚°
 #define SLIDE_ON true
 #define SLIDE_OFF false
 
-//ƒxƒƒVƒeƒB ƒm[ƒgƒIƒ“ŽžŒÅ’è’l
+//ãƒ™ãƒ­ã‚·ãƒ†ã‚£ ãƒŽãƒ¼ãƒˆã‚ªãƒ³æ™‚å›ºå®šå€¤
 #define VEROCITY_ON	0x7F
 
-//ƒxƒƒVƒeƒB ƒm[ƒgƒIƒtŽžŒÅ’è’l
+//ãƒ™ãƒ­ã‚·ãƒ†ã‚£ ãƒŽãƒ¼ãƒˆã‚ªãƒ•æ™‚å›ºå®šå€¤
 #define VEROCITY_OFF	0x00
 
 #endif

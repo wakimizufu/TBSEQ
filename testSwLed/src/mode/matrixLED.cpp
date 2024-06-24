@@ -21,13 +21,13 @@ char matrixLED::getRow(int row) {
     char _ret = 0x00;
     int _rowIndex = row * LED_COL_MAX;
 
-    //bit7-1‚ğ_ret‚Éİ’è
+    //bit7-1ã‚’_retã«è¨­å®š
     for (int i = LED_COL_MAX - 1;1 <= i;i--) {
         _ret = _ret + (char)_currentLED[_rowIndex + i];
         _ret = _ret << 1;
     }
 
-    //bit0‚ğ_ret‚Éİ’è
+    //bit0ã‚’_retã«è¨­å®š
     _ret = _ret + (char)_currentLED[_rowIndex];
 
     return _ret;

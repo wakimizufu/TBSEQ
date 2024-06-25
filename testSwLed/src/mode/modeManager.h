@@ -18,6 +18,7 @@
 /* #include "Arduino.h" */
 /* #include "Wire.h" */
 #include "mode.h"
+#include "debugMode.h"
 #include "paternPlay.h"
 #include "paternWrite.h"
 #include "trackPlay.h"
@@ -67,12 +68,19 @@ class modeManager: public countTriger
 		*/
 	  MODE_NAME getModeName();
 		
+		/*
+		デバッグモードに変更する
+		=>デバッグモードから通常モードには戻らない仕様
+		戻り値：なし
+		*/
+	  void	changeDebugMode();
 
   private:
-	  mode * _currentMode;					//現在のモードクラス
-		panelManager * _panelManager;	//【コンストラクタで設定】panelManagerクラスポインタ
-		voltage * _voltage;						//【コンストラクタで設定】voltageクラスポインタ
-		sequenceMap _sequenceMap;			//シークエンスマップ
+	mode * _currentMode;			//現在のモードクラス
+	panelManager * _panelManager;	//【コンストラクタで設定】panelManagerクラスポインタ
+	voltage * _voltage;				//【コンストラクタで設定】voltageクラスポインタ
+	sequenceMap _sequenceMap;		//シークエンスマップ
+	bool _debugMode;				//デバッグフラグ (true->デバッグモード ,false->通常モード)
 
     unsigned int _clockCount;			//現在のMIDIクロックカウンタ値
     unsigned int _noteThredhold;	//音符カウンタ閾値

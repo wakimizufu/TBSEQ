@@ -23,6 +23,7 @@
 //modeモード名
 enum class MODE_NAME
 {
+DEBUG,				//デバッグモード
 PATERN_PLAY,		//パターンプレイ
 PATERN_WRITE,		//パターンライト
 TRACK_PLAY,			//トラックプレイ

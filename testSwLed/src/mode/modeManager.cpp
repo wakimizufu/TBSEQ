@@ -11,6 +11,7 @@ modeManager::modeManager(panelManager* ptPanelManager, voltage* ptVoltage, unsig
 
 	_panelManager = ptPanelManager;		//panelManagerクラスポインタ
 	_voltage = ptVoltage;						//【コンストラクタで設定】voltageクラスポインタ
+	_debugMode = false;						//デバッグフラグ (true->デバッグモード ,false->通常モード)
 
 	//現在のモードクラスの初期値を設定する
 	_currentMode = new paternWrite( _panelManager, _voltage, &_sequenceMap);
@@ -74,6 +75,18 @@ MODE_NAME modeManager::getModeName() {
 	return	_currentMode->getModeName();
 }
 
+/*
+デバッグモードに変更する
+=>デバッグモードから通常モードには戻らない仕様
+戻り値：なし
+*/
+void	modeManager::changeDebugMode(){
+	_debugMode = true;	//デバッグフラグ (true->デバッグモード ,false->通常モード)
+
+	//現在のモードクラスの初期値を設定する
+	_currentMode = new debugMode( _panelManager, _voltage, &_sequenceMap);
+}
+
 
 	  /*
 	  モード切替判定を行う
@@ -82,6 +95,11 @@ MODE_NAME modeManager::getModeName() {
 	  bool	_write;		判断時：ライトボタン状態
 	  */
 	  void	modeManager::_changeMode(bool _track, bool _patern, bool _write) {
+
+		  //デバッグモードなら切替処理は行わない
+		  if (_debugMode) {
+			return;
+		  }
 
 		  //ラン/ストップ状態がランなら切替処理は行わない
 		  if (RUN_STOP::STOP == _currentMode->getRunStop()) {

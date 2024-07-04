@@ -18,6 +18,8 @@ panelManager _panelManager(0);
 sequenceMap _sequenceMap;
 voltage _voltage;
 tempo _tempo(0);
+int note=0;
+bool bLED=false;
 
 //タイマー割り込み関連変数定義
 struct repeating_timer st_timer;
@@ -54,6 +56,7 @@ gpio_set_dir(PIN_SLIDE,GPIO_OUT);
 
 //I2C:I2C0に GP0(SDA)とGP1(SCL)を設定します。
 Wire.begin();     //I2C使用開始
+Wire.setClock(I2C_CLOCK);
 Wire.setSDA(I2C_WIRE0_SDA);   //I2C0はWireオブジェクトを使用します。
 Wire.setSCL(I2C_WIRE0_SCL);
 
@@ -70,21 +73,24 @@ add_repeating_timer_us(1000000, toggle_panelWR, NULL, &st_timer);
 //UART println()ポート
 Serial.begin(115200);
 Serial.println("Serial Start.");
+
+//voltage 初期化
+_voltage.reset();
 }
 
 void loop() {
 
-  int note=0;
-  _voltage.reset();
-
   //タイマー割り込み時処理
   if(timer_flag){
+    Serial.println("Interbal Timer.");
+    
     timer_flag = false;
-    gpio_put(LED_BUILTIN, !gpio_get(LED_BUILTIN)); // toggle the LED
+    bLED = !gpio_get(LED_BUILTIN);
+    gpio_put(LED_BUILTIN, bLED); // toggle the LED
 
-    _voltage.accent(gpio_get(LED_BUILTIN));
-    _voltage.gate(gpio_get(LED_BUILTIN));
-    _voltage.slide(gpio_get(LED_BUILTIN));
+    _voltage.accent(bLED);
+    _voltage.gate(bLED);
+    _voltage.slide(bLED);
 
     _voltage.cv(note);
     note++;

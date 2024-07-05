@@ -13,7 +13,8 @@
 #include "../mode/matrixLED.h"
 #include "../mode/matrixSwitch.h"
 
-//読み取り間隔カウンタ閾値 5msec (500ns * 10000カウント)
+//読み取り間隔カウンタ閾値 1msec (100us * 10カウント)
+//#define THD_PANEL_MANAGER 10
 #define THD_PANEL_MANAGER 10000
 
 //panelManagerシークエンスインデックス

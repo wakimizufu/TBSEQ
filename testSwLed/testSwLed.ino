@@ -68,7 +68,9 @@ pinMode(PIN_CV, OUTPUT);  //CV
 analogWrite(PIN_CV,100);
 
 //タイマー割り込み/* タイマーの初期化(割込み間隔はusで指定) */
-add_repeating_timer_us(1000000, toggle_panelWR, NULL, &st_timer);
+//add_repeating_timer_us(1000000, toggle_panelWR, NULL, &st_timer);
+add_repeating_timer_us(100, toggle_panelWR, NULL, &st_timer);
+
 
 //UART println()ポート
 Serial.begin(115200);
@@ -76,15 +78,69 @@ Serial.println("Serial Start.");
 
 //voltage 初期化
 _voltage.reset();
+
+
+//MCP23017 初期化 addr:0x20 マトリクススイッチ
+//⇒IODIRA(FF) 全て入力ポート
+Wire.beginTransmission(I2C_ADDR_SW);
+Wire.write(0x00); 
+Wire.write(0x00); 
+Wire.endTransmission();
+
+//⇒IODIRB(FF) 全て出力ポート
+Wire.beginTransmission(I2C_ADDR_SW);
+Wire.write(0x01); 
+Wire.write(0xFF); 
+Wire.endTransmission();
+
+
+//MCP23017 初期化 addr:0x21 LEDマトリクス
+//⇒IODIRA(00) 全て出力ポート
+Wire.beginTransmission(I2C_ADDR_LED);
+Wire.write(0x00); 
+Wire.write(0x00); 
+Wire.endTransmission();
+
+//⇒IODIRB(00) 全て出力ポート
+Wire.beginTransmission(I2C_ADDR_LED);
+Wire.write(0x01); 
+Wire.write(0x00); 
+Wire.endTransmission();
+
+/*
+//LED出力用アドレスRow選択書き込み
+//⇒GPIOA(12) Aポート値 (0x01, 0x02, 0x04, 0x08)
+Wire.beginTransmission(I2C_ADDR_LED);
+Wire.write(0x12); 
+Wire.write(0x08); 
+Wire.endTransmission();
+
+//LED出力用アドレスCol値書き込み
+//⇒GPIOB(13) Bポート値 0⇒点灯 1⇒消灯
+Wire.beginTransmission(I2C_ADDR_LED);
+Wire.write(0x13); 
+Wire.write(0x00); 
+Wire.endTransmission();
+*/
+
+_panelManager.setLEDRow(0,0x01);
+_panelManager.setLEDRow(1,0x86);
+_panelManager.setLEDRow(2,0x0F);
+_panelManager.setLEDRow(3,0x35);
+
 }
 
 void loop() {
 
   //タイマー割り込み時処理
   if(timer_flag){
-    Serial.println("Interbal Timer.");
-    
     timer_flag = false;
+
+    /*
+    Serial.print("Interbal Timer. note:");
+    Serial.println(note);
+    */
+
     bLED = !gpio_get(LED_BUILTIN);
     gpio_put(LED_BUILTIN, bLED); // toggle the LED
 
@@ -98,14 +154,13 @@ void loop() {
       note=0;
     }
 
-    /*
-    _tempo.countUp();
+    //_tempo.countUp();
     _panelManager.countUp();
 
     if(_panelManager.getSequenceUp()){
       _panelManager.clear();
     }
-    */
+    
 
   }
 }

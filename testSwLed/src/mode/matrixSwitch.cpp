@@ -76,6 +76,9 @@ char matrixSwitch::getRow(int row) {
     int _rowIndex = row * SW_COL_MAX;
     int _scanFinal = static_cast<int>(SwitchScan::Finalize);
 
+    if (_rowIndex >= SW_INDEX_MAX) {
+        _rowIndex = 0;
+    }
     //bit7-1を_retに設定
     for (int i = SW_COL_MAX - 1;1 <= i;i--) {
         _ret = _ret + (char)_currentSwtich[_scanFinal][_rowIndex + i];
@@ -92,5 +95,10 @@ char matrixSwitch::getRow(int row) {
 スキャン:決定 より指定インデックスのスイッチ状態を取得する
 */
 bool matrixSwitch::get(int index) {
+
+    if (index >= SW_INDEX_MAX) {
+    index = 0;
+    }
+    
     return _currentSwtich[static_cast<int>(SwitchScan::Finalize)][index];
 }

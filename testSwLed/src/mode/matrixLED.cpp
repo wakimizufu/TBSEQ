@@ -8,8 +8,11 @@ matrixLED::matrixLED(){
 }
 
 void matrixLED::setRow(int row, char value) {
-    int _rowIndex = row * LED_COL_MAX;
     char _maskbit;
+    int _rowIndex = row * LED_COL_MAX;
+    if (_rowIndex >= LED_INDEX_MAX) {
+        _rowIndex = 0;
+    }
 
     for (int i = 0;i < LED_COL_MAX;i++) {
         _maskbit = 1 << i;
@@ -20,6 +23,10 @@ void matrixLED::setRow(int row, char value) {
 char matrixLED::getRow(int row) {
     char _ret = 0x00;
     int _rowIndex = row * LED_COL_MAX;
+
+    if (_rowIndex >= LED_INDEX_MAX) {
+        _rowIndex = 0;
+    }
 
     //bit7-1を_retに設定
     for (int i = LED_COL_MAX - 1;1 <= i;i--) {

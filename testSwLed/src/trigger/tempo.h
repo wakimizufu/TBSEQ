@@ -7,8 +7,8 @@
 
 #include "../trigger/countTriger.h"
 
-//読み取り間隔カウンタ閾値 10msec (500ns * 20000カウント)
-#define THD_TEMPO 20000
+//読み取り間隔カウンタ閾値 32us (32us * 1カウント)
+#define THD_TEMPO 1
 #define TEMPO_CNV_ROW_MAX 256
 #define TEMPO_CNV_COL_MAX 2
 
@@ -37,15 +37,15 @@ class tempo: public countTriger
 	  int	getTempo();
 
 		/*
-		テンポに対する500nsカウント閾値を取得する
-		戻り値:500nsカウント閾値
+		テンポに対する32usカウント閾値を取得する
+		戻り値:32usカウント閾値
 		*/
 	  int	getCountThd();
 
   protected:
     int	_adc_value;	//ADC読み取り値
 
-		//ADC読み取り値(インデックス)⇒テンポ値/500nsカウント閾値配列({テンポ値,500nsカウンタ閾値})
+		//ADC読み取り値(インデックス)⇒テンポ値/32usカウント閾値配列({テンポ値,32usカウンタ閾値})
 		int convertArray[TEMPO_CNV_ROW_MAX][TEMPO_CNV_COL_MAX]	={
 			{	30	,	2778	},
 			{	31	,	2688	},

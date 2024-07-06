@@ -2,7 +2,7 @@
 #define boradConst_h
 
 //I2C
-const int I2C_CLOCK = 100000; //クロック周波数(100Khz)
+const int I2C_CLOCK = 400000; //クロック周波数(400Khz)
 
 const char I2C_ADDR_SW   = 0x20; //MCP27017:スイッチマトリクス
 const char I2C_ADDR_LED  = 0x21; //MCP27017:LEDマトリクス

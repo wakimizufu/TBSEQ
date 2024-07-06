@@ -42,13 +42,13 @@ void panelManager::trigger() {
         int _SW_Row = ((_seq_value * 2) + _seq_mod) % 4;
         int _SW_Row_Addr = 1<<_SW_Row;
 
-        Serial.print("panelManager::trigger.");
+        /*Serial.print("panelManager::trigger.");
         Serial.print(" _matrixSwitch.getScan():");
         Serial.print(_matrixSwitch.getScan());
         Serial.print(" _SW_Row:");
         Serial.print(_SW_Row,HEX);
         Serial.print(" _SW_Row_Addr:");
-        Serial.print(_SW_Row_Addr,HEX);
+        Serial.print(_SW_Row_Addr,HEX);*/
 
         if ( 0==_matrixSwitch.getScan()){
             _SW_Value = 0xFF;
@@ -82,10 +82,10 @@ void panelManager::trigger() {
         Wire.write(0x00);
         Wire.endTransmission();
 
-        Serial.print(" _SW_Value:");
+        /*Serial.print(" _SW_Value:");
         Serial.print(_SW_Value,HEX);
         Serial.print(" _SW_Value2:");
-        Serial.println(_SW_Value2,HEX);
+        Serial.println(_SW_Value2,HEX);*/
 
         _matrixSwitch.setRow(_matrixSwitch.getScan(), _SW_Row, static_cast<char>(_SW_Value));
         
@@ -140,13 +140,14 @@ void panelManager::trigger() {
 
             int _scanrow;
             for (_scanrow=0; _scanrow < SW_ROW_MAX ; _scanrow++){
-              Serial.print("_matrixSwitch.getRow(");
+              /*Serial.print("_matrixSwitch.getRow(");
               Serial.print(_scanrow);
               Serial.print("):");
-              Serial.println(static_cast<int>(_matrixSwitch.getRow(_scanrow)),HEX);
+              Serial.println(static_cast<int>(_matrixSwitch.getRow(_scanrow)),HEX);*/
             }
 
-            Serial.println("_matrixSwitch.finalize");
+            gpio_put(LED_BUILTIN, !gpio_get(LED_BUILTIN)); // toggle the LED
+            //Serial.println("_matrixSwitch.finalize");
         }
     }
 

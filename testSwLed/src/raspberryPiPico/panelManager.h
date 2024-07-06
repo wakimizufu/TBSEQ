@@ -13,9 +13,8 @@
 #include "../mode/matrixLED.h"
 #include "../mode/matrixSwitch.h"
 
-//読み取り間隔カウンタ閾値 1msec (100us * 10カウント)
-//#define THD_PANEL_MANAGER 10
-#define THD_PANEL_MANAGER 10000
+//読み取り間隔カウンタ閾値 1024us (32us * 100カウント)
+#define THD_PANEL_MANAGER 32
 
 //panelManagerシークエンスインデックス
 enum class PANEL_MANAGER_SEQ

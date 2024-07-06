@@ -67,9 +67,7 @@ analogWriteRange(256);  //解像度=8bit
 pinMode(PIN_CV, OUTPUT);  //CV
 analogWrite(PIN_CV,100);
 
-//タイマー割り込み/* タイマーの初期化(割込み間隔はusで指定) */
-//add_repeating_timer_us(1000000, toggle_panelWR, NULL, &st_timer);
-add_repeating_timer_us(100, toggle_panelWR, NULL, &st_timer);
+
 
 
 //UART println()ポート
@@ -128,6 +126,11 @@ _panelManager.setLEDRow(1,0x86);
 _panelManager.setLEDRow(2,0x0F);
 _panelManager.setLEDRow(3,0x35);
 
+gpio_put(LED_BUILTIN, true); // toggle the LED
+Serial.println("Start");
+
+//タイマー割り込み/* タイマーの初期化(割込み間隔はusで指定) */
+add_repeating_timer_us(-32, toggle_panelWR, NULL, &st_timer);
 }
 
 void loop() {
@@ -141,6 +144,7 @@ void loop() {
     Serial.println(note);
     */
 
+    /*
     bLED = !gpio_get(LED_BUILTIN);
     gpio_put(LED_BUILTIN, bLED); // toggle the LED
 
@@ -152,7 +156,7 @@ void loop() {
     note++;
     if ( note >= SIZE_NOTE2PWM){
       note=0;
-    }
+    }*/
 
     //_tempo.countUp();
     _panelManager.countUp();

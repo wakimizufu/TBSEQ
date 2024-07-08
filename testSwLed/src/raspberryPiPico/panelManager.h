@@ -6,6 +6,8 @@
 #define panelManager_h
 
 #include "pico/stdlib.h"
+#include "hardware/gpio.h"
+#include "hardware/adc.h"
 #include <Wire.h> 
 
 #include "boradConst.h"
@@ -13,7 +15,7 @@
 #include "../mode/matrixLED.h"
 #include "../mode/matrixSwitch.h"
 
-//読み取り間隔カウンタ閾値 1024us (32us * 100カウント)
+//読み取り間隔カウンタ閾値 1024us=1.024ms (32us * 32カウント)
 #define THD_PANEL_MANAGER 32
 
 //panelManagerシークエンスインデックス
@@ -31,6 +33,7 @@ LED_ROW2,
 SW_2ST_ROW2,
 SW_2ST_ROW3,
 LED_ROW3,
+TEMPO_ADC_READ,
 };
 
 
@@ -95,6 +98,12 @@ class panelManager: public countTriger
       char getSwitchRow(int row);
 
     /*
+    テンポADC値を取得する
+    戻り値：int テンポADC値(12bit)
+    */
+    int getTempoADC();
+
+    /*
     シークエンス1周完了フラグを完了待ちに変更
     */
       void clear();
@@ -107,6 +116,7 @@ class panelManager: public countTriger
   protected:
     int _sequence;      //シークエンスカウント
     bool _sequence_up;	//シークエンス1周完了フラグ true->シークエンス1周完了, false->完了待ち
+    int	_tempo_adc_value;	//テンポADC読み取り値
 
     matrixLED _matrixLED;       
     matrixSwitch _matrixSwitch;

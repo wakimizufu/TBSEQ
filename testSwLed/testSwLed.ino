@@ -1,4 +1,6 @@
 #include "pico/stdlib.h"
+#include "hardware/gpio.h"
+#include "hardware/adc.h"
 #include <Wire.h>  
 
 
@@ -10,6 +12,7 @@
  #include "src/raspberryPiPico/panelManager.h"
  #include "src/raspberryPiPico/voltage.h"
  #include "src/trigger/tempo.h"
+ #include "src/midi/midiClock.h"
  #include "src/mode/sequenceMap.h"
 
 
@@ -18,6 +21,7 @@ panelManager _panelManager(0);
 sequenceMap _sequenceMap;
 voltage _voltage;
 tempo _tempo(0);
+midiClock _midiClock(_tempo.getCountThd(),0);
 int note=0;
 bool bLED=false;
 
@@ -54,6 +58,13 @@ gpio_set_dir(PIN_ACCENT,GPIO_OUT);
 gpio_init(PIN_SLIDE); //SLIDE
 gpio_set_dir(PIN_SLIDE,GPIO_OUT);
 
+//ADC
+//Raspberry Pi Pico W サーミスタで気温を計算する
+//https://qiita.com/pipito-yukio/items/59f7a853c27bfbccd21e
+adc_init();
+adc_gpio_init(PIN_TEMPO_ADC);
+adc_select_input(0);  //PIN26=A0 の電圧をADCする
+
 //I2C:I2C0に GP0(SDA)とGP1(SCL)を設定します。
 Wire.begin();     //I2C使用開始
 Wire.setClock(I2C_CLOCK);
@@ -67,7 +78,8 @@ analogWriteRange(256);  //解像度=8bit
 pinMode(PIN_CV, OUTPUT);  //CV
 analogWrite(PIN_CV,100);
 
-
+//MIDIClock
+_midiClock.setTempo2Threshold(_tempo.getCountThd());
 
 
 //UART println()ポート
@@ -158,13 +170,25 @@ void loop() {
       note=0;
     }*/
 
-    //_tempo.countUp();
-    _panelManager.countUp();
+   //MIDIクロック
+    _midiClock.countUp();
+    if(_midiClock.getCountUp()){
+      _midiClock.clear();
+      _midiClock.setTempo2Threshold(_tempo.getCountThd());
+    }
 
+   //パネル情報更新
+    _panelManager.countUp();
     if(_panelManager.getSequenceUp()){
       _panelManager.clear();
     }
-    
+
+    //テンポ更新    
+    _tempo.countUp();
+    if(_tempo.getTempoUp()){
+      _tempo.clear();
+      _tempo.setTempo(_panelManager.getTempoADC());
+    }
 
   }
 }

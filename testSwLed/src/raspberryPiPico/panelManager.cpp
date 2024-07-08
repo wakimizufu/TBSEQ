@@ -7,6 +7,7 @@ start     :カウンタ開始値(デフォルト=0)
 panelManager::panelManager(unsigned int start = 0) :countTriger(THD_PANEL_MANAGER, start) {
     _sequence = static_cast<int>(PANEL_MANAGER_SEQ::SW_1ST_ROW0);
     _sequence_up = false;
+    _tempo_adc_value = 0;
 }
 
 /*
@@ -151,8 +152,15 @@ void panelManager::trigger() {
         }
     }
 
+    //テンポADC値読み取り
+    if (_sequence == static_cast<int>(PANEL_MANAGER_SEQ::TEMPO_ADC_READ)) {
+        _tempo_adc_value=adc_read();
+        Serial.print("_tempo_adc_value=adc_read() >>4:");
+        Serial.println(_tempo_adc_value>>4,HEX);
+    }
+
     //次回シークエンス&シークエンス1周完了フラグを設定
-    if (_sequence == static_cast<int>(PANEL_MANAGER_SEQ::LED_ROW3)) {
+    if (_sequence == static_cast<int>(PANEL_MANAGER_SEQ::TEMPO_ADC_READ)) {
         _sequence = static_cast<int>(PANEL_MANAGER_SEQ::SW_1ST_ROW0);
         _sequence_up = true;
     }
@@ -217,6 +225,15 @@ index：指定スイッチ行
 char panelManager::getSwitchRow(int row) {
     return _matrixSwitch.getRow(row);
 }
+
+/*
+テンポADC値を取得する
+戻り値：int テンポADC値(12bit)
+*/
+int panelManager::getTempoADC(){
+    return _tempo_adc_value;
+}
+
 
 /*
 シークエンス1周完了フラグを完了待ちに変更

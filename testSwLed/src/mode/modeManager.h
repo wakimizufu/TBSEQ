@@ -24,8 +24,8 @@
 #include "trackPlay.h"
 #include "trackWrite.h"
 
-//読み取り間隔カウンタ閾値 10msec (500ns * 20000カウント)
-#define THD_MODE_MANAGER 20000
+//読み取り間隔カウンタ閾値 10.24msec (32us * 320カウント)
+#define THD_MODE_MANAGER 320
 
 
 

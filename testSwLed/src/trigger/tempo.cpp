@@ -37,11 +37,14 @@ ADC値(12bit)を指定して32usカウント閾値を設定する
 value:ADC値(12bit)
 */
 void tempo::setTempo(int value){
-	_adc_value	=	value << 4; //12bit⇒8bitへ変換
+	_adc_value	=	value>>4; //12bit⇒8bitへ変換
 
 	if (_adc_value >= TEMPO_CNV_ROW_MAX) {
 		_adc_value = 0;
 	}
+
+	//SwitchBoxのボリュームの左右が逆なので反転する
+	_adc_value = 0xff - _adc_value;
 }
 
 /*

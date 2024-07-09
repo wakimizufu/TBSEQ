@@ -188,6 +188,9 @@ void loop() {
     if(_tempo.getTempoUp()){
       _tempo.clear();
       _tempo.setTempo(_panelManager.getTempoADC());
+
+      Serial.print("_tempo.getTempo():");
+      Serial.println(_tempo.getTempo());
     }
 
   }

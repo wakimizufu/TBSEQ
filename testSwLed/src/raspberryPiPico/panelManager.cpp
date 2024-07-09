@@ -155,8 +155,8 @@ void panelManager::trigger() {
     //テンポADC値読み取り
     if (_sequence == static_cast<int>(PANEL_MANAGER_SEQ::TEMPO_ADC_READ)) {
         _tempo_adc_value=adc_read();
-        Serial.print("_tempo_adc_value=adc_read() >>4:");
-        Serial.println(_tempo_adc_value>>4,HEX);
+        //Serial.print("_tempo_adc_value=adc_read() >>4:");
+        //Serial.println(_tempo_adc_value>>4,HEX);
     }
 
     //次回シークエンス&シークエンス1周完了フラグを設定

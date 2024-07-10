@@ -11,16 +11,16 @@ CV/GATE等の電圧出力を行う
 #include "boradConst.h"
 
 //GATE設定 (GATE_ON:5V ,GATE_OFF:0V)
-#define GATE_ON 1
-#define GATE_OFF 0
+#define GATE_ON true
+#define GATE_OFF false
 
 //ACCENT設定 (ACCENT_ON:5V ,ACCENT_OFF:0V)
-#define ACCENT_ON 1
-#define ACCENT_OFF 0
+#define ACCENT_ON true
+#define ACCENT_OFF false
 
 //SLIDE設定 (ACCENT_ON:5V ,ACCENT_OFF:0V)
-#define SLIDE_ON 1
-#define SLIDE_OFF 0
+#define SLIDE_ON true
+#define SLIDE_OFF false
 
 //配列:PWM値インデックス⇒MIDIノート値 配列サイズ
 #define SIZE_NOTE2PWM 48

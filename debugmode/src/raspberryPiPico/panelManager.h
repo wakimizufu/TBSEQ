@@ -53,6 +53,12 @@ class panelManager: public countTriger
       virtual void trigger();
 
     /*
+    各種I/Oへの初期化処理を行う
+    戻り値：なし
+    */
+    void init();
+
+    /*
     指定LEDインデックスへの設定を行う
     index：enum class LED
     value：true=>点灯 , false=>消灯

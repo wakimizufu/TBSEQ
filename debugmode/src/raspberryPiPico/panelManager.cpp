@@ -10,6 +10,96 @@ panelManager::panelManager(unsigned int start = 0) :countTriger(THD_PANEL_MANAGE
     _tempo_adc_value = 0;
 }
 
+
+/*
+各種I/Oへの初期化処理を行う
+戻り値：なし
+*/
+void panelManager::init(){
+
+//GPIO
+gpio_init(LED_BUILTIN); // set LED pin to OUTPUT
+gpio_set_dir(LED_BUILTIN,GPIO_OUT);
+
+gpio_init(PIN_GATE);  //GATE
+gpio_set_dir(PIN_GATE,GPIO_OUT);
+
+gpio_init(PIN_ACCENT); //ACCENT
+gpio_set_dir(PIN_ACCENT,GPIO_OUT);
+
+gpio_init(PIN_SLIDE); //SLIDE
+gpio_set_dir(PIN_SLIDE,GPIO_OUT);
+
+
+//ADC
+//Raspberry Pi Pico W サーミスタで気温を計算する
+//https://qiita.com/pipito-yukio/items/59f7a853c27bfbccd21e
+adc_init();
+adc_gpio_init(PIN_TEMPO_ADC);
+adc_select_input(0);  //PIN26=A0 の電圧をADCする
+
+
+//I2C:I2C0に GP0(SDA)とGP1(SCL)を設定します。
+Wire.begin();     //I2C使用開始
+Wire.setClock(I2C_CLOCK);
+Wire.setSDA(I2C_WIRE0_SDA);   //I2C0はWireオブジェクトを使用します。
+Wire.setSCL(I2C_WIRE0_SCL);
+
+//PWM
+//PWM信号とローパスフィルタを用いた簡易D/A：http://okawa-denshi.jp/blog/?th=2009072200
+analogWriteFreq(10000); //fc=10kHz
+analogWriteRange(256);  //解像度=8bit
+pinMode(PIN_CV, OUTPUT);  //CV
+analogWrite(PIN_CV,100);
+
+
+//MCP23017 初期化 addr:0x20 マトリクススイッチ
+//⇒IODIRA(FF) 全て入力ポート
+Wire.beginTransmission(I2C_ADDR_SW);
+Wire.write(0x00); 
+Wire.write(0x00); 
+Wire.endTransmission();
+
+//⇒IODIRB(FF) 全て出力ポート
+Wire.beginTransmission(I2C_ADDR_SW);
+Wire.write(0x01); 
+Wire.write(0xFF); 
+Wire.endTransmission();
+
+
+//MCP23017 初期化 addr:0x21 LEDマトリクス
+//⇒IODIRA(00) 全て出力ポート
+Wire.beginTransmission(I2C_ADDR_LED);
+Wire.write(0x00); 
+Wire.write(0x00); 
+Wire.endTransmission();
+
+//⇒IODIRB(00) 全て出力ポート
+Wire.beginTransmission(I2C_ADDR_LED);
+Wire.write(0x01); 
+Wire.write(0x00); 
+Wire.endTransmission();
+
+
+//初期化完了時LED設定
+gpio_put(LED_BUILTIN, false); // toggle the LED
+setLEDRow(LED_ROW_0,0xFF);
+setLEDRow(LED_ROW_1,0xFF);
+setLEDRow(LED_ROW_2,0xFF);
+setLEDRow(LED_ROW_3,0xFF);
+
+delay(1000);
+
+gpio_put(LED_BUILTIN, true); // toggle the LED
+setLEDRow(LED_ROW_0,0x00);
+setLEDRow(LED_ROW_1,0x00);
+setLEDRow(LED_ROW_2,0x00);
+setLEDRow(LED_ROW_3,0x00);
+
+}
+
+
+
 /*
 [仮想関数]カウンタ閾値に達した⇒MIDIクロックがカウントアップをセット
 */

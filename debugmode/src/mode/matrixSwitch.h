@@ -53,20 +53,20 @@ enum class Switch
     C2,         //row1,col4
     UP,         //row1,col5
     DOWN,       //row1,col6
-    AC,         //row1,col7
+    NOTE,       //row1,col7
     SLIDE,      //row2,col0
-    NOTE,       //row2,col1
-    STEP,       //row2,col2
+    ACC,        //row2,col1
+    NEXT,       //row2,col2
     BACK,       //row2,col3
-    PITCH,      //row2,col4
-    CLEAR,      //row2,col5
-    RUN,        //row2,col6
-    SW24,       //row2,col7
-    TRACK,      //row3,col0
-    PATTERN,    //row3,col1
-    PLAY,       //row3,col2
-    WRITE,      //row3,col3
-    FUNCTION,   //row3,col4
+    RUN_STOP,   //row2,col4
+    TRACK,      //row2,col5
+    PATTERN,    //row2,col6
+    PLAY_WRITE, //row2,col7
+    SW25,       //row3,col0
+    SW26,       //row3,col1
+    SW27,       //row3,col2
+    SW28,       //row3,col3
+    SW29,       //row3,col4
     SW30,       //row3,col5
     SW31,       //row3,col6
     SW32,       //row3,col7

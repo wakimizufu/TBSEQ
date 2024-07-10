@@ -82,6 +82,7 @@ void paternPlay::runClock() {
 		}
 
 	}
+
 }
 
 
@@ -154,7 +155,7 @@ void	paternPlay::execStopClock() {
 void	paternPlay::changeRunStop() {
 
 	//現在のラン/ストップSW状態
-	bool	nowRunSW = _panelManager->getSwitch(static_cast<int>(Switch::RUN));
+	bool	nowRunSW = _panelManager->getSwitch(static_cast<int>(Switch::RUN_STOP));
 
 	//前回状態=OFF,現在状態=ON ならモード切替を行う
 	if ((!_pushRunSW) && (nowRunSW)) {
@@ -162,14 +163,14 @@ void	paternPlay::changeRunStop() {
 		//ラン/ストップフラグ:ラン
 		if (_run_stop == RUN_STOP::STOP) {
 			_run_stop = RUN_STOP::RUN;
-			_panelManager->setLED(static_cast<int>(LED::RUN), true);
+			_panelManager->setLED(static_cast<int>(LED::RUN_STOP), true);
 			_midiclock_16note = MIDICLOCK_START_16NOTE;
 
 			//ラン/ストップフラグ:ストップ
 		}
 		else	if (_run_stop == RUN_STOP::RUN) {
 			_run_stop = RUN_STOP::STOP;
-			_panelManager->setLED(static_cast<int>(LED::RUN), false);
+			_panelManager->setLED(static_cast<int>(LED::RUN_STOP), false);
 			_midiclock_16note = MIDICLOCK_START_16NOTE;
 		}
 	}
@@ -180,52 +181,53 @@ void	paternPlay::changeRunStop() {
 }
 
 
-	  /*
-	  16音符毎MIDIクロックカウントが後半クロックになったらゲートをオフする
-	  */
-	  void paternPlay::_gate_off_16note() {
+/*
+16音符毎MIDIクロックカウントが後半クロックになったらゲートをオフする
+*/
+void paternPlay::_gate_off_16note() {
 
-		  bool	_sSlide = _sequenceMap->paterns[_pattern].steps[_step].slide;
+  bool	_sSlide = _sequenceMap->paterns[_pattern].steps[_step].slide;
 
-		  if ((_midiclock_16note == MIDICLOCK_GATEOFF_16NOTE) && (!_sSlide)) {
-			  _voltage->gate(false);
-		  }
-	  }
+  if ((_midiclock_16note == MIDICLOCK_GATEOFF_16NOTE) && (!_sSlide)) {
+	  _voltage->gate(false);
+  }
+}
 
-	  /*
-	  指定パターンに応じたclass:LED値を取得
-	  */
-	  int	paternPlay::_get_pattrn_LED(int pattern) {
-		  int	result = static_cast<int>(LED::C);
 
-		  switch (pattern) {
-		  case 0:
-			  result = static_cast<int>(LED::C);
-			  break;
-		  case 1:
-			  result = static_cast<int>(LED::D);
-			  break;
-		  case 2:
-			  result = static_cast<int>(LED::E);
-			  break;
-		  case 3:
-			  result = static_cast<int>(LED::F);
-			  break;
-		  case 4:
-			  result = static_cast<int>(LED::G);
-			  break;
-		  case 5:
-			  result = static_cast<int>(LED::A);
-			  break;
-		  case 6:
-			  result = static_cast<int>(LED::B);
-			  break;
-		  case 7:
-			  result = static_cast<int>(LED::C2);
-			  break;
-		  default:
-			  break;
-		  }
+/*
+指定パターンに応じたclass:LED値を取得
+*/
+int	paternPlay::_get_pattrn_LED(int pattern) {
+  int	result = static_cast<int>(LED::C);
 
-		  return	result;
-	  }
+  switch (pattern) {
+  case 0:
+	  result = static_cast<int>(LED::C);
+	  break;
+  case 1:
+	  result = static_cast<int>(LED::D);
+	  break;
+  case 2:
+	  result = static_cast<int>(LED::E);
+	  break;
+  case 3:
+	  result = static_cast<int>(LED::F);
+	  break;
+  case 4:
+	  result = static_cast<int>(LED::G);
+	  break;
+  case 5:
+	  result = static_cast<int>(LED::A);
+	  break;
+  case 6:
+	  result = static_cast<int>(LED::B);
+	  break;
+  case 7:
+	  result = static_cast<int>(LED::C2);
+	  break;
+  default:
+	  break;
+  }
+
+  return	result;
+}

@@ -4,7 +4,7 @@
 コンストラクタ
 ptPanelManager:panelManagerクラスポインタ
 ptVoltage     :voltageクラスポインタ
-noteThredhold :MIDIクロックカウンタ閾値
+【未使用】noteThredhold :MIDIクロックカウンタ閾値
 start         :カウンタ開始値(デフォルト=0)
 */
 modeManager::modeManager(panelManager* ptPanelManager, voltage* ptVoltage, unsigned int noteThredhold, unsigned int start = 0) :countTriger(THD_PANEL_MANAGER, start) {
@@ -41,6 +41,11 @@ MIDIクロックカウンタをインクリメントする
 戻り値：true=>MIDIクロックカウンタ＝閾値, false=>MIDIクロックカウンタ＜閾値
 */
 bool modeManager::clockCountUp() {
+	_currentMode->runClock();
+	return	true;
+
+
+/*
 	_clockCount++;
 
 	if (_noteThredhold == _clockCount) {
@@ -50,11 +55,12 @@ bool modeManager::clockCountUp() {
 	}
 
 	return	false;
+*/
 }
 
 
 /*
-MIDIクロックカウンタ閾値を設定する
+【未使用】MIDIクロックカウンタ閾値を設定する
 noteThredhold :MIDIクロックカウンタ閾値
 戻り値：なし
 */
@@ -88,75 +94,75 @@ void	modeManager::changeDebugMode(){
 }
 
 
-	  /*
-	  モード切替判定を行う
-	  bool	_track;		判断時：トラックボタン状態
-	  bool	_patern;	判断時：パターンボタン状態
-	  bool	_write;		判断時：ライトボタン状態
-	  */
-	  void	modeManager::_changeMode(bool _track, bool _patern, bool _write) {
+/*
+モード切替判定を行う
+bool	_track;		判断時：トラックボタン状態
+bool	_patern;	判断時：パターンボタン状態
+bool	_write;		判断時：ライトボタン状態
+*/
+void	modeManager::_changeMode(bool _track, bool _patern, bool _write) {
 
-		  //デバッグモードなら切替処理は行わない
-		  if (_debugMode) {
-			return;
-		  }
+	//デバッグモードなら切替処理は行わない
+	if (_debugMode) {
+	return;
+	}
 
-		  //ラン/ストップ状態がランなら切替処理は行わない
-		  if (RUN_STOP::STOP == _currentMode->getRunStop()) {
-			  return;
-		  }
+	//ラン/ストップ状態がランなら切替処理は行わない
+	if (RUN_STOP::STOP == _currentMode->getRunStop()) {
+		return;
+	}
 
-		  //現在のモード名を取得する
-		  MODE_NAME	mode = _currentMode->getModeName();
+	//現在のモード名を取得する
+	MODE_NAME	mode = _currentMode->getModeName();
 
-		  //ボタン押下状況に応じたモード名を設定
-		  MODE_NAME changeMode = MODE_NAME::NONE;
+	//ボタン押下状況に応じたモード名を設定
+	MODE_NAME changeMode = MODE_NAME::NONE;
 
-		  if (_patern && !_write) {
-			  changeMode = MODE_NAME::PATERN_PLAY;
+	if (_patern && !_write) {
+		changeMode = MODE_NAME::PATERN_PLAY;
 
-		  }
-		  else if (_patern && _write) {
-			  changeMode = MODE_NAME::PATERN_WRITE;
+	}
+	else if (_patern && _write) {
+		changeMode = MODE_NAME::PATERN_WRITE;
 
-		  }
-		  else if (_track && _write) {
-			  changeMode = MODE_NAME::TRACK_PLAY;
+	}
+	else if (_track && _write) {
+		changeMode = MODE_NAME::TRACK_PLAY;
 
-		  }
-		  else if (_track && _write) {
-			  changeMode = MODE_NAME::TRACK_WRITE;
-		  }
+	}
+	else if (_track && _write) {
+		changeMode = MODE_NAME::TRACK_WRITE;
+	}
 
-		  //モード未選択なら切替なし
-		  if (MODE_NAME::NONE == changeMode) {
-			  return;
+	//モード未選択なら切替なし
+	if (MODE_NAME::NONE == changeMode) {
+		return;
 
-			  //現在モードと切替時モードが一緒なら切替なし
-		  }
-		  else if (mode == changeMode) {
-			  return;
-		  }
+		//現在モードと切替時モードが一緒なら切替なし
+	}
+	else if (mode == changeMode) {
+		return;
+	}
 
 
-		  //異なるモードが選択されたらモードを切り替える
-		  delete	_currentMode;
+	//異なるモードが選択されたらモードを切り替える
+	delete	_currentMode;
 
-		  if (MODE_NAME::PATERN_PLAY == changeMode) {
-			  _currentMode = new paternPlay( _panelManager, _voltage, &_sequenceMap);
+	if (MODE_NAME::PATERN_PLAY == changeMode) {
+		_currentMode = new paternPlay( _panelManager, _voltage, &_sequenceMap);
 
-		  }
-		  else if (MODE_NAME::PATERN_WRITE == changeMode) {
-			  _currentMode = new paternWrite( _panelManager, _voltage, &_sequenceMap);
+	}
+	else if (MODE_NAME::PATERN_WRITE == changeMode) {
+		_currentMode = new paternWrite( _panelManager, _voltage, &_sequenceMap);
 
-		  }
-		  else if (MODE_NAME::TRACK_PLAY == changeMode) {
-			  //_currentMode = new trackPlay(	_currentMode	,	_panelManager	,	_voltage	,	&_sequenceMap	);
+	}
+	else if (MODE_NAME::TRACK_PLAY == changeMode) {
+		//_currentMode = new trackPlay(	_currentMode	,	_panelManager	,	_voltage	,	&_sequenceMap	);
 
-		  }
-		  else if (MODE_NAME::TRACK_WRITE == changeMode) {
-			  //_currentMode = new trackWrite(	_currentMode	,	_panelManager	,	_voltage	,	&_sequenceMap	);
+	}
+	else if (MODE_NAME::TRACK_WRITE == changeMode) {
+		//_currentMode = new trackWrite(	_currentMode	,	_panelManager	,	_voltage	,	&_sequenceMap	);
 
-		  }
+	}
 
-	  }
+}

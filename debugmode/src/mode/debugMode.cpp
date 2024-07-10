@@ -4,8 +4,25 @@ debugMode::debugMode(panelManager* ptPanelManager, voltage* ptVoltage, sequenceM
 
 	//各状態を初期値に変更する
 	_run_stop = RUN_STOP::STOP;		//ラン/ストップフラグ
-	_pattern = 0;	//指定パターン
-	_step = 0;	//現在ステップ
+    _midiClock=1;	//MIDIクロック数
+    _Step=1;		//現在ステップ
+
+    for ( int i=0 ; i<SW_ROW_MAX ; i++){
+		_currentSwtich[i]=false;
+	}
+
+  	//<LEDマトリクス>
+    //全部消灯
+	ptPanelManager->setLEDRow(LED_ROW_0,0x00);
+	ptPanelManager->setLEDRow(LED_ROW_1,0x00);
+	ptPanelManager->setLEDRow(LED_ROW_2,0x00);
+	ptPanelManager->setLEDRow(LED_ROW_3,0x00);
+
+    //<C::voltage>
+    //reset()
+    //<LED gate/acc/slide>
+    //全部消灯
+	ptVoltage->init();
 }
 
 /*
@@ -13,6 +30,35 @@ debugMode::debugMode(panelManager* ptPanelManager, voltage* ptVoltage, sequenceM
 */
 void debugMode::runSequence() {
 
+	int i;
+	bool keyOn = false;
+
+	//現状入力情報を取得
+	//ボタン押下中変数と比較
+	for ( i=0 ; i<SW_INDEX_MAX ; i++){
+		if ( ptPanelManager->get(i) != _currentSwtich[i] ){
+			currentSwtich[i] = ptPanelManager->get(i);
+		}
+
+		keyOn = keyOn || currentSwtich[i];
+
+		//<LEDマトリクス>
+		//ボタン押下中変数の内容で表示を更新する
+		ptPanelManager->setLED(i,currentSwtich[i]);
+	}
+
+
+	/*
+    <LED acc>
+    ボタン押下中変数で1個以上押下あり
+　　⇒点灯
+    ボタン押下中変数で押下なし
+　　⇒消灯
+	*/
+	ptVoltage->gate(keyOn);
+
+
+	/*
 	//ラン/ストップフラグ:ラン
 	if (_run_stop == RUN_STOP::RUN) {
 		execRunSequence();
@@ -22,6 +68,7 @@ void debugMode::runSequence() {
 	else	if (_run_stop == RUN_STOP::STOP) {
 		execStopSequence();
 	}
+	*/
 }
 
 
@@ -30,38 +77,41 @@ void debugMode::runSequence() {
 */
 void debugMode::runClock() {
 
+	/*
 	//ラン/ストップフラグ:ラン
 	if (_run_stop == RUN_STOP::RUN) {
 		execRunClock();
 
 		//ラン/ストップフラグ:ストップ
 	}
-	else	if (_run_stop == RUN_STOP::STOP) {
+	else	if (_r
+	un_stop == RUN_STOP::STOP) {
 		execStopClock();
 	}
+	*/
 }
 
 
 /*
-ラン/ストップフラグ:ラン シークエンス処理を実行
+【未使用】ラン/ストップフラグ:ラン シークエンス処理を実行
 */
 void	debugMode::execRunSequence() {
 }
 
 /*
-ラン/ストップフラグ:ストップ シークエンス処理を実行
+【未使用】ラン/ストップフラグ:ストップ シークエンス処理を実行
 */
 void	debugMode::execStopSequence() {
 }
 
 /*
-ラン/ストップフラグ:ラン MIDIクロックカウント処理を実行
+【未使用】ラン/ストップフラグ:ラン MIDIクロックカウント処理を実行
 */
 void	debugMode::execRunClock() {
 }
 
 /*
-ラン/ストップフラグ:ストップ MIDIクロックカウント処理を実行
+【未使用】ラン/ストップフラグ:ストップ MIDIクロックカウント処理を実行
 */
 void	debugMode::execStopClock() {
 }

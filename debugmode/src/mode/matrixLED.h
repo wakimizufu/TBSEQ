@@ -40,15 +40,15 @@ enum class LED
     C2,         //col1,LED4
     UP,         //col1,LED5
     DOWN,       //col1,LED6
-    AC,         //col1,LED7
+    NOTE,       //col1,LED7
     SLIDE,      //col2,LED0
-    NOTE,       //col2,LED1
-    PITCH,      //col2,LED2
-    RUN,        //col2,LED3
-    TRACK,      //col2,LED4
-    PATTERN,    //col2,LED5
-    PLAY,       //col2,LED6
-    WRITE,      //col2,LED7
+    ACC,        //col2,LED1
+    RUN_STOP,   //col2,LED2
+    LED20,      //col2,LED3
+    LED21,      //col2,LED4
+    TRACK,      //col2,LED5
+    PATTERN,    //col2,LED6
+    PLAY_WRITE, //col2,LED7
     LED25,      //col3,LED0
     LED26,      //col3,LED1
     LED27,      //col3,LED2

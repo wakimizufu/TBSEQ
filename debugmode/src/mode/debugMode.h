@@ -50,8 +50,9 @@ class debugMode: public mode{
 		void	execStopClock();
 
     private:
-    	int	_pattern;	//指定パターン
-    	int	_step;		//現在ステップ
+    	int	_midiClock;	//MIDIクロック数
+    	int	_Step;		//現在ステップ
+		bool _currentSwtich[SW_INDEX_MAX];	//ボタン押下中
 };
 
 

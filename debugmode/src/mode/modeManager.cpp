@@ -7,7 +7,7 @@ ptVoltage     :voltageクラスポインタ
 【未使用】noteThredhold :MIDIクロックカウンタ閾値
 start         :カウンタ開始値(デフォルト=0)
 */
-modeManager::modeManager(panelManager* ptPanelManager, voltage* ptVoltage, unsigned int noteThredhold, unsigned int start = 0) :countTriger(THD_PANEL_MANAGER, start) {
+modeManager::modeManager(panelManager* ptPanelManager, voltage* ptVoltage, int noteThredhold, int start = 0) :countTriger(THD_PANEL_MANAGER, start) {
 
 	_panelManager = ptPanelManager;		//panelManagerクラスポインタ
 	_voltage = ptVoltage;						//【コンストラクタで設定】voltageクラスポインタ
@@ -64,7 +64,7 @@ bool modeManager::clockCountUp() {
 noteThredhold :MIDIクロックカウンタ閾値
 戻り値：なし
 */
-void	modeManager::setNoteThredhold(unsigned int noteThredhold) {
+void	modeManager::setNoteThredhold(int noteThredhold) {
 	_noteThredhold = noteThredhold;
 
 	if (_noteThredhold <= _clockCount) {

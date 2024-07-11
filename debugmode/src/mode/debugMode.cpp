@@ -47,7 +47,6 @@ void debugMode::runSequence() {
 		ptPanelManager->setLED(i,currentSwtich[i]);
 	}
 
-
 	/*
     <LED acc>
     ボタン押下中変数で1個以上押下あり
@@ -56,7 +55,6 @@ void debugMode::runSequence() {
 　　⇒消灯
 	*/
 	ptVoltage->gate(keyOn);
-
 
 	/*
 	//ラン/ストップフラグ:ラン
@@ -76,6 +74,54 @@ void debugMode::runSequence() {
 [仮想関数]MIDIクロックカウント閾値達成時に実行されるアプリケーションを実施する
 */
 void debugMode::runClock() {
+
+//・1=MIDIクロック数mod6 ⇒16分音符スタート
+	/*
+    <LED gate>
+      ⇒1,2=MIDIステップ数mod
+        ⇒⇒点灯
+      ⇒0.3=MIDIステップ数mod4 
+        ⇒⇒点灯
+	*/
+	int _clockMod = _Step % 6;
+    switch (_clockMod)
+	{
+	case 1:
+	case 2:
+	case 3:
+		ptVoltage->gate(GATE_ON);
+		break;
+	case 4:
+	case 5:
+	case 0:	
+		ptVoltage->gate(GATE_OFF);
+		break;
+	default:
+		break;
+	}
+
+	/*    
+	<MIDIステップ数>
+      ⇒MIDIステップ数+1
+      ⇒MIDIステップ>16なら1に設定
+	*/
+	_Step++;
+	if (_Step > MIDI_STEP_MAX){
+		_Step = MIDI_STEP_START;
+	}
+
+	/*
+	・MIDIクロック数
+	<MIDIクロック数>
+	⇒MIDIクロック数+1
+	⇒MIDIクロック>96なら1に設定
+	*/
+	_midiClock++;
+	if (_midiClock > MIDICLOCK_MAX){
+		_midiClock = MIDICLOCK_START;
+	}
+
+
 
 	/*
 	//ラン/ストップフラグ:ラン

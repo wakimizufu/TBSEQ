@@ -19,6 +19,18 @@
 //16音符毎MIDIクロックカウント 16分音符:6クロック 最終クロック
 #define MIDICLOCK_STOP_16NOTE	6
 
+//16音符毎MIDIクロックカウント 最大クロック数
+#define MIDICLOCK_MAX	96
+
+//16音符毎MIDIクロックカウント 開始クロック
+#define MIDICLOCK_START	1
+
+
+//16音符カウント 16分音符:最大ステップ数
+#define MIDI_STEP_MAX	16
+
+//16音符カウント 16分音符:開始ステップ数
+#define MIDI_STEP_START	1
 
 //modeモード名
 enum class MODE_NAME

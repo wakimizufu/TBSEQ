@@ -40,7 +40,7 @@ class modeManager: public countTriger
 		noteThredhold :MIDIクロックカウンタ閾値
 		start         :カウンタ開始値(デフォルト=0)
 		*/
-	  modeManager(panelManager* ptPanelManager, voltage* ptVoltage, unsigned int noteThredhold, unsigned int start);
+	  modeManager(panelManager* ptPanelManager, voltage* ptVoltage, int noteThredhold, int start);
 
 		/*
 		[仮想関数]カウンタ閾値に達した⇒MIDIクロックがカウントアップをセット
@@ -60,7 +60,7 @@ class modeManager: public countTriger
 		noteThredhold :MIDIクロックカウンタ閾値
 		戻り値：なし
 		*/
-	  void	setNoteThredhold(unsigned int noteThredhold);
+	  void	setNoteThredhold(int noteThredhold);
 
 		/*
 		押下されたボタン状況を反映する(true->押下中,false->未押下)
@@ -82,8 +82,8 @@ class modeManager: public countTriger
 	sequenceMap _sequenceMap;		//シークエンスマップ
 	bool _debugMode;				//デバッグフラグ (true->デバッグモード ,false->通常モード)
 
-    unsigned int _clockCount;			//現在のMIDIクロックカウンタ値
-    unsigned int _noteThredhold;	//音符カウンタ閾値
+    int _clockCount;			//現在のMIDIクロックカウンタ値
+    int _noteThredhold;	//音符カウンタ閾値
 
 		/*
 		モード切替判定を行う

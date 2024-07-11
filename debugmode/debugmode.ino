@@ -14,6 +14,7 @@
  #include "src/trigger/tempo.h"
  #include "src/midi/midiClock.h"
  #include "src/mode/sequenceMap.h"
+ #include "src/mode/modeManager.h"
 
 
 //グローバル変数定義
@@ -21,7 +22,7 @@ panelManager _panelManager(0);
 voltage _voltage;
 tempo _tempo(0);
 midiClock _midiClock(_tempo.getCountThd(),0);
-modeManager _modeManager(_panelManager,_voltage,0,0);
+modeManager _modeManager( &_panelManager, &_voltage,0,0);
 
 //タイマー割り込み関連変数定義
 struct repeating_timer st_timer;

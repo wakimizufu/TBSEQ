@@ -7,7 +7,7 @@ ptVoltage     :voltageクラスポインタ
 【未使用】noteThredhold :MIDIクロックカウンタ閾値
 start         :カウンタ開始値(デフォルト=0)
 */
-modeManager::modeManager(panelManager* ptPanelManager, voltage* ptVoltage, int noteThredhold, int start = 0) :countTriger(THD_PANEL_MANAGER, start) {
+modeManager::modeManager(panelManager* ptPanelManager, voltage* ptVoltage, int noteThredhold, int start = 0) :countTriger(THD_MODE_MANAGER, start) {
 
 	_panelManager = ptPanelManager;		//panelManagerクラスポインタ
 	_voltage = ptVoltage;						//【コンストラクタで設定】voltageクラスポインタ
@@ -26,7 +26,7 @@ modeManager::modeManager(panelManager* ptPanelManager, voltage* ptVoltage, int n
 void modeManager::trigger() {
 	bool _track = _panelManager->getSwitch(static_cast<int>(Switch::TRACK));
 	bool _patern = _panelManager->getSwitch(static_cast<int>(Switch::PATTERN));
-	bool _write = _panelManager->getSwitch(static_cast<int>(Switch::WRITE));
+	bool _write = _panelManager->getSwitch(static_cast<int>(Switch::PLAY_WRITE));
 
 	//モード切替判定を行う
 	_changeMode(_track, _patern, _write);

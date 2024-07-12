@@ -6,8 +6,9 @@ debugMode::debugMode(panelManager* ptPanelManager, voltage* ptVoltage, sequenceM
 	_run_stop = RUN_STOP::STOP;		//ラン/ストップフラグ
     _midiClock=1;	//MIDIクロック数
     _Step=1;		//現在ステップ
+	_tempoLed=false;//テンポ用LED
 
-    for ( int i=0 ; i<SW_ROW_MAX ; i++){
+    for ( int i=0 ; i<SW_INDEX_MAX ; i++){
 		_currentSwtich[i]=false;
 	}
 
@@ -22,7 +23,7 @@ debugMode::debugMode(panelManager* ptPanelManager, voltage* ptVoltage, sequenceM
     //reset()
     //<LED gate/acc/slide>
     //全部消灯
-	ptVoltage->init();
+	ptVoltage->reset();
 }
 
 /*
@@ -36,15 +37,26 @@ void debugMode::runSequence() {
 	//現状入力情報を取得
 	//ボタン押下中変数と比較
 	for ( i=0 ; i<SW_INDEX_MAX ; i++){
-		if ( ptPanelManager->get(i) != _currentSwtich[i] ){
-			currentSwtich[i] = ptPanelManager->get(i);
+		if ( _panelManager->getSwitch(i) != _currentSwtich[i] ){
+
+			Serial.print("debugMode::runSequence() change index:");
+			Serial.print(i);
+			Serial.print(" _currentSwtich[i]:");
+			Serial.print(_currentSwtich[i]);
+			Serial.print(" _panelManager->getSwitch(i):");
+			Serial.print(_panelManager->getSwitch(i));
+			Serial.println("");
+
+			_currentSwtich[i] = _panelManager->getSwitch(i);
+
+			//<LEDマトリクス>
+			//ボタン押下中変数の内容で表示を更新する
+			_panelManager->setLED(i,_currentSwtich[i]);
+
+
 		}
 
-		keyOn = keyOn || currentSwtich[i];
-
-		//<LEDマトリクス>
-		//ボタン押下中変数の内容で表示を更新する
-		ptPanelManager->setLED(i,currentSwtich[i]);
+		keyOn = keyOn || _currentSwtich[i];
 	}
 
 	/*
@@ -54,7 +66,7 @@ void debugMode::runSequence() {
     ボタン押下中変数で押下なし
 　　⇒消灯
 	*/
-	ptVoltage->gate(keyOn);
+	_voltage->accent(keyOn);
 
 	/*
 	//ラン/ストップフラグ:ラン
@@ -83,22 +95,10 @@ void debugMode::runClock() {
       ⇒0.3=MIDIステップ数mod4 
         ⇒⇒点灯
 	*/
-	int _clockMod = _Step % 6;
-    switch (_clockMod)
-	{
-	case 1:
-	case 2:
-	case 3:
-		ptVoltage->gate(GATE_ON);
-		break;
-	case 4:
-	case 5:
-	case 0:	
-		ptVoltage->gate(GATE_OFF);
-		break;
-	default:
-		break;
+	if ( 1== _Step ){
+	_tempoLed =	!_tempoLed;
 	}
+	_voltage->gate(_tempoLed);
 
 	/*    
 	<MIDIステップ数>

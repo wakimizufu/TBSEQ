@@ -16,7 +16,7 @@
 #include "../mode/matrixSwitch.h"
 
 //読み取り間隔カウンタ閾値 1024us=1.024ms (32us * 32カウント)
-#define THD_PANEL_MANAGER 32
+#define THD_PANEL_MANAGER 256
 
 //panelManagerシークエンスインデックス
 enum class PANEL_MANAGER_SEQ

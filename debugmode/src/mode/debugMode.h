@@ -7,6 +7,7 @@
 
 #include "mode.h"
 
+
 class debugMode: public mode{
 
     public:
@@ -53,6 +54,7 @@ class debugMode: public mode{
     	int	_midiClock;	//MIDIクロック数(1-96)
     	int	_Step;		//現在ステップ(1-16)
 		bool _currentSwtich[SW_INDEX_MAX];	//ボタン押下中
+		bool _tempoLed; //テンポ用LED
 };
 
 

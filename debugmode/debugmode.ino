@@ -52,7 +52,9 @@ _midiClock.setTempo2Threshold(_tempo.getCountThd());
 _modeManager.changeDebugMode();
 
 //タイマー割り込み/* タイマーの初期化(割込み間隔はusで指定) */
+//add_repeating_timer_us(-32, toggle_panelWR, NULL, &st_timer);
 add_repeating_timer_us(-32, toggle_panelWR, NULL, &st_timer);
+
 
 Serial.println("setup() finish");
 }

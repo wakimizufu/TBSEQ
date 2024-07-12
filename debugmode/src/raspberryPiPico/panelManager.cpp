@@ -88,7 +88,7 @@ setLEDRow(LED_ROW_1,0xFF);
 setLEDRow(LED_ROW_2,0xFF);
 setLEDRow(LED_ROW_3,0xFF);
 
-delay(1000);
+delay(5000);
 
 gpio_put(LED_BUILTIN, true); // toggle the LED
 setLEDRow(LED_ROW_0,0x00);
@@ -229,13 +229,15 @@ void panelManager::trigger() {
             _matrixSwitch.finalize();
             _matrixSwitch.nextScan();
 
-            int _scanrow;
+            /*int _scanrow;
             for (_scanrow=0; _scanrow < SW_ROW_MAX ; _scanrow++){
-              /*Serial.print("_matrixSwitch.getRow(");
-              Serial.print(_scanrow);
-              Serial.print("):");
-              Serial.println(static_cast<int>(_matrixSwitch.getRow(_scanrow)),HEX);*/
-            }
+              if ( 0x00 != _matrixSwitch.getRow(_scanrow)){
+                Serial.print("_matrixSwitch.getRow(");
+                Serial.print(_scanrow);
+                Serial.print("):");
+                Serial.println(static_cast<int>(_matrixSwitch.getRow(_scanrow)),HEX);
+              }
+            }*/
 
             gpio_put(LED_BUILTIN, !gpio_get(LED_BUILTIN)); // toggle the LED
             //Serial.println("_matrixSwitch.finalize");

@@ -5,7 +5,7 @@
 start     :カウンタ開始値(デフォルト=0)
 */
 panelManager::panelManager(unsigned int start = 0) :countTriger(THD_PANEL_MANAGER, start) {
-    _sequence = static_cast<int>(PANEL_MANAGER_SEQ::SW_1ST_ROW0);
+    _sequenceList_index = 0;
     _sequence_up = false;
     _tempo_adc_value = 0;
 }
@@ -104,8 +104,14 @@ setLEDRow(LED_ROW_3,0x00);
 [仮想関数]カウンタ閾値に達した⇒MIDIクロックがカウントアップをセット
 */
 void panelManager::trigger() {
-    int _seq_value = _sequence / 3;
-    int _seq_mod = _sequence % 3;
+
+    //シーケンスインデックスが末尾まで進んだら先頭に戻す
+    if ( _sequenceList_index >= sizeof(_sequenceList)){
+        _sequenceList_index = 0;
+    }
+
+    //シーケンスリストより実施シーケンスを取得
+    PANEL_MANAGER_SEQ _sequence=_sequenceList[_sequenceList_index];
 
     /*
     Serial.print("panelManager::trigger. _sequence:");
@@ -117,21 +123,42 @@ void panelManager::trigger() {
     */
 
     //スイッチ入力
-    if ((_sequence == static_cast<int>(PANEL_MANAGER_SEQ::SW_1ST_ROW0)) ||
-        (_sequence == static_cast<int>(PANEL_MANAGER_SEQ::SW_1ST_ROW1)) ||
-        (_sequence == static_cast<int>(PANEL_MANAGER_SEQ::SW_1ST_ROW2)) ||
-        (_sequence == static_cast<int>(PANEL_MANAGER_SEQ::SW_1ST_ROW3)) ||
-        (_sequence == static_cast<int>(PANEL_MANAGER_SEQ::SW_2ST_ROW0)) ||
-        (_sequence == static_cast<int>(PANEL_MANAGER_SEQ::SW_2ST_ROW1)) ||
-        (_sequence == static_cast<int>(PANEL_MANAGER_SEQ::SW_2ST_ROW2)) ||
-        (_sequence == static_cast<int>(PANEL_MANAGER_SEQ::SW_2ST_ROW3))) {
+    if ((_sequence == PANEL_MANAGER_SEQ::SW_1ST_ROW0) ||
+        (_sequence == PANEL_MANAGER_SEQ::SW_1ST_ROW1) ||
+        (_sequence == PANEL_MANAGER_SEQ::SW_1ST_ROW2) ||
+        (_sequence == PANEL_MANAGER_SEQ::SW_1ST_ROW3) ||
+        (_sequence == PANEL_MANAGER_SEQ::SW_2ST_ROW0) ||
+        (_sequence == PANEL_MANAGER_SEQ::SW_2ST_ROW1) ||
+        (_sequence == PANEL_MANAGER_SEQ::SW_2ST_ROW2) ||
+        (_sequence == PANEL_MANAGER_SEQ::SW_2ST_ROW3)) {
 
         //I2C::スイッチ入力
         int _SW_Value = 0x00;
-        int _SW_Value2 = 0x00;
-        
-        int _SW_Row = ((_seq_value * 2) + _seq_mod) % 4;
-        int _SW_Row_Addr = 1<<_SW_Row;
+        int _SW_Row = 0;
+        int _SW_Row_Addr = 0;
+
+        if ((_sequence == PANEL_MANAGER_SEQ::SW_1ST_ROW0) ||
+           (_sequence == PANEL_MANAGER_SEQ::SW_2ST_ROW0)) {
+            _SW_Row = 0;
+            _SW_Row_Addr = 0x01;
+            }
+        else if ((_sequence == PANEL_MANAGER_SEQ::SW_1ST_ROW1) ||
+                (_sequence == PANEL_MANAGER_SEQ::SW_2ST_ROW1)) {
+            _SW_Row = 1;
+            _SW_Row_Addr = 0x02;
+            }
+        else if ((_sequence == PANEL_MANAGER_SEQ::SW_1ST_ROW2) ||
+                (_sequence == PANEL_MANAGER_SEQ::SW_2ST_ROW2)) {
+            _SW_Row = 2;
+            _SW_Row_Addr = 0x04;
+            }
+        else if ((_sequence == PANEL_MANAGER_SEQ::SW_1ST_ROW3) ||
+                (_sequence == PANEL_MANAGER_SEQ::SW_2ST_ROW3)) {
+            _SW_Row = 3;
+            _SW_Row_Addr = 0x08;
+            }
+
+
 
         /*Serial.print("panelManager::trigger.");
         Serial.print(" _matrixSwitch.getScan():");
@@ -140,13 +167,6 @@ void panelManager::trigger() {
         Serial.print(_SW_Row,HEX);
         Serial.print(" _SW_Row_Addr:");
         Serial.print(_SW_Row_Addr,HEX);*/
-
-        if ( 0==_matrixSwitch.getScan()){
-            _SW_Value = 0xFF;
-        } else if ( 1==_matrixSwitch.getScan()){
-            _SW_Value = 0xD5;
-        }
-
 
         //スイッチ入力用アドレスRow選択書き込み
         //⇒GPIOA(12) Aポート値 (0x01, 0x02, 0x04, 0x08)
@@ -184,21 +204,35 @@ void panelManager::trigger() {
 
 
     //LED出力
-    if ((_sequence == static_cast<int>(PANEL_MANAGER_SEQ::LED_ROW0)) ||
-        (_sequence == static_cast<int>(PANEL_MANAGER_SEQ::LED_ROW1)) ||
-        (_sequence == static_cast<int>(PANEL_MANAGER_SEQ::LED_ROW2)) ||
-        (_sequence == static_cast<int>(PANEL_MANAGER_SEQ::LED_ROW3))) {
+    if ((_sequence == PANEL_MANAGER_SEQ::LED_ROW0) ||
+        (_sequence == PANEL_MANAGER_SEQ::LED_ROW1) ||
+        (_sequence == PANEL_MANAGER_SEQ::LED_ROW2) ||
+        (_sequence == PANEL_MANAGER_SEQ::LED_ROW3)) {
 
-        /*Serial.print("panelManager::trigger. _seq_value:");
-        Serial.print(_seq_value);*/
+
+        int _LED_Row = 0;
+        int _LED_Row_value = 0;
+
+        if (_sequence == PANEL_MANAGER_SEQ::LED_ROW0) {
+            _LED_Row = 0;
+            _LED_Row_value = 0x01;
+            }
+        else if (_sequence == PANEL_MANAGER_SEQ::LED_ROW1) {
+            _LED_Row = 1;
+            _LED_Row_value = 0x02;
+            }
+        else if (_sequence == PANEL_MANAGER_SEQ::LED_ROW2)  {
+            _LED_Row = 2;
+            _LED_Row_value = 0x04;
+            }
+        else if (_sequence == PANEL_MANAGER_SEQ::LED_ROW3) {
+            _LED_Row = 3;
+            _LED_Row_value = 0x08;
+            }
+
 
         //I2C::LED出力 
-        int  _LED_Row_value = 1<<_seq_value;
-        /*Serial.print(" _LED_Row_value:");
-        Serial.print(_LED_Row_value,HEX);*/
-
-        //char _LED_Col_value = _matrixLED.getRow(_seq_value);   
-        int _LED_Col_value = static_cast<int>(_matrixLED.getRow(_seq_value));   
+        int _LED_Col_value = static_cast<int>(_matrixLED.getRow(_LED_Row));   
         /*Serial.print(" _LED_Col_value:");
         Serial.print(_LED_Col_value,HEX);
         Serial.print(" invert:");
@@ -220,8 +254,8 @@ void panelManager::trigger() {
     }
 
     //次回スイッチスキャン回数を更新
-    if ((_sequence == static_cast<int>(PANEL_MANAGER_SEQ::SW_1ST_ROW3)) ||
-        (_sequence == static_cast<int>(PANEL_MANAGER_SEQ::SW_2ST_ROW3))) {
+    if ((_sequence == PANEL_MANAGER_SEQ::SW_1ST_ROW3) ||
+        (_sequence == PANEL_MANAGER_SEQ::SW_2ST_ROW3)) {
         _matrixSwitch.nextScan();
 
         //SWスキャンインデックス：決定 ならスイッチ入力を確定する
@@ -245,20 +279,19 @@ void panelManager::trigger() {
     }
 
     //テンポADC値読み取り
-    if (_sequence == static_cast<int>(PANEL_MANAGER_SEQ::TEMPO_ADC_READ)) {
+    if (_sequence == PANEL_MANAGER_SEQ::TEMPO_ADC_READ) {
         _tempo_adc_value=adc_read();
         //Serial.print("_tempo_adc_value=adc_read() >>4:");
         //Serial.println(_tempo_adc_value>>4,HEX);
     }
 
     //次回シークエンス&シークエンス1周完了フラグを設定
-    if (_sequence == static_cast<int>(PANEL_MANAGER_SEQ::TEMPO_ADC_READ)) {
-        _sequence = static_cast<int>(PANEL_MANAGER_SEQ::SW_1ST_ROW0);
+    if (_sequence == PANEL_MANAGER_SEQ::END) {
         _sequence_up = true;
     }
-    else {
-        _sequence++;
-    }
+
+    _sequenceList_index++;
+
 };
 
 /*

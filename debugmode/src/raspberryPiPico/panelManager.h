@@ -34,6 +34,7 @@ SW_2ST_ROW2,
 SW_2ST_ROW3,
 LED_ROW3,
 TEMPO_ADC_READ,
+END,
 };
 
 
@@ -120,12 +121,33 @@ class panelManager: public countTriger
       bool getSequenceUp();
 
   protected:
-    int _sequence;      //シークエンスカウント
     bool _sequence_up;	//シークエンス1周完了フラグ true->シークエンス1周完了, false->完了待ち
     int	_tempo_adc_value;	//テンポADC読み取り値
 
+
+    //シークエンスインデックス
+    int _sequenceList_index;
+ 
+    //シークエンスリスト
+    PANEL_MANAGER_SEQ _sequenceList[13] = {
+        PANEL_MANAGER_SEQ::SW_1ST_ROW0,
+        PANEL_MANAGER_SEQ::SW_1ST_ROW1,
+        PANEL_MANAGER_SEQ::LED_ROW0,
+        PANEL_MANAGER_SEQ::SW_1ST_ROW2,
+        PANEL_MANAGER_SEQ::SW_1ST_ROW3,
+        PANEL_MANAGER_SEQ::LED_ROW1,
+        PANEL_MANAGER_SEQ::SW_2ST_ROW0,
+        PANEL_MANAGER_SEQ::SW_2ST_ROW1,
+        PANEL_MANAGER_SEQ::LED_ROW2,
+        PANEL_MANAGER_SEQ::SW_2ST_ROW2,
+        PANEL_MANAGER_SEQ::SW_2ST_ROW3,
+        PANEL_MANAGER_SEQ::LED_ROW3,
+        PANEL_MANAGER_SEQ::TEMPO_ADC_READ
+    };
+
     matrixLED _matrixLED;       
     matrixSwitch _matrixSwitch;
+
 };
 
 #endif

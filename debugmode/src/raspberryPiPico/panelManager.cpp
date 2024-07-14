@@ -88,7 +88,7 @@ setLEDRow(LED_ROW_1,0xFF);
 setLEDRow(LED_ROW_2,0xFF);
 setLEDRow(LED_ROW_3,0xFF);
 
-delay(5000);
+delay(2000);
 
 gpio_put(LED_BUILTIN, true); // toggle the LED
 setLEDRow(LED_ROW_0,0x00);
@@ -106,7 +106,7 @@ setLEDRow(LED_ROW_3,0x00);
 void panelManager::trigger() {
 
     //シーケンスインデックスが末尾まで進んだら先頭に戻す
-    if ( _sequenceList_index >= sizeof(_sequenceList)){
+    if ( _sequenceList_index >= PANEL_MANAGER_SEQ_LIST){
         _sequenceList_index = 0;
     }
 
@@ -114,12 +114,10 @@ void panelManager::trigger() {
     PANEL_MANAGER_SEQ _sequence=_sequenceList[_sequenceList_index];
 
     /*
-    Serial.print("panelManager::trigger. _sequence:");
-    Serial.print(_sequence);
-    Serial.print(" _seq_value:");
-    Serial.print(_seq_value);
-    Serial.print(" _seq_mod:");
-    Serial.println(_seq_mod);
+    Serial.print("panelManager::trigger. _sequenceList_index:");
+    Serial.print(_sequenceList_index);
+    Serial.print(" _sequence:");
+    Serial.println(static_cast<int>(_sequence));
     */
 
     //スイッチ入力
@@ -251,6 +249,13 @@ void panelManager::trigger() {
         Wire.write(0x13); 
         Wire.write(0xff-_LED_Col_value); 
         Wire.endTransmission();
+
+        //LED出力用アドレスCol値書き込み
+        //⇒GPIOB(13) Bポート値 無選択状態に設定⇒これが無いと次の行に列の表示内容が薄く残る？対策
+        Wire.beginTransmission(I2C_ADDR_LED);
+        Wire.write(0x13); 
+        Wire.write(0xff);
+        Wire.endTransmission();
     }
 
     //次回スイッチスキャン回数を更新
@@ -263,7 +268,7 @@ void panelManager::trigger() {
             _matrixSwitch.finalize();
             _matrixSwitch.nextScan();
 
-            /*int _scanrow;
+            int _scanrow;
             for (_scanrow=0; _scanrow < SW_ROW_MAX ; _scanrow++){
               if ( 0x00 != _matrixSwitch.getRow(_scanrow)){
                 Serial.print("_matrixSwitch.getRow(");
@@ -271,7 +276,7 @@ void panelManager::trigger() {
                 Serial.print("):");
                 Serial.println(static_cast<int>(_matrixSwitch.getRow(_scanrow)),HEX);
               }
-            }*/
+            }
 
             gpio_put(LED_BUILTIN, !gpio_get(LED_BUILTIN)); // toggle the LED
             //Serial.println("_matrixSwitch.finalize");

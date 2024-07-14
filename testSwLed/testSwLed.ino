@@ -134,9 +134,9 @@ Wire.endTransmission();
 */
 
 _panelManager.setLEDRow(0,0x01);
-_panelManager.setLEDRow(1,0x86);
-_panelManager.setLEDRow(2,0x0F);
-_panelManager.setLEDRow(3,0x35);
+_panelManager.setLEDRow(1,0x80);
+_panelManager.setLEDRow(2,0xC0);
+_panelManager.setLEDRow(3,0x01);
 
 gpio_put(LED_BUILTIN, true); // toggle the LED
 Serial.println("Start");
@@ -189,8 +189,8 @@ void loop() {
       _tempo.clear();
       _tempo.setTempo(_panelManager.getTempoADC());
 
-      Serial.print("_tempo.getTempo():");
-      Serial.println(_tempo.getTempo());
+      //Serial.print("_tempo.getTempo():");
+      //Serial.println(_tempo.getTempo());
     }
 
   }

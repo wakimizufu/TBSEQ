@@ -51,13 +51,6 @@ void panelManager::trigger() {
         Serial.print(" _SW_Row_Addr:");
         Serial.print(_SW_Row_Addr,HEX);*/
 
-        if ( 0==_matrixSwitch.getScan()){
-            _SW_Value = 0xFF;
-        } else if ( 1==_matrixSwitch.getScan()){
-            _SW_Value = 0xD5;
-        }
-
-
         //スイッチ入力用アドレスRow選択書き込み
         //⇒GPIOA(12) Aポート値 (0x01, 0x02, 0x04, 0x08)
         Wire.beginTransmission(I2C_ADDR_SW);
@@ -104,15 +97,20 @@ void panelManager::trigger() {
 
         //I2C::LED出力 
         int  _LED_Row_value = 1<<_seq_value;
-        /*Serial.print(" _LED_Row_value:");
-        Serial.print(_LED_Row_value,HEX);*/
 
         //char _LED_Col_value = _matrixLED.getRow(_seq_value);   
         int _LED_Col_value = static_cast<int>(_matrixLED.getRow(_seq_value));   
-        /*Serial.print(" _LED_Col_value:");
-        Serial.print(_LED_Col_value,HEX);
-        Serial.print(" invert:");
-        Serial.println(0xff - _LED_Col_value,HEX);*/
+
+				/*
+				if ( 0 != _LED_Col_value ) {
+	        Serial.print(" _LED_Row_value:");
+	        Serial.print(_LED_Row_value,HEX);
+	        Serial.print(" _LED_Col_value:");
+	        Serial.print(_LED_Col_value,HEX);
+	        Serial.print(" invert:");
+	        Serial.println(0xff - _LED_Col_value,HEX);
+				}
+				*/
 
         //LED出力用アドレスRow選択書き込み
         //⇒GPIOA(12) Aポート値 (0x01, 0x02, 0x04, 0x08)
@@ -141,10 +139,13 @@ void panelManager::trigger() {
 
             int _scanrow;
             for (_scanrow=0; _scanrow < SW_ROW_MAX ; _scanrow++){
-              /*Serial.print("_matrixSwitch.getRow(");
-              Serial.print(_scanrow);
-              Serial.print("):");
-              Serial.println(static_cast<int>(_matrixSwitch.getRow(_scanrow)),HEX);*/
+							
+							if ( 0 != static_cast<int>(_matrixSwitch.getRow(_scanrow)) ) {
+	              Serial.print("_matrixSwitch.getRow(");
+	              Serial.print(_scanrow);
+	              Serial.print("):");
+	              Serial.println(static_cast<int>(_matrixSwitch.getRow(_scanrow)),HEX);
+	            }
             }
 
             gpio_put(LED_BUILTIN, !gpio_get(LED_BUILTIN)); // toggle the LED

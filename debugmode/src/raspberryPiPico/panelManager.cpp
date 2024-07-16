@@ -268,6 +268,7 @@ void panelManager::trigger() {
             _matrixSwitch.finalize();
             _matrixSwitch.nextScan();
 
+            /*
             int _scanrow;
             for (_scanrow=0; _scanrow < SW_ROW_MAX ; _scanrow++){
               if ( 0x00 != _matrixSwitch.getRow(_scanrow)){
@@ -277,6 +278,7 @@ void panelManager::trigger() {
                 Serial.println(static_cast<int>(_matrixSwitch.getRow(_scanrow)),HEX);
               }
             }
+            */
 
             gpio_put(LED_BUILTIN, !gpio_get(LED_BUILTIN)); // toggle the LED
             //Serial.println("_matrixSwitch.finalize");

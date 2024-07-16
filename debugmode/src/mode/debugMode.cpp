@@ -60,13 +60,67 @@ void debugMode::runSequence() {
 	}
 
 	/*
-    <LED acc>
+    <LED slide>
     ボタン押下中変数で1個以上押下あり
 　　⇒点灯
     ボタン押下中変数で押下なし
 　　⇒消灯
 	*/
-	_voltage->accent(keyOn);
+	_voltage->slide(keyOn);
+
+
+	/*
+	<PWM note>
+	・C1~C2ボタンが押下中ならnoteにCVを出力する
+	C1:2V ~ C2:3V
+	・C1~C2ボタン＆UPボタンが押下中なら以下のCV
+	C1:3V ~ C2:4V
+	・C1~C2ボタン＆DOWNボタンが押下中なら以下のCV
+	C1:1V ~ C2:2V
+	⇒複数押下されていれば一番最高音を出力する
+	*/
+
+	//各ノートボタンを高音優先で押下状態を取得する
+    bool note_on = false;
+	for (i=static_cast<int>(Switch::C2) ; i>=static_cast<int>(Switch::C) ; i--){
+		if (_currentSwtich[i]) {
+			note_on=true;
+			break;
+		}
+	}
+
+	//各ノートボタンが押されていたらボタンに応じたCVを設定する
+    int note_CV = static_cast<int>(NOTE_PWM_INDEX::NOTE_C2);
+	if ( note_on ){
+		if ( _currentSwtich[static_cast<int>(Switch::UP)] ) {
+			note_CV=static_cast<int>(NOTE_PWM_INDEX::NOTE_C3);
+		} else if ( _currentSwtich[static_cast<int>(Switch::DOWN)] ) {
+			note_CV=static_cast<int>(NOTE_PWM_INDEX::NOTE_C1);
+		} else{
+			note_CV = static_cast<int>(NOTE_PWM_INDEX::NOTE_C2);
+		}
+
+
+        //NOTE_PWM_INDEX のインデックス値を算出する
+		note_CV=note_CV+i;	
+		if (0<=note_CV){
+			Serial.print(" =>note_CV:");
+			Serial.print(note_CV);
+			Serial.println("");
+
+			_voltage->cv(note_CV);  //CVを設定する
+		}
+	}
+
+
+	/*
+	<LED accent>
+	C1~C2ボタン押下中変数で1個以上押下あり
+	　　⇒点灯
+		C1~C2ボタン押下中変数で押下なし
+	　　⇒消灯
+	*/
+	_voltage->accent(note_on);
 
 	/*
 	//ラン/ストップフラグ:ラン

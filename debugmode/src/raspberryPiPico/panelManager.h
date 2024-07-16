@@ -132,7 +132,7 @@ class panelManager: public countTriger
     int _sequenceList_index;
  
     //シークエンスリスト
-    PANEL_MANAGER_SEQ _sequenceList[PANEL_MANAGER_SEQ_LIST] = {
+    const PANEL_MANAGER_SEQ _sequenceList[PANEL_MANAGER_SEQ_LIST] = {
         PANEL_MANAGER_SEQ::SW_1ST_ROW0,
         PANEL_MANAGER_SEQ::LED_ROW0,
         PANEL_MANAGER_SEQ::LED_ROW1,

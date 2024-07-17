@@ -28,6 +28,16 @@ int main(int argc, char const *argv[])
   voltage _voltage;
   sequenceMap _sequenceMap;
 
+  presetBitstream _presetBitstream;
+  _sequenceMap.setBitstream(_presetBitstream.patern_preset_bitstream);
+
+  char tempBitStream[SEQUENCE_ALLBYTE];
+  memset(tempBitStream, 0x00, SEQUENCE_ALLBYTE);
+  _sequenceMap.getBitstream(tempBitStream);
+
+  std::cout << "Finish preset Bitstream" << std::endl;
+
+
   //mode * _currentMode = new paternPlay( &_panelManager, &_voltage,  &_sequenceMap);
   //delete _currentMode;
 

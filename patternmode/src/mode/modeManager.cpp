@@ -14,7 +14,7 @@ modeManager::modeManager(panelManager* ptPanelManager, voltage* ptVoltage, int n
 	_debugMode = false;						//デバッグフラグ (true->デバッグモード ,false->通常モード)
 
 	//現在のモードクラスの初期値を設定する
-	_currentMode = new paternWrite( _panelManager, _voltage, &_sequenceMap);
+	_currentMode = new paternPlay( _panelManager, _voltage, &_sequenceMap);
 
 	_clockCount = 0;							//現在のMIDIクロックカウンタ値
 	_noteThredhold = noteThredhold;	//MIDIクロックカウンタ閾値
@@ -117,7 +117,7 @@ void	modeManager::_changeMode(bool _track, bool _patern, bool _write) {
 	}
 
 	//ラン/ストップ状態がランなら切替処理は行わない
-	if (RUN_STOP::STOP == _currentMode->getRunStop()) {
+	if (RUN_STOP::RUN == _currentMode->getRunStop()) {
 		return;
 	}
 

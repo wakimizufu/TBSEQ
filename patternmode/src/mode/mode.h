@@ -95,7 +95,33 @@ class mode{
 		voltage * _voltage;						//【コンストラクタで設定】voltageクラスポインタ
 		sequenceMap * _sequenceMap;		//【コンストラクタで設定】sequenceMapクラスポインタ
 
-			int	_midiclock_16note;	//16音符毎MIDIクロックカウント 16分音符:6クロック⇒1～6
+		int	_midiclock_16note;	//16音符毎MIDIクロックカウント 16分音符:6クロック⇒1～6
+
+
+		//パターン番号：スイッチ対応配列
+		const int _scanPatternSwich[SEQUENCE_PATTERN_LENGTH] {
+			static_cast<int>(Switch::C),
+			static_cast<int>(Switch::D),
+			static_cast<int>(Switch::E),
+			static_cast<int>(Switch::F),
+			static_cast<int>(Switch::G),
+			static_cast<int>(Switch::A),
+			static_cast<int>(Switch::B),
+			static_cast<int>(Switch::C2)
+		};
+
+		//パターン番号：LED対応配列
+		const int _scanPatternLED[SEQUENCE_PATTERN_LENGTH] {
+			static_cast<int>(LED::C),
+			static_cast<int>(LED::D),
+			static_cast<int>(LED::E),
+			static_cast<int>(LED::F),
+			static_cast<int>(LED::G),
+			static_cast<int>(LED::A),
+			static_cast<int>(LED::B),
+			static_cast<int>(LED::C2)
+		};
+
 };
 
 

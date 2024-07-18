@@ -55,46 +55,22 @@ class paternPlay: public mode{
 		void	changeRunStop();
 
 		/*
-		ラン/ストップ切替チェック
+		ラン/ストップフラグ:ストップ キーボード機能
+		戻り値:true->キーボード機能実行中. false->通常処理へ遷移する
 		*/
-		void	changeRunStop();
+		bool	execKeyborad();
 		
   private:
   	int		_pattern;	//指定パターン(1-8)
   	int		_step;		//現在ステップ(1-16)
   	int		_LEDCount;	//LED点滅カウント
   	bool	_pushRunSW;	//ラン/ストップSW前回状態フラグ
-  	bool	_keyborad;	//キーボードフラグ
 	bool _currentSwtich[SW_INDEX_MAX];	//ボタン押下中
+    bool _LEDtempo; //テンポカウント時LED点灯フラグ
 
-	//パターン番号：スイッチ対応配列
-	const int _scanPatternSwich[SEQUENCE_PATTERN_LENGTH] {
-		static_cast<int>(Switch::C),
-		static_cast<int>(Switch::D),
-		static_cast<int>(Switch::E),
-		static_cast<int>(Switch::F),
-		static_cast<int>(Switch::G),
-		static_cast<int>(Switch::A),
-		static_cast<int>(Switch::B),
-		static_cast<int>(Switch::C2)
-	};
-
-	//パターン番号：LED対応配列
-	const int _scanPatternLED[SEQUENCE_PATTERN_LENGTH] {
-		static_cast<int>(LED::C),
-		static_cast<int>(LED::D),
-		static_cast<int>(LED::E),
-		static_cast<int>(LED::F),
-		static_cast<int>(LED::G),
-		static_cast<int>(LED::A),
-		static_cast<int>(LED::B),
-		static_cast<int>(LED::C2)
-	}
-
-
-		/*
-		16音符毎MIDIクロックカウントが後半クロックになったらゲートをオフする
-		*/
+	/*
+	16音符毎MIDIクロックカウントが後半クロックになったらゲートをオフする
+	*/
 	void _gate_off_16note();
 
 };

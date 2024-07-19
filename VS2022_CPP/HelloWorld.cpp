@@ -31,7 +31,7 @@ int main(int argc, char const *argv[])
   presetBitstream _presetBitstream;
   _sequenceMap.setBitstream(_presetBitstream.patern_preset_bitstream);
 
-  char tempBitStream[SEQUENCE_ALLBYTE];
+  unsigned char tempBitStream[SEQUENCE_ALLBYTE];
   memset(tempBitStream, 0x00, SEQUENCE_ALLBYTE);
   _sequenceMap.getBitstream(tempBitStream);
 

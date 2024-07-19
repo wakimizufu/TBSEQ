@@ -14,6 +14,7 @@ paternPlay::paternPlay(panelManager* ptPanelManager, voltage* ptVoltage, sequenc
 	_pushRunSW = false;							//ラン/ストップ前回状態フラグ
 	_midiclock_16note = MIDICLOCK_START_16NOTE;	//16音符毎MIDIクロックカウント
     _LEDtempo=true;                             //テンポカウント時LED点灯フラグ
+	_LEDstep=0;									//テンポカウント時ステップカウンタ
 
 	//ラン/ストップフラグ←ストップ
 	_run_stop = RUN_STOP::STOP;
@@ -76,18 +77,19 @@ void paternPlay::runClock() {
 	if (_midiclock_16note > MIDICLOCK_STOP_16NOTE) {
 		_midiclock_16note = MIDICLOCK_START_16NOTE;
 
-		//16音符毎MIDIクロックアップしたら現在ステップをインクリメント
-		_step++;
+		//16音符毎MIDIクロックアップしたらテンポカウント時ステップカウンタをインクリメント
+		_LEDstep++;	
 
 		//指定パターンLED点灯状態を反転
-		if ( 0 == (_step%4)){
+		if ( 0 == (_LEDstep%2)){
 			_LEDtempo = !_LEDtempo;	
+			_LEDstep=0;
 		}
 
 		//現在ステップが最終カウントを超えたら開始ステップに戻す
-		if (_step >= PATERN_STEP_LENGTH) {
+		/*if (_step >= PATERN_STEP_LENGTH) {
 			_step = PATTERN_START_IDX;
-		}
+		}*/
 
 	}
 
@@ -301,7 +303,7 @@ void paternPlay::_gate_off_16note() {
 
   bool	_sSlide = _sequenceMap->paterns[_pattern].steps[_step].slide;
 
-  if ((_midiclock_16note == MIDICLOCK_GATEOFF_16NOTE) && (!_sSlide)) {
+  if ((_midiclock_16note >= MIDICLOCK_GATEOFF_16NOTE) && (!_sSlide)) {
 	  _voltage->gate(false);
   }
 }

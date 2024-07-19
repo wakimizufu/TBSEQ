@@ -66,7 +66,9 @@ class paternPlay: public mode{
   	int		_LEDCount;	//LED点滅カウント
   	bool	_pushRunSW;	//ラン/ストップSW前回状態フラグ
 	bool _currentSwtich[SW_INDEX_MAX];	//ボタン押下中
+
     bool _LEDtempo; //テンポカウント時LED点灯フラグ
+  	int	 _LEDstep;	//テンポカウント時ステップカウンタ
 
 	/*
 	16音符毎MIDIクロックカウントが後半クロックになったらゲートをオフする

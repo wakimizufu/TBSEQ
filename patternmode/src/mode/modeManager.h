@@ -86,7 +86,7 @@ class modeManager: public countTriger
 		引数  ：取得先ビットストリーム
 		戻り値：なし
 		*/
-	  void	getSequenceBitstream(char* _bitstream);
+	  void	getSequenceBitstream(unsigned char* _bitstream);
 
 
   private:

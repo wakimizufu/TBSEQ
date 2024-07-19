@@ -94,7 +94,7 @@ void	modeManager::presetSequence(){
 引数  ：取得先ビットストリーム
 戻り値：なし
 */
-void	modeManager::getSequenceBitstream(char* _bitstream){
+void	modeManager::getSequenceBitstream(unsigned char* _bitstream){
   /*
   char tempBitStream[SEQUENCE_ALLBYTE];
   memset(tempBitStream, 0x00, SEQUENCE_ALLBYTE);

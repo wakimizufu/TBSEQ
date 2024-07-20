@@ -170,6 +170,7 @@ void	paternPlay::execStopSequence() {
 			//押下中ノートボタンがあれば、パターン選択中とみなす
 			if (_currentSwtich[_patern_index]){
 				_pattern = i;
+				_next_pattern = _pattern;
 				_panelManager->setLED(_scanPatternLED[_pattern], _LEDtempo);		//直前に選択したパターンのLEDを点灯
 				break;
 			}
@@ -340,19 +341,21 @@ void paternPlay::_gate_on_16note() {
 	bool _slide		=	_sequenceMap->paterns[_pattern].steps[_step].slide;
 	unsigned char _note_relative = _sequenceMap->paterns[_pattern].steps[_step].note - static_cast<unsigned char>(NOTE_PWM_INDEX::NOTE_C2);
 	
-	Serial.print("_gate_on_16note() ");
-	Serial.print(" pattern:");
-	Serial.print(_pattern);
-	Serial.print(" step:");
-	Serial.print(_step);
-	Serial.print(" gate:");
-	Serial.print(_note_on);
-	Serial.print(" acc:");
-	Serial.print(_acc);
-	Serial.print(" slide:");
-	Serial.print(_slide);
+
 
 	if(_midiclock_16note == MIDICLOCK_START_16NOTE){
+		Serial.print("_gate_on_16note() MIDICLOCK_START_16NOTE ");
+		Serial.print(" pattern:");
+		Serial.print(_pattern);
+		Serial.print(" step:");
+		Serial.print(_step);
+		Serial.print(" gate:");
+		Serial.print(_note_on);
+		Serial.print(" acc:");
+		Serial.print(_acc);
+		Serial.print(" slide:");
+		Serial.print(_slide);
+
 		_voltage->gate(_note_on);	//gate
 
 		if (_note_on){
@@ -378,9 +381,9 @@ void paternPlay::_gate_on_16note() {
 			_voltage->accent(false);//acc
 			_voltage->slide(false);	//slide			
 		}
-	}
 
-	Serial.println("");
+		Serial.println("");
+	}
 }
 
 /*
@@ -391,20 +394,26 @@ void paternPlay::_gate_off_16note() {
 	bool _note_on	=	_sequenceMap->paterns[_pattern].steps[_step].note_on;
 	bool _slide 	=	_sequenceMap->paterns[_pattern].steps[_step].slide;
 
-	Serial.print("_gate_off_16note() ");
-	Serial.print(" pattern:");
-	Serial.print(_pattern);
-	Serial.print(" step:");
-	Serial.print(_step);
-	Serial.print(" slide:");
-	Serial.print(_slide);
+	if (_midiclock_16note == MIDICLOCK_GATEOFF_16NOTE) {
 
-	if ((_midiclock_16note == MIDICLOCK_GATEOFF_16NOTE) && (_note_on) && (!_slide)) {
-		_voltage->gate(false);
-		_voltage->accent(false);//acc
+		Serial.print("_gate_off_16note() ");
+		Serial.print(" pattern:");
+		Serial.print(_pattern);
+		Serial.print(" step:");
+		Serial.print(_step);
+		Serial.print(" note_on:");
+		Serial.print(_note_on);
+		Serial.print(" slide:");
+		Serial.print(_slide);
+
+		if ((_note_on) && (!_slide)){
+			_voltage->gate(false);
+			_voltage->accent(false);//acc
+		}
+
+		Serial.println("");
 	}
 
-	Serial.println("");
 }
 
 /*
@@ -416,6 +425,14 @@ void paternPlay::_next_step_16note() {
 	bool _nextPattern 	=	false;
 
 	if (_midiclock_16note == MIDICLOCK_STOP_16NOTE) {
+
+		Serial.print("_next_step_16note() ");
+		Serial.print(" pattern:");
+		Serial.print(_pattern);
+		Serial.print(" step:");
+		Serial.print(_step);
+		Serial.print(" laststep:");
+		Serial.print(_laststep);
 
 		//現在のステップが最終ステップなら「ステップ=1」に設定する
 		if (_laststep)	{
@@ -436,6 +453,12 @@ void paternPlay::_next_step_16note() {
 		if (_nextPattern) {
 			_pattern = _next_pattern;
 		}
+
+		Serial.print(" EDITED:_pattern:");
+		Serial.print(_pattern);
+		Serial.print(" EDITED:_next_pattern:");
+		Serial.print(_next_pattern);
+		Serial.println("");
 	}
 
 

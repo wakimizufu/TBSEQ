@@ -334,11 +334,11 @@ void	paternPlay::changeRunStop() {
 */
 void paternPlay::_gate_on_16note() {
 
-	bool _note_on	=	_sequenceMap->paterns[_pattern].steps[_step].note_on;
 	bool _up		=	_sequenceMap->paterns[_pattern].steps[_step].up;
 	bool _down		=	_sequenceMap->paterns[_pattern].steps[_step].down;
 	bool _acc		=	_sequenceMap->paterns[_pattern].steps[_step].acc;
 	bool _slide		=	_sequenceMap->paterns[_pattern].steps[_step].slide;
+	unsigned char _note_on	=	_sequenceMap->paterns[_pattern].steps[_step].note_on;
 	unsigned char _note_relative = _sequenceMap->paterns[_pattern].steps[_step].note - static_cast<unsigned char>(NOTE_PWM_INDEX::NOTE_C2);
 	
 
@@ -356,7 +356,11 @@ void paternPlay::_gate_on_16note() {
 		Serial.print(" slide:");
 		Serial.print(_slide);
 
-		_voltage->gate(_note_on);	//gate
+		if (( STEP_NOTE_ON_NORMAL == _note_on)||( STEP_NOTE_ON_TIE == _note_on)){
+			_voltage->gate(true);	//gate
+		} else if ( STEP_NOTE_OFF == _note_on){
+			_voltage->gate(false);	//gate
+		}
 
 		if (_note_on){
 			_voltage->accent(_acc);	//acc
@@ -391,7 +395,7 @@ void paternPlay::_gate_on_16note() {
 */
 void paternPlay::_gate_off_16note() {
 
-	bool _note_on	=	_sequenceMap->paterns[_pattern].steps[_step].note_on;
+	unsigned char  _note_on	=	_sequenceMap->paterns[_pattern].steps[_step].note_on;
 	bool _slide 	=	_sequenceMap->paterns[_pattern].steps[_step].slide;
 
 	if (_midiclock_16note == MIDICLOCK_GATEOFF_16NOTE) {
@@ -406,11 +410,9 @@ void paternPlay::_gate_off_16note() {
 		Serial.print(" slide:");
 		Serial.print(_slide);
 
-		if ((_note_on) && (!_slide)){
-			_voltage->gate(false);
-			_voltage->accent(false);//acc
+		if (( STEP_NOTE_ON_NORMAL == _note_on) || ( STEP_NOTE_OFF == _note_on)) {
+			_voltage->gate(false);	//gate
 		}
-
 		Serial.println("");
 	}
 

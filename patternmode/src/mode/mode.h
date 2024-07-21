@@ -32,6 +32,11 @@
 //16音符カウント 16分音符:開始ステップ数
 #define MIDI_STEP_START	1
 
+
+//ノートオン スイッチ&LED総数
+#define NOTEON_SWLED_MAX	13
+
+
 //modeモード名
 enum class MODE_NAME
 {
@@ -121,6 +126,41 @@ class mode{
 			static_cast<int>(LED::B),
 			static_cast<int>(LED::C2)
 		};
+
+		//note_on：スイッチ対応配列
+		const int _noteOnSwich[NOTEON_SWLED_MAX] {
+			static_cast<int>(Switch::C),
+			static_cast<int>(Switch::CSHARP),
+			static_cast<int>(Switch::D),
+			static_cast<int>(Switch::DSHARP),
+			static_cast<int>(Switch::E),
+			static_cast<int>(Switch::F),
+			static_cast<int>(Switch::FSHARP),
+			static_cast<int>(Switch::G),
+			static_cast<int>(Switch::GSHARP),
+			static_cast<int>(Switch::A),
+			static_cast<int>(Switch::ASHARP),
+			static_cast<int>(Switch::B),
+			static_cast<int>(Switch::C2)
+		};
+
+		//note_on：LED対応配列
+		const int _noteOnLED[NOTEON_SWLED_MAX] {
+			static_cast<int>(LED::C),
+			static_cast<int>(LED::CSHARP),
+			static_cast<int>(LED::D),
+			static_cast<int>(LED::DSHARP),
+			static_cast<int>(LED::E),
+			static_cast<int>(LED::F),
+			static_cast<int>(LED::FSHARP),
+			static_cast<int>(LED::G),
+			static_cast<int>(LED::GSHARP),
+			static_cast<int>(LED::A),
+			static_cast<int>(LED::ASHARP),
+			static_cast<int>(LED::B),
+			static_cast<int>(LED::C2)
+		};
+
 
 };
 

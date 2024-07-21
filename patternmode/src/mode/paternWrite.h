@@ -14,8 +14,10 @@ class paternWrite: public mode{
     コンストラクタ
 		ptPanelManager:panelManagerクラスポインタ
 		ptVoltage     :voltageクラスポインタ
-    */
-		paternWrite(panelManager* ptPanelManager, voltage* ptVoltage, sequenceMap* ptSequenceMap);
+		sequenceMap   :sequenceMapクラスポインタ
+		_initPattern  :編集対象パターン(1～16)
+		*/
+		paternWrite(panelManager* ptPanelManager, voltage* ptVoltage, sequenceMap* ptSequenceMap, int _initPattern);
 
 		/*
 		[仮想関数]カウント閾値達成時に実行されるアプリケーションを実施する
@@ -28,6 +30,11 @@ class paternWrite: public mode{
 		*/
 		virtual void runClock();
 
+
+		/*
+		ラン/ストップ切替チェック
+		*/
+		void	changeRunStop();
 
 		/*
 		ラン/ストップフラグ:ラン シークエンス処理を実行
@@ -50,8 +57,16 @@ class paternWrite: public mode{
 		void	execStopClock();
 
     private:
-    	int	_pattern;	//指定パターン
-    	int	_step;		//現在ステップ
+		int		_pattern;	//指定パターン(1-8)
+		int		_step;		//現在ステップ(1-16)
+		int		_LEDCount;	//LED点滅カウント
+		bool	_pushRunSW;	//ラン/ストップSW前回状態フラグ
+		bool _currentSwtich[SW_INDEX_MAX];	//ボタン押下中
+
+		int	_next_pattern;	//次に演奏する指定パターン(1-8)
+
+		bool _LEDtempo; //テンポカウント時LED点灯フラグ
+		int	 _LEDstep;	//テンポカウント時ステップカウンタ
 };
 
 

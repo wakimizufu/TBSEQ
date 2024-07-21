@@ -10,6 +10,7 @@
 class paternPlay: public mode{
 
     public:
+
      /*
     コンストラクタ
 		ptPanelManager:panelManagerクラスポインタ
@@ -59,33 +60,41 @@ class paternPlay: public mode{
 		戻り値:true->キーボード機能実行中. false->通常処理へ遷移する
 		*/
 		bool	execKeyborad();
+
+
+		/*
+		指定パターンを取得する
+		戻り値:指定パターン(1-8)
+		*/
+		int	getCurrnetPattern();
+
 		
   private:
-  	int		_pattern;	//指定パターン(1-8)
-  	int		_step;		//現在ステップ(1-16)
-  	int		_LEDCount;	//LED点滅カウント
-  	bool	_pushRunSW;	//ラン/ストップSW前回状態フラグ
-	bool _currentSwtich[SW_INDEX_MAX];	//ボタン押下中
+		int		_pattern;	//指定パターン(1-8)
+		int		_step;		//現在ステップ(1-16)
+		int		_LEDCount;	//LED点滅カウント
+		bool	_pushRunSW;	//ラン/ストップSW前回状態フラグ
+		bool _currentSwtich[SW_INDEX_MAX];	//ボタン押下中
 
-	int	_next_pattern;	//次に演奏する指定パターン(1-8)
+		int	_next_pattern;	//次に演奏する指定パターン(1-8)
 
-    bool _LEDtempo; //テンポカウント時LED点灯フラグ
-  	int	 _LEDstep;	//テンポカウント時ステップカウンタ
+		bool _LEDtempo; //テンポカウント時LED点灯フラグ
+		int	 _LEDstep;	//テンポカウント時ステップカウンタ
 
-	/*
-	16音符毎MIDIクロックカウントが後半クロックになったらゲートをオフする
-	*/
-	void _gate_on_16note();
+		/*
+		16音符毎MIDIクロックカウントが後半クロックになったらゲートをオフする
+		*/
+		void _gate_on_16note();
 
-	/*
-	16音符毎MIDIクロックカウントが後半クロックになったらゲートをオフする
-	*/
-	void _gate_off_16note();
+		/*
+		16音符毎MIDIクロックカウントが後半クロックになったらゲートをオフする
+		*/
+		void _gate_off_16note();
 
-	/*
-	16音符毎MIDIクロックカウントが最終クロックになったら次に演奏するステップを決定する
-	*/
-	void _next_step_16note();
+		/*
+		16音符毎MIDIクロックカウントが最終クロックになったら次に演奏するステップを決定する
+		*/
+		void _next_step_16note();
 
 };
 

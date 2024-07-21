@@ -96,6 +96,8 @@ class modeManager: public countTriger
 	sequenceMap _sequenceMap;		//シークエンスマップ
 	bool _debugMode;				//デバッグフラグ (true->デバッグモード ,false->通常モード)
 
+	bool _currentSwtich[SW_INDEX_MAX];	//ボタン押下中
+
     int _clockCount;			//現在のMIDIクロックカウンタ値
     int _noteThredhold;	//音符カウンタ閾値
 

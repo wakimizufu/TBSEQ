@@ -13,6 +13,12 @@ modeManager::modeManager(panelManager* ptPanelManager, voltage* ptVoltage, int n
 	_voltage = ptVoltage;						//【コンストラクタで設定】voltageクラスポインタ
 	_debugMode = false;						//デバッグフラグ (true->デバッグモード ,false->通常モード)
 
+	//ボタン押下中変数を初期化
+	for ( int i=0 ; i<SW_INDEX_MAX ; i++){
+		_currentSwtich[i] = false;
+	}
+
+
 	//現在のモードクラスの初期値を設定する
 	_currentMode = new paternPlay( _panelManager, _voltage, &_sequenceMap);
 
@@ -24,9 +30,7 @@ modeManager::modeManager(panelManager* ptPanelManager, voltage* ptVoltage, int n
 [仮想関数]カウンタ閾値に達した⇒MIDIクロックがカウントアップをセット
 */
 void modeManager::trigger() {
-	bool _track = _panelManager->getSwitch(static_cast<int>(Switch::TRACK));
-	bool _patern = _panelManager->getSwitch(static_cast<int>(Switch::PATTERN));
-	bool _write = _panelManager->getSwitch(static_cast<int>(Switch::PLAY_WRITE));
+
 
 	//モード切替判定を行う
 	_changeMode(_track, _patern, _write);
@@ -105,11 +109,31 @@ void	modeManager::getSequenceBitstream(unsigned char* _bitstream){
 
 /*
 モード切替判定を行う
-bool	_track;		判断時：トラックボタン状態
-bool	_patern;	判断時：パターンボタン状態
-bool	_write;		判断時：ライトボタン状態
 */
-void	modeManager::_changeMode(bool _track, bool _patern, bool _write) {
+void	modeManager::_changeMode() {
+
+	//現状入力情報を取得
+	//ボタン押下中変数と比較
+	for ( int i=0 ; i<SW_INDEX_MAX ; i++){
+		if ( _panelManager->getSwitch(i) != _currentSwtich[i] ){
+			/*
+			Serial.print("modeManager::_changeMode() change index:");
+			Serial.print(i);
+			Serial.print(" _currentSwtich[i]:");
+			Serial.print(_currentSwtich[i]);
+			Serial.print(" _panelManager->getSwitch(i):");
+			Serial.print(_panelManager->getSwitch(i));
+			Serial.println("");*/
+
+			_currentSwtich[i] = _panelManager->getSwitch(i);
+		}
+	}
+
+	//bool _SwTrack		= _currentSwtich[(static_cast<int>(Switch::TRACK)];
+	bool _SwTrack		= false;
+	bool _SwPatern	= _currentSwtich[(static_cast<int>(Switch::PATTERN)];
+	bool _SwWrite		= _currentSwtich[(static_cast<int>(Switch::PLAY_WRITE)];
+
 
 	//デバッグモードなら切替処理は行わない
 	if (_debugMode) {
@@ -126,28 +150,61 @@ void	modeManager::_changeMode(bool _track, bool _patern, bool _write) {
 
 	//ボタン押下状況に応じたモード名を設定
 	MODE_NAME changeMode = MODE_NAME::NONE;
+	int _currentPatern = 1;
+	bool	_track	=	false;
+	bool	_patern	=	false;
+	bool	_write	=	false;
 
-	if (_patern && !_write) {
-		changeMode = MODE_NAME::PATERN_PLAY;
+	if	(	MODE_NAME::PATERN_PLAY == mode ) {				//パターンプレイ
+		_currentPatern	=	mode.getCurrnetPattern();
+		_track	=	false;
+		_patern	=	true;
+		_write	=	false;
+
+		if	(	_SwWrite	)	{
+			changeMode = MODE_NAME::PATERN_WRITE;
+		} else if (	_SwTrack	)	{
+			changeMode = MODE_NAME::TRACK_PLAY;
+		}
+
+	} else if	(	MODE_NAME::PATERN_WRITE == mode ) {		//パターンライト
+		_track	=	false;
+		_patern	=	true;
+		_write	=	true;
+		
+		if	(	_SwWrite	)	{
+			changeMode = MODE_NAME::PATERN_PLAY;
+		}
+
+	} else if	(	MODE_NAME::TRACK_PLAY == mode ) {		//トラックプレイ
+		_track	=	true;
+		_patern	=	false;
+		_write	=	false;
+
+		if	(	_SwPatern	)	{
+			changeMode = MODE_NAME::PATERN_PLAY;
+		} else if (	_SwTrack	)	{
+			changeMode = MODE_NAME::TRACK_WRITE;
+		}
+
+
+	} else if	(	MODE_NAME::TRACK_WRITE == mode ) {		//トラックライト
+		_track	=	true;
+		_patern	=	false;
+		_write	=	true;
+				
+		if	(	_SwWrite	)	{
+			changeMode = MODE_NAME::TRACK_PLAY;
+		}
 
 	}
-	else if (_patern && _write) {
-		changeMode = MODE_NAME::PATERN_WRITE;
 
-	}
-	else if (_track && _write) {
-		changeMode = MODE_NAME::TRACK_PLAY;
-
-	}
-	else if (_track && _write) {
-		changeMode = MODE_NAME::TRACK_WRITE;
-	}
 
 	//モード未選択なら切替なし
 	if (MODE_NAME::NONE == changeMode) {
 		return;
 
-		//現在モードと切替時モードが一緒なら切替なし
+	//現在モードと切替時モードが一緒なら切替なし
 	}
 	else if (mode == changeMode) {
 		return;
@@ -162,7 +219,7 @@ void	modeManager::_changeMode(bool _track, bool _patern, bool _write) {
 
 	}
 	else if (MODE_NAME::PATERN_WRITE == changeMode) {
-		_currentMode = new paternWrite( _panelManager, _voltage, &_sequenceMap);
+		_currentMode = new paternWrite( _panelManager, _voltage, &_sequenceMap, _currentPatern);
 
 	}
 	else if (MODE_NAME::TRACK_PLAY == changeMode) {

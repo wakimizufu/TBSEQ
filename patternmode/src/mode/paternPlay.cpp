@@ -328,6 +328,14 @@ void	paternPlay::changeRunStop() {
 
 }
 
+/*
+指定パターンを取得する
+戻り値:指定パターン(1-8)
+*/
+int	paternPlay::getCurrnetPattern(){
+	return	_pattern;
+}
+
 
 /*
 16音符毎MIDIクロックカウントが最初ならゲートをオンする

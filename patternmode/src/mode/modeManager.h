@@ -101,13 +101,10 @@ class modeManager: public countTriger
     int _clockCount;			//現在のMIDIクロックカウンタ値
     int _noteThredhold;	//音符カウンタ閾値
 
-		/*
-		モード切替判定を行う
-		bool	_track;		判断時：トラックボタン状態
-		bool	_patern;	判断時：パターンボタン状態
-		bool	_write;		判断時：ライトボタン状態
-		*/
-	void	_changeMode(bool _track, bool _patern, bool _write);
+	/*
+	モード切替判定を行う
+	*/
+	void	_changeMode();
 };
 
 #endif

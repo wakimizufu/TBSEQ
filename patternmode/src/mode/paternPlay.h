@@ -70,11 +70,8 @@ class paternPlay: public mode{
 
 		
   private:
-		int		_pattern;	//指定パターン(1-8)
-		int		_step;		//現在ステップ(1-16)
 		int		_LEDCount;	//LED点滅カウント
 		bool	_pushRunSW;	//ラン/ストップSW前回状態フラグ
-		bool _currentSwtich[SW_INDEX_MAX];	//ボタン押下中
 
 		int	_next_pattern;	//次に演奏する指定パターン(1-8)
 

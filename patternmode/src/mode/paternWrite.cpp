@@ -32,6 +32,9 @@ void paternWrite::runSequence() {
 	//現状入力情報を取得
 	//ボタン押下中変数と比較
 	for ( int i=0 ; i<SW_INDEX_MAX ; i++){
+		_onClickSwtich[i]=false;
+		_offClickSwtich[i]=false;
+
 		if ( _panelManager->getSwitch(i) != _currentSwtich[i] ){
 			/*
 			Serial.print("paternwrite::runSequence() change index:");
@@ -41,7 +44,8 @@ void paternWrite::runSequence() {
 			Serial.print(" _panelManager->getSwitch(i):");
 			Serial.print(_panelManager->getSwitch(i));
 			Serial.println("");*/
-
+			_onClickSwtich[i] = isSwitchOnClick(i);
+			_offClickSwtich[i] = isSwitchOffClick(i);
 			_currentSwtich[i] = _panelManager->getSwitch(i);
 		}
 	}
@@ -82,7 +86,7 @@ void paternWrite::runClock() {
 /*
 ラン/ストップ切替チェック
 */
-void	paternPlay::changeRunStop() {
+void	paternWrite::changeRunStop() {
 
 	//現在のラン/ストップSW状態
 	bool	nowRunSW = _panelManager->getSwitch(static_cast<int>(Switch::RUN_STOP));
@@ -168,14 +172,14 @@ void	paternWrite::execStopSequence() {
 
 	//SW ノート:発音ノートを更新
 	for (i=static_cast<int>(Switch::C2) ; i>=static_cast<int>(Switch::C) ; i--){
-		if (_currentSwtich[i]) {
+		if (_onClickSwtich[i]) {
 			_sequenceMap->paterns[_pattern].steps[_step].note = static_cast<unsigned char>(i) + static_cast<unsigned char>(NOTE_PWM_INDEX::NOTE_C2);
 			break;
 		}
 	}
 
 	//SW ノート:ノートオンを更新
-	if	(	_currentSwtich[static_cast<int>(Switch::NOTE)]	)	{
+	if	(	_onClickSwtich[static_cast<int>(Switch::NOTE)]	)	{
 		if	(	STEP_NOTE_ON_NORMAL	==	_note_on	)	{
 			_sequenceMap->paterns[_pattern].steps[_step].note_on	=	STEP_NOTE_ON_TIE;
 		} else if (	STEP_NOTE_ON_TIE	==	_note_on	)	{
@@ -186,56 +190,83 @@ void	paternWrite::execStopSequence() {
 	}
 
 	//SW アクセントを更新
-	if	(	_currentSwtich[static_cast<int>(Switch::ACC)]	)	{
+	if	(	_onClickSwtich[static_cast<int>(Switch::ACC)]	)	{
 		_sequenceMap->paterns[_pattern].steps[_step].acc	=	!_acc;
 	}
 	
 
 	//SW スライドを更新
-	if	(	_currentSwtich[static_cast<int>(Switch::SLIDE)]	)	{
+	if	(	_onClickSwtich[static_cast<int>(Switch::SLIDE)]	)	{
 		_sequenceMap->paterns[_pattern].steps[_step].slide	=	!_slide;
 	}
 
 	//SW UPを更新
-	if	(	_currentSwtich[static_cast<int>(Switch::UP)]	)	{
+	if	(	_onClickSwtich[static_cast<int>(Switch::UP)]	)	{
 		_sequenceMap->paterns[_pattern].steps[_step].up	=	!_up;
-	}
-
+		_sequenceMap->paterns[_pattern].steps[_step].down =false;
 	//SW DOWNを更新
-	if	(	_currentSwtich[static_cast<int>(Switch::DOWN)]	)	{
+	}	 else if	(	_onClickSwtich[static_cast<int>(Switch::DOWN)]	)	{
+		_sequenceMap->paterns[_pattern].steps[_step].up	=false;
 		_sequenceMap->paterns[_pattern].steps[_step].down	=	!_down;
 	}
 
 
+
+
 	//SW NEXT 次のステップに移行
-	if	(	_currentSwtich[static_cast<int>(Switch::NEXT)]	)	{
+	if	(	_onClickSwtich[static_cast<int>(Switch::NEXT)]	)	{
+
+		Serial.print(" paternWrite::execStopSequence Switch::NEXT");
+		Serial.print(" _pattern:");
+		Serial.print(_pattern);
+		Serial.print(" _step:");
+		Serial.print(_step);
+		Serial.print(" _laststep:");
+		Serial.print(_laststep);
+		
 		if(_laststep)	{
 			_step	=	STEP_START_IDX;
-		} else if (_laststep) {
+		} else if (!_laststep) {
 			_step++;
 		}
 
+
+		Serial.print(" next _step:");
+		Serial.print(_step);
+		Serial.println("");
+
 	//SW BACK 前のステップに移行
-	} else if (	_currentSwtich[static_cast<int>(Switch::BACK)]	)	{
+	} else if (	_onClickSwtich[static_cast<int>(Switch::BACK)]	)	{
+
+		Serial.print(" paternWrite::execStopSequence Switch::BACK");
+		Serial.print(" _pattern:");
+		Serial.print(_pattern);
+		Serial.print(" _step:");
+		Serial.print(_step);
+
 		_step--;
-		if( step < STEP_START_IDX)	{
+		if( _step < STEP_START_IDX)	{
 			
 			_step	=	STEP_START_IDX;
 
 			for (i=STEP_START_IDX ; i<PATERN_STEP_LENGTH ; i++){
-				if(_sequenceMap->paterns[_pattern].steps[_step].lastStep){
+				if(_sequenceMap->paterns[_pattern].steps[i].lastStep){
 					_step	=	i;
 					break;
 				}
 			}
 
 		}
+
+		Serial.print(" next _step:");
+		Serial.print(_step);
+		Serial.println("");
 	}
 
 
 	//SW NEXT/BACK 設定したノートを発音する
-	if	(	(	_panelManager->getSwitch(static_cast<int>(Switch::NEXT))	)	||
-				(	_panelManager->getSwitch(static_cast<int>(Switch::BACK))	) )	{
+	if	(	(	_currentSwtich[static_cast<int>(Switch::NEXT)]	)	||
+			(	_currentSwtich[static_cast<int>(Switch::BACK)]	) )	{
 		
  		int _note_CV=_sequenceMap->paterns[_pattern].steps[_step].note -	static_cast<int>(NOTE_PWM_INDEX::NOTE_C2);
 		

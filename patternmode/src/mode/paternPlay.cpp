@@ -38,6 +38,8 @@ void paternPlay::runSequence() {
 	//現状入力情報を取得
 	//ボタン押下中変数と比較
 	for ( int i=0 ; i<SW_INDEX_MAX ; i++){
+		_onClickSwtich[i]=false;
+		
 		if ( _panelManager->getSwitch(i) != _currentSwtich[i] ){
 			/*
 			Serial.print("paternPlay::runSequence() change index:");
@@ -48,6 +50,7 @@ void paternPlay::runSequence() {
 			Serial.print(_panelManager->getSwitch(i));
 			Serial.println("");*/
 
+			_onClickSwtich[i] = isSwitchOnClick(i);
 			_currentSwtich[i] = _panelManager->getSwitch(i);
 		}
 	}

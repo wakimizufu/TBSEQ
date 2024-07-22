@@ -33,7 +33,7 @@ void modeManager::trigger() {
 
 
 	//モード切替判定を行う
-	_changeMode(_track, _patern, _write);
+	_changeMode();
 
 	//モードに対してカウント閾値達成時に実行されるアプリケーションを実施する
 	_currentMode->runSequence();
@@ -112,10 +112,16 @@ void	modeManager::getSequenceBitstream(unsigned char* _bitstream){
 */
 void	modeManager::_changeMode() {
 
+	bool _SwTrack		= false;
+	bool _SwPatern	= false;
+	bool _SwWrite		= false;
+
+
 	//現状入力情報を取得
 	//ボタン押下中変数と比較
 	for ( int i=0 ; i<SW_INDEX_MAX ; i++){
 		if ( _panelManager->getSwitch(i) != _currentSwtich[i] ){
+			
 			/*
 			Serial.print("modeManager::_changeMode() change index:");
 			Serial.print(i);
@@ -124,15 +130,25 @@ void	modeManager::_changeMode() {
 			Serial.print(" _panelManager->getSwitch(i):");
 			Serial.print(_panelManager->getSwitch(i));
 			Serial.println("");*/
+ 
 
+			//_SwTrack	= (( false == _currentSwtich[static_cast<int>(Switch::TRACK)]) && 
+			//               (true == _panelManager->getSwitch(static_cast<int>(Switch::TRACK))));
+			_SwPatern	= (( false == _currentSwtich[static_cast<int>(Switch::PATTERN)]) && 
+			               (true == _panelManager->getSwitch(static_cast<int>(Switch::PATTERN))));
+			_SwWrite	= (( false == _currentSwtich[static_cast<int>(Switch::PLAY_WRITE)]) && 
+			               (true == _panelManager->getSwitch(static_cast<int>(Switch::PLAY_WRITE))));
+
+			/*Serial.print(" _SwPatern:");
+			Serial.print(_SwPatern);
+			Serial.print(" _SwWrite:");
+			Serial.print(_SwWrite);
+			Serial.println("");*/
+			
 			_currentSwtich[i] = _panelManager->getSwitch(i);
 		}
 	}
 
-	//bool _SwTrack		= _currentSwtich[(static_cast<int>(Switch::TRACK)];
-	bool _SwTrack		= false;
-	bool _SwPatern	= _currentSwtich[(static_cast<int>(Switch::PATTERN)];
-	bool _SwWrite		= _currentSwtich[(static_cast<int>(Switch::PLAY_WRITE)];
 
 
 	//デバッグモードなら切替処理は行わない
@@ -156,10 +172,16 @@ void	modeManager::_changeMode() {
 	bool	_write	=	false;
 
 	if	(	MODE_NAME::PATERN_PLAY == mode ) {				//パターンプレイ
-		_currentPatern	=	mode.getCurrnetPattern();
+		_currentPatern	=	_currentMode->getCurrnetPattern();
 		_track	=	false;
 		_patern	=	true;
 		_write	=	false;
+
+		/*
+		Serial.print("MODE_NAME::PATERN_PLAY _SwWrite:");
+		Serial.print(_SwWrite);
+		Serial.println("");
+        */
 
 		if	(	_SwWrite	)	{
 			changeMode = MODE_NAME::PATERN_WRITE;
@@ -171,7 +193,13 @@ void	modeManager::_changeMode() {
 		_track	=	false;
 		_patern	=	true;
 		_write	=	true;
-		
+
+        /*
+		Serial.print("MODE_NAME::PATERN_WRITE _SwWrite:");
+		Serial.print(_SwWrite);
+		Serial.println("");
+        */
+
 		if	(	_SwWrite	)	{
 			changeMode = MODE_NAME::PATERN_PLAY;
 		}

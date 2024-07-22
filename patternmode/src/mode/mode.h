@@ -91,7 +91,27 @@ class mode{
     戻り値：ラン/ストップフラグ(Class RUN_STOP)
     */
 	RUN_STOP	getRunStop();
-    
+
+    /*
+    現在の指定パターンを取得する
+    戻り値：指定パターン(1-8)
+    */
+	int	getCurrnetPattern();
+
+    /*
+    指定スイッチが押下したタイミングか取得する
+    引数  ：class enum Switch値(intに変換して設定する)
+    戻り値：true:押下したタイミング false:その他の状態
+    */
+	bool	isSwitchOnClick(int _SwIndex);
+
+    /*
+    指定スイッチが押下⇒離れたタイミングか取得する
+    引数  ：class enum Switch値(intに変換して設定する)
+    戻り値：true:押下⇒離れたタイミング false:その他の状態
+    */
+	bool	isSwitchOffClick(int _SwIndex);
+
     protected:
     	MODE_NAME	_modeName;	//モード名
 		RUN_STOP	_run_stop;		//ラン/ストップフラグ
@@ -102,6 +122,11 @@ class mode{
 
 		int	_midiclock_16note;	//16音符毎MIDIクロックカウント 16分音符:6クロック⇒1～6
 
+		int	_pattern;	//指定パターン(1-8)
+		int	_step;		//現在ステップ(1-16)
+		bool _currentSwtich[SW_INDEX_MAX];	//ボタン押下中
+		bool _onClickSwtich[SW_INDEX_MAX];	//ボタン押下タイミング
+		bool _offClickSwtich[SW_INDEX_MAX];	//ボタン押下⇒離したタイミング
 
 		//パターン番号：スイッチ対応配列
 		const int _scanPatternSwich[SEQUENCE_PATTERN_LENGTH] {

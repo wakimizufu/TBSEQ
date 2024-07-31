@@ -8,6 +8,7 @@ panelManager::panelManager(unsigned int start = 0) :countTriger(THD_PANEL_MANAGE
     _sequenceList_index = 0;
     _sequence_up = false;
     _tempo_adc_value = 0;
+    _connectFRAM = false;
 }
 
 
@@ -321,6 +322,7 @@ bool panelManager::connectFRAM(){
         _ret = true;
     }
 
+    _connectFRAM = _ret;
     return _ret;
 }
 
@@ -330,8 +332,28 @@ FRAMからビットストリームをロードする
 戻り値：なし
 */
 void panelManager::loadFRAM(unsigned char* _bitstream, int _loadSize ){
-    fram.read(0x000, _bitstream,_loadSize);
+    if (_connectFRAM) {
+        fram.read(0x000, _bitstream,_loadSize);
+    } 
 }
+
+/*
+FRAMへビットストリームをセーブする
+引数  ：設定先ビットストリーム, ロードするバイト数
+戻り値：なし
+*/
+void panelManager::saveFRAM(int _startAddres , unsigned char* _bitstream, int _loadSize){
+    if (_connectFRAM) {
+
+			Serial.print("panelManager::saveFRAM _startAddres:");
+			Serial.print(_startAddres,HEX);
+			Serial.print(" _loadSize:");
+			Serial.print(_loadSize,HEX);
+            Serial.println("");
+        //fram.write(_startAddres, _bitstream, _loadSize);
+    }     
+}
+
 
 /*
 指定LEDインデックスへの設定を行う

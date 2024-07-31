@@ -77,6 +77,13 @@ class panelManager: public countTriger
     void loadFRAM(unsigned char* _bitstream, int _loadSize);
 
     /*
+    FRAMへビットストリームをセーブする
+  引数  ：設定先ビットストリーム, ロードするバイト数
+    戻り値：なし
+    */
+    void saveFRAM(int _startAddres, unsigned char* _bitstream, int _loadSize);
+
+    /*
     指定LEDインデックスへの設定を行う
     index：enum class LED
     value：true=>点灯 , false=>消灯
@@ -294,7 +301,10 @@ class panelManager: public countTriger
     matrixSwitch _matrixSwitch;
 
   	//FRAM 16KByte
-    FRAM11 fram;				
+    FRAM11 fram;	
+
+    //FRAM接続フラグ true:接続成功, false:接続失敗
+    bool  _connectFRAM;
 };
 
 #endif

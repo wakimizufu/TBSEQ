@@ -126,7 +126,7 @@ void	modeManager::getSequenceBitstream(unsigned char* _bitstream){
   char tempBitStream[SEQUENCE_ALLBYTE];
   memset(tempBitStream, 0x00, SEQUENCE_ALLBYTE);
   */
-  _sequenceMap.getBitstream(_bitstream);
+  //_sequenceMap->getBitstream(_bitstream);
 }
 
 
@@ -225,6 +225,18 @@ void	modeManager::_changeMode() {
 
 		if	(	_SwWrite	)	{
 			changeMode = MODE_NAME::PATERN_PLAY;
+			int _currnetPattern = _currentMode->getCurrnetPattern();
+
+			Serial.print("MODE_NAME::PATERN_WRITE->PATERN_PLAY _currnetPattern:");
+			Serial.print(_currnetPattern);
+			Serial.println("");
+
+			//パターン配列からビットストリームに設定する
+			unsigned char _current_patern_bitstream[PATTERN_ALLBYTE];
+			_sequenceMap.getBitstream( _currnetPattern , _current_patern_bitstream);
+
+			int _startAddr = _currnetPattern * PATTERN_ALLBYTE;
+			_panelManager->saveFRAM( _startAddr, _current_patern_bitstream , PATTERN_ALLBYTE);
 		}
 
 	} else if	(	MODE_NAME::TRACK_PLAY == mode ) {		//トラックプレイ

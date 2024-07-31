@@ -86,7 +86,10 @@ sequenceMap パターンを管理する
 //sequenceMap:パターン全数
 #define SEQUENCE_PATTERN_LENGTH 8
 
-//sequenceMap:パターン全数
+//sequenceMap:1パターン総バイト数
+const int PATTERN_ALLBYTE = PATERN_STEP_LENGTH * STEP_ALLBYTE;
+
+//sequenceMap:全8パターン全数
 const int SEQUENCE_ALLBYTE = SEQUENCE_PATTERN_LENGTH * PATERN_STEP_LENGTH * STEP_ALLBYTE;
 
 class sequenceMap {
@@ -139,14 +142,18 @@ public:
 
 	/*
 	パターン配列からビットストリームに設定する
-	引数:ビットストリーム
+	引数:指定パターン番号,設定先ビットストリーム
 	*/
-	void getBitstream(unsigned char* _bitstream) {
+	void getBitstream(int p, unsigned char* _bitstream) {
 
 		int _bitInd = 0;
 		unsigned char _byte = 0;
 
-		for (int p = 0; p < SEQUENCE_PATTERN_LENGTH; p++) {
+		if ( ( p < 0) || (p >= SEQUENCE_PATTERN_LENGTH) ){
+			p = 0;
+		}
+
+		//for (int p = 0; p < SEQUENCE_PATTERN_LENGTH; p++) {
 			for (int s = 0; s < PATERN_STEP_LENGTH; s++) {
 
 				_byte = 0x00;
@@ -164,7 +171,7 @@ public:
 				*(_bitstream + _bitInd) = _byte;
 				_bitInd++;
 			}
-		}
+		//}
 	}
 
 private:

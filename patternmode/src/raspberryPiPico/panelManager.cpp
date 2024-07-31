@@ -80,7 +80,6 @@ Wire.write(0x01);
 Wire.write(0x00); 
 Wire.endTransmission();
 
-
 //初期化完了時LED設定
 gpio_put(LED_BUILTIN, false); // toggle the LED
 setLEDRow(LED_ROW_0,0xFF);
@@ -299,7 +298,40 @@ void panelManager::trigger() {
 
     _sequenceList_index++;
 
-};
+}
+
+
+/*
+FRAMへの接続を開始する
+戻り値：bool true=>接続成功 ,false=>接続失敗
+*/
+bool panelManager::connectFRAM(){
+
+    //FRAMからシークエンスマップをロードする
+    int rv = fram.begin(I2C_ADDR_FRAM11);
+    bool _ret = false;
+
+    if (rv != 0)    {
+        Serial.print("fram INIT ERROR: ");
+        Serial.println(rv);
+        _ret = false;
+
+    } else {
+        Serial.println("fram connected: ");
+        _ret = true;
+    }
+
+    return _ret;
+}
+
+/*
+FRAMからビットストリームをロードする
+引数  ：設定先ビットストリーム, ロードするバイト数
+戻り値：なし
+*/
+void panelManager::loadFRAM(unsigned char* _bitstream, int _loadSize ){
+    fram.read(0x000, _bitstream,_loadSize);
+}
 
 /*
 指定LEDインデックスへの設定を行う

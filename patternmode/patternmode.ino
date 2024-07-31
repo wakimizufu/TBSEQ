@@ -10,13 +10,13 @@
  #include "src/mode/sequenceMap.h"
  #include "src/mode/modeManager.h"
 
-
 //グローバル変数定義
 panelManager _panelManager(0);
 voltage _voltage;
 tempo _tempo(0);
 midiClock _midiClock(_tempo.getCountThd(),0);
 modeManager _modeManager( &_panelManager, &_voltage,0,0);
+
 
 //タイマー割り込み関連変数定義
 struct repeating_timer st_timer;
@@ -32,6 +32,8 @@ bool toggle_panelWR(struct repeating_timer *t) {
 
 void setup() {
 
+delay(2000);
+
 //UART println()ポート
 Serial.begin(115200);
 
@@ -42,7 +44,7 @@ _voltage.reset();
 //MIDIClock初期化
 _midiClock.setTempo2Threshold(_tempo.getCountThd());
 
-//シークエンスマップをclass presetBitstreamで定義したプリセットで設定する
+//シークエンスマップをFRAMからロードして設定する(ロード出来なかったらプリセットを設定する)
 _modeManager.presetSequence();
 
 //タイマー割り込み/* タイマーの初期化(割込み間隔はusで指定) */

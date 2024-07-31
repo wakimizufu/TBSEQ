@@ -14,6 +14,7 @@
 #include "../trigger/countTriger.h"
 #include "../mode/matrixLED.h"
 #include "../mode/matrixSwitch.h"
+#include "../fram/fram.h"
 
 //読み取り間隔カウンタ閾値 640us=0.64ms (32us * 32カウント)
 #define THD_PANEL_MANAGER 20
@@ -61,6 +62,19 @@ class panelManager: public countTriger
     戻り値：なし
     */
     void init();
+
+    /*
+    FRAMへの接続を開始する
+    戻り値：bool true=>接続成功 ,false=>接続失敗
+    */
+    bool connectFRAM();
+
+    /*
+    FRAMからビットストリームをロードする
+  引数  ：設定先ビットストリーム, ロードするバイト数
+    戻り値：なし
+    */
+    void loadFRAM(unsigned char* _bitstream, int _loadSize);
 
     /*
     指定LEDインデックスへの設定を行う
@@ -273,9 +287,14 @@ class panelManager: public countTriger
         PANEL_MANAGER_SEQ::END
         };
 
+    //マトリクスLED
     matrixLED _matrixLED;       
+
+    //マトリクススイッチ
     matrixSwitch _matrixSwitch;
 
+  	//FRAM 16KByte
+    FRAM11 fram;				
 };
 
 #endif

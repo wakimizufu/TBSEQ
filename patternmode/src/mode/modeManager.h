@@ -76,7 +76,7 @@ class modeManager: public countTriger
 	  void	changeDebugMode();
 
 		/*
-		シークエンスマップをclass presetBitstreamで定義したプリセットで設定する
+		シークエンスマップをFRAMからロードして設定する(ロード出来なかったらプリセットを設定する)
 		戻り値：なし
 		*/
 	  void	presetSequence();

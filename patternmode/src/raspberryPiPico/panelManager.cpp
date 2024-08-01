@@ -339,18 +339,18 @@ void panelManager::loadFRAM(unsigned char* _bitstream, int _loadSize ){
 
 /*
 FRAMへビットストリームをセーブする
-引数  ：設定先ビットストリーム, ロードするバイト数
+引数  ：記録開始アドレス, 設定元ビットストリーム, セーブするバイト数
 戻り値：なし
 */
 void panelManager::saveFRAM(int _startAddres , unsigned char* _bitstream, int _loadSize){
     if (_connectFRAM) {
 
-			Serial.print("panelManager::saveFRAM _startAddres:");
-			Serial.print(_startAddres,HEX);
-			Serial.print(" _loadSize:");
-			Serial.print(_loadSize,HEX);
-            Serial.println("");
-        //fram.write(_startAddres, _bitstream, _loadSize);
+        Serial.print("panelManager::saveFRAM _startAddres:");
+        Serial.print(_startAddres,HEX);
+        Serial.print(" _loadSize:");
+        Serial.print(_loadSize,HEX);
+        Serial.println("");
+        fram.write(_startAddres, _bitstream, _loadSize);
     }     
 }
 

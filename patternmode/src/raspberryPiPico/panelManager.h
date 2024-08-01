@@ -78,7 +78,7 @@ class panelManager: public countTriger
 
     /*
     FRAMへビットストリームをセーブする
-  引数  ：設定先ビットストリーム, ロードするバイト数
+    引数  ：記録開始アドレス, 設定元ビットストリーム, セーブするバイト数
     戻り値：なし
     */
     void saveFRAM(int _startAddres, unsigned char* _bitstream, int _loadSize);

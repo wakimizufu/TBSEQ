@@ -9,6 +9,7 @@ const char I2C_ADDR_SW   = 0x20; //MCP27017:スイッチマトリクス
 const char I2C_ADDR_LED  = 0x21; //MCP27017:LEDマトリクス
 const char I2C_ADDR_SSD1306 = 0x38; //SSD1306:OLED LCD
 const char I2C_ADDR_FRAM11  = 0x50; //FRAM:16KByte  スタートアドレス
+const char I2C_ADDR_HT16K33 = 0x70; //HT16K33:LED&スイッチマトリクスドライバ
 
 const char I2C_WIRE0_SDA = 4; //Wire.setSDA
 const char I2C_WIRE0_SCL = 5; //Wire.setSCL

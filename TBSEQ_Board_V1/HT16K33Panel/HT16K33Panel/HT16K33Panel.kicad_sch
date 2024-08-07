@@ -82,6 +82,196 @@
 		)
 	)
 	(sheet
+		(at 127 25.4)
+		(size 25.4 12.7)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "278c9357-6348-43c5-882f-deffbfcdadb9")
+		(property "Sheetname" "RasPiPico"
+			(at 127 24.6884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "RasPiPico.kicad_sch"
+			(at 127 38.6846 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "HT16K33Panel"
+				(path "/2a3172f4-85fe-4c47-84d4-31ed69e3089f"
+					(page "5")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 24.13 57.15)
+		(size 25.4 12.7)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "2e63481c-c245-4bea-8108-461dad082917")
+		(property "Sheetname" "TEMPO"
+			(at 24.13 56.4384 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "TEMPO.kicad_sch"
+			(at 24.13 70.4346 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "HT16K33Panel"
+				(path "/2a3172f4-85fe-4c47-84d4-31ed69e3089f"
+					(page "9")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 223.52 25.4)
+		(size 29.21 12.7)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "76aea9e9-e15e-44da-a250-96783d5973d5")
+		(property "Sheetname" "LevelConvert"
+			(at 223.52 24.6884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "LevelConvert.kicad_sch"
+			(at 223.52 38.6846 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "HT16K33Panel"
+				(path "/2a3172f4-85fe-4c47-84d4-31ed69e3089f"
+					(page "8")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 160.02 25.4)
+		(size 24.13 12.7)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "90303121-4348-4bf8-ada4-62b343a95dee")
+		(property "Sheetname" "Power"
+			(at 160.02 24.6884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Power.kicad_sch"
+			(at 160.02 38.6846 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "HT16K33Panel"
+				(path "/2a3172f4-85fe-4c47-84d4-31ed69e3089f"
+					(page "6")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 92.71 57.15)
+		(size 22.86 12.7)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "915106b7-5e51-48ed-8b94-ebc2b82bf0e3")
+		(property "Sheetname" "Jack"
+			(at 92.71 56.4384 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Jack.kicad_sch"
+			(at 92.71 70.4346 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "HT16K33Panel"
+				(path "/2a3172f4-85fe-4c47-84d4-31ed69e3089f"
+					(page "11")
+				)
+			)
+		)
+	)
+	(sheet
 		(at 91.44 25.4)
 		(size 24.13 12.7)
 		(fields_autoplaced yes)
@@ -115,6 +305,120 @@
 			(project "HT16K33Panel"
 				(path "/2a3172f4-85fe-4c47-84d4-31ed69e3089f"
 					(page "4")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 128.27 57.15)
+		(size 24.13 12.7)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "ad3f0fe7-388c-46eb-bb44-84ca4c391ecf")
+		(property "Sheetname" "MIDI_RX"
+			(at 128.27 56.4384 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "MIDI_RX.kicad_sch"
+			(at 128.27 70.4346 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "HT16K33Panel"
+				(path "/2a3172f4-85fe-4c47-84d4-31ed69e3089f"
+					(page "12")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 193.04 25.4)
+		(size 24.13 12.7)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "afefba07-db52-4715-95dd-56c2bf952910")
+		(property "Sheetname" "FRAM"
+			(at 193.04 24.6884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "FRAM.kicad_sch"
+			(at 193.04 38.6846 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "HT16K33Panel"
+				(path "/2a3172f4-85fe-4c47-84d4-31ed69e3089f"
+					(page "7")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 59.69 57.15)
+		(size 21.59 12.7)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "f3b5231d-35fc-4efc-955c-6e28240d5ff2")
+		(property "Sheetname" "CV"
+			(at 59.69 56.4384 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "CV.kicad_sch"
+			(at 59.69 70.4346 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "HT16K33Panel"
+				(path "/2a3172f4-85fe-4c47-84d4-31ed69e3089f"
+					(page "10")
 				)
 			)
 		)

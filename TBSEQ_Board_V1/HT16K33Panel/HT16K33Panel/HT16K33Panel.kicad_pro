@@ -494,12 +494,20 @@
         "pattern": "D+3.3V"
       },
       {
-        "netclass": "Default",
+        "netclass": "Power",
         "pattern": "D+5V"
       },
       {
         "netclass": "Power",
         "pattern": "GNDD"
+      },
+      {
+        "netclass": "Power",
+        "pattern": "D+VBUS"
+      },
+      {
+        "netclass": "Power",
+        "pattern": "D+VSYS"
       }
     ]
   },
@@ -568,13 +576,79 @@
           "label": "DNP",
           "name": "${DNP}",
           "show": true
+        },
+        {
+          "group_by": false,
+          "label": "#",
+          "name": "${ITEM_NUMBER}",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Arrow Part Number",
+          "name": "Arrow Part Number",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Arrow Price/Stock",
+          "name": "Arrow Price/Stock",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Height",
+          "name": "Height",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Manufacturer_Name",
+          "name": "Manufacturer_Name",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Manufacturer_Part_Number",
+          "name": "Manufacturer_Part_Number",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Mouser Part Number",
+          "name": "Mouser Part Number",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Mouser Price/Stock",
+          "name": "Mouser Price/Stock",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Sim.Device",
+          "name": "Sim.Device",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Sim.Pins",
+          "name": "Sim.Pins",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "説明",
+          "name": "Description",
+          "show": false
         }
       ],
       "filter_string": "",
       "group_symbols": true,
-      "name": "Grouped By Value",
+      "name": "",
       "sort_asc": true,
-      "sort_field": "リファレンス"
+      "sort_field": "Reference"
     },
     "connection_grid_size": 50.0,
     "drawing": {
@@ -631,6 +705,38 @@
     [
       "a63b7c65-5d3c-44f6-ba1b-5f456467aebd",
       "SwitchMatrix"
+    ],
+    [
+      "278c9357-6348-43c5-882f-deffbfcdadb9",
+      "RasPiPico"
+    ],
+    [
+      "90303121-4348-4bf8-ada4-62b343a95dee",
+      "Power"
+    ],
+    [
+      "afefba07-db52-4715-95dd-56c2bf952910",
+      "FRAM"
+    ],
+    [
+      "76aea9e9-e15e-44da-a250-96783d5973d5",
+      "LevelConvert"
+    ],
+    [
+      "2e63481c-c245-4bea-8108-461dad082917",
+      "TEMPO"
+    ],
+    [
+      "f3b5231d-35fc-4efc-955c-6e28240d5ff2",
+      "CV"
+    ],
+    [
+      "915106b7-5e51-48ed-8b94-ebc2b82bf0e3",
+      "Jack"
+    ],
+    [
+      "ad3f0fe7-388c-46eb-bb44-84ca4c391ecf",
+      "MIDI_RX"
     ]
   ],
   "text_variables": {}

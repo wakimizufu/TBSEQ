@@ -545,7 +545,7 @@
       "gencad": "",
       "idf": "",
       "netlist": "",
-      "plot": "",
+      "plot": "C:/workspace/git_TBSEQ/TBSEQ_Board_V1/powersupply/powersupply/gaberData",
       "pos_files": "",
       "specctra_dsn": "",
       "step": "",

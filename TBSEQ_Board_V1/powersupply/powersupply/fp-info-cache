@@ -1,4 +1,4 @@
-23365558634062102
+23394842586868502
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -87633,6 +87633,13 @@ rotary encoder illuminated switch vertical
 9
 8
 SamacSys_Parts
+11-4L1S_5-PIN-SOIC_
+11-4L1S(5-Pin SOIC)
+Integrated Circuit
+0
+5
+5
+SamacSys_Parts
 3296W1502A
 3296W-1-502A-1
 Variable Resistor
@@ -87668,6 +87675,13 @@ Schottky Diode
 2
 2
 SamacSys_Parts
+DIP762W55P254L2286H480Q18N
+DIP18-300-2.54-001
+Integrated Circuit
+0
+18
+18
+SamacSys_Parts
 DIP762W60P254L966H485Q8N
 11-10C4 (8PDIP)
 Phototransistor
@@ -87682,12 +87696,47 @@ Integrated Circuit
 8
 8
 SamacSys_Parts
+DIP794W56P254L3486H508Q28N
+28-(SP -300MIL) [SPDIP]
+Integrated Circuit
+0
+28
+28
+SamacSys_Parts
+DIP926W55P254L2286H480Q18N
+P-DIP18-300-2.54-001
+Integrated Circuit
+0
+18
+18
+SamacSys_Parts
+HN4A06JTE85LF
+HN4A06J(TE85L,F)-2
+Transistor BJT PNP
+0
+5
+5
+SamacSys_Parts
+HN4C06JBLTE85LF
+HN4C06J-BL(TE85L,F-1
+Transistor BJT PNP
+0
+5
+5
+SamacSys_Parts
 KDJ035
 KDJ03-5
 Connector
 0
 7
 7
+SamacSys_Parts
+MFR050
+MF-R050-1
+Fuse
+0
+2
+2
 SamacSys_Parts
 MJ179PH
 MJ-179PH-2
@@ -87717,12 +87766,40 @@ Connector
 53
 53
 SamacSys_Parts
+PTV1113420AA103
+PTV111-3420A-A103-3
+Variable Resistor
+0
+6
+6
+SamacSys_Parts
+PTV1114420AB502
+PTV111-4420A-B502-1
+Variable Resistor
+0
+6
+6
+SamacSys_Parts
+PTV1124420AA504
+PTV112-4420A-A504-1
+Variable Resistor
+0
+8
+8
+SamacSys_Parts
 RK09D117000B
 RK09D117000B-1
 Variable Resistor
 0
 5
 5
+SamacSys_Parts
+RK09L1240F15C0B104
+RK09L1240-F15-C0-B104-2
+Variable Resistor
+0
+8
+8
 SamacSys_Parts
 Raspberry Pi Pico DIP-40_W17.76mm
 40-lead though-hole mounted DIP package, row spacing 15.24 mm (600 mils)
@@ -87745,6 +87822,20 @@ Connector
 3
 3
 SamacSys_Parts
+SJ63072J
+SJ-63072J-1
+Relay or Contactor
+0
+4
+4
+SamacSys_Parts
+SOD3716X135N
+SOD-123a
+Diode
+0
+2
+2
+SamacSys_Parts
 SOIC127P602X173-8N
 8-PIN SOIC (150 mils) Package Outline51-85066
 Integrated Circuit
@@ -87752,9 +87843,37 @@ Integrated Circuit
 8
 8
 SamacSys_Parts
+SOIC127P700X230-6N
+5pin SO6-2
+Integrated Circuit
+0
+6
+6
+SamacSys_Parts
+SOIC127P1031X264-28N
+HT16K33cgc
+Integrated Circuit
+0
+28
+28
+SamacSys_Parts
 SOT95P237X112-3N
 IRLML5203TRPBF
 MOSFET (P-Channel)
+0
+3
+3
+SamacSys_Parts
+SOT95P285X140-6N
+SOT26
+Transistor BJT PNP
+0
+6
+6
+SamacSys_Parts
+TO254P570X1700X1780-3P
+3-SIP Module
+Power Supply
 0
 3
 3

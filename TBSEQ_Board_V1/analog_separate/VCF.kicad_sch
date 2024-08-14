@@ -5,6 +5,166 @@
 	(uuid "ab02e98e-3b81-4993-b2b5-745aa1283029")
 	(paper "A4")
 	(lib_symbols
+		(symbol "Connector:Conn_01x02_Pin"
+			(pin_names
+				(offset 1.016) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "J"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Conn_01x02_Pin"
+				(at 0 -5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Generic connector, single row, 01x02, script generated"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_locked" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "connector"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Connector*:*_1x??_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Conn_01x02_Pin_1_1"
+				(polyline
+					(pts
+						(xy 1.27 -2.54) (xy 0.8636 -2.54)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 0) (xy 0.8636 0)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start 0.8636 -2.413)
+					(end 0 -2.667)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start 0.8636 0.127)
+					(end 0 -0.127)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(pin passive line
+					(at 5.08 0 180)
+					(length 3.81)
+					(name "Pin_1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 -2.54 180)
+					(length 3.81)
+					(name "Pin_2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "Device:C_Polarized_Small"
 			(pin_numbers hide)
 			(pin_names
@@ -2250,6 +2410,12 @@
 		(uuid "0d3a8447-8326-45aa-9d44-6239d9fc4a64")
 	)
 	(junction
+		(at 53.34 118.11)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "151d828d-aa38-4654-bec3-90a748fc190a")
+	)
+	(junction
 		(at 38.1 33.02)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2310,6 +2476,12 @@
 		(uuid "3ddf4227-afce-493e-9d86-e9d8867863ca")
 	)
 	(junction
+		(at 64.77 20.32)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "46bac0b0-459f-4fce-a158-4adb380f4e0d")
+	)
+	(junction
 		(at 173.99 20.32)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2350,12 +2522,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "637db9a0-019b-46c7-9c49-82c708e80c3e")
-	)
-	(junction
-		(at 54.61 118.11)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "6b949c2b-563b-48d3-8a0f-79237af5c73e")
 	)
 	(junction
 		(at 210.82 86.36)
@@ -2484,28 +2650,22 @@
 		(uuid "c51355af-f073-47d4-9947-6819318ea178")
 	)
 	(junction
-		(at 64.77 25.4)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "c657a687-be16-463c-b344-169531067b11")
-	)
-	(junction
 		(at 171.45 101.6)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "cb6e2af4-4ec1-43dd-869b-6bc110ac1ff3")
 	)
 	(junction
-		(at 54.61 128.27)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "d04ac3ed-cbb1-4ed1-9a41-8f0ce59084f3")
-	)
-	(junction
 		(at 140.97 36.83)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d3d62972-8daa-4079-ac67-e9b0909b2f7a")
+	)
+	(junction
+		(at 53.34 139.7)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "da909f74-148c-494d-ab4e-b956c737bcdb")
 	)
 	(junction
 		(at 181.61 109.22)
@@ -2588,6 +2748,16 @@
 			(type default)
 		)
 		(uuid "03f71593-14f4-400b-a43f-fcbed4eda8f1")
+	)
+	(wire
+		(pts
+			(xy 72.39 139.7) (xy 72.39 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0747c42b-0272-4aca-ada1-383af48a200b")
 	)
 	(wire
 		(pts
@@ -2891,6 +3061,16 @@
 	)
 	(wire
 		(pts
+			(xy 53.34 139.7) (xy 62.23 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "31ad26ea-40b6-4ba1-a480-efe23f1e4cea")
+	)
+	(wire
+		(pts
 			(xy 275.59 128.27) (xy 275.59 132.08)
 		)
 		(stroke
@@ -2981,6 +3161,16 @@
 	)
 	(wire
 		(pts
+			(xy 48.26 20.32) (xy 64.77 20.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3d3b1a64-d3ee-4d69-8d73-aadc5c241183")
+	)
+	(wire
+		(pts
 			(xy 217.17 50.8) (xy 209.55 50.8)
 		)
 		(stroke
@@ -3001,7 +3191,7 @@
 	)
 	(wire
 		(pts
-			(xy 54.61 147.32) (xy 54.61 149.86)
+			(xy 53.34 139.7) (xy 53.34 147.32)
 		)
 		(stroke
 			(width 0)
@@ -3391,6 +3581,16 @@
 	)
 	(wire
 		(pts
+			(xy 53.34 133.35) (xy 53.34 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6140783b-f630-48cb-84f4-38279549587d")
+	)
+	(wire
+		(pts
 			(xy 72.39 120.65) (xy 59.69 120.65)
 		)
 		(stroke
@@ -3408,16 +3608,6 @@
 			(type default)
 		)
 		(uuid "63cf2b56-af71-4d1f-92db-1304b29632c2")
-	)
-	(wire
-		(pts
-			(xy 54.61 118.11) (xy 54.61 128.27)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "64868522-92cf-4bf7-afa5-d1d5bf50730b")
 	)
 	(wire
 		(pts
@@ -3801,16 +3991,6 @@
 	)
 	(wire
 		(pts
-			(xy 48.26 25.4) (xy 64.77 25.4)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "860c51a8-3577-4245-b325-ceba9764f932")
-	)
-	(wire
-		(pts
 			(xy 93.98 54.61) (xy 86.36 54.61)
 		)
 		(stroke
@@ -3851,7 +4031,7 @@
 	)
 	(wire
 		(pts
-			(xy 72.39 118.11) (xy 54.61 118.11)
+			(xy 50.8 118.11) (xy 53.34 118.11)
 		)
 		(stroke
 			(width 0)
@@ -4191,16 +4371,6 @@
 	)
 	(wire
 		(pts
-			(xy 50.8 118.11) (xy 54.61 118.11)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a7db751b-7d12-44fa-8d86-57d945c52f6d")
-	)
-	(wire
-		(pts
 			(xy 121.92 168.91) (xy 121.92 157.48)
 		)
 		(stroke
@@ -4291,23 +4461,13 @@
 	)
 	(wire
 		(pts
-			(xy 48.26 33.02) (xy 48.26 25.4)
+			(xy 48.26 20.32) (xy 48.26 33.02)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "acc5f61f-7352-4c98-9803-3c7e4a8a98ec")
-	)
-	(wire
-		(pts
-			(xy 54.61 128.27) (xy 54.61 139.7)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ad7d156b-4b10-4dbf-868b-69b8c1ef9ded")
 	)
 	(wire
 		(pts
@@ -4511,7 +4671,7 @@
 	)
 	(wire
 		(pts
-			(xy 38.1 128.27) (xy 43.18 128.27)
+			(xy 35.56 139.7) (xy 40.64 139.7)
 		)
 		(stroke
 			(width 0)
@@ -4548,6 +4708,16 @@
 			(type default)
 		)
 		(uuid "c55365b4-cc34-4be7-a3da-cb522794db78")
+	)
+	(wire
+		(pts
+			(xy 53.34 118.11) (xy 53.34 125.73)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c5af7a02-ac64-49ba-9266-b137db1c6b46")
 	)
 	(wire
 		(pts
@@ -4711,7 +4881,7 @@
 	)
 	(wire
 		(pts
-			(xy 72.39 128.27) (xy 69.85 128.27)
+			(xy 72.39 139.7) (xy 69.85 139.7)
 		)
 		(stroke
 			(width 0)
@@ -4881,13 +5051,13 @@
 	)
 	(wire
 		(pts
-			(xy 50.8 128.27) (xy 54.61 128.27)
+			(xy 53.34 118.11) (xy 72.39 118.11)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "f2d4b84f-2dc5-4473-a472-0e1a9d265ad8")
+		(uuid "f28bce2c-313a-439c-8226-02e8ba6078db")
 	)
 	(wire
 		(pts
@@ -4911,7 +5081,7 @@
 	)
 	(wire
 		(pts
-			(xy 54.61 128.27) (xy 62.23 128.27)
+			(xy 48.26 139.7) (xy 53.34 139.7)
 		)
 		(stroke
 			(width 0)
@@ -4921,7 +5091,7 @@
 	)
 	(wire
 		(pts
-			(xy 54.61 154.94) (xy 54.61 157.48)
+			(xy 53.34 152.4) (xy 53.34 154.94)
 		)
 		(stroke
 			(width 0)
@@ -5374,6 +5544,16 @@
 		)
 		(uuid "8482357c-051e-4d65-9407-1bcd8a37f3de")
 	)
+	(text "toVCA"
+		(exclude_from_sim no)
+		(at 226.314 32.004 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+			)
+		)
+		(uuid "94341562-08b5-4b51-8944-baed89fc7e22")
+	)
 	(text "CUTOFF.FREQ"
 		(exclude_from_sim no)
 		(at 256.794 137.668 0)
@@ -5422,6 +5602,50 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "A+VCA_Signal"
+		(shape output)
+		(at 228.6 40.64 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "553ac3cf-325e-4a94-b796-1b386cf25c61")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 246.8253 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "A+VCA_Resonance"
+		(shape output)
+		(at 228.6 43.18 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "6648e8c3-6798-410d-b67c-4c7dd891c4b9")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 246.8253 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 				(hide yes)
 			)
 		)
@@ -5560,7 +5784,7 @@
 	)
 	(global_label "A+5.333V"
 		(shape input)
-		(at 38.1 128.27 180)
+		(at 35.56 139.7 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5570,7 +5794,7 @@
 		)
 		(uuid "db4e4e54-3099-46a8-8131-cc49cdfdd091")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 25.9224 128.27 0)
+			(at 23.3824 139.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5602,7 +5826,7 @@
 			)
 		)
 	)
-	(global_label "A+VCO_MIX"
+	(global_label "A+VCO_WAVE"
 		(shape input)
 		(at 26.67 118.11 180)
 		(fields_autoplaced yes)
@@ -5729,6 +5953,12 @@
 			(uuid "c0eeaade-f022-4cda-964e-989641a6bc88")
 		)
 		(instances
+			(project "analog_separate"
+				(path "/96522794-a695-4466-86ba-4264882708e5/61691b76-98cc-44c7-bbd3-46b1e9e84197"
+					(reference "R109")
+					(unit 1)
+				)
+			)
 			(project "analog"
 				(path "/9f46303d-d943-4531-8552-3d499521569d/8e61ecd7-f3a8-4f1c-b3ef-7927cbcf8827"
 					(reference "R109")
@@ -5798,6 +6028,12 @@
 			(uuid "b7016ff8-ff06-487c-9ea3-9f32ef7af5e7")
 		)
 		(instances
+			(project "analog_separate"
+				(path "/96522794-a695-4466-86ba-4264882708e5/61691b76-98cc-44c7-bbd3-46b1e9e84197"
+					(reference "R110")
+					(unit 1)
+				)
+			)
 			(project "analog"
 				(path "/9f46303d-d943-4531-8552-3d499521569d/8e61ecd7-f3a8-4f1c-b3ef-7927cbcf8827"
 					(reference "R110")
@@ -5833,7 +6069,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm"
+		(property "Footprint" "Capacitor_THT:CP_Radial_D4.0mm_P2.00mm"
 			(at 64.77 49.53 0)
 			(effects
 				(font
@@ -5867,6 +6103,12 @@
 			(uuid "dcdde280-fe5b-4785-bd9a-2d09354a6c37")
 		)
 		(instances
+			(project "analog_separate"
+				(path "/96522794-a695-4466-86ba-4264882708e5/61691b76-98cc-44c7-bbd3-46b1e9e84197"
+					(reference "C30")
+					(unit 1)
+				)
+			)
 			(project "analog"
 				(path "/9f46303d-d943-4531-8552-3d499521569d/8e61ecd7-f3a8-4f1c-b3ef-7927cbcf8827"
 					(reference "C30")
@@ -5936,6 +6178,12 @@
 			(uuid "15039f3a-d679-4e80-93ba-2ce19ed21a03")
 		)
 		(instances
+			(project "analog_separate"
+				(path "/96522794-a695-4466-86ba-4264882708e5/61691b76-98cc-44c7-bbd3-46b1e9e84197"
+					(reference "R47")
+					(unit 1)
+				)
+			)
 			(project "analog"
 				(path "/9f46303d-d943-4531-8552-3d499521569d/8e61ecd7-f3a8-4f1c-b3ef-7927cbcf8827"
 					(reference "R47")
@@ -6002,6 +6250,12 @@
 			(uuid "0d18ca2e-db29-4e4b-9a3c-18c35fa72728")
 		)
 		(instances
+			(project "analog_separate"
+				(path "/96522794-a695-4466-86ba-4264882708e5/61691b76-98cc-44c7-bbd3-46b1e9e84197"
+					(reference "#PWR031")
+					(unit 1)
+				)
+			)
 			(project "analog"
 				(path "/9f46303d-d943-4531-8552-3d499521569d/8e61ecd7-f3a8-4f1c-b3ef-7927cbcf8827"
 					(reference "#PWR031")
@@ -6071,6 +6325,12 @@
 			(uuid "08b41f1b-1b47-43ab-beb3-7f70c66a66e8")
 		)
 		(instances
+			(project "analog_separate"
+				(path "/96522794-a695-4466-86ba-4264882708e5/61691b76-98cc-44c7-bbd3-46b1e9e84197"
+					(reference "R115")
+					(unit 1)
+				)
+			)
 			(project "analog"
 				(path "/9f46303d-d943-4531-8552-3d499521569d/8e61ecd7-f3a8-4f1c-b3ef-7927cbcf8827"
 					(reference "R115")
@@ -6106,7 +6366,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm"
+		(property "Footprint" "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm"
 			(at 234.95 87.63 0)
 			(effects
 				(font
@@ -6140,6 +6400,12 @@
 			(uuid "cab1fe33-5121-4023-93c3-0d451561d675")
 		)
 		(instances
+			(project "analog_separate"
+				(path "/96522794-a695-4466-86ba-4264882708e5/61691b76-98cc-44c7-bbd3-46b1e9e84197"
+					(reference "C13")
+					(unit 1)
+				)
+			)
 			(project "analog"
 				(path "/9f46303d-d943-4531-8552-3d499521569d/8e61ecd7-f3a8-4f1c-b3ef-7927cbcf8827"
 					(reference "C13")
@@ -6150,7 +6416,7 @@
 	)
 	(symbol
 		(lib_id "power:GNDA")
-		(at 54.61 157.48 0)
+		(at 53.34 154.94 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6159,7 +6425,7 @@
 		(fields_autoplaced yes)
 		(uuid "1b6e4e15-345c-4eb2-8cf9-5b142747e534")
 		(property "Reference" "#PWR025"
-			(at 54.61 163.83 0)
+			(at 53.34 161.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6168,7 +6434,7 @@
 			)
 		)
 		(property "Value" "GNDA"
-			(at 54.61 162.56 0)
+			(at 53.34 160.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6176,7 +6442,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 54.61 157.48 0)
+			(at 53.34 154.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6185,7 +6451,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 54.61 157.48 0)
+			(at 53.34 154.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6194,7 +6460,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GNDA\" , analog ground"
-			(at 54.61 157.48 0)
+			(at 53.34 154.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6206,6 +6472,12 @@
 			(uuid "953ed5bd-3981-46fa-a806-10a806903383")
 		)
 		(instances
+			(project "analog_separate"
+				(path "/96522794-a695-4466-86ba-4264882708e5/61691b76-98cc-44c7-bbd3-46b1e9e84197"
+					(reference "#PWR025")
+					(unit 1)
+				)
+			)
 			(project "analog"
 				(path "/9f46303d-d943-4531-8552-3d499521569d/8e61ecd7-f3a8-4f1c-b3ef-7927cbcf8827"
 					(reference "#PWR025")
@@ -6275,6 +6547,12 @@
 			(uuid "103369b0-836a-4fc8-8f2d-a15358505c14")
 		)
 		(instances
+			(project "analog_separate"
+				(path "/96522794-a695-4466-86ba-4264882708e5/61691b76-98cc-44c7-bbd3-46b1e9e84197"
+					(reference "R96")
+					(unit 1)
+				)
+			)
 			(project "analog"
 				(path "/9f46303d-d943-4531-8552-3d499521569d/8e61ecd7-f3a8-4f1c-b3ef-7927cbcf8827"
 					(reference "R96")
@@ -6344,6 +6622,12 @@
 			(uuid "6961e1ab-0a2e-4cfb-967e-737afa7cdda6")
 		)
 		(instances
+			(project "analog_separate"
+				(path "/96522794-a695-4466-86ba-4264882708e5/61691b76-98cc-44c7-bbd3-46b1e9e84197"
+					(reference "R69")
+					(unit 1)
+				)
+			)
 			(project "analog"
 				(path "/9f46303d-d943-4531-8552-3d499521569d/8e61ecd7-f3a8-4f1c-b3ef-7927cbcf8827"
 					(reference "R69")
@@ -6411,6 +6695,12 @@
 			(uuid "3fe9823f-9467-4f5e-9e83-27b2b39d305f")
 		)
 		(instances
+			(project "analog_separate"
+				(path "/96522794-a695-4466-86ba-4264882708e5/61691b76-98cc-44c7-bbd3-46b1e9e84197"
+					(reference "C19")
+					(unit 1)
+				)
+			)
 			(project "analog"
 				(path "/9f46303d-d943-4531-8552-3d499521569d/8e61ecd7-f3a8-4f1c-b3ef-7927cbcf8827"
 					(reference "C19")
@@ -6478,6 +6768,12 @@
 			(uuid "0fa7e566-70d7-4924-946b-305434fa560c")
 		)
 		(instances
+			(project "analog_separate"
+				(path "/96522794-a695-4466-86ba-4264882708e5/61691b76-98cc-44c7-bbd3-46b1e9e84197"
+					(reference "C26")
+					(unit 1)
+				)
+			)
 			(project "analog"
 				(path "/9f46303d-d943-4531-8552-3d499521569d/8e61ecd7-f3a8-4f1c-b3ef-7927cbcf8827"
 					(reference "C26")
@@ -6547,6 +6843,12 @@
 			(uuid "5c040139-21ec-4230-a5bd-c17b144c3da7")
 		)
 		(instances
+			(project "analog_separate"
+				(path "/96522794-a695-4466-86ba-4264882708e5/61691b76-98cc-44c7-bbd3-46b1e9e84197"
+					(reference "R99")
+					(unit 1)
+				)
+			)
 			(project "analog"
 				(path "/9f46303d-d943-4531-8552-3d499521569d/8e61ecd7-f3a8-4f1c-b3ef-7927cbcf8827"
 					(reference "R99")
@@ -6699,6 +7001,12 @@
 			(uuid "ab5b99fb-7224-42bc-b88d-1a3604eecda2")
 		)
 		(instances
+			(project "analog_separate"
+				(path "/96522794-a695-4466-86ba-4264882708e5/61691b76-98cc-44c7-bbd3-46b1e9e84197"
+					(reference "Q22")
+					(unit 1)
+				)
+			)
 			(project "analog"
 				(path "/9f46303d-d943-4531-8552-3d499521569d/8e61ecd7-f3a8-4f1c-b3ef-7927cbcf8827"
 					(reference "Q22")
@@ -6768,6 +7076,12 @@
 			(uuid "b6d52550-ff5d-4f64-a7d8-936181bbd1bf")
 		)
 		(instances
+			(project "analog_separate"
+				(path "/96522794-a695-4466-86ba-4264882708e5/61691b76-98cc-44c7-bbd3-46b1e9e84197"
+					(reference "R111")
+					(unit 1)
+				)
+			)
 			(project "analog"
 				(path "/9f46303d-d943-4531-8552-3d499521569d/8e61ecd7-f3a8-4f1c-b3ef-7927cbcf8827"
 					(reference "R111")
@@ -6804,7 +7118,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm"
+		(property "Footprint" "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm"
 			(at 210.82 90.17 0)
 			(effects
 				(font
@@ -6838,6 +7152,12 @@
 			(uuid "2bf7a10b-ed14-4585-924c-5c822afeda65")
 		)
 		(instances
+			(project "analog_separate"
+				(path "/96522794-a695-4466-86ba-4264882708e5/61691b76-98cc-44c7-bbd3-46b1e9e84197"
+					(reference "C22")
+					(unit 1)
+				)
+			)
 			(project "analog"
 				(path "/9f46303d-d943-4531-8552-3d499521569d/8e61ecd7-f3a8-4f1c-b3ef-7927cbcf8827"
 					(reference "C22")
@@ -6910,6 +7230,12 @@
 			(uuid "5685d063-1381-4ed0-ad72-af9a68caf251")
 		)
 		(instances
+			(project "analog_separate"
+				(path "/96522794-a695-4466-86ba-4264882708e5/61691b76-98cc-44c7-bbd3-46b1e9e84197"
+					(reference "Q15")
+					(unit 1)
+				)
+			)
 			(project "analog"
 				(path "/9f46303d-d943-4531-8552-3d499521569d/8e61ecd7-f3a8-4f1c-b3ef-7927cbcf8827"
 					(reference "Q15")
@@ -6976,6 +7302,12 @@
 			(uuid "51ab6aea-635d-49e3-a875-2cf6b1c07eb4")
 		)
 		(instances
+			(project "analog_separate"
+				(path "/96522794-a695-4466-86ba-4264882708e5/61691b76-98cc-44c7-bbd3-46b1e9e84197"
+					(reference "#PWR032")
+					(unit 1)
+				)
+			)
 			(project "analog"
 				(path "/9f46303d-d943-4531-8552-3d499521569d/8e61ecd7-f3a8-4f1c-b3ef-7927cbcf8827"
 					(reference "#PWR032")
@@ -6986,7 +7318,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 46.99 128.27 270)
+		(at 44.45 139.7 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6994,7 +7326,7 @@
 		(dnp no)
 		(uuid "401df6f2-97f1-449a-86f7-0740c36dba55")
 		(property "Reference" "R68"
-			(at 45.212 125.73 90)
+			(at 42.672 137.16 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7003,7 +7335,7 @@
 			)
 		)
 		(property "Value" "2.2K"
-			(at 51.308 125.73 90)
+			(at 48.768 137.16 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7012,7 +7344,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical"
-			(at 46.99 126.492 90)
+			(at 44.45 137.922 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7021,7 +7353,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 46.99 128.27 0)
+			(at 44.45 139.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7030,7 +7362,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 46.99 128.27 0)
+			(at 44.45 139.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7045,6 +7377,12 @@
 			(uuid "07e90475-8b30-4142-a8e4-401810a312bc")
 		)
 		(instances
+			(project "analog_separate"
+				(path "/96522794-a695-4466-86ba-4264882708e5/61691b76-98cc-44c7-bbd3-46b1e9e84197"
+					(reference "R68")
+					(unit 1)
+				)
+			)
 			(project "analog"
 				(path "/9f46303d-d943-4531-8552-3d499521569d/8e61ecd7-f3a8-4f1c-b3ef-7927cbcf8827"
 					(reference "R68")
@@ -7112,6 +7450,12 @@
 			(uuid "93871dc7-a97d-4fec-a20c-5cd42d0714b4")
 		)
 		(instances
+			(project "analog_separate"
+				(path "/96522794-a695-4466-86ba-4264882708e5/61691b76-98cc-44c7-bbd3-46b1e9e84197"
+					(reference "C25")
+					(unit 1)
+				)
+			)
 			(project "analog"
 				(path "/9f46303d-d943-4531-8552-3d499521569d/8e61ecd7-f3a8-4f1c-b3ef-7927cbcf8827"
 					(reference "C25")
@@ -7178,6 +7522,12 @@
 			(uuid "35688113-6165-4737-b3b2-ffb70b7ad54b")
 		)
 		(instances
+			(project "analog_separate"
+				(path "/96522794-a695-4466-86ba-4264882708e5/61691b76-98cc-44c7-bbd3-46b1e9e84197"
+					(reference "#PWR030")
+					(unit 1)
+				)
+			)
 			(project "analog"
 				(path "/9f46303d-d943-4531-8552-3d499521569d/8e61ecd7-f3a8-4f1c-b3ef-7927cbcf8827"
 					(reference "#PWR030")
@@ -7247,6 +7597,12 @@
 			(uuid "60791ea0-3d01-4c74-a795-65f12c233085")
 		)
 		(instances
+			(project "analog_separate"
+				(path "/96522794-a695-4466-86ba-4264882708e5/61691b76-98cc-44c7-bbd3-46b1e9e84197"
+					(reference "R114")
+					(unit 1)
+				)
+			)
 			(project "analog"
 				(path "/9f46303d-d943-4531-8552-3d499521569d/8e61ecd7-f3a8-4f1c-b3ef-7927cbcf8827"
 					(reference "R114")
@@ -7316,6 +7672,12 @@
 			(uuid "714ac3f9-05f8-48a1-b907-7831c6031c2c")
 		)
 		(instances
+			(project "analog_separate"
+				(path "/96522794-a695-4466-86ba-4264882708e5/61691b76-98cc-44c7-bbd3-46b1e9e84197"
+					(reference "R67")
+					(unit 1)
+				)
+			)
 			(project "analog"
 				(path "/9f46303d-d943-4531-8552-3d499521569d/8e61ecd7-f3a8-4f1c-b3ef-7927cbcf8827"
 					(reference "R67")
@@ -7388,6 +7750,12 @@
 			(uuid "9e66de73-34f7-4e88-94db-febc1ee8ea0f")
 		)
 		(instances
+			(project "analog_separate"
+				(path "/96522794-a695-4466-86ba-4264882708e5/61691b76-98cc-44c7-bbd3-46b1e9e84197"
+					(reference "Q10")
+					(unit 1)
+				)
+			)
 			(project "analog"
 				(path "/9f46303d-d943-4531-8552-3d499521569d/8e61ecd7-f3a8-4f1c-b3ef-7927cbcf8827"
 					(reference "Q10")
@@ -7457,6 +7825,12 @@
 			(uuid "cb925b5e-5212-40e3-89e4-ba5b94bab00c")
 		)
 		(instances
+			(project "analog_separate"
+				(path "/96522794-a695-4466-86ba-4264882708e5/61691b76-98cc-44c7-bbd3-46b1e9e84197"
+					(reference "R73")
+					(unit 1)
+				)
+			)
 			(project "analog"
 				(path "/9f46303d-d943-4531-8552-3d499521569d/8e61ecd7-f3a8-4f1c-b3ef-7927cbcf8827"
 					(reference "R73")
@@ -7526,6 +7900,12 @@
 			(uuid "514f16c3-6097-4f60-be79-b9362f75b55d")
 		)
 		(instances
+			(project "analog_separate"
+				(path "/96522794-a695-4466-86ba-4264882708e5/61691b76-98cc-44c7-bbd3-46b1e9e84197"
+					(reference "R63")
+					(unit 1)
+				)
+			)
 			(project "analog"
 				(path "/9f46303d-d943-4531-8552-3d499521569d/8e61ecd7-f3a8-4f1c-b3ef-7927cbcf8827"
 					(reference "R63")
@@ -7684,6 +8064,12 @@
 			(uuid "a5e93932-7d94-471d-888e-6b366c746fdb")
 		)
 		(instances
+			(project "analog_separate"
+				(path "/96522794-a695-4466-86ba-4264882708e5/61691b76-98cc-44c7-bbd3-46b1e9e84197"
+					(reference "VR4")
+					(unit 1)
+				)
+			)
 			(project "analog"
 				(path "/9f46303d-d943-4531-8552-3d499521569d/8e61ecd7-f3a8-4f1c-b3ef-7927cbcf8827"
 					(reference "VR4")
@@ -7828,6 +8214,12 @@
 			(uuid "a419b270-cc0a-4b9f-aad5-f6f0e684e8f1")
 		)
 		(instances
+			(project "analog_separate"
+				(path "/96522794-a695-4466-86ba-4264882708e5/61691b76-98cc-44c7-bbd3-46b1e9e84197"
+					(reference "TM3")
+					(unit 1)
+				)
+			)
 			(project "analog"
 				(path "/9f46303d-d943-4531-8552-3d499521569d/8e61ecd7-f3a8-4f1c-b3ef-7927cbcf8827"
 					(reference "TM3")
@@ -7894,6 +8286,12 @@
 			(uuid "95eb6b17-3a0d-4d2c-b48b-52f330bdc11f")
 		)
 		(instances
+			(project "analog_separate"
+				(path "/96522794-a695-4466-86ba-4264882708e5/61691b76-98cc-44c7-bbd3-46b1e9e84197"
+					(reference "#PWR033")
+					(unit 1)
+				)
+			)
 			(project "analog"
 				(path "/9f46303d-d943-4531-8552-3d499521569d/8e61ecd7-f3a8-4f1c-b3ef-7927cbcf8827"
 					(reference "#PWR033")
@@ -7960,6 +8358,12 @@
 			(uuid "67e8d66b-247c-49a0-8fde-a6f1d482325a")
 		)
 		(instances
+			(project "analog_separate"
+				(path "/96522794-a695-4466-86ba-4264882708e5/61691b76-98cc-44c7-bbd3-46b1e9e84197"
+					(reference "#PWR036")
+					(unit 1)
+				)
+			)
 			(project "analog"
 				(path "/9f46303d-d943-4531-8552-3d499521569d/8e61ecd7-f3a8-4f1c-b3ef-7927cbcf8827"
 					(reference "#PWR036")
@@ -7996,7 +8400,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm"
+		(property "Footprint" "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm"
 			(at 203.2 50.8 0)
 			(effects
 				(font
@@ -8030,6 +8434,12 @@
 			(uuid "a2940b6a-3613-46d1-a21a-844ff2a20e9a")
 		)
 		(instances
+			(project "analog_separate"
+				(path "/96522794-a695-4466-86ba-4264882708e5/61691b76-98cc-44c7-bbd3-46b1e9e84197"
+					(reference "C14")
+					(unit 1)
+				)
+			)
 			(project "analog"
 				(path "/9f46303d-d943-4531-8552-3d499521569d/8e61ecd7-f3a8-4f1c-b3ef-7927cbcf8827"
 					(reference "C14")
@@ -8063,7 +8473,7 @@
 				)
 			)
 		)
-		(property "Footprint" "SamacSys_Parts:HN4C06JBLTE85LF"
+		(property "Footprint" "Package_DIP:DIP-6_W7.62mm"
 			(at 91.44 213.03 0)
 			(effects
 				(font
@@ -8181,6 +8591,12 @@
 			(uuid "2822db47-3e41-4145-9310-46b36cd1a817")
 		)
 		(instances
+			(project "analog_separate"
+				(path "/96522794-a695-4466-86ba-4264882708e5/61691b76-98cc-44c7-bbd3-46b1e9e84197"
+					(reference "Q12")
+					(unit 1)
+				)
+			)
 			(project "analog"
 				(path "/9f46303d-d943-4531-8552-3d499521569d/8e61ecd7-f3a8-4f1c-b3ef-7927cbcf8827"
 					(reference "Q12")
@@ -8253,6 +8669,12 @@
 			(uuid "9e766098-b85a-4185-9403-2d04f2eb4219")
 		)
 		(instances
+			(project "analog_separate"
+				(path "/96522794-a695-4466-86ba-4264882708e5/61691b76-98cc-44c7-bbd3-46b1e9e84197"
+					(reference "Q18")
+					(unit 1)
+				)
+			)
 			(project "analog"
 				(path "/9f46303d-d943-4531-8552-3d499521569d/8e61ecd7-f3a8-4f1c-b3ef-7927cbcf8827"
 					(reference "Q18")
@@ -8319,6 +8741,12 @@
 			(uuid "8d65fb3a-eac3-45ba-82f3-f9b589e26abb")
 		)
 		(instances
+			(project "analog_separate"
+				(path "/96522794-a695-4466-86ba-4264882708e5/61691b76-98cc-44c7-bbd3-46b1e9e84197"
+					(reference "#PWR028")
+					(unit 1)
+				)
+			)
 			(project "analog"
 				(path "/9f46303d-d943-4531-8552-3d499521569d/8e61ecd7-f3a8-4f1c-b3ef-7927cbcf8827"
 					(reference "#PWR028")
@@ -8391,6 +8819,12 @@
 			(uuid "c3b6fbc5-737a-49cd-9698-45eb2b4a67e0")
 		)
 		(instances
+			(project "analog_separate"
+				(path "/96522794-a695-4466-86ba-4264882708e5/61691b76-98cc-44c7-bbd3-46b1e9e84197"
+					(reference "Q19")
+					(unit 1)
+				)
+			)
 			(project "analog"
 				(path "/9f46303d-d943-4531-8552-3d499521569d/8e61ecd7-f3a8-4f1c-b3ef-7927cbcf8827"
 					(reference "Q19")
@@ -8460,78 +8894,15 @@
 			(uuid "f5a05e5d-83b7-4db5-8922-13e2ce515c9e")
 		)
 		(instances
-			(project "analog"
-				(path "/9f46303d-d943-4531-8552-3d499521569d/8e61ecd7-f3a8-4f1c-b3ef-7927cbcf8827"
+			(project "analog_separate"
+				(path "/96522794-a695-4466-86ba-4264882708e5/61691b76-98cc-44c7-bbd3-46b1e9e84197"
 					(reference "R61")
 					(unit 1)
 				)
 			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 54.61 143.51 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "8bd1439b-dcc1-4e2f-9b33-7aa1c8a90311")
-		(property "Reference" "R70"
-			(at 50.292 141.986 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "2.2K"
-			(at 51.816 144.526 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical"
-			(at 52.832 143.51 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 54.61 143.51 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 54.61 143.51 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "151d436d-08ba-41cf-b7cc-f0c506a6dc0c")
-		)
-		(pin "1"
-			(uuid "864a713c-62c3-45f7-b9a2-54f13921d241")
-		)
-		(instances
 			(project "analog"
 				(path "/9f46303d-d943-4531-8552-3d499521569d/8e61ecd7-f3a8-4f1c-b3ef-7927cbcf8827"
-					(reference "R70")
+					(reference "R61")
 					(unit 1)
 				)
 			)
@@ -8595,6 +8966,12 @@
 			(uuid "bb50d284-5d7b-4938-ba20-e63edbaf2cd8")
 		)
 		(instances
+			(project "analog_separate"
+				(path "/96522794-a695-4466-86ba-4264882708e5/61691b76-98cc-44c7-bbd3-46b1e9e84197"
+					(reference "#PWR037")
+					(unit 1)
+				)
+			)
 			(project "analog"
 				(path "/9f46303d-d943-4531-8552-3d499521569d/8e61ecd7-f3a8-4f1c-b3ef-7927cbcf8827"
 					(reference "#PWR037")
@@ -8661,6 +9038,12 @@
 			(uuid "aef10dba-9970-4e18-b38d-83d96edc3d05")
 		)
 		(instances
+			(project "analog_separate"
+				(path "/96522794-a695-4466-86ba-4264882708e5/61691b76-98cc-44c7-bbd3-46b1e9e84197"
+					(reference "#PWR038")
+					(unit 1)
+				)
+			)
 			(project "analog"
 				(path "/9f46303d-d943-4531-8552-3d499521569d/8e61ecd7-f3a8-4f1c-b3ef-7927cbcf8827"
 					(reference "#PWR038")
@@ -8730,6 +9113,12 @@
 			(uuid "c535b9f5-007e-4648-8533-4e766af0a32d")
 		)
 		(instances
+			(project "analog_separate"
+				(path "/96522794-a695-4466-86ba-4264882708e5/61691b76-98cc-44c7-bbd3-46b1e9e84197"
+					(reference "R65")
+					(unit 1)
+				)
+			)
 			(project "analog"
 				(path "/9f46303d-d943-4531-8552-3d499521569d/8e61ecd7-f3a8-4f1c-b3ef-7927cbcf8827"
 					(reference "R65")
@@ -8796,6 +9185,12 @@
 			(uuid "ec4a3093-b0d2-4f1d-a1fb-5642f5093558")
 		)
 		(instances
+			(project "analog_separate"
+				(path "/96522794-a695-4466-86ba-4264882708e5/61691b76-98cc-44c7-bbd3-46b1e9e84197"
+					(reference "#PWR039")
+					(unit 1)
+				)
+			)
 			(project "analog"
 				(path "/9f46303d-d943-4531-8552-3d499521569d/8e61ecd7-f3a8-4f1c-b3ef-7927cbcf8827"
 					(reference "#PWR039")
@@ -8869,6 +9264,12 @@
 			(uuid "8b60c797-35db-4ced-8e8a-04713739e2d7")
 		)
 		(instances
+			(project "analog_separate"
+				(path "/96522794-a695-4466-86ba-4264882708e5/61691b76-98cc-44c7-bbd3-46b1e9e84197"
+					(reference "Q9")
+					(unit 1)
+				)
+			)
 			(project "analog"
 				(path "/9f46303d-d943-4531-8552-3d499521569d/8e61ecd7-f3a8-4f1c-b3ef-7927cbcf8827"
 					(reference "Q9")
@@ -8942,6 +9343,12 @@
 			(uuid "c6f6a4d3-69ec-4b90-8d11-3b04c04d80e0")
 		)
 		(instances
+			(project "analog_separate"
+				(path "/96522794-a695-4466-86ba-4264882708e5/61691b76-98cc-44c7-bbd3-46b1e9e84197"
+					(reference "Q13")
+					(unit 1)
+				)
+			)
 			(project "analog"
 				(path "/9f46303d-d943-4531-8552-3d499521569d/8e61ecd7-f3a8-4f1c-b3ef-7927cbcf8827"
 					(reference "Q13")
@@ -9015,6 +9422,12 @@
 			(uuid "397628a9-69d8-43c0-bbb9-9165ae74ce04")
 		)
 		(instances
+			(project "analog_separate"
+				(path "/96522794-a695-4466-86ba-4264882708e5/61691b76-98cc-44c7-bbd3-46b1e9e84197"
+					(reference "Q14")
+					(unit 1)
+				)
+			)
 			(project "analog"
 				(path "/9f46303d-d943-4531-8552-3d499521569d/8e61ecd7-f3a8-4f1c-b3ef-7927cbcf8827"
 					(reference "Q14")
@@ -9084,6 +9497,12 @@
 			(uuid "a31065bd-08c6-4b14-b6f2-0bf51aaa2c7f")
 		)
 		(instances
+			(project "analog_separate"
+				(path "/96522794-a695-4466-86ba-4264882708e5/61691b76-98cc-44c7-bbd3-46b1e9e84197"
+					(reference "R94")
+					(unit 1)
+				)
+			)
 			(project "analog"
 				(path "/9f46303d-d943-4531-8552-3d499521569d/8e61ecd7-f3a8-4f1c-b3ef-7927cbcf8827"
 					(reference "R94")
@@ -9235,6 +9654,12 @@
 			(uuid "7b93f05b-5ce6-440b-b14a-38185a847193")
 		)
 		(instances
+			(project "analog_separate"
+				(path "/96522794-a695-4466-86ba-4264882708e5/61691b76-98cc-44c7-bbd3-46b1e9e84197"
+					(reference "VR3")
+					(unit 1)
+				)
+			)
 			(project "analog"
 				(path "/9f46303d-d943-4531-8552-3d499521569d/8e61ecd7-f3a8-4f1c-b3ef-7927cbcf8827"
 					(reference "VR3")
@@ -9304,6 +9729,12 @@
 			(uuid "a20f74f5-0357-4d82-819c-9d3823cab2db")
 		)
 		(instances
+			(project "analog_separate"
+				(path "/96522794-a695-4466-86ba-4264882708e5/61691b76-98cc-44c7-bbd3-46b1e9e84197"
+					(reference "R71")
+					(unit 1)
+				)
+			)
 			(project "analog"
 				(path "/9f46303d-d943-4531-8552-3d499521569d/8e61ecd7-f3a8-4f1c-b3ef-7927cbcf8827"
 					(reference "R71")
@@ -9337,7 +9768,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-15_P10.16mm_Horizontal"
+		(property "Footprint" "Diode_THT:D_A-405_P2.54mm_Vertical_AnodeUp"
 			(at 227.33 100.33 0)
 			(effects
 				(font
@@ -9389,6 +9820,12 @@
 			(uuid "d4346b71-a718-4fd1-900c-38855c328d3a")
 		)
 		(instances
+			(project "analog_separate"
+				(path "/96522794-a695-4466-86ba-4264882708e5/61691b76-98cc-44c7-bbd3-46b1e9e84197"
+					(reference "D24")
+					(unit 1)
+				)
+			)
 			(project "analog"
 				(path "/9f46303d-d943-4531-8552-3d499521569d/8e61ecd7-f3a8-4f1c-b3ef-7927cbcf8827"
 					(reference "D24")
@@ -9407,7 +9844,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b2839333-3f18-4ee7-8ba8-5edfaead04b1")
-		(property "Reference" "#PWR026"
+		(property "Reference" "#PWR0104"
 			(at 64.77 62.23 0)
 			(effects
 				(font
@@ -9455,6 +9892,12 @@
 			(uuid "7b56e145-4c41-4996-8ee0-4db5ec1a31f7")
 		)
 		(instances
+			(project "analog_separate"
+				(path "/96522794-a695-4466-86ba-4264882708e5/61691b76-98cc-44c7-bbd3-46b1e9e84197"
+					(reference "#PWR0104")
+					(unit 1)
+				)
+			)
 			(project "analog"
 				(path "/9f46303d-d943-4531-8552-3d499521569d/8e61ecd7-f3a8-4f1c-b3ef-7927cbcf8827"
 					(reference "#PWR026")
@@ -9524,6 +9967,12 @@
 			(uuid "b7bde11a-5137-43a2-93a4-bed21a153bd1")
 		)
 		(instances
+			(project "analog_separate"
+				(path "/96522794-a695-4466-86ba-4264882708e5/61691b76-98cc-44c7-bbd3-46b1e9e84197"
+					(reference "R116")
+					(unit 1)
+				)
+			)
 			(project "analog"
 				(path "/9f46303d-d943-4531-8552-3d499521569d/8e61ecd7-f3a8-4f1c-b3ef-7927cbcf8827"
 					(reference "R116")
@@ -9593,9 +10042,83 @@
 			(uuid "4da2dd2b-8ffd-4cb7-b9db-f760a40d1cb0")
 		)
 		(instances
+			(project "analog_separate"
+				(path "/96522794-a695-4466-86ba-4264882708e5/61691b76-98cc-44c7-bbd3-46b1e9e84197"
+					(reference "R72")
+					(unit 1)
+				)
+			)
 			(project "analog"
 				(path "/9f46303d-d943-4531-8552-3d499521569d/8e61ecd7-f3a8-4f1c-b3ef-7927cbcf8827"
 					(reference "R72")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Conn_01x02_Pin")
+		(at 223.52 40.64 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "bb66ce0d-5c8c-438b-a8f8-889a3355f1b5")
+		(property "Reference" "J3"
+			(at 224.155 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Conn_01x02_Pin"
+			(at 224.155 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
+			(at 223.52 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 223.52 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x02, script generated"
+			(at 223.52 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "a7d5dea7-55c7-4278-9581-18ca11657156")
+		)
+		(pin "1"
+			(uuid "6bf85516-ffdc-439b-b37f-91f22ddc0cac")
+		)
+		(instances
+			(project "analog_separate"
+				(path "/96522794-a695-4466-86ba-4264882708e5/61691b76-98cc-44c7-bbd3-46b1e9e84197"
+					(reference "J3")
 					(unit 1)
 				)
 			)
@@ -9662,6 +10185,12 @@
 			(uuid "9f5680df-06c0-41e5-80b4-b7623c821bfc")
 		)
 		(instances
+			(project "analog_separate"
+				(path "/96522794-a695-4466-86ba-4264882708e5/61691b76-98cc-44c7-bbd3-46b1e9e84197"
+					(reference "R62")
+					(unit 1)
+				)
+			)
 			(project "analog"
 				(path "/9f46303d-d943-4531-8552-3d499521569d/8e61ecd7-f3a8-4f1c-b3ef-7927cbcf8827"
 					(reference "R62")
@@ -9731,6 +10260,12 @@
 			(uuid "17b955e3-f164-4572-8e67-2594a172da5b")
 		)
 		(instances
+			(project "analog_separate"
+				(path "/96522794-a695-4466-86ba-4264882708e5/61691b76-98cc-44c7-bbd3-46b1e9e84197"
+					(reference "R66")
+					(unit 1)
+				)
+			)
 			(project "analog"
 				(path "/9f46303d-d943-4531-8552-3d499521569d/8e61ecd7-f3a8-4f1c-b3ef-7927cbcf8827"
 					(reference "R66")
@@ -9800,6 +10335,12 @@
 			(uuid "51ac48a3-708d-436c-9ea8-abe8206133be")
 		)
 		(instances
+			(project "analog_separate"
+				(path "/96522794-a695-4466-86ba-4264882708e5/61691b76-98cc-44c7-bbd3-46b1e9e84197"
+					(reference "R64")
+					(unit 1)
+				)
+			)
 			(project "analog"
 				(path "/9f46303d-d943-4531-8552-3d499521569d/8e61ecd7-f3a8-4f1c-b3ef-7927cbcf8827"
 					(reference "R64")
@@ -9834,7 +10375,7 @@
 				)
 			)
 		)
-		(property "Footprint" "SamacSys_Parts:HN4C06JBLTE85LF"
+		(property "Footprint" "Package_DIP:DIP-6_W7.62mm"
 			(at 168.91 131.75 0)
 			(effects
 				(font
@@ -9952,6 +10493,12 @@
 			(uuid "181f657c-6ddb-4ca3-b5be-69a3106af516")
 		)
 		(instances
+			(project "analog_separate"
+				(path "/96522794-a695-4466-86ba-4264882708e5/61691b76-98cc-44c7-bbd3-46b1e9e84197"
+					(reference "Q21")
+					(unit 1)
+				)
+			)
 			(project "analog"
 				(path "/9f46303d-d943-4531-8552-3d499521569d/8e61ecd7-f3a8-4f1c-b3ef-7927cbcf8827"
 					(reference "Q21")
@@ -10103,6 +10650,12 @@
 			(uuid "d1fcce9c-9750-40fe-8285-7de20e6e1948")
 		)
 		(instances
+			(project "analog_separate"
+				(path "/96522794-a695-4466-86ba-4264882708e5/61691b76-98cc-44c7-bbd3-46b1e9e84197"
+					(reference "VR5")
+					(unit 1)
+				)
+			)
 			(project "analog"
 				(path "/9f46303d-d943-4531-8552-3d499521569d/8e61ecd7-f3a8-4f1c-b3ef-7927cbcf8827"
 					(reference "VR5")
@@ -10172,6 +10725,12 @@
 			(uuid "6f70d1a5-b789-4e79-86be-0815ea442cc0")
 		)
 		(instances
+			(project "analog_separate"
+				(path "/96522794-a695-4466-86ba-4264882708e5/61691b76-98cc-44c7-bbd3-46b1e9e84197"
+					(reference "R97")
+					(unit 1)
+				)
+			)
 			(project "analog"
 				(path "/9f46303d-d943-4531-8552-3d499521569d/8e61ecd7-f3a8-4f1c-b3ef-7927cbcf8827"
 					(reference "R97")
@@ -10244,6 +10803,12 @@
 			(uuid "1902d6e0-f7d0-41b3-82cf-a39da30065ae")
 		)
 		(instances
+			(project "analog_separate"
+				(path "/96522794-a695-4466-86ba-4264882708e5/61691b76-98cc-44c7-bbd3-46b1e9e84197"
+					(reference "Q17")
+					(unit 1)
+				)
+			)
 			(project "analog"
 				(path "/9f46303d-d943-4531-8552-3d499521569d/8e61ecd7-f3a8-4f1c-b3ef-7927cbcf8827"
 					(reference "Q17")
@@ -10254,7 +10819,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Polarized_Small")
-		(at 54.61 152.4 0)
+		(at 53.34 149.86 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -10262,7 +10827,7 @@
 		(dnp no)
 		(uuid "d56f305d-db69-48ab-99a1-1b88cdaf6f84")
 		(property "Reference" "C16"
-			(at 46.228 150.876 0)
+			(at 44.958 148.336 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10271,7 +10836,7 @@
 			)
 		)
 		(property "Value" "10uF/16V"
-			(at 42.926 153.67 0)
+			(at 41.656 151.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10279,8 +10844,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm"
-			(at 54.61 152.4 0)
+		(property "Footprint" "Capacitor_THT:CP_Radial_D4.0mm_P2.00mm"
+			(at 53.34 149.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10289,7 +10854,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 54.61 152.4 0)
+			(at 53.34 149.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10298,7 +10863,7 @@
 			)
 		)
 		(property "Description" "Polarized capacitor, small symbol"
-			(at 54.61 152.4 0)
+			(at 53.34 149.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10313,6 +10878,12 @@
 			(uuid "4a65f8b2-aed5-40e6-8614-1cec9b072211")
 		)
 		(instances
+			(project "analog_separate"
+				(path "/96522794-a695-4466-86ba-4264882708e5/61691b76-98cc-44c7-bbd3-46b1e9e84197"
+					(reference "C16")
+					(unit 1)
+				)
+			)
 			(project "analog"
 				(path "/9f46303d-d943-4531-8552-3d499521569d/8e61ecd7-f3a8-4f1c-b3ef-7927cbcf8827"
 					(reference "C16")
@@ -10380,6 +10951,12 @@
 			(uuid "7492481b-8c85-4fbb-9514-9719a274d261")
 		)
 		(instances
+			(project "analog_separate"
+				(path "/96522794-a695-4466-86ba-4264882708e5/61691b76-98cc-44c7-bbd3-46b1e9e84197"
+					(reference "C18")
+					(unit 1)
+				)
+			)
 			(project "analog"
 				(path "/9f46303d-d943-4531-8552-3d499521569d/8e61ecd7-f3a8-4f1c-b3ef-7927cbcf8827"
 					(reference "C18")
@@ -10453,6 +11030,12 @@
 			(uuid "e3878156-3f0e-42d6-bcf5-29ac89aa8d27")
 		)
 		(instances
+			(project "analog_separate"
+				(path "/96522794-a695-4466-86ba-4264882708e5/61691b76-98cc-44c7-bbd3-46b1e9e84197"
+					(reference "Q16")
+					(unit 1)
+				)
+			)
 			(project "analog"
 				(path "/9f46303d-d943-4531-8552-3d499521569d/8e61ecd7-f3a8-4f1c-b3ef-7927cbcf8827"
 					(reference "Q16")
@@ -10519,6 +11102,12 @@
 			(uuid "1f221629-f54e-465d-8d58-734753650565")
 		)
 		(instances
+			(project "analog_separate"
+				(path "/96522794-a695-4466-86ba-4264882708e5/61691b76-98cc-44c7-bbd3-46b1e9e84197"
+					(reference "#PWR035")
+					(unit 1)
+				)
+			)
 			(project "analog"
 				(path "/9f46303d-d943-4531-8552-3d499521569d/8e61ecd7-f3a8-4f1c-b3ef-7927cbcf8827"
 					(reference "#PWR035")
@@ -10585,6 +11174,12 @@
 			(uuid "aced8424-2e6c-48ac-8e5b-5083b6589cac")
 		)
 		(instances
+			(project "analog_separate"
+				(path "/96522794-a695-4466-86ba-4264882708e5/61691b76-98cc-44c7-bbd3-46b1e9e84197"
+					(reference "#PWR029")
+					(unit 1)
+				)
+			)
 			(project "analog"
 				(path "/9f46303d-d943-4531-8552-3d499521569d/8e61ecd7-f3a8-4f1c-b3ef-7927cbcf8827"
 					(reference "#PWR029")
@@ -10652,6 +11247,12 @@
 			(uuid "bdb40c9e-1dec-4ca0-b819-f8d01d3ccfbe")
 		)
 		(instances
+			(project "analog_separate"
+				(path "/96522794-a695-4466-86ba-4264882708e5/61691b76-98cc-44c7-bbd3-46b1e9e84197"
+					(reference "C24")
+					(unit 1)
+				)
+			)
 			(project "analog"
 				(path "/9f46303d-d943-4531-8552-3d499521569d/8e61ecd7-f3a8-4f1c-b3ef-7927cbcf8827"
 					(reference "C24")
@@ -10687,7 +11288,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm"
+		(property "Footprint" "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm"
 			(at 132.08 128.27 0)
 			(effects
 				(font
@@ -10721,6 +11322,12 @@
 			(uuid "71e1e59e-7efd-4e3e-a770-f9959862ecd4")
 		)
 		(instances
+			(project "analog_separate"
+				(path "/96522794-a695-4466-86ba-4264882708e5/61691b76-98cc-44c7-bbd3-46b1e9e84197"
+					(reference "C23")
+					(unit 1)
+				)
+			)
 			(project "analog"
 				(path "/9f46303d-d943-4531-8552-3d499521569d/8e61ecd7-f3a8-4f1c-b3ef-7927cbcf8827"
 					(reference "C23")
@@ -10790,9 +11397,84 @@
 			(uuid "9171bea2-9a2e-4270-8a86-ab38887adea9")
 		)
 		(instances
+			(project "analog_separate"
+				(path "/96522794-a695-4466-86ba-4264882708e5/61691b76-98cc-44c7-bbd3-46b1e9e84197"
+					(reference "R113")
+					(unit 1)
+				)
+			)
 			(project "analog"
 				(path "/9f46303d-d943-4531-8552-3d499521569d/8e61ecd7-f3a8-4f1c-b3ef-7927cbcf8827"
 					(reference "R113")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 53.34 129.54 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "e2a59fd3-ed21-48d0-96ae-a92b5fe92f23")
+		(property "Reference" "R70"
+			(at 49.022 128.016 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "2.2K"
+			(at 50.546 130.556 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical"
+			(at 51.562 129.54 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 53.34 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 53.34 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "e1172df2-d63c-491c-94bd-23666c613562")
+		)
+		(pin "1"
+			(uuid "616f2c96-53de-42d5-ac54-40f29eb50931")
+		)
+		(instances
+			(project "analog_separate"
+				(path "/96522794-a695-4466-86ba-4264882708e5/61691b76-98cc-44c7-bbd3-46b1e9e84197"
+					(reference "R70")
 					(unit 1)
 				)
 			)
@@ -10825,7 +11507,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm"
+		(property "Footprint" "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm"
 			(at 166.37 60.96 0)
 			(effects
 				(font
@@ -10859,6 +11541,12 @@
 			(uuid "6d1f56ad-1ee2-40bf-a345-d8f9a0db7d91")
 		)
 		(instances
+			(project "analog_separate"
+				(path "/96522794-a695-4466-86ba-4264882708e5/61691b76-98cc-44c7-bbd3-46b1e9e84197"
+					(reference "C29")
+					(unit 1)
+				)
+			)
 			(project "analog"
 				(path "/9f46303d-d943-4531-8552-3d499521569d/8e61ecd7-f3a8-4f1c-b3ef-7927cbcf8827"
 					(reference "C29")
@@ -10928,6 +11616,12 @@
 			(uuid "74c53949-2244-4c23-87fa-e4ba67b67307")
 		)
 		(instances
+			(project "analog_separate"
+				(path "/96522794-a695-4466-86ba-4264882708e5/61691b76-98cc-44c7-bbd3-46b1e9e84197"
+					(reference "R108")
+					(unit 1)
+				)
+			)
 			(project "analog"
 				(path "/9f46303d-d943-4531-8552-3d499521569d/8e61ecd7-f3a8-4f1c-b3ef-7927cbcf8827"
 					(reference "R108")
@@ -11000,6 +11694,12 @@
 			(uuid "99978e94-2266-489b-84ea-dc19ae16de6a")
 		)
 		(instances
+			(project "analog_separate"
+				(path "/96522794-a695-4466-86ba-4264882708e5/61691b76-98cc-44c7-bbd3-46b1e9e84197"
+					(reference "Q23")
+					(unit 1)
+				)
+			)
 			(project "analog"
 				(path "/9f46303d-d943-4531-8552-3d499521569d/8e61ecd7-f3a8-4f1c-b3ef-7927cbcf8827"
 					(reference "Q23")
@@ -11069,6 +11769,12 @@
 			(uuid "dcc1c456-248b-4a6f-b7b7-c9f13ee5a807")
 		)
 		(instances
+			(project "analog_separate"
+				(path "/96522794-a695-4466-86ba-4264882708e5/61691b76-98cc-44c7-bbd3-46b1e9e84197"
+					(reference "R95")
+					(unit 1)
+				)
+			)
 			(project "analog"
 				(path "/9f46303d-d943-4531-8552-3d499521569d/8e61ecd7-f3a8-4f1c-b3ef-7927cbcf8827"
 					(reference "R95")
@@ -11136,6 +11842,12 @@
 			(uuid "a96f60e4-a213-4589-ac25-43bcbad8f9b1")
 		)
 		(instances
+			(project "analog_separate"
+				(path "/96522794-a695-4466-86ba-4264882708e5/61691b76-98cc-44c7-bbd3-46b1e9e84197"
+					(reference "C27")
+					(unit 1)
+				)
+			)
 			(project "analog"
 				(path "/9f46303d-d943-4531-8552-3d499521569d/8e61ecd7-f3a8-4f1c-b3ef-7927cbcf8827"
 					(reference "C27")
@@ -11171,7 +11883,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm"
+		(property "Footprint" "Capacitor_THT:CP_Radial_D4.0mm_P2.00mm"
 			(at 38.1 36.83 0)
 			(effects
 				(font
@@ -11205,6 +11917,12 @@
 			(uuid "695bc410-66f1-4dbb-846a-ff193f37dda4")
 		)
 		(instances
+			(project "analog_separate"
+				(path "/96522794-a695-4466-86ba-4264882708e5/61691b76-98cc-44c7-bbd3-46b1e9e84197"
+					(reference "C28")
+					(unit 1)
+				)
+			)
 			(project "analog"
 				(path "/9f46303d-d943-4531-8552-3d499521569d/8e61ecd7-f3a8-4f1c-b3ef-7927cbcf8827"
 					(reference "C28")
@@ -11278,6 +11996,12 @@
 			(uuid "673228a0-f898-4416-97f3-f56bf448a9e8")
 		)
 		(instances
+			(project "analog_separate"
+				(path "/96522794-a695-4466-86ba-4264882708e5/61691b76-98cc-44c7-bbd3-46b1e9e84197"
+					(reference "Q11")
+					(unit 1)
+				)
+			)
 			(project "analog"
 				(path "/9f46303d-d943-4531-8552-3d499521569d/8e61ecd7-f3a8-4f1c-b3ef-7927cbcf8827"
 					(reference "Q11")
@@ -11288,7 +12012,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 66.04 128.27 270)
+		(at 66.04 139.7 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -11296,7 +12020,7 @@
 		(dnp no)
 		(uuid "f12ec83f-fa18-4694-99b3-db1b986d4248")
 		(property "Reference" "R98"
-			(at 64.262 125.73 90)
+			(at 64.262 137.16 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11305,7 +12029,7 @@
 			)
 		)
 		(property "Value" "2.2K"
-			(at 70.358 125.73 90)
+			(at 70.358 137.16 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11314,7 +12038,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical"
-			(at 66.04 126.492 90)
+			(at 66.04 137.922 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11323,7 +12047,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 66.04 128.27 0)
+			(at 66.04 139.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11332,7 +12056,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 66.04 128.27 0)
+			(at 66.04 139.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11347,6 +12071,12 @@
 			(uuid "19047db9-c1fa-47ee-ad08-f7502a930831")
 		)
 		(instances
+			(project "analog_separate"
+				(path "/96522794-a695-4466-86ba-4264882708e5/61691b76-98cc-44c7-bbd3-46b1e9e84197"
+					(reference "R98")
+					(unit 1)
+				)
+			)
 			(project "analog"
 				(path "/9f46303d-d943-4531-8552-3d499521569d/8e61ecd7-f3a8-4f1c-b3ef-7927cbcf8827"
 					(reference "R98")
@@ -11413,6 +12143,12 @@
 			(uuid "3ae68ce2-e69a-4f1c-aa15-cccd65091b36")
 		)
 		(instances
+			(project "analog_separate"
+				(path "/96522794-a695-4466-86ba-4264882708e5/61691b76-98cc-44c7-bbd3-46b1e9e84197"
+					(reference "#PWR027")
+					(unit 1)
+				)
+			)
 			(project "analog"
 				(path "/9f46303d-d943-4531-8552-3d499521569d/8e61ecd7-f3a8-4f1c-b3ef-7927cbcf8827"
 					(reference "#PWR027")
@@ -11485,6 +12221,12 @@
 			(uuid "955ba4ab-fc0e-4cd1-8c72-e1924ecb69dc")
 		)
 		(instances
+			(project "analog_separate"
+				(path "/96522794-a695-4466-86ba-4264882708e5/61691b76-98cc-44c7-bbd3-46b1e9e84197"
+					(reference "Q20")
+					(unit 1)
+				)
+			)
 			(project "analog"
 				(path "/9f46303d-d943-4531-8552-3d499521569d/8e61ecd7-f3a8-4f1c-b3ef-7927cbcf8827"
 					(reference "Q20")
@@ -11554,6 +12296,12 @@
 			(uuid "09935110-e249-4ab4-b9b6-3446a40cce9c")
 		)
 		(instances
+			(project "analog_separate"
+				(path "/96522794-a695-4466-86ba-4264882708e5/61691b76-98cc-44c7-bbd3-46b1e9e84197"
+					(reference "R46")
+					(unit 1)
+				)
+			)
 			(project "analog"
 				(path "/9f46303d-d943-4531-8552-3d499521569d/8e61ecd7-f3a8-4f1c-b3ef-7927cbcf8827"
 					(reference "R46")
@@ -11589,7 +12337,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm"
+		(property "Footprint" "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm"
 			(at 48.26 118.11 0)
 			(effects
 				(font
@@ -11623,6 +12371,12 @@
 			(uuid "4c2282dd-72c6-4853-853d-88ba4bbe6bcf")
 		)
 		(instances
+			(project "analog_separate"
+				(path "/96522794-a695-4466-86ba-4264882708e5/61691b76-98cc-44c7-bbd3-46b1e9e84197"
+					(reference "C17")
+					(unit 1)
+				)
+			)
 			(project "analog"
 				(path "/9f46303d-d943-4531-8552-3d499521569d/8e61ecd7-f3a8-4f1c-b3ef-7927cbcf8827"
 					(reference "C17")
@@ -11659,7 +12413,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm"
+		(property "Footprint" "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm"
 			(at 157.48 101.6 0)
 			(effects
 				(font
@@ -11693,6 +12447,12 @@
 			(uuid "cb188056-363e-4074-9a65-861f34c39e47")
 		)
 		(instances
+			(project "analog_separate"
+				(path "/96522794-a695-4466-86ba-4264882708e5/61691b76-98cc-44c7-bbd3-46b1e9e84197"
+					(reference "C15")
+					(unit 1)
+				)
+			)
 			(project "analog"
 				(path "/9f46303d-d943-4531-8552-3d499521569d/8e61ecd7-f3a8-4f1c-b3ef-7927cbcf8827"
 					(reference "C15")
@@ -11759,6 +12519,12 @@
 			(uuid "edeb5d3d-9340-46b3-9bd6-17336ad35ad7")
 		)
 		(instances
+			(project "analog_separate"
+				(path "/96522794-a695-4466-86ba-4264882708e5/61691b76-98cc-44c7-bbd3-46b1e9e84197"
+					(reference "#PWR034")
+					(unit 1)
+				)
+			)
 			(project "analog"
 				(path "/9f46303d-d943-4531-8552-3d499521569d/8e61ecd7-f3a8-4f1c-b3ef-7927cbcf8827"
 					(reference "#PWR034")
@@ -11828,6 +12594,12 @@
 			(uuid "e6f01c4f-3721-4149-9abd-243024b306f3")
 		)
 		(instances
+			(project "analog_separate"
+				(path "/96522794-a695-4466-86ba-4264882708e5/61691b76-98cc-44c7-bbd3-46b1e9e84197"
+					(reference "R112")
+					(unit 1)
+				)
+			)
 			(project "analog"
 				(path "/9f46303d-d943-4531-8552-3d499521569d/8e61ecd7-f3a8-4f1c-b3ef-7927cbcf8827"
 					(reference "R112")

@@ -3197,6 +3197,28 @@
 	)
 	(global_label "A+12V"
 		(shape input)
+		(at 189.23 17.78 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "bc4dc9c6-0e17-427d-b2ac-d97e98f3773c")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 177.0524 17.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "A+12V"
+		(shape input)
 		(at 125.73 33.02 180)
 		(fields_autoplaced yes)
 		(effects
@@ -3341,6 +3363,12 @@
 			(uuid "e28719bc-6878-4c35-bf4f-2a20f9d809b2")
 		)
 		(instances
+			(project "analog_separate"
+				(path "/96522794-a695-4466-86ba-4264882708e5/e9af7e1c-7567-445c-a0fa-39326ce81f62"
+					(reference "#PWR045")
+					(unit 1)
+				)
+			)
 			(project "analog"
 				(path "/9f46303d-d943-4531-8552-3d499521569d/717d04b0-0e9d-4e5b-b475-6112b9e3e9af"
 					(reference "#PWR045")
@@ -3410,6 +3438,12 @@
 			(uuid "bdd745d8-d9c7-40fc-a68d-fb9e206d9284")
 		)
 		(instances
+			(project "analog_separate"
+				(path "/96522794-a695-4466-86ba-4264882708e5/e9af7e1c-7567-445c-a0fa-39326ce81f62"
+					(reference "R121")
+					(unit 1)
+				)
+			)
 			(project "analog"
 				(path "/9f46303d-d943-4531-8552-3d499521569d/717d04b0-0e9d-4e5b-b475-6112b9e3e9af"
 					(reference "R121")
@@ -3476,6 +3510,12 @@
 			(uuid "755b1a93-9e07-4d2f-9e15-976cc6c072fc")
 		)
 		(instances
+			(project "analog_separate"
+				(path "/96522794-a695-4466-86ba-4264882708e5/e9af7e1c-7567-445c-a0fa-39326ce81f62"
+					(reference "#PWR047")
+					(unit 1)
+				)
+			)
 			(project "analog"
 				(path "/9f46303d-d943-4531-8552-3d499521569d/717d04b0-0e9d-4e5b-b475-6112b9e3e9af"
 					(reference "#PWR047")
@@ -3562,6 +3602,12 @@
 			(uuid "8a33a6f9-d135-4764-bacc-c85e7a4a5ed5")
 		)
 		(instances
+			(project "analog_separate"
+				(path "/96522794-a695-4466-86ba-4264882708e5/e9af7e1c-7567-445c-a0fa-39326ce81f62"
+					(reference "IC15")
+					(unit 1)
+				)
+			)
 			(project "analog"
 				(path "/9f46303d-d943-4531-8552-3d499521569d/717d04b0-0e9d-4e5b-b475-6112b9e3e9af"
 					(reference "IC15")
@@ -3597,7 +3643,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm"
+		(property "Footprint" "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm"
 			(at 106.68 124.46 0)
 			(effects
 				(font
@@ -3631,6 +3677,12 @@
 			(uuid "562d66ef-913f-4bd4-95f4-2677aec34dc4")
 		)
 		(instances
+			(project "analog_separate"
+				(path "/96522794-a695-4466-86ba-4264882708e5/e9af7e1c-7567-445c-a0fa-39326ce81f62"
+					(reference "C42")
+					(unit 1)
+				)
+			)
 			(project "analog"
 				(path "/9f46303d-d943-4531-8552-3d499521569d/717d04b0-0e9d-4e5b-b475-6112b9e3e9af"
 					(reference "C42")
@@ -3700,6 +3752,12 @@
 			(uuid "2514b865-ce6a-4ed1-b062-156a8b45eb38")
 		)
 		(instances
+			(project "analog_separate"
+				(path "/96522794-a695-4466-86ba-4264882708e5/e9af7e1c-7567-445c-a0fa-39326ce81f62"
+					(reference "R122")
+					(unit 1)
+				)
+			)
 			(project "analog"
 				(path "/9f46303d-d943-4531-8552-3d499521569d/717d04b0-0e9d-4e5b-b475-6112b9e3e9af"
 					(reference "R122")
@@ -3769,6 +3827,12 @@
 			(uuid "2fc98f4c-90b4-466c-95e1-7f724bb10c56")
 		)
 		(instances
+			(project "analog_separate"
+				(path "/96522794-a695-4466-86ba-4264882708e5/e9af7e1c-7567-445c-a0fa-39326ce81f62"
+					(reference "R131")
+					(unit 1)
+				)
+			)
 			(project "analog"
 				(path "/9f46303d-d943-4531-8552-3d499521569d/717d04b0-0e9d-4e5b-b475-6112b9e3e9af"
 					(reference "R131")
@@ -3921,6 +3985,12 @@
 			(uuid "4d13a414-22e4-4538-b0db-229b571b2489")
 		)
 		(instances
+			(project "analog_separate"
+				(path "/96522794-a695-4466-86ba-4264882708e5/e9af7e1c-7567-445c-a0fa-39326ce81f62"
+					(reference "VR8")
+					(unit 1)
+				)
+			)
 			(project "analog"
 				(path "/9f46303d-d943-4531-8552-3d499521569d/717d04b0-0e9d-4e5b-b475-6112b9e3e9af"
 					(reference "VR8")
@@ -3990,6 +4060,12 @@
 			(uuid "e4087a76-98ee-4ea8-afa5-5fb08b7e7011")
 		)
 		(instances
+			(project "analog_separate"
+				(path "/96522794-a695-4466-86ba-4264882708e5/e9af7e1c-7567-445c-a0fa-39326ce81f62"
+					(reference "R132")
+					(unit 1)
+				)
+			)
 			(project "analog"
 				(path "/9f46303d-d943-4531-8552-3d499521569d/717d04b0-0e9d-4e5b-b475-6112b9e3e9af"
 					(reference "R132")
@@ -4056,9 +4132,81 @@
 			(uuid "5ad54d9b-e2f6-4583-8586-044d606ac7ed")
 		)
 		(instances
+			(project "analog_separate"
+				(path "/96522794-a695-4466-86ba-4264882708e5/e9af7e1c-7567-445c-a0fa-39326ce81f62"
+					(reference "#PWR040")
+					(unit 1)
+				)
+			)
 			(project "analog"
 				(path "/9f46303d-d943-4531-8552-3d499521569d/717d04b0-0e9d-4e5b-b475-6112b9e3e9af"
 					(reference "#PWR040")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GNDA")
+		(at 189.23 33.02 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4a888bf3-8710-4810-b979-cfcd65fbc962")
+		(property "Reference" "#PWR020"
+			(at 189.23 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GNDA"
+			(at 189.23 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 189.23 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 189.23 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GNDA\" , analog ground"
+			(at 189.23 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2b33da59-78d8-4a98-ae59-5b354a595513")
+		)
+		(instances
+			(project "analog_separate"
+				(path "/96522794-a695-4466-86ba-4264882708e5/e9af7e1c-7567-445c-a0fa-39326ce81f62"
+					(reference "#PWR020")
 					(unit 1)
 				)
 			)
@@ -4125,6 +4273,12 @@
 			(uuid "1ddb96df-6090-4217-a6db-e5ac8d9d2249")
 		)
 		(instances
+			(project "analog_separate"
+				(path "/96522794-a695-4466-86ba-4264882708e5/e9af7e1c-7567-445c-a0fa-39326ce81f62"
+					(reference "R134")
+					(unit 1)
+				)
+			)
 			(project "analog"
 				(path "/9f46303d-d943-4531-8552-3d499521569d/717d04b0-0e9d-4e5b-b475-6112b9e3e9af"
 					(reference "R134")
@@ -4198,6 +4352,12 @@
 			(uuid "66430117-c749-431b-8336-585fbde08682")
 		)
 		(instances
+			(project "analog_separate"
+				(path "/96522794-a695-4466-86ba-4264882708e5/e9af7e1c-7567-445c-a0fa-39326ce81f62"
+					(reference "Q31")
+					(unit 1)
+				)
+			)
 			(project "analog"
 				(path "/9f46303d-d943-4531-8552-3d499521569d/717d04b0-0e9d-4e5b-b475-6112b9e3e9af"
 					(reference "Q31")
@@ -4267,6 +4427,12 @@
 			(uuid "f9653115-27fb-4edc-a7f2-a098f843c2f7")
 		)
 		(instances
+			(project "analog_separate"
+				(path "/96522794-a695-4466-86ba-4264882708e5/e9af7e1c-7567-445c-a0fa-39326ce81f62"
+					(reference "R130")
+					(unit 1)
+				)
+			)
 			(project "analog"
 				(path "/9f46303d-d943-4531-8552-3d499521569d/717d04b0-0e9d-4e5b-b475-6112b9e3e9af"
 					(reference "R130")
@@ -4302,7 +4468,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm"
+		(property "Footprint" "Capacitor_THT:CP_Radial_D4.0mm_P2.00mm"
 			(at 104.14 54.61 0)
 			(effects
 				(font
@@ -4336,6 +4502,12 @@
 			(uuid "eb0a2d42-4fa5-4b8b-ae3b-3c4ad75b5f4f")
 		)
 		(instances
+			(project "analog_separate"
+				(path "/96522794-a695-4466-86ba-4264882708e5/e9af7e1c-7567-445c-a0fa-39326ce81f62"
+					(reference "C37")
+					(unit 1)
+				)
+			)
 			(project "analog"
 				(path "/9f46303d-d943-4531-8552-3d499521569d/717d04b0-0e9d-4e5b-b475-6112b9e3e9af"
 					(reference "C37")
@@ -4405,6 +4577,12 @@
 			(uuid "60bf1a9a-9318-462a-be34-179f14662609")
 		)
 		(instances
+			(project "analog_separate"
+				(path "/96522794-a695-4466-86ba-4264882708e5/e9af7e1c-7567-445c-a0fa-39326ce81f62"
+					(reference "R125")
+					(unit 1)
+				)
+			)
 			(project "analog"
 				(path "/9f46303d-d943-4531-8552-3d499521569d/717d04b0-0e9d-4e5b-b475-6112b9e3e9af"
 					(reference "R125")
@@ -4438,7 +4616,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-15_P10.16mm_Horizontal"
+		(property "Footprint" "Diode_THT:D_A-405_P2.54mm_Vertical_AnodeUp"
 			(at 156.21 146.05 0)
 			(effects
 				(font
@@ -4490,6 +4668,12 @@
 			(uuid "450377e7-684d-4d86-9268-a86f40865574")
 		)
 		(instances
+			(project "analog_separate"
+				(path "/96522794-a695-4466-86ba-4264882708e5/e9af7e1c-7567-445c-a0fa-39326ce81f62"
+					(reference "D27")
+					(unit 1)
+				)
+			)
 			(project "analog"
 				(path "/9f46303d-d943-4531-8552-3d499521569d/717d04b0-0e9d-4e5b-b475-6112b9e3e9af"
 					(reference "D27")
@@ -4559,6 +4743,12 @@
 			(uuid "518020b2-ac2b-4116-b7b9-56f1d67423d4")
 		)
 		(instances
+			(project "analog_separate"
+				(path "/96522794-a695-4466-86ba-4264882708e5/e9af7e1c-7567-445c-a0fa-39326ce81f62"
+					(reference "R133")
+					(unit 1)
+				)
+			)
 			(project "analog"
 				(path "/9f46303d-d943-4531-8552-3d499521569d/717d04b0-0e9d-4e5b-b475-6112b9e3e9af"
 					(reference "R133")
@@ -4593,7 +4783,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_DIP:DIP-8_W7.62mm"
 			(at 161.29 26.67 0)
 			(effects
 				(font
@@ -4681,6 +4871,12 @@
 			(uuid "3aba7056-7d2c-4aba-9773-402b96fdcc52")
 		)
 		(instances
+			(project "analog_separate"
+				(path "/96522794-a695-4466-86ba-4264882708e5/e9af7e1c-7567-445c-a0fa-39326ce81f62"
+					(reference "VCA_IC_1")
+					(unit 2)
+				)
+			)
 			(project "analog"
 				(path "/9f46303d-d943-4531-8552-3d499521569d/717d04b0-0e9d-4e5b-b475-6112b9e3e9af"
 					(reference "VCA_IC_1")
@@ -4750,6 +4946,12 @@
 			(uuid "68244eea-67e7-4125-815e-399500b04409")
 		)
 		(instances
+			(project "analog_separate"
+				(path "/96522794-a695-4466-86ba-4264882708e5/e9af7e1c-7567-445c-a0fa-39326ce81f62"
+					(reference "VCA_R1")
+					(unit 1)
+				)
+			)
 			(project "analog"
 				(path "/9f46303d-d943-4531-8552-3d499521569d/717d04b0-0e9d-4e5b-b475-6112b9e3e9af"
 					(reference "VCA_R1")
@@ -4817,6 +5019,12 @@
 			(uuid "03769b8a-0fe3-4800-800d-86c55e275bb8")
 		)
 		(instances
+			(project "analog_separate"
+				(path "/96522794-a695-4466-86ba-4264882708e5/e9af7e1c-7567-445c-a0fa-39326ce81f62"
+					(reference "C36")
+					(unit 1)
+				)
+			)
 			(project "analog"
 				(path "/9f46303d-d943-4531-8552-3d499521569d/717d04b0-0e9d-4e5b-b475-6112b9e3e9af"
 					(reference "C36")
@@ -4883,6 +5091,12 @@
 			(uuid "abca4099-a444-4be9-a83a-858e073b521b")
 		)
 		(instances
+			(project "analog_separate"
+				(path "/96522794-a695-4466-86ba-4264882708e5/e9af7e1c-7567-445c-a0fa-39326ce81f62"
+					(reference "#PWR041")
+					(unit 1)
+				)
+			)
 			(project "analog"
 				(path "/9f46303d-d943-4531-8552-3d499521569d/717d04b0-0e9d-4e5b-b475-6112b9e3e9af"
 					(reference "#PWR041")
@@ -4917,7 +5131,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_DIP:DIP-8_W7.62mm"
 			(at 161.29 49.53 0)
 			(effects
 				(font
@@ -5005,6 +5219,12 @@
 			(uuid "3aba7056-7d2c-4aba-9773-402b96fdcc53")
 		)
 		(instances
+			(project "analog_separate"
+				(path "/96522794-a695-4466-86ba-4264882708e5/e9af7e1c-7567-445c-a0fa-39326ce81f62"
+					(reference "VCA_IC_1")
+					(unit 1)
+				)
+			)
 			(project "analog"
 				(path "/9f46303d-d943-4531-8552-3d499521569d/717d04b0-0e9d-4e5b-b475-6112b9e3e9af"
 					(reference "VCA_IC_1")
@@ -5071,6 +5291,12 @@
 			(uuid "714b41d0-d076-4482-857e-d97aafa93624")
 		)
 		(instances
+			(project "analog_separate"
+				(path "/96522794-a695-4466-86ba-4264882708e5/e9af7e1c-7567-445c-a0fa-39326ce81f62"
+					(reference "#PWR043")
+					(unit 1)
+				)
+			)
 			(project "analog"
 				(path "/9f46303d-d943-4531-8552-3d499521569d/717d04b0-0e9d-4e5b-b475-6112b9e3e9af"
 					(reference "#PWR043")
@@ -5140,6 +5366,12 @@
 			(uuid "16450027-858d-4c6b-8170-6927e48d7f20")
 		)
 		(instances
+			(project "analog_separate"
+				(path "/96522794-a695-4466-86ba-4264882708e5/e9af7e1c-7567-445c-a0fa-39326ce81f62"
+					(reference "R119")
+					(unit 1)
+				)
+			)
 			(project "analog"
 				(path "/9f46303d-d943-4531-8552-3d499521569d/717d04b0-0e9d-4e5b-b475-6112b9e3e9af"
 					(reference "R119")
@@ -5207,6 +5439,12 @@
 			(uuid "12cef0c8-fbc3-4141-98e6-7d91d6b3f589")
 		)
 		(instances
+			(project "analog_separate"
+				(path "/96522794-a695-4466-86ba-4264882708e5/e9af7e1c-7567-445c-a0fa-39326ce81f62"
+					(reference "C41")
+					(unit 1)
+				)
+			)
 			(project "analog"
 				(path "/9f46303d-d943-4531-8552-3d499521569d/717d04b0-0e9d-4e5b-b475-6112b9e3e9af"
 					(reference "C41")
@@ -5242,7 +5480,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm"
+		(property "Footprint" "Capacitor_THT:CP_Radial_D4.0mm_P2.00mm"
 			(at 189.23 49.53 0)
 			(effects
 				(font
@@ -5276,6 +5514,12 @@
 			(uuid "f795ef24-3c69-4f6a-967c-ae00e4eaf762")
 		)
 		(instances
+			(project "analog_separate"
+				(path "/96522794-a695-4466-86ba-4264882708e5/e9af7e1c-7567-445c-a0fa-39326ce81f62"
+					(reference "VCA_C_1")
+					(unit 1)
+				)
+			)
 			(project "analog"
 				(path "/9f46303d-d943-4531-8552-3d499521569d/717d04b0-0e9d-4e5b-b475-6112b9e3e9af"
 					(reference "VCA_C_1")
@@ -5342,6 +5586,12 @@
 			(uuid "a6edc830-2014-4cf1-8fa7-6a6308f33539")
 		)
 		(instances
+			(project "analog_separate"
+				(path "/96522794-a695-4466-86ba-4264882708e5/e9af7e1c-7567-445c-a0fa-39326ce81f62"
+					(reference "#PWR048")
+					(unit 1)
+				)
+			)
 			(project "analog"
 				(path "/9f46303d-d943-4531-8552-3d499521569d/717d04b0-0e9d-4e5b-b475-6112b9e3e9af"
 					(reference "#PWR048")
@@ -5411,6 +5661,12 @@
 			(uuid "51836ffb-8088-4dcf-8938-35b166c0ef76")
 		)
 		(instances
+			(project "analog_separate"
+				(path "/96522794-a695-4466-86ba-4264882708e5/e9af7e1c-7567-445c-a0fa-39326ce81f62"
+					(reference "R126")
+					(unit 1)
+				)
+			)
 			(project "analog"
 				(path "/9f46303d-d943-4531-8552-3d499521569d/717d04b0-0e9d-4e5b-b475-6112b9e3e9af"
 					(reference "R126")
@@ -5480,6 +5736,12 @@
 			(uuid "d8c19e8d-319c-4c5b-ab57-aa0bf8ddf432")
 		)
 		(instances
+			(project "analog_separate"
+				(path "/96522794-a695-4466-86ba-4264882708e5/e9af7e1c-7567-445c-a0fa-39326ce81f62"
+					(reference "R123")
+					(unit 1)
+				)
+			)
 			(project "analog"
 				(path "/9f46303d-d943-4531-8552-3d499521569d/717d04b0-0e9d-4e5b-b475-6112b9e3e9af"
 					(reference "R123")
@@ -5549,6 +5811,12 @@
 			(uuid "daffa2b3-bd63-4751-810c-b2ac6367995e")
 		)
 		(instances
+			(project "analog_separate"
+				(path "/96522794-a695-4466-86ba-4264882708e5/e9af7e1c-7567-445c-a0fa-39326ce81f62"
+					(reference "R120")
+					(unit 1)
+				)
+			)
 			(project "analog"
 				(path "/9f46303d-d943-4531-8552-3d499521569d/717d04b0-0e9d-4e5b-b475-6112b9e3e9af"
 					(reference "R120")
@@ -5618,6 +5886,12 @@
 			(uuid "a024dafd-836e-4b73-8936-afa0fda896e9")
 		)
 		(instances
+			(project "analog_separate"
+				(path "/96522794-a695-4466-86ba-4264882708e5/e9af7e1c-7567-445c-a0fa-39326ce81f62"
+					(reference "VCA_R5")
+					(unit 1)
+				)
+			)
 			(project "analog"
 				(path "/9f46303d-d943-4531-8552-3d499521569d/717d04b0-0e9d-4e5b-b475-6112b9e3e9af"
 					(reference "VCA_R5")
@@ -5685,6 +5959,12 @@
 			(uuid "1af8fbc4-f6df-4b9a-86b6-6b8799e4608e")
 		)
 		(instances
+			(project "analog_separate"
+				(path "/96522794-a695-4466-86ba-4264882708e5/e9af7e1c-7567-445c-a0fa-39326ce81f62"
+					(reference "C21")
+					(unit 1)
+				)
+			)
 			(project "analog"
 				(path "/9f46303d-d943-4531-8552-3d499521569d/717d04b0-0e9d-4e5b-b475-6112b9e3e9af"
 					(reference "C21")
@@ -5751,6 +6031,12 @@
 			(uuid "e369ffb8-62ff-4436-8847-91ec386b4b4a")
 		)
 		(instances
+			(project "analog_separate"
+				(path "/96522794-a695-4466-86ba-4264882708e5/e9af7e1c-7567-445c-a0fa-39326ce81f62"
+					(reference "#PWR050")
+					(unit 1)
+				)
+			)
 			(project "analog"
 				(path "/9f46303d-d943-4531-8552-3d499521569d/717d04b0-0e9d-4e5b-b475-6112b9e3e9af"
 					(reference "#PWR050")
@@ -5817,6 +6103,12 @@
 			(uuid "e8e80b40-8296-488d-a992-5615657e743e")
 		)
 		(instances
+			(project "analog_separate"
+				(path "/96522794-a695-4466-86ba-4264882708e5/e9af7e1c-7567-445c-a0fa-39326ce81f62"
+					(reference "#PWR046")
+					(unit 1)
+				)
+			)
 			(project "analog"
 				(path "/9f46303d-d943-4531-8552-3d499521569d/717d04b0-0e9d-4e5b-b475-6112b9e3e9af"
 					(reference "#PWR046")
@@ -5884,6 +6176,12 @@
 			(uuid "f446f743-f85b-47a2-92ba-7e1aeb2bba59")
 		)
 		(instances
+			(project "analog_separate"
+				(path "/96522794-a695-4466-86ba-4264882708e5/e9af7e1c-7567-445c-a0fa-39326ce81f62"
+					(reference "C20")
+					(unit 1)
+				)
+			)
 			(project "analog"
 				(path "/9f46303d-d943-4531-8552-3d499521569d/717d04b0-0e9d-4e5b-b475-6112b9e3e9af"
 					(reference "C20")
@@ -5953,6 +6251,12 @@
 			(uuid "d8ec7c3d-fa5f-4518-9caf-dc212414f3e9")
 		)
 		(instances
+			(project "analog_separate"
+				(path "/96522794-a695-4466-86ba-4264882708e5/e9af7e1c-7567-445c-a0fa-39326ce81f62"
+					(reference "VCA_R2")
+					(unit 1)
+				)
+			)
 			(project "analog"
 				(path "/9f46303d-d943-4531-8552-3d499521569d/717d04b0-0e9d-4e5b-b475-6112b9e3e9af"
 					(reference "VCA_R2")
@@ -5986,7 +6290,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-15_P10.16mm_Horizontal"
+		(property "Footprint" "Diode_THT:D_A-405_P2.54mm_Vertical_AnodeUp"
 			(at 91.44 96.52 0)
 			(effects
 				(font
@@ -6038,6 +6342,12 @@
 			(uuid "908ee1d2-51a4-4574-8c10-affe8bfbf396")
 		)
 		(instances
+			(project "analog_separate"
+				(path "/96522794-a695-4466-86ba-4264882708e5/e9af7e1c-7567-445c-a0fa-39326ce81f62"
+					(reference "D35")
+					(unit 1)
+				)
+			)
 			(project "analog"
 				(path "/9f46303d-d943-4531-8552-3d499521569d/717d04b0-0e9d-4e5b-b475-6112b9e3e9af"
 					(reference "D35")
@@ -6104,6 +6414,12 @@
 			(uuid "aa96800f-d2e8-424e-831b-0565d5368e24")
 		)
 		(instances
+			(project "analog_separate"
+				(path "/96522794-a695-4466-86ba-4264882708e5/e9af7e1c-7567-445c-a0fa-39326ce81f62"
+					(reference "#PWR051")
+					(unit 1)
+				)
+			)
 			(project "analog"
 				(path "/9f46303d-d943-4531-8552-3d499521569d/717d04b0-0e9d-4e5b-b475-6112b9e3e9af"
 					(reference "#PWR051")
@@ -6173,10 +6489,140 @@
 			(uuid "d620a83a-7b35-441e-93cd-8ef95e1984f7")
 		)
 		(instances
+			(project "analog_separate"
+				(path "/96522794-a695-4466-86ba-4264882708e5/e9af7e1c-7567-445c-a0fa-39326ce81f62"
+					(reference "R124")
+					(unit 1)
+				)
+			)
 			(project "analog"
 				(path "/9f46303d-d943-4531-8552-3d499521569d/717d04b0-0e9d-4e5b-b475-6112b9e3e9af"
 					(reference "R124")
 					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:Opamp_Dual")
+		(at 191.77 25.4 0)
+		(unit 3)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "eda4ba37-6ce4-4d60-95fd-cc6e6b9345a8")
+		(property "Reference" "VCA_IC_1"
+			(at 190.5 24.1299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Opamp_Dual"
+			(at 190.5 26.6699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 191.77 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 191.77 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Dual operational amplifier"
+			(at 191.77 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Library" "${KICAD7_SYMBOL_DIR}/Simulation_SPICE.sp"
+			(at 191.77 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" "kicad_builtin_opamp_dual"
+			(at 191.77 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "SUBCKT"
+			(at 191.77 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=out1 2=in1- 3=in1+ 4=vee 5=in2+ 6=in2- 7=out2 8=vcc"
+			(at 191.77 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2cee6048-1497-4f88-b789-fe4e6915e644")
+		)
+		(pin "8"
+			(uuid "865d2c6e-6d3e-4e68-9e41-d365a871b2f3")
+		)
+		(pin "2"
+			(uuid "aedbba8c-4533-4a70-a050-4475db85a774")
+		)
+		(pin "3"
+			(uuid "4a459e56-6254-48d5-9c9e-46c81f3cb91c")
+		)
+		(pin "7"
+			(uuid "bc24a0e8-ee25-4f14-9c18-0e837401b35f")
+		)
+		(pin "5"
+			(uuid "d43828b5-e3f6-4aa4-b1a5-32cf744938c6")
+		)
+		(pin "6"
+			(uuid "a49119e2-5159-4c59-8f11-c04934374234")
+		)
+		(pin "4"
+			(uuid "cd32d613-6c09-4165-8489-662abfe66a46")
+		)
+		(instances
+			(project "analog_separate"
+				(path "/96522794-a695-4466-86ba-4264882708e5/e9af7e1c-7567-445c-a0fa-39326ce81f62"
+					(reference "VCA_IC_1")
+					(unit 3)
 				)
 			)
 		)
@@ -6319,6 +6765,12 @@
 			(uuid "9def618d-e5ed-47c1-9cd2-06cb308ae542")
 		)
 		(instances
+			(project "analog_separate"
+				(path "/96522794-a695-4466-86ba-4264882708e5/e9af7e1c-7567-445c-a0fa-39326ce81f62"
+					(reference "K1")
+					(unit 1)
+				)
+			)
 			(project "analog"
 				(path "/9f46303d-d943-4531-8552-3d499521569d/717d04b0-0e9d-4e5b-b475-6112b9e3e9af"
 					(reference "K1")
@@ -6352,7 +6804,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-15_P10.16mm_Horizontal"
+		(property "Footprint" "Diode_THT:D_A-405_P2.54mm_Vertical_AnodeUp"
 			(at 58.42 124.46 0)
 			(effects
 				(font
@@ -6404,6 +6856,12 @@
 			(uuid "35ff6352-b866-4613-a57f-e1ccba7c2b8d")
 		)
 		(instances
+			(project "analog_separate"
+				(path "/96522794-a695-4466-86ba-4264882708e5/e9af7e1c-7567-445c-a0fa-39326ce81f62"
+					(reference "D36")
+					(unit 1)
+				)
+			)
 			(project "analog"
 				(path "/9f46303d-d943-4531-8552-3d499521569d/717d04b0-0e9d-4e5b-b475-6112b9e3e9af"
 					(reference "D36")
@@ -6473,6 +6931,12 @@
 			(uuid "ff551653-4a00-46d0-82ec-b623d7b4da3d")
 		)
 		(instances
+			(project "analog_separate"
+				(path "/96522794-a695-4466-86ba-4264882708e5/e9af7e1c-7567-445c-a0fa-39326ce81f62"
+					(reference "VCA_R4")
+					(unit 1)
+				)
+			)
 			(project "analog"
 				(path "/9f46303d-d943-4531-8552-3d499521569d/717d04b0-0e9d-4e5b-b475-6112b9e3e9af"
 					(reference "VCA_R4")
@@ -6542,6 +7006,12 @@
 			(uuid "86ef1977-796f-4995-b4d3-995dab3d34d1")
 		)
 		(instances
+			(project "analog_separate"
+				(path "/96522794-a695-4466-86ba-4264882708e5/e9af7e1c-7567-445c-a0fa-39326ce81f62"
+					(reference "VCA_R3")
+					(unit 1)
+				)
+			)
 			(project "analog"
 				(path "/9f46303d-d943-4531-8552-3d499521569d/717d04b0-0e9d-4e5b-b475-6112b9e3e9af"
 					(reference "VCA_R3")
@@ -6608,6 +7078,12 @@
 			(uuid "7898d888-dd9b-4d0e-9ad4-1d70c94b83ec")
 		)
 		(instances
+			(project "analog_separate"
+				(path "/96522794-a695-4466-86ba-4264882708e5/e9af7e1c-7567-445c-a0fa-39326ce81f62"
+					(reference "#PWR044")
+					(unit 1)
+				)
+			)
 			(project "analog"
 				(path "/9f46303d-d943-4531-8552-3d499521569d/717d04b0-0e9d-4e5b-b475-6112b9e3e9af"
 					(reference "#PWR044")
@@ -6680,6 +7156,12 @@
 			(uuid "61067b93-3386-45ce-9aee-b7884ac399bb")
 		)
 		(instances
+			(project "analog_separate"
+				(path "/96522794-a695-4466-86ba-4264882708e5/e9af7e1c-7567-445c-a0fa-39326ce81f62"
+					(reference "Q32")
+					(unit 1)
+				)
+			)
 			(project "analog"
 				(path "/9f46303d-d943-4531-8552-3d499521569d/717d04b0-0e9d-4e5b-b475-6112b9e3e9af"
 					(reference "Q32")

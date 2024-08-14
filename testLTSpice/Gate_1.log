@@ -1,0 +1,23 @@
+Circuit: * C:\workspace\git_TBSEQ\testLTSpice\Gate_1.asc
+
+Limiting rise time of source v1 to 0.003
+Limiting fall time of source v1 to 0.003
+Direct Newton iteration for .op point succeeded.
+
+Date: Tue Aug 13 10:38:23 2024
+Total elapsed time: 0.204 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 3463
+traniter = 3424
+tranpoints = 1352
+accept = 1276
+rejected = 76
+matrix size = 19
+fillins = 3
+solver = Normal
+Matrix Compiler1: 1.27 KB object code size  0.3/0.2/[0.2]
+Matrix Compiler2: off  [0.2]/0.3/0.2
+

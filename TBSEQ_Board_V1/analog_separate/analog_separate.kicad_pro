@@ -709,6 +709,14 @@
     [
       "65c6b63b-a0dd-40dd-9a1f-3f4f1eb1d9b8",
       "VCO"
+    ],
+    [
+      "61691b76-98cc-44c7-bbd3-46b1e9e84197",
+      "VCF"
+    ],
+    [
+      "e9af7e1c-7567-445c-a0fa-39326ce81f62",
+      "VCA"
     ]
   ],
   "text_variables": {}

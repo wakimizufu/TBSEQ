@@ -291,6 +291,44 @@
 		)
 	)
 	(sheet
+		(at 147.32 24.13)
+		(size 25.4 13.97)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "61691b76-98cc-44c7-bbd3-46b1e9e84197")
+		(property "Sheetname" "VCF"
+			(at 147.32 23.4184 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "VCF.kicad_sch"
+			(at 147.32 38.6846 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "analog_separate"
+				(path "/96522794-a695-4466-86ba-4264882708e5"
+					(page "5")
+				)
+			)
+		)
+	)
+	(sheet
 		(at 100.33 24.13)
 		(size 30.48 13.97)
 		(fields_autoplaced yes)
@@ -324,6 +362,44 @@
 			(project "analog_separate"
 				(path "/96522794-a695-4466-86ba-4264882708e5"
 					(page "4")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 184.15 25.4)
+		(size 21.59 12.7)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "e9af7e1c-7567-445c-a0fa-39326ce81f62")
+		(property "Sheetname" "VCA"
+			(at 184.15 24.6884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "VCA.kicad_sch"
+			(at 184.15 38.6846 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "analog_separate"
+				(path "/96522794-a695-4466-86ba-4264882708e5"
+					(page "6")
 				)
 			)
 		)

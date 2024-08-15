@@ -2560,6 +2560,12 @@
 		(uuid "337f69a3-d5e9-4812-b1d1-14ca5363dffb")
 	)
 	(junction
+		(at 49.53 92.71)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "39e0e29b-fb2a-4746-b083-b71a12de2a73")
+	)
+	(junction
 		(at 137.16 87.63)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2582,6 +2588,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c2f22adf-4e09-49b3-a392-ee0a33b31b11")
+	)
+	(junction
+		(at 49.53 105.41)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d1c0da87-aa83-42d7-a02c-4cb281b9dc68")
 	)
 	(junction
 		(at 26.67 49.53)
@@ -2651,6 +2663,16 @@
 	)
 	(wire
 		(pts
+			(xy 45.72 92.71) (xy 49.53 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "018df9dd-2296-4706-94f7-69f9c2db5aec")
+	)
+	(wire
+		(pts
 			(xy 232.41 76.2) (xy 240.03 76.2)
 		)
 		(stroke
@@ -2688,6 +2710,16 @@
 			(type default)
 		)
 		(uuid "07899027-5ac8-4dbb-8a33-54b6385ef68f")
+	)
+	(wire
+		(pts
+			(xy 49.53 92.71) (xy 49.53 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0b78c664-bb4e-49fd-8de0-969dd2fa703e")
 	)
 	(wire
 		(pts
@@ -2861,7 +2893,7 @@
 	)
 	(wire
 		(pts
-			(xy 49.53 90.17) (xy 49.53 95.25)
+			(xy 49.53 90.17) (xy 49.53 92.71)
 		)
 		(stroke
 			(width 0)
@@ -2908,6 +2940,16 @@
 			(type default)
 		)
 		(uuid "3af461cd-94e9-44b1-b0f3-3dd130fedb3c")
+	)
+	(wire
+		(pts
+			(xy 45.72 95.25) (xy 45.72 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3b790ee4-04bb-44af-8ce1-6d2664a9bab4")
 	)
 	(wire
 		(pts
@@ -2978,6 +3020,16 @@
 			(type default)
 		)
 		(uuid "489fa155-73c3-442f-ba78-df4391eaf11a")
+	)
+	(wire
+		(pts
+			(xy 45.72 102.87) (xy 45.72 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "48f9e4e3-5690-41a6-9ab5-d5e1c7e6b73a")
 	)
 	(wire
 		(pts
@@ -3621,6 +3673,16 @@
 	)
 	(wire
 		(pts
+			(xy 49.53 105.41) (xy 49.53 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cb05edf0-bdf6-45fa-ae42-82d17645c200")
+	)
+	(wire
+		(pts
 			(xy 29.21 25.4) (xy 25.4 25.4)
 		)
 		(stroke
@@ -3648,6 +3710,16 @@
 			(type default)
 		)
 		(uuid "d3af45f2-2e96-491f-a250-83db1d9abab1")
+	)
+	(wire
+		(pts
+			(xy 45.72 105.41) (xy 49.53 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d5274656-37ed-4cc6-8ff2-ec7110119dbc")
 	)
 	(wire
 		(pts
@@ -3731,7 +3803,7 @@
 	)
 	(wire
 		(pts
-			(xy 49.53 102.87) (xy 49.53 110.49)
+			(xy 49.53 102.87) (xy 49.53 105.41)
 		)
 		(stroke
 			(width 0)
@@ -5582,7 +5654,7 @@
 		(dnp no)
 		(uuid "35b2a94a-18ef-4209-b689-30823df7fb34")
 		(property "Reference" "R100"
-			(at 46.228 97.79 0)
+			(at 62.23 98.552 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5591,7 +5663,7 @@
 			)
 		)
 		(property "Value" "1K(TEMPCO)"
-			(at 46.736 100.33 0)
+			(at 62.738 101.092 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5874,6 +5946,75 @@
 			(project "analog"
 				(path "/9f46303d-d943-4531-8552-3d499521569d/8ce4be34-acfa-49f2-8b40-1ddc9b5f799d"
 					(reference "Q24")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 45.72 99.06 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "540d9ce9-4c80-404e-a1f3-2486df47229d")
+		(property "Reference" "R100_1"
+			(at 42.926 98.552 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "1K(TEMPCO)"
+			(at 43.434 101.092 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical"
+			(at 43.942 99.06 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 45.72 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 45.72 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "c556af09-2de8-420d-a1e3-9cddb302290f")
+		)
+		(pin "1"
+			(uuid "264de11b-677e-4dd5-a310-d197a94fcb56")
+		)
+		(instances
+			(project "analog_separate"
+				(path "/96522794-a695-4466-86ba-4264882708e5/65c6b63b-a0dd-40dd-9a1f-3f4f1eb1d9b8"
+					(reference "R100_1")
 					(unit 1)
 				)
 			)

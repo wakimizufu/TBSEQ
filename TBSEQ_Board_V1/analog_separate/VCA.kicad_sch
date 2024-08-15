@@ -236,6 +236,166 @@
 				)
 			)
 		)
+		(symbol "Connector:Conn_01x02_Pin"
+			(pin_names
+				(offset 1.016) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "J"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Conn_01x02_Pin"
+				(at 0 -5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Generic connector, single row, 01x02, script generated"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_locked" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "connector"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Connector*:*_1x??_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Conn_01x02_Pin_1_1"
+				(polyline
+					(pts
+						(xy 1.27 -2.54) (xy 0.8636 -2.54)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 0) (xy 0.8636 0)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start 0.8636 -2.413)
+					(end 0 -2.667)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start 0.8636 0.127)
+					(end 0 -0.127)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(pin passive line
+					(at 5.08 0 180)
+					(length 3.81)
+					(name "Pin_1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 -2.54 180)
+					(length 3.81)
+					(name "Pin_2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "Device:C_Polarized_Small"
 			(pin_numbers hide)
 			(pin_names
@@ -1697,213 +1857,6 @@
 				)
 			)
 		)
-		(symbol "SamacSys_Parts:SJ-63072J"
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "K"
-				(at 44.45 7.62 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-				)
-			)
-			(property "Value" "SJ-63072J"
-				(at 44.45 5.08 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-				)
-			)
-			(property "Footprint" "SJ63072J"
-				(at 44.45 -94.92 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "https://www.arrow.com/en/products/sj-63072j/cui-devices?region=nac"
-				(at 44.45 -194.92 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(property "Description" "Phone Connectors 6.35 mm, Mono and Stereo, Right Angle, Through Hole, 2 3 Conductors, 2 3 Internal Switches, Audio Jack Connector"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Height" "15.7"
-				(at 44.45 -394.92 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(property "Manufacturer_Name" "CUI Devices"
-				(at 44.45 -494.92 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(property "Manufacturer_Part_Number" "SJ-63072J"
-				(at 44.45 -594.92 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(property "Mouser Part Number" "490-SJ-63072J"
-				(at 44.45 -694.92 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/CUI-Devices/SJ-63072J?qs=hWgE7mdIu5S5NfHGL0aM5w%3D%3D"
-				(at 44.45 -794.92 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(property "Arrow Part Number" "SJ-63072J"
-				(at 44.45 -894.92 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(property "Arrow Price/Stock" "https://www.arrow.com/en/products/sj-63072j/cui-devices?region=nac"
-				(at 44.45 -994.92 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(symbol "SJ-63072J_1_1"
-				(rectangle
-					(start 5.08 2.54)
-					(end 43.18 -5.08)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(pin passive line
-					(at 0 -2.54 0)
-					(length 5.08)
-					(name "SLEEVE"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 48.26 -2.54 180)
-					(length 5.08)
-					(name "TIP"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 0 0)
-					(length 5.08)
-					(name "SLEEVE_SWITCH"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 48.26 0 180)
-					(length 5.08)
-					(name "TIP_SWITCH"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
 		(symbol "power:GNDA"
 			(power)
 			(pin_numbers hide)
@@ -2080,14 +2033,6 @@
 		(uuid "90853d02-4e2a-4f7b-a630-132874b31fb0")
 	)
 	(no_connect
-		(at 208.28 74.93)
-		(uuid "106f264a-93d2-4082-aa35-57f46be2d65b")
-	)
-	(no_connect
-		(at 256.54 74.93)
-		(uuid "3b641f71-e50b-4cc4-8836-d9636875ce3a")
-	)
-	(no_connect
 		(at 212.09 54.61)
 		(uuid "aa1bbb91-0877-4357-9b20-65acc61771cb")
 	)
@@ -2160,6 +2105,16 @@
 			(type default)
 		)
 		(uuid "167dd8c2-e90e-4cf5-9c05-b9c08c378e2f")
+	)
+	(wire
+		(pts
+			(xy 215.9 91.44) (xy 215.9 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1d78c870-5b1d-4eff-a99c-b82e274e326b")
 	)
 	(wire
 		(pts
@@ -2323,16 +2278,6 @@
 	)
 	(wire
 		(pts
-			(xy 208.28 77.47) (xy 205.74 77.47)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3b1c5852-4da9-430d-8f30-75b515bfe7a7")
-	)
-	(wire
-		(pts
 			(xy 168.91 60.96) (xy 165.1 60.96)
 		)
 		(stroke
@@ -2393,23 +2338,33 @@
 	)
 	(wire
 		(pts
-			(xy 256.54 77.47) (xy 260.35 77.47)
+			(xy 204.47 62.23) (xy 209.55 62.23)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "617e7730-7aac-4057-be17-1d37dffd58f3")
+		(uuid "5f221dda-2693-4483-a601-8aa55f91b188")
 	)
 	(wire
 		(pts
-			(xy 260.35 77.47) (xy 260.35 59.69)
+			(xy 215.9 86.36) (xy 218.44 86.36)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "63ce12bb-94f9-4e03-b4e4-2ac8e4ad89bd")
+		(uuid "62394ba6-7ea8-417d-befc-8f177d67091c")
+	)
+	(wire
+		(pts
+			(xy 204.47 52.07) (xy 212.09 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "63bf882e-5c16-4ad9-ad54-64cfe5af6c59")
 	)
 	(wire
 		(pts
@@ -2603,13 +2558,13 @@
 	)
 	(wire
 		(pts
-			(xy 208.28 52.07) (xy 212.09 52.07)
+			(xy 204.47 52.07) (xy 204.47 62.23)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "9b638a3f-98c4-4cc4-ac4e-12519d67dbf8")
+		(uuid "9e1d96d4-fe83-49f8-a2a7-2bdb8a65b800")
 	)
 	(wire
 		(pts
@@ -2660,16 +2615,6 @@
 			(type default)
 		)
 		(uuid "a8dd2b03-47b2-4c2d-b4ea-037ffe8dd755")
-	)
-	(wire
-		(pts
-			(xy 205.74 77.47) (xy 205.74 80.01)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "aababc4f-49f2-4987-a41a-fb0671d37997")
 	)
 	(wire
 		(pts
@@ -2770,16 +2715,6 @@
 			(type default)
 		)
 		(uuid "c0bb95cc-a13f-4d09-a722-bb9c7c3e005a")
-	)
-	(wire
-		(pts
-			(xy 260.35 59.69) (xy 208.28 59.69)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c1bd7117-d265-40b1-97ed-aa0f5485bb05")
 	)
 	(wire
 		(pts
@@ -2913,6 +2848,16 @@
 	)
 	(wire
 		(pts
+			(xy 212.09 83.82) (xy 218.44 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ec5c1cb5-c145-4157-bd5a-52227c95e7da")
+	)
+	(wire
+		(pts
 			(xy 127 25.4) (xy 130.81 25.4)
 		)
 		(stroke
@@ -2920,16 +2865,6 @@
 			(type default)
 		)
 		(uuid "f0219ea3-91dd-4dfd-af1b-baf9e3f79207")
-	)
-	(wire
-		(pts
-			(xy 208.28 59.69) (xy 208.28 52.07)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f0fefbfd-bbb4-41f1-a6d4-8e3cee1dbbbf")
 	)
 	(wire
 		(pts
@@ -3040,6 +2975,38 @@
 			)
 		)
 		(uuid "066919d0-4bfa-44f2-86ac-935444c9b8d5")
+	)
+	(text "toJackBorad"
+		(exclude_from_sim no)
+		(at 228.346 77.216 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+			)
+		)
+		(uuid "35ad157e-1e9e-4e9b-84c5-3590667c9322")
+	)
+	(global_label "A+LineOut"
+		(shape input)
+		(at 212.09 83.82 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "094d56fa-e295-4961-8d18-c2a18051ab48")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 199.3681 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
 	)
 	(global_label "A+VCA_Control"
 		(shape input)
@@ -3252,6 +3219,28 @@
 		(uuid "c55699e5-8c4d-41af-a45b-59fbcb570c5b")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 189.9776 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "A+LineOut"
+		(shape input)
+		(at 209.55 62.23 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "e9f1a616-4607-4387-964a-d36dd2bb1607")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 222.2719 62.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3519,6 +3508,72 @@
 			(project "analog"
 				(path "/9f46303d-d943-4531-8552-3d499521569d/717d04b0-0e9d-4e5b-b475-6112b9e3e9af"
 					(reference "#PWR047")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GNDA")
+		(at 215.9 91.44 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1002da4d-645c-42d2-b455-471611e332e8")
+		(property "Reference" "#PWR021"
+			(at 215.9 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GNDA"
+			(at 215.9 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 215.9 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 215.9 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GNDA\" , analog ground"
+			(at 215.9 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c4593246-df27-40b9-9988-09a073d90980")
+		)
+		(instances
+			(project "analog_separate"
+				(path "/96522794-a695-4466-86ba-4264882708e5/e9af7e1c-7567-445c-a0fa-39326ce81f62"
+					(reference "#PWR021")
 					(unit 1)
 				)
 			)
@@ -6357,17 +6412,35 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GNDA")
-		(at 205.74 80.01 0)
+		(lib_id "Connector:Conn_01x02_Pin")
+		(at 223.52 83.82 0)
+		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "de6f6653-8333-4383-a2fe-02233787e5b1")
-		(property "Reference" "#PWR051"
-			(at 205.74 86.36 0)
+		(uuid "da05111b-b0aa-42d0-ae40-f6dad28d26c2")
+		(property "Reference" "J4"
+			(at 224.79 86.3601 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "Conn_01x02_Pin"
+			(at 224.79 83.8201 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
+			(at 223.52 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6375,16 +6448,8 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "GNDA"
-			(at 205.74 85.09 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 205.74 80.01 0)
+		(property "Datasheet" "~"
+			(at 223.52 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6392,8 +6457,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
-			(at 205.74 80.01 0)
+		(property "Description" "Generic connector, single row, 01x02, script generated"
+			(at 223.52 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6401,28 +6466,16 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"GNDA\" , analog ground"
-			(at 205.74 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
+		(pin "2"
+			(uuid "3ede475e-60a4-4d5a-b788-a73391031719")
 		)
 		(pin "1"
-			(uuid "aa96800f-d2e8-424e-831b-0565d5368e24")
+			(uuid "974f555c-6de2-45e5-9daa-cb74989d0e86")
 		)
 		(instances
 			(project "analog_separate"
 				(path "/96522794-a695-4466-86ba-4264882708e5/e9af7e1c-7567-445c-a0fa-39326ce81f62"
-					(reference "#PWR051")
-					(unit 1)
-				)
-			)
-			(project "analog"
-				(path "/9f46303d-d943-4531-8552-3d499521569d/717d04b0-0e9d-4e5b-b475-6112b9e3e9af"
-					(reference "#PWR051")
+					(reference "J4")
 					(unit 1)
 				)
 			)
@@ -6623,158 +6676,6 @@
 				(path "/96522794-a695-4466-86ba-4264882708e5/e9af7e1c-7567-445c-a0fa-39326ce81f62"
 					(reference "VCA_IC_1")
 					(unit 3)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "SamacSys_Parts:SJ-63072J")
-		(at 208.28 74.93 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "f31ab471-faf0-4f32-8c4d-3d1871cabc3e")
-		(property "Reference" "K1"
-			(at 232.41 67.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SJ-63072J"
-			(at 232.41 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "SamacSys_Parts:SJ63072J"
-			(at 252.73 169.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.arrow.com/en/products/sj-63072j/cui-devices?region=nac"
-			(at 252.73 269.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Description" "Phone Connectors 6.35 mm, Mono and Stereo, Right Angle, Through Hole, 2 3 Conductors, 2 3 Internal Switches, Audio Jack Connector"
-			(at 208.28 74.93 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Height" "15.7"
-			(at 252.73 469.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Name" "CUI Devices"
-			(at 252.73 569.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Part_Number" "SJ-63072J"
-			(at 252.73 669.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Mouser Part Number" "490-SJ-63072J"
-			(at 252.73 769.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/CUI-Devices/SJ-63072J?qs=hWgE7mdIu5S5NfHGL0aM5w%3D%3D"
-			(at 252.73 869.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Arrow Part Number" "SJ-63072J"
-			(at 252.73 969.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Arrow Price/Stock" "https://www.arrow.com/en/products/sj-63072j/cui-devices?region=nac"
-			(at 252.73 1069.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(pin "5"
-			(uuid "02e344b6-fa2b-48c2-853a-b635ac0a787c")
-		)
-		(pin "2"
-			(uuid "0bf0b93a-3cac-406b-a480-f5318ca3d7dc")
-		)
-		(pin "1"
-			(uuid "8b8a7b9f-4386-4820-9d5c-039cecb25d45")
-		)
-		(pin "4"
-			(uuid "9def618d-e5ed-47c1-9cd2-06cb308ae542")
-		)
-		(instances
-			(project "analog_separate"
-				(path "/96522794-a695-4466-86ba-4264882708e5/e9af7e1c-7567-445c-a0fa-39326ce81f62"
-					(reference "K1")
-					(unit 1)
-				)
-			)
-			(project "analog"
-				(path "/9f46303d-d943-4531-8552-3d499521569d/717d04b0-0e9d-4e5b-b475-6112b9e3e9af"
-					(reference "K1")
-					(unit 1)
 				)
 			)
 		)

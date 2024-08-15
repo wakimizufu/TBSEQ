@@ -1182,10 +1182,28 @@
 		)
 	)
 	(junction
+		(at 184.15 58.42)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "055cff54-37b4-4d04-b69a-ef6ded70eca2")
+	)
+	(junction
 		(at 186.69 58.42)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "0f859220-e1e2-4330-b2b6-a3a2f8bc66ac")
+	)
+	(junction
+		(at 190.5 63.5)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3ff17e86-f8b0-4874-8afe-8fc19aca645c")
+	)
+	(junction
+		(at 187.96 60.96)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "925ca52a-c7fd-4061-b6e3-b7ddf8fb0e86")
 	)
 	(junction
 		(at 201.93 63.5)
@@ -1211,6 +1229,46 @@
 	)
 	(wire
 		(pts
+			(xy 175.26 69.85) (xy 184.15 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "11274124-5e38-415c-bd2f-22eb95d3aea5")
+	)
+	(wire
+		(pts
+			(xy 175.26 74.93) (xy 190.5 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1149e37b-27e1-40d2-b250-1e5f60580019")
+	)
+	(wire
+		(pts
+			(xy 187.96 72.39) (xy 187.96 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "13de66f3-ed1c-4f72-a721-abbd5f75a010")
+	)
+	(wire
+		(pts
+			(xy 175.26 72.39) (xy 187.96 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2a37a18c-f010-4c63-bf35-67b5fb1815d0")
+	)
+	(wire
+		(pts
 			(xy 219.71 63.5) (xy 219.71 64.77)
 		)
 		(stroke
@@ -1218,6 +1276,16 @@
 			(type default)
 		)
 		(uuid "4d2cb38e-a302-4f00-a8ed-387549a98731")
+	)
+	(wire
+		(pts
+			(xy 190.5 63.5) (xy 201.93 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "53d0445f-174a-4cde-a0db-82270cad2992")
 	)
 	(wire
 		(pts
@@ -1241,7 +1309,7 @@
 	)
 	(wire
 		(pts
-			(xy 175.26 58.42) (xy 186.69 58.42)
+			(xy 175.26 58.42) (xy 184.15 58.42)
 		)
 		(stroke
 			(width 0)
@@ -1271,6 +1339,16 @@
 	)
 	(wire
 		(pts
+			(xy 187.96 60.96) (xy 194.31 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "845ebd24-e676-408a-ab6b-b0cf3d65bac2")
+	)
+	(wire
+		(pts
 			(xy 93.98 21.59) (xy 93.98 27.94)
 		)
 		(stroke
@@ -1278,6 +1356,16 @@
 			(type default)
 		)
 		(uuid "86ef147d-4a01-46cc-80a0-2b833f4dc038")
+	)
+	(wire
+		(pts
+			(xy 184.15 58.42) (xy 186.69 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "952945e1-9410-4122-aeca-a6d6b2ef2327")
 	)
 	(wire
 		(pts
@@ -1301,7 +1389,7 @@
 	)
 	(wire
 		(pts
-			(xy 175.26 63.5) (xy 201.93 63.5)
+			(xy 175.26 63.5) (xy 190.5 63.5)
 		)
 		(stroke
 			(width 0)
@@ -1311,7 +1399,17 @@
 	)
 	(wire
 		(pts
-			(xy 175.26 60.96) (xy 194.31 60.96)
+			(xy 184.15 69.85) (xy 184.15 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d84141ca-3a82-455a-be0a-f5860a12a498")
+	)
+	(wire
+		(pts
+			(xy 175.26 60.96) (xy 187.96 60.96)
 		)
 		(stroke
 			(width 0)
@@ -1328,6 +1426,16 @@
 			(type default)
 		)
 		(uuid "e1123e50-5c49-40e0-8d62-4b980a6d914a")
+	)
+	(wire
+		(pts
+			(xy 190.5 74.93) (xy 190.5 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e19931f2-b96a-441c-b934-dbb41b1066f5")
 	)
 	(text "TB303_V2では4558で置換"
 		(exclude_from_sim no)
@@ -1617,6 +1725,76 @@
 				(path "/9f46303d-d943-4531-8552-3d499521569d/a6402c63-8f0b-4873-afab-bdbe5c7c4a76"
 					(reference "IC12")
 					(unit 5)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Conn_01x03_Pin")
+		(at 170.18 72.39 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "2e3a8121-599f-4e2e-9f90-f213e0d77396")
+		(property "Reference" "J5"
+			(at 162.306 70.104 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Conn_01x03_Pin"
+			(at 162.306 72.644 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical"
+			(at 170.18 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 170.18 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x03, script generated"
+			(at 170.18 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "408fe0a7-1df8-4f96-9876-e0c2b2b2a1b3")
+		)
+		(pin "3"
+			(uuid "e130aa16-5c87-4ad8-a9ad-35b8ba547557")
+		)
+		(pin "2"
+			(uuid "721fcba8-7da8-44b0-8163-d88f1647dba9")
+		)
+		(instances
+			(project "analog_separate"
+				(path "/96522794-a695-4466-86ba-4264882708e5/302316ac-b50e-4bc3-a11c-44af1a109b57"
+					(reference "J5")
+					(unit 1)
 				)
 			)
 		)

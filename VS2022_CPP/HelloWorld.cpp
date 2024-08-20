@@ -21,6 +21,17 @@
 
 int main(int argc, char const *argv[])
 {
+    
+    typedef uint8_t  DisplayRam_t[16];
+    DisplayRam_t displayRam;
+
+    for (int idx = 0; idx < sizeof(displayRam);idx++)
+    {
+        displayRam[idx] = idx;
+    }
+
+
+
   std::cout << "Hello World!" << std::endl;
   midiClock _midiClock(1000,0);
   tempo _tempo(0);

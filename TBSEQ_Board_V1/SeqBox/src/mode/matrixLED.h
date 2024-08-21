@@ -54,10 +54,10 @@ enum class LED
     BANK_B,     //col1,LED9
     BANK_C,     //col1,LED10
     BANK_D,     //col1,LED11
-    LED29,      //col1,LED12
-    LED30,      //col1,LED13
-    LED31,      //col1,LED14
-    LED32,      //col1,LED15
+    STEP_8,     //col1,LED12
+    STEP_4,     //col1,LED13
+    STEP_2,     //col1,LED14
+    STEP_1,     //col1,LED15
 };
 
 class matrixLED

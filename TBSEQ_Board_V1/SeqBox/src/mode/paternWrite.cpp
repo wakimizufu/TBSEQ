@@ -160,6 +160,7 @@ void	paternWrite::execStopSequence() {
 	_panelManager->setLED(static_cast<int>(LED::DOWN), _down);
 	_panelManager->setLED(static_cast<int>(LED::SLIDE), _slide);
 	_panelManager->setLED(static_cast<int>(LED::ACC), _acc);
+	_panelManager->setLED(static_cast<int>(LED::LENMAX), _laststep);
 	_panelManager->setLED(_noteOnLED[_note_relative], true);
 
 	if	(	STEP_NOTE_ON_NORMAL	==	_note_on	)	{
@@ -168,7 +169,8 @@ void	paternWrite::execStopSequence() {
 		_panelManager->setLED(static_cast<int>(LED::NOTE_TIE), true);
 	}
 
-
+	//ステップ:指定ステップ数に応じたLEDを設定する
+	setStepLED(_step);
 
 	//SW ノート:発音ノートを更新
 	for (i=static_cast<int>(Switch::C2) ; i>=static_cast<int>(Switch::C) ; i--){
@@ -198,6 +200,14 @@ void	paternWrite::execStopSequence() {
 	//SW スライドを更新
 	if	(	_onClickSwtich[static_cast<int>(Switch::SLIDE)]	)	{
 		_sequenceMap->paterns[_pattern].steps[_step].slide	=	!_slide;
+	}
+
+	//SW ラストステップを更新
+	if	(	_onClickSwtich[static_cast<int>(Switch::LENMAX)]	)	{
+
+		if ( MIDI_STEP_MAX > (_step + 1)){
+		_sequenceMap->paterns[_pattern].steps[_step].lastStep	=	!_laststep;
+		}
 	}
 
 	//SW UPを更新
@@ -303,3 +313,6 @@ void	paternWrite::execRunClock() {
 */
 void	paternWrite::execStopClock() {
 }
+
+
+

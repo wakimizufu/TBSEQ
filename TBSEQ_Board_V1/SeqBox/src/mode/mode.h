@@ -112,6 +112,12 @@ class mode{
     */
 	bool	isSwitchOffClick(int _SwIndex);
 
+	/*
+	ステップ:指定ステップ数に応じたLEDを設定する
+    引数  ：ステップ数
+	*/
+	void	setStepLED(int value);
+
     protected:
     	MODE_NAME	_modeName;	//モード名
 		RUN_STOP	_run_stop;		//ラン/ストップフラグ

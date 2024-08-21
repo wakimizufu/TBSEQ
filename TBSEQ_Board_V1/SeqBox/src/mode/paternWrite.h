@@ -64,6 +64,9 @@ class paternWrite: public mode{
 
 		bool _LEDtempo; //テンポカウント時LED点灯フラグ
 		int	 _LEDstep;	//テンポカウント時ステップカウンタ
+
+
+
 };
 
 

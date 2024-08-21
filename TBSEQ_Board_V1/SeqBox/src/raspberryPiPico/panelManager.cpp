@@ -249,6 +249,13 @@ bool panelManager::connectFRAM(){
     } else {
         Serial.println("fram connected: ");
         _ret = true;
+
+
+   		Serial.print("fram::getSize():");
+        Serial.println(fram.getSize());
+
+   		//Serial.print("fram::getWriteProtect():");
+        //Serial.println(fram.getWriteProtect());
     }
 
     _connectFRAM = _ret;
@@ -280,6 +287,7 @@ void panelManager::saveFRAM(int _startAddres , unsigned char* _bitstream, int _l
         Serial.print(_loadSize,HEX);
         Serial.println("");
         fram.write(_startAddres, _bitstream, _loadSize);
+        Serial.println("panelManager::saveFRAM Finish");
     }     
 }
 

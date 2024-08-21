@@ -117,6 +117,10 @@ void	paternPlay::execRunSequence() {
 	_panelManager->setLED(static_cast<int>(LED::RUN_STOP), true);
 	_panelManager->setLED(_scanPatternLED[_pattern], _LEDtempo);
 
+	
+	//ステップ:指定ステップ数に応じたLEDを設定する
+	setStepLED(_step);
+
 	//次に演奏するパターンを決定する
 	for (i=0;i<SEQUENCE_PATTERN_LENGTH ;i++){
 		_patern_index=_scanPatternSwich[i];	
@@ -345,8 +349,6 @@ void paternPlay::_gate_on_16note() {
 	bool _slide		=	_sequenceMap->paterns[_pattern].steps[_step].slide;
 	unsigned char _note_on	=	_sequenceMap->paterns[_pattern].steps[_step].note_on;
 	unsigned char _note_relative = _sequenceMap->paterns[_pattern].steps[_step].note - static_cast<unsigned char>(NOTE_PWM_INDEX::NOTE_C2);
-	
-
 
 	if(_midiclock_16note == MIDICLOCK_START_16NOTE){
 		Serial.print("_gate_on_16note() MIDICLOCK_START_16NOTE ");

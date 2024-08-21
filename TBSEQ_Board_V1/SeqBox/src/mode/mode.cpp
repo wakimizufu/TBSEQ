@@ -60,3 +60,30 @@ bool	mode::isSwitchOffClick(int _SwIndex){
 	bool _ret	=	(( true == _currentSwtich[_SwIndex]) &&  (false == _panelManager->getSwitch(_SwIndex)));
 	return _ret;
 }
+
+/*
+ステップ:指定ステップ数に応じたLEDを設定する
+*/
+void	mode::setStepLED(int value){
+
+	_panelManager->setLED(static_cast<int>(LED::STEP_8), false);	
+	_panelManager->setLED(static_cast<int>(LED::STEP_4), false);	
+	_panelManager->setLED(static_cast<int>(LED::STEP_2), false);	
+	_panelManager->setLED(static_cast<int>(LED::STEP_1), false);	
+
+	if ( value & 0x0008){
+		_panelManager->setLED(static_cast<int>(LED::STEP_8), true);	
+	}
+
+	if ( value & 0x0004){
+		_panelManager->setLED(static_cast<int>(LED::STEP_4), true);	
+	}
+
+	if ( value & 0x0002){
+		_panelManager->setLED(static_cast<int>(LED::STEP_2), true);	
+	}
+
+	if ( value & 0x0001){
+		_panelManager->setLED(static_cast<int>(LED::STEP_1), true);	
+	}
+}

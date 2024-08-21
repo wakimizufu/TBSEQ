@@ -97,7 +97,8 @@ void	modeManager::presetSequence(){
 	if	( _connect ) {
 		unsigned char _patern_load_bitstream[SEQUENCE_ALLBYTE];
 		_panelManager->loadFRAM(_patern_load_bitstream, SEQUENCE_ALLBYTE);
-		/*
+		
+		
 		for (int i=0 ; i<SEQUENCE_ALLBYTE ; i++){
 		Serial.print("_patern_load_bitstream[");
 		Serial.print(i,HEX);
@@ -105,7 +106,8 @@ void	modeManager::presetSequence(){
 		Serial.print(_patern_load_bitstream[i],HEX);
 		Serial.println("");
 		}
-		*/
+		
+		
 		_sequenceMap.setBitstream(_patern_load_bitstream);
 	} else if (!_connect) {
 		presetBitstream _presetBitstream;

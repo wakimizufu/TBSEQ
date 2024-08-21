@@ -18,11 +18,11 @@
 #include "../HT16K33/ht16k33.h"
 
 
-//読み取り間隔カウンタ閾値 640us=0.64ms (32us * 32カウント)
-#define THD_PANEL_MANAGER 20
+//読み取り間隔カウンタ閾値 16384us=16.384ms (32us * 512カウント)
+#define THD_PANEL_MANAGER 512
 
 //シークエンスリスト配列数
-#define PANEL_MANAGER_SEQ_LIST 138
+#define PANEL_MANAGER_SEQ_LIST 7
 
 //panelManagerシークエンスインデックス
 enum class PANEL_MANAGER_SEQ
@@ -147,6 +147,7 @@ class panelManager: public countTriger
     //シークエンスリスト
     const PANEL_MANAGER_SEQ _sequenceList[PANEL_MANAGER_SEQ_LIST] = {
         PANEL_MANAGER_SEQ::SW_READ,
+        PANEL_MANAGER_SEQ::LED_WRITE,
         PANEL_MANAGER_SEQ::SW_READ,
         PANEL_MANAGER_SEQ::SW_READ,
         PANEL_MANAGER_SEQ::LED_WRITE,

@@ -61,9 +61,33 @@ void matrixSwitch::finalize() {
     }
 
     for (int i = 0;i < SW_INDEX_MAX;i++) {
+
+        /*
+        if ( (_currentSwtich[static_cast<int>(SwitchScan::Scan1st)][i]) ||
+             (_currentSwtich[static_cast<int>(SwitchScan::Scan2nd)][i]) ) {
+            Serial.print("matrixSwitch::finalize() i:");
+            Serial.print(i);
+            Serial.print(" scan:");
+            Serial.print(_scan);
+            Serial.print(" SwitchScan::Scan1st:");
+            Serial.print(_currentSwtich[static_cast<int>(SwitchScan::Scan1st)][i]);
+            Serial.print(" SwitchScan::Scan2nd:");
+            Serial.print(_currentSwtich[static_cast<int>(SwitchScan::Scan2nd)][i]);
+            Serial.println("");
+        }
+        */
+
         _currentSwtich[static_cast<int>(SwitchScan::Finalize)][i] =
             _currentSwtich[static_cast<int>(SwitchScan::Scan1st)][i] &&
             _currentSwtich[static_cast<int>(SwitchScan::Scan2nd)][i];
+
+        /*
+        if (_currentSwtich[static_cast<int>(SwitchScan::Finalize)][i]){
+            Serial.print("matrixSwitch::finalize() SwitchScan::Finalize i:");
+            Serial.print(i);
+            Serial.println("");
+        }
+        */
     }
 }
 
@@ -108,6 +132,7 @@ bool matrixSwitch::get(int index) {
 */
 void matrixSwitch::set(int scan, int index , bool value){
 
+    /*
     if ((scan != static_cast<int>(SwitchScan::Scan1st)) && 
         (scan != static_cast<int>(SwitchScan::Scan2nd)) &&
         (scan != static_cast<int>(SwitchScan::Finalize))){
@@ -115,6 +140,7 @@ void matrixSwitch::set(int scan, int index , bool value){
     }else if (index >= SW_INDEX_MAX ) {
         return;
     }
+    */
 
     _currentSwtich[scan][index] = value;
 }

@@ -14,10 +14,8 @@ debugMode::debugMode(panelManager* ptPanelManager, voltage* ptVoltage, sequenceM
 
   	//<LEDマトリクス>
     //全部消灯
-	ptPanelManager->setLEDRow(LED_ROW_0,0x00);
-	ptPanelManager->setLEDRow(LED_ROW_1,0x00);
-	ptPanelManager->setLEDRow(LED_ROW_2,0x00);
-	ptPanelManager->setLEDRow(LED_ROW_3,0x00);
+	ptPanelManager->setLEDRow(LED_ROW_0,0x0000);
+	ptPanelManager->setLEDRow(LED_ROW_1,0x0000);
 
     //<C::voltage>
     //reset()

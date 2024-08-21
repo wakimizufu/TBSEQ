@@ -24,10 +24,9 @@ paternPlay::paternPlay(panelManager* ptPanelManager, voltage* ptVoltage, sequenc
 	_voltage->reset();
 
 	//LED出力をクリア
-	_panelManager->setLEDRow(LED_ROW_0, 0x00);
-	_panelManager->setLEDRow(LED_ROW_1, 0x00);
-	_panelManager->setLEDRow(LED_ROW_2, 0x60);
-	_panelManager->setLEDRow(LED_ROW_3, 0x00);
+	_panelManager->setLEDRow(LED_ROW_0, 0x0000);
+	_panelManager->setLEDRow(LED_ROW_1, 0x0000);
+	_panelManager->setLED(static_cast<int>(LED::PATTERN), true);
 }
 
 /*
@@ -112,10 +111,8 @@ void	paternPlay::execRunSequence() {
 	int i;
 	int _patern_index;
 
-	_panelManager->setLEDRow(LED_ROW_0, 0x00);
-	_panelManager->setLEDRow(LED_ROW_1, 0x00);
-	_panelManager->setLEDRow(LED_ROW_2, 0x00);
-	_panelManager->setLEDRow(LED_ROW_3, 0x00);
+	_panelManager->setLEDRow(LED_ROW_0, 0x0000);
+	_panelManager->setLEDRow(LED_ROW_1, 0x0000);
 	_panelManager->setLED(static_cast<int>(LED::PATTERN), true);
 	_panelManager->setLED(static_cast<int>(LED::RUN_STOP), true);
 	_panelManager->setLED(_scanPatternLED[_pattern], _LEDtempo);
@@ -160,10 +157,8 @@ void	paternPlay::execStopSequence() {
 		Serial.println("");
         */
 
-		_panelManager->setLEDRow(LED_ROW_0, 0x00);
-		_panelManager->setLEDRow(LED_ROW_1, 0x00);
-		_panelManager->setLEDRow(LED_ROW_2, 0x00);
-		_panelManager->setLEDRow(LED_ROW_3, 0x00);
+		_panelManager->setLEDRow(LED_ROW_0, 0x0000);
+		_panelManager->setLEDRow(LED_ROW_1, 0x0000);
 		_panelManager->setLED(static_cast<int>(LED::PATTERN), true);
 		_panelManager->setLED(_scanPatternLED[_pattern], _LEDtempo);		//直前に選択したパターンのLEDを点灯
 	
@@ -217,11 +212,10 @@ bool	paternPlay::execKeyborad() {
 	}
 
 	//LED点灯初期化
-	_panelManager->setLEDRow(LED_ROW_0, 0x00);
-	_panelManager->setLEDRow(LED_ROW_1, 0x00);
-	_panelManager->setLEDRow(LED_ROW_2, 0x00);
-	_panelManager->setLEDRow(LED_ROW_3, 0x00);
-	_panelManager->setLED(static_cast<int>(LED::NOTE), true);
+	_panelManager->setLEDRow(LED_ROW_0, 0x0000);
+	_panelManager->setLEDRow(LED_ROW_1, 0x0000);
+	_panelManager->setLED(static_cast<int>(LED::NOTE_ON), true);
+	_panelManager->setLED(static_cast<int>(LED::NOTE_TIE), true);
 	_panelManager->setLED(static_cast<int>(LED::PATTERN), true);
 
 	/*

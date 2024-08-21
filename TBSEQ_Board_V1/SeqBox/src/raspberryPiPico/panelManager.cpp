@@ -55,6 +55,10 @@ analogWriteRange(256);  //解像度=8bit
 pinMode(PIN_CV, OUTPUT);  //CV
 analogWrite(PIN_CV,100);
 
+//matrixLED 全クリア
+setLEDRow(LED_ROW_0, 0x0000);
+setLEDRow(LED_ROW_1, 0x0000);
+
 //HT16K33
 // initialize everything, 0x00 is the i2c address for the first chip (0x70 is added in the class).
 _HT16K33.begin(I2C_ADDR_HT16K33);
@@ -71,7 +75,6 @@ for (led=0; led<LED_INDEX_MAX; led++) {
     delay(10);
 } // for led
 
-
 }
 
 
@@ -82,7 +85,7 @@ for (led=0; led<LED_INDEX_MAX; led++) {
 void panelManager::trigger() {
 
     //シーケンスインデックスが末尾まで進んだら先頭に戻す
-    if ( _sequenceList_index >= PANEL_MANAGER_SEQ_LIST){
+    if ( _sequenceList_index >= (sizeof(_sequenceList)/sizeof(PANEL_MANAGER_SEQ))){
         _sequenceList_index = 0;
     }
 
@@ -103,19 +106,93 @@ void panelManager::trigger() {
         uint16_t maskbit;
         bool swValue;
 
+        //Serial.println(" PANEL_MANAGER_SEQ::SW_READ");
+
         int scan = _matrixSwitch.getScan();
         HT16K33::KEYDATA keydata;
         _HT16K33.readKeyRaw(keydata,true);
 
+        /*
+        Serial.print(" scan:");
+        Serial.print(scan);
+        Serial.println("");                             
+        */
+
+        //Serial.println(" _HT16K33.readKeyRaw");
+
         for (uint8_t swrow=0 ;swrow<SW_ROW_MAX ;swrow++){
-            for (uint8_t swcol=0 ;swrow<SW_COL_MAX ;swcol++){
-                swIdx = (swrow*SW_ROW_MAX)+swcol;
+
+            /*
+            if (0x0000!=keydata[swrow]){
+                Serial.print("keydata[");
+                Serial.print(swrow);
+                Serial.print("] :");
+                Serial.print(keydata[swrow],HEX);
+                Serial.println("");                             
+            }
+            */
+            
+
+            for (uint8_t swcol=0 ;swcol<SW_COL_MAX ;swcol++){
+
+                swIdx = (swrow*SW_COL_MAX)+swcol;
                 maskbit = 1 << swcol;
                 swValue = keydata[swrow] & maskbit;
+
+                /*
+                Serial.print(" swrow:");
+                Serial.print(swrow);
+                Serial.print(" swcol:");
+                Serial.print(swcol);
+                Serial.print("swIdx:");
+                Serial.print(swIdx);
+                Serial.print("maskbit:");
+                Serial.print(maskbit,HEX);
+                Serial.print("swValue:");
+                Serial.print(swValue,HEX);
+                Serial.println("");
+
+                if(swValue){
+                    Serial.print(" scan:");
+                    Serial.print(scan);
+                    Serial.print(" swrow:");
+                    Serial.print(swrow);
+                    Serial.print(" swcol:");
+                    Serial.print(swcol);
+                    Serial.print(" swIdx:");
+                    Serial.print(swIdx);
+                    Serial.print(" maskbit:");
+                    Serial.print(maskbit,HEX);
+                    Serial.println("");
+                }
+                */
 
                 _matrixSwitch.set(scan,swIdx,swValue);
             }
         }
+
+
+
+
+        //SWスキャンインデックス：決定 ならスイッチ入力を確定する
+        if (_matrixSwitch.getScan() == static_cast<int>(SwitchScan::Finalize)) {
+            _matrixSwitch.finalize();
+
+            /*
+            for (int _scanidx=0; _scanidx < SW_INDEX_MAX ; _scanidx++){
+              if ( _matrixSwitch.get(_scanidx)){
+                Serial.print("Finalize:");
+                Serial.print(_scanidx);
+                Serial.println("");
+              }
+            }
+            */
+
+            gpio_put(LED_BUILTIN, !gpio_get(LED_BUILTIN)); // toggle the LED
+            //Serial.println("_matrixSwitch.finalize");
+        }
+
+        _matrixSwitch.nextScan();
     }
 
 
@@ -123,8 +200,6 @@ void panelManager::trigger() {
     if ((_sequence == PANEL_MANAGER_SEQ::LED_WRITE)) {
 
         //I2C::LED出力 
-        uint8_t _LED_Col_value = _matrixLED.getRow(_LED_Row);   
-
         for ( int led=0 ; led < LED_INDEX_MAX ; led++){
             if (_matrixLED.get(led)) {
                 _HT16K33.setLed(led);
@@ -136,31 +211,6 @@ void panelManager::trigger() {
         _HT16K33.sendLed();
     }
 
-    //次回スイッチスキャン回数を更新
-    if ((_sequence == PANEL_MANAGER_SEQ::SW_READ) ) {
-        _matrixSwitch.nextScan();
-
-        //SWスキャンインデックス：決定 ならスイッチ入力を確定する
-        if (_matrixSwitch.getScan() == static_cast<int>(SwitchScan::Finalize)) {
-            _matrixSwitch.finalize();
-            _matrixSwitch.nextScan();
-
-            /*
-            int _scanrow;
-            for (_scanrow=0; _scanrow < SW_ROW_MAX ; _scanrow++){
-              if ( 0x00 != _matrixSwitch.getRow(_scanrow)){
-                Serial.print("_matrixSwitch.getRow(");
-                Serial.print(_scanrow);
-                Serial.print("):");
-                Serial.println(static_cast<int>(_matrixSwitch.getRow(_scanrow)),HEX);
-              }
-            }
-            */
-
-            gpio_put(LED_BUILTIN, !gpio_get(LED_BUILTIN)); // toggle the LED
-            //Serial.println("_matrixSwitch.finalize");
-        }
-    }
 
     //テンポADC値読み取り
     if (_sequence == PANEL_MANAGER_SEQ::TEMPO_ADC_READ) {
@@ -173,6 +223,8 @@ void panelManager::trigger() {
     if (_sequence == PANEL_MANAGER_SEQ::END) {
         _sequence_up = true;
     }
+
+    //Serial.println("panelManager::trigger end");
 
     _sequenceList_index++;
 

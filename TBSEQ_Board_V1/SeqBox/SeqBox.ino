@@ -50,7 +50,7 @@ _modeManager.presetSequence();
 //タイマー割り込み/* タイマーの初期化(割込み間隔はusで指定) */
 add_repeating_timer_us(-32, toggle_panelWR, NULL, &st_timer);
 
-Serial.println("patternmode.ino setup() finish");
+Serial.println("SeqBox.ino setup() finish");
 }
 
 void loop() {

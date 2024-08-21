@@ -18,10 +18,12 @@ paternWrite::paternWrite(panelManager* ptPanelManager, voltage* ptVoltage, seque
 	_voltage->reset();
 
 	//LED出力をクリア
-	_panelManager->setLEDRow(LED_ROW_0, 0x00);
-	_panelManager->setLEDRow(LED_ROW_1, 0x00);
-	_panelManager->setLEDRow(LED_ROW_2, 0xE0);
-	_panelManager->setLEDRow(LED_ROW_3, 0x00);
+	_panelManager->setLEDRow(LED_ROW_0, 0x0000);
+	_panelManager->setLEDRow(LED_ROW_1, 0x0000);
+	_panelManager->setLED(static_cast<int>(LED::PATTERN), true);
+	_panelManager->setLED(static_cast<int>(LED::PLAY_WRITE), true);
+
+
 }
 
 /*
@@ -149,10 +151,8 @@ void	paternWrite::execStopSequence() {
 
 
 	//LED 表示更新
-	_panelManager->setLEDRow(LED_ROW_0, 0x00);
-	_panelManager->setLEDRow(LED_ROW_1, 0x00);
-	_panelManager->setLEDRow(LED_ROW_2, 0x00);
-	_panelManager->setLEDRow(LED_ROW_3, 0x00);
+	_panelManager->setLEDRow(LED_ROW_0, 0x0000);
+	_panelManager->setLEDRow(LED_ROW_1, 0x0000);
 	_panelManager->setLED(static_cast<int>(LED::PATTERN), true);
 	_panelManager->setLED(static_cast<int>(LED::PLAY_WRITE), true);
 	
@@ -163,9 +163,9 @@ void	paternWrite::execStopSequence() {
 	_panelManager->setLED(_noteOnLED[_note_relative], true);
 
 	if	(	STEP_NOTE_ON_NORMAL	==	_note_on	)	{
-		_panelManager->setLED(static_cast<int>(LED::NOTE), true);
+		_panelManager->setLED(static_cast<int>(LED::NOTE_ON), true);
 	} else if (	STEP_NOTE_ON_TIE	==	_note_on	)	{
-		_panelManager->setLED(static_cast<int>(LED::LED21), true);
+		_panelManager->setLED(static_cast<int>(LED::NOTE_TIE), true);
 	}
 
 

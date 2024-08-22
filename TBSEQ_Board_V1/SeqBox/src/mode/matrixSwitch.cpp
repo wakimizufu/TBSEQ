@@ -137,10 +137,12 @@ void matrixSwitch::set(int scan, int index , bool value){
         (scan != static_cast<int>(SwitchScan::Scan2nd)) &&
         (scan != static_cast<int>(SwitchScan::Finalize))){
         return;
-    }else if (index >= SW_INDEX_MAX ) {
-        return;
-    }
+    }else 
     */
 
+    if (index >= SW_INDEX_MAX ) {
+        return;
+    }
+    
     _currentSwtich[scan][index] = value;
 }

@@ -105,69 +105,18 @@ void FRAM::writeDouble(uint16_t memAddr, double value)
 void FRAM::write(uint16_t memAddr, uint8_t * obj, uint16_t size)
 {
   const int blocksize = 24;
-  uint8_t i;
   uint8_t * p = obj;
   while (size >= blocksize)
   {
-    
-    Serial.print("FRAM::write blocksize memAddr:");
- 		Serial.print(memAddr);
- 		Serial.print(" blocksize:");
- 		Serial.print(blocksize);
- 		Serial.print(" size:");
- 		Serial.print(size);
-    Serial.println("");
-    
-
-    //_writeBlock(memAddr, p, blocksize);
-     
-    _wire->beginTransmission(_address);
-    _wire->write((uint8_t) (memAddr >> 8));
-    _wire->write((uint8_t) (memAddr & 0xFF));
-
-    for (i = blocksize; i > 0; i--)
-    {
-      
-      Serial.print(" *p:");
- 		  Serial.print(*p,HEX);
-      Serial.println("");
-      
-     
-      _wire->write(*p++);
-    }
-    _wire->endTransmission();
-   
+    _writeBlock(memAddr, p, blocksize);
     memAddr += blocksize;
+    p += blocksize;
     size -= blocksize;
   }
   //  remaining
   if (size > 0)
   {
-    //_writeBlock(memAddr, p, size);
-
-    
-    Serial.print("FRAM::write remaining memAddr:");
- 		Serial.print(memAddr);
- 		Serial.print(" size:");
- 		Serial.print(size);
-    Serial.println("");
-    
-
-    _wire->beginTransmission(_address);
-    _wire->write((uint8_t) (memAddr >> 8));
-    _wire->write((uint8_t) (memAddr & 0xFF));
-
-    for (i = size; i > 0; i--)
-    {
-      
-      Serial.print(" *p:");
- 		  Serial.print(*p,HEX);
-      Serial.println("");
-      
-
-      _wire->write(*p++);
-    }
-    _wire->endTransmission();
+    _writeBlock(memAddr, p, size);
   }
 }
 
@@ -434,35 +383,15 @@ uint32_t FRAM::_getMetaData()
 
 void FRAM::_writeBlock(uint16_t memAddr, uint8_t * obj, uint8_t size)
 {
-  /*
-  Serial.print("FRAM::write _writeBlock _address:");
- 	Serial.print(_address);
- 	Serial.println("");
-
   _wire->beginTransmission(_address);
-
-    Serial.print("FRAM::write _writeBlock write((uint8_t) (memAddr >> 8))");
- 	  Serial.println("");
-    _wire->write((uint8_t) (memAddr >> 8));
-
-    Serial.print("FRAM::write _writeBlock write((uint8_t) (memAddr & 0xFF))");
- 	  Serial.println("");
-    _wire->write((uint8_t) (memAddr & 0xFF));
-
+  _wire->write((uint8_t) (memAddr >> 8));
+  _wire->write((uint8_t) (memAddr & 0xFF));
   uint8_t * p = obj;
   for (uint8_t i = size; i > 0; i--)
   {
-     Serial.print("FRAM::write _writeBlock i:");
- 	  Serial.print(i);
- 	  Serial.println("");
-
     _wire->write(*p++);
   }
-
-    Serial.print("FRAM::write _writeBlock endTransmission");
- 	  Serial.println("");
   _wire->endTransmission();
-  */
 }
 
 
@@ -674,10 +603,6 @@ uint32_t FRAM32::clear(uint8_t value)
 //
 void FRAM32::_writeBlock(uint32_t memAddr, uint8_t * obj, uint8_t size)
 {
-  
-  Serial.print("FRAM32::_writeBlock");
- 	Serial.println("");
-
   uint8_t _addr = _address;
   if (memAddr & 0xFFFE0000) return;  //  ignore invalid memory addresses
   if ((memAddr & 0x00010000) == 0x00010000) _addr += 0x01;
@@ -743,10 +668,6 @@ uint16_t FRAM11::getSize()
 //
 void FRAM11::_writeBlock(uint16_t memAddr, uint8_t * obj, uint8_t size)
 {
-
-  Serial.print("FRAM11::_writeBlock");
- 	Serial.println("");
-
   //  Device uses Address Pages
   uint8_t  DeviceAddrWithPageBits = _address | ((memAddr & 0x0700) >> 8);
   _wire->beginTransmission(DeviceAddrWithPageBits);
@@ -808,10 +729,6 @@ uint16_t FRAM9::getSize()
 //
 void FRAM9::_writeBlock(uint16_t memAddr, uint8_t * obj, uint8_t size)
 {
-
-  Serial.print("FRAM9::_writeBlock");
- 	Serial.println("");
-
   //  Device uses Address Pages
   uint8_t DeviceAddrWithPageBits = _address | ((memAddr & 0x0100) >> 8);
   _wire->beginTransmission(DeviceAddrWithPageBits);

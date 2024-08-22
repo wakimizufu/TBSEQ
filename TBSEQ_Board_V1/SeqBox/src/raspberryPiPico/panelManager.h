@@ -163,13 +163,17 @@ class panelManager: public countTriger
     matrixSwitch _matrixSwitch;
 
   	//FRAM 16KByte
-    FRAM11 fram;	
+    //FRAM11 fram;	
 
     //FRAM接続フラグ true:接続成功, false:接続失敗
     bool  _connectFRAM;
 
     //HT16K33クラス
     HT16K33 _HT16K33;
+
+    void _readBlock(uint16_t memAddr, uint8_t * obj, uint8_t size);
+    void _writeBlock(uint16_t memAddr, uint8_t * obj, uint8_t size);
+
 };
 
 #endif

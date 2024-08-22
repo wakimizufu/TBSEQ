@@ -237,29 +237,18 @@ FRAMへの接続を開始する
 */
 bool panelManager::connectFRAM(){
 
-    //FRAMからシークエンスマップをロードする
-    int rv = fram.begin(I2C_ADDR_FRAM11);
-    bool _ret = false;
+  Wire.beginTransmission(I2C_ADDR_FRAM11);
 
-    if (rv != 0)    {
-        Serial.print("fram INIT ERROR: ");
-        Serial.println(rv);
-        _ret = false;
+  int ret = Wire.endTransmission();
+  _connectFRAM = (ret == 0);
 
-    } else {
-        Serial.println("fram connected: ");
-        _ret = true;
+   Serial.print("panelManager::connectFRAM ret:");
+   Serial.print(ret);
+   Serial.print(" _connectFRAM:");
+   Serial.print(_connectFRAM);
+   Serial.println("");
 
-
-   		Serial.print("fram::getSize():");
-        Serial.println(fram.getSize());
-
-   		//Serial.print("fram::getWriteProtect():");
-        //Serial.println(fram.getWriteProtect());
-    }
-
-    _connectFRAM = _ret;
-    return _ret;
+   return _connectFRAM;
 }
 
 /*
@@ -269,9 +258,50 @@ FRAMからビットストリームをロードする
 */
 void panelManager::loadFRAM(unsigned char* _bitstream, int _loadSize ){
     if (_connectFRAM) {
-        fram.read(0x000, _bitstream,_loadSize);
+        //fram.read(0x000, _bitstream,_loadSize);
+        //  void FRAM::read(uint16_t memAddr, uint8_t * obj, uint16_t size)
+
+        uint16_t memAddr = 0x0000;
+        uint8_t * obj = _bitstream;
+        uint16_t size = _loadSize;
+
+        const uint8_t blocksize = 24;
+        uint8_t * p = obj;
+        while (size >= blocksize)
+        {
+            _readBlock(memAddr, p, blocksize);
+            memAddr += blocksize;
+            p += blocksize;
+            size -= blocksize;
+        }
+        //  remainder
+        if (size > 0)
+        {
+            _readBlock(memAddr, p, size);
+        }
     } 
 }
+
+void panelManager::_readBlock(uint16_t memAddr, uint8_t * obj, uint8_t size)
+{
+  //  Device uses Address Pages
+  uint8_t DeviceAddrWithPageBits = I2C_ADDR_FRAM11 | ((memAddr & 0x0700) >> 8);
+  Wire.beginTransmission(DeviceAddrWithPageBits);
+  Wire.write((uint8_t) (memAddr & 0xFF));
+  Wire.endTransmission();
+  Wire.requestFrom(DeviceAddrWithPageBits, size);
+
+  uint8_t * p = obj;
+  for (uint8_t i = size; i > 0; i--)
+  {
+    *p++ = Wire.read();
+  }
+}
+
+
+
+
+
 
 /*
 FRAMへビットストリームをセーブする
@@ -286,9 +316,47 @@ void panelManager::saveFRAM(int _startAddres , unsigned char* _bitstream, int _l
         Serial.print(" _loadSize:");
         Serial.print(_loadSize,HEX);
         Serial.println("");
-        fram.write(_startAddres, _bitstream, _loadSize);
+
+        //fram.write(_startAddres, _bitstream, _loadSize);
+        //  void FRAM::write(uint16_t memAddr, uint8_t * obj, uint16_t size)
+
+        uint16_t memAddr = _startAddres;
+        uint8_t * obj = _bitstream;
+        uint16_t size = _loadSize;
+
+        const int blocksize = 24;
+        uint8_t * p = obj;
+        while (size >= blocksize)
+        {
+            _writeBlock(memAddr, p, blocksize);
+            memAddr += blocksize;
+            p += blocksize;
+            size -= blocksize;
+        }
+        //  remaining
+        if (size > 0)
+        {
+            _writeBlock(memAddr, p, size);
+        }
+
         Serial.println("panelManager::saveFRAM Finish");
-    }     
+    }
+
+}     
+
+void panelManager::_writeBlock(uint16_t memAddr, uint8_t * obj, uint8_t size)
+{
+  //  Device uses Address Pages
+  uint8_t  DeviceAddrWithPageBits = I2C_ADDR_FRAM11 | ((memAddr & 0x0700) >> 8);
+  Wire.beginTransmission(DeviceAddrWithPageBits);
+  Wire.write((uint8_t) (memAddr & 0xFF));
+
+  uint8_t * p = obj;
+  for (uint8_t i = size; i > 0; i--)
+  {
+    Wire.write(*p++);
+  }
+  Wire.endTransmission();
 }
 
 

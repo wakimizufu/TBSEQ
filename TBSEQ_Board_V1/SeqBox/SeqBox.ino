@@ -10,6 +10,31 @@
  #include "src/mode/sequenceMap.h"
  #include "src/mode/modeManager.h"
 
+/*
+[Todo 2024/8/23]
+<パターンプレイ/ライト>
+・バンクA,B,C,Dの対応
+  ⇒バンクに対応したsequenceMapの改修
+  ⇒FRAMへのプリセット書き込み/読込/パターン変更時の書き込みの改修
+  ⇒パターンプレイ時のバンクボタンをクリック時の挙動
+  ⇒パターンライト時のバンクボタンをクリック時の挙動
+
+<Sync>
+・SyncOutの出力テスト
+・SyncInの入力テスト
+・SyncInとテンポを同期
+
+<MIDI>
+・MIDI IN回路のテスト
+・MIDIメッセージ受信実装
+・システムリアルタイムメッセージとテンポを同期
+
+<トラックプレイ/ライト>
+・仕様を考える
+*/
+
+
+
 //グローバル変数定義
 panelManager _panelManager(0);
 voltage _voltage;

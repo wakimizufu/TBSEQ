@@ -1596,6 +1596,16 @@
 		)
 		(uuid "f8712771-fc52-4ad4-ac7c-b396f300ec2e")
 	)
+	(text "Vcc=5Vで動作確認済(Vcc=3.3Vだと動作できない事も確認した)"
+		(exclude_from_sim no)
+		(at 127.762 97.028 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+			)
+		)
+		(uuid "a5f097e7-bd5d-42fc-ad45-8751da1548a6")
+	)
 	(text "MIDI Interface(RX only)"
 		(exclude_from_sim no)
 		(at 91.186 43.688 0)

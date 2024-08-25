@@ -65,8 +65,23 @@ class paternWrite: public mode{
 		bool _LEDtempo; //テンポカウント時LED点灯フラグ
 		int	 _LEDstep;	//テンポカウント時ステップカウンタ
 
+		int	 _Playstep;	//ラン/ストップフラグ:ラン 演奏時ステップ
 
+		/*
+		16音符毎MIDIクロックカウントが後半クロックになったらゲートをオフする
+		*/
+		void _gate_on_16note();
 
+		/*
+		16音符毎MIDIクロックカウントが後半クロックになったらゲートをオフする
+		*/
+		void _gate_off_16note();
+
+		/*
+		16音符毎MIDIクロックカウントが最終クロックになったら次に演奏するステップを決定する
+		*/
+		void _next_step_16note();
+		
 };
 
 

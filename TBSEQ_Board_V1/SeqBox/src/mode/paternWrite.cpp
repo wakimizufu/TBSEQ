@@ -3,13 +3,14 @@
 paternWrite::paternWrite(panelManager* ptPanelManager, voltage* ptVoltage, sequenceMap* ptSequenceMap, int _initPattern ) :mode(MODE_NAME::PATERN_WRITE, ptPanelManager, ptVoltage, ptSequenceMap) {
 
 	//各状態を初期値に変更する
-	_pattern = _initPattern;				//指定パターン
+	_pattern = _initPattern;					//指定パターン
 	_step = STEP_START_IDX;						//現在ステップ
 	_LEDCount = 0;								//LED点滅カウント
 	_pushRunSW = false;							//ラン/ストップ前回状態フラグ
 	_midiclock_16note = MIDICLOCK_START_16NOTE;	//16音符毎MIDIクロックカウント
 	_LEDtempo=true;                             //テンポカウント時LED点灯フラグ
 	_LEDstep=0;									//テンポカウント時ステップカウンタ
+	_Playstep = STEP_START_IDX;					//演奏時ステップを1に戻す
 
 	//ラン/ストップフラグ←ストップ
 	_run_stop = RUN_STOP::STOP;
@@ -52,7 +53,6 @@ void paternWrite::runSequence() {
 		}
 	}
 
-
 	//ラン/ストップ切替チェック
 	changeRunStop();
 
@@ -73,11 +73,25 @@ void paternWrite::runSequence() {
 */
 void paternWrite::runClock() {
 
+	//16音符毎MIDIクロックカウントを更新
+	_midiclock_16note++;
+
+	//16音符毎MIDIクロックカウントが7カウント目なら1カウントに戻す
+	if (_midiclock_16note > MIDICLOCK_STOP_16NOTE) {
+		_midiclock_16note = MIDICLOCK_START_16NOTE;
+	}
+
+	/*
+	Serial.print("runClock() _midiclock_16note:");
+	Serial.print(_midiclock_16note);
+	Serial.println("");
+    */
+
 	//ラン/ストップフラグ:ラン
 	if (_run_stop == RUN_STOP::RUN) {
 		execRunClock();
 
-		//ラン/ストップフラグ:ストップ
+	//ラン/ストップフラグ:ストップ
 	}
 	else	if (_run_stop == RUN_STOP::STOP) {
 		execStopClock();
@@ -102,19 +116,26 @@ void	paternWrite::changeRunStop() {
 			_run_stop = RUN_STOP::RUN;
 			_LEDRunStop	= true;
 
+			//演奏時ステップを1に戻す
+			_Playstep = STEP_START_IDX;
+
 		//ラン/ストップフラグ:ストップ
 		}
 		else	if (_run_stop == RUN_STOP::RUN) {
 			_run_stop = RUN_STOP::STOP;
 			_LEDRunStop	= false;
 
+			//現在ステップを1に戻す
+			//_step=1;					
 		}
 
-		////現在ステップを1に戻す
-		_step=1;					
-
 		//_midiclock_16note⇒初期化
-		_midiclock_16note = MIDICLOCK_START_16NOTE;
+		_midiclock_16note = MIDICLOCK_STOP_16NOTE;
+
+
+		Serial.print("changeRunStop() RESET _midiclock_16note:");
+		Serial.print(_midiclock_16note);
+		Serial.println("");
 
 		//LED::RUN_STOP⇒状態に合わせて設定
 		_panelManager->setLED(static_cast<int>(LED::RUN_STOP), _LEDRunStop);
@@ -131,6 +152,7 @@ void	paternWrite::changeRunStop() {
 ラン/ストップフラグ:ラン シークエンス処理を実行
 */
 void	paternWrite::execRunSequence() {
+	execStopSequence();
 }
 
 /*
@@ -163,10 +185,19 @@ void	paternWrite::execStopSequence() {
 	_panelManager->setLED(static_cast<int>(LED::LENMAX), _laststep);
 	_panelManager->setLED(_noteOnLED[_note_relative], true);
 
+
+
+
 	if	(	STEP_NOTE_ON_NORMAL	==	_note_on	)	{
 		_panelManager->setLED(static_cast<int>(LED::NOTE_ON), true);
 	} else if (	STEP_NOTE_ON_TIE	==	_note_on	)	{
 		_panelManager->setLED(static_cast<int>(LED::NOTE_TIE), true);
+	}
+
+
+	if (_run_stop == RUN_STOP::RUN){
+		_panelManager->setLED(static_cast<int>(LED::RUN_STOP), true);
+	}	else	if (_run_stop == RUN_STOP::STOP) {
 	}
 
 	//ステップ:指定ステップ数に応じたLEDを設定する
@@ -306,6 +337,24 @@ void	paternWrite::execStopSequence() {
 ラン/ストップフラグ:ラン MIDIクロックカウント処理を実行
 */
 void	paternWrite::execRunClock() {
+
+    /*
+	Serial.print("execRunClock() _midiclock_16note:");
+	Serial.print(_midiclock_16note);
+	Serial.print(" _Playstep:");
+	Serial.print(_Playstep);
+	Serial.println("");
+    */
+
+	//16音符毎MIDIクロックカウントが最初ならゲートをオンする
+	_gate_on_16note();
+
+	//16音符毎MIDIクロックカウントが後半クロックになったらゲートをオフする
+	_gate_off_16note();
+
+	//16音符毎MIDIクロックカウントが最終クロックになったら次に演奏するステップを決定する
+	_next_step_16note();
+
 }
 
 /*
@@ -313,6 +362,141 @@ void	paternWrite::execRunClock() {
 */
 void	paternWrite::execStopClock() {
 }
+
+
+/*
+16音符毎MIDIクロックカウントが最初ならゲートをオンする
+*/
+void paternWrite::_gate_on_16note() {
+
+	bool _up		=	_sequenceMap->paterns[_pattern].steps[_Playstep].up;
+	bool _down		=	_sequenceMap->paterns[_pattern].steps[_Playstep].down;
+	bool _acc		=	_sequenceMap->paterns[_pattern].steps[_Playstep].acc;
+	bool _slide		=	_sequenceMap->paterns[_pattern].steps[_Playstep].slide;
+	unsigned char _note_on	=	_sequenceMap->paterns[_pattern].steps[_Playstep].note_on;
+	unsigned char _note_relative = _sequenceMap->paterns[_pattern].steps[_Playstep].note - static_cast<unsigned char>(NOTE_PWM_INDEX::NOTE_C2);
+
+	if(_midiclock_16note == MIDICLOCK_START_16NOTE){
+
+		//ステップ:演奏時ステップ数に応じたLEDを設定する
+		//setStepLED(_Playstep);
+
+		Serial.print("_gate_on_16note() MIDICLOCK_START_16NOTE ");
+		Serial.print(" pattern:");
+		Serial.print(_pattern);
+		Serial.print(" Playstep:");
+		Serial.print(_Playstep);
+		Serial.print(" gate:");
+		Serial.print(_note_on);
+		Serial.print(" acc:");
+		Serial.print(_acc);
+		Serial.print(" slide:");
+		Serial.print(_slide);
+
+
+		if (( STEP_NOTE_ON_NORMAL == _note_on)||( STEP_NOTE_ON_TIE == _note_on)){
+			_voltage->gate(true);	//gate
+		} else if ( STEP_NOTE_OFF == _note_on){
+			_voltage->gate(false);	//gate
+		}
+
+		if (_note_on){
+			_voltage->accent(_acc);	//acc
+			_voltage->slide(_slide);//slide
+
+			int _note_CV=0;
+			if ( _up ) {
+				_note_CV=static_cast<int>(NOTE_PWM_INDEX::NOTE_C3);
+			} else if ( _down ) {
+				_note_CV=static_cast<int>(NOTE_PWM_INDEX::NOTE_C1);
+			} else{
+				_note_CV = static_cast<int>(NOTE_PWM_INDEX::NOTE_C2);
+			}
+
+			//NOTE_PWM_INDEX のインデックス値を算出する
+			_note_CV	=	_note_CV	+	_note_relative;	
+			Serial.print(" CV:");
+			Serial.print(_note_CV);
+			_voltage->cv(_note_CV);  //CVを設定する
+
+		} else {
+			_voltage->accent(false);//acc
+			_voltage->slide(false);	//slide			
+		}
+
+		Serial.println("");
+	}
+}
+
+/*
+16音符毎MIDIクロックカウントが後半クロックになったらゲートをオフする
+*/
+void paternWrite::_gate_off_16note() {
+
+	unsigned char  _note_on	=	_sequenceMap->paterns[_pattern].steps[_Playstep].note_on;
+	bool _slide 	=	_sequenceMap->paterns[_pattern].steps[_Playstep].slide;
+
+	if (_midiclock_16note == MIDICLOCK_GATEOFF_16NOTE) {
+
+		Serial.print("_gate_off_16note() ");
+		Serial.print(" pattern:");
+		Serial.print(_pattern);
+		Serial.print(" Playstep:");
+		Serial.print(_Playstep);
+		Serial.print(" note_on:");
+		Serial.print(_note_on);
+		Serial.print(" slide:");
+		Serial.print(_slide);
+		Serial.println("");
+        
+
+		if (( STEP_NOTE_ON_NORMAL == _note_on) || ( STEP_NOTE_OFF == _note_on)) {
+			_voltage->gate(false);	//gate
+		}
+	}
+
+}
+
+/*
+16音符毎MIDIクロックカウントが最終クロックになったら次に演奏するパターン&ステップを決定する
+*/
+void paternWrite::_next_step_16note() {
+
+	bool _laststep 		=	_sequenceMap->paterns[_pattern].steps[_Playstep].lastStep;
+	bool _nextPattern 	=	false;
+
+	if (_midiclock_16note == MIDICLOCK_STOP_16NOTE) {
+
+        
+		Serial.print("_next_step_16note() ");
+		Serial.print(" pattern:");
+		Serial.print(_pattern);
+		Serial.print(" Playstep:");
+		Serial.print(_Playstep);
+		Serial.print(" laststep:");
+		Serial.print(_laststep);
+		Serial.println("");
+        
+
+		//現在のステップが最終ステップなら「ステップ=1」に設定する
+		if (_laststep)	{
+			_Playstep=STEP_START_IDX;
+
+		//現在のステップが通常ステップなら次ステップに設定する
+		} else if (!_laststep){
+			_Playstep++;
+
+			if(_Playstep>=PATERN_STEP_LENGTH){
+				_Playstep=STEP_START_IDX;
+			}
+		}
+
+	}
+
+
+}
+
+
 
 
 

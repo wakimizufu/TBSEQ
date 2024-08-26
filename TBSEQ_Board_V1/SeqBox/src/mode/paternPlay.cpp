@@ -315,10 +315,10 @@ void	paternPlay::changeRunStop() {
 		}
 
 		////現在ステップを1に戻す
-		_step=1;					
+		_step=STEP_START_IDX;					
 
 		//_midiclock_16note⇒初期化
-		_midiclock_16note = MIDICLOCK_START_16NOTE;
+		_midiclock_16note = MIDICLOCK_STOP_16NOTE;
 
 		//LED::RUN_STOP⇒状態に合わせて設定
 		_panelManager->setLED(static_cast<int>(LED::RUN_STOP), _LEDRunStop);
@@ -445,7 +445,7 @@ void paternPlay::_next_step_16note() {
 
 		//現在のステップが最終ステップなら「ステップ=1」に設定する
 		if (_laststep)	{
-			_step=1;
+			_step=STEP_START_IDX;
 			_nextPattern = true;
 
 		//現在のステップが通常ステップなら次ステップに設定する
@@ -453,7 +453,7 @@ void paternPlay::_next_step_16note() {
 			_step++;
 
 			if(_step>=PATERN_STEP_LENGTH){
-				_step=1;
+				_step=STEP_START_IDX;
 				_nextPattern = true;
 			}
 		}

@@ -76,6 +76,8 @@ private:
 };
 
 
+
+
 /*
 sequenceMap パターンを管理する
 */
@@ -83,20 +85,26 @@ sequenceMap パターンを管理する
 //sequenceMap:パターン開始インデックス
 #define PATTERN_START_IDX 0
 
-//sequenceMap:パターン全数
+//sequenceMap:1バンク/パターン全数
 #define SEQUENCE_PATTERN_LENGTH 8
+
+//sequenceMap:バンク開始インデックス
+#define BANK_START_IDX 0
+
+//sequenceMap:バンク全数
+#define SEQUENCE_BANK_LENGTH 4
 
 //sequenceMap:1パターン総バイト数
 const int PATTERN_ALLBYTE = PATERN_STEP_LENGTH * STEP_ALLBYTE;
 
-//sequenceMap:全8パターン全数
+//sequenceMap:1バンク/全8パターン全数
 const int SEQUENCE_ALLBYTE = SEQUENCE_PATTERN_LENGTH * PATERN_STEP_LENGTH * STEP_ALLBYTE;
 
 class sequenceMap {
 public:
 
 	//パターン配列
-	patern paterns[SEQUENCE_PATTERN_LENGTH];
+	patern paterns[SEQUENCE_BANK_LENGTH][SEQUENCE_PATTERN_LENGTH];
 
 	/*
 	コンストラクタ
@@ -106,67 +114,74 @@ public:
 
 	/*
 ビットストリームからパターン配列を設定する
-引数:ビットストリーム
+引数:指定バンク番号,ビットストリーム
 */
-	void setBitstream(unsigned char* _bitstream) {
+	void setBitstream(int b, unsigned char* _bitstream) {
 
 		int _bitInd = 0;
 		unsigned char _byte = 0;
+
+		if ( ( b < 0) || (b >= SEQUENCE_BANK_LENGTH) ){
+			b = 0;
+		}
 
 		for (int p = 0; p < SEQUENCE_PATTERN_LENGTH; p++) {
 			for (int s = 0; s < PATERN_STEP_LENGTH; s++) {
 
 				_byte = *(_bitstream + _bitInd);
-				paterns[p].steps[s].lastStep = (0x10 == (0x10 & _byte)); //bit:4 最終ステップ(true:最終ステップ ,false:通常ステップ)
-				paterns[p].steps[s].slide = (0x08 == (0x08 & _byte)); //bit:3 スライド true:ON/false:OFF
-				paterns[p].steps[s].acc = (0x04 == (0x04 & _byte)); //bit:2 アクセント true:ON/false:OFF
-				paterns[p].steps[s].down = (0x02 == (0x02 & _byte)); //bit:1 オクターブDOWN true:C1/false:C2
-				paterns[p].steps[s].up = (0x01 == (0x01 & _byte)); //bit:0 オクターブUP true:ON/false:OFF
+				paterns[b][p].steps[s].lastStep = (0x10 == (0x10 & _byte)); //bit:4 最終ステップ(true:最終ステップ ,false:通常ステップ)
+				paterns[b][p].steps[s].slide = (0x08 == (0x08 & _byte)); //bit:3 スライド true:ON/false:OFF
+				paterns[b][p].steps[s].acc = (0x04 == (0x04 & _byte)); //bit:2 アクセント true:ON/false:OFF
+				paterns[b][p].steps[s].down = (0x02 == (0x02 & _byte)); //bit:1 オクターブDOWN true:C1/false:C2
+				paterns[b][p].steps[s].up = (0x01 == (0x01 & _byte)); //bit:0 オクターブUP true:ON/false:OFF
 				_bitInd++;
 
 				_byte = *(_bitstream + _bitInd);
 
 				//ノートオンオフ 1:ノートオン/2:ノートオン(タイ)/0:ノートオフ
-				paterns[p].steps[s].note_on = (0x30 & _byte) >> 4;
+				paterns[b][p].steps[s].note_on = (0x30 & _byte) >> 4;
 
 				//ノート( NOTE_PWM_INDEX::NOTE_C2～NOTE_PWM_INDEX::NOTE_C3 を設定)
-				paterns[p].steps[s].note = (0x0F & _byte) + static_cast<unsigned char>(NOTE_PWM_INDEX::NOTE_C2);
+				paterns[b][p].steps[s].note = (0x0F & _byte) + static_cast<unsigned char>(NOTE_PWM_INDEX::NOTE_C2);
 
 				_bitInd++;
 			}
 		}
 
-
-
 	}
 
 	/*
 	パターン配列からビットストリームに設定する
-	引数:指定パターン番号,設定先ビットストリーム
+	引数:指定バンク番号,指定パターン番号,設定先ビットストリーム
 	*/
-	void getBitstream(int p, unsigned char* _bitstream) {
+	void getBitstream(int b, int p, unsigned char* _bitstream) {
 
 		int _bitInd = 0;
 		unsigned char _byte = 0;
+
+		if ( ( b < 0) || (b >= SEQUENCE_BANK_LENGTH) ){
+			b = 0;
+		}
 
 		if ( ( p < 0) || (p >= SEQUENCE_PATTERN_LENGTH) ){
 			p = 0;
 		}
 
+
 		//for (int p = 0; p < SEQUENCE_PATTERN_LENGTH; p++) {
 			for (int s = 0; s < PATERN_STEP_LENGTH; s++) {
 
 				_byte = 0x00;
-				if (paterns[p].steps[s].lastStep) { _byte = _byte ^ 0x10; }	//bit:4 最終ステップ(true:最終ステップ ,false:通常ステップ)
-				if (paterns[p].steps[s].slide) { _byte = _byte ^ 0x08; }	//bit:3 スライド true:ON/false:OFF
-				if (paterns[p].steps[s].acc) { _byte = _byte ^ 0x04; }		//bit:2 アクセント true:ON/false:OFF
-				if (paterns[p].steps[s].down) { _byte = _byte ^ 0x02; }		//bit:1 オクターブDOWN true:C1/false:C2
-				if (paterns[p].steps[s].up) { _byte = _byte ^ 0x01; }		//bit:0 オクターブUP true:ON/false:OFF
+				if (paterns[b][p].steps[s].lastStep) { _byte = _byte ^ 0x10; }	//bit:4 最終ステップ(true:最終ステップ ,false:通常ステップ)
+				if (paterns[b][p].steps[s].slide) { _byte = _byte ^ 0x08; }	//bit:3 スライド true:ON/false:OFF
+				if (paterns[b][p].steps[s].acc) { _byte = _byte ^ 0x04; }		//bit:2 アクセント true:ON/false:OFF
+				if (paterns[b][p].steps[s].down) { _byte = _byte ^ 0x02; }		//bit:1 オクターブDOWN true:C1/false:C2
+				if (paterns[b][p].steps[s].up) { _byte = _byte ^ 0x01; }		//bit:0 オクターブUP true:ON/false:OFF
 				*(_bitstream + _bitInd) = _byte;
 				_bitInd++;
 
-				_byte = paterns[p].steps[s].note - static_cast<unsigned char>(NOTE_PWM_INDEX::NOTE_C2);	//ノート( NOTE_PWM_INDEX::NOTE_C2～NOTE_PWM_INDEX::NOTE_C3 を設定)
-				_byte = _byte | paterns[p].steps[s].note_on << 4;
+				_byte = paterns[b][p].steps[s].note - static_cast<unsigned char>(NOTE_PWM_INDEX::NOTE_C2);	//ノート( NOTE_PWM_INDEX::NOTE_C2～NOTE_PWM_INDEX::NOTE_C3 を設定)
+				_byte = _byte | paterns[b][p].steps[s].note_on << 4;
 
 				*(_bitstream + _bitInd) = _byte;
 				_bitInd++;

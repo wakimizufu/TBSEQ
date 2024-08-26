@@ -9,9 +9,10 @@ start         :カウンタ開始値(デフォルト=0)
 */
 modeManager::modeManager(panelManager* ptPanelManager, voltage* ptVoltage, int noteThredhold, int start = 0) :countTriger(THD_MODE_MANAGER, start) {
 
-	_panelManager = ptPanelManager;		//panelManagerクラスポインタ
-	_voltage = ptVoltage;						//【コンストラクタで設定】voltageクラスポインタ
-	_debugMode = false;						//デバッグフラグ (true->デバッグモード ,false->通常モード)
+	_panelManager	=	ptPanelManager;	//panelManagerクラスポインタ
+	_voltage		=	ptVoltage;		//【コンストラクタで設定】voltageクラスポインタ
+	_debugMode		=	false;			//デバッグフラグ (true->デバッグモード ,false->通常モード)
+	_bank			=	BANK_START_IDX;	//現在の指定バンク
 
 	//ボタン押下中変数を初期化
 	for ( int i=0 ; i<SW_INDEX_MAX ; i++){
@@ -21,6 +22,7 @@ modeManager::modeManager(panelManager* ptPanelManager, voltage* ptVoltage, int n
 
 	//現在のモードクラスの初期値を設定する
 	_currentMode = new paternPlay( _panelManager, _voltage, &_sequenceMap);
+	_currentMode->setBank(_bank);
 
 	_clockCount = 0;							//現在のMIDIクロックカウンタ値
 	_noteThredhold = noteThredhold;	//MIDIクロックカウンタ閾値
@@ -90,28 +92,44 @@ void	modeManager::changeDebugMode(){
 */
 void	modeManager::presetSequence(){
 
+	int b,i;
+	unsigned char _patern_load_bitstream[SEQUENCE_ALLBYTE];
+	uint16_t _memAddr;
+
 	//FRAMへの接続を開始する
 	bool _connect	=	_panelManager->connectFRAM();
 
 	//シークエンスマップをFRAMからロードして設定する
 	if	( _connect ) {
-		unsigned char _patern_load_bitstream[SEQUENCE_ALLBYTE];
-		_panelManager->loadFRAM(_patern_load_bitstream, SEQUENCE_ALLBYTE);
+
+		for (b = BANK_START_IDX; b < SEQUENCE_BANK_LENGTH; b++) {
+			_memAddr = SEQUENCE_ALLBYTE * b;
+
+			Serial.print("modeManager::presetSequence() _memAddr:");
+			Serial.print(_memAddr,HEX);
+			Serial.println("");
+			
+			_panelManager->loadFRAM(_patern_load_bitstream, _memAddr, SEQUENCE_ALLBYTE);
 		
-		
-		for (int i=0 ; i<SEQUENCE_ALLBYTE ; i++){
-		Serial.print("_patern_load_bitstream[");
-		Serial.print(i,HEX);
-		Serial.print("]:");
-		Serial.print(_patern_load_bitstream[i],HEX);
-		Serial.println("");
+		    /*
+			for (i=0 ; i<SEQUENCE_ALLBYTE ; i++){
+			Serial.print("_patern_load_bitstream[");
+			Serial.print(i,HEX);
+			Serial.print("]:");
+			Serial.print(_patern_load_bitstream[i],HEX);
+			Serial.println("");
+			}
+			*/
+
+			_sequenceMap.setBitstream(b,_patern_load_bitstream);
 		}
 		
-		
-		_sequenceMap.setBitstream(_patern_load_bitstream);
+
 	} else if (!_connect) {
 		presetBitstream _presetBitstream;
-		_sequenceMap.setBitstream(_presetBitstream.patern_preset_bitstream);
+		for (b = BANK_START_IDX; b < SEQUENCE_BANK_LENGTH; b++) {
+			_sequenceMap.setBitstream(b, _presetBitstream.patern_preset_bitstream);
+		}
 	}
 	
 }
@@ -191,10 +209,11 @@ void	modeManager::_changeMode() {
 
 	//ボタン押下状況に応じたモード名を設定
 	MODE_NAME changeMode = MODE_NAME::NONE;
-	int _currentPatern = 1;
+	int _currentPatern = PATTERN_START_IDX;
 	bool	_track	=	false;
 	bool	_patern	=	false;
 	bool	_write	=	false;
+	_bank	=	_currentMode->getCurrnetBank();
 
 	if	(	MODE_NAME::PATERN_PLAY == mode ) {				//パターンプレイ
 		_currentPatern	=	_currentMode->getCurrnetPattern();
@@ -227,17 +246,20 @@ void	modeManager::_changeMode() {
 
 		if	(	_SwWrite	)	{
 			changeMode = MODE_NAME::PATERN_PLAY;
-			int _currnetPattern = _currentMode->getCurrnetPattern();
+			_currentPatern = _currentMode->getCurrnetPattern();
 
-			Serial.print("MODE_NAME::PATERN_WRITE->PATERN_PLAY _currnetPattern:");
-			Serial.print(_currnetPattern);
+			Serial.print("MODE_NAME::PATERN_WRITE->PATERN_PLAY");
+			Serial.print(" _bank:");
+			Serial.print(_bank);
+			Serial.print(" _currentPatern:");
+			Serial.print(_currentPatern);
 			Serial.println("");
 
 			//パターン配列からビットストリームに設定する
 			unsigned char _current_patern_bitstream[PATTERN_ALLBYTE];
-			_sequenceMap.getBitstream( _currnetPattern , _current_patern_bitstream);
+			_sequenceMap.getBitstream( _bank , _currentPatern , _current_patern_bitstream);
 
-			int _startAddr = _currnetPattern * PATTERN_ALLBYTE;
+			int _startAddr = (_bank * SEQUENCE_ALLBYTE ) + (_currentPatern * PATTERN_ALLBYTE);
 			_panelManager->saveFRAM( _startAddr, _current_patern_bitstream , PATTERN_ALLBYTE);
 		}
 
@@ -281,10 +303,12 @@ void	modeManager::_changeMode() {
 
 	if (MODE_NAME::PATERN_PLAY == changeMode) {
 		_currentMode = new paternPlay( _panelManager, _voltage, &_sequenceMap);
-
+		_currentMode->setBank(_bank);
+		_currentMode->setPattern(_currentPatern);
 	}
 	else if (MODE_NAME::PATERN_WRITE == changeMode) {
 		_currentMode = new paternWrite( _panelManager, _voltage, &_sequenceMap, _currentPatern);
+		_currentMode->setBank(_bank);
 
 	}
 	else if (MODE_NAME::TRACK_PLAY == changeMode) {

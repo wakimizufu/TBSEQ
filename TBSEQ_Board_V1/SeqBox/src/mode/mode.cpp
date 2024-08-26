@@ -41,6 +41,14 @@ int	mode::getCurrnetPattern(){
 	return _pattern;
 }
 
+ /*
+現在の指定パターンを取得する
+戻り値：指定パターン(1-8)
+*/
+int	mode::getCurrnetBank(){
+	return _bank;
+}
+
 /*
 指定スイッチが押下したタイミングか取得する
 引数  ：class enum Switch値(intに変換して設定する)
@@ -87,3 +95,59 @@ void	mode::setStepLED(int value){
 		_panelManager->setLED(static_cast<int>(LED::STEP_1), true);	
 	}
 }
+
+/*
+バンク:指定ステップ数に応じたLEDを設定する
+引数  ：指定バンク
+*/
+void	mode::setBank(int value){
+
+	if ( (value < BANK_START_IDX) || (value >= SEQUENCE_BANK_LENGTH) ) {
+		_bank = BANK_START_IDX;
+	} else {
+		_bank = value;
+	}
+}
+
+/*
+バンク:指定バンク数に応じたLEDを設定する
+引数  ：バンク数
+*/
+void	mode::setBackLED(int value){
+
+	_panelManager->setLED(static_cast<int>(LED::BANK_A), false);	
+	_panelManager->setLED(static_cast<int>(LED::BANK_B), false);	
+	_panelManager->setLED(static_cast<int>(LED::BANK_C), false);	
+	_panelManager->setLED(static_cast<int>(LED::BANK_D), false);	
+
+	if ( 0 == value){
+		_panelManager->setLED(static_cast<int>(LED::BANK_A), true);	
+	}
+
+	if ( 1 == value){
+		_panelManager->setLED(static_cast<int>(LED::BANK_B), true);	
+	}
+
+	if ( 2 == value){
+		_panelManager->setLED(static_cast<int>(LED::BANK_C), true);	
+	}
+
+	if ( 3 == value){
+		_panelManager->setLED(static_cast<int>(LED::BANK_D), true);	
+	}
+}
+
+
+/*
+パターン:指定したパターンへ変更する
+戻り値：指定パターン
+*/
+void	mode::setPattern(int value){
+
+	if ( (value < PATTERN_START_IDX) || (value >= SEQUENCE_PATTERN_LENGTH) ) {
+		_pattern = PATTERN_START_IDX;
+	} else {
+		_pattern = value;
+	}
+}
+

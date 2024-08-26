@@ -253,15 +253,14 @@ bool panelManager::connectFRAM(){
 
 /*
 FRAMからビットストリームをロードする
-引数  ：設定先ビットストリーム, ロードするバイト数
+引数  ：設定先ビットストリーム, 読込開始アドレス, ロードするバイト数
 戻り値：なし
 */
-void panelManager::loadFRAM(unsigned char* _bitstream, int _loadSize ){
+void panelManager::loadFRAM(unsigned char* _bitstream, uint16_t _memAddr, int _loadSize ){
     if (_connectFRAM) {
         //fram.read(0x000, _bitstream,_loadSize);
         //  void FRAM::read(uint16_t memAddr, uint8_t * obj, uint16_t size)
 
-        uint16_t memAddr = 0x0000;
         uint8_t * obj = _bitstream;
         uint16_t size = _loadSize;
 
@@ -269,15 +268,15 @@ void panelManager::loadFRAM(unsigned char* _bitstream, int _loadSize ){
         uint8_t * p = obj;
         while (size >= blocksize)
         {
-            _readBlock(memAddr, p, blocksize);
-            memAddr += blocksize;
+            _readBlock(_memAddr, p, blocksize);
+            _memAddr += blocksize;
             p += blocksize;
             size -= blocksize;
         }
         //  remainder
         if (size > 0)
         {
-            _readBlock(memAddr, p, size);
+            _readBlock(_memAddr, p, size);
         }
     } 
 }

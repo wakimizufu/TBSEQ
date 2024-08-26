@@ -121,6 +121,9 @@ void	paternPlay::execRunSequence() {
 	//ステップ:指定ステップ数に応じたLEDを設定する
 	setStepLED(_step);
 
+	//バンク:指定バンク数に応じたLEDを設定する
+	setBackLED(_bank);
+
 	//次に演奏するパターンを決定する
 	for (i=0;i<SEQUENCE_PATTERN_LENGTH ;i++){
 		_patern_index=_scanPatternSwich[i];	
@@ -144,7 +147,7 @@ void	paternPlay::execRunSequence() {
 void	paternPlay::execStopSequence() {
 
 	int i;
-	int _patern_index;
+	int _patern_index, _bank_index;
 
 	//キーボード機能 切り替えチェック＆キーボード機能実行
 	bool _execKeyborad = execKeyborad();
@@ -166,6 +169,23 @@ void	paternPlay::execStopSequence() {
 		_panelManager->setLED(static_cast<int>(LED::PATTERN), true);
 		_panelManager->setLED(_scanPatternLED[_pattern], _LEDtempo);		//直前に選択したパターンのLEDを点灯
 	
+
+		//バンク:演奏するバンクを選択
+		for (i=0;i<SEQUENCE_BANK_LENGTH ;i++){
+			_bank_index=_scanBankSwich[i];
+
+			//押下中ノートボタンがあれば、パターン選択中とみなす
+			if (_currentSwtich[_bank_index]){
+				_bank=i;
+				break;	
+			}
+		}
+
+		//バンク:指定バンク数に応じたLEDを設定する
+		setBackLED(_bank);
+
+
+		//パターン:演奏するパターンを選択
 		for (i=0;i<SEQUENCE_PATTERN_LENGTH ;i++){
 			_patern_index=_scanPatternSwich[i];	
 
@@ -343,15 +363,17 @@ int	paternPlay::getCurrnetPattern(){
 */
 void paternPlay::_gate_on_16note() {
 
-	bool _up		=	_sequenceMap->paterns[_pattern].steps[_step].up;
-	bool _down		=	_sequenceMap->paterns[_pattern].steps[_step].down;
-	bool _acc		=	_sequenceMap->paterns[_pattern].steps[_step].acc;
-	bool _slide		=	_sequenceMap->paterns[_pattern].steps[_step].slide;
-	unsigned char _note_on	=	_sequenceMap->paterns[_pattern].steps[_step].note_on;
-	unsigned char _note_relative = _sequenceMap->paterns[_pattern].steps[_step].note - static_cast<unsigned char>(NOTE_PWM_INDEX::NOTE_C2);
+	bool _up		=	_sequenceMap->paterns[_bank][_pattern].steps[_step].up;
+	bool _down		=	_sequenceMap->paterns[_bank][_pattern].steps[_step].down;
+	bool _acc		=	_sequenceMap->paterns[_bank][_pattern].steps[_step].acc;
+	bool _slide		=	_sequenceMap->paterns[_bank][_pattern].steps[_step].slide;
+	unsigned char _note_on	=	_sequenceMap->paterns[_bank][_pattern].steps[_step].note_on;
+	unsigned char _note_relative = _sequenceMap->paterns[_bank][_pattern].steps[_step].note - static_cast<unsigned char>(NOTE_PWM_INDEX::NOTE_C2);
 
 	if(_midiclock_16note == MIDICLOCK_START_16NOTE){
 		Serial.print("_gate_on_16note() MIDICLOCK_START_16NOTE ");
+		Serial.print(" bank:");
+		Serial.print(_bank);
 		Serial.print(" pattern:");
 		Serial.print(_pattern);
 		Serial.print(" step:");
@@ -402,12 +424,14 @@ void paternPlay::_gate_on_16note() {
 */
 void paternPlay::_gate_off_16note() {
 
-	unsigned char  _note_on	=	_sequenceMap->paterns[_pattern].steps[_step].note_on;
-	bool _slide 	=	_sequenceMap->paterns[_pattern].steps[_step].slide;
+	unsigned char  _note_on	=	_sequenceMap->paterns[_bank][_pattern].steps[_step].note_on;
+	bool _slide 	=	_sequenceMap->paterns[_bank][_pattern].steps[_step].slide;
 
 	if (_midiclock_16note == MIDICLOCK_GATEOFF_16NOTE) {
 
 		Serial.print("_gate_off_16note() ");
+		Serial.print(" bank:");
+		Serial.print(_bank);
 		Serial.print(" pattern:");
 		Serial.print(_pattern);
 		Serial.print(" step:");
@@ -430,12 +454,14 @@ void paternPlay::_gate_off_16note() {
 */
 void paternPlay::_next_step_16note() {
 
-	bool _laststep 		=	_sequenceMap->paterns[_pattern].steps[_step].lastStep;
+	bool _laststep 		=	_sequenceMap->paterns[_bank][_pattern].steps[_step].lastStep;
 	bool _nextPattern 	=	false;
 
 	if (_midiclock_16note == MIDICLOCK_STOP_16NOTE) {
 
 		Serial.print("_next_step_16note() ");
+		Serial.print(" bank:");
+		Serial.print(_bank);
 		Serial.print(" pattern:");
 		Serial.print(_pattern);
 		Serial.print(" step:");

@@ -95,6 +95,7 @@ class modeManager: public countTriger
 	voltage * _voltage;				//【コンストラクタで設定】voltageクラスポインタ
 	sequenceMap _sequenceMap;		//シークエンスマップ
 	bool _debugMode;				//デバッグフラグ (true->デバッグモード ,false->通常モード)
+	int _bank;                      //現在の指定バンク
 
 	bool _currentSwtich[SW_INDEX_MAX];	//ボタン押下中
 

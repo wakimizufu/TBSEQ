@@ -63,10 +63,10 @@ class panelManager: public countTriger
 
     /*
     FRAMからビットストリームをロードする
-  引数  ：設定先ビットストリーム, ロードするバイト数
+    引数  ：設定先ビットストリーム, ロードするバイト数
     戻り値：なし
     */
-    void loadFRAM(unsigned char* _bitstream, int _loadSize);
+    void loadFRAM(unsigned char* _bitstream, uint16_t _memAddr , int _loadSize);
 
     /*
     FRAMへビットストリームをセーブする

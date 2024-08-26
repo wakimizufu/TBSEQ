@@ -99,6 +99,12 @@ class mode{
 	int	getCurrnetPattern();
 
     /*
+    現在の指定バンクを取得する
+    戻り値：指定バンク
+    */
+	int	getCurrnetBank();
+
+    /*
     指定スイッチが押下したタイミングか取得する
     引数  ：class enum Switch値(intに変換して設定する)
     戻り値：true:押下したタイミング false:その他の状態
@@ -118,6 +124,24 @@ class mode{
 	*/
 	void	setStepLED(int value);
 
+	/*
+	バンク:指定したバンクへ変更する
+    引数  ：指定バンク
+	*/
+	void	setBank(int value);
+
+	/*
+	バンク:指定バンク数に応じたLEDを設定する
+    引数  ：バンク数
+	*/
+	void	setBackLED(int value);
+
+    /*
+    パターン:指定したパターンへ変更する
+    戻り値：指定パターン(1-8)
+    */
+	void	setPattern(int value);
+
     protected:
     	MODE_NAME	_modeName;	//モード名
 		RUN_STOP	_run_stop;		//ラン/ストップフラグ
@@ -128,6 +152,7 @@ class mode{
 
 		int	_midiclock_16note;	//16音符毎MIDIクロックカウント 16分音符:6クロック⇒1～6
 
+		int	_bank;	//指定バンク(1-4)
 		int	_pattern;	//指定パターン(1-8)
 		int	_step;		//現在ステップ(1-16)
 		bool _currentSwtich[SW_INDEX_MAX];	//ボタン押下中
@@ -192,7 +217,21 @@ class mode{
 			static_cast<int>(LED::C2)
 		};
 
+		//バンク番号：スイッチ対応配列
+		const int _scanBankSwich[SEQUENCE_BANK_LENGTH] {
+			static_cast<int>(Switch::BANK_A),
+			static_cast<int>(Switch::BANK_B),
+			static_cast<int>(Switch::BANK_C),
+			static_cast<int>(Switch::BANK_D)
+		};
 
+		//パターン番号：LED対応配列
+		const int _scanBankLED[SEQUENCE_BANK_LENGTH] {
+			static_cast<int>(LED::BANK_A),
+			static_cast<int>(LED::BANK_B),
+			static_cast<int>(LED::BANK_C),
+			static_cast<int>(LED::BANK_D)
+		};
 };
 
 

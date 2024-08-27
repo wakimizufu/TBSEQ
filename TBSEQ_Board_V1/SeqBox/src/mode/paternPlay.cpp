@@ -76,9 +76,15 @@ void paternPlay::runClock() {
 	//16音符毎MIDIクロックカウントを更新
 	_midiclock_16note++;
 
+	//開始ステップをクリア
+	_StartStep	=	false;
+
 	//16音符毎MIDIクロックカウントが7カウント目なら1カウントに戻す
 	if (_midiclock_16note > MIDICLOCK_STOP_16NOTE) {
 		_midiclock_16note = MIDICLOCK_START_16NOTE;
+
+		//開始ステップを設定
+		_StartStep	=	true;
 
 		//16音符毎MIDIクロックアップしたらテンポカウント時ステップカウンタをインクリメント
 		_LEDstep++;	

@@ -68,6 +68,7 @@ void	voltage::reset(){
 	gate(GATE_OFF);
 	accent(ACCENT_OFF);
 	slide(SLIDE_OFF);
+	syncPolarity(SYNC_TRIGER_POSITIVE);
 }
 
 /*
@@ -108,3 +109,24 @@ void	voltage::slide(bool value){
 	gpio_put(PIN_SLIDE,value);
 }
 		
+/*
+シンク:極性を設定する
+*/
+void	voltage::syncPolarity(bool value){
+	_sync_polarity = value;
+	syncReset();
+}		
+
+/*
+シンク:初期状態にリセットする
+*/
+void	voltage::syncReset(){
+	gpio_put(PIN_SYNC_OUT,_sync_polarity);
+}
+
+/*
+シンク:トリガーONに設定する
+*/
+void	voltage::syncOn(){
+	gpio_put(PIN_SYNC_OUT,!_sync_polarity);
+}

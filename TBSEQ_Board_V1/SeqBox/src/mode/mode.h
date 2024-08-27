@@ -105,6 +105,13 @@ class mode{
 	int	getCurrnetBank();
 
     /*
+    現在のステップ開始を取得する
+    戻り値：ステップ開始
+    */
+	bool	getFirstStep();
+
+
+    /*
     指定スイッチが押下したタイミングか取得する
     引数  ：class enum Switch値(intに変換して設定する)
     戻り値：true:押下したタイミング false:その他の状態
@@ -137,9 +144,15 @@ class mode{
 	void	setBackLED(int value);
 
     /*
-    パターン:指定したパターンへ変更する
-    戻り値：指定パターン(1-8)
+    ステップ:ステップ開始を設定する
+    引数：ステップ開始
     */
+	void	setFirstStep(bool value);
+
+	/*
+	パターン:指定したパターンへ変更する
+	戻り値：指定パターン
+	*/
 	void	setPattern(int value);
 
     protected:
@@ -158,6 +171,7 @@ class mode{
 		bool _currentSwtich[SW_INDEX_MAX];	//ボタン押下中
 		bool _onClickSwtich[SW_INDEX_MAX];	//ボタン押下タイミング
 		bool _offClickSwtich[SW_INDEX_MAX];	//ボタン押下⇒離したタイミング
+		bool _StartStep;	//ステップ開始
 
 		//パターン番号：スイッチ対応配列
 		const int _scanPatternSwich[SEQUENCE_PATTERN_LENGTH] {

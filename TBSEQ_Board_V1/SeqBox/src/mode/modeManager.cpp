@@ -321,3 +321,20 @@ void	modeManager::_changeMode() {
 	}
 
 }
+
+
+/*
+開始ステップを取得する
+戻り値：true=>開始ステップ, false=>通常ステップ
+*/
+bool 	modeManager::getFirstStep(){
+	return _currentMode->getFirstStep();
+}
+
+/*
+開始ステップを設定する
+引数：true=>開始ステップ, false=>通常ステップ
+*/
+void modeManager::setFirstStep(bool value){
+	_currentMode->setFirstStep(value);
+}

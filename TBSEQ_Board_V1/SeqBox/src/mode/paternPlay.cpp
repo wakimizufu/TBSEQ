@@ -323,6 +323,14 @@ void	paternPlay::changeRunStop() {
 	//現在のラン/ストップSW状態
 	bool	nowRunSW = _panelManager->getSwitch(static_cast<int>(Switch::RUN_STOP));
 
+	//MIDIスタート/ストップ受信に応じてラン/ストップSW状態を設定
+	if ( (_run_stop == RUN_STOP::STOP) && (_MIDI_Start)){
+		nowRunSW	=	true;
+	} else if ( (_run_stop == RUN_STOP::RUN) && (_MIDI_Stop)){
+		nowRunSW	=	true;
+	}
+
+
 	//前回状態=OFF,現在状態=ON ならモード切替を行う
 	if ((!_pushRunSW) && (nowRunSW)) {
 		bool _LEDRunStop = false;

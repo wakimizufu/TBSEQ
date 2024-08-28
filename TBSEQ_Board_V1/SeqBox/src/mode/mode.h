@@ -155,6 +155,18 @@ class mode{
 	*/
 	void	setPattern(int value);
 
+	/*
+	MIDI:スタート受信フラグを設定
+	引数：true=>受信済, false=>未受信
+	*/
+	void	setMIDIStart(bool value);
+
+	/*
+	MIDI:ストップ受信フラグを設定
+	引数：true=>受信済, false=>未受信
+	*/
+	void	setMIDIStop(bool value);
+
     protected:
     	MODE_NAME	_modeName;	//モード名
 		RUN_STOP	_run_stop;		//ラン/ストップフラグ
@@ -165,13 +177,16 @@ class mode{
 
 		int	_midiclock_16note;	//16音符毎MIDIクロックカウント 16分音符:6クロック⇒1～6
 
-		int	_bank;	//指定バンク(1-4)
-		int	_pattern;	//指定パターン(1-8)
-		int	_step;		//現在ステップ(1-16)
+		int	_bank;	//指定バンク(0-3)
+		int	_pattern;	//指定パターン(0-7)
+		int	_step;		//現在ステップ(0-15)
 		bool _currentSwtich[SW_INDEX_MAX];	//ボタン押下中
 		bool _onClickSwtich[SW_INDEX_MAX];	//ボタン押下タイミング
 		bool _offClickSwtich[SW_INDEX_MAX];	//ボタン押下⇒離したタイミング
 		bool _StartStep;	//ステップ開始
+
+		bool _MIDI_Start;	//MIDI:スタート受信フラグ
+		bool _MIDI_Stop;	//MIDI:ストップ受信フラグ
 
 		//パターン番号：スイッチ対応配列
 		const int _scanPatternSwich[SEQUENCE_PATTERN_LENGTH] {

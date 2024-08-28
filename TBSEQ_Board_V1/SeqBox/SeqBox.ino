@@ -3,13 +3,14 @@
 #include "hardware/adc.h"
 #include <Wire.h>  
 
- #include "src/raspberryPiPico/panelManager.h"
- #include "src/raspberryPiPico/voltage.h"
- #include "src/trigger/tempo.h"
- #include "src/trigger/syncTriger.h"
- #include "src/midi/midiClock.h"
- #include "src/mode/sequenceMap.h"
- #include "src/mode/modeManager.h"
+#include "src/raspberryPiPico/panelManager.h"
+#include "src/raspberryPiPico/voltage.h"
+#include "src/trigger/tempo.h"
+#include "src/trigger/syncTriger.h"
+#include "src/midi/midiClock.h"
+#include "src/midi/midiReceive.h"
+#include "src/mode/sequenceMap.h"
+#include "src/mode/modeManager.h"
 
 /*
 [Todo 2024/8/27]
@@ -50,7 +51,7 @@ tempo _tempo(0);
 syncTriger _syncTriger(0);
 midiClock _midiClock(_tempo.getCountThd(),0);
 modeManager _modeManager( &_panelManager, &_voltage,0,0);
-
+midiReceive _midiReceive;
 
 //タイマー割り込み関連変数定義
 struct repeating_timer st_timer;
@@ -72,6 +73,9 @@ delay(2000);
 //UART println()ポート
 Serial.begin(115200);
 
+//UART0 MIDI受信ポート
+Serial1.begin(31250);   // UART0初期化 TX:GP0 / RX:GP1
+
 //各種I/Oへの初期化処理を行う
 _panelManager.init();
 _voltage.reset();
@@ -89,6 +93,11 @@ add_repeating_timer_us(-32, toggle_panelWR, NULL, &st_timer);
 _voltage.syncPolarity(SYNC_TRIGER_POSITIVE);
 //_voltage.syncPolarity(SYNC_TRIGER_NEGATIVE);
 
+//MIDI受信開始/停止設定
+_midiReceive.setReceiveEnable(true);  //受信開始
+//_midiReceive.setReceiveEnable(false);  //受信停止
+
+
 Serial.println("SeqBox.ino setup() finish");
 }
 
@@ -99,14 +108,40 @@ void loop() {
     timer_flag = false;
 
    //MIDIクロック
-    _midiClock.countUp();
-    if(_midiClock.getCountUp()){
-      _midiClock.clear();
-      _midiClock.setTempo2Threshold(_tempo.getCountThd());
+   //MIDI受信開始⇒タイミングクロック/スタート/ストップ受信時に実行
+   if (_midiReceive.isEnable()){
+      _midiReceive.receiveMidiMessage();
 
-      //モード:MIDIクロック時処理を実行
-      _modeManager.clockCountUp();
-    }
+      //スタート
+      if(_midiReceive.isStart()){
+        _modeManager.setMIDIStart(true);
+      //ストップ  
+      } else if(_midiReceive.isStop()){
+        _modeManager.setMIDIStop(true);
+      }
+
+      //タイミングクロック
+      if (_midiReceive.isTimmingClock()){
+        //モード:MIDIクロック時処理を実行
+        _modeManager.clockCountUp(); 
+      }
+
+      //スタート/ストップ受信フラグをリセット
+      _modeManager.setMIDIStart(false);
+      _modeManager.setMIDIStart(false);
+
+   //MIDI受信停止⇒内部クロックで実行
+   } else if (!_midiReceive.isEnable()){
+      _midiClock.countUp();
+      if(_midiClock.getCountUp()){
+        _midiClock.clear();
+        _midiClock.setTempo2Threshold(_tempo.getCountThd());
+
+        //モード:MIDIクロック時処理を実行
+        _modeManager.clockCountUp();
+      }
+   }
+   
 
    //パネル:情報更新
     _panelManager.countUp();

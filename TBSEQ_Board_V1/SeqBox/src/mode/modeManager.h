@@ -100,6 +100,18 @@ class modeManager: public countTriger
 		*/
 	  void setFirstStep(bool value);
 
+	/*
+	MIDI:スタート受信フラグを設定
+	引数：true=>受信済, false=>未受信
+	*/
+	void	setMIDIStart(bool value);
+
+	/*
+	MIDI:ストップ受信フラグを設定
+	引数：true=>受信済, false=>未受信
+	*/
+	void	setMIDIStop(bool value);
+
   private:
 	mode * _currentMode;			//現在のモードクラス
 	panelManager * _panelManager;	//【コンストラクタで設定】panelManagerクラスポインタ

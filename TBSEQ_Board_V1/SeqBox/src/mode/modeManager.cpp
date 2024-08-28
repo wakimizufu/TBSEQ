@@ -338,3 +338,21 @@ bool 	modeManager::getFirstStep(){
 void modeManager::setFirstStep(bool value){
 	_currentMode->setFirstStep(value);
 }
+
+
+/*
+MIDI:スタート受信フラグを設定
+引数：true=>受信済, false=>未受信
+*/
+void	modeManager::setMIDIStart(bool value){
+	_currentMode->setMIDIStart(value);
+}
+
+/*
+MIDI:ストップ受信フラグを設定
+引数：true=>受信済, false=>未受信
+*/
+void	modeManager::setMIDIStop(bool value){
+	_currentMode->setMIDIStop(value);
+}
+

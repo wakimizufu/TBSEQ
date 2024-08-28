@@ -16,6 +16,8 @@ mode::mode(MODE_NAME modename, panelManager* ptPanelManager, voltage* ptVoltage,
 	_run_stop = RUN_STOP::STOP;
 	_midiclock_16note = MIDICLOCK_START_16NOTE;
 	_StartStep	=	false;
+	_MIDI_Start	=	false;	//MIDI:スタート受信フラグ
+	_MIDI_Stop	=	false;	//MIDI:ストップ受信フラグ
 }
 
 /*
@@ -170,3 +172,18 @@ void	mode::setFirstStep(bool value){
 	_StartStep	=	value;
 }
 
+/*
+MIDI:スタート受信フラグを設定
+引数：true=>受信済, false=>未受信
+*/
+void	mode::setMIDIStart(bool value){
+	_MIDI_Start=value;
+}
+
+/*
+MIDI:ストップ受信フラグを設定
+引数：true=>受信済, false=>未受信
+*/
+void	mode::setMIDIStop(bool value){
+	_MIDI_Stop=value;
+}

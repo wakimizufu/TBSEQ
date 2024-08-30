@@ -105,13 +105,6 @@ class mode{
 	int	getCurrnetBank();
 
     /*
-    現在のステップ開始を取得する
-    戻り値：ステップ開始
-    */
-	bool	getFirstStep();
-
-
-    /*
     指定スイッチが押下したタイミングか取得する
     引数  ：class enum Switch値(intに変換して設定する)
     戻り値：true:押下したタイミング false:その他の状態
@@ -144,15 +137,9 @@ class mode{
 	void	setBackLED(int value);
 
     /*
-    ステップ:ステップ開始を設定する
-    引数：ステップ開始
+    パターン:指定したパターンへ変更する
+    戻り値：指定パターン(1-8)
     */
-	void	setFirstStep(bool value);
-
-	/*
-	パターン:指定したパターンへ変更する
-	戻り値：指定パターン
-	*/
 	void	setPattern(int value);
 
 	/*
@@ -167,6 +154,7 @@ class mode{
 	*/
 	void	setMIDIStop(bool value);
 
+
     protected:
     	MODE_NAME	_modeName;	//モード名
 		RUN_STOP	_run_stop;		//ラン/ストップフラグ
@@ -177,13 +165,12 @@ class mode{
 
 		int	_midiclock_16note;	//16音符毎MIDIクロックカウント 16分音符:6クロック⇒1～6
 
-		int	_bank;	//指定バンク(0-3)
-		int	_pattern;	//指定パターン(0-7)
-		int	_step;		//現在ステップ(0-15)
+		int	_bank;	//指定バンク(1-4)
+		int	_pattern;	//指定パターン(1-8)
+		int	_step;		//現在ステップ(1-16)
 		bool _currentSwtich[SW_INDEX_MAX];	//ボタン押下中
 		bool _onClickSwtich[SW_INDEX_MAX];	//ボタン押下タイミング
 		bool _offClickSwtich[SW_INDEX_MAX];	//ボタン押下⇒離したタイミング
-		bool _StartStep;	//ステップ開始
 
 		bool _MIDI_Start;	//MIDI:スタート受信フラグ
 		bool _MIDI_Stop;	//MIDI:ストップ受信フラグ

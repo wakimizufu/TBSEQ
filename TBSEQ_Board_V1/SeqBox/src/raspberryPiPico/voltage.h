@@ -25,12 +25,6 @@ CV/GATE等の電圧出力を行う
 //配列:PWM値インデックス⇒MIDIノート値 配列サイズ
 #define SIZE_NOTE2PWM 48
 
-//シンク極性
-//立ち上がり(正論理)
-#define SYNC_TRIGER_POSITIVE	false
-//立ち下がり(負論理)
-#define SYNC_TRIGER_NEGATIVE	true     
-
 //音程名⇒PWM値インデックス
 enum class NOTE_PWM_INDEX
 {
@@ -120,27 +114,10 @@ class voltage
 		*/
 		void	slide(bool value);
 		
-		/*
-		シンク:極性を設定する
-		*/
-		void	syncPolarity(bool value);		
 		
-		/*
-		シンク:初期状態にリセットする
-		*/
-		void	syncReset();
-
-		/*
-		シンク:トリガーONに設定する
-		*/
-		void	syncOn();
-
   private:
 	//配列:PWM値インデックス⇒MIDIノート値
 	int _note2PWM[SIZE_NOTE2PWM];
-
-	//シンク極性
-	bool _sync_polarity;
 };
 
 #endif

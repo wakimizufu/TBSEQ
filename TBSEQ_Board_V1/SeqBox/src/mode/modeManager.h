@@ -88,18 +88,6 @@ class modeManager: public countTriger
 		*/
 	  void	getSequenceBitstream(unsigned char* _bitstream);
 
-		/*
-		開始ステップを取得する
-		戻り値：true=>開始ステップ, false=>通常ステップ
-		*/
-	  bool getFirstStep();
-
-		/*
-		開始ステップを設定する
-		引数：true=>開始ステップ, false=>通常ステップ
-		*/
-	  void setFirstStep(bool value);
-
 	/*
 	MIDI:スタート受信フラグを設定
 	引数：true=>受信済, false=>未受信

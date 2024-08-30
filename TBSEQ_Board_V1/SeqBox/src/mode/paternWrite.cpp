@@ -77,15 +77,9 @@ void paternWrite::runClock() {
 	//16音符毎MIDIクロックカウントを更新
 	_midiclock_16note++;
 
-	//開始ステップをクリア
-	_StartStep	=	false;
-
 	//16音符毎MIDIクロックカウントが7カウント目なら1カウントに戻す
 	if (_midiclock_16note > MIDICLOCK_STOP_16NOTE) {
 		_midiclock_16note = MIDICLOCK_START_16NOTE;
-
-		//開始ステップを設定
-		_StartStep	=	true;
 	}
 
 	/*
@@ -113,6 +107,27 @@ void	paternWrite::changeRunStop() {
 
 	//現在のラン/ストップSW状態
 	bool	nowRunSW = _panelManager->getSwitch(static_cast<int>(Switch::RUN_STOP));
+
+	if ( (_MIDI_Start) || (_MIDI_Stop) ){
+		Serial.print("paternWrite::changeRunStop()");
+		Serial.print(" _MIDI_Start:");
+		Serial.print(_MIDI_Start);
+		Serial.print(" _MIDI_Stop:");
+		Serial.print(_MIDI_Stop);
+		Serial.print(" _run_stop:");
+		Serial.print(static_cast<int>(_run_stop));
+		Serial.println("");
+	}
+
+
+	//MIDIスタート/ストップ受信に応じてラン/ストップSW状態を設定
+	if ( (_run_stop == RUN_STOP::RUN) && (_MIDI_Stop)){
+		nowRunSW	=	true;
+		_MIDI_Stop  =   false;
+	} else if ( (_run_stop == RUN_STOP::STOP) && (_MIDI_Start)){
+		nowRunSW	=	true;
+		_MIDI_Start = false;
+	}
 
 	//前回状態=OFF,現在状態=ON ならモード切替を行う
 	if ((!_pushRunSW) && (nowRunSW)) {

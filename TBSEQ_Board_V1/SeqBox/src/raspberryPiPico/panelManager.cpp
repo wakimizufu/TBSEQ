@@ -33,9 +33,6 @@ gpio_set_dir(PIN_ACCENT,GPIO_OUT);
 gpio_init(PIN_SLIDE); //SLIDE
 gpio_set_dir(PIN_SLIDE,GPIO_OUT);
 
-gpio_init(PIN_SYNC_OUT); //SyncOut
-gpio_set_dir(PIN_SYNC_OUT,GPIO_OUT);
-
 
 //ADC
 //Raspberry Pi Pico W サーミスタで気温を計算する

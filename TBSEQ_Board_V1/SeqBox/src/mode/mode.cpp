@@ -15,7 +15,6 @@ mode::mode(MODE_NAME modename, panelManager* ptPanelManager, voltage* ptVoltage,
 
 	_run_stop = RUN_STOP::STOP;
 	_midiclock_16note = MIDICLOCK_START_16NOTE;
-	_StartStep	=	false;
 	_MIDI_Start	=	false;	//MIDI:スタート受信フラグ
 	_MIDI_Stop	=	false;	//MIDI:ストップ受信フラグ
 }
@@ -152,24 +151,6 @@ void	mode::setPattern(int value){
 	} else {
 		_pattern = value;
 	}
-}
-
-
-/*
-現在のステップ開始を取得する
-戻り値：ステップ開始
-*/
-bool	mode::getFirstStep(){
-	return	_StartStep;
-}
-
-
-/*
-ステップ:ステップ開始を設定する
-引数：ステップ開始
-*/
-void	mode::setFirstStep(bool value){
-	_StartStep	=	value;
 }
 
 /*

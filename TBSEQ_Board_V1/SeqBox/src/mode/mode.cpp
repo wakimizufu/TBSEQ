@@ -153,6 +153,25 @@ void	mode::setPattern(int value){
 	}
 }
 
+
+/*
+現在のステップ開始を取得する
+戻り値：ステップ開始
+*/
+bool	mode::getFirstStep(){
+	return	_StartStep;
+}
+
+
+/*
+ステップ:ステップ開始を設定する
+引数：ステップ開始
+*/
+void	mode::setFirstStep(bool value){
+	_StartStep	=	value;
+}
+
+
 /*
 MIDI:スタート受信フラグを設定
 引数：true=>受信済, false=>未受信

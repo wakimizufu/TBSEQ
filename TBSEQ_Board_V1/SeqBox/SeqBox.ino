@@ -6,6 +6,7 @@
  #include "src/raspberryPiPico/panelManager.h"
  #include "src/raspberryPiPico/voltage.h"
  #include "src/trigger/tempo.h"
+ #include "src/trigger/syncTriger.h"
  #include "src/midi/midiClock.h"
  #include "src/midi/midiReceive.h"
  #include "src/mode/sequenceMap.h"
@@ -41,6 +42,7 @@
 panelManager _panelManager(0);
 voltage _voltage;
 tempo _tempo(0);
+syncTriger _syncTriger(0);
 midiClock _midiClock(_tempo.getCountThd(),0);
 modeManager _modeManager( &_panelManager, &_voltage,0,0);
 midiReceive _midiReceive;
@@ -50,6 +52,7 @@ midiReceive _midiReceive;
 struct repeating_timer st_timer;
 bool timer_flag = false;
 uint64_t debugCount = 1;
+bool syncTriger_flag = false;
 
 //タイマー割り込み関数
 bool toggle_panelWR(struct repeating_timer *t) {
@@ -78,6 +81,10 @@ _modeManager.presetSequence();
 
 //タイマー割り込み/* タイマーの初期化(割込み間隔はusで指定) */
 add_repeating_timer_us(-32, toggle_panelWR, NULL, &st_timer);
+
+//シンク極性の初期設定
+_voltage.syncPolarity(SYNC_TRIGER_POSITIVE);
+//_voltage.syncPolarity(SYNC_TRIGER_NEGATIVE);
 
 //MIDI受信開始/停止設定
 _midiReceive.setReceiveEnable(true);  //受信開始
@@ -131,14 +138,7 @@ void loop() {
       if (_midiReceive.isTimmingClock()){
         //モード:MIDIクロック時処理を実行
         _modeManager.clockCountUp(); 
-
-        //スタート/ストップ受信フラグをリセット
-        //_modeManager.setMIDIStart(false);
-        //_modeManager.setMIDIStop(false);
       }
-
-
-
 
    } else if (!_midiReceive.isEnable()){
       _midiClock.countUp();
@@ -168,6 +168,24 @@ void loop() {
       _tempo.setTempo(_panelManager.getTempoADC());
     }
     
+    //開始ステップをチェック
+    if (_modeManager.getFirstStep()){
+      Serial.println("SeqBox.ino loop() FirstStep");
+      _modeManager.setFirstStep(false);
+      syncTriger_flag = true;
+      _voltage.syncOn();
+    }
+
+    //シンクトリガー更新
+    if (syncTriger_flag) {
+      _syncTriger.countUp();
+
+      if(_syncTriger.getSyncUp()){
+        _syncTriger.clear();
+        syncTriger_flag = false;
+        _voltage.syncReset();
+      }
+    }
     
   }
 }

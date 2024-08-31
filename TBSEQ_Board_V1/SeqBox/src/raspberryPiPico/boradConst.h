@@ -18,6 +18,7 @@ const char I2C_WIRE0_SCL = 5; //Wire.setSCL
 const int PIN_GATE	=	18;		//GATE
 const int PIN_ACCENT	=	19;	//ACCENT
 const int PIN_SLIDE	=	20;		//SLIDE
+const int PIN_SYNC_OUT	=   17;	//SyncOut
 const int PIN_CV = 21; //CV(PWM)
 const int PIN_TEMPO_ADC = 26;   //TEMPO(ADC) 
 

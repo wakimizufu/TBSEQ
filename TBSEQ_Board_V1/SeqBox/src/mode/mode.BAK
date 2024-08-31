@@ -105,13 +105,6 @@ class mode{
 	int	getCurrnetBank();
 
     /*
-    現在のステップ開始を取得する
-    戻り値：ステップ開始
-    */
-	bool	getFirstStep();
-
-
-    /*
     指定スイッチが押下したタイミングか取得する
     引数  ：class enum Switch値(intに変換して設定する)
     戻り値：true:押下したタイミング false:その他の状態

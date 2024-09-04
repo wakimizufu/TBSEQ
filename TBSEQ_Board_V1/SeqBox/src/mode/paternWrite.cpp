@@ -355,14 +355,17 @@ void	paternWrite::execStopSequence() {
 		}
 
 		_voltage->cv(_note_CV);  //CVを設定する
-		_voltage->gate(true);	//gate
-		_voltage->accent(_sequenceMap->paterns[_bank][_pattern].steps[_step].acc);	//acc
+		_voltage->gate(GATE_ON);	//gate
+		_voltage->accent(!_sequenceMap->paterns[_bank][_pattern].steps[_step].acc);	//acc
 		_voltage->slide(_sequenceMap->paterns[_bank][_pattern].steps[_step].slide);//slide
 
 	} else {
-		_voltage->gate(false);	//gate
-		_voltage->accent(false);	//acc
-		_voltage->slide(false);//slide
+
+		if (_run_stop == RUN_STOP::STOP)	{
+			_voltage->gate(GATE_OFF);	//gate
+			_voltage->accent(ACCENT_OFF);	//acc
+			_voltage->slide(SLIDE_OFF);//slide
+		}
 	}
 
 	
@@ -432,13 +435,13 @@ void paternWrite::_gate_on_16note() {
 
 
 		if (( STEP_NOTE_ON_NORMAL == _note_on)||( STEP_NOTE_ON_TIE == _note_on)){
-			_voltage->gate(true);	//gate
+			_voltage->gate(GATE_ON);	//gate
 		} else if ( STEP_NOTE_OFF == _note_on){
-			_voltage->gate(false);	//gate
+			_voltage->gate(GATE_OFF);	//gate
 		}
 
 		if (_note_on){
-			_voltage->accent(_acc);	//acc
+			_voltage->accent(!_acc);	//acc
 			_voltage->slide(_slide);//slide
 
 			int _note_CV=0;
@@ -457,8 +460,8 @@ void paternWrite::_gate_on_16note() {
 			_voltage->cv(_note_CV);  //CVを設定する
 
 		} else {
-			_voltage->accent(false);//acc
-			_voltage->slide(false);	//slide			
+			_voltage->accent(ACCENT_OFF);//acc
+			_voltage->slide(SLIDE_OFF);	//slide			
 		}
 
 		Serial.println("");
@@ -490,7 +493,7 @@ void paternWrite::_gate_off_16note() {
         
 
 		if (( STEP_NOTE_ON_NORMAL == _note_on) || ( STEP_NOTE_OFF == _note_on)) {
-			_voltage->gate(false);	//gate
+			_voltage->gate(GATE_OFF);	//gate
 		}
 	}
 

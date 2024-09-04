@@ -14,11 +14,11 @@ CV/GATE等の電圧出力を行う
 #define GATE_ON true
 #define GATE_OFF false
 
-//ACCENT設定 (ACCENT_ON:5V ,ACCENT_OFF:0V)
-#define ACCENT_ON true
-#define ACCENT_OFF false
+//ACCENT設定 (ACCENT_ON:0V ,ACCENT_OFF:5V)
+#define ACCENT_ON false
+#define ACCENT_OFF true
 
-//SLIDE設定 (ACCENT_ON:5V ,ACCENT_OFF:0V)
+//SLIDE設定 (SLIDE_ON:5V ,SLIDE_OFF:0V)
 #define SLIDE_ON true
 #define SLIDE_OFF false
 

@@ -3,8 +3,8 @@
 midiSender::midiSender() {
 	_NoteOn = NOTE_OFF;		//ノート送信フラグ
 	_note = 0x40;				//現在ノート値
-	_accent = ACCENT_OFF;	//現在アクセントフラグ
-	_portament = SLIDE_OFF;	//現在ポルタメントフラグ
+	_accent = CC_ACCENT_OFF;	//現在アクセントフラグ
+	_portament = CC_SLIDE_OFF;	//現在ポルタメントフラグ
 }
 
 /*
@@ -44,12 +44,12 @@ void	midiSender::cb_noteOn(int	senderChannel, int note, bool	accent, bool	slide)
 	_NoteOn = NOTE_ON;			//ノート送信フラグ
 
 	//ノートオン
-	_sendMessage(MIDI_STATUS_NOTEON || _senderChannel, note, VEROCITY_ON);
+	_sendMessage(MIDI_STATUS_NOTEON || _senderChannel, note, CC_VEROCITY_ON);
 	_note = note;					//現在ノート値
 
 	//ポルタメントフラグ
 	if (_portament != slide) {
-		_sendMessage(MIDI_STATUS_CONTROL || _senderChannel, slide << PORTAMENT_LEFT_SHIFT, EMPTY_DATA);
+		_sendMessage(MIDI_STATUS_CONTROL || _senderChannel, slide << CC_PORTAMENT_LEFT_SHIFT, EMPTY_DATA);
 		_portament = slide;					//現在ポルタメントフラグ
 	}
 
@@ -65,7 +65,7 @@ void	midiSender::cb_noteOff() {
 	_NoteOn = NOTE_OFF;			//ノート送信フラグ
 
 	//ノートオフ(正確にはベロシティを0でノートオンする)
-	_sendMessage(MIDI_STATUS_NOTEON || _senderChannel, _note, VEROCITY_OFF);
+	_sendMessage(MIDI_STATUS_NOTEON || _senderChannel, _note, CC_VEROCITY_OFF);
 }
 
   /*

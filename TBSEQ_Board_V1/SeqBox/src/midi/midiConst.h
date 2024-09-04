@@ -31,7 +31,7 @@ MIDI関連マクロを定義
 #define MIDI_CONTROL_PORTAMENT	0x41
 
 //スライド(ポルタメント)フラグを(63以下:オフ 64以上:オン)にするので左シフトする
-#define PORTAMENT_LEFT_SHIFT 6
+#define CC_PORTAMENT_LEFT_SHIFT 6
 
 //-----------------【midiSender/midiRecever関連】-----------------
 
@@ -40,17 +40,17 @@ MIDI関連マクロを定義
 #define NOTE_OFF false
 
 //アクセントフラグ
-#define ACCENT_ON true
-#define ACCENT_OFF false
+#define CC_ACCENT_ON true
+#define CC_ACCENT_OFF false
 
 //スライド(ポルタメント)フラグ
-#define SLIDE_ON true
-#define SLIDE_OFF false
+#define CC_SLIDE_ON true
+#define CC_SLIDE_OFF false
 
 //ベロシティ ノートオン時固定値
-#define VEROCITY_ON	0x7F
+#define CC_VEROCITY_ON	0x7F
 
 //ベロシティ ノートオフ時固定値
-#define VEROCITY_OFF	0x00
+#define CC_VEROCITY_OFF	0x00
 
 #endif

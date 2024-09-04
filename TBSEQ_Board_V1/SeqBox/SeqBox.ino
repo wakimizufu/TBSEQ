@@ -87,8 +87,8 @@ _voltage.syncPolarity(SYNC_TRIGER_POSITIVE);
 //_voltage.syncPolarity(SYNC_TRIGER_NEGATIVE);
 
 //MIDI受信開始/停止設定
-_midiReceive.setReceiveEnable(true);  //受信開始
-//_midiReceive.setReceiveEnable(false);  //受信停止
+//_midiReceive.setReceiveEnable(true);  //受信開始
+_midiReceive.setReceiveEnable(false);  //受信停止
 
 if (_midiReceive.isEnable()){
   //UART0 MIDI受信ポート

@@ -1,4 +1,4 @@
-23398289264166855
+23405189544721344
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -87661,6 +87661,13 @@ Variable Resistor
 3
 3
 SamacSys_Parts
+AE-FT234X
+
+
+0
+4
+4
+SamacSys_Parts
 B3F1060
 B3F-1060
 Switch
@@ -87674,6 +87681,13 @@ THT DIP DIL CERDIP ceramic 2.54mm 7.62mm 300mil SideBrazed LongPads Socket
 0
 12
 12
+SamacSys_Parts
+CSTLS4M00G56A0
+CSTLS4M00G56-A0-2
+Crystal or Oscillator
+0
+3
+3
 SamacSys_Parts
 DIOAD1100W50L300D200
 d034glass
@@ -87711,7 +87725,7 @@ Integrated Circuit
 8
 SamacSys_Parts
 DIP794W56P254L3486H508Q28N
-28-(SP -300MIL) [SPDIP]
+28-Lead Skinny Plastic Dual In-Line (SP) - 300mil Body [SPDIP]-1
 Integrated Circuit
 0
 28
@@ -87723,6 +87737,13 @@ Integrated Circuit
 0
 18
 18
+SamacSys_Parts
+HN1C01FUGRLF
+SSOP6-P-0.65A (US6)
+Transistor BJT NPN
+0
+6
+6
 SamacSys_Parts
 HN4A06JTE85LF
 HN4A06J(TE85L,F)-2
@@ -87772,6 +87793,13 @@ Integrated Circuit
 0
 8
 8
+SamacSys_Parts
+NJM2845DL133TE1
+TO-252-3-L1
+Integrated Circuit
+0
+3
+3
 SamacSys_Parts
 PICO
 PICO

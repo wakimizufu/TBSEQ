@@ -5239,7 +5239,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "806f28a7-a75b-4414-ac92-883d91fc881e")
-		(property "Reference" "C3"
+		(property "Reference" "PwC9"
 			(at 173.99 52.324 0)
 			(effects
 				(font
@@ -5293,7 +5293,7 @@
 		(instances
 			(project "mainBorad"
 				(path "/74b57c73-2ea6-4d1a-baa5-ad46186fbb51/d9cb4d85-ede2-449b-9b10-29aa5c34151e"
-					(reference "C3")
+					(reference "PwC9")
 					(unit 1)
 				)
 			)

@@ -578,6 +578,213 @@
 				)
 			)
 		)
+		(symbol "SamacSys_Parts:B3F-1000S"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "S"
+				(at 29.21 7.62 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Value" "B3F-1000S"
+				(at 29.21 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Footprint" "B3F1060"
+				(at 29.21 -94.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://www.mouser.com/datasheet/2/307/en-b3f-13826.pdf"
+				(at 29.21 -194.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Description" "Tactile Switches 6x6 Flat 4.3mm Btn Force 100g w/o Grd"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Height" "7"
+				(at 29.21 -394.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer_Name" "Omron Electronics"
+				(at 29.21 -494.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer_Part_Number" "B3F-1000S"
+				(at 29.21 -594.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Mouser Part Number" "653-B3F-1000-S"
+				(at 29.21 -694.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Omron-Electronics/B3F-1000S?qs=C6KiJco3hx0Z3qfxWTJOrg%3D%3D"
+				(at 29.21 -794.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Arrow Part Number" ""
+				(at 29.21 -894.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Arrow Price/Stock" ""
+				(at 29.21 -994.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(symbol "B3F-1000S_1_1"
+				(rectangle
+					(start 5.08 2.54)
+					(end 27.94 -5.08)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin passive line
+					(at 33.02 -2.54 180)
+					(length 5.08)
+					(name "COM_1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -2.54 0)
+					(length 5.08)
+					(name "COM_2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 33.02 0 180)
+					(length 5.08)
+					(name "N.O._1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 0 0)
+					(length 5.08)
+					(name "N.O._2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "SamacSys_Parts:IRLML6402(DIP6_Convert)"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -1530,213 +1737,6 @@
 				)
 			)
 		)
-		(symbol "SamacSys_Parts:SKHHLPA010"
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "S"
-				(at 16.51 7.62 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-				)
-			)
-			(property "Value" "SKHHLPA010"
-				(at 16.51 5.08 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-				)
-			)
-			(property "Footprint" "SKHHLPA010"
-				(at 16.51 -94.92 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "https://www.mouser.co.uk/datasheet/2/15/SKHH-1370651.pdf"
-				(at 16.51 -194.92 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(property "Description" "Tact switch,PCB,SPST,red,2.55N op/force Red Stem Tactile Switch, SPST-NO 50 mA 3.85mm"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Height" ""
-				(at 16.51 -394.92 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(property "Manufacturer_Name" "ALPS Electric"
-				(at 16.51 -494.92 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(property "Manufacturer_Part_Number" "SKHHLPA010"
-				(at 16.51 -594.92 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(property "Mouser Part Number" "688-SKHHLP"
-				(at 16.51 -694.92 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Alps-Alpine/SKHHLPA010?qs=fMKjfF2mFoiwGIDrp5ohgQ%3D%3D"
-				(at 16.51 -794.92 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(property "Arrow Part Number" ""
-				(at 16.51 -894.92 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(property "Arrow Price/Stock" ""
-				(at 16.51 -994.92 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(symbol "SKHHLPA010_1_1"
-				(rectangle
-					(start 5.08 2.54)
-					(end 15.24 -5.08)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(pin passive line
-					(at 0 0 0)
-					(length 5.08)
-					(name "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -2.54 0)
-					(length 5.08)
-					(name "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 20.32 0 180)
-					(length 5.08)
-					(name "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 20.32 -2.54 180)
-					(length 5.08)
-					(name "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
 		(symbol "power:GNDD"
 			(power)
 			(pin_numbers hide)
@@ -1990,16 +1990,16 @@
 		(uuid "80f79f88-f07d-4f8e-bdc4-c01d22b58ead")
 	)
 	(junction
+		(at 213.36 111.76)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8173de00-d15d-427c-9558-5e31aa29c54c")
+	)
+	(junction
 		(at 69.85 104.14)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "96e5250b-4bef-4b3c-acde-3ca7a3d8ea9b")
-	)
-	(junction
-		(at 205.74 119.38)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "aa262c5d-2e2c-4ee7-93e2-1b3ce91ed49a")
 	)
 	(junction
 		(at 156.21 74.93)
@@ -2014,16 +2014,28 @@
 		(uuid "bcb3c7ea-e3ba-4c95-931e-bb91a521ce45")
 	)
 	(junction
+		(at 180.34 111.76)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d61f43d5-3589-430c-a7e4-fe4310a5d36e")
+	)
+	(junction
+		(at 180.34 137.16)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e62be2a4-b820-4c9d-93ff-f597998f6b05")
+	)
+	(junction
+		(at 213.36 137.16)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e6652992-1de5-4689-9e43-473773c7cdd4")
+	)
+	(junction
 		(at 151.13 116.84)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "ec8d9960-c1f7-4e14-9a84-f575007c5986")
-	)
-	(junction
-		(at 205.74 114.3)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "f5f76971-c6ce-4799-8811-4bdd6e2bc4ab")
 	)
 	(no_connect
 		(at 127 93.98)
@@ -2032,6 +2044,10 @@
 	(no_connect
 		(at 127 99.06)
 		(uuid "6795e42d-e533-428b-bba6-e0a010052605")
+	)
+	(no_connect
+		(at 167.64 100.33)
+		(uuid "a213397e-ed80-40f0-9190-3695c79e44bf")
 	)
 	(wire
 		(pts
@@ -2105,6 +2121,16 @@
 	)
 	(wire
 		(pts
+			(xy 180.34 102.87) (xy 213.36 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0e40012e-c349-440d-bdf4-338c018a3bfc")
+	)
+	(wire
+		(pts
 			(xy 39.37 104.14) (xy 43.18 104.14)
 		)
 		(stroke
@@ -2135,6 +2161,16 @@
 	)
 	(wire
 		(pts
+			(xy 160.02 137.16) (xy 160.02 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1897e9fa-c3b1-4862-b108-678894a9fa70")
+	)
+	(wire
+		(pts
 			(xy 168.91 86.36) (xy 173.99 86.36)
 		)
 		(stroke
@@ -2155,13 +2191,13 @@
 	)
 	(wire
 		(pts
-			(xy 180.34 114.3) (xy 180.34 119.38)
+			(xy 180.34 128.27) (xy 213.36 128.27)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "1f4f7f9f-698e-4d4f-abd0-07937274a616")
+		(uuid "1ca1dcfa-a9a0-48cd-b8c8-1dbd3e3f3328")
 	)
 	(wire
 		(pts
@@ -2235,16 +2271,6 @@
 	)
 	(wire
 		(pts
-			(xy 200.66 111.76) (xy 205.74 111.76)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "359de7cd-4346-4f0d-a0c9-bd9e50e3dd1c")
-	)
-	(wire
-		(pts
 			(xy 82.55 149.86) (xy 80.01 149.86)
 		)
 		(stroke
@@ -2272,6 +2298,16 @@
 			(type default)
 		)
 		(uuid "3b1527b6-771b-4918-a0f9-a01ce6d1b80c")
+	)
+	(wire
+		(pts
+			(xy 180.34 139.7) (xy 180.34 143.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3c47d273-e065-4a08-aae3-6ed2542084ec")
 	)
 	(wire
 		(pts
@@ -2315,6 +2351,16 @@
 	)
 	(wire
 		(pts
+			(xy 180.34 137.16) (xy 180.34 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "430a5c7f-b487-4937-b49d-c442e99c1066")
+	)
+	(wire
+		(pts
 			(xy 127 121.92) (xy 133.35 121.92)
 		)
 		(stroke
@@ -2345,16 +2391,6 @@
 	)
 	(wire
 		(pts
-			(xy 200.66 114.3) (xy 205.74 114.3)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4f0088e6-6a86-4c0a-ac04-5970862afe2d")
-	)
-	(wire
-		(pts
 			(xy 86.36 85.09) (xy 80.01 85.09)
 		)
 		(stroke
@@ -2372,6 +2408,16 @@
 			(type default)
 		)
 		(uuid "4fb408a1-e118-456a-8372-3cb7a0be45e2")
+	)
+	(wire
+		(pts
+			(xy 220.98 111.76) (xy 220.98 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5614fc83-7adc-4179-ac4c-69f7c927a202")
 	)
 	(wire
 		(pts
@@ -2395,13 +2441,13 @@
 	)
 	(wire
 		(pts
-			(xy 160.02 100.33) (xy 167.64 100.33)
+			(xy 213.36 128.27) (xy 213.36 137.16)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "5c915674-c96b-4f25-9f82-e775e401968e")
+		(uuid "5fcfe45c-4f9c-417c-9ae2-c5d66b8a0920")
 	)
 	(wire
 		(pts
@@ -2455,6 +2501,16 @@
 	)
 	(wire
 		(pts
+			(xy 220.98 137.16) (xy 220.98 140.97)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "67aa0346-e794-47d9-ac39-0ed5c11d6d0d")
+	)
+	(wire
+		(pts
 			(xy 151.13 91.44) (xy 151.13 104.14)
 		)
 		(stroke
@@ -2492,16 +2548,6 @@
 			(type default)
 		)
 		(uuid "71bde5df-4e25-4df7-8522-6cde04b8c68e")
-	)
-	(wire
-		(pts
-			(xy 205.74 119.38) (xy 205.74 123.19)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "734dd8cc-3bdf-4acf-8347-700955ec453b")
 	)
 	(wire
 		(pts
@@ -2545,6 +2591,16 @@
 	)
 	(wire
 		(pts
+			(xy 213.36 137.16) (xy 220.98 137.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "83b6cf5e-c591-4803-8ed0-5a3d0c0314df")
+	)
+	(wire
+		(pts
 			(xy 157.48 95.25) (xy 167.64 95.25)
 		)
 		(stroke
@@ -2562,6 +2618,16 @@
 			(type default)
 		)
 		(uuid "86c48c6a-fd1f-4dac-a0f8-bd0be50b55ce")
+	)
+	(wire
+		(pts
+			(xy 180.34 111.76) (xy 180.34 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "88826b53-d133-4cc9-9987-24c08f6c01c2")
 	)
 	(wire
 		(pts
@@ -2675,6 +2741,16 @@
 	)
 	(wire
 		(pts
+			(xy 213.36 102.87) (xy 213.36 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a9174b11-9fb2-4d63-98de-9d71275b9204")
+	)
+	(wire
+		(pts
 			(xy 48.26 63.5) (xy 50.8 63.5)
 		)
 		(stroke
@@ -2692,6 +2768,16 @@
 			(type default)
 		)
 		(uuid "adf158dd-7acd-493f-ae8a-4b8960847449")
+	)
+	(wire
+		(pts
+			(xy 180.34 114.3) (xy 180.34 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "af11fe69-e8fa-468b-a49a-27ae4c5fab4d")
 	)
 	(wire
 		(pts
@@ -2715,6 +2801,16 @@
 	)
 	(wire
 		(pts
+			(xy 180.34 118.11) (xy 213.36 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b0c53cc3-e962-407e-a37e-5d7bf78a0cc8")
+	)
+	(wire
+		(pts
 			(xy 127 134.62) (xy 133.35 134.62)
 		)
 		(stroke
@@ -2732,6 +2828,16 @@
 			(type default)
 		)
 		(uuid "b0ff4c4e-dca7-4aba-a15b-ef9a1fd89629")
+	)
+	(wire
+		(pts
+			(xy 180.34 137.16) (xy 160.02 137.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b2012392-9116-4a5b-bbf0-98de7bf43d57")
 	)
 	(wire
 		(pts
@@ -2795,6 +2901,16 @@
 	)
 	(wire
 		(pts
+			(xy 213.36 143.51) (xy 213.36 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ba2668f8-d8e1-4a8c-864b-68d1946c7511")
+	)
+	(wire
+		(pts
 			(xy 88.9 121.92) (xy 83.82 121.92)
 		)
 		(stroke
@@ -2802,6 +2918,16 @@
 			(type default)
 		)
 		(uuid "ba5f1fc3-0a6c-4ff9-91c5-bf35f3e045e0")
+	)
+	(wire
+		(pts
+			(xy 213.36 118.11) (xy 213.36 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bade8318-0126-4d61-a47a-6b66cced86f5")
 	)
 	(wire
 		(pts
@@ -2855,16 +2981,6 @@
 	)
 	(wire
 		(pts
-			(xy 180.34 119.38) (xy 205.74 119.38)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ce8b0ed3-532d-4bb5-96e7-92421c78496a")
-	)
-	(wire
-		(pts
 			(xy 127 116.84) (xy 151.13 116.84)
 		)
 		(stroke
@@ -2905,16 +3021,6 @@
 	)
 	(wire
 		(pts
-			(xy 205.74 114.3) (xy 205.74 119.38)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "de55e6a9-b4c5-4854-9b74-6e3d202a8f9d")
-	)
-	(wire
-		(pts
 			(xy 156.21 63.5) (xy 156.21 74.93)
 		)
 		(stroke
@@ -2932,16 +3038,6 @@
 			(type default)
 		)
 		(uuid "df70b88f-71cd-441a-84a0-6d437e0096f6")
-	)
-	(wire
-		(pts
-			(xy 205.74 111.76) (xy 205.74 114.3)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e0a7cb6a-f8f0-4c04-bcff-928d46b91ea6")
 	)
 	(wire
 		(pts
@@ -3005,6 +3101,26 @@
 	)
 	(wire
 		(pts
+			(xy 213.36 111.76) (xy 220.98 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f0375417-21fe-440e-a359-ee44477117f1")
+	)
+	(wire
+		(pts
+			(xy 180.34 143.51) (xy 213.36 143.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f0e9eead-c491-4c63-af9d-ed86adba9c9e")
+	)
+	(wire
+		(pts
 			(xy 69.85 91.44) (xy 88.9 91.44)
 		)
 		(stroke
@@ -3042,16 +3158,6 @@
 			(type default)
 		)
 		(uuid "f8c1d286-1b78-4b9f-868f-fc7b4686ebd7")
-	)
-	(wire
-		(pts
-			(xy 160.02 114.3) (xy 160.02 100.33)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f8d7cd37-610b-42d4-93d5-c95eb4d839c8")
 	)
 	(wire
 		(pts
@@ -3196,6 +3302,17 @@
 		)
 		(uuid "34a530b9-8984-4bed-b243-8a0b4a7abf40")
 	)
+	(text "Test Button"
+		(exclude_from_sim no)
+		(at 190.246 146.304 0)
+		(effects
+			(font
+				(size 1.905 1.905)
+			)
+			(justify left)
+		)
+		(uuid "39785a0d-a019-4c05-b904-19d5a35ae289")
+	)
 	(text "USBコネクタ接続時 電流逆流防止"
 		(exclude_from_sim no)
 		(at 117.094 57.912 0)
@@ -3209,10 +3326,10 @@
 	)
 	(text "Raspberry Pi Pico Reset Button"
 		(exclude_from_sim no)
-		(at 167.132 132.588 0)
+		(at 175.26 121.158 0)
 		(effects
 			(font
-				(size 2.54 2.54)
+				(size 1.905 1.905)
 			)
 			(justify left)
 		)
@@ -3896,6 +4013,152 @@
 		)
 	)
 	(symbol
+		(lib_id "SamacSys_Parts:B3F-1000S")
+		(at 180.34 111.76 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "02a11551-c6a2-4de6-a453-0077b2c479b5")
+		(property "Reference" "DgS1"
+			(at 196.85 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "B3F-1000S"
+			(at 196.85 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "SamacSys_Parts:B3F1060"
+			(at 209.55 206.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.mouser.com/datasheet/2/307/en-b3f-13826.pdf"
+			(at 209.55 306.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "Tactile Switches 6x6 Flat 4.3mm Btn Force 100g w/o Grd"
+			(at 180.34 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Height" "7"
+			(at 209.55 506.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "Omron Electronics"
+			(at 209.55 606.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "B3F-1000S"
+			(at 209.55 706.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "653-B3F-1000-S"
+			(at 209.55 806.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Omron-Electronics/B3F-1000S?qs=C6KiJco3hx0Z3qfxWTJOrg%3D%3D"
+			(at 209.55 906.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Arrow Part Number" ""
+			(at 209.55 1006.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Arrow Price/Stock" ""
+			(at 209.55 1106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "e0397554-9522-4062-b58b-ffb88b0852f0")
+		)
+		(pin "2"
+			(uuid "b86779f8-4bed-4e91-9888-915835014c87")
+		)
+		(pin "4"
+			(uuid "25f2b0fb-9e2f-4ca4-9ff9-38ccb4805879")
+		)
+		(pin "1"
+			(uuid "af73aa35-0069-462e-895d-8ecf2014870e")
+		)
+		(instances
+			(project "mainBorad"
+				(path "/74b57c73-2ea6-4d1a-baa5-ad46186fbb51/a9547498-c081-44b0-b937-cdfd06fea0cb"
+					(reference "DgS1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector_Generic:Conn_01x04")
 		(at 74.93 82.55 0)
 		(mirror y)
@@ -4497,71 +4760,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GNDD")
-		(at 205.74 123.19 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "62a3d790-86f6-4c4d-815d-4e310cc7693d")
-		(property "Reference" "#PWR05"
-			(at 205.74 129.54 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GNDD"
-			(at 205.74 127 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 205.74 123.19 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 205.74 123.19 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GNDD\" , digital ground"
-			(at 205.74 123.19 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "93b08c73-5252-4542-aa86-e292f5511189")
-		)
-		(instances
-			(project "mainBorad"
-				(path "/74b57c73-2ea6-4d1a-baa5-ad46186fbb51/a9547498-c081-44b0-b937-cdfd06fea0cb"
-					(reference "#PWR05")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:PWR_FLAG")
 		(at 173.99 72.39 0)
 		(unit 1)
@@ -4694,152 +4892,6 @@
 		)
 	)
 	(symbol
-		(lib_id "SamacSys_Parts:SKHHLPA010")
-		(at 180.34 111.76 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "92449e4d-61e7-4a13-bda6-e05d893d2127")
-		(property "Reference" "DgS1"
-			(at 190.5 104.14 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SKHHLPA010"
-			(at 190.5 106.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "SamacSys_Parts:SKHHLPA010"
-			(at 196.85 206.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.mouser.co.uk/datasheet/2/15/SKHH-1370651.pdf"
-			(at 196.85 306.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Description" "Tact switch,PCB,SPST,red,2.55N op/force Red Stem Tactile Switch, SPST-NO 50 mA 3.85mm"
-			(at 180.34 111.76 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Height" ""
-			(at 196.85 506.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Name" "ALPS Electric"
-			(at 196.85 606.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Part_Number" "SKHHLPA010"
-			(at 196.85 706.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Mouser Part Number" "688-SKHHLP"
-			(at 196.85 806.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Alps-Alpine/SKHHLPA010?qs=fMKjfF2mFoiwGIDrp5ohgQ%3D%3D"
-			(at 196.85 906.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Arrow Part Number" ""
-			(at 196.85 1006.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Arrow Price/Stock" ""
-			(at 196.85 1106.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(pin "4"
-			(uuid "8953d144-44ae-4e01-911d-bcdf1982ce63")
-		)
-		(pin "3"
-			(uuid "e917b8ef-17cf-4f85-8fd5-820184cfa831")
-		)
-		(pin "2"
-			(uuid "8cce3583-99c1-450e-a24a-2a32ddc133c3")
-		)
-		(pin "1"
-			(uuid "44615322-2d48-47e9-804e-6460d0f53801")
-		)
-		(instances
-			(project "mainBorad"
-				(path "/74b57c73-2ea6-4d1a-baa5-ad46186fbb51/a9547498-c081-44b0-b937-cdfd06fea0cb"
-					(reference "DgS1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GNDD")
 		(at 52.07 69.85 0)
 		(unit 1)
@@ -4900,6 +4952,152 @@
 			(project "mainBorad"
 				(path "/74b57c73-2ea6-4d1a-baa5-ad46186fbb51/a9547498-c081-44b0-b937-cdfd06fea0cb"
 					(reference "#PWR01")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "SamacSys_Parts:B3F-1000S")
+		(at 180.34 137.16 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a47f2b8c-0574-44da-8b3e-3131e78af918")
+		(property "Reference" "DgS2"
+			(at 196.85 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "B3F-1000S"
+			(at 196.85 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "SamacSys_Parts:B3F1060"
+			(at 209.55 232.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.mouser.com/datasheet/2/307/en-b3f-13826.pdf"
+			(at 209.55 332.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "Tactile Switches 6x6 Flat 4.3mm Btn Force 100g w/o Grd"
+			(at 180.34 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Height" "7"
+			(at 209.55 532.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "Omron Electronics"
+			(at 209.55 632.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "B3F-1000S"
+			(at 209.55 732.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "653-B3F-1000-S"
+			(at 209.55 832.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Omron-Electronics/B3F-1000S?qs=C6KiJco3hx0Z3qfxWTJOrg%3D%3D"
+			(at 209.55 932.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Arrow Part Number" ""
+			(at 209.55 1032.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Arrow Price/Stock" ""
+			(at 209.55 1132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "581f81a3-2db4-41a7-9c13-16eaa3229405")
+		)
+		(pin "2"
+			(uuid "e2442070-e973-4e11-9917-f0f6c3ee7e60")
+		)
+		(pin "4"
+			(uuid "9ce0ae6c-da56-4720-a7f8-c4e2ae32269a")
+		)
+		(pin "1"
+			(uuid "61507173-2934-41f6-aa39-c27911d5c4b7")
+		)
+		(instances
+			(project "mainBorad"
+				(path "/74b57c73-2ea6-4d1a-baa5-ad46186fbb51/a9547498-c081-44b0-b937-cdfd06fea0cb"
+					(reference "DgS2")
 					(unit 1)
 				)
 			)
@@ -5039,6 +5237,71 @@
 	)
 	(symbol
 		(lib_id "power:GNDD")
+		(at 220.98 140.97 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "d7a3ba07-8ae7-4c07-bce6-1ef13374e696")
+		(property "Reference" "#PWR05"
+			(at 220.98 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GNDD"
+			(at 220.98 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 220.98 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 220.98 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GNDD\" , digital ground"
+			(at 220.98 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9e3e7441-16dd-463d-8ef4-4a4f53a5b346")
+		)
+		(instances
+			(project "mainBorad"
+				(path "/74b57c73-2ea6-4d1a-baa5-ad46186fbb51/a9547498-c081-44b0-b937-cdfd06fea0cb"
+					(reference "#PWR05")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GNDD")
 		(at 69.85 142.24 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -5098,6 +5361,71 @@
 			(project "mainBorad"
 				(path "/74b57c73-2ea6-4d1a-baa5-ad46186fbb51/a9547498-c081-44b0-b937-cdfd06fea0cb"
 					(reference "#PWR02")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GNDD")
+		(at 220.98 115.57 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "e6718e2d-7202-4924-b1ad-a9479f4a77bc")
+		(property "Reference" "#PWR030"
+			(at 220.98 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GNDD"
+			(at 220.98 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 220.98 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 220.98 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GNDD\" , digital ground"
+			(at 220.98 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ebd584a8-8376-4405-b25f-e48d47dd57a1")
+		)
+		(instances
+			(project "mainBorad"
+				(path "/74b57c73-2ea6-4d1a-baa5-ad46186fbb51/a9547498-c081-44b0-b937-cdfd06fea0cb"
+					(reference "#PWR030")
 					(unit 1)
 				)
 			)

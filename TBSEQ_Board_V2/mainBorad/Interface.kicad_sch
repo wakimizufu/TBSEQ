@@ -3032,16 +3032,6 @@
 	)
 	(wire
 		(pts
-			(xy 171.45 72.39) (xy 179.07 72.39)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "425208a0-fb58-4f27-a28f-0af8e9bba3bc")
-	)
-	(wire
-		(pts
 			(xy 179.07 125.73) (xy 179.07 133.35)
 		)
 		(stroke
@@ -3712,16 +3702,6 @@
 	)
 	(wire
 		(pts
-			(xy 181.61 86.36) (xy 171.45 86.36)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a6d08cc5-def5-4a7d-a285-47f33b368e9f")
-	)
-	(wire
-		(pts
 			(xy 104.14 111.76) (xy 110.49 111.76)
 		)
 		(stroke
@@ -3989,16 +3969,6 @@
 			(type default)
 		)
 		(uuid "d688c25d-27a1-462f-aa66-11ed55bd95c0")
-	)
-	(wire
-		(pts
-			(xy 171.45 86.36) (xy 171.45 72.39)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d7071c09-56e0-43dd-8971-2cb5b3fdfa14")
 	)
 	(wire
 		(pts
@@ -4956,6 +4926,16 @@
 		)
 		(uuid "218d8eee-55bb-426d-882d-778b34b5847d")
 	)
+	(text "A_VR7_WIPERはA+VCA-Reso_ACCと接続"
+		(exclude_from_sim no)
+		(at 199.644 86.36 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "29fab6b8-2db1-45b5-8800-81f238d26be6")
+	)
 	(text "TB303_V2では4558で置換"
 		(exclude_from_sim no)
 		(at 106.426 39.37 0)
@@ -5556,50 +5536,6 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "A_VR7_WIPER"
-		(shape output)
-		(at 181.61 86.36 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "cbad741d-37e3-4cae-8fcb-f242f4447404")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 196.9323 86.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "A+VCA-Reso_ACC"
-		(shape output)
-		(at 179.07 72.39 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "d90f5d8e-953a-4e90-ab53-3a7bcc663fdf")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 197.2953 72.39 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
 				(hide yes)
 			)
 		)
@@ -9015,7 +8951,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical"
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Horizontal"
 			(at 175.26 54.61 0)
 			(effects
 				(font
@@ -10012,7 +9948,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical"
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Horizontal"
 			(at 204.47 53.34 0)
 			(effects
 				(font
@@ -10833,7 +10769,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Horizontal"
 			(at 201.93 26.67 0)
 			(effects
 				(font

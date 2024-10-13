@@ -2076,6 +2076,12 @@
 		(uuid "a544342d-64e4-4458-8b15-71f373b7ebbc")
 	)
 	(junction
+		(at 179.07 67.31)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b2acd7fd-2e89-470e-b923-bc218a41630d")
+	)
+	(junction
 		(at 124.46 63.5)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2090,12 +2096,20 @@
 		(uuid "6975be86-ec51-4c83-9607-6b048f6fa247")
 	)
 	(no_connect
+		(at 215.9 52.07)
+		(uuid "6e7f14b5-e72b-4a09-912f-0befc241e43c")
+	)
+	(no_connect
 		(at 97.79 66.04)
 		(uuid "a3802956-67e2-4353-af89-1b7230289533")
 	)
 	(no_connect
 		(at 215.9 49.53)
 		(uuid "abc21aa0-fbeb-458a-a04d-c511d16f2c7c")
+	)
+	(no_connect
+		(at 215.9 57.15)
+		(uuid "b64b6b81-5b01-4da3-b522-2cade16af552")
 	)
 	(no_connect
 		(at 215.9 41.91)
@@ -2187,6 +2201,16 @@
 	)
 	(wire
 		(pts
+			(xy 179.07 67.31) (xy 215.9 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "22d8b7d2-927a-453f-b6f7-d484b54182d6")
+	)
+	(wire
+		(pts
 			(xy 96.52 124.46) (xy 92.71 124.46)
 		)
 		(stroke
@@ -2197,17 +2221,7 @@
 	)
 	(wire
 		(pts
-			(xy 213.36 52.07) (xy 215.9 52.07)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "31bafc79-2c51-4a18-b115-aa2c65d9738a")
-	)
-	(wire
-		(pts
-			(xy 228.6 82.55) (xy 248.92 82.55)
+			(xy 228.6 82.55) (xy 256.54 82.55)
 		)
 		(stroke
 			(width 0)
@@ -2274,16 +2288,6 @@
 			(type default)
 		)
 		(uuid "4a711a6a-d70f-4419-a3be-e9780bfb80e9")
-	)
-	(wire
-		(pts
-			(xy 213.36 67.31) (xy 215.9 67.31)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4ff9b9fc-3181-48bf-8091-f1cdfea64799")
 	)
 	(wire
 		(pts
@@ -2457,7 +2461,7 @@
 	)
 	(wire
 		(pts
-			(xy 254 57.15) (xy 254 59.69)
+			(xy 269.24 57.15) (xy 269.24 60.96)
 		)
 		(stroke
 			(width 0)
@@ -2537,7 +2541,7 @@
 	)
 	(wire
 		(pts
-			(xy 179.07 59.69) (xy 179.07 91.44)
+			(xy 179.07 59.69) (xy 179.07 67.31)
 		)
 		(stroke
 			(width 0)
@@ -2647,7 +2651,7 @@
 	)
 	(wire
 		(pts
-			(xy 248.92 82.55) (xy 248.92 88.9)
+			(xy 256.54 82.55) (xy 256.54 88.9)
 		)
 		(stroke
 			(width 0)
@@ -2667,7 +2671,7 @@
 	)
 	(wire
 		(pts
-			(xy 228.6 57.15) (xy 254 57.15)
+			(xy 228.6 57.15) (xy 269.24 57.15)
 		)
 		(stroke
 			(width 0)
@@ -2694,16 +2698,6 @@
 			(type default)
 		)
 		(uuid "cee6ba35-f248-415c-9be7-7e658de14381")
-	)
-	(wire
-		(pts
-			(xy 213.36 54.61) (xy 215.9 54.61)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "cfc350e8-f04e-4009-aadd-d345f3dcbcbe")
 	)
 	(wire
 		(pts
@@ -2797,16 +2791,6 @@
 	)
 	(wire
 		(pts
-			(xy 213.36 57.15) (xy 215.9 57.15)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e65814fd-75d0-46b2-a5a1-82b8b84fa575")
-	)
-	(wire
-		(pts
 			(xy 119.38 115.57) (xy 124.46 115.57)
 		)
 		(stroke
@@ -2855,9 +2839,19 @@
 		)
 		(uuid "f60ffbf1-1395-4ffb-9d5a-fdf7cbad9492")
 	)
+	(wire
+		(pts
+			(xy 179.07 67.31) (xy 179.07 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fe77b164-efa9-4455-8440-ebc0ae35a105")
+	)
 	(text "A_VR7_CCWはGNDAと接続"
 		(exclude_from_sim no)
-		(at 242.824 82.804 0)
+		(at 262.128 83.058 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2876,6 +2870,16 @@
 		)
 		(uuid "115ad7eb-c7e8-43da-b58d-a3c1ad2a34bb")
 	)
+	(text "A_VR7_WIPERはA+VCA-Reso_ACCと接続"
+		(exclude_from_sim no)
+		(at 268.986 85.598 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "33dee9b8-b39d-4e28-9ad6-a94d335101bd")
+	)
 	(text "CV OUT"
 		(exclude_from_sim no)
 		(at 103.378 20.574 0)
@@ -2886,6 +2890,36 @@
 			(justify left)
 		)
 		(uuid "3b3dc9f2-37f0-4def-a57b-b87e8d929e07")
+	)
+	(text "A_VR3_CWはA+12Vと接続"
+		(exclude_from_sim no)
+		(at 250.952 65.278 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "58aecaa5-8f04-4498-9cf3-500542ca3c2d")
+	)
+	(text "A_VR4_CCW_1はGNDAと接続"
+		(exclude_from_sim no)
+		(at 181.102 67.818 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "65098a9e-0e55-4910-a217-aeba9f7f0ed1")
+	)
+	(text "A_VR4_1_WIPERはA+VCA_Resonanceと接続"
+		(exclude_from_sim no)
+		(at 173.99 70.358 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "867d32cc-4e3c-4ca3-93ec-434f4382be49")
 	)
 	(text "A_VR2_CCWはGNDAと接続"
 		(exclude_from_sim no)
@@ -2930,6 +2964,16 @@
 		)
 		(uuid "a8ce0f0b-91b1-4a06-932d-1bbda8e98c55")
 	)
+	(text "A_VR4_1_CWはA+VCA_Signalと接続"
+		(exclude_from_sim no)
+		(at 177.8 73.152 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "bb9bbe1a-910b-478e-a8cf-0ed8fc0fd1d9")
+	)
 	(text "Power"
 		(exclude_from_sim no)
 		(at 144.78 135.128 0)
@@ -2940,6 +2984,16 @@
 			(justify left)
 		)
 		(uuid "d855aef6-b576-4bec-94d7-0f7c85ac4169")
+	)
+	(text "A_VR5_CWはA+ENV.MODと接続"
+		(exclude_from_sim no)
+		(at 259.334 80.264 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "e2dd50cc-99e5-4900-b586-a4bd850c5d30")
 	)
 	(text "A_VR2_CWはA+5.333Vと接続"
 		(exclude_from_sim no)
@@ -2983,31 +3037,31 @@
 			)
 		)
 	)
-	(global_label "A_VR4_1_WIPER"
+	(global_label "A+12V"
 		(shape output)
-		(at 213.36 69.85 180)
+		(at 231.14 64.77 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right)
+			(justify left)
 		)
-		(uuid "07d46a4b-a92f-4ae5-8dec-9245a7b5abf4")
+		(uuid "06fa8239-8fe8-485c-80cf-5db8fcd7262d")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 195.8606 69.85 0)
+			(at 239.2657 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 				(hide yes)
 			)
 		)
 	)
-	(global_label "A_VR8_CW"
-		(shape output)
-		(at 213.36 57.15 180)
+	(global_label "A+LineOut"
+		(shape input)
+		(at 215.9 54.61 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3015,9 +3069,9 @@
 			)
 			(justify right)
 		)
-		(uuid "0cc233ae-7f81-404b-aff7-1039d887ef4f")
+		(uuid "0bc07983-4578-4d20-a9a0-bc8f585c0c94")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 201.0615 57.15 0)
+			(at 203.1781 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3137,9 +3191,9 @@
 			)
 		)
 	)
-	(global_label "A_VR3_CW"
+	(global_label "A_VR3_WIPER"
 		(shape output)
-		(at 231.14 64.77 0)
+		(at 231.14 62.23 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3147,80 +3201,14 @@
 			)
 			(justify left)
 		)
-		(uuid "361f4755-75e3-4ef6-9571-f2461aabca8c")
+		(uuid "414e0099-e85d-45ca-91c4-82a1c7e4b341")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 243.4385 64.77 0)
+			(at 246.4623 62.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "A_VR8_CCW"
-		(shape output)
-		(at 213.36 52.07 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "42fcf9d7-f21d-4fd4-bdc8-12f1b4e26707")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 199.7915 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "A_VR5_CW"
-		(shape output)
-		(at 231.14 80.01 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "47d2df96-bda1-4f77-b6af-c077c4284d51")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 243.4385 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "A_VR8_WIPER"
-		(shape output)
-		(at 213.36 54.61 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "4de95e4d-dca6-44d7-9a93-191b0128a097")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 198.0377 54.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
 				(hide yes)
 			)
 		)
@@ -3326,28 +3314,6 @@
 		(uuid "62fecbcd-a311-4f40-9a32-e4df9ff452a5")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 241.08 39.37 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "A_VR7_WIPER"
-		(shape output)
-		(at 231.14 85.09 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "68dd4f62-1728-4a52-8f61-5904168148d9")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 246.4623 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3489,6 +3455,28 @@
 			)
 		)
 	)
+	(global_label "A+ENV.MOD"
+		(shape input)
+		(at 231.14 80.01 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "898f0f67-eaff-497a-aa8d-a3b1e6edb292")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 245.011 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "A+CV_MIX"
 		(shape input)
 		(at 125.73 31.75 0)
@@ -3524,6 +3512,28 @@
 		(uuid "8f94b250-b9c5-4851-af67-4e3ccc77d424")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 201.1824 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "A+VCA_Signal"
+		(shape output)
+		(at 213.36 72.39 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "905b8f0c-9e80-48d2-8f59-1678694c9041")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 197.3725 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3573,50 +3583,6 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "A_VR3_CCW"
-		(shape output)
-		(at 231.14 59.69 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "a55538c7-82b9-45d9-bb6c-9f16b3ac95c8")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 244.7085 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "A_VR3_WIPER"
-		(shape output)
-		(at 231.14 62.23 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "a60b780b-f658-4f9f-8ac7-452edc0cc728")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 246.4623 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
 				(hide yes)
 			)
 		)
@@ -3753,28 +3719,6 @@
 			)
 		)
 	)
-	(global_label "A_VR4_1_CCW"
-		(shape output)
-		(at 213.36 67.31 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "ceefc788-8a9c-4333-a8f7-8345a8f6c6df")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 197.6144 67.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "A+5.333V"
 		(shape output)
 		(at 231.14 54.61 0)
@@ -3819,6 +3763,28 @@
 			)
 		)
 	)
+	(global_label "A+VCA_Resonance"
+		(shape output)
+		(at 213.36 69.85 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "e177f039-c38c-4b98-b62f-f07135414f97")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 193.1391 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "A_VR5_WIPER"
 		(shape output)
 		(at 231.14 77.47 0)
@@ -3832,6 +3798,28 @@
 		(uuid "e1a8ca89-2fab-4dd2-94e0-607f4ebdfa65")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 246.4623 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "A+VCA-Reso_ACC"
+		(shape output)
+		(at 231.14 85.09 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "e297318c-1854-4c79-b4fd-3aa760f6033e")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 249.3653 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3929,31 +3917,31 @@
 			)
 		)
 	)
-	(global_label "A_VR4_1_CW"
+	(global_label "A_VR3_CCW"
 		(shape output)
-		(at 213.36 72.39 180)
+		(at 231.14 59.69 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right)
+			(justify left)
 		)
-		(uuid "fc5824d8-d023-465b-b2a9-a5fd22c55715")
+		(uuid "ffa51063-4a4d-4f91-aca1-14da5cf29efb")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 198.8844 72.39 0)
+			(at 244.7085 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 				(hide yes)
 			)
 		)
 	)
 	(symbol
 		(lib_id "power:GNDA")
-		(at 248.92 88.9 0)
+		(at 256.54 88.9 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3962,7 +3950,7 @@
 		(fields_autoplaced yes)
 		(uuid "00aad17c-c6d3-4031-8623-c99d11b4a5f7")
 		(property "Reference" "#PWR033"
-			(at 248.92 95.25 0)
+			(at 256.54 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3971,7 +3959,7 @@
 			)
 		)
 		(property "Value" "GNDA"
-			(at 248.92 93.98 0)
+			(at 256.54 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3979,7 +3967,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 248.92 88.9 0)
+			(at 256.54 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3988,7 +3976,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 248.92 88.9 0)
+			(at 256.54 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3997,7 +3985,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GNDA\" , analog ground"
-			(at 248.92 88.9 0)
+			(at 256.54 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5458,7 +5446,7 @@
 	)
 	(symbol
 		(lib_id "power:GNDA")
-		(at 254 59.69 0)
+		(at 269.24 60.96 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5467,7 +5455,7 @@
 		(fields_autoplaced yes)
 		(uuid "d9d74555-d344-48b7-bd6e-4b9a0d9039e4")
 		(property "Reference" "#PWR01"
-			(at 254 66.04 0)
+			(at 269.24 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5476,7 +5464,7 @@
 			)
 		)
 		(property "Value" "GNDA"
-			(at 254 64.77 0)
+			(at 269.24 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5484,7 +5472,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 254 59.69 0)
+			(at 269.24 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5493,7 +5481,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 254 59.69 0)
+			(at 269.24 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5502,7 +5490,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GNDA\" , analog ground"
-			(at 254 59.69 0)
+			(at 269.24 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)

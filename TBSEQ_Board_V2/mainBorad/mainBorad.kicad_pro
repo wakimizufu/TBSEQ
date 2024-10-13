@@ -490,7 +490,7 @@
     "netclass_assignments": null,
     "netclass_patterns": [
       {
-        "netclass": "Power",
+        "netclass": "Default",
         "pattern": "D+5V"
       },
       {
@@ -502,7 +502,7 @@
         "pattern": "A+12V"
       },
       {
-        "netclass": "Power",
+        "netclass": "Default",
         "pattern": "D+3.3V"
       },
       {
@@ -510,7 +510,7 @@
         "pattern": "GNDA"
       },
       {
-        "netclass": "Power",
+        "netclass": "Default",
         "pattern": "GNDD"
       },
       {
@@ -520,6 +520,30 @@
       {
         "netclass": "Power",
         "pattern": "ADAPTER+15V"
+      },
+      {
+        "netclass": "Power",
+        "pattern": "Net-(PwD3-A)"
+      },
+      {
+        "netclass": "Power",
+        "pattern": "A+15VPre"
+      },
+      {
+        "netclass": "Power",
+        "pattern": "A+15V"
+      },
+      {
+        "netclass": "Power",
+        "pattern": "D+15VPre"
+      },
+      {
+        "netclass": "Power",
+        "pattern": "D+15V"
+      },
+      {
+        "netclass": "Power",
+        "pattern": "Net-(PwVR1-CCW)"
       }
     ]
   },

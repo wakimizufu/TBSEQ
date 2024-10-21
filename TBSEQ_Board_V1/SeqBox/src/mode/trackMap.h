@@ -1,0 +1,236 @@
+/*
+トラック格納情報を定義
+*/
+
+#ifndef trackMap_h
+#define trackMap_h
+
+
+/*
+trackStep トラックステップの各種情報を定義
+*/
+
+
+//trackStep:総バイト数
+#define TRACKSTEP_ALLBYTE 2
+
+class trackStep {
+public:
+	unsigned char    bank;       //演奏バンク   (0:BANK A ～ 3:BANK D)
+	unsigned char    pattern;    //演奏パターン (NOTE_PWM_INDEX::NOTE_C2～NOTE_PWM_INDEX::NOTE_C3⇒0x0～0xD を設定)
+	unsigned char    transport;  //転調         (NOTE_PWM_INDEX::NOTE_C2～NOTE_PWM_INDEX::NOTE_C3⇒0x0～0xD を設定)
+	bool lastStep; //最終ステップ(最終パターン:1,通常パターン:0)
+
+	/*
+	コンストラクタ
+	*/
+	explicit trackStep() {
+		bank		=	0;
+		pattern		=	static_cast<unsigned char>(NOTE_PWM_INDEX::NOTE_C2);
+		transport	=	static_cast<unsigned char>(NOTE_PWM_INDEX::NOTE_C2);
+		lastStep = true;
+	}
+
+private:
+};
+
+/*
+track トラック内の全トラックステップを管理する
+*/
+
+//step:ステップ開始インデックス
+#define TRACK_STEP_START_IDX 0
+
+//step:1パターン内の全ステップ数
+#define TRACK_STEP_LENGTH 16
+
+
+class track {
+public:
+	trackStep trackSteps[TRACKSTEP_LENGTH];
+
+	/*
+	コンストラクタ
+	*/
+	explicit patern() {
+	}
+
+private:
+
+};
+
+
+
+
+/*
+trackMap パターンを管理する
+*/
+
+//trackMap:パターン開始インデックス
+#define TRACKMAP_START_IDX 0
+
+//trackMap:1バンク/パターン全数
+#define TRACKMAP_PATTERN_LENGTH 13
+
+//trackMap:1トラック総バイト数
+const int TRACK_ALLBYTE = TRACK_STEP_LENGTH * TRACKSTEP_ALLBYTE;
+
+//trackMap:全13トラック全数
+const int TRACKMAP_ALLBYTE = TRACKMAP_PATTERN_LENGTH * TRACK_STEP_LENGTH * TRACKSTEP_ALLBYTE;
+
+class trackMap {
+public:
+
+	//パターン配列
+	track tracks[TRACKMAP_PATTERN_LENGTH];
+
+	/*
+	コンストラクタ
+	 */
+	explicit trackMap() {
+	}
+
+	/*
+ビットストリームからパターン配列を設定する
+引数:ビットストリーム
+*/
+	void setBitstream(unsigned char* _bitstream) {
+
+		unsigned char _byte = 0;
+
+		for (int p = 0; p < TRACKMAP_PATTERN_LENGTH; p++) {
+			for (int s = 0; s < TRACK_STEP_LENGTH; s++) {
+
+				_byte = *(_bitstream + _bitInd);
+				tracks[p].trackSteps[s].lastStep = (0x10 == (0x10 & _byte)); //bit:4 最終ステップ(true:最終ステップ ,false:通常ステップ)
+				_bitInd++;
+
+				_byte = *(_bitstream + _bitInd);
+
+				//ノート( NOTE_PWM_INDEX::NOTE_C2～NOTE_PWM_INDEX::NOTE_C3 を設定)
+				paterns[b][p].steps[s].note = (0x0F & _byte) + static_cast<unsigned char>(NOTE_PWM_INDEX::NOTE_C2);
+
+				_bitInd++;
+			}
+		}
+
+	}
+
+	/*
+	パターン配列からビットストリームに設定する
+	引数:指定バンク番号,指定パターン番号,設定先ビットストリーム
+	*/
+	void getBitstream(int b, int p, unsigned char* _bitstream) {
+
+		int _bitInd = 0;
+		unsigned char _byte = 0;
+
+		if ( ( b < 0) || (b >= SEQUENCE_BANK_LENGTH) ){
+			b = 0;
+		}
+
+		if ( ( p < 0) || (p >= SEQUENCE_PATTERN_LENGTH) ){
+			p = 0;
+		}
+
+
+		//for (int p = 0; p < SEQUENCE_PATTERN_LENGTH; p++) {
+			for (int s = 0; s < PATERN_STEP_LENGTH; s++) {
+
+				_byte = 0x00;
+				if (paterns[b][p].steps[s].lastStep) { _byte = _byte ^ 0x10; }	//bit:4 最終ステップ(true:最終ステップ ,false:通常ステップ)
+				if (paterns[b][p].steps[s].slide) { _byte = _byte ^ 0x08; }	//bit:3 スライド true:ON/false:OFF
+				if (paterns[b][p].steps[s].acc) { _byte = _byte ^ 0x04; }		//bit:2 アクセント true:ON/false:OFF
+				if (paterns[b][p].steps[s].down) { _byte = _byte ^ 0x02; }		//bit:1 オクターブDOWN true:C1/false:C2
+				if (paterns[b][p].steps[s].up) { _byte = _byte ^ 0x01; }		//bit:0 オクターブUP true:ON/false:OFF
+				*(_bitstream + _bitInd) = _byte;
+				_bitInd++;
+
+				_byte = paterns[b][p].steps[s].note - static_cast<unsigned char>(NOTE_PWM_INDEX::NOTE_C2);	//ノート( NOTE_PWM_INDEX::NOTE_C2～NOTE_PWM_INDEX::NOTE_C3 を設定)
+				_byte = _byte | paterns[b][p].steps[s].note_on << 4;
+
+				*(_bitstream + _bitInd) = _byte;
+				_bitInd++;
+			}
+		//}
+	}
+
+private:
+};
+
+
+/*
+ presetBitstream パターンを管理する
+*/
+class presetBitstream {
+public:
+	/*
+	パターン情報 ビットストリーム
+	☆総バイト数  :0x00FF=256Byte
+		0x0000:trackMap開始
+			0x0000:パターン1
+			0x0020:パターン2
+			0x0040:パターン3
+			0x0060:パターン4
+			0x0080:パターン5
+			0x00A0:パターン6
+			0x00C0:パターン7
+			0x00E0:パターン8
+
+		0x0000:パターン
+			0x0000:ステップ1
+			0x0002:ステップ2
+			0x0004:ステップ3
+			0x0006:ステップ4
+			0x0008:ステップ5
+			0x000A:ステップ6
+			0x000C:ステップ7
+			0x000E:ステップ8
+			0x0010:ステップ9
+			0x0012:ステップ10
+			0x0014:ステップ11
+			0x0016:ステップ12
+			0x0018:ステップ13
+			0x001A:ステップ14
+			0x001C:ステップ15
+			0x001E:ステップ16
+
+		[ステップ]
+		1Byte:
+			bit7-5:(未使用:全て0)
+			bit  4:最終ステップ(最終ステップ:1,通常ステップ:0)
+			bit  3:スライド(オン:1,オフ:0)
+			bit  2:アクセント(オン:1,オフ:0)
+			bit  1:オクターブDown(オン:1,オフ:0)
+			bit  0:オクターブUp(オン:1,オフ:0)
+
+		1Byte:
+			bit7-6:(未使用:全て0)
+			bit5-4:ノートオンオフ 1:ノートオン/2:ノートオン(タイ)/0:ノートオフ
+			bit3-0:ノート(NOTE_PWM_INDEX::NOTE_C2～NOTE_PWM_INDEX::NOTE_C3⇒0x0～0xD を設定)
+	*/
+	unsigned char patern_preset_bitstream[SEQUENCE_ALLBYTE]{
+	0x00,0x10, 0x00,0x10, 0x00,0x12, 0x00,0x13, 0x00,0x14, 0x00,0x15, 0x00,0x16, 0x00,0x17, 0x00,0x18, 0x00,0x19, 0x00,0x1A, 0x00,0x1B, 0x00,0x1C, 0x00,0x1D, 0x00,0x1C, 0x10,0x1B,	//パターン1
+	0x01,0x10, 0x01,0x21, 0x01,0x12, 0x01,0x13, 0x01,0x14, 0x01,0x15, 0x01,0x16, 0x01,0x17, 0x01,0x28, 0x01,0x29, 0x01,0x1A, 0x01,0x2B, 0x01,0x1C, 0x01,0x1D, 0x01,0x1C, 0x11,0x1B,	//パターン2
+	0x02,0x10, 0x02,0x11, 0x02,0x12, 0x02,0x13, 0x02,0x14, 0x02,0x15, 0x02,0x16, 0x02,0x17, 0x02,0x18, 0x02,0x19, 0x02,0x1A, 0x02,0x1B, 0x02,0x1C, 0x02,0x1D, 0x02,0x1C, 0x12,0x1B,	//パターン3
+	0x00,0x10, 0x00,0x21, 0x08,0x22, 0x00,0x03, 0x00,0x14, 0x08,0x15, 0x0C,0x26, 0x00,0x07, 0x00,0x18, 0x00,0x09, 0x00,0x1A, 0x08,0x1B, 0x00,0x1C, 0x00,0x1D, 0x0C,0x1C, 0x14,0x1B,	//パターン4
+	0x00,0x10, 0x00,0x11, 0x00,0x12, 0x00,0x13, 0x00,0x14, 0x00,0x15, 0x00,0x16, 0x00,0x17, 0x00,0x18, 0x00,0x19, 0x00,0x1A, 0x00,0x1B, 0x00,0x1C, 0x00,0x1D, 0x00,0x1C, 0x10,0x1B,	//パターン5
+	0x00,0x10, 0x00,0x11, 0x00,0x12, 0x00,0x13, 0x00,0x14, 0x00,0x15, 0x00,0x16, 0x00,0x17, 0x00,0x18, 0x00,0x19, 0x00,0x1A, 0x00,0x1B, 0x00,0x1C, 0x00,0x1D, 0x00,0x1C, 0x10,0x1B,	//パターン6
+	0x00,0x10, 0x00,0x11, 0x00,0x12, 0x00,0x13, 0x00,0x14, 0x00,0x15, 0x00,0x16, 0x00,0x17, 0x00,0x18, 0x00,0x19, 0x00,0x1A, 0x00,0x1B, 0x00,0x1C, 0x00,0x1D, 0x00,0x1C, 0x10,0x1B,	//パターン7
+	0x00,0x20, 0x00,0x21, 0x00,0x02, 0x00,0x23, 0x00,0x24, 0x00,0x05, 0x00,0x26, 0x00,0x07, 0x00,0x28, 0x00,0x29, 0x00,0x2A, 0x00,0x0B, 0x00,0x2C, 0x00,0x2D, 0x00,0x2C, 0x10,0x2B	//パターン8
+	};
+
+
+	/*
+	コンストラクタ
+	*/
+	explicit presetBitstream() {
+	}
+
+
+
+private:
+};
+
+
+#endif

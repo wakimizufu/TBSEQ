@@ -18,6 +18,7 @@
 #include "sequenceMap.h"
 #include "mode.h"
 #include "paternPlay.h"
+#include "trackMap.h"
 
 int main(int argc, char const *argv[])
 {
@@ -38,6 +39,19 @@ int main(int argc, char const *argv[])
   panelManager _panelManager(0);
   voltage _voltage;
   sequenceMap _sequenceMap;
+  trackMap _trackMap;
+
+  presetTrackBitstream _presetTrackBitstream;
+  _trackMap.setBitstream(_presetTrackBitstream.track_preset_bitstream);
+
+  unsigned char tempTrackBitStream[TRACK_ALLBYTE];
+
+    for (int t = 0; t < TRACKMAP_PATTERN_LENGTH; t++) {
+      memset(tempTrackBitStream, 0x00, TRACK_ALLBYTE);
+      _trackMap.getBitstream(t,tempTrackBitStream);
+  }
+
+
 
   presetBitstream _presetBitstream;
   _sequenceMap.setBitstream(_presetBitstream.patern_preset_bitstream);

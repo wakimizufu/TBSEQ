@@ -161,6 +161,7 @@
     <ClInclude Include="include\paternWrite.h" />
     <ClInclude Include="include\sequenceMap.h" />
     <ClInclude Include="include\tempo.h" />
+    <ClInclude Include="include\trackMap.h" />
     <ClInclude Include="include\trackPlay.h" />
     <ClInclude Include="include\trackWrite.h" />
     <ClInclude Include="include\voltage.h" />

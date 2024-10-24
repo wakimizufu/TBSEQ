@@ -150,68 +150,6 @@ void	modeManager::getSequenceBitstream(unsigned char* _bitstream){
 }
 
 
-
-/*
-トラックマップをFRAMからロードして設定する(ロード出来なかったらプリセットを設定する)
-戻り値：なし
-*/
-void	modeManager::presetTrack(){
-
-	int t;
-	unsigned char _track_load_bitstream[TRACK_ALLBYTE];
-	uint16_t _memAddr;
-
-	//FRAMへの接続を開始する
-	bool _connect	=	_panelManager->connectFRAM();
-
-	//シークエンスマップをFRAMからロードして設定する
-	if	( _connect ) {
-
-		for (t = TRACKMAP_START_IDX; t < TRACKMAP_PATTERN_LENGTH; t++) {
-			_memAddr = (TRACK_ALLBYTE * t) + TRACKMAP_START_ADDRESS;
-
-			Serial.print("modeManager::presetTrack() _memAddr:");
-			Serial.print(_memAddr,HEX);
-			Serial.println("");
-			
-			_panelManager->loadFRAM(_track_load_bitstream, _memAddr, TRACK_ALLBYTE);
-		
-		    /*
-			for (int i=0 ; i<TRACK_ALLBYTE ; i++){
-			Serial.print("_track_load_bitstream[");
-			Serial.print(i,HEX);
-			Serial.print("]:");
-			Serial.print(_track_load_bitstream[i],HEX);
-			Serial.println("");
-			}
-			*/
-
-			_trackMap.setBitstream(t,_track_load_bitstream);
-		}
-		
-
-	} else if (!_connect) {
-		presetTrackBitstream _presetTrackBitstream;
-		for (t = TRACKMAP_START_IDX; t < TRACKMAP_PATTERN_LENGTH; t++) {
-			_trackMap.setBitstream(t, _presetTrackBitstream.track_preset_bitstream);
-		}
-	}
-	
-}
-
-
-
-/*
-トラックマップの内容をビットストリームで取得する
-引数  ：取得先ビットストリーム
-戻り値：なし
-*/
-void	modeManager::getTrackBitstream(unsigned char* _bitstream){
-
-}
-
-
-
 /*
 モード切替判定を行う
 */

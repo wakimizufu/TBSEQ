@@ -100,25 +100,40 @@ class modeManager: public countTriger
 		*/
 	  void setFirstStep(bool value);
 
-	/*
-	MIDI:スタート受信フラグを設定
-	引数：true=>受信済, false=>未受信
-	*/
-	void	setMIDIStart(bool value);
+		/*
+		MIDI:スタート受信フラグを設定
+		引数：true=>受信済, false=>未受信
+		*/
+		void	setMIDIStart(bool value);
 
-	/*
-	MIDI:ストップ受信フラグを設定
-	引数：true=>受信済, false=>未受信
-	*/
-	void	setMIDIStop(bool value);
+		/*
+		MIDI:ストップ受信フラグを設定
+		引数：true=>受信済, false=>未受信
+		*/
+		void	setMIDIStop(bool value);
+
+		/*
+		トラックマップをFRAMからロードして設定する(ロード出来なかったらプリセットを設定する)
+		戻り値：なし
+		*/
+	  void	presetTrack();
+
+	   /*
+		トラックマップの内容をビットストリームで取得する
+		引数  ：取得先ビットストリーム
+		戻り値：なし
+		*/
+	  void	getTrackBitstream(unsigned char* _bitstream);
+
 
   private:
-	mode * _currentMode;			//現在のモードクラス
+	mode * _currentMode;					//現在のモードクラス
 	panelManager * _panelManager;	//【コンストラクタで設定】panelManagerクラスポインタ
-	voltage * _voltage;				//【コンストラクタで設定】voltageクラスポインタ
-	sequenceMap _sequenceMap;		//シークエンスマップ
-	bool _debugMode;				//デバッグフラグ (true->デバッグモード ,false->通常モード)
-	int _bank;                      //現在の指定バンク
+	voltage * _voltage;						//【コンストラクタで設定】voltageクラスポインタ
+	sequenceMap _sequenceMap;			//シークエンスマップ
+	trackMap _trackMap;						//トラックマップ
+	bool _debugMode;							//デバッグフラグ (true->デバッグモード ,false->通常モード)
+	int _bank;										//現在の指定バンク
 
 	bool _currentSwtich[SW_INDEX_MAX];	//ボタン押下中
 

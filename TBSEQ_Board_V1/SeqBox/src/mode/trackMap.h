@@ -78,6 +78,9 @@ const int TRACK_ALLBYTE = TRACK_STEP_LENGTH * TRACKSTEP_ALLBYTE;
 //trackMap:全13トラック全数
 const int TRACKMAP_ALLBYTE = TRACKMAP_PATTERN_LENGTH * TRACK_STEP_LENGTH * TRACKSTEP_ALLBYTE;
 
+//trackMap:FRAM格納先頭アドレス
+#define TRACKMAP_START_ADDRESS 0x100
+
 class trackMap {
 public:
 
@@ -92,35 +95,37 @@ public:
 
 	/*
 ビットストリームからパターン配列を設定する
-引数:ビットストリーム
+引数:指定トラック番号,ビットストリーム
 */
-	void setBitstream(unsigned char* _bitstream) {
+	void setBitstream(int t, unsigned char* _bitstream) {
 
 		int _bitInd = 0;
 		unsigned char _byte = 0;
 
-		for (int p = 0; p < TRACKMAP_PATTERN_LENGTH; p++) {
-			for (int s = 0; s < TRACK_STEP_LENGTH; s++) {
+		if ( ( t < 0) || (t >= TRACKMAP_PATTERN_LENGTH) ){
+			t = 0;
+		}
 
-				_byte = *(_bitstream + _bitInd);
+		for (int s = 0; s < TRACK_STEP_LENGTH; s++) {
 
-				//演奏パターン (1～8:0x0～0x7)
-				tracks[p].trackSteps[s].pattern = (0x07 & _byte) + static_cast<unsigned char>(NOTE_PWM_INDEX::NOTE_C2);
+			_byte = *(_bitstream + _bitInd);
 
-				//演奏バンク   (0:BANK A ～ 3:BANK D)
-				tracks[p].trackSteps[s].bank 	= ((0x18 & _byte) >> 3);
+			//演奏パターン (1～8:0x0～0x7)
+			tracks[t].trackSteps[s].pattern = (0x07 & _byte) + static_cast<unsigned char>(NOTE_PWM_INDEX::NOTE_C2);
 
-				//bit:5 最終ステップ(true:最終ステップ ,false:通常ステップ)
-				tracks[p].trackSteps[s].lastStep = (0x20 == (0x20 & _byte)); 
-				_bitInd++;
+			//演奏バンク   (0:BANK A ～ 3:BANK D)
+			tracks[t].trackSteps[s].bank 	= ((0x18 & _byte) >> 3);
 
-				_byte = *(_bitstream + _bitInd);
+			//bit:5 最終ステップ(true:最終ステップ ,false:通常ステップ)
+			tracks[t].trackSteps[s].lastStep = (0x20 == (0x20 & _byte)); 
+			_bitInd++;
 
-				//転調( NOTE_PWM_INDEX::NOTE_C2～NOTE_PWM_INDEX::NOTE_C3 を設定)
-				tracks[p].trackSteps[s].transport = (0x0F & _byte) + static_cast<unsigned char>(NOTE_PWM_INDEX::NOTE_C2);
+			_byte = *(_bitstream + _bitInd);
 
-				_bitInd++;
-			}
+			//転調( NOTE_PWM_INDEX::NOTE_C2～NOTE_PWM_INDEX::NOTE_C3 を設定)
+			tracks[t].trackSteps[s].transport = (0x0F & _byte) + static_cast<unsigned char>(NOTE_PWM_INDEX::NOTE_C2);
+
+			_bitInd++;
 		}
 
 	}

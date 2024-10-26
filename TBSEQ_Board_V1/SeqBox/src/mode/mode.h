@@ -8,7 +8,7 @@
  #include "../raspberryPiPico/voltage.h"
  #include "../raspberryPiPico/panelManager.h"
  #include "sequenceMap.h"
-
+ #include "trackMap.h" 
 
 //16音符毎MIDIクロックカウント 16分音符:6クロック 開始クロック
 #define MIDICLOCK_START_16NOTE	1
@@ -67,8 +67,9 @@ class mode{
 		ptPanelManager:panelManagerクラスポインタ
 		ptVoltage     :voltageクラスポインタ
 		ptSequenceMap :sequenceMapクラスポインタ
+		ptTrackMap    :trackMapクラスポインタ
     */
-	mode(MODE_NAME modename, panelManager* ptPanelManager, voltage* ptVoltage, sequenceMap* ptSequenceMap);
+	mode(MODE_NAME modename, panelManager* ptPanelManager, voltage* ptVoltage, sequenceMap* ptSequenceMap, trackMap* ptTrackMap );
 
 	/*
 	[純粋仮想関数]カウント閾値達成時に実行されるアプリケーションを実施する
@@ -91,6 +92,12 @@ class mode{
     戻り値：ラン/ストップフラグ(Class RUN_STOP)
     */
 	RUN_STOP	getRunStop();
+
+    /*
+    現在の指定トラックを取得する
+    戻り値：指定トラック(1-13)
+    */
+	int	getCurrnetTrack();
 
     /*
     現在の指定パターンを取得する
@@ -155,6 +162,12 @@ class mode{
     */
 	void	setPattern(int value);
 
+    /*
+    トラック:指定したトラックへ変更する
+    戻り値：指定トラック(1-13)
+    */
+	void	setTrack(int value);
+
 	/*
 	MIDI:スタート受信フラグを設定
 	引数：true=>受信済, false=>未受信
@@ -175,9 +188,11 @@ class mode{
 		panelManager * _panelManager;	//【コンストラクタで設定】panelManagerクラスポインタ
 		voltage * _voltage;						//【コンストラクタで設定】voltageクラスポインタ
 		sequenceMap * _sequenceMap;		//【コンストラクタで設定】sequenceMapクラスポインタ
+		trackMap * _trackMap;           //【コンストラクタで設定】trackMapクラスポインタ
 
 		int	_midiclock_16note;	//16音符毎MIDIクロックカウント 16分音符:6クロック⇒1～6
 
+		int	_track;	//指定トラック(1-13)
 		int	_bank;	//指定バンク(1-4)
 		int	_pattern;	//指定パターン(1-8)
 		int	_step;		//現在ステップ(1-16)
@@ -261,6 +276,40 @@ class mode{
 			static_cast<int>(LED::BANK_B),
 			static_cast<int>(LED::BANK_C),
 			static_cast<int>(LED::BANK_D)
+		};
+
+		//トラック番号：スイッチ対応配列
+		const int _scanTrackSwich[TRACKMAP_PATTERN_LENGTH] {
+			static_cast<int>(Switch::C),
+			static_cast<int>(Switch::CSHARP),
+			static_cast<int>(Switch::D),
+			static_cast<int>(Switch::DSHARP),
+			static_cast<int>(Switch::E),
+			static_cast<int>(Switch::F),
+			static_cast<int>(Switch::FSHARP),
+			static_cast<int>(Switch::G),
+			static_cast<int>(Switch::GSHARP),
+			static_cast<int>(Switch::A),
+			static_cast<int>(Switch::ASHARP),
+			static_cast<int>(Switch::B),
+			static_cast<int>(Switch::C2)
+		};
+
+		//トラック番号：LED対応配列
+		const int _scanTrackLED[TRACKMAP_PATTERN_LENGTH] {
+			static_cast<int>(LED::C),
+			static_cast<int>(LED::CSHARP),
+			static_cast<int>(LED::D),
+			static_cast<int>(LED::DSHARP),
+			static_cast<int>(LED::E),
+			static_cast<int>(LED::F),
+			static_cast<int>(LED::FSHARP),
+			static_cast<int>(LED::G),
+			static_cast<int>(LED::GSHARP),
+			static_cast<int>(LED::A),
+			static_cast<int>(LED::ASHARP),
+			static_cast<int>(LED::B),
+			static_cast<int>(LED::C2)
 		};
 };
 

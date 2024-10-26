@@ -6,12 +6,14 @@ modename      :モード名(Class MODE_NAME)
 	ptPanelManager:panelManagerクラスポインタ
 	ptVoltage     :voltageクラスポインタ
 	ptSequenceMap :sequenceMapクラスポインタ
+	ptTrackMap    :trackMapクラスポインタ
 */
-mode::mode(MODE_NAME modename, panelManager* ptPanelManager, voltage* ptVoltage, sequenceMap* ptSequenceMap) {
+mode::mode(MODE_NAME modename, panelManager* ptPanelManager, voltage* ptVoltage, sequenceMap* ptSequenceMap, trackMap* ptTrackMap) {
 	_modeName = modename;
 	_panelManager = ptPanelManager;		//panelManagerクラスポインタ
 	_voltage = ptVoltage;						//【コンストラクタで設定】voltageクラスポインタ
 	_sequenceMap = ptSequenceMap;		//【コンストラクタで設定】sequenceMapクラスポインタ
+	_trackMap = ptTrackMap;             //【コンストラクタで設定】trackMapクラスポインタ
 
 	_run_stop = RUN_STOP::STOP;
 	_midiclock_16note = MIDICLOCK_START_16NOTE;
@@ -36,11 +38,11 @@ RUN_STOP	mode::getRunStop() {
 }
 
  /*
-現在の指定パターンを取得する
-戻り値：指定パターン(1-8)
+現在の指定トラックを取得する
+戻り値：指定トラック(1-13)
 */
-int	mode::getCurrnetPattern(){
-	return _pattern;
+int	mode::getCurrnetTrack(){
+	return _track;
 }
 
  /*
@@ -153,6 +155,18 @@ void	mode::setPattern(int value){
 	}
 }
 
+/*
+トラック:指定したトラックへ変更する
+戻り値：指定トラック(1-13)
+*/
+void	mode::setTrack(int value){
+
+	if ( (value < TRACKMAP_START_IDX) || (value >= TRACKMAP_PATTERN_LENGTH) ) {
+		_pattern = TRACKMAP_START_IDX;
+	} else {
+		_pattern = value;
+	}
+}
 
 /*
 現在のステップ開始を取得する

@@ -10,6 +10,7 @@
  #include "src/midi/midiClock.h"
  #include "src/midi/midiReceive.h"
  #include "src/mode/sequenceMap.h"
+ #include "src/mode/trackMap.h"
  #include "src/mode/modeManager.h"
 
 /*

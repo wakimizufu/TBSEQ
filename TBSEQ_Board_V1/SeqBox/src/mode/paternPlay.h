@@ -15,6 +15,7 @@ class paternPlay: public mode{
     コンストラクタ
 		ptPanelManager:panelManagerクラスポインタ
 		ptVoltage     :voltageクラスポインタ
+		ptSequenceMap :sequenceMapクラスポインタ
     */
 		paternPlay(panelManager* ptPanelManager, voltage* ptVoltage, sequenceMap* ptSequenceMap);
 

@@ -279,7 +279,7 @@ class mode{
 		};
 
 		//トラック番号：スイッチ対応配列
-		const int _scanTrackSwich[TRACKMAP_PATTERN_LENGTH] {
+		const int _scanTrackSwich[TRACKMAP_TRACK_LENGTH] {
 			static_cast<int>(Switch::C),
 			static_cast<int>(Switch::CSHARP),
 			static_cast<int>(Switch::D),
@@ -296,7 +296,7 @@ class mode{
 		};
 
 		//トラック番号：LED対応配列
-		const int _scanTrackLED[TRACKMAP_PATTERN_LENGTH] {
+		const int _scanTrackLED[TRACKMAP_TRACK_LENGTH] {
 			static_cast<int>(LED::C),
 			static_cast<int>(LED::CSHARP),
 			static_cast<int>(LED::D),

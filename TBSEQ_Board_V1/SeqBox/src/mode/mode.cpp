@@ -73,6 +73,8 @@ bool	mode::isSwitchOffClick(int _SwIndex){
 	return _ret;
 }
 
+
+
 /*
 ステップ:指定ステップ数に応じたLEDを設定する
 */

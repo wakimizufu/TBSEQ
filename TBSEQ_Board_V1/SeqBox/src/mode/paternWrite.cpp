@@ -1,6 +1,6 @@
 #include "paternWrite.h"
 
-paternWrite::paternWrite(panelManager* ptPanelManager, voltage* ptVoltage, sequenceMap* ptSequenceMap, int _initPattern ) :mode(MODE_NAME::PATERN_WRITE, ptPanelManager, ptVoltage, ptSequenceMap) {
+paternWrite::paternWrite(panelManager* ptPanelManager, voltage* ptVoltage, sequenceMap* ptSequenceMap, int _initPattern ) :mode(MODE_NAME::PATERN_WRITE, ptPanelManager, ptVoltage, ptSequenceMap, 0) {
 
 	//各状態を初期値に変更する
 	_pattern = _initPattern;					//指定パターン

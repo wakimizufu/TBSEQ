@@ -69,14 +69,14 @@ trackMap パターンを管理する
 //trackMap:パターン開始インデックス
 #define TRACKMAP_START_IDX 0
 
-//trackMap:1バンク/パターン全数
-#define TRACKMAP_PATTERN_LENGTH 13
+//trackMap:パターン全数
+#define TRACKMAP_TRACK_LENGTH 13
 
 //trackMap:1トラック総バイト数
 const int TRACK_ALLBYTE = TRACK_STEP_LENGTH * TRACKSTEP_ALLBYTE;
 
 //trackMap:全13トラック全数
-const int TRACKMAP_ALLBYTE = TRACKMAP_PATTERN_LENGTH * TRACK_STEP_LENGTH * TRACKSTEP_ALLBYTE;
+const int TRACKMAP_ALLBYTE = TRACKMAP_TRACK_LENGTH * TRACK_STEP_LENGTH * TRACKSTEP_ALLBYTE;
 
 //trackMap:FRAM格納先頭アドレス
 #define TRACKMAP_START_ADDRESS 0x100
@@ -85,7 +85,7 @@ class trackMap {
 public:
 
 	//パターン配列
-	track tracks[TRACKMAP_PATTERN_LENGTH];
+	track tracks[TRACKMAP_TRACK_LENGTH];
 
 	/*
 	コンストラクタ
@@ -102,7 +102,7 @@ public:
 		int _bitInd = 0;
 		unsigned char _byte = 0;
 
-		if ( ( t < 0) || (t >= TRACKMAP_PATTERN_LENGTH) ){
+		if ( ( t < 0) || (t >= TRACKMAP_TRACK_LENGTH) ){
 			t = 0;
 		}
 
@@ -139,7 +139,7 @@ public:
 		int _bitInd = 0;
 		unsigned char _byte = 0;
 
-		if ( ( t < 0) || (t >= TRACKMAP_PATTERN_LENGTH) ){
+		if ( ( t < 0) || (t >= TRACKMAP_TRACK_LENGTH) ){
 			t = 0;
 		}
 

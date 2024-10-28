@@ -5,7 +5,7 @@
 	ptPanelManager:panelManagerクラスポインタ
 	ptVoltage     :voltageクラスポインタ
 */
-trackWrite::trackWrite(panelManager* ptPanelManager, voltage* ptVoltage, sequenceMap* ptSequenceMap) :mode(MODE_NAME::TRACK_WRITE, ptPanelManager, ptVoltage, ptSequenceMap) {
+trackWrite::trackWrite(panelManager* ptPanelManager, voltage* ptVoltage, sequenceMap* ptSequenceMap, trackMap* ptTrackMap) :mode(MODE_NAME::TRACK_WRITE, ptPanelManager, ptVoltage, ptSequenceMap, ptTrackMap) {
 }
 
 /*

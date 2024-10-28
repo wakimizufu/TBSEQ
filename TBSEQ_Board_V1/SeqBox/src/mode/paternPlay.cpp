@@ -5,7 +5,7 @@
 	ptPanelManager:panelManagerクラスポインタ
 	ptVoltage     :voltageクラスポインタ
 */
-paternPlay::paternPlay(panelManager* ptPanelManager, voltage* ptVoltage, sequenceMap* ptSequenceMap) :mode(MODE_NAME::PATERN_PLAY, ptPanelManager, ptVoltage, ptSequenceMap) {
+paternPlay::paternPlay(panelManager* ptPanelManager, voltage* ptVoltage, sequenceMap* ptSequenceMap) :mode(MODE_NAME::PATERN_PLAY, ptPanelManager, ptVoltage, ptSequenceMap, 0) {
 
 	//各状態を初期値に変更する
 	_pattern = PATTERN_START_IDX;				//指定パターン

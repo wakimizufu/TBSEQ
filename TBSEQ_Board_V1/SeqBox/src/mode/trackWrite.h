@@ -10,12 +10,14 @@
 class trackWrite: public mode{
 
     public:
-     /*
-    コンストラクタ
+		/*
+		コンストラクタ
 		ptPanelManager:panelManagerクラスポインタ
 		ptVoltage     :voltageクラスポインタ
-    */
-		trackWrite(panelManager* ptPanelManager, voltage* ptVoltage, sequenceMap* ptSequenceMap);
+		ptSequenceMap :sequenceMapクラスポインタ
+		ptTrackMap    :trackMapクラスポインタ
+		*/
+		trackWrite(panelManager* ptPanelManager, voltage* ptVoltage, sequenceMap* ptSequenceMap, trackMap* ptTrackMap);
 
 		/*
 		[仮想関数]カウント閾値達成時に実行されるアプリケーションを実施する

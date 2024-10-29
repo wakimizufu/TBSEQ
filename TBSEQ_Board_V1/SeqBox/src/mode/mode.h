@@ -192,8 +192,9 @@ class mode{
 
 		int	_midiclock_16note;	//16音符毎MIDIクロックカウント 16分音符:6クロック⇒1～6
 
-		int	_track;	//指定トラック(1-13)
-		int	_bank;	//指定バンク(1-4)
+		int	_track;		//指定トラック(1-13)
+		int	_trackStep;	//指定トラックステップ(1-16)
+		int	_bank;		//指定バンク(1-4)
 		int	_pattern;	//指定パターン(1-8)
 		int	_step;		//現在ステップ(1-16)
 		bool _currentSwtich[SW_INDEX_MAX];	//ボタン押下中

@@ -62,6 +62,22 @@ class trackPlay: public mode{
 		*/
 		int	getCurrnetTrack();
 
+		/*
+		指定トラックから演奏するバンク/パターンを取得する
+		引数:指定トラック(1-13)
+			指定トラックステップ(1-16)
+		    【ポインタ】演奏バンク(1-4)
+		    【ポインタ】演奏パターン(1-8)
+		    【ポインタ】転調(1-12)
+		    【ポインタ】最終ステップ(true/false)
+		*/
+		void	getTrack2Pattern(int track, 
+								int trackStep,  
+								unsigned char* ptBank , 
+								unsigned char* ptPattern , 
+								unsigned char* ptTransport , 
+								bool* ptLastStep);
+
     private:
 			int		_LEDCount;	//LED点滅カウント
 			bool	_pushRunSW;	//ラン/ストップSW前回状態フラグ

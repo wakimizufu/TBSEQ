@@ -10,7 +10,8 @@
 trackPlay::trackPlay(panelManager* ptPanelManager, voltage* ptVoltage, sequenceMap* ptSequenceMap, trackMap* ptTrackMap) :mode(MODE_NAME::TRACK_PLAY, ptPanelManager, ptVoltage, ptSequenceMap, trackMap* ptTrackMap) {
 
 	//各状態を初期値に変更する
-	_track = TRACKMAP_START_IDX;				//指定トラック
+	_track		=	TRACKMAP_START_IDX;			//指定トラック
+	_trackStep	=	TRACK_STEP_START_IDX;		//指定トラックステップ
 	_pattern = PATTERN_START_IDX;				//指定パターン
 	_step = STEP_START_IDX;						//現在ステップ
 	_LEDCount = 0;								//LED点滅カウント
@@ -285,5 +286,170 @@ void	trackPlay::changeRunStop() {
 */
 int	trackPlay::getCurrnetTrack(){
 	return	_track;
+}
+
+/*
+指定トラックから演奏するバンク/パターンを取得する
+引数:指定トラック(1-13)
+	演奏トラックステップ(1-16)
+	演奏バンク(1-4)
+	演奏パターン(1-8)
+*/
+void	trackPlay::getTrack2Pattern(int track, 
+									int trackStep,  
+									unsigned char* ptBank , 
+									unsigned char* ptPattern , 
+									unsigned char* ptTransport , 
+									bool* ptLastStep){
+	*ptBank			=	_trackMap->tracks[track].trackSteps[trackStep].bank;
+	*ptPattern		=	_trackMap->tracks[track].trackSteps[trackStep].pattern;
+	*ptTransport	=	_trackMap->tracks[track].trackSteps[trackStep].transport;
+	*ptLastStep		=	_trackMap->tracks[track].trackSteps[trackStep].lastStep;
+}
+
+
+/*
+16音符毎MIDIクロックカウントが最初ならゲートをオンする
+*/
+void trackPlay::_gate_on_16note() {
+
+	bool _up		=	_sequenceMap->paterns[_bank][_pattern].steps[_step].up;
+	bool _down		=	_sequenceMap->paterns[_bank][_pattern].steps[_step].down;
+	bool _acc		=	_sequenceMap->paterns[_bank][_pattern].steps[_step].acc;
+	bool _slide		=	_sequenceMap->paterns[_bank][_pattern].steps[_step].slide;
+	unsigned char _note_on	=	_sequenceMap->paterns[_bank][_pattern].steps[_step].note_on;
+	unsigned char _note_relative = _sequenceMap->paterns[_bank][_pattern].steps[_step].note - static_cast<unsigned char>(NOTE_PWM_INDEX::NOTE_C2);
+
+	if(_midiclock_16note == MIDICLOCK_START_16NOTE){
+		Serial.print("_gate_on_16note() MIDICLOCK_START_16NOTE ");
+		Serial.print(" track:");
+		Serial.print(_track);
+		Serial.print(" bank:");
+		Serial.print(_bank);
+		Serial.print(" pattern:");
+		Serial.print(_pattern);
+		Serial.print(" step:");
+		Serial.print(_step);
+		Serial.print(" gate:");
+		Serial.print(_note_on);
+		Serial.print(" acc:");
+		Serial.print(_acc);
+		Serial.print(" slide:");
+		Serial.print(_slide);
+
+		if (( STEP_NOTE_ON_NORMAL == _note_on)||( STEP_NOTE_ON_TIE == _note_on)){
+			_voltage->gate(true);	//gate
+		} else if ( STEP_NOTE_OFF == _note_on){
+			_voltage->gate(false);	//gate
+		}
+
+		if (_note_on){
+			_voltage->accent(!_acc);	//acc
+			_voltage->slide(_slide);//slide
+
+			int _note_CV=0;
+			if ( _up ) {
+				_note_CV=static_cast<int>(NOTE_PWM_INDEX::NOTE_C3);
+			} else if ( _down ) {
+				_note_CV=static_cast<int>(NOTE_PWM_INDEX::NOTE_C1);
+			} else{
+				_note_CV = static_cast<int>(NOTE_PWM_INDEX::NOTE_C2);
+			}
+
+			//NOTE_PWM_INDEX のインデックス値を算出する
+			_note_CV	=	_note_CV	+	_note_relative;	
+			Serial.print(" CV:");
+			Serial.print(_note_CV);
+			_voltage->cv(_note_CV);  //CVを設定する
+
+		} else {
+			_voltage->accent(ACCENT_OFF);//acc
+			_voltage->slide(SLIDE_OFF);	//slide			
+		}
+
+		Serial.println("");
+	}
+}
+
+
+/*
+16音符毎MIDIクロックカウントが後半クロックになったらゲートをオフする
+*/
+void trackPlay::_gate_off_16note() {
+
+	unsigned char  _note_on	=	_sequenceMap->paterns[_bank][_pattern].steps[_step].note_on;
+	bool _slide 	=	_sequenceMap->paterns[_bank][_pattern].steps[_step].slide;
+
+	if (_midiclock_16note == MIDICLOCK_GATEOFF_16NOTE) {
+
+		Serial.print("_gate_off_16note() ");
+		Serial.print(" bank:");
+		Serial.print(_bank);
+		Serial.print(" pattern:");
+		Serial.print(_pattern);
+		Serial.print(" step:");
+		Serial.print(_step);
+		Serial.print(" note_on:");
+		Serial.print(_note_on);
+		Serial.print(" slide:");
+		Serial.print(_slide);
+
+		if (( STEP_NOTE_ON_NORMAL == _note_on) || ( STEP_NOTE_OFF == _note_on)) {
+			_voltage->gate(GATE_OFF);	//gate
+		}
+		Serial.println("");
+	}
+
+}
+
+/*
+16音符毎MIDIクロックカウントが最終クロックになったら次に演奏するパターン&ステップを決定する
+*/
+void trackPlay::_next_step_16note() {
+
+	bool _laststep 		=	_sequenceMap->paterns[_bank][_pattern].steps[_step].lastStep;
+	bool _nextPattern 	=	false;
+
+	if (_midiclock_16note == MIDICLOCK_STOP_16NOTE) {
+
+		Serial.print("_next_step_16note() ");
+		Serial.print(" bank:");
+		Serial.print(_bank);
+		Serial.print(" pattern:");
+		Serial.print(_pattern);
+		Serial.print(" step:");
+		Serial.print(_step);
+		Serial.print(" laststep:");
+		Serial.print(_laststep);
+
+		//現在のステップが最終ステップなら「ステップ=1」に設定する
+		if (_laststep)	{
+			_step=STEP_START_IDX;
+			_nextPattern = true;
+
+		//現在のステップが通常ステップなら次ステップに設定する
+		} else if (!_laststep){
+			_step++;
+
+			if(_step>=PATERN_STEP_LENGTH){
+				_step=STEP_START_IDX;
+				_nextPattern = true;
+			}
+		}
+
+		//次に演奏するパターンを決定する
+		if (_nextPattern) {
+			_track = _next_track;
+			_pattern = _next_pattern;
+		}
+
+		Serial.print(" EDITED:_pattern:");
+		Serial.print(_pattern);
+		Serial.print(" EDITED:_next_pattern:");
+		Serial.print(_next_pattern);
+		Serial.println("");
+	}
+
+
 }
 

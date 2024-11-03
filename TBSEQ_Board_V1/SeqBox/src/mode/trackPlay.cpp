@@ -264,6 +264,9 @@ void	trackPlay::changeRunStop() {
 
 		}
 
+		////現在トラックステップを1に戻す
+		_trackStep=TRACK_STEP_START_IDX;	
+
 		////現在ステップを1に戻す
 		_step=STEP_START_IDX;					
 
@@ -288,30 +291,14 @@ int	trackPlay::getCurrnetTrack(){
 	return	_track;
 }
 
-/*
-指定トラックから演奏するバンク/パターンを取得する
-引数:指定トラック(1-13)
-	演奏トラックステップ(1-16)
-	演奏バンク(1-4)
-	演奏パターン(1-8)
-*/
-void	trackPlay::getTrack2Pattern(int track, 
-									int trackStep,  
-									unsigned char* ptBank , 
-									unsigned char* ptPattern , 
-									unsigned char* ptTransport , 
-									bool* ptLastStep){
-	*ptBank			=	_trackMap->tracks[track].trackSteps[trackStep].bank;
-	*ptPattern		=	_trackMap->tracks[track].trackSteps[trackStep].pattern;
-	*ptTransport	=	_trackMap->tracks[track].trackSteps[trackStep].transport;
-	*ptLastStep		=	_trackMap->tracks[track].trackSteps[trackStep].lastStep;
-}
-
 
 /*
 16音符毎MIDIクロックカウントが最初ならゲートをオンする
 */
 void trackPlay::_gate_on_16note() {
+
+	//指定トラックから演奏するバンク/パターンを取得する
+	getTrack2Pattern(_track, _trackStep, &_bank, &_pattern, &_transport, &_tracklastStep);
 
 	bool _up		=	_sequenceMap->paterns[_bank][_pattern].steps[_step].up;
 	bool _down		=	_sequenceMap->paterns[_bank][_pattern].steps[_step].down;
@@ -319,11 +306,14 @@ void trackPlay::_gate_on_16note() {
 	bool _slide		=	_sequenceMap->paterns[_bank][_pattern].steps[_step].slide;
 	unsigned char _note_on	=	_sequenceMap->paterns[_bank][_pattern].steps[_step].note_on;
 	unsigned char _note_relative = _sequenceMap->paterns[_bank][_pattern].steps[_step].note - static_cast<unsigned char>(NOTE_PWM_INDEX::NOTE_C2);
+	_transport	=	_transport - static_cast<unsigned char>(NOTE_PWM_INDEX::NOTE_C2);
 
 	if(_midiclock_16note == MIDICLOCK_START_16NOTE){
 		Serial.print("_gate_on_16note() MIDICLOCK_START_16NOTE ");
 		Serial.print(" track:");
 		Serial.print(_track);
+		Serial.print(" _trackStep:");
+		Serial.print(_trackStep);
 		Serial.print(" bank:");
 		Serial.print(_bank);
 		Serial.print(" pattern:");
@@ -357,7 +347,7 @@ void trackPlay::_gate_on_16note() {
 			}
 
 			//NOTE_PWM_INDEX のインデックス値を算出する
-			_note_CV	=	_note_CV	+	_note_relative;	
+			_note_CV	=	_note_CV	+	_note_relative + _transport;	
 			Serial.print(" CV:");
 			Serial.print(_note_CV);
 			_voltage->cv(_note_CV);  //CVを設定する
@@ -376,6 +366,9 @@ void trackPlay::_gate_on_16note() {
 16音符毎MIDIクロックカウントが後半クロックになったらゲートをオフする
 */
 void trackPlay::_gate_off_16note() {
+
+	//指定トラックから演奏するバンク/パターンを取得する
+	getTrack2Pattern(_track, _trackStep, &_bank, &_pattern, &_transport, &_tracklastStep);
 
 	unsigned char  _note_on	=	_sequenceMap->paterns[_bank][_pattern].steps[_step].note_on;
 	bool _slide 	=	_sequenceMap->paterns[_bank][_pattern].steps[_step].slide;
@@ -407,8 +400,12 @@ void trackPlay::_gate_off_16note() {
 */
 void trackPlay::_next_step_16note() {
 
+	//指定トラックから演奏するバンク/パターンを取得する
+	getTrack2Pattern(_track, _trackStep, &_bank, &_pattern, &_transport, &_tracklastStep);
+
 	bool _laststep 		=	_sequenceMap->paterns[_bank][_pattern].steps[_step].lastStep;
-	bool _nextPattern 	=	false;
+	bool _nextTrackStep	=	false;
+	bool _nextTrack	=	false;
 
 	if (_midiclock_16note == MIDICLOCK_STOP_16NOTE) {
 
@@ -433,20 +430,40 @@ void trackPlay::_next_step_16note() {
 
 			if(_step>=PATERN_STEP_LENGTH){
 				_step=STEP_START_IDX;
-				_nextPattern = true;
+				_nextTrackStep = true;
 			}
 		}
 
-		//次に演奏するパターンを決定する
-		if (_nextPattern) {
-			_track = _next_track;
-			_pattern = _next_pattern;
+
+		//次のトラックステップを演奏する
+		if ( _nextTrackStep ){
+			//現在のトラックステップが最終トラックなら「トラックステップ=1」に設定する
+			if (_tracklastStep)	{
+				_trackStep = TRACK_STEP_START_IDX;
+				_nextTrack = true;
+
+			//現在のトラックステップが通常ステップなら次トラックステップに設定する
+			} else if (!_tracklastStep){
+				_trackStep++;
+
+				//16トラックステップを超えたら「トラックステップ=1」に設定する
+				if(_step>=TRACK_STEP_LENGTH){
+					_trackStep = TRACK_STEP_START_IDX;
+					_nextTrack = true;
+				}
+			}
 		}
 
-		Serial.print(" EDITED:_pattern:");
-		Serial.print(_pattern);
-		Serial.print(" EDITED:_next_pattern:");
-		Serial.print(_next_pattern);
+		//次のトラックに切り替える
+		if ( _nextTrack ){
+			_track = _next_track;
+		}
+
+
+		Serial.print(" EDITED:_track:");
+		Serial.print(_track);
+		Serial.print(" EDITED:_next_track:");
+		Serial.print(_next_track);
 		Serial.println("");
 	}
 

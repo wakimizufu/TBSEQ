@@ -203,3 +203,25 @@ MIDI:ストップ受信フラグを設定
 void	mode::setMIDIStop(bool value){
 	_MIDI_Stop=value;
 }
+
+
+
+/*
+指定トラックから演奏するバンク/パターンを取得する
+引数:指定トラック(1-13)
+	演奏トラックステップ(1-16)
+	演奏バンク(1-4)
+	演奏パターン(1-8)
+*/
+void	mode::getTrack2Pattern(int track, 
+								int trackStep,  
+								unsigned char* ptBank , 
+								unsigned char* ptPattern , 
+								unsigned char* ptTransport , 
+								bool* ptLastStep){
+	*ptBank			=	_trackMap->tracks[track].trackSteps[trackStep].bank;
+	*ptPattern		=	_trackMap->tracks[track].trackSteps[trackStep].pattern;
+	*ptTransport	=	_trackMap->tracks[track].trackSteps[trackStep].transport;
+	*ptLastStep		=	_trackMap->tracks[track].trackSteps[trackStep].lastStep;
+}
+

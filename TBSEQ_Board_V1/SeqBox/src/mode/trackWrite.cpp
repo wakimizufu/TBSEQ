@@ -137,6 +137,16 @@ void	trackWrite::execStopSequence() {
 	//指定トラックから演奏するバンク/パターンを取得する
 	getTrack2Pattern(_track, _trackStep, &_bank, &_pattern, &_transport, &_tracklastStep);
 
+
+	/*
+	ラン/ストップフラグ:ストップ 転調設定を実行
+	*/
+	if (	execTransport()	){
+		//転調設定を行ったら以下の処理は行わずそのまま終了
+		return;
+	}
+
+
 	//LED 表示更新
 	_panelManager->setLEDRow(LED_ROW_0, 0x0000);
 	_panelManager->setLEDRow(LED_ROW_1, 0x0000);
@@ -145,82 +155,38 @@ void	trackWrite::execStopSequence() {
 	
 	//バンク:指定バンク数に応じたLEDを設定する
 	setBackLED(_bank);
-
-	_panelManager->setLED(static_cast<int>(LED::UP), _up);
-	_panelManager->setLED(static_cast<int>(LED::DOWN), _down);
 	_panelManager->setLED(static_cast<int>(LED::SLIDE), _slide);
-	_panelManager->setLED(static_cast<int>(LED::ACC), _acc);
-	_panelManager->setLED(static_cast<int>(LED::LENMAX), _laststep);
-	_panelManager->setLED(_noteOnLED[_note_relative], true);
-
-
-
-
-	if	(	STEP_NOTE_ON_NORMAL	==	_note_on	)	{
-		_panelManager->setLED(static_cast<int>(LED::NOTE_ON), true);
-	} else if (	STEP_NOTE_ON_TIE	==	_note_on	)	{
-		_panelManager->setLED(static_cast<int>(LED::NOTE_TIE), true);
-	}
-
-
-	if (_run_stop == RUN_STOP::RUN){
-		_panelManager->setLED(static_cast<int>(LED::RUN_STOP), true);
-	}	else	if (_run_stop == RUN_STOP::STOP) {
-	}
+	_panelManager->setLED(static_cast<int>(LED::LENMAX), _tracklastStep);
+	_panelManager->setLED(_noteOnLED[_pattern], true);
 
 	//ステップ:指定ステップ数に応じたLEDを設定する
-	setStepLED(_step);
+	setStepLED(_trackStep);
 
-	//バンク:指定バンク数に応じたLEDを設定する
-	setBackLED(_bank);
 
-	//SW ノート:発音ノートを更新
-	for (i=static_cast<int>(Switch::C2) ; i>=static_cast<int>(Switch::C) ; i--){
+	//SW ノート:演奏バンクを更新
+	for (i=static_cast<int>(Switch::BANK_D) ; i>=static_cast<int>(Switch::BANK_A) ; i--){
 		if (_onClickSwtich[i]) {
-			_sequenceMap->paterns[_bank][_pattern].steps[_step].note = static_cast<unsigned char>(i) + static_cast<unsigned char>(NOTE_PWM_INDEX::NOTE_C2);
+			_trackMap->tracks[_track].trackSteps[_trackStep].bank = i - static_cast<int>(Switch::BANK_A);
 			break;
 		}
 	}
 
-	//SW ノート:ノートオンを更新
-	if	(	_onClickSwtich[static_cast<int>(Switch::NOTE)]	)	{
-		if	(	STEP_NOTE_ON_NORMAL	==	_note_on	)	{
-			_sequenceMap->paterns[_bank][_pattern].steps[_step].note_on	=	STEP_NOTE_ON_TIE;
-		} else if (	STEP_NOTE_ON_TIE	==	_note_on	)	{
-			_sequenceMap->paterns[_bank][_pattern].steps[_step].note_on	=	STEP_NOTE_OFF;
-		} else if (	STEP_NOTE_OFF	==	_note_on	)	{
-			_sequenceMap->paterns[_bank][_pattern].steps[_step].note_on	=	STEP_NOTE_ON_NORMAL;
+	//SW ノート:演奏パターンを更新
+	for (i=static_cast<int>(Switch::C2) ; i>=static_cast<int>(Switch::C) ; i--){
+		if (_onClickSwtich[i]) {
+			_trackMap->tracks[_track].trackSteps[_trackStep].pattern = i;
+			break;
 		}
-	}
-
-	//SW アクセントを更新
-	if	(	_onClickSwtich[static_cast<int>(Switch::ACC)]	)	{
-		_sequenceMap->paterns[_bank][_pattern].steps[_step].acc	=	!_acc;
-	}
-	
-
-	//SW スライドを更新
-	if	(	_onClickSwtich[static_cast<int>(Switch::SLIDE)]	)	{
-		_sequenceMap->paterns[_bank][_pattern].steps[_step].slide	=	!_slide;
 	}
 
 	//SW ラストステップを更新
 	if	(	_onClickSwtich[static_cast<int>(Switch::LENMAX)]	)	{
 
-		if ( MIDI_STEP_MAX > (_step + 1)){
-		_sequenceMap->paterns[_bank][_pattern].steps[_step].lastStep	=	!_laststep;
+		if ( TRACK_STEP_LENGTH > (_trackStep + 1)){
+		_trackMap->tracks[_track].trackSteps[_trackStep].lastStep = !_tracklastStep;
 		}
 	}
 
-	//SW UPを更新
-	if	(	_onClickSwtich[static_cast<int>(Switch::UP)]	)	{
-		_sequenceMap->paterns[_bank][_pattern].steps[_step].up	=	!_up;
-		_sequenceMap->paterns[_bank][_pattern].steps[_step].down =false;
-	//SW DOWNを更新
-	}	 else if	(	_onClickSwtich[static_cast<int>(Switch::DOWN)]	)	{
-		_sequenceMap->paterns[_bank][_pattern].steps[_step].up	=false;
-		_sequenceMap->paterns[_bank][_pattern].steps[_step].down	=	!_down;
-	}
 
 
 
@@ -228,87 +194,59 @@ void	trackWrite::execStopSequence() {
 	//SW NEXT 次のステップに移行
 	if	(	_onClickSwtich[static_cast<int>(Switch::NEXT)]	)	{
 
-		Serial.print(" paternWrite::execStopSequence Switch::NEXT");
+		Serial.print(" trackWrite::execStopSequence Switch::NEXT");
+		Serial.print(" _trackStep:");
+		Serial.print(_trackStep);
 		Serial.print(" bank:");
 		Serial.print(_bank);
 		Serial.print(" _pattern:");
 		Serial.print(_pattern);
-		Serial.print(" _step:");
-		Serial.print(_step);
-		Serial.print(" _laststep:");
-		Serial.print(_laststep);
+		Serial.print(" _tracklastStep:");
+		Serial.print(_tracklastStep);
 		
-		if(_laststep)	{
-			_step	=	STEP_START_IDX;
-		} else if (!_laststep) {
-			_step++;
+		if(_tracklastStep)	{
+			_trackStep	=	TRACK_STEP_START_IDX;
+		} else if (!_tracklastStep) {
+			_trackStep++;
 		}
 
 
-		Serial.print(" next _step:");
-		Serial.print(_step);
+		Serial.print(" next _trackStep:");
+		Serial.print(_trackStep);
 		Serial.println("");
 
 	//SW BACK 前のステップに移行
 	} else if (	_onClickSwtich[static_cast<int>(Switch::BACK)]	)	{
 
-		Serial.print(" paternWrite::execStopSequence Switch::BACK");
+		Serial.print(" trackWrite::execStopSequence Switch::BACK");
+		Serial.print(" _trackStep:");
+		Serial.print(_trackStep);
 		Serial.print(" bank:");
 		Serial.print(_bank);
 		Serial.print(" _pattern:");
 		Serial.print(_pattern);
-		Serial.print(" _step:");
-		Serial.print(_step);
+		Serial.print(" _tracklastStep:");
+		Serial.print(_tracklastStep);
 
-		_step--;
-		if( _step < STEP_START_IDX)	{
+		_trackStep--;
+		if( _trackStep < TRACK_STEP_START_IDX)	{
 			
-			_step	=	STEP_START_IDX;
+			_trackStep	=	TRACK_STEP_START_IDX;
 
-			for (i=STEP_START_IDX ; i<PATERN_STEP_LENGTH ; i++){
-				if(_sequenceMap->paterns[_bank][_pattern].steps[i].lastStep){
-					_step	=	i;
+			for (i=TRACK_STEP_START_IDX ; i<TRACK_STEP_LENGTH ; i++){
+				if(_trackMap->tracks[_track].trackSteps[_trackStep].lastStep){
+					_trackStep	=	i;
 					break;
 				}
 			}
 
 		}
 
-		Serial.print(" next _step:");
-		Serial.print(_step);
+		Serial.print(" next _trackStep:");
+		Serial.print(_trackStep);
 		Serial.println("");
 	}
 
-
-	//SW NEXT/BACK 設定したノートを発音する
-	if	(	(	_currentSwtich[static_cast<int>(Switch::NEXT)]	)	||
-			(	_currentSwtich[static_cast<int>(Switch::BACK)]	) )	{
-		
- 		int _note_CV=_sequenceMap->paterns[_bank][_pattern].steps[_step].note -	static_cast<int>(NOTE_PWM_INDEX::NOTE_C2);
-		
-		if ( _sequenceMap->paterns[_bank][_pattern].steps[_step].up ) {
-			_note_CV	=	_note_CV	+	static_cast<int>(NOTE_PWM_INDEX::NOTE_C3);
-		} else if ( _sequenceMap->paterns[_bank][_pattern].steps[_step].down ) {
-			_note_CV	=	_note_CV	+	static_cast<int>(NOTE_PWM_INDEX::NOTE_C1);
-		} else{
-			_note_CV	=	_note_CV	+	static_cast<int>(NOTE_PWM_INDEX::NOTE_C2);
-		}
-
-		_voltage->cv(_note_CV);  //CVを設定する
-		_voltage->gate(GATE_ON);	//gate
-		_voltage->accent(!_sequenceMap->paterns[_bank][_pattern].steps[_step].acc);	//acc
-		_voltage->slide(_sequenceMap->paterns[_bank][_pattern].steps[_step].slide);//slide
-
-	} else {
-
-		if (_run_stop == RUN_STOP::STOP)	{
-			_voltage->gate(GATE_OFF);	//gate
-			_voltage->accent(ACCENT_OFF);	//acc
-			_voltage->slide(SLIDE_OFF);//slide
-		}
-	}
-
-	
 }
 
 /*
@@ -360,7 +298,48 @@ void trackWrite::_gate_off_16note() {
 void trackWrite::_next_step_16note() {
 }
 
+/*
+ラン/ストップフラグ:ストップ 転調設定を実行
+*/
+bool	trackWrite::execTransport() {
 
+	//NOTEボタン押下状態より機能切り替えをチェック⇒未押下なら通常処理に戻る
+	bool _execTransport	= _panelManager->getSwitch(static_cast<int>(Switch::SLIDE));
+	if (!_execTransport) {
+		return false;
+	}
+
+
+	//LED点灯初期化
+	_panelManager->setLEDRow(LED_ROW_0, 0x0000);
+	_panelManager->setLEDRow(LED_ROW_1, 0x0000);
+	_panelManager->setLED(static_cast<int>(LED::PLAY_WRITE), true);
+	
+	//バンク:指定バンク数に応じたLEDを設定する
+	setBackLED(_bank);
+	_panelManager->setLED(static_cast<int>(LED::SLIDE), true);
+
+	//ステップ:指定ステップ数に応じたLEDを設定する
+	setStepLED(_trackStep);
+
+	unsigned char _transport_relative = _trackMap->tracks[track].trackSteps[trackStep].transport - static_cast<unsigned char>(NOTE_PWM_INDEX::NOTE_C2);
+	_panelManager->setLED(_noteOnLED[_transport_relative], true);
+
+
+	//各ノートボタンを高音優先で押下状態を取得する
+	int i;
+	int  currentSwitch=0xFF;
+	for (i=static_cast<int>(Switch::C2) ; i>=static_cast<int>(Switch::C) ; i--){
+		if (_currentSwtich[i]) {
+			_trackMap->tracks[track].trackSteps[trackStep].transport=i;
+			break;
+		}
+	}
+
+
+
+	return true;
+}
 
 
 

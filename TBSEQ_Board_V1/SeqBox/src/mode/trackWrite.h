@@ -54,6 +54,11 @@ class trackWrite: public mode{
 		*/
 		void	execStopClock();
 
+		/*
+		ラン/ストップフラグ:ストップ 転調設定を実行
+		*/
+		bool	execTransport();
+
     private:
 		int		_LEDCount;	//LED点滅カウント
 		bool	_pushRunSW;	//ラン/ストップSW前回状態フラグ

@@ -1,6 +1,6 @@
 #include "debugMode.h"
 
-debugMode::debugMode(panelManager* ptPanelManager, voltage* ptVoltage, sequenceMap* ptSequenceMap) :mode(MODE_NAME::DEBUG, ptPanelManager, ptVoltage, ptSequenceMap) {
+debugMode::debugMode(panelManager* ptPanelManager, voltage* ptVoltage, sequenceMap* ptSequenceMap, trackMap* ptTrackMap) :mode(MODE_NAME::DEBUG, ptPanelManager, ptVoltage, ptSequenceMap, ptTrackMap) {
 
 	//各状態を初期値に変更する
 	_run_stop = RUN_STOP::STOP;		//ラン/ストップフラグ

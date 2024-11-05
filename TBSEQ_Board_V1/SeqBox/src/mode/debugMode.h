@@ -16,7 +16,7 @@ class debugMode: public mode{
 		ptPanelManager:panelManagerクラスポインタ
 		ptVoltage     :voltageクラスポインタ
     */
-		debugMode(panelManager* ptPanelManager, voltage* ptVoltage, sequenceMap* ptSequenceMap);
+		debugMode(panelManager* ptPanelManager, voltage* ptVoltage, sequenceMap* ptSequenceMap, trackMap* ptTrackMap);
 
 		/*
 		[仮想関数]カウント閾値達成時に実行されるアプリケーションを実施する

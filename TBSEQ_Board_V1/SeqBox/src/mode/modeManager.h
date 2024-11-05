@@ -28,7 +28,6 @@
 #define THD_MODE_MANAGER 160
 
 
-
 class modeManager: public countTriger
 {
   public:

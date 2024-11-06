@@ -83,7 +83,7 @@ void	modeManager::changeDebugMode(){
 	_debugMode = true;	//デバッグフラグ (true->デバッグモード ,false->通常モード)
 
 	//現在のモードクラスの初期値を設定する
-	_currentMode = new debugMode( _panelManager, _voltage, &_sequenceMap);
+	_currentMode = new debugMode( _panelManager, _voltage, &_sequenceMap, &_trackMap);
 }
 
 /*
@@ -167,7 +167,7 @@ void	modeManager::presetTrack(){
 	//シークエンスマップをFRAMからロードして設定する
 	if	( _connect ) {
 
-		for (t = TRACKMAP_START_IDX; t < TRACKMAP_PATTERN_LENGTH; t++) {
+		for (t = TRACKMAP_START_IDX; t < TRACKMAP_TRACK_LENGTH; t++) {
 			_memAddr = (TRACK_ALLBYTE * t) + TRACKMAP_START_ADDRESS;
 
 			Serial.print("modeManager::presetTrack() _memAddr:");
@@ -192,7 +192,7 @@ void	modeManager::presetTrack(){
 
 	} else if (!_connect) {
 		presetTrackBitstream _presetTrackBitstream;
-		for (t = TRACKMAP_START_IDX; t < TRACKMAP_PATTERN_LENGTH; t++) {
+		for (t = TRACKMAP_START_IDX; t < TRACKMAP_TRACK_LENGTH; t++) {
 			_trackMap.setBitstream(t, _presetTrackBitstream.track_preset_bitstream);
 		}
 	}

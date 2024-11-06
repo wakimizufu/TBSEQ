@@ -63,7 +63,8 @@ class trackWrite: public mode{
 		int		_LEDCount;	//LED点滅カウント
 		bool	_pushRunSW;	//ラン/ストップSW前回状態フラグ
 
-		int	_next_pattern;	//次に演奏する指定パターン(1-8)
+		int _transport;     //現在トラックの転調(0-12)
+		bool _tracklastStep;     //現在トラックの最終ステップ(true/false)
 
 		bool _LEDtempo; //テンポカウント時LED点灯フラグ
 		int	 _LEDstep;	//テンポカウント時ステップカウンタ

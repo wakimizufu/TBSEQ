@@ -7,7 +7,7 @@
 	ptSequenceMap :sequenceMapクラスポインタ
 	ptTrackMap    :trackMapクラスポインタ
 */
-trackPlay::trackPlay(panelManager* ptPanelManager, voltage* ptVoltage, sequenceMap* ptSequenceMap, trackMap* ptTrackMap) :mode(MODE_NAME::TRACK_PLAY, ptPanelManager, ptVoltage, ptSequenceMap, trackMap* ptTrackMap) {
+trackPlay::trackPlay(panelManager* ptPanelManager, voltage* ptVoltage, sequenceMap* ptSequenceMap, trackMap* ptTrackMap) :mode(MODE_NAME::TRACK_PLAY, ptPanelManager, ptVoltage, ptSequenceMap, ptTrackMap) {
 
 	//各状態を初期値に変更する
 	_track		=	TRACKMAP_START_IDX;			//指定トラック
@@ -19,7 +19,7 @@ trackPlay::trackPlay(panelManager* ptPanelManager, voltage* ptVoltage, sequenceM
 	_midiclock_16note = MIDICLOCK_START_16NOTE;	//16音符毎MIDIクロックカウント
     _LEDtempo=true;                             //テンポカウント時LED点灯フラグ
 	_LEDstep=0;									//テンポカウント時ステップカウンタ
-	_next_pattern=_pattern;						//次に演奏する指定パターン(1-8)
+	_next_track=_track;							//次に演奏する指定トラック(1-13)
 
 	//ラン/ストップフラグ←ストップ
 	_run_stop = RUN_STOP::STOP;
@@ -160,37 +160,32 @@ void	trackPlay::execStopSequence() {
 	int i;
 	int _track_index, _bank_index;
 
-	//パターン選択中をチェック
-	if ( false==_execKeyborad ){
+	/*
+	Serial.print("trackPlay::execStopSequence()");
+	Serial.print(" _track:");
+	Serial.print(_track);
+	Serial.print(" _scanTrackLED[_track]:");
+	Serial.print(_scanTrackLED[_track]);
+	Serial.println("");
+	*/
 
-        /*
-		Serial.print("trackPlay::execStopSequence()");
-		Serial.print(" _track:");
-		Serial.print(_track);
-		Serial.print(" _scanTrackLED[_track]:");
-		Serial.print(_scanTrackLED[_track]);
-		Serial.println("");
-        */
+	_panelManager->setLEDRow(LED_ROW_0, 0x0000);
+	_panelManager->setLEDRow(LED_ROW_1, 0x0000);
+	_panelManager->setLED(static_cast<int>(LED::TRACK), true);
+	_panelManager->setLED(_scanTrackLED[_track], _LEDtempo);		//直前に選択したパターンのLEDを点灯
 
-		_panelManager->setLEDRow(LED_ROW_0, 0x0000);
-		_panelManager->setLEDRow(LED_ROW_1, 0x0000);
-		_panelManager->setLED(static_cast<int>(LED::TRACK), true);
-		_panelManager->setLED(_scanTrackLED[_track], _LEDtempo);		//直前に選択したパターンのLEDを点灯
-	
-		//パターン:演奏するパターンを選択
-		for (i=0;i<TRACKMAP_TRACK_LENGTH ;i++){
-			_track_index=_scanPatternSwich[i];	
+	//パターン:演奏するパターンを選択
+	for (i=0;i<TRACKMAP_TRACK_LENGTH ;i++){
+		_track_index=_scanPatternSwich[i];	
 
-			//押下中ノートボタンがあれば、パターン選択中とみなす
-			if (_currentSwtich[_track_index]){
-				_track = i;
-				_next_track = _track;
-				_panelManager->setLED(_scanTrackLED[_track], _LEDtempo);		//直前に選択したパターンのLEDを点灯
-				break;
-			}
+		//押下中ノートボタンがあれば、パターン選択中とみなす
+		if (_currentSwtich[_track_index]){
+			_track = i;
+			_next_track = _track;
+			_panelManager->setLED(_scanTrackLED[_track], _LEDtempo);		//直前に選択したパターンのLEDを点灯
+			break;
 		}
 	}
-
 }
 
 
@@ -422,7 +417,7 @@ void trackPlay::_next_step_16note() {
 		//現在のステップが最終ステップなら「ステップ=1」に設定する
 		if (_laststep)	{
 			_step=STEP_START_IDX;
-			_nextPattern = true;
+			_nextTrackStep = true;
 
 		//現在のステップが通常ステップなら次ステップに設定する
 		} else if (!_laststep){

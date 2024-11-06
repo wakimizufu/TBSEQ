@@ -49,6 +49,14 @@ int	mode::getCurrnetTrack(){
 現在の指定パターンを取得する
 戻り値：指定パターン(1-8)
 */
+int	mode::getCurrnetPattern(){
+	return _pattern;
+}
+
+ /*
+現在の指定パターンを取得する
+戻り値：指定パターン(1-8)
+*/
 int	mode::getCurrnetBank(){
 	return _bank;
 }
@@ -163,10 +171,10 @@ void	mode::setPattern(int value){
 */
 void	mode::setTrack(int value){
 
-	if ( (value < TRACKMAP_START_IDX) || (value >= TRACKMAP_PATTERN_LENGTH) ) {
-		_pattern = TRACKMAP_START_IDX;
+	if ( (value < TRACKMAP_START_IDX) || (value >= TRACKMAP_TRACK_LENGTH) ) {
+		_track = TRACKMAP_START_IDX;
 	} else {
-		_pattern = value;
+		_track = value;
 	}
 }
 
@@ -215,9 +223,9 @@ void	mode::setMIDIStop(bool value){
 */
 void	mode::getTrack2Pattern(int track, 
 								int trackStep,  
-								unsigned char* ptBank , 
-								unsigned char* ptPattern , 
-								unsigned char* ptTransport , 
+								int* ptBank , 
+								int* ptPattern , 
+								int* ptTransport , 
 								bool* ptLastStep){
 	*ptBank			=	_trackMap->tracks[track].trackSteps[trackStep].bank;
 	*ptPattern		=	_trackMap->tracks[track].trackSteps[trackStep].pattern;

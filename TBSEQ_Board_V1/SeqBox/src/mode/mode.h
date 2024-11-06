@@ -191,9 +191,9 @@ class mode{
 	*/
 	void	getTrack2Pattern(int track, 
 							int trackStep,  
-							unsigned char* ptBank , 
-							unsigned char* ptPattern , 
-							unsigned char* ptTransport , 
+							int* ptBank , 
+							int* ptPattern , 
+							int* ptTransport , 
 							bool* ptLastStep);
     protected:
     	MODE_NAME	_modeName;	//モード名

@@ -272,6 +272,7 @@ void	modeManager::_changeMode() {
 	//ボタン押下状況に応じたモード名を設定
 	MODE_NAME changeMode = MODE_NAME::NONE;
 	int _currentPatern = PATTERN_START_IDX;
+	int _currentTrack  = TRACKMAP_START_IDX;
 	bool	_track	=	false;
 	bool	_patern	=	false;
 	bool	_write	=	false;
@@ -313,7 +314,7 @@ void	modeManager::_changeMode() {
 			Serial.print("MODE_NAME::PATERN_WRITE->PATERN_PLAY");
 			Serial.print(" _bank:");
 			Serial.print(_bank);
-			Serial.print(" _currentPatern:");
+			Serial.print(" _currentPatern:"); 
 			Serial.print(_currentPatern);
 			Serial.println("");
 
@@ -326,6 +327,7 @@ void	modeManager::_changeMode() {
 		}
 
 	} else if	(	MODE_NAME::TRACK_PLAY == mode ) {		//トラックプレイ
+		_currentTrack  = _currentMode->getCurrnetTrack();
 		_track	=	true;
 		_patern	=	false;
 		_write	=	false;
@@ -344,6 +346,21 @@ void	modeManager::_changeMode() {
 				
 		if	(	_SwWrite	)	{
 			changeMode = MODE_NAME::TRACK_PLAY;
+			_currentTrack  = _currentMode->getCurrnetTrack();
+
+			Serial.print("MODE_NAME::TRACK_WRITE->TRACK_PLAY");
+			Serial.print(" _currentTrack:");
+			Serial.print(_currentTrack);
+			Serial.println("");
+
+			//パターン配列からビットストリームに設定する =>トラックライトのデバッグが終わったら書き込めるようにする
+			/*
+			unsigned char _current_track_bitstream[TRACK_ALLBYTE];
+			_trackMap.getBitstream(_currentTrack , _current_track_bitstream);
+
+			int _startAddr = (_currentTrack * PATTERN_ALLBYTE) + TRACKMAP_START_ADDRESS;
+			_panelManager->saveFRAM( _startAddr, _current_track_bitstream , TRACK_ALLBYTE);		
+			*/
 		}
 
 	}
@@ -374,12 +391,12 @@ void	modeManager::_changeMode() {
 
 	}
 	else if (MODE_NAME::TRACK_PLAY == changeMode) {
-		//_currentMode = new trackPlay(	_currentMode	,	_panelManager	,	_voltage	,	&_sequenceMap	);
-
+		_currentMode = new trackPlay( _panelManager, _voltage, &_sequenceMap, &_trackMap);
+		_currentMode->setTrack(_currentTrack);
 	}
 	else if (MODE_NAME::TRACK_WRITE == changeMode) {
-		//_currentMode = new trackWrite(	_currentMode	,	_panelManager	,	_voltage	,	&_sequenceMap	);
-
+		_currentMode = new trackWrite( _panelManager, _voltage, &_sequenceMap, &_trackMap, _currentTrack);
+		_currentMode->setTrack(_currentTrack);
 	}
 
 }

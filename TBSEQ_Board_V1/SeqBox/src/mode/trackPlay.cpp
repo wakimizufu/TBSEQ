@@ -174,9 +174,9 @@ void	trackPlay::execStopSequence() {
 	_panelManager->setLED(static_cast<int>(LED::TRACK), true);
 	_panelManager->setLED(_scanTrackLED[_track], _LEDtempo);		//直前に選択したパターンのLEDを点灯
 
-	//パターン:演奏するパターンを選択
+	//トラック:演奏するトラックを選択
 	for (i=0;i<TRACKMAP_TRACK_LENGTH ;i++){
-		_track_index=_scanPatternSwich[i];	
+		_track_index=_scanTrackSwich[i];	
 
 		//押下中ノートボタンがあれば、パターン選択中とみなす
 		if (_currentSwtich[_track_index]){

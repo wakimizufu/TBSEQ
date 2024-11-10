@@ -58,7 +58,8 @@ bool syncTriger_flag = false;
 //タイマー割り込み関数
 bool toggle_panelWR(struct repeating_timer *t) {
   timer_flag = true;
-  return true; // repeat? true
+  //return true; // repeat? true
+  return false; // repeat? true
 }
 
 
@@ -188,5 +189,7 @@ void loop() {
       }
     }
     
+    //タイマー割り込み/* タイマーの初期化(割込み間隔はusで指定) */
+    add_repeating_timer_us(-32, toggle_panelWR, NULL, &st_timer);
   }
 }

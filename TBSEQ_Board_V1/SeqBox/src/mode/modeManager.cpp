@@ -237,18 +237,22 @@ void	modeManager::_changeMode() {
 			Serial.println("");*/
  
 
-			//_SwTrack	= (( false == _currentSwtich[static_cast<int>(Switch::TRACK)]) && 
-			//               (true == _panelManager->getSwitch(static_cast<int>(Switch::TRACK))));
+			_SwTrack	= (( false == _currentSwtich[static_cast<int>(Switch::TRACK)]) && 
+			               (true == _panelManager->getSwitch(static_cast<int>(Switch::TRACK))));
 			_SwPatern	= (( false == _currentSwtich[static_cast<int>(Switch::PATTERN)]) && 
 			               (true == _panelManager->getSwitch(static_cast<int>(Switch::PATTERN))));
 			_SwWrite	= (( false == _currentSwtich[static_cast<int>(Switch::PLAY_WRITE)]) && 
 			               (true == _panelManager->getSwitch(static_cast<int>(Switch::PLAY_WRITE))));
 
-			/*Serial.print(" _SwPatern:");
+			
+			Serial.print(" _SwTrack:");
+			Serial.print(_SwTrack);
+			Serial.print(" _SwPatern:");
 			Serial.print(_SwPatern);
 			Serial.print(" _SwWrite:");
 			Serial.print(_SwWrite);
-			Serial.println("");*/
+			Serial.println("");
+			
 			
 			_currentSwtich[i] = _panelManager->getSwitch(i);
 		}
@@ -287,6 +291,8 @@ void	modeManager::_changeMode() {
 		/*
 		Serial.print("MODE_NAME::PATERN_PLAY _SwWrite:");
 		Serial.print(_SwWrite);
+		Serial.print(" _SwTrack:");
+		Serial.print(_SwTrack);
 		Serial.println("");
         */
 
@@ -332,12 +338,11 @@ void	modeManager::_changeMode() {
 		_patern	=	false;
 		_write	=	false;
 
-		if	(	_SwPatern	)	{
-			changeMode = MODE_NAME::PATERN_PLAY;
-		} else if (	_SwTrack	)	{
+		if	(	_SwWrite	)	{
 			changeMode = MODE_NAME::TRACK_WRITE;
+		} else if (	_SwPatern	)	{
+			changeMode = MODE_NAME::PATERN_PLAY;
 		}
-
 
 	} else if	(	MODE_NAME::TRACK_WRITE == mode ) {		//トラックライト
 		_track	=	true;
@@ -391,6 +396,11 @@ void	modeManager::_changeMode() {
 
 	}
 	else if (MODE_NAME::TRACK_PLAY == changeMode) {
+
+		Serial.print("MODE_NAME::TRACK_PLAY == changeMode _currentTrack:");
+		Serial.print(_currentTrack);
+		Serial.println("");
+
 		_currentMode = new trackPlay( _panelManager, _voltage, &_sequenceMap, &_trackMap);
 		_currentMode->setTrack(_currentTrack);
 	}

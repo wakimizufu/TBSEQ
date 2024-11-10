@@ -81,6 +81,9 @@ _midiClock.setTempo2Threshold(_tempo.getCountThd());
 //シークエンスマップをFRAMからロードして設定する(ロード出来なかったらプリセットを設定する)
 _modeManager.presetSequence();
 
+//トラックマップをFRAMからロードして設定する(ロード出来なかったらプリセットを設定する)
+_modeManager.presetTrack();
+
 //タイマー割り込み/* タイマーの初期化(割込み間隔はusで指定) */
 add_repeating_timer_us(-32, toggle_panelWR, NULL, &st_timer);
 

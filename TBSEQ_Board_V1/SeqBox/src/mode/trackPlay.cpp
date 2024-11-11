@@ -127,12 +127,22 @@ void	trackPlay::execRunSequence() {
 	_panelManager->setLED(static_cast<int>(LED::RUN_STOP), true);
 	_panelManager->setLED(_scanTrackLED[_track], _LEDtempo);
 
-	
+	//指定トラックから演奏するバンク/パターンを取得する
+	getTrack2Pattern(_track, _trackStep, &_bank, &_pattern, &_transport, &_tracklastStep);
+
 	//ステップ:指定ステップ数に応じたLEDを設定する
 	setStepLED(_step);
 
 	//バンク:指定バンク数に応じたLEDを設定する
 	setBackLED(_bank);
+
+	//トラックステップ:指定トラックステップ数に応じたLEDを設定する
+	setTrackStepLED(_trackStep);
+
+	//トラックステップ:最終トラックステップならLEDを設定する
+	if (_tracklastStep){
+		_panelManager->setLED(static_cast<int>(LED::LENMAX), true);	
+	}
 
 	//次に演奏するパターンを決定する
 	for (i=0;i<TRACKMAP_TRACK_LENGTH ;i++){

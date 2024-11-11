@@ -110,6 +110,38 @@ void	mode::setStepLED(int value){
 	}
 }
 
+
+/*
+トラックステップ:指定トラックステップ数に応じたLEDを設定する
+引数  ：トラックステップ数
+*/
+void	mode::setTrackStepLED(int value){
+
+	_panelManager->setLED(static_cast<int>(LED::NOTE_ON), false);	
+	_panelManager->setLED(static_cast<int>(LED::NOTE_TIE), false);	
+	_panelManager->setLED(static_cast<int>(LED::UP), false);	
+	_panelManager->setLED(static_cast<int>(LED::DOWN), false);	
+
+	if ( value & 0x0008){
+		_panelManager->setLED(static_cast<int>(LED::NOTE_ON), true);	
+	}
+
+	if ( value & 0x0004){
+		_panelManager->setLED(static_cast<int>(LED::NOTE_TIE), true);	
+	}
+
+	if ( value & 0x0002){
+		_panelManager->setLED(static_cast<int>(LED::UP), true);	
+	}
+
+	if ( value & 0x0001){
+		_panelManager->setLED(static_cast<int>(LED::DOWN), true);	
+	}	
+}
+
+
+
+
 /*
 バンク:指定ステップ数に応じたLEDを設定する
 引数  ：指定バンク

@@ -150,6 +150,13 @@ class mode{
 	*/
 	void	setBackLED(int value);
 
+	/*
+	トラックステップ:指定トラックステップ数に応じたLEDを設定する
+    引数  ：トラックステップ数
+	*/
+	void	setTrackStepLED(int value);
+
+
     /*
     ステップ:ステップ開始を設定する
     引数：ステップ開始

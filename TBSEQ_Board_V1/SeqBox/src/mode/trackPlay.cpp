@@ -130,14 +130,14 @@ void	trackPlay::execRunSequence() {
 	//指定トラックから演奏するバンク/パターンを取得する
 	getTrack2Pattern(_track, _trackStep, &_bank, &_pattern, &_transport, &_tracklastStep);
 
-	//ステップ:指定ステップ数に応じたLEDを設定する
-	setStepLED(_step);
+	//パターン:指定パターン数に応じたLEDを設定する
+	setTrackStepLED(_pattern);
 
 	//バンク:指定バンク数に応じたLEDを設定する
 	setBackLED(_bank);
 
 	//トラックステップ:指定トラックステップ数に応じたLEDを設定する
-	setTrackStepLED(_trackStep);
+	setStepLED(_trackStep);
 
 	//トラックステップ:最終トラックステップならLEDを設定する
 	if (_tracklastStep){

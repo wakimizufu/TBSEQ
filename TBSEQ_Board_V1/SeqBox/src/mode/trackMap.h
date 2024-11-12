@@ -111,7 +111,8 @@ public:
 			_byte = *(_bitstream + _bitInd);
 
 			//演奏パターン (1～8:0x0～0x7)
-			tracks[t].trackSteps[s].pattern = (0x07 & _byte) + static_cast<unsigned char>(NOTE_PWM_INDEX::NOTE_C2);
+			//tracks[t].trackSteps[s].pattern = (0x07 & _byte) + static_cast<unsigned char>(NOTE_PWM_INDEX::NOTE_C2);
+            tracks[t].trackSteps[s].pattern = (0x07 & _byte);  
 
 			//演奏バンク   (0:BANK A ～ 3:BANK D)
 			tracks[t].trackSteps[s].bank 	= ((0x18 & _byte) >> 3);

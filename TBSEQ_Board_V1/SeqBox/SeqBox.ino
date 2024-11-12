@@ -54,6 +54,8 @@ struct repeating_timer st_timer;
 bool timer_flag = false;
 uint64_t debugCount = 1;
 bool syncTriger_flag = false;
+uint32_t waitLoopCount = 0;
+uint32_t overCount = 0;
 
 //タイマー割り込み関数
 bool toggle_panelWR(struct repeating_timer *t) {
@@ -113,12 +115,20 @@ void loop() {
     timer_flag = false;
     //gpio_put(LED_BUILTIN, !gpio_get(LED_BUILTIN)); // toggle the LED
 
+    //タイマー割込みを解除する
+    cancel_repeating_timer( &st_timer);
 
     debugCount++;
 
     if ( 0 == debugCount % 25000){
-      Serial.print("debugCount:");
-      Serial.println(debugCount);
+      //Serial.print("debugCount:");
+      //Serial.println(debugCount);
+      /*
+      Serial.print("waitLoopCount:");
+      Serial.print(waitLoopCount);
+      Serial.print(" overCount:");
+      Serial.println(overCount);
+      */
     }
 
     if (50000<debugCount){
@@ -175,7 +185,7 @@ void loop() {
     
     //開始ステップをチェック
     if (_modeManager.getFirstStep()){
-      Serial.println("SeqBox.ino loop() FirstStep");
+      //Serial.println("SeqBox.ino loop() FirstStep");
       _modeManager.setFirstStep(false);
       syncTriger_flag = true;
       _voltage.syncOn();
@@ -194,5 +204,27 @@ void loop() {
     
     //タイマー割り込み/* タイマーの初期化(割込み間隔はusで指定) */
     add_repeating_timer_us(-32, toggle_panelWR, NULL, &st_timer);
+
+  //メインルーチン未実施時はコールバック呼び出し出来ない対策を実装する
+  } else if (!timer_flag){
+
+    //オーバーフロー時の跨ぎ対応は簡略して再度32us経過を待つ
+    if ( waitLoopCount > time_us_32()){
+      waitLoopCount = time_us_32();
+    }
+
+    //前回計測から64us以上ならコールバック呼び出しが機能不全したとみなしてtimer_flagを強制でtrueにする
+    if ( 64 <= (time_us_32()-waitLoopCount)){
+      timer_flag = true;
+      overCount++;
+
+      if ( 100 <= overCount){
+        Serial.println("SeqBox.ino loop() Can't call callback overcount=100");
+        overCount = 0;
+      }
+    }
   }
+
+  //現在の32usカウンタを設定
+  waitLoopCount = time_us_32();
 }

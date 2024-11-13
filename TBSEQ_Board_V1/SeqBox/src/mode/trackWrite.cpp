@@ -154,9 +154,14 @@ void	trackWrite::execStopSequence() {
 	
 	//バンク:指定バンク数に応じたLEDを設定する
 	setBackLED(_bank);
-	_panelManager->setLED(static_cast<int>(LED::SLIDE), true);
 	_panelManager->setLED(static_cast<int>(LED::LENMAX), _tracklastStep);
-	_panelManager->setLED(_noteOnLED[_pattern], true);
+	_panelManager->setLED(_scanPatternLED[_pattern], true);
+
+
+	_transport	=	_transport - static_cast<unsigned char>(NOTE_PWM_INDEX::NOTE_C2);
+	if ( _transport >= 1){
+		_panelManager->setLED(static_cast<int>(LED::SLIDE), true);
+	}
 
 	//ステップ:指定ステップ数に応じたLEDを設定する
 	setStepLED(_trackStep);

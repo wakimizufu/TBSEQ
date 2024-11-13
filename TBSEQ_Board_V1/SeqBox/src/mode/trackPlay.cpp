@@ -351,9 +351,17 @@ void trackPlay::_gate_on_16note() {
 				_note_CV = static_cast<int>(NOTE_PWM_INDEX::NOTE_C2);
 			}
 
+			Serial.print(" CV:");
+			Serial.print(_note_CV);
+			Serial.print("+");
+			Serial.print(_note_relative);
+			Serial.print("+");
+			Serial.print(_transport);
+
 			//NOTE_PWM_INDEX のインデックス値を算出する
 			_note_CV	=	_note_CV	+	_note_relative + _transport;	
-			Serial.print(" CV:");
+
+			Serial.print("=");
 			Serial.print(_note_CV);
 			_voltage->cv(_note_CV);  //CVを設定する
 
@@ -379,7 +387,7 @@ void trackPlay::_gate_off_16note() {
 	bool _slide 	=	_sequenceMap->paterns[_bank][_pattern].steps[_step].slide;
 
 	if (_midiclock_16note == MIDICLOCK_GATEOFF_16NOTE) {
-
+        /*
 		Serial.print("_gate_off_16note() ");
 		Serial.print(" bank:");
 		Serial.print(_bank);
@@ -391,11 +399,11 @@ void trackPlay::_gate_off_16note() {
 		Serial.print(_note_on);
 		Serial.print(" slide:");
 		Serial.print(_slide);
-
+        */
 		if (( STEP_NOTE_ON_NORMAL == _note_on) || ( STEP_NOTE_OFF == _note_on)) {
 			_voltage->gate(GATE_OFF);	//gate
 		}
-		Serial.println("");
+		//Serial.println("");
 	}
 
 }
@@ -414,6 +422,7 @@ void trackPlay::_next_step_16note() {
 
 	if (_midiclock_16note == MIDICLOCK_STOP_16NOTE) {
 
+        /*
 		Serial.print("_next_step_16note() ");
 		Serial.print(" bank:");
 		Serial.print(_bank);
@@ -423,6 +432,7 @@ void trackPlay::_next_step_16note() {
 		Serial.print(_step);
 		Serial.print(" laststep:");
 		Serial.print(_laststep);
+        */
 
 		//現在のステップが最終ステップなら「ステップ=1」に設定する
 		if (_laststep)	{
@@ -464,12 +474,13 @@ void trackPlay::_next_step_16note() {
 			_track = _next_track;
 		}
 
-
+        /*
 		Serial.print(" EDITED:_track:");
 		Serial.print(_track);
 		Serial.print(" EDITED:_next_track:");
 		Serial.print(_next_track);
 		Serial.println("");
+		*/
 	}
 
 

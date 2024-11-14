@@ -238,7 +238,7 @@ void	trackWrite::execStopSequence() {
 			_trackStep	=	TRACK_STEP_START_IDX;
 
 			for (i=TRACK_STEP_START_IDX ; i<TRACK_STEP_LENGTH ; i++){
-				if(_trackMap->tracks[_track].trackSteps[_trackStep].lastStep){
+				if(_trackMap->tracks[_track].trackSteps[i].lastStep){
 					_trackStep	=	i;
 					break;
 				}
@@ -299,6 +299,7 @@ bool	trackWrite::execTransport() {
 	//LED点灯初期化
 	_panelManager->setLEDRow(LED_ROW_0, 0x0000);
 	_panelManager->setLEDRow(LED_ROW_1, 0x0000);
+	_panelManager->setLED(static_cast<int>(LED::TRACK), true);
 	_panelManager->setLED(static_cast<int>(LED::PLAY_WRITE), true);
 	
 	//バンク:指定バンク数に応じたLEDを設定する
@@ -313,16 +314,26 @@ bool	trackWrite::execTransport() {
 
 
 	//各ノートボタンを高音優先で押下状態を取得する
-	int i;
-	int  currentSwitch=0xFF;
-	for (i=static_cast<int>(Switch::C2) ; i>=static_cast<int>(Switch::C) ; i--){
+	for (int i=static_cast<int>(Switch::C2) ; i>=static_cast<int>(Switch::C) ; i--){
 		if (_currentSwtich[i]) {
-			_trackMap->tracks[_track].trackSteps[_trackStep].transport=i;
+			_trackMap->tracks[_track].trackSteps[_trackStep].transport=i + static_cast<unsigned char>(NOTE_PWM_INDEX::NOTE_C2);
+            /*
+			Serial.print("trackWrite::execTransport");
+			Serial.print(" _track:");
+			Serial.print(_track);
+			Serial.print(" _trackStep:");
+			Serial.print(_trackStep);
+			Serial.print(" transport:");
+			Serial.print(_trackMap->tracks[_track].trackSteps[_trackStep].transport);
+			Serial.print(" i:");
+			Serial.print(i);
+			Serial.print(" newValue:");
+			Serial.print(i + static_cast<unsigned char>(NOTE_PWM_INDEX::NOTE_C2));
+			Serial.println("");
+            */
 			break;
 		}
 	}
-
-
 
 	return true;
 }

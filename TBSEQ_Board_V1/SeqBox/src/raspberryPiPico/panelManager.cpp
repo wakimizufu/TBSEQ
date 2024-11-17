@@ -65,17 +65,39 @@ setLEDRow(LED_ROW_1, 0x0000);
 // initialize everything, 0x00 is the i2c address for the first chip (0x70 is added in the class).
 _HT16K33.begin(I2C_ADDR_HT16K33);
 
-// flash the LEDs, first turn them on
-for (led=0; led<LED_INDEX_MAX; led++) {
-    _HT16K33.setLedNow(led);
-    delay(10);
-} // for led
+delay(10);
+HT16K33::KEYDATA keydata;
+_HT16K33.readKeyRaw(keydata,true);
 
-//Next clear them
-for (led=0; led<LED_INDEX_MAX; led++) {
-    _HT16K33.clearLedNow(led);
-    delay(10);
-} // for led
+if (0x0100 & keydata[1]){
+    Serial.println("KeyPress RUN/STOP=>Debug Mode");
+
+        // flash the LEDs, first turn them on
+    for (led=0; led<LED_INDEX_MAX; led++) {
+        _HT16K33.setLedNow(led);
+    } 
+    delay(2000);
+    for (led=0; led<LED_INDEX_MAX; led++) {
+        _HT16K33.clearLedNow(led);
+    } 
+
+} else{
+    Serial.println("Normal Mode");
+
+    // flash the LEDs, first turn them on
+    for (led=0; led<LED_INDEX_MAX; led++) {
+        _HT16K33.setLedNow(led);
+        delay(10);
+    } // for led
+
+    //Next clear them
+    for (led=0; led<LED_INDEX_MAX; led++) {
+        _HT16K33.clearLedNow(led);
+        delay(10);
+    } // for led
+}
+
+
 
 }
 

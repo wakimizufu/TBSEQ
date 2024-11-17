@@ -150,7 +150,8 @@ public:
 			_byte = 0x00;
 
 			//演奏パターン (1～8:0x0～0x7)
-			_byte = tracks[t].trackSteps[s].pattern - static_cast<unsigned char>(NOTE_PWM_INDEX::NOTE_C2);
+			//_byte = tracks[t].trackSteps[s].pattern - static_cast<unsigned char>(NOTE_PWM_INDEX::NOTE_C2);
+			_byte = 0x07 & tracks[t].trackSteps[s].pattern;
 
 			//演奏バンク   (0:BANK A ～ 3:BANK D)
 			_byte = _byte | tracks[t].trackSteps[s].bank << 3;
@@ -163,6 +164,7 @@ public:
 
 			//転調( NOTE_PWM_INDEX::NOTE_C2～NOTE_PWM_INDEX::NOTE_C3 を設定)	
 			_byte = tracks[t].trackSteps[s].transport - static_cast<unsigned char>(NOTE_PWM_INDEX::NOTE_C2);
+			_byte = 0x0F & _byte;
 			*(_bitstream + _bitInd) = _byte;
 			_bitInd++;
 		}

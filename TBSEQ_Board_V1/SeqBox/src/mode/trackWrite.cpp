@@ -175,9 +175,13 @@ void	trackWrite::execStopSequence() {
 		}
 	}
 
-	//SW ノート:演奏パターンを更新
-	for (i=static_cast<int>(Switch::C2) ; i>=static_cast<int>(Switch::C) ; i--){
-		if (_onClickSwtich[i]) {
+	//パターン:演奏するパターンを選択
+	for (i=0;i<SEQUENCE_PATTERN_LENGTH ;i++){
+		int _patern_index;
+		_patern_index=_scanPatternSwich[i];	
+
+		//押下中ノートボタンがあれば、パターン選択中とみなす
+		if (_currentSwtich[_patern_index]){
 			_trackMap->tracks[_track].trackSteps[_trackStep].pattern = i;
 			break;
 		}

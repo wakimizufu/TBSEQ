@@ -359,13 +359,12 @@ void	modeManager::_changeMode() {
 			Serial.println("");
 
 			//パターン配列からビットストリームに設定する =>トラックライトのデバッグが終わったら書き込めるようにする
-			/*
 			unsigned char _current_track_bitstream[TRACK_ALLBYTE];
 			_trackMap.getBitstream(_currentTrack , _current_track_bitstream);
 
-			int _startAddr = (_currentTrack * PATTERN_ALLBYTE) + TRACKMAP_START_ADDRESS;
+			int _startAddr = (_currentTrack * TRACK_ALLBYTE) + TRACKMAP_START_ADDRESS;
 			_panelManager->saveFRAM( _startAddr, _current_track_bitstream , TRACK_ALLBYTE);		
-			*/
+			
 		}
 
 	}

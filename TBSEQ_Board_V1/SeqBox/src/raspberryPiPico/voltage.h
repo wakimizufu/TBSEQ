@@ -31,6 +31,13 @@ CV/GATE等の電圧出力を行う
 //立ち下がり(負論理)
 #define SYNC_TRIGER_NEGATIVE	true     
 
+//テンポ同期ソース
+//シンク信号同期
+#define SYNC_TEMPO_SYNC_SIGNAL	false
+//MIDI IN同期
+#define SYNC_TEMPO_MIDI_IN	true     
+
+
 //音程名⇒PWM値インデックス
 enum class NOTE_PWM_INDEX
 {

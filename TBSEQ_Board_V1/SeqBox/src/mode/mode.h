@@ -45,6 +45,7 @@ PATERN_PLAY,		//パターンプレイ
 PATERN_WRITE,		//パターンライト
 TRACK_PLAY,			//トラックプレイ
 TRACK_WRITE,		//トラックライト
+UTILITY,				//ユーティリティー
 NONE,						//(変化なし)
 };
 

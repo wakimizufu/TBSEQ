@@ -136,6 +136,8 @@ class panelManager: public countTriger
     */
       bool getSequenceUp();
 
+    bool utilityMode;	//ユーティリティーモード遷移フラグ true->ユーティリティーモードへ遷移, false->通常動作
+
   protected:
     bool _sequence_up;	//シークエンス1周完了フラグ true->シークエンス1周完了, false->完了待ち
     int	_tempo_adc_value;	//テンポADC読み取り値

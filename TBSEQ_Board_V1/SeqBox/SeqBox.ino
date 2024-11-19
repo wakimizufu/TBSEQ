@@ -86,6 +86,15 @@ _modeManager.presetSequence();
 //トラックマップをFRAMからロードして設定する(ロード出来なかったらプリセットを設定する)
 _modeManager.presetTrack();
 
+//ユーティリティーモードフラグをFRAMからロードして設定する(ロード出来なかったらプリセットを設定する)
+_modeManager.presetUtility();
+
+//ユーティリティーモードに切り替える
+if (_panelManager.utilityMode){
+  _modeManager.changeUtilityMode();
+}
+
+
 //タイマー割り込み/* タイマーの初期化(割込み間隔はusで指定) */
 add_repeating_timer_us(-32, toggle_panelWR, NULL, &st_timer);
 

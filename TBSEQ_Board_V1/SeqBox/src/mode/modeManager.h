@@ -23,6 +23,7 @@
 #include "paternWrite.h"
 #include "trackPlay.h"
 #include "trackWrite.h"
+#include "utilityMode.h"
 
 //読み取り間隔カウンタ閾値 10.24msec (32us * 320カウント)
 #define THD_MODE_MANAGER 160
@@ -75,6 +76,13 @@ class modeManager: public countTriger
 	  void	changeDebugMode();
 
 		/*
+		ユーティリティーモードに変更する
+		=>ユーティリティーモードから通常モードには戻らない仕様
+		戻り値：なし
+		*/
+	  void	changeUtilityMode();
+
+		/*
 		シークエンスマップをFRAMからロードして設定する(ロード出来なかったらプリセットを設定する)
 		戻り値：なし
 		*/
@@ -124,6 +132,23 @@ class modeManager: public countTriger
 		*/
 	  void	getTrackBitstream(unsigned char* _bitstream);
 
+		/*
+		ユーティリティーモードフラグをFRAMからロードして設定する(ロード出来なかったらプリセットを設定する)
+		戻り値：なし
+		*/
+	  void	presetUtility();
+
+		/*
+		シンク信号極性を取得
+		戻り値：シンク信号極性   (false:立ち上がり, true:立下り)
+		*/
+		bool	getSyncPolarity();
+
+		/*
+		テンポ同期ソースを取得
+		戻り値：テンポ同期ソース (false:シンク信号, true:MIDI IN)
+		*/
+		bool	getSyncTempo();
 
   private:
 	mode * _currentMode;					//現在のモードクラス
@@ -132,12 +157,16 @@ class modeManager: public countTriger
 	sequenceMap _sequenceMap;			//シークエンスマップ
 	trackMap _trackMap;						//トラックマップ
 	bool _debugMode;							//デバッグフラグ (true->デバッグモード ,false->通常モード)
+	bool _utilityMode;							//ユーティリティーフラグ (true->ユーティリティーモード ,false->通常モード)
 	int _bank;										//現在の指定バンク
 
 	bool _currentSwtich[SW_INDEX_MAX];	//ボタン押下中
 
     int _clockCount;			//現在のMIDIクロックカウンタ値
     int _noteThredhold;	//音符カウンタ閾値
+
+	bool _syncPolarity;		//シンク信号極性   (false:立ち上がり, true:立下り)
+	bool _syncTempo;		//テンポ同期ソース (false:シンク信号, true:MIDI IN)
 
 	/*
 	モード切替判定を行う

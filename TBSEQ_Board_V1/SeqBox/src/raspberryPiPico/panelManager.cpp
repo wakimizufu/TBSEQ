@@ -70,9 +70,10 @@ HT16K33::KEYDATA keydata;
 _HT16K33.readKeyRaw(keydata,true);
 
 if (0x0100 & keydata[1]){
-    Serial.println("KeyPress RUN/STOP=>Debug Mode");
+    Serial.println("KeyPress RUN/STOP=>Utility Mode");
+    utilityMode =   true;
 
-        // flash the LEDs, first turn them on
+    // flash the LEDs, first turn them on
     for (led=0; led<LED_INDEX_MAX; led++) {
         _HT16K33.setLedNow(led);
     } 
@@ -83,6 +84,7 @@ if (0x0100 & keydata[1]){
 
 } else{
     Serial.println("Normal Mode");
+    utilityMode =   false;
 
     // flash the LEDs, first turn them on
     for (led=0; led<LED_INDEX_MAX; led++) {

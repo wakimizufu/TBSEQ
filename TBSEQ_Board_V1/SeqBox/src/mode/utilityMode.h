@@ -7,6 +7,12 @@
 
 #include "mode.h"
 
+//utility:ユーティリティーモード総バイト数
+const int UTILITY_ALLBYTE = 1;
+
+//trackMap:FRAM格納先頭アドレス
+#define UTILITY_START_ADDRESS 0x7FF
+
 class utilityMode: public mode{
 
     public:
@@ -16,8 +22,10 @@ class utilityMode: public mode{
 		ptVoltage     :voltageクラスポインタ
 		ptSequenceMap :sequenceMapクラスポインタ
 		ptTrackMap    :trackMapクラスポインタ
+		bSyncPolarity :シンク信号極性
+		bSyncTempo    :シンク同期ソース
 		*/
-		utilityMode(panelManager* ptPanelManager, voltage* ptVoltage, sequenceMap* ptSequenceMap, trackMap* ptTrackMap);
+		utilityMode(panelManager* ptPanelManager, voltage* ptVoltage, sequenceMap* ptSequenceMap, trackMap* ptTrackMap, bool bSyncPolarity, bool bSyncTempo);
 
 		/*
 		[仮想関数]カウント閾値達成時に実行されるアプリケーションを実施する
@@ -51,8 +59,8 @@ class utilityMode: public mode{
 
 
     private:
-			bool _syncPolarity;		//シンク信号極性   (false:立ち上がり, true:立下り)
-			bool _syncTempo;			//テンポ同期ソース (false:シンク信号, true:MIDI IN)
+		bool _syncPolarity;		//シンク信号極性   (false:立ち上がり, true:立下り)
+		bool _syncTempo;		//テンポ同期ソース (false:シンク信号, true:MIDI IN)
 
 };
 

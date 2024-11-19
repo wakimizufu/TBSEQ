@@ -12,7 +12,10 @@ modeManager::modeManager(panelManager* ptPanelManager, voltage* ptVoltage, int n
 	_panelManager	=	ptPanelManager;	//panelManagerクラスポインタ
 	_voltage		=	ptVoltage;		//【コンストラクタで設定】voltageクラスポインタ
 	_debugMode		=	false;			//デバッグフラグ (true->デバッグモード ,false->通常モード)
+	_utilityMode	=	false;			//ユーティリティーフラグ (true->ユーティリティーモード ,false->通常モード)
 	_bank			=	BANK_START_IDX;	//現在の指定バンク
+	_syncPolarity	=	SYNC_TRIGER_POSITIVE;		//シンク信号極性   (false:立ち上がり, true:立下り)
+	_syncTempo		=	SYNC_TEMPO_SYNC_SIGNAL;		//テンポ同期ソース (false:シンク信号, true:MIDI IN)
 
 	//ボタン押下中変数を初期化
 	for ( int i=0 ; i<SW_INDEX_MAX ; i++){
@@ -85,6 +88,19 @@ void	modeManager::changeDebugMode(){
 	//現在のモードクラスの初期値を設定する
 	_currentMode = new debugMode( _panelManager, _voltage, &_sequenceMap, &_trackMap);
 }
+
+/*
+ユーティリティーモードに変更する
+=>ユーティリティーモードから通常モードには戻らない仕様
+戻り値：なし
+*/
+void	modeManager::changeUtilityMode(){
+	_utilityMode = true;	//ユーティリティーフラグ (true->ユーティリティーモード ,false->通常モード)
+
+	//現在のモードクラスの初期値を設定する
+	_currentMode = new utilityMode( _panelManager, _voltage, &_sequenceMap, &_trackMap, _syncPolarity, _syncTempo);
+}
+
 
 /*
 シークエンスマップをFRAMからロードして設定する(ロード出来なかったらプリセットを設定する)
@@ -210,6 +226,45 @@ void	modeManager::getTrackBitstream(unsigned char* _bitstream){
 
 }
 
+/*
+ユーティリティーモードフラグをFRAMからロードして設定する(ロード出来なかったらプリセットを設定する)
+戻り値：なし
+*/
+void	modeManager::presetUtility(){
+	int t;
+	unsigned char _utility_load_bitstream[UTILITY_ALLBYTE];
+	uint16_t _memAddr;
+
+	//FRAMへの接続を開始する
+	bool _connect	=	_panelManager->connectFRAM();
+
+	//シークエンスマップをFRAMからロードして設定する
+	if	( _connect ) {
+
+		_memAddr = UTILITY_START_ADDRESS;
+
+		Serial.print("modeManager::presetUtility() _memAddr:");
+		Serial.print(_memAddr,HEX);
+		Serial.println("");
+		
+		_panelManager->loadFRAM(_utility_load_bitstream, _memAddr, UTILITY_ALLBYTE);
+		
+		for (int i=0 ; i<UTILITY_ALLBYTE ; i++){
+		Serial.print("_utility_load_bitstream[");
+		Serial.print(i,HEX);
+		Serial.print("]:");
+		Serial.print(_utility_load_bitstream[i],HEX);
+		Serial.println("");
+		}
+		
+		_syncPolarity	=	(0x01 & _utility_load_bitstream[0]);	//シンク信号極性   (false:立ち上がり, true:立下り)
+		_syncTempo		=	(0x02 & _utility_load_bitstream[0]);	//テンポ同期ソース (false:シンク信号, true:MIDI IN)
+
+	} else if (!_connect) {
+		_syncPolarity	=	SYNC_TRIGER_POSITIVE;		//シンク信号極性   (false:立ち上がり, true:立下り)
+		_syncTempo	=	SYNC_TEMPO_SYNC_SIGNAL;				//テンポ同期ソース (false:シンク信号, true:MIDI IN)
+	}
+}
 
 
 /*
@@ -445,3 +500,18 @@ void	modeManager::setMIDIStop(bool value){
 	_currentMode->setMIDIStop(value);
 }
 
+/*
+シンク信号極性を取得
+戻り値：シンク信号極性   (false:立ち上がり, true:立下り)
+*/
+bool	modeManager::getSyncPolarity(){
+	return _syncPolarity;
+}
+
+/*
+テンポ同期ソースを取得
+戻り値：テンポ同期ソース (false:シンク信号, true:MIDI IN)
+*/
+bool	modeManager::getSyncTempo(){
+	return _syncTempo;
+}

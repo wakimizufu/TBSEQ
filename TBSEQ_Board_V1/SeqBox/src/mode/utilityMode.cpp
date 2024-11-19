@@ -5,10 +5,10 @@
 	ptPanelManager:panelManagerクラスポインタ
 	ptVoltage     :voltageクラスポインタ
 */
-utilityMode::utilityMode(panelManager* ptPanelManager, voltage* ptVoltage, sequenceMap* ptSequenceMap, trackMap* ptTrackMap) :mode(MODE_NAME::UTILITY, ptPanelManager, ptVoltage, ptSequenceMap, ptTrackMap) {
+utilityMode::utilityMode(panelManager* ptPanelManager, voltage* ptVoltage, sequenceMap* ptSequenceMap, trackMap* ptTrackMap, bool bSyncPolarity, bool bSyncTempo) :mode(MODE_NAME::UTILITY, ptPanelManager, ptVoltage, ptSequenceMap, ptTrackMap) {
 
-	_syncPolarity	=	SYNC_TRIGER_POSITIVE;		//シンク信号極性   (false:立ち上がり, true:立下り)
-	_syncTempo	=	SYNC_TEMPO_MIDI_IN;				//テンポ同期ソース (false:シンク信号, true:MIDI IN)
+	_syncPolarity	=	bSyncPolarity;	//シンク信号極性   (false:立ち上がり, true:立下り)
+	_syncTempo		=	bSyncTempo;		//テンポ同期ソース (false:シンク信号, true:MIDI IN)
 
 	//各状態を初期値に変更する
 	_midiclock_16note = MIDICLOCK_START_16NOTE;	//16音符毎MIDIクロックカウント
@@ -117,130 +117,48 @@ void	utilityMode::execRunSequence() {
 */
 void	utilityMode::execStopSequence() {
 	
-	int i;
-
-	//指定トラックから演奏するバンク/パターンを取得する
-	getTrack2Pattern(_track, _trackStep, &_bank, &_pattern, &_transport, &_tracklastStep);
-
-
-	/*
-	ラン/ストップフラグ:ストップ 転調設定を実行
-	*/
-	if (	execTransport()	){
-		//転調設定を行ったら以下の処理は行わずそのまま終了
-		return;
-	}
-
-
 	//LED 表示更新
 	_panelManager->setLEDRow(LED_ROW_0, 0x0000);
 	_panelManager->setLEDRow(LED_ROW_1, 0x0000);
 	_panelManager->setLED(static_cast<int>(LED::TRACK), true);
+	_panelManager->setLED(static_cast<int>(LED::PATTERN), true);
 	_panelManager->setLED(static_cast<int>(LED::PLAY_WRITE), true);
 	
-	//バンク:指定バンク数に応じたLEDを設定する
-	setBackLED(_bank);
-	_panelManager->setLED(static_cast<int>(LED::LENMAX), _tracklastStep);
-	_panelManager->setLED(_scanPatternLED[_pattern], true);
-
-
-	_transport	=	_transport - static_cast<unsigned char>(NOTE_PWM_INDEX::NOTE_C2);
-	if ( _transport >= 1){
-		_panelManager->setLED(static_cast<int>(LED::SLIDE), true);
+	//LED シンク信号極性を表示
+	if (_syncPolarity==SYNC_TRIGER_POSITIVE){
+		_panelManager->setLED(static_cast<int>(LED::C), true);
+	} else if (	_syncPolarity==SYNC_TRIGER_NEGATIVE	)	{
+		_panelManager->setLED(static_cast<int>(LED::D), true);
 	}
 
-	//ステップ:指定ステップ数に応じたLEDを設定する
-	setStepLED(_trackStep);
-
-
-	//SW ノート:演奏バンクを更新
-	for (i=static_cast<int>(Switch::BANK_D) ; i>=static_cast<int>(Switch::BANK_A) ; i--){
-		if (_onClickSwtich[i]) {
-			_trackMap->tracks[_track].trackSteps[_trackStep].bank = i - static_cast<int>(Switch::BANK_A);
-			break;
-		}
-	}
-
-	//パターン:演奏するパターンを選択
-	for (i=0;i<SEQUENCE_PATTERN_LENGTH ;i++){
-		int _patern_index;
-		_patern_index=_scanPatternSwich[i];	
-
-		//押下中ノートボタンがあれば、パターン選択中とみなす
-		if (_currentSwtich[_patern_index]){
-			_trackMap->tracks[_track].trackSteps[_trackStep].pattern = i;
-			break;
-		}
-	}
-
-	//SW ラストステップを更新
-	if	(	_onClickSwtich[static_cast<int>(Switch::LENMAX)]	)	{
-
-		if ( TRACK_STEP_LENGTH > (_trackStep + 1)){
-		_trackMap->tracks[_track].trackSteps[_trackStep].lastStep = !_tracklastStep;
-		}
+	//LED テンポ同期ソースを表示
+	if (_syncTempo==SYNC_TEMPO_SYNC_SIGNAL){
+		_panelManager->setLED(static_cast<int>(LED::E), true);
+	} else if (	_syncTempo==SYNC_TEMPO_MIDI_IN	)	{
+		_panelManager->setLED(static_cast<int>(LED::F), true);
 	}
 
 
-
-
-
-	//SW NEXT 次のステップに移行
-	if	(	_onClickSwtich[static_cast<int>(Switch::NEXT)]	)	{
-
-		Serial.print(" utilityMode::execStopSequence Switch::NEXT");
-		Serial.print(" _trackStep:");
-		Serial.print(_trackStep);
-		Serial.print(" bank:");
-		Serial.print(_bank);
-		Serial.print(" _pattern:");
-		Serial.print(_pattern);
-		Serial.print(" _tracklastStep:");
-		Serial.print(_tracklastStep);
-		
-		if(_tracklastStep)	{
-			_trackStep	=	TRACK_STEP_START_IDX;
-		} else if (!_tracklastStep) {
-			_trackStep++;
-		}
-
-
-		Serial.print(" next _trackStep:");
-		Serial.print(_trackStep);
-		Serial.println("");
-
-	//SW BACK 前のステップに移行
-	} else if (	_onClickSwtich[static_cast<int>(Switch::BACK)]	)	{
-
-		Serial.print(" utilityMode::execStopSequence Switch::BACK");
-		Serial.print(" _trackStep:");
-		Serial.print(_trackStep);
-		Serial.print(" bank:");
-		Serial.print(_bank);
-		Serial.print(" _pattern:");
-		Serial.print(_pattern);
-		Serial.print(" _tracklastStep:");
-		Serial.print(_tracklastStep);
-
-		_trackStep--;
-		if( _trackStep < TRACK_STEP_START_IDX)	{
-			
-			_trackStep	=	TRACK_STEP_START_IDX;
-
-			for (i=TRACK_STEP_START_IDX ; i<TRACK_STEP_LENGTH ; i++){
-				if(_trackMap->tracks[_track].trackSteps[i].lastStep){
-					_trackStep	=	i;
-					break;
-				}
-			}
-
-		}
-
-		Serial.print(" next _trackStep:");
-		Serial.print(_trackStep);
-		Serial.println("");
+	//SW シンク信号極性を設定
+	if	(	_onClickSwtich[static_cast<int>(Switch::C)]	)	{
+		_syncPolarity=SYNC_TRIGER_POSITIVE;		//false:立ち上がり
+	} else if (	_onClickSwtich[static_cast<int>(Switch::D)]	)	{
+		_syncPolarity=SYNC_TRIGER_NEGATIVE;		//true:立下り
 	}
 
+	//SW テンポ同期ソースを設定
+	if	(	_onClickSwtich[static_cast<int>(Switch::E)]	)	{
+		_syncTempo=SYNC_TEMPO_SYNC_SIGNAL;	//シンク信号同期
+	} else if (	_onClickSwtich[static_cast<int>(Switch::F)]	)	{
+		_syncTempo=SYNC_TEMPO_MIDI_IN;	//MIDI IN同期
+	}
+
+
+	//SW NEXT＋SW BACK 設定を書き込んでリセットする
+	if	(	(	_onClickSwtich[static_cast<int>(Switch::NEXT)]	)	&&
+			(	_onClickSwtich[static_cast<int>(Switch::BACK)]	)	) {
+    	rp2040.reboot();
+	}
 }
 
 /*

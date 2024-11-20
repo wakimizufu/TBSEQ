@@ -94,25 +94,31 @@ if (_panelManager.utilityMode){
   _modeManager.changeUtilityMode();
 }
 
-
 //タイマー割り込み/* タイマーの初期化(割込み間隔はusで指定) */
 add_repeating_timer_us(-32, toggle_panelWR, NULL, &st_timer);
 
 //シンク極性の初期設定
-_voltage.syncPolarity(SYNC_TRIGER_POSITIVE);
-//_voltage.syncPolarity(SYNC_TRIGER_NEGATIVE);
+if( _modeManager.getSyncPolarity() == SYNC_TRIGER_POSITIVE){
+  Serial.println("getSyncPolarity:SYNC_TRIGER_POSITIVE");
+  _voltage.syncPolarity(SYNC_TRIGER_POSITIVE);  //シンク信号極性  false:立ち上がり
+} else if ( _modeManager.getSyncPolarity() == SYNC_TRIGER_NEGATIVE){
+  Serial.println("getSyncPolarity:SYNC_TRIGER_NEGATIVE");
+  _voltage.syncPolarity(SYNC_TRIGER_NEGATIVE);  //シンク信号極性  true:立下り)
+}
 
-//MIDI受信開始/停止設定
-//_midiReceive.setReceiveEnable(true);  //受信開始
-_midiReceive.setReceiveEnable(false);  //受信停止
+//テンポ同期ソース設定
+if( _modeManager.getSyncTempo() == SYNC_TEMPO_SYNC_SIGNAL){
+  Serial.println("getSyncTempo:SYNC_TEMPO_SYNC_SIGNAL");
+  _midiReceive.setReceiveEnable(false);  //シンク信号同期
+} else if( _modeManager.getSyncTempo() == SYNC_TEMPO_MIDI_IN){
+  Serial.println("getSyncTempo:SYNC_TEMPO_MIDI_IN");
+  _midiReceive.setReceiveEnable(true);  //MIDI IN同期
+}
 
 if (_midiReceive.isEnable()){
   //UART0 MIDI受信ポート
   Serial1.begin(31250);   // UART0初期化 TX:GP0 / RX:GP1
 }
-
-Serial.print("_midiReceive.isEnable:");
-Serial.println(_midiReceive.isEnable());
 
 Serial.println("SeqBox.ino setup() finish");
 }

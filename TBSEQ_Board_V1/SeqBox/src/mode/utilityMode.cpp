@@ -155,8 +155,27 @@ void	utilityMode::execStopSequence() {
 
 
 	//SW NEXT＋SW BACK 設定を書き込んでリセットする
-	if	(	(	_onClickSwtich[static_cast<int>(Switch::NEXT)]	)	&&
-			(	_onClickSwtich[static_cast<int>(Switch::BACK)]	)	) {
+	if	(	(	_currentSwtich[static_cast<int>(Switch::NEXT)]	)	&&
+			(	_currentSwtich[static_cast<int>(Switch::BACK)]	)	) {
+
+		//パターン配列からビットストリームに設定する =>トラックライトのデバッグが終わったら書き込めるようにする
+		unsigned char _current_utility_bitstream[UTILITY_ALLBYTE];
+		_current_utility_bitstream[0] = 0x00;
+
+		//シンク信号極性   (false:立ち上がり, true:立下り)
+		if (_syncPolarity){
+			_current_utility_bitstream[0] |= 0x01;
+		}
+
+		//テンポ同期ソース (false:シンク信号, true:MIDI IN)
+		if (_syncTempo){
+			_current_utility_bitstream[0] |= 0x02;
+		}
+
+		int _startAddr = UTILITY_START_ADDRESS;
+		_panelManager->saveFRAM( _startAddr, _current_utility_bitstream , UTILITY_ALLBYTE);		
+
+		//リセットする
     	rp2040.reboot();
 	}
 }

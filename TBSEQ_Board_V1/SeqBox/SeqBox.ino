@@ -120,6 +120,9 @@ if (_midiReceive.isEnable()){
   Serial1.begin(31250);   // UART0初期化 TX:GP0 / RX:GP1
 }
 
+Serial.print("gpio_get(PIN_PLUG_SYNC_IN):");
+Serial.println(gpio_get(PIN_PLUG_SYNC_IN));
+
 Serial.println("SeqBox.ino setup() finish");
 }
 

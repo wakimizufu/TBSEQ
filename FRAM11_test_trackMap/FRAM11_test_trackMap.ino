@@ -148,7 +148,8 @@ void test()
     Serial.println(value,HEX);
     delay(10);
   }
-return;
+  
+//return;
 
 
   for (index = 0; index < TRACKMAP_ALLBYTE; index++)

@@ -7,6 +7,7 @@ start     :カウンタ開始値(デフォルト=0)
 */
 midiClock::midiClock(unsigned int thredhold, unsigned int start = 0) :countTriger(thredhold, start) {
 	_count_up = false;
+	_harf_count_up = false;
 }
 
 /*
@@ -33,6 +34,14 @@ bool midiClock::getCountUp() {
 	return	_count_up;
 }
 
+/*
+ハーフカウントアップフラグを取得する
+戻り値:ハーフカウントアップフラグ true->カウントアップ済, false->アップ待ち
+*/
+bool midiClock::getHarfCountUp() {
+	return	(_count >= (_thredhold/2));
+}
+
 
 /*
 テンポに応じたMIDIクロック:カウンタ閾値を変更する
@@ -46,4 +55,5 @@ void	midiClock::setTempo2Threshold(int	value) {
 		_count_up = true;
 		_count = 0;
 	}
+
 }

@@ -36,6 +36,12 @@ class midiClock: public countTriger
 		*/
 	  bool getCountUp();
 		
+		/*
+		ハーフカウントアップフラグを取得する
+		戻り値:ハーフカウントアップフラグ true->ハーフカウントアップ済, false->アップ待ち
+		*/
+	  bool getHarfCountUp();
+		
 
 		/*
 		テンポに応じたMIDIクロック:カウンタ閾値を変更する

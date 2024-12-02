@@ -33,17 +33,17 @@ void	midiReceive::receiveMidiMessage(){
 
 		if	(	incomingByte	==	MIDI_STATUS_CLOCK	)	{
 			_TimmingClock	=	true;
-			Serial.println("MIDI recv:MIDI_STATUS_CLOCK");
+			//Serial.println("MIDI recv:MIDI_STATUS_CLOCK");
 		}
 
 		if	(	incomingByte	==	MIDI_STATUS_START	)	{
 			_Start	=	true;
-			Serial.println("MIDI recv:MIDI_STATUS_START");
+			//Serial.println("MIDI recv:MIDI_STATUS_START");
 		}
 
 		if	(	incomingByte	==	MIDI_STATUS_STOP	)	{
 			_Stop	=	true;
-			Serial.println("MIDI recv:MIDI_STATUS_STOP");
+			//Serial.println("MIDI recv:MIDI_STATUS_STOP");
 		}
 
 		// say what you got:

@@ -142,12 +142,30 @@ class voltage
 		*/
 		void	syncOn();
 
+		/*
+		シンク:現在のシンクレベルを反転して設定する
+		*/
+		void	syncFlip();
+
+		/*
+		シンク:現在のシンクRun/StopレベルをRunにする
+		*/
+		void	syncOutRun();
+
+		/*
+		シンク:現在のシンクRun/StopレベルをRunにする
+		*/
+		void	syncOutStop();
+
   private:
 	//配列:PWM値インデックス⇒MIDIノート値
 	int _note2PWM[SIZE_NOTE2PWM];
 
 	//シンク極性
 	bool _sync_polarity;
+
+	//シンクレベル
+	bool _sync_Level;
 };
 
 #endif

@@ -30,3 +30,17 @@ void syncTriger::clear(){
 bool syncTriger::getSyncUp() {
 	return	_syncTriger_up;
 }
+
+/*
+テンポに応じたシンクOUT:カウンタ閾値を変更する
+value:変更するシンクOUT:カウンタ閾値
+*/
+void	setSyncOut2Threshold(int value){
+	_thredhold = value;
+
+	//カウント値が閾値を超えたらカウントアップとする
+	if (_count >= _thredhold) {
+		_syncTriger_up = true;
+		_count = 0;
+	}
+}

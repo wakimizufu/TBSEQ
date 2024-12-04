@@ -122,6 +122,7 @@ void	voltage::syncPolarity(bool value){
 */
 void	voltage::syncReset(){
 	gpio_put(PIN_SYNC_OUT,_sync_polarity);
+	_sync_Level=_sync_polarity;
 }
 
 /*
@@ -129,4 +130,28 @@ void	voltage::syncReset(){
 */
 void	voltage::syncOn(){
 	gpio_put(PIN_SYNC_OUT,!_sync_polarity);
+	_sync_Level=!_sync_polarity;
+}
+
+
+/*
+シンク:現在のシンクレベルを反転して設定する
+*/
+void	voltage::syncFlip(){
+	_sync_Level=!_sync_Level;
+	gpio_put(PIN_SYNC_OUT,_sync_Level);
+}
+
+/*
+シンク:現在のシンクRun/StopレベルをRunにする
+*/
+void	voltage::syncOutRun(){
+	gpio_put(PIN_SYNC_OUT_RS,true);
+}
+
+/*
+シンク:現在のシンクRun/StopレベルをRunにする
+*/
+void	voltage::syncOutStop(){
+	gpio_put(PIN_SYNC_OUT_RS,false);
 }

@@ -36,9 +36,16 @@ gpio_set_dir(PIN_SLIDE,GPIO_OUT);
 gpio_init(PIN_SYNC_OUT); //SyncOut
 gpio_set_dir(PIN_SYNC_OUT,GPIO_OUT);
 
+gpio_init(PIN_SYNC_OUT_RS); //SyncOut-Run/Stop
+gpio_set_dir(PIN_SYNC_OUT_RS,GPIO_OUT);
+
 gpio_init(PIN_SYNC_IN); //SyncIn
 gpio_set_dir(PIN_SYNC_IN,GPIO_IN);
 gpio_pull_up(PIN_SYNC_IN);
+
+gpio_init(PIN_SYNC_IN_RS); //SyncIn-Run/Stop
+gpio_set_dir(PIN_SYNC_IN_RS,GPIO_IN);
+gpio_pull_up(PIN_SYNC_IN_RS);
 
 gpio_init(PIN_PLUG_SYNC_IN); //PluginSyncIn
 gpio_set_dir(PIN_PLUG_SYNC_IN,GPIO_IN);

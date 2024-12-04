@@ -21,6 +21,8 @@ const int PIN_SLIDE	=	20;		    //SLIDE
 const int PIN_SYNC_OUT	=   17;	    //SyncOut
 const int PIN_SYNC_IN	=   16;	    //SyncIn
 const int PIN_PLUG_SYNC_IN	=   15;	//PluginSyncIn
+const int PIN_SYNC_OUT_RS	=   14;	//SyncOut-Run/Stop
+const int PIN_SYNC_IN_RS	=   13;	//SyncIn-Run/Stop
 const int PIN_CV = 21;              //CV(PWM)
 const int PIN_TEMPO_ADC = 26;       //TEMPO(ADC) 
 

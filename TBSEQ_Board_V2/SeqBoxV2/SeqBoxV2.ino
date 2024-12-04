@@ -184,6 +184,9 @@ void loop() {
 
         //モード:MIDIクロック時処理を実行
         _modeManager.clockCountUp();
+
+        //シンクOUT:カウンタ値を更新
+        _syncTriger.setSyncOut2Threshold(_tempo.getCountThd()/2);
       }
    }   
 
@@ -205,24 +208,31 @@ void loop() {
     }
     
     //開始ステップをチェック
+    /*
     if (_modeManager.getFirstStep()){
       //Serial.println("SeqBox.ino loop() FirstStep");
       _modeManager.setFirstStep(false);
       syncTriger_flag = true;
       _voltage.syncOn();
     }
+    */
 
     //シンクトリガー更新
-    if (syncTriger_flag) {
       _syncTriger.countUp();
-
       if(_syncTriger.getSyncUp()){
         _syncTriger.clear();
-        syncTriger_flag = false;
-        _voltage.syncReset();
+        _voltage.syncFlip();
       }
     }
     
+    //シンクRun/Stop更新
+    if (RUN_STOP::RUN==_modeManager.getRunStop()){
+      _voltage.syncOutRun();
+    } else {
+      _voltage.syncOutStop();
+    }
+
+
     //タイマー割り込み/* タイマーの初期化(割込み間隔はusで指定) */
     add_repeating_timer_us(-32, toggle_panelWR, NULL, &st_timer);
 

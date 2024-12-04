@@ -150,6 +150,13 @@ class modeManager: public countTriger
 		*/
 		bool	getSyncTempo();
 
+
+		/*
+		ラン/ストップフラグを取得する
+		戻り値：ラン/ストップフラグ(Class RUN_STOP)
+		*/
+		RUN_STOP	getRunStop();
+
   private:
 	mode * _currentMode;					//現在のモードクラス
 	panelManager * _panelManager;	//【コンストラクタで設定】panelManagerクラスポインタ

@@ -515,3 +515,12 @@ bool	modeManager::getSyncPolarity(){
 bool	modeManager::getSyncTempo(){
 	return _syncTempo;
 }
+
+
+/*
+ラン/ストップフラグを取得する
+戻り値：ラン/ストップフラグ(Class RUN_STOP)
+*/
+RUN_STOP	modeManager::getRunStop(){
+	return _currentMode->getRunStop();
+}

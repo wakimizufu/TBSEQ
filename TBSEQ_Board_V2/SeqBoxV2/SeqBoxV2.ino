@@ -126,37 +126,67 @@ Serial.println(gpio_get(PIN_PLUG_SYNC_IN));
 //デバッグモードに変更する
 //_modeManager.changeDebugMode();
 
+//ウォッチドックタイマーを設定
+watchdog_enable(3000, 1);
+Serial.print("SeqBox.ino watchdog_caused_reboot():");
+Serial.println(watchdog_caused_reboot());
+
+
 Serial.println("SeqBox.ino setup() finish");
 }
 
 void loop() {
+
+    //ウォッチドックタイマーをクリア
+    watchdog_update();
+
+    /*
+    debugCount++;
+
+    if ( 1 == debugCount){
+      //Serial.print("debugCount:");
+      //Serial.println(debugCount);
+      
+      Serial.print("waitLoopCount:");
+      Serial.print(waitLoopCount);
+      Serial.print(" overCount:");
+      Serial.println(overCount);
+      
+    }
+
+    if (10000000<debugCount){
+      debugCount=1;
+    }
+    */
+
 
   //タイマー割り込み時処理
   if(timer_flag){
     timer_flag = false;
     //gpio_put(LED_BUILTIN, !gpio_get(LED_BUILTIN)); // toggle the LED
 
-    //タイマー割込みを解除する
-    cancel_repeating_timer( &st_timer);
-
+    /*
     debugCount++;
 
     if ( 0 == debugCount % 25000){
       //Serial.print("debugCount:");
       //Serial.println(debugCount);
-      /*
+      
       Serial.print("waitLoopCount:");
       Serial.print(waitLoopCount);
       Serial.print(" overCount:");
       Serial.println(overCount);
-      */
+      
     }
 
     if (50000<debugCount){
       debugCount=1;
     }
+   */
 
-   
+    //タイマー割込みを解除する
+    cancel_repeating_timer( &st_timer);
+
    //MIDIクロック
    //MIDI受信開始⇒タイミングクロック/スタート/ストップ受信時に実行
    if (_midiReceive.isEnable()){
@@ -218,11 +248,10 @@ void loop() {
     */
 
     //シンクトリガー更新
-      _syncTriger.countUp();
-      if(_syncTriger.getSyncUp()){
+    _syncTriger.countUp();
+    if(_syncTriger.getSyncUp()){
         _syncTriger.clear();
         _voltage.syncFlip();
-      }
     }
     
     //シンクRun/Stop更新

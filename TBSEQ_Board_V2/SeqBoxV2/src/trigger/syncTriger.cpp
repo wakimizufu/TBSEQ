@@ -35,7 +35,7 @@ bool syncTriger::getSyncUp() {
 テンポに応じたシンクOUT:カウンタ閾値を変更する
 value:変更するシンクOUT:カウンタ閾値
 */
-void	setSyncOut2Threshold(int value){
+void	syncTriger::setSyncOut2Threshold(int value){
 	_thredhold = value;
 
 	//カウント値が閾値を超えたらカウントアップとする

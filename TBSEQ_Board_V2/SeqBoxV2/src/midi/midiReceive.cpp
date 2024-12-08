@@ -36,7 +36,7 @@ void	midiReceive::receiveMidiMessage(){
 			//Serial.println("MIDI recv:MIDI_STATUS_CLOCK");
 		}
 
-		if	(	incomingByte	==	MIDI_STATUS_START	)	{
+		if	((	incomingByte	==	MIDI_STATUS_START	)	|| (	incomingByte	==	MIDI_STATUS_CONTINUE	)){
 			_Start	=	true;
 			//Serial.println("MIDI recv:MIDI_STATUS_START");
 		}
@@ -47,9 +47,11 @@ void	midiReceive::receiveMidiMessage(){
 		}
 
 		// say what you got:
-		//Serial.print("MIDI recv:");
-		//Serial.print(incomingByte, HEX);
-		//Serial.println("");
+		/*
+		Serial.print("MIDI recv:");
+		Serial.print(incomingByte, HEX);
+		Serial.println("");
+        */
 	}
 
 }

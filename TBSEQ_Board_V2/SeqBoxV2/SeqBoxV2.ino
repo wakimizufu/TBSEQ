@@ -64,7 +64,8 @@ bool toggle_panelWR(struct repeating_timer *t) {
   return false; // repeat? true
 }
 
-
+//シンクアウト:MIDI同期時の32usecカウンタ
+uint32_t MidiInSyncCount =0;
 
 void setup() {
 
@@ -190,6 +191,7 @@ void loop() {
    //MIDIクロック
    //MIDI受信開始⇒タイミングクロック/スタート/ストップ受信時に実行
    if (_midiReceive.isEnable()){
+      MidiInSyncCount++;
       _midiReceive.receiveMidiMessage();
 
       //スタート
@@ -204,6 +206,10 @@ void loop() {
       if (_midiReceive.isTimmingClock()){
         //モード:MIDIクロック時処理を実行
         _modeManager.clockCountUp(); 
+
+        //シンクOUT:カウンタ値を更新
+        _syncTriger.setSyncOut2Threshold(MidiInSyncCount/2);
+        MidiInSyncCount = 0;
       }
 
    } else if (!_midiReceive.isEnable()){

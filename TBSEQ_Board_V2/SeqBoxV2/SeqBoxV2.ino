@@ -67,6 +67,15 @@ bool toggle_panelWR(struct repeating_timer *t) {
 //シンクアウト:MIDI同期時の32usecカウンタ
 uint32_t MidiInSyncCount =0;
 
+//シンクイン:クロック信号関連変数
+bool syncin_clock_flag = false;
+
+//シンクイン:クロック信号関連変数
+void toggle_syncin_clock() {
+  syncin_clock_flag = true;
+}
+
+
 void setup() {
 
 delay(2000);
@@ -123,6 +132,10 @@ if (_midiReceive.isEnable()){
 
 Serial.print("gpio_get(PIN_PLUG_SYNC_IN):");
 Serial.println(gpio_get(PIN_PLUG_SYNC_IN));
+
+//シンクイン:クロック信号の外部割込み設定
+attachInterrupt(PIN_SYNC_IN, toggle_syncin_clock, RISING);
+
 
 //デバッグモードに変更する
 //_modeManager.changeDebugMode();
@@ -212,7 +225,33 @@ void loop() {
         MidiInSyncCount = 0;
       }
 
-   } else if (!_midiReceive.isEnable()){
+    //シンクイン
+    //クロック信号⇒タイミングクロック受信時に実行
+    //Run/Start信号⇒スタート/ストップ受信時に実行
+   } else if (0 == gpio_get(PIN_PLUG_SYNC_IN)){
+
+      //クロック信号割込み 立ち上がりの際にMIDIクロック時処理を実行
+      MidiInSyncCount++;
+      if (syncin_clock_flag){
+        _modeManager.clockCountUp(); 
+        //シンクOUT:カウンタ値を更新
+        _syncTriger.setSyncOut2Threshold(MidiInSyncCount/2);
+        MidiInSyncCount = 0;
+
+        syncin_clock_flag=false;
+      }
+
+      //スタート
+      if(1 == gpio_get(PIN_SYNC_IN_RS)){
+        _modeManager.setMIDIStart(true);
+      //ストップ  
+      } else if(0 == gpio_get(PIN_SYNC_IN_RS)){
+        _modeManager.setMIDIStop(true);
+      }
+
+    //シンクアウト
+    //テンポボリュームに応じたクロックを生成して実行
+   } else {
       _midiClock.countUp();
       if(_midiClock.getCountUp()){
         _midiClock.clear();

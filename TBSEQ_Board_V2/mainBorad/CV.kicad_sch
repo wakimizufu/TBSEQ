@@ -749,6 +749,16 @@
 	)
 	(wire
 		(pts
+			(xy 93.98 64.77) (xy 93.98 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "805e2948-1c47-459d-b68d-c37795adbac9")
+	)
+	(wire
+		(pts
 			(xy 161.29 60.96) (xy 161.29 62.23)
 		)
 		(stroke
@@ -766,6 +776,16 @@
 			(type default)
 		)
 		(uuid "a3737da0-f2fa-4d39-bc9a-a4321ece0fb8")
+	)
+	(wire
+		(pts
+			(xy 93.98 76.2) (xy 93.98 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b8720a46-7a6a-4576-8040-50d0ba954c16")
 	)
 	(wire
 		(pts
@@ -829,6 +849,16 @@
 	)
 	(wire
 		(pts
+			(xy 96.52 64.77) (xy 93.98 64.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "deda10c8-de65-44d7-ba0c-13114fa08c0a")
+	)
+	(wire
+		(pts
 			(xy 113.03 46.99) (xy 118.11 46.99)
 		)
 		(stroke
@@ -861,6 +891,28 @@
 		(uuid "30052155-eda4-4d42-b83b-000adef3c942")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 81.7857 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "D+5V"
+		(shape output)
+		(at 96.52 64.77 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "7d961007-b26e-41b1-a163-e2c29278fb01")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 104.6457 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1200,6 +1252,76 @@
 				(path "/74b57c73-2ea6-4d1a-baa5-ad46186fbb51/2421d167-37f8-4e2e-81e7-c28163312589"
 					(reference "DgIC5")
 					(unit 3)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 93.98 72.39 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "55f01b1d-5150-408a-87af-32f4b8a8b07b")
+		(property "Reference" "DgC6"
+			(at 97.79 71.1199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "0.1uF"
+			(at 97.79 73.6599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
+			(at 94.9452 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 93.98 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 93.98 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f552cc21-89ee-4344-bc70-56a9328a531a")
+		)
+		(pin "2"
+			(uuid "f3f7c2f7-cc92-4bbc-93d0-5df0dc4791e9")
+		)
+		(instances
+			(project "mainBorad"
+				(path "/74b57c73-2ea6-4d1a-baa5-ad46186fbb51/2421d167-37f8-4e2e-81e7-c28163312589"
+					(reference "DgC6")
+					(unit 1)
 				)
 			)
 		)
@@ -1639,6 +1761,72 @@
 			(project "mainBorad"
 				(path "/74b57c73-2ea6-4d1a-baa5-ad46186fbb51/2421d167-37f8-4e2e-81e7-c28163312589"
 					(reference "#PWR016")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GNDD")
+		(at 93.98 80.01 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c11af644-a89d-4d5f-b014-6665d63cad14")
+		(property "Reference" "#PWR042"
+			(at 93.98 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GNDD"
+			(at 93.98 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 93.98 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 93.98 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GNDD\" , digital ground"
+			(at 93.98 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b17e882c-109f-4c9e-a954-acd88d54cafe")
+		)
+		(instances
+			(project "mainBorad"
+				(path "/74b57c73-2ea6-4d1a-baa5-ad46186fbb51/2421d167-37f8-4e2e-81e7-c28163312589"
+					(reference "#PWR042")
 					(unit 1)
 				)
 			)

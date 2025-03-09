@@ -1,0 +1,32 @@
+Reference	Value	Datasheet	Footprint	Qty	DNP
+C1,C4	10uF/25V	~	Capacitor_THT:CP_Radial_D5.0mm_P2.50mm	2	
+C2,C3	0.01uF	~	Capacitor_THT:C_Rect_L7.0mm_W2.0mm_P5.00mm	2	
+C5,C9,C10,C11,C12	1uF/25V	~	Capacitor_THT:CP_Radial_D5.0mm_P2.50mm	5	
+C6	0.1u	~	Capacitor_THT:C_Disc_D4.7mm_W2.5mm_P5.00mm	1	
+C7,C8	2.2uF/25V	~	Capacitor_THT:CP_Radial_D5.0mm_P2.50mm	2	
+D1,D2,D3,D4	D	~	Diode_THT:D_DO-35_SOD27_P2.54mm_Vertical_AnodeUp	4	
+IC1	2MS1T1B4VS2QES	https://akizukidenshi.com/download/ds/cosland/2MS1-T1-B4-VS2-Q-E-S.pdf	2MS1T1B4VS2QES	1	
+J1,J3	Conn_01x03	~	Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical	2	
+J2,J5	Conn_01x01	~	-- ミックスされた値 --	2	
+J4	Conn_01x04	~	Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Horizontal	1	
+J6,J7	Conn_01x02	~	Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Horizontal	2	
+J8,J9	MJ-462	https://akizukidenshi.com/download/ds/avvicon/MJ-462.pdf	SamacSys_Parts:MJ462	2	
+Q1	Q_NPN_ECB	~	Package_TO_SOT_THT:TO-92	1	
+R1,R2,R3,R34	2.2K	~	Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical	4	
+R4	220K	~	Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical	1	
+R5,R11,R25,R30,R33,R35	100K	~	Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical	6	
+R6,R12	33K	~	Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical	2	
+R7,R13	5K	~	Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical	2	
+R8	47K	~	Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical	1	
+R9,R10	510	~	Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical	2	
+R14,R15,R16,R19,R20,R21,R22,R26,R27,R28,R31,R36	10K	~	Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical	12	
+R17,R18	20K	~	Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical	2	
+R23	30K	~	Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical	1	
+R24	24K	~	Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical	1	
+R29,R32	100	~	Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical	2	
+U1	LM13700	http://www.ti.com/lit/ds/symlink/lm13700.pdf	Package_DIP:DIP-16_W7.62mm_Socket	1	
+U2,U3	Opamp_Quad	~	-- ミックスされた値 --	2	
+VR1	3362P-1-102LF 1K	https://datasheet.datasheetarchive.com/originals/distributors/SFDatasheet-6/sf-000139931.pdf	SamacSys_Parts:3362P_1	1	
+VR2	3362P-1-104LF 100K	https://datasheet.datasheetarchive.com/originals/distributors/SFDatasheet-6/sf-000139931.pdf	SamacSys_Parts:3362P_1	1	
+VR3,VR5	3362P-1-504LF 500K	https://datasheet.datasheetarchive.com/originals/distributors/SFDatasheet-6/sf-000139931.pdf	SamacSys_Parts:3362P_1	2	
+VR4,VR6	3362P-1-503LF 50K	https://datasheet.datasheetarchive.com/originals/distributors/SFDatasheet-6/sf-000139931.pdf	SamacSys_Parts:3362P_1	2	

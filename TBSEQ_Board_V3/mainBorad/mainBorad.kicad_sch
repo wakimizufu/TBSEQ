@@ -1,0 +1,469 @@
+(kicad_sch
+	(version 20231120)
+	(generator "eeschema")
+	(generator_version "8.0")
+	(uuid "83af791a-9776-40a7-82ad-9528ff7474b8")
+	(paper "A4")
+	(lib_symbols)
+	(sheet
+		(at 87.63 49.53)
+		(size 15.24 10.16)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "1f7f5c42-a5fb-402f-98cb-47ebc2cae56f")
+		(property "Sheetname" "VCF"
+			(at 87.63 48.8184 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "VCF.kicad_sch"
+			(at 87.63 60.2746 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "mainBorad"
+				(path "/83af791a-9776-40a7-82ad-9528ff7474b8"
+					(page "11")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 22.86 21.59)
+		(size 19.05 11.43)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "2a7aa622-1b89-4529-84ec-ef6853ee06a0")
+		(property "Sheetname" "RasPico"
+			(at 22.86 20.8784 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "RasPico.kicad_sch"
+			(at 22.86 33.6046 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "mainBorad"
+				(path "/83af791a-9776-40a7-82ad-9528ff7474b8"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 118.11 50.8)
+		(size 15.24 8.89)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "60eab4e1-ce34-4d77-8d9b-d611705cbf82")
+		(property "Sheetname" "VCA"
+			(at 118.11 50.0884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "LM13700_Overdrive.kicad_sch"
+			(at 118.11 60.2746 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "mainBorad"
+				(path "/83af791a-9776-40a7-82ad-9528ff7474b8"
+					(page "12")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 204.47 22.86)
+		(size 20.32 10.16)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "7067d32e-232c-4c33-be2e-744ed9661c4e")
+		(property "Sheetname" "PowerSupply"
+			(at 204.47 22.1484 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "PowerSupply.kicad_sch"
+			(at 204.47 33.6046 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "mainBorad"
+				(path "/83af791a-9776-40a7-82ad-9528ff7474b8"
+					(page "8")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 140.97 22.86)
+		(size 15.24 8.89)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "762c6d25-4ca5-4dbd-82b1-8f7efbb1590c")
+		(property "Sheetname" "LevelConvert"
+			(at 140.97 22.1484 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "LevelConvert.kicad_sch"
+			(at 140.97 32.3346 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "mainBorad"
+				(path "/83af791a-9776-40a7-82ad-9528ff7474b8"
+					(page "6")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 58.42 50.8)
+		(size 12.7 8.89)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "765da965-e62c-424b-9b1b-9538054aabf6")
+		(property "Sheetname" "VCO"
+			(at 58.42 50.0884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "VCO.kicad_sch"
+			(at 58.42 60.2746 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "mainBorad"
+				(path "/83af791a-9776-40a7-82ad-9528ff7474b8"
+					(page "10")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 54.61 21.59)
+		(size 17.78 10.16)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "823be519-bdcf-42c8-a9bd-38752cead0eb")
+		(property "Sheetname" "MIDIRx"
+			(at 54.61 20.8784 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "MIDIRx.kicad_sch"
+			(at 54.61 32.3346 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "mainBorad"
+				(path "/83af791a-9776-40a7-82ad-9528ff7474b8"
+					(page "3")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 176.53 22.86)
+		(size 17.78 8.89)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "84399fb9-099f-4a2f-878a-57c8535f6267")
+		(property "Sheetname" "Jack"
+			(at 176.53 22.1484 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Jack.kicad_sch"
+			(at 176.53 32.3346 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "mainBorad"
+				(path "/83af791a-9776-40a7-82ad-9528ff7474b8"
+					(page "7")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 24.13 49.53)
+		(size 16.51 10.16)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "89dc079b-4bec-462d-b3d4-975f87bf224f")
+		(property "Sheetname" "Interface"
+			(at 24.13 48.8184 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Interface.kicad_sch"
+			(at 24.13 60.2746 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "mainBorad"
+				(path "/83af791a-9776-40a7-82ad-9528ff7474b8"
+					(page "9")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 115.57 24.13)
+		(size 12.7 8.89)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "d05b3b8c-5b48-43e4-97e3-e56a41468e03")
+		(property "Sheetname" "CV"
+			(at 115.57 23.4184 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "CV.kicad_sch"
+			(at 115.57 33.6046 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "mainBorad"
+				(path "/83af791a-9776-40a7-82ad-9528ff7474b8"
+					(page "5")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 86.36 22.86)
+		(size 16.51 10.16)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "df077139-68fe-4311-bd8c-6d4deac1eeeb")
+		(property "Sheetname" "FRAM"
+			(at 86.36 22.1484 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "FRAM.kicad_sch"
+			(at 86.36 33.6046 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "mainBorad"
+				(path "/83af791a-9776-40a7-82ad-9528ff7474b8"
+					(page "4")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 158.75 50.8)
+		(size 17.78 8.89)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "f3a69440-3517-4301-a09f-069bb3281b47")
+		(property "Sheetname" "TEMPO"
+			(at 158.75 50.0884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "TEMPO.kicad_sch"
+			(at 158.75 60.2746 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "mainBorad"
+				(path "/83af791a-9776-40a7-82ad-9528ff7474b8"
+					(page "13")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+)

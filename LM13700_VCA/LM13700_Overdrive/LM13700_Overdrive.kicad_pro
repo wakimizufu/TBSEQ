@@ -37,9 +37,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 0.9,
-          "height": 1.8,
-          "width": 1.8
+          "drill": 0.762,
+          "height": 1.524,
+          "width": 1.524
         },
         "silk_line_width": 0.1,
         "silk_text_italic": false,
@@ -444,7 +444,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "mainBorad.kicad_pro",
+    "filename": "LM13700_Overdrive.kicad_pro",
     "version": 1
   },
   "net_settings": {
@@ -461,14 +461,14 @@
         "name": "Default",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.2,
+        "track_width": 0.3,
         "via_diameter": 0.6,
         "via_drill": 0.3,
         "wire_width": 6
       },
       {
         "bus_width": 12,
-        "clearance": 0.3,
+        "clearance": 0.2,
         "diff_pair_gap": 0.25,
         "diff_pair_via_gap": 0.25,
         "diff_pair_width": 0.2,
@@ -478,8 +478,8 @@
         "name": "Power",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.5,
-        "via_diameter": 0.7,
+        "track_width": 0.4,
+        "via_diameter": 0.6,
         "via_drill": 0.3,
         "wire_width": 6
       }
@@ -491,60 +491,8 @@
     "netclass_assignments": null,
     "netclass_patterns": [
       {
-        "netclass": "Default",
-        "pattern": "D+5V"
-      },
-      {
         "netclass": "Power",
-        "pattern": "A+5.333V"
-      },
-      {
-        "netclass": "Power",
-        "pattern": "A+12V"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "D+3.3V"
-      },
-      {
-        "netclass": "Power",
-        "pattern": "GNDA"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "GNDD"
-      },
-      {
-        "netclass": "Power",
-        "pattern": "ADAPTER GND"
-      },
-      {
-        "netclass": "Power",
-        "pattern": "ADAPTER+15V"
-      },
-      {
-        "netclass": "Power",
-        "pattern": "Net-(PwD3-A)"
-      },
-      {
-        "netclass": "Power",
-        "pattern": "A+15VPre"
-      },
-      {
-        "netclass": "Power",
-        "pattern": "A+15V"
-      },
-      {
-        "netclass": "Power",
-        "pattern": "D+15VPre"
-      },
-      {
-        "netclass": "Power",
-        "pattern": "D+15V"
-      },
-      {
-        "netclass": "Power",
-        "pattern": "Net-(PwVR1-CCW)"
+        "pattern": "+12VA"
       }
     ]
   },
@@ -553,7 +501,7 @@
       "gencad": "",
       "idf": "",
       "netlist": "",
-      "plot": "",
+      "plot": "C:/workspace/git_TBSEQ/LM13700_VCA/LM13700_Overdrive/gaber",
       "pos_files": "",
       "specctra_dsn": "",
       "step": "",
@@ -564,6 +512,7 @@
   },
   "schematic": {
     "annotate_start_num": 0,
+    "bom_export_filename": "LM13700_Overdrive.csv",
     "bom_fmt_presets": [],
     "bom_fmt_settings": {
       "field_delimiter": ",",
@@ -664,18 +613,6 @@
         },
         {
           "group_by": false,
-          "label": "説明",
-          "name": "Description",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Sim.Pins",
-          "name": "Sim.Pins",
-          "show": false
-        },
-        {
-          "group_by": false,
           "label": "Sim.Device",
           "name": "Sim.Device",
           "show": false
@@ -690,6 +627,18 @@
           "group_by": false,
           "label": "Sim.Name",
           "name": "Sim.Name",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Sim.Pins",
+          "name": "Sim.Pins",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "説明",
+          "name": "Description",
           "show": false
         }
       ],
@@ -740,52 +689,8 @@
   },
   "sheets": [
     [
-      "74b57c73-2ea6-4d1a-baa5-ad46186fbb51",
-      "ルート"
-    ],
-    [
-      "a9547498-c081-44b0-b937-cdfd06fea0cb",
-      "RasPico"
-    ],
-    [
-      "3c5f10b3-1698-4cb7-a8d7-c2e23cfbe8e6",
-      "FRAM"
-    ],
-    [
-      "a2f0aaad-bd88-4d84-92cb-2cf1dbaba80e",
-      "LevelConvert"
-    ],
-    [
-      "1b45ecdc-2ad1-48a0-a004-9a96ff077acd",
-      "MIDI Rx"
-    ],
-    [
-      "2421d167-37f8-4e2e-81e7-c28163312589",
-      "CV"
-    ],
-    [
-      "0ae150e0-c08a-4733-b66b-e4b7868d24b7",
-      "Jack"
-    ],
-    [
-      "d9cb4d85-ede2-449b-9b10-29aa5c34151e",
-      "PowerSupply"
-    ],
-    [
-      "9beef36b-6093-4e82-bdf4-f091da2cdf64",
-      "AnInterface"
-    ],
-    [
-      "3ce9db33-7674-403c-9752-caa86b5c6a58",
-      "AnVCO"
-    ],
-    [
-      "911ce96f-80d5-48a0-a1d5-5fcf48ca0140",
-      "AnVCF"
-    ],
-    [
-      "dbf50836-c244-42c9-92ac-6281ce0d629d",
-      "AnVCA"
+      "a146eb4b-1533-42b2-b3d6-c6f7b09e33d8",
+      "Root"
     ]
   ],
   "text_variables": {}

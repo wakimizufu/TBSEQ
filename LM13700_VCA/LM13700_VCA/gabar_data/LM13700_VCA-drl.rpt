@@ -1,0 +1,28 @@
+Drill report for LM13700_VCA.kicad_pcb
+Created on 2025-01-25T18:59:36+0900
+
+Copper Layer Stackup:
+    =============================================================
+    L1 :  F.Cu                      front
+    L2 :  B.Cu                      back
+
+
+Drill file 'LM13700_VCA-PTH.drl' contains
+    plated through holes:
+    =============================================================
+    T1  0.400mm  0.0157"  (11 holes)
+    T2  0.690mm  0.0272"  (18 holes)
+    T3  0.750mm  0.0295"  (3 holes)
+    T4  0.800mm  0.0315"  (148 holes)
+    T5  1.000mm  0.0394"  (19 holes)
+    T6  1.090mm  0.0429"  (5 holes)
+    T7  1.600mm  0.0630"  (12 holes)
+
+    Total plated holes count 216
+
+
+Drill file 'LM13700_VCA-NPTH.drl' contains
+    unplated through holes:
+    =============================================================
+
+    Total unplated holes count 0

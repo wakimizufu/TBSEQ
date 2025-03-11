@@ -457,7 +457,7 @@
 				)
 			)
 		)
-		(symbol "Connector_Generic:Conn_01x07"
+		(symbol "Connector_Generic:Conn_01x08"
 			(pin_names
 				(offset 1.016) hide)
 			(exclude_from_sim no)
@@ -471,8 +471,8 @@
 					)
 				)
 			)
-			(property "Value" "Conn_01x07"
-				(at 0 -10.16 0)
+			(property "Value" "Conn_01x08"
+				(at 0 -12.7 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -497,7 +497,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Generic connector, single row, 01x07, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(property "Description" "Generic connector, single row, 01x08, script generated (kicad-library-utils/schlib/autogen/connector/)"
 				(at 0 0 0)
 				(effects
 					(font
@@ -524,7 +524,18 @@
 					(hide yes)
 				)
 			)
-			(symbol "Conn_01x07_1_1"
+			(symbol "Conn_01x08_1_1"
+				(rectangle
+					(start -1.27 -10.033)
+					(end 0 -10.287)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
 				(rectangle
 					(start -1.27 -7.493)
 					(end 0 -7.747)
@@ -604,7 +615,7 @@
 				)
 				(rectangle
 					(start -1.27 8.89)
-					(end 1.27 -8.89)
+					(end 1.27 -11.43)
 					(stroke
 						(width 0.254)
 						(type default)
@@ -732,6 +743,24 @@
 						)
 					)
 					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -10.16 0)
+					(length 3.81)
+					(name "Pin_8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2469,6 +2498,16 @@
 	)
 	(wire
 		(pts
+			(xy 62.23 121.92) (xy 62.23 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "069c51a8-48b1-4894-b035-2882175c3c70")
+	)
+	(wire
+		(pts
 			(xy 151.13 116.84) (xy 151.13 129.54)
 		)
 		(stroke
@@ -2569,16 +2608,6 @@
 	)
 	(wire
 		(pts
-			(xy 59.69 124.46) (xy 59.69 121.92)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1a84087d-ca53-468a-8921-52ac6e4378f0")
-	)
-	(wire
-		(pts
 			(xy 67.31 119.38) (xy 67.31 116.84)
 		)
 		(stroke
@@ -2609,6 +2638,16 @@
 	)
 	(wire
 		(pts
+			(xy 57.15 121.92) (xy 62.23 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "223c9d29-7852-46bc-9999-f9a13a7a9390")
+	)
+	(wire
+		(pts
 			(xy 80.01 80.01) (xy 88.9 80.01)
 		)
 		(stroke
@@ -2629,7 +2668,7 @@
 	)
 	(wire
 		(pts
-			(xy 59.69 106.68) (xy 88.9 106.68)
+			(xy 57.15 106.68) (xy 88.9 106.68)
 		)
 		(stroke
 			(width 0)
@@ -2769,7 +2808,7 @@
 	)
 	(wire
 		(pts
-			(xy 59.69 109.22) (xy 88.9 109.22)
+			(xy 57.15 109.22) (xy 88.9 109.22)
 		)
 		(stroke
 			(width 0)
@@ -2839,16 +2878,6 @@
 	)
 	(wire
 		(pts
-			(xy 86.36 157.48) (xy 86.36 134.62)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6b256154-4365-4729-b226-c3a3334f5009")
-	)
-	(wire
-		(pts
 			(xy 127 109.22) (xy 132.08 109.22)
 		)
 		(stroke
@@ -2886,6 +2915,16 @@
 			(type default)
 		)
 		(uuid "77f9d440-c947-483c-b5b5-1f7560da65b2")
+	)
+	(wire
+		(pts
+			(xy 57.15 134.62) (xy 57.15 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "79d2707d-7d3d-4454-8183-d1457db45b74")
 	)
 	(wire
 		(pts
@@ -2969,16 +3008,6 @@
 	)
 	(wire
 		(pts
-			(xy 86.36 134.62) (xy 88.9 134.62)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8d2e4fd6-29c1-4c91-9a6b-4db844010eeb")
-	)
-	(wire
-		(pts
 			(xy 80.01 82.55) (xy 87.63 82.55)
 		)
 		(stroke
@@ -2999,7 +3028,7 @@
 	)
 	(wire
 		(pts
-			(xy 59.69 114.3) (xy 88.9 114.3)
+			(xy 57.15 114.3) (xy 88.9 114.3)
 		)
 		(stroke
 			(width 0)
@@ -3016,6 +3045,16 @@
 			(type default)
 		)
 		(uuid "9382e98d-35af-45f5-acda-91fc64abad0c")
+	)
+	(wire
+		(pts
+			(xy 57.15 134.62) (xy 88.9 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "95570552-e4d9-4551-a84d-8d9fdab3ce3e")
 	)
 	(wire
 		(pts
@@ -3169,16 +3208,6 @@
 	)
 	(wire
 		(pts
-			(xy 73.66 157.48) (xy 86.36 157.48)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b26d6c88-e6cb-4441-88ec-9bc31c45ae9c")
-	)
-	(wire
-		(pts
 			(xy 127 96.52) (xy 139.7 96.52)
 		)
 		(stroke
@@ -3249,7 +3278,7 @@
 	)
 	(wire
 		(pts
-			(xy 64.77 119.38) (xy 59.69 119.38)
+			(xy 64.77 119.38) (xy 57.15 119.38)
 		)
 		(stroke
 			(width 0)
@@ -3299,7 +3328,7 @@
 	)
 	(wire
 		(pts
-			(xy 88.9 124.46) (xy 59.69 124.46)
+			(xy 88.9 124.46) (xy 62.23 124.46)
 		)
 		(stroke
 			(width 0)
@@ -3349,7 +3378,7 @@
 	)
 	(wire
 		(pts
-			(xy 67.31 116.84) (xy 59.69 116.84)
+			(xy 67.31 116.84) (xy 57.15 116.84)
 		)
 		(stroke
 			(width 0)
@@ -3479,7 +3508,7 @@
 	)
 	(wire
 		(pts
-			(xy 59.69 111.76) (xy 88.9 111.76)
+			(xy 57.15 111.76) (xy 88.9 111.76)
 		)
 		(stroke
 			(width 0)
@@ -3693,28 +3722,6 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "D+PlugIn_SyncIn"
-		(shape input)
-		(at 73.66 157.48 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "24ff1232-af0c-4644-9631-1dd23bca1d66")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 54.7093 157.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
 				(hide yes)
 			)
 		)
@@ -4664,6 +4671,94 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector_Generic:Conn_01x08")
+		(at 52.07 114.3 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "27ecd48d-6060-450e-b10b-11297da4348b")
+		(property "Reference" "J1"
+			(at 49.53 114.2999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Conn_01x08"
+			(at 49.53 116.8399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical"
+			(at 52.07 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 52.07 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x08, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 52.07 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "7"
+			(uuid "6120b662-3b99-4416-a195-39f008e042eb")
+		)
+		(pin "1"
+			(uuid "cc6cdf3f-6da7-4aa0-910e-f307c5d414a8")
+		)
+		(pin "2"
+			(uuid "56aa44c8-d54f-45fc-bde5-fc82ab64d7f9")
+		)
+		(pin "6"
+			(uuid "64c0f6b3-fc9b-4c6e-97af-5b0c4f811f91")
+		)
+		(pin "8"
+			(uuid "3db24439-a515-48e9-836f-9c3d30c86477")
+		)
+		(pin "3"
+			(uuid "55d801db-76b9-4d05-b7e4-24f00d42fe4d")
+		)
+		(pin "4"
+			(uuid "fc8a5bd8-c12f-4bc2-bb44-a89d5a69b75a")
+		)
+		(pin "5"
+			(uuid "fbea5928-6405-4c06-8a30-aea5e16417d7")
+		)
+		(instances
+			(project ""
+				(path "/83af791a-9776-40a7-82ad-9528ff7474b8/2a7aa622-1b89-4529-84ec-ef6853ee06a0"
+					(reference "J1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector_Generic:Conn_01x06")
 		(at 172.72 95.25 0)
 		(unit 1)
@@ -5136,91 +5231,6 @@
 			(project "mainBorad"
 				(path "/83af791a-9776-40a7-82ad-9528ff7474b8/2a7aa622-1b89-4529-84ec-ef6853ee06a0"
 					(reference "#FLG03")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector_Generic:Conn_01x07")
-		(at 54.61 114.3 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "cf8dd5ba-8388-4e10-8d6a-5aaf4e21381d")
-		(property "Reference" "DgJ2"
-			(at 52.07 113.0299 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Conn_01x07"
-			(at 52.07 115.57 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x07_P2.54mm_Vertical"
-			(at 54.61 114.3 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 54.61 114.3 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Generic connector, single row, 01x07, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 54.61 114.3 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "3"
-			(uuid "ef266886-6185-491d-8815-9b628e2786a5")
-		)
-		(pin "6"
-			(uuid "d20db926-e9bc-4b15-8523-229ffe312c4c")
-		)
-		(pin "1"
-			(uuid "f250cf51-f5e0-428b-9848-9660a9e3e708")
-		)
-		(pin "4"
-			(uuid "9b7d3488-0f4f-4234-8543-c26e2e4bd70e")
-		)
-		(pin "7"
-			(uuid "3b44b42a-b36e-4c6a-be32-da8c723b02d0")
-		)
-		(pin "5"
-			(uuid "aede403b-1cc3-4a15-982c-25f60a4a0703")
-		)
-		(pin "2"
-			(uuid "1a508710-08fe-45ac-97df-1878cae3d592")
-		)
-		(instances
-			(project "mainBorad"
-				(path "/83af791a-9776-40a7-82ad-9528ff7474b8/2a7aa622-1b89-4529-84ec-ef6853ee06a0"
-					(reference "DgJ2")
 					(unit 1)
 				)
 			)

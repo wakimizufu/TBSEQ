@@ -4577,6 +4577,16 @@
 	)
 	(wire
 		(pts
+			(xy 262.89 20.32) (xy 269.24 20.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d2710638-20db-4d07-aad2-8ef08c20f33b")
+	)
+	(wire
+		(pts
 			(xy 58.42 31.75) (xy 55.88 31.75)
 		)
 		(stroke
@@ -4664,6 +4674,16 @@
 			(type default)
 		)
 		(uuid "df90f836-fc32-4a6a-8949-f28835aeff20")
+	)
+	(wire
+		(pts
+			(xy 59.69 82.55) (xy 96.52 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dfca822a-c972-46c1-8c50-73a527795089")
 	)
 	(wire
 		(pts
@@ -4944,16 +4964,6 @@
 			(type default)
 		)
 		(uuid "fb3ee524-65ab-4ef5-8584-4c1e2979a4f5")
-	)
-	(wire
-		(pts
-			(xy 59.69 82.55) (xy 96.52 82.55)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fc16327f-0fda-4cd2-9af1-787a38342881")
 	)
 	(wire
 		(pts
@@ -5506,6 +5516,28 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "A+12V"
+		(shape input)
+		(at 262.89 20.32 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "5665b63d-5dfe-4e6a-b24a-c4811324443d")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 253.7362 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 				(hide yes)
 			)
 		)
@@ -6493,7 +6525,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "24b0b076-2aaf-4e53-b773-1afbf719205c")
-		(property "Reference" "#PWR02"
+		(property "Reference" "#PWR0116"
 			(at 74.93 195.58 0)
 			(effects
 				(font
@@ -6543,7 +6575,7 @@
 		(instances
 			(project "analog_separate"
 				(path "/83af791a-9776-40a7-82ad-9528ff7474b8/89dc079b-4bec-462d-b3d4-975f87bf224f"
-					(reference "#PWR02")
+					(reference "#PWR0116")
 					(unit 1)
 				)
 			)
@@ -6652,7 +6684,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2b2ce4bc-7a74-4752-a922-90d448459316")
-		(property "Reference" "#PWR017"
+		(property "Reference" "#PWR0120"
 			(at 208.28 96.52 0)
 			(effects
 				(font
@@ -6702,7 +6734,7 @@
 		(instances
 			(project "analog_separate"
 				(path "/83af791a-9776-40a7-82ad-9528ff7474b8/89dc079b-4bec-462d-b3d4-975f87bf224f"
-					(reference "#PWR017")
+					(reference "#PWR0120")
 					(unit 1)
 				)
 			)
@@ -6729,7 +6761,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "2c85293c-2858-414a-92ff-ce1a7a10d797")
-		(property "Reference" "#PWR018"
+		(property "Reference" "#PWR0107"
 			(at 163.83 91.44 0)
 			(effects
 				(font
@@ -6779,7 +6811,7 @@
 		(instances
 			(project "analog_separate"
 				(path "/83af791a-9776-40a7-82ad-9528ff7474b8/89dc079b-4bec-462d-b3d4-975f87bf224f"
-					(reference "#PWR018")
+					(reference "#PWR0107")
 					(unit 1)
 				)
 			)
@@ -6887,7 +6919,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3bc4902e-020f-48fb-a4f8-8c81be8b7506")
-		(property "Reference" "#PWR03"
+		(property "Reference" "#PWR0115"
 			(at 110.49 196.85 0)
 			(effects
 				(font
@@ -6937,7 +6969,7 @@
 		(instances
 			(project "analog_separate"
 				(path "/83af791a-9776-40a7-82ad-9528ff7474b8/89dc079b-4bec-462d-b3d4-975f87bf224f"
-					(reference "#PWR03")
+					(reference "#PWR0115")
 					(unit 1)
 				)
 			)
@@ -7129,7 +7161,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4490170f-e693-4f42-82da-6b7b0107c23b")
-		(property "Reference" "#PWR012"
+		(property "Reference" "#PWR0114"
 			(at 144.78 123.19 0)
 			(effects
 				(font
@@ -7179,7 +7211,7 @@
 		(instances
 			(project "analog_separate"
 				(path "/83af791a-9776-40a7-82ad-9528ff7474b8/89dc079b-4bec-462d-b3d4-975f87bf224f"
-					(reference "#PWR012")
+					(reference "#PWR0114")
 					(unit 1)
 				)
 			)
@@ -7363,7 +7395,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "4a341df5-b191-4698-92c3-4551251d6ca4")
-		(property "Reference" "#PWR015"
+		(property "Reference" "#PWR0119"
 			(at 210.82 166.37 0)
 			(effects
 				(font
@@ -7413,7 +7445,7 @@
 		(instances
 			(project "analog_separate"
 				(path "/83af791a-9776-40a7-82ad-9528ff7474b8/89dc079b-4bec-462d-b3d4-975f87bf224f"
-					(reference "#PWR015")
+					(reference "#PWR0119")
 					(unit 1)
 				)
 			)
@@ -7507,7 +7539,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4c684471-45c2-42a3-9157-730a3b167e43")
-		(property "Reference" "#PWR04"
+		(property "Reference" "#PWR0110"
 			(at 50.8 77.47 0)
 			(effects
 				(font
@@ -7557,7 +7589,7 @@
 		(instances
 			(project "analog_separate"
 				(path "/83af791a-9776-40a7-82ad-9528ff7474b8/89dc079b-4bec-462d-b3d4-975f87bf224f"
-					(reference "#PWR04")
+					(reference "#PWR0110")
 					(unit 1)
 				)
 			)
@@ -8236,15 +8268,16 @@
 	)
 	(symbol
 		(lib_id "4xxx:4066")
-		(at 96.52 90.17 0)
-		(unit 3)
+		(at 96.52 111.76 0)
+		(unit 4)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "67fb96e8-fae7-463a-9e6d-dc4db18545e3")
+		(fields_autoplaced yes)
+		(uuid "71e6d304-0a1d-46c7-8297-0e54e0fdb4b1")
 		(property "Reference" "IC12"
-			(at 92.456 94.996 0)
+			(at 96.52 116.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8252,15 +8285,15 @@
 			)
 		)
 		(property "Value" "4066"
-			(at 98.298 94.996 0)
+			(at 96.52 119.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "Package_DIP:DIP-14_W7.62mm"
-			(at 96.52 90.17 0)
+		(property "Footprint" "Package_DIP:DIP-14_W7.62mm_LongPads"
+			(at 96.52 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8269,7 +8302,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/cd4066b.pdf"
-			(at 96.52 90.17 0)
+			(at 96.52 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8278,7 +8311,7 @@
 			)
 		)
 		(property "Description" "Quad Analog Switches"
-			(at 96.52 90.17 0)
+			(at 96.52 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8286,59 +8319,53 @@
 				(hide yes)
 			)
 		)
-		(pin "12"
-			(uuid "5eb02e77-948a-482b-b1bc-a550b0554821")
-		)
-		(pin "9"
-			(uuid "8d8dfb44-1023-41e0-95df-097375e9d0b9")
-		)
-		(pin "7"
-			(uuid "5d578287-6f3e-4c72-8010-3106bd1211c1")
-		)
 		(pin "1"
-			(uuid "c9baff21-8d30-476a-876b-604ff4023f04")
-		)
-		(pin "11"
-			(uuid "ecd3c42f-ac34-4542-96c3-914c40e2161c")
-		)
-		(pin "8"
-			(uuid "9d3c95dd-51a2-44f4-8b06-270390e86af7")
-		)
-		(pin "10"
-			(uuid "030969e6-9a59-4509-8aa7-f8f55dc90764")
-		)
-		(pin "6"
-			(uuid "44a0e8ab-98a8-43f9-865d-91a3cb85d09c")
-		)
-		(pin "3"
-			(uuid "f2dc3400-e62f-4ea9-960d-65428ec81a39")
-		)
-		(pin "14"
-			(uuid "36981a85-8b8d-4c2b-b74d-cbab5ff7e9f2")
-		)
-		(pin "4"
-			(uuid "26e9fe72-874b-469c-b5e2-b3b3a143811a")
+			(uuid "fd255672-eb00-4af8-8cde-69dc76dc690c")
 		)
 		(pin "2"
-			(uuid "3896525d-3a64-41f9-930b-8f1101a52ece")
+			(uuid "c2b62f5c-2ed1-427e-bad4-e57a3c1ae9fe")
 		)
 		(pin "5"
-			(uuid "f69eaf02-1cbf-46ad-8134-8576005cefcb")
+			(uuid "9e357dd3-1b55-4354-a4c4-63734da45c5b")
+		)
+		(pin "6"
+			(uuid "aa10a6ff-577a-4841-8a38-1b7422207bb5")
+		)
+		(pin "11"
+			(uuid "412a1824-82f9-4112-abbc-3dc0611a9b29")
+		)
+		(pin "12"
+			(uuid "5c80c295-cd27-46af-8220-bf5f0b62da02")
+		)
+		(pin "9"
+			(uuid "76eb4447-d3c5-4464-8540-84006a0e6076")
+		)
+		(pin "10"
+			(uuid "2d0ac7c9-1a0b-4e4b-a4fd-bb744c7e3eb2")
+		)
+		(pin "3"
+			(uuid "4197c1eb-2c2a-4e19-a2ee-70885f405837")
+		)
+		(pin "8"
+			(uuid "a1269499-603b-4724-9955-171eac9bb308")
+		)
+		(pin "7"
+			(uuid "c157aa35-9374-479a-a5e7-694744b2ede4")
+		)
+		(pin "14"
+			(uuid "e246bb67-0f18-4aa1-b9a2-58fa4e2cbaa5")
 		)
 		(pin "13"
-			(uuid "20bb5024-56f8-47d1-ab4d-16f87106cb18")
+			(uuid "ee5df064-312d-4945-91f1-4a06740691a7")
+		)
+		(pin "4"
+			(uuid "0d9c88e1-3ff4-4466-ab68-89dd233e2e82")
 		)
 		(instances
-			(project "analog_separate"
+			(project ""
 				(path "/83af791a-9776-40a7-82ad-9528ff7474b8/89dc079b-4bec-462d-b3d4-975f87bf224f"
 					(reference "IC12")
-					(unit 3)
-				)
-			)
-			(project "analog_separate"
-				(path "/96522794-a695-4466-86ba-4264882708e5/f3375c55-8148-47b4-9d07-6863d0fa6703"
-					(reference "IC12")
-					(unit 3)
+					(unit 4)
 				)
 			)
 		)
@@ -8420,6 +8447,110 @@
 				(path "/9f46303d-d943-4531-8552-3d499521569d/addc5987-d1ba-4ae2-823d-8b32950df557"
 					(reference "R92")
 					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "4xxx:4066")
+		(at 118.11 59.69 0)
+		(unit 2)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7c9bd3a6-e618-4e03-acb9-e65e596ed944")
+		(property "Reference" "IC12"
+			(at 118.11 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "4066"
+			(at 118.11 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_DIP:DIP-14_W7.62mm_LongPads"
+			(at 118.11 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/cd4066b.pdf"
+			(at 118.11 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Quad Analog Switches"
+			(at 118.11 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "fd255672-eb00-4af8-8cde-69dc76dc690c")
+		)
+		(pin "2"
+			(uuid "c2b62f5c-2ed1-427e-bad4-e57a3c1ae9fe")
+		)
+		(pin "5"
+			(uuid "9e357dd3-1b55-4354-a4c4-63734da45c5b")
+		)
+		(pin "6"
+			(uuid "aa10a6ff-577a-4841-8a38-1b7422207bb5")
+		)
+		(pin "11"
+			(uuid "412a1824-82f9-4112-abbc-3dc0611a9b29")
+		)
+		(pin "12"
+			(uuid "5c80c295-cd27-46af-8220-bf5f0b62da02")
+		)
+		(pin "9"
+			(uuid "76eb4447-d3c5-4464-8540-84006a0e6076")
+		)
+		(pin "10"
+			(uuid "2d0ac7c9-1a0b-4e4b-a4fd-bb744c7e3eb2")
+		)
+		(pin "3"
+			(uuid "4197c1eb-2c2a-4e19-a2ee-70885f405837")
+		)
+		(pin "8"
+			(uuid "a1269499-603b-4724-9955-171eac9bb308")
+		)
+		(pin "7"
+			(uuid "c157aa35-9374-479a-a5e7-694744b2ede4")
+		)
+		(pin "14"
+			(uuid "e246bb67-0f18-4aa1-b9a2-58fa4e2cbaa5")
+		)
+		(pin "13"
+			(uuid "ee5df064-312d-4945-91f1-4a06740691a7")
+		)
+		(pin "4"
+			(uuid "0d9c88e1-3ff4-4466-ab68-89dd233e2e82")
+		)
+		(instances
+			(project ""
+				(path "/83af791a-9776-40a7-82ad-9528ff7474b8/89dc079b-4bec-462d-b3d4-975f87bf224f"
+					(reference "IC12")
+					(unit 2)
 				)
 			)
 		)
@@ -8578,116 +8709,6 @@
 				(path "/9f46303d-d943-4531-8552-3d499521569d/addc5987-d1ba-4ae2-823d-8b32950df557"
 					(reference "C54")
 					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "4xxx:4066")
-		(at 118.11 59.69 0)
-		(unit 2)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "80bc31a7-6c9e-4c3c-9c67-7ed045b5d78f")
-		(property "Reference" "IC12"
-			(at 118.11 64.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "4066"
-			(at 118.11 67.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_DIP:DIP-14_W7.62mm"
-			(at 118.11 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/cd4066b.pdf"
-			(at 118.11 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Quad Analog Switches"
-			(at 118.11 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "12"
-			(uuid "5eb02e77-948a-482b-b1bc-a550b0554822")
-		)
-		(pin "9"
-			(uuid "88f235d0-0d65-4bd0-8672-230babfad442")
-		)
-		(pin "7"
-			(uuid "5d578287-6f3e-4c72-8010-3106bd1211c2")
-		)
-		(pin "1"
-			(uuid "c9baff21-8d30-476a-876b-604ff4023f05")
-		)
-		(pin "11"
-			(uuid "ecd3c42f-ac34-4542-96c3-914c40e2161d")
-		)
-		(pin "8"
-			(uuid "2d8880d1-710b-4847-9145-15ab096294f1")
-		)
-		(pin "10"
-			(uuid "030969e6-9a59-4509-8aa7-f8f55dc90765")
-		)
-		(pin "6"
-			(uuid "5308322c-279e-4824-8a61-15ade7c43ee7")
-		)
-		(pin "3"
-			(uuid "e68cedd8-3aee-4bc9-a8b7-8e969aad6731")
-		)
-		(pin "14"
-			(uuid "36981a85-8b8d-4c2b-b74d-cbab5ff7e9f3")
-		)
-		(pin "4"
-			(uuid "1ddba104-fb0b-42a7-b36d-bde0c373d0ef")
-		)
-		(pin "2"
-			(uuid "3896525d-3a64-41f9-930b-8f1101a52ecf")
-		)
-		(pin "5"
-			(uuid "e7416c2e-2bbd-4e0c-9b2a-38c952426241")
-		)
-		(pin "13"
-			(uuid "20bb5024-56f8-47d1-ab4d-16f87106cb19")
-		)
-		(instances
-			(project "analog_separate"
-				(path "/83af791a-9776-40a7-82ad-9528ff7474b8/89dc079b-4bec-462d-b3d4-975f87bf224f"
-					(reference "IC12")
-					(unit 2)
-				)
-			)
-			(project "analog_separate"
-				(path "/96522794-a695-4466-86ba-4264882708e5/f3375c55-8148-47b4-9d07-6863d0fa6703"
-					(reference "IC12")
-					(unit 2)
 				)
 			)
 		)
@@ -8936,6 +8957,72 @@
 			(project "analog"
 				(path "/9f46303d-d943-4531-8552-3d499521569d/addc5987-d1ba-4ae2-823d-8b32950df557"
 					(reference "R140")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GNDA")
+		(at 269.24 45.72 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "94cdda1c-1272-4b6a-b082-76489213c878")
+		(property "Reference" "#PWR046"
+			(at 269.24 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GNDA"
+			(at 269.24 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 269.24 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 269.24 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GNDA\" , analog ground"
+			(at 269.24 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "369e0c56-20e4-4b46-bf36-5bed61721aaf")
+		)
+		(instances
+			(project "mainBorad"
+				(path "/83af791a-9776-40a7-82ad-9528ff7474b8/89dc079b-4bec-462d-b3d4-975f87bf224f"
+					(reference "#PWR046")
 					(unit 1)
 				)
 			)
@@ -9277,6 +9364,110 @@
 		)
 	)
 	(symbol
+		(lib_id "4xxx:4066")
+		(at 96.52 90.17 0)
+		(unit 3)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a26ae92e-8802-4276-80d8-c53e5395bcd0")
+		(property "Reference" "IC12"
+			(at 96.52 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "4066"
+			(at 96.52 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_DIP:DIP-14_W7.62mm_LongPads"
+			(at 96.52 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/cd4066b.pdf"
+			(at 96.52 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Quad Analog Switches"
+			(at 96.52 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "fd255672-eb00-4af8-8cde-69dc76dc690c")
+		)
+		(pin "2"
+			(uuid "c2b62f5c-2ed1-427e-bad4-e57a3c1ae9fe")
+		)
+		(pin "5"
+			(uuid "9e357dd3-1b55-4354-a4c4-63734da45c5b")
+		)
+		(pin "6"
+			(uuid "aa10a6ff-577a-4841-8a38-1b7422207bb5")
+		)
+		(pin "11"
+			(uuid "412a1824-82f9-4112-abbc-3dc0611a9b29")
+		)
+		(pin "12"
+			(uuid "5c80c295-cd27-46af-8220-bf5f0b62da02")
+		)
+		(pin "9"
+			(uuid "76eb4447-d3c5-4464-8540-84006a0e6076")
+		)
+		(pin "10"
+			(uuid "2d0ac7c9-1a0b-4e4b-a4fd-bb744c7e3eb2")
+		)
+		(pin "3"
+			(uuid "4197c1eb-2c2a-4e19-a2ee-70885f405837")
+		)
+		(pin "8"
+			(uuid "a1269499-603b-4724-9955-171eac9bb308")
+		)
+		(pin "7"
+			(uuid "c157aa35-9374-479a-a5e7-694744b2ede4")
+		)
+		(pin "14"
+			(uuid "e246bb67-0f18-4aa1-b9a2-58fa4e2cbaa5")
+		)
+		(pin "13"
+			(uuid "ee5df064-312d-4945-91f1-4a06740691a7")
+		)
+		(pin "4"
+			(uuid "0d9c88e1-3ff4-4466-ab68-89dd233e2e82")
+		)
+		(instances
+			(project ""
+				(path "/83af791a-9776-40a7-82ad-9528ff7474b8/89dc079b-4bec-462d-b3d4-975f87bf224f"
+					(reference "IC12")
+					(unit 3)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 179.07 151.13 0)
 		(unit 1)
@@ -9432,116 +9623,6 @@
 				(path "/9f46303d-d943-4531-8552-3d499521569d/addc5987-d1ba-4ae2-823d-8b32950df557"
 					(reference "#PWR05")
 					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "4xxx:4066")
-		(at 96.52 111.76 0)
-		(mirror y)
-		(unit 4)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "a96e62ba-a1c9-4c2e-82a8-e72b55733bd9")
-		(property "Reference" "IC12"
-			(at 96.52 116.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "4066"
-			(at 102.362 117.094 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_DIP:DIP-14_W7.62mm"
-			(at 96.52 111.76 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/cd4066b.pdf"
-			(at 96.52 111.76 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Quad Analog Switches"
-			(at 96.52 111.76 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "12"
-			(uuid "50fd5599-9bb7-40f6-9118-05be857cec91")
-		)
-		(pin "9"
-			(uuid "88f235d0-0d65-4bd0-8672-230babfad441")
-		)
-		(pin "7"
-			(uuid "5d578287-6f3e-4c72-8010-3106bd1211c0")
-		)
-		(pin "1"
-			(uuid "c9baff21-8d30-476a-876b-604ff4023f03")
-		)
-		(pin "11"
-			(uuid "51ed4e58-18f6-4b24-a996-84ebfb6435bb")
-		)
-		(pin "8"
-			(uuid "2d8880d1-710b-4847-9145-15ab096294f0")
-		)
-		(pin "10"
-			(uuid "d379450c-cb18-4ca7-aa03-35b2eaf68193")
-		)
-		(pin "6"
-			(uuid "5308322c-279e-4824-8a61-15ade7c43ee6")
-		)
-		(pin "3"
-			(uuid "f2dc3400-e62f-4ea9-960d-65428ec81a38")
-		)
-		(pin "14"
-			(uuid "36981a85-8b8d-4c2b-b74d-cbab5ff7e9f1")
-		)
-		(pin "4"
-			(uuid "26e9fe72-874b-469c-b5e2-b3b3a1438119")
-		)
-		(pin "2"
-			(uuid "3896525d-3a64-41f9-930b-8f1101a52ecd")
-		)
-		(pin "5"
-			(uuid "f69eaf02-1cbf-46ad-8134-8576005cefca")
-		)
-		(pin "13"
-			(uuid "20bb5024-56f8-47d1-ab4d-16f87106cb17")
-		)
-		(instances
-			(project "analog_separate"
-				(path "/83af791a-9776-40a7-82ad-9528ff7474b8/89dc079b-4bec-462d-b3d4-975f87bf224f"
-					(reference "IC12")
-					(unit 4)
-				)
-			)
-			(project "analog_separate"
-				(path "/96522794-a695-4466-86ba-4264882708e5/f3375c55-8148-47b4-9d07-6863d0fa6703"
-					(reference "IC12")
-					(unit 4)
 				)
 			)
 		)
@@ -9708,7 +9789,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "af7932ae-b94b-4f4c-8f8b-295a0873fb84")
-		(property "Reference" "#PWR06"
+		(property "Reference" "#PWR0109"
 			(at 109.22 77.47 0)
 			(effects
 				(font
@@ -9758,7 +9839,7 @@
 		(instances
 			(project "analog_separate"
 				(path "/83af791a-9776-40a7-82ad-9528ff7474b8/89dc079b-4bec-462d-b3d4-975f87bf224f"
-					(reference "#PWR06")
+					(reference "#PWR0109")
 					(unit 1)
 				)
 			)
@@ -9861,7 +9942,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b2efa074-f758-416a-9073-58caa3355763")
-		(property "Reference" "#PWR010"
+		(property "Reference" "#PWR0112"
 			(at 44.45 129.54 0)
 			(effects
 				(font
@@ -9911,7 +9992,7 @@
 		(instances
 			(project "analog_separate"
 				(path "/83af791a-9776-40a7-82ad-9528ff7474b8/89dc079b-4bec-462d-b3d4-975f87bf224f"
-					(reference "#PWR010")
+					(reference "#PWR0112")
 					(unit 1)
 				)
 			)
@@ -9924,6 +10005,110 @@
 			(project "analog"
 				(path "/9f46303d-d943-4531-8552-3d499521569d/addc5987-d1ba-4ae2-823d-8b32950df557"
 					(reference "#PWR010")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "4xxx:4066")
+		(at 99.06 59.69 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "b3eb735a-6df2-498c-8bab-f9beea145b99")
+		(property "Reference" "IC12"
+			(at 99.06 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "4066"
+			(at 99.06 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_DIP:DIP-14_W7.62mm_LongPads"
+			(at 99.06 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/cd4066b.pdf"
+			(at 99.06 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Quad Analog Switches"
+			(at 99.06 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "fd255672-eb00-4af8-8cde-69dc76dc690c")
+		)
+		(pin "2"
+			(uuid "c2b62f5c-2ed1-427e-bad4-e57a3c1ae9fe")
+		)
+		(pin "5"
+			(uuid "9e357dd3-1b55-4354-a4c4-63734da45c5b")
+		)
+		(pin "6"
+			(uuid "aa10a6ff-577a-4841-8a38-1b7422207bb5")
+		)
+		(pin "11"
+			(uuid "412a1824-82f9-4112-abbc-3dc0611a9b29")
+		)
+		(pin "12"
+			(uuid "5c80c295-cd27-46af-8220-bf5f0b62da02")
+		)
+		(pin "9"
+			(uuid "76eb4447-d3c5-4464-8540-84006a0e6076")
+		)
+		(pin "10"
+			(uuid "2d0ac7c9-1a0b-4e4b-a4fd-bb744c7e3eb2")
+		)
+		(pin "3"
+			(uuid "4197c1eb-2c2a-4e19-a2ee-70885f405837")
+		)
+		(pin "8"
+			(uuid "a1269499-603b-4724-9955-171eac9bb308")
+		)
+		(pin "7"
+			(uuid "c157aa35-9374-479a-a5e7-694744b2ede4")
+		)
+		(pin "14"
+			(uuid "e246bb67-0f18-4aa1-b9a2-58fa4e2cbaa5")
+		)
+		(pin "13"
+			(uuid "ee5df064-312d-4945-91f1-4a06740691a7")
+		)
+		(pin "4"
+			(uuid "0d9c88e1-3ff4-4466-ab68-89dd233e2e82")
+		)
+		(instances
+			(project ""
+				(path "/83af791a-9776-40a7-82ad-9528ff7474b8/89dc079b-4bec-462d-b3d4-975f87bf224f"
+					(reference "IC12")
 					(unit 1)
 				)
 			)
@@ -10195,6 +10380,112 @@
 		)
 	)
 	(symbol
+		(lib_id "4xxx:4066")
+		(at 269.24 33.02 0)
+		(unit 5)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c167c747-c835-4c5a-a971-903c8792c2c8")
+		(property "Reference" "IC12"
+			(at 275.59 31.7499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "4066"
+			(at 275.59 34.2899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_DIP:DIP-14_W7.62mm_LongPads"
+			(at 269.24 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/cd4066b.pdf"
+			(at 269.24 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Quad Analog Switches"
+			(at 269.24 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "fd255672-eb00-4af8-8cde-69dc76dc690c")
+		)
+		(pin "2"
+			(uuid "c2b62f5c-2ed1-427e-bad4-e57a3c1ae9fe")
+		)
+		(pin "5"
+			(uuid "9e357dd3-1b55-4354-a4c4-63734da45c5b")
+		)
+		(pin "6"
+			(uuid "aa10a6ff-577a-4841-8a38-1b7422207bb5")
+		)
+		(pin "11"
+			(uuid "412a1824-82f9-4112-abbc-3dc0611a9b29")
+		)
+		(pin "12"
+			(uuid "5c80c295-cd27-46af-8220-bf5f0b62da02")
+		)
+		(pin "9"
+			(uuid "76eb4447-d3c5-4464-8540-84006a0e6076")
+		)
+		(pin "10"
+			(uuid "2d0ac7c9-1a0b-4e4b-a4fd-bb744c7e3eb2")
+		)
+		(pin "3"
+			(uuid "4197c1eb-2c2a-4e19-a2ee-70885f405837")
+		)
+		(pin "8"
+			(uuid "a1269499-603b-4724-9955-171eac9bb308")
+		)
+		(pin "7"
+			(uuid "c157aa35-9374-479a-a5e7-694744b2ede4")
+		)
+		(pin "14"
+			(uuid "e246bb67-0f18-4aa1-b9a2-58fa4e2cbaa5")
+		)
+		(pin "13"
+			(uuid "ee5df064-312d-4945-91f1-4a06740691a7")
+		)
+		(pin "4"
+			(uuid "0d9c88e1-3ff4-4466-ab68-89dd233e2e82")
+		)
+		(instances
+			(project ""
+				(path "/83af791a-9776-40a7-82ad-9528ff7474b8/89dc079b-4bec-462d-b3d4-975f87bf224f"
+					(reference "IC12")
+					(unit 5)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 63.5 182.88 180)
 		(unit 1)
@@ -10271,116 +10562,6 @@
 			(project "analog"
 				(path "/9f46303d-d943-4531-8552-3d499521569d/addc5987-d1ba-4ae2-823d-8b32950df557"
 					(reference "R144")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "4xxx:4066")
-		(at 99.06 59.69 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "c2207dbe-d37a-44d2-b512-957a3fbd5709")
-		(property "Reference" "IC12"
-			(at 87.884 54.356 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "4066"
-			(at 88.138 56.896 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_DIP:DIP-14_W7.62mm"
-			(at 99.06 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/cd4066b.pdf"
-			(at 99.06 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Quad Analog Switches"
-			(at 99.06 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "12"
-			(uuid "5eb02e77-948a-482b-b1bc-a550b0554820")
-		)
-		(pin "9"
-			(uuid "88f235d0-0d65-4bd0-8672-230babfad443")
-		)
-		(pin "7"
-			(uuid "5d578287-6f3e-4c72-8010-3106bd1211c3")
-		)
-		(pin "1"
-			(uuid "21b295a8-a276-49bb-8b4e-fbcb88abd629")
-		)
-		(pin "11"
-			(uuid "ecd3c42f-ac34-4542-96c3-914c40e2161b")
-		)
-		(pin "8"
-			(uuid "2d8880d1-710b-4847-9145-15ab096294f2")
-		)
-		(pin "10"
-			(uuid "030969e6-9a59-4509-8aa7-f8f55dc90763")
-		)
-		(pin "6"
-			(uuid "5308322c-279e-4824-8a61-15ade7c43ee8")
-		)
-		(pin "3"
-			(uuid "f2dc3400-e62f-4ea9-960d-65428ec81a3a")
-		)
-		(pin "14"
-			(uuid "36981a85-8b8d-4c2b-b74d-cbab5ff7e9f4")
-		)
-		(pin "4"
-			(uuid "26e9fe72-874b-469c-b5e2-b3b3a143811b")
-		)
-		(pin "2"
-			(uuid "1510cd77-686f-4f9e-b280-3d666b346a93")
-		)
-		(pin "5"
-			(uuid "f69eaf02-1cbf-46ad-8134-8576005cefcc")
-		)
-		(pin "13"
-			(uuid "0cb86510-7899-43e0-bcba-f7f2fd68e54a")
-		)
-		(instances
-			(project "analog_separate"
-				(path "/83af791a-9776-40a7-82ad-9528ff7474b8/89dc079b-4bec-462d-b3d4-975f87bf224f"
-					(reference "IC12")
-					(unit 1)
-				)
-			)
-			(project "analog_separate"
-				(path "/96522794-a695-4466-86ba-4264882708e5/f3375c55-8148-47b4-9d07-6863d0fa6703"
-					(reference "IC12")
 					(unit 1)
 				)
 			)
@@ -10638,7 +10819,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c48fa8db-ec9c-4e95-8ed1-ddfc91e21a6c")
-		(property "Reference" "#PWR014"
+		(property "Reference" "#PWR0121"
 			(at 166.37 151.13 0)
 			(effects
 				(font
@@ -10688,7 +10869,7 @@
 		(instances
 			(project "analog_separate"
 				(path "/83af791a-9776-40a7-82ad-9528ff7474b8/89dc079b-4bec-462d-b3d4-975f87bf224f"
-					(reference "#PWR014")
+					(reference "#PWR0121")
 					(unit 1)
 				)
 			)
@@ -10793,7 +10974,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "cd87cea1-1d3e-406e-9109-b39a5f9592b0")
-		(property "Reference" "#PWR07"
+		(property "Reference" "#PWR0108"
 			(at 139.7 45.72 0)
 			(effects
 				(font
@@ -10843,7 +11024,7 @@
 		(instances
 			(project "analog_separate"
 				(path "/83af791a-9776-40a7-82ad-9528ff7474b8/89dc079b-4bec-462d-b3d4-975f87bf224f"
-					(reference "#PWR07")
+					(reference "#PWR0108")
 					(unit 1)
 				)
 			)
@@ -10951,7 +11132,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "cefb8d07-e6db-4216-868d-13f4331efdb9")
-		(property "Reference" "#PWR023"
+		(property "Reference" "#PWR0111"
 			(at 35.56 129.54 0)
 			(effects
 				(font
@@ -11001,7 +11182,7 @@
 		(instances
 			(project "analog_separate"
 				(path "/83af791a-9776-40a7-82ad-9528ff7474b8/89dc079b-4bec-462d-b3d4-975f87bf224f"
-					(reference "#PWR023")
+					(reference "#PWR0111")
 					(unit 1)
 				)
 			)
@@ -11284,7 +11465,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "db7be9ee-e206-4e2d-ac0a-1e864d32eaa4")
-		(property "Reference" "#PWR011"
+		(property "Reference" "#PWR0113"
 			(at 69.85 147.32 0)
 			(effects
 				(font
@@ -11334,7 +11515,7 @@
 		(instances
 			(project "analog_separate"
 				(path "/83af791a-9776-40a7-82ad-9528ff7474b8/89dc079b-4bec-462d-b3d4-975f87bf224f"
-					(reference "#PWR011")
+					(reference "#PWR0113")
 					(unit 1)
 				)
 			)
@@ -11361,7 +11542,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "de9c086c-e07d-4657-938d-fb6ffc93c606")
-		(property "Reference" "#PWR016"
+		(property "Reference" "#PWR0118"
 			(at 237.49 166.37 0)
 			(effects
 				(font
@@ -11411,7 +11592,7 @@
 		(instances
 			(project "analog_separate"
 				(path "/83af791a-9776-40a7-82ad-9528ff7474b8/89dc079b-4bec-462d-b3d4-975f87bf224f"
-					(reference "#PWR016")
+					(reference "#PWR0118")
 					(unit 1)
 				)
 			)
@@ -11523,7 +11704,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "e1d967ee-2803-4c6a-8a87-f43eba7ad747")
-		(property "Reference" "#PWR013"
+		(property "Reference" "#PWR0117"
 			(at 179.07 166.37 0)
 			(effects
 				(font
@@ -11573,7 +11754,7 @@
 		(instances
 			(project "analog_separate"
 				(path "/83af791a-9776-40a7-82ad-9528ff7474b8/89dc079b-4bec-462d-b3d4-975f87bf224f"
-					(reference "#PWR013")
+					(reference "#PWR0117")
 					(unit 1)
 				)
 			)

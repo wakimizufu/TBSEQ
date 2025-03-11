@@ -579,292 +579,6 @@
 				)
 			)
 		)
-		(symbol "Device:Opamp_Dual"
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "U"
-				(at 0 5.08 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "Opamp_Dual"
-				(at 0 -5.08 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Dual operational amplifier"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Sim.Library" "${KICAD7_SYMBOL_DIR}/Simulation_SPICE.sp"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Sim.Name" "kicad_builtin_opamp_dual"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Sim.Device" "SUBCKT"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Sim.Pins" "1=out1 2=in1- 3=in1+ 4=vee 5=in2+ 6=in2- 7=out2 8=vcc"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_locked" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "dual opamp"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "SOIC*3.9x4.9mm*P1.27mm* DIP*W7.62mm* MSOP*3x3mm*P0.65mm* SSOP*2.95x2.8mm*P0.65mm* TSSOP*3x3mm*P0.65mm* VSSOP*P0.5mm* TO?99*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "Opamp_Dual_1_1"
-				(polyline
-					(pts
-						(xy -5.08 5.08) (xy 5.08 0) (xy -5.08 -5.08) (xy -5.08 5.08)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(pin output line
-					(at 7.62 0 180)
-					(length 2.54)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -7.62 -2.54 0)
-					(length 2.54)
-					(name "-"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -7.62 2.54 0)
-					(length 2.54)
-					(name "+"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(symbol "Opamp_Dual_2_1"
-				(polyline
-					(pts
-						(xy -5.08 5.08) (xy 5.08 0) (xy -5.08 -5.08) (xy -5.08 5.08)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(pin input line
-					(at -7.62 2.54 0)
-					(length 2.54)
-					(name "+"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -7.62 -2.54 0)
-					(length 2.54)
-					(name "-"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin output line
-					(at 7.62 0 180)
-					(length 2.54)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "7"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(symbol "Opamp_Dual_3_1"
-				(pin power_in line
-					(at -2.54 -7.62 90)
-					(length 3.81)
-					(name "V-"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at -2.54 7.62 270)
-					(length 3.81)
-					(name "V+"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "8"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
 		(symbol "Device:Q_NJFET_DGS"
 			(pin_names
 				(offset 0) hide)
@@ -2924,16 +2638,6 @@
 	)
 	(wire
 		(pts
-			(xy 237.49 36.83) (xy 237.49 30.48)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1207d44d-1621-4733-a857-1fcc766cc56e")
-	)
-	(wire
-		(pts
 			(xy 63.5 66.04) (xy 36.83 66.04)
 		)
 		(stroke
@@ -2981,16 +2685,6 @@
 			(type default)
 		)
 		(uuid "169cd945-a840-4a30-b004-03a8af1909e0")
-	)
-	(wire
-		(pts
-			(xy 237.49 30.48) (xy 222.25 30.48)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "17361c3d-7235-41be-8854-c91227b05ff2")
 	)
 	(wire
 		(pts
@@ -3191,16 +2885,6 @@
 			(type default)
 		)
 		(uuid "3af461cd-94e9-44b1-b0f3-3dd130fedb3c")
-	)
-	(wire
-		(pts
-			(xy 222.25 30.48) (xy 222.25 34.29)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3c2a9d9e-49f4-4f18-bf44-5ee961610cdd")
 	)
 	(wire
 		(pts
@@ -3471,16 +3155,6 @@
 			(type default)
 		)
 		(uuid "68989d25-0b3a-48c6-b91c-7f055014c09c")
-	)
-	(wire
-		(pts
-			(xy 222.25 39.37) (xy 220.98 39.37)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6c844eba-e184-4e97-99c1-0fbf1e0c6c09")
 	)
 	(wire
 		(pts
@@ -5247,28 +4921,6 @@
 			)
 		)
 	)
-	(global_label "A+5.333V"
-		(shape output)
-		(at 220.98 39.37 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "b8990f41-b4fa-482b-9704-ebad06407361")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 208.8024 39.37 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "A+12V"
 		(shape input)
 		(at 184.15 60.96 180)
@@ -5282,28 +4934,6 @@
 		(uuid "b99b7ce7-a7ae-47b6-b2b7-e2b80a59a3b2")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 171.9724 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "A+12V"
-		(shape input)
-		(at 254 25.4 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "ba84896c-7e9f-4959-bd6d-22bdb73b9883")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 241.8224 25.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7247,77 +6877,6 @@
 	)
 	(symbol
 		(lib_id "power:GNDA")
-		(at 254 40.64 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "6c4c6708-49eb-4207-80e4-b9033be8d17a")
-		(property "Reference" "#PWR026"
-			(at 254 46.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GNDA"
-			(at 254 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 254 40.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 254 40.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GNDA\" , analog ground"
-			(at 254 40.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "86c6617a-7221-48b1-a968-ebe764f41e56")
-		)
-		(instances
-			(project "analog_separate"
-				(path "/83af791a-9776-40a7-82ad-9528ff7474b8/765da965-e62c-424b-9b1b-9538054aabf6"
-					(reference "#PWR026")
-					(unit 1)
-				)
-			)
-			(project "analog_separate"
-				(path "/96522794-a695-4466-86ba-4264882708e5/65c6b63b-a0dd-40dd-9a1f-3f4f1eb1d9b8"
-					(reference "#PWR026")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GNDA")
 		(at 127 100.33 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -7633,136 +7192,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:Opamp_Dual")
-		(at 256.54 33.02 0)
-		(unit 3)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "8bc438ed-c791-412f-9585-217bd2489ed1")
-		(property "Reference" "IC11_1"
-			(at 255.27 31.7499 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "AN6562"
-			(at 255.27 34.2899 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_DIP:DIP-8_W7.62mm"
-			(at 256.54 33.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 256.54 33.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Dual operational amplifier"
-			(at 256.54 33.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Library" "${KICAD7_SYMBOL_DIR}/Simulation_SPICE.sp"
-			(at 256.54 33.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Name" "kicad_builtin_opamp_dual"
-			(at 256.54 33.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" "SUBCKT"
-			(at 256.54 33.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" "1=out1 2=in1- 3=in1+ 4=vee 5=in2+ 6=in2- 7=out2 8=vcc"
-			(at 256.54 33.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "081864f0-00c5-414f-887a-49e9cb852310")
-		)
-		(pin "3"
-			(uuid "a87b57a7-27f3-4c0b-8c2c-b4f2e334d7ef")
-		)
-		(pin "4"
-			(uuid "20982c6e-3519-432a-9cf6-08557163b40e")
-		)
-		(pin "7"
-			(uuid "83c28275-630e-404a-ba51-d4dcda42659c")
-		)
-		(pin "5"
-			(uuid "af64c187-d0ef-4f4e-83ec-af7618fd4690")
-		)
-		(pin "2"
-			(uuid "a1120ff5-6865-46df-92f6-115ccdb89820")
-		)
-		(pin "6"
-			(uuid "10721d11-6b45-492b-8804-9d5de66dfcd4")
-		)
-		(pin "8"
-			(uuid "b859adf9-dcb5-4814-8426-1477b87633a3")
-		)
-		(instances
-			(project "analog_separate"
-				(path "/83af791a-9776-40a7-82ad-9528ff7474b8/765da965-e62c-424b-9b1b-9538054aabf6"
-					(reference "IC11_1")
-					(unit 3)
-				)
-			)
-			(project "analog_separate"
-				(path "/96522794-a695-4466-86ba-4264882708e5/65c6b63b-a0dd-40dd-9a1f-3f4f1eb1d9b8"
-					(reference "IC11_1")
-					(unit 3)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GNDA")
 		(at 203.2 92.71 0)
 		(unit 1)
@@ -7850,7 +7279,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "936e800c-1339-4b39-8fc2-b1b66df818d1")
-		(property "Reference" "#PWR019"
+		(property "Reference" "#PWR0122"
 			(at 237.49 93.98 0)
 			(effects
 				(font
@@ -7900,7 +7329,7 @@
 		(instances
 			(project "analog_separate"
 				(path "/83af791a-9776-40a7-82ad-9528ff7474b8/765da965-e62c-424b-9b1b-9538054aabf6"
-					(reference "#PWR019")
+					(reference "#PWR0122")
 					(unit 1)
 				)
 			)
@@ -8883,134 +8312,6 @@
 				(path "/9f46303d-d943-4531-8552-3d499521569d/8ce4be34-acfa-49f2-8b40-1ddc9b5f799d"
 					(reference "C10")
 					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:Opamp_Dual")
-		(at 229.87 36.83 0)
-		(unit 2)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "df384865-b35a-4251-aded-4d081b627480")
-		(property "Reference" "IC11_1"
-			(at 229.87 26.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "AN6562"
-			(at 229.87 29.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_DIP:DIP-8_W7.62mm"
-			(at 229.87 36.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 229.87 36.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Dual operational amplifier"
-			(at 229.87 36.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Library" "${KICAD7_SYMBOL_DIR}/Simulation_SPICE.sp"
-			(at 229.87 36.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Name" "kicad_builtin_opamp_dual"
-			(at 229.87 36.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" "SUBCKT"
-			(at 229.87 36.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" "1=out1 2=in1- 3=in1+ 4=vee 5=in2+ 6=in2- 7=out2 8=vcc"
-			(at 229.87 36.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "081864f0-00c5-414f-887a-49e9cb852311")
-		)
-		(pin "3"
-			(uuid "a87b57a7-27f3-4c0b-8c2c-b4f2e334d7f0")
-		)
-		(pin "4"
-			(uuid "f8b2c6aa-6d99-4b8c-94c4-b68d5c236d54")
-		)
-		(pin "7"
-			(uuid "83c28275-630e-404a-ba51-d4dcda42659d")
-		)
-		(pin "5"
-			(uuid "af64c187-d0ef-4f4e-83ec-af7618fd4691")
-		)
-		(pin "2"
-			(uuid "a1120ff5-6865-46df-92f6-115ccdb89821")
-		)
-		(pin "6"
-			(uuid "10721d11-6b45-492b-8804-9d5de66dfcd5")
-		)
-		(pin "8"
-			(uuid "ae9f9218-c99d-4cae-a191-f3690c9dc40a")
-		)
-		(instances
-			(project "analog_separate"
-				(path "/83af791a-9776-40a7-82ad-9528ff7474b8/765da965-e62c-424b-9b1b-9538054aabf6"
-					(reference "IC11_1")
-					(unit 2)
-				)
-			)
-			(project "analog_separate"
-				(path "/96522794-a695-4466-86ba-4264882708e5/65c6b63b-a0dd-40dd-9a1f-3f4f1eb1d9b8"
-					(reference "IC11_1")
-					(unit 2)
 				)
 			)
 		)

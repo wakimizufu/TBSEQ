@@ -534,7 +534,7 @@
 			)
 			(project "HT16K33Panel"
 				(path "/83af791a-9776-40a7-82ad-9528ff7474b8/f3a69440-3517-4301-a09f-069bb3281b47"
-					(reference "#PWR017")
+					(reference "#PWR0140")
 					(unit 1)
 				)
 			)
@@ -605,7 +605,7 @@
 			)
 			(project "HT16K33Panel"
 				(path "/83af791a-9776-40a7-82ad-9528ff7474b8/f3a69440-3517-4301-a09f-069bb3281b47"
-					(reference "#PWR03")
+					(reference "#PWR0141")
 					(unit 1)
 				)
 			)

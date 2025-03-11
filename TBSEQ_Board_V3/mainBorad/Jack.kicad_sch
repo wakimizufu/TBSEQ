@@ -834,15 +834,9 @@
 		(at 97.79 66.04)
 		(uuid "a3802956-67e2-4353-af89-1b7230289533")
 	)
-	(wire
-		(pts
-			(xy 92.71 124.46) (xy 92.71 118.11)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "001ced7b-d07b-45c8-84df-504c040de160")
+	(no_connect
+		(at 96.52 118.11)
+		(uuid "f77579b0-ec05-4bbc-a5b2-0f209e679323")
 	)
 	(wire
 		(pts
@@ -883,26 +877,6 @@
 			(type default)
 		)
 		(uuid "22168ac0-a2f8-42f7-bf11-a31d1025e150")
-	)
-	(wire
-		(pts
-			(xy 96.52 124.46) (xy 92.71 124.46)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "28143827-a749-4f75-971d-7eb76acfe142")
-	)
-	(wire
-		(pts
-			(xy 92.71 118.11) (xy 96.52 118.11)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "480dc7af-d72a-4506-bd65-ddf125618702")
 	)
 	(wire
 		(pts
@@ -1384,28 +1358,6 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "D+PlugIn_SyncIn"
-		(shape output)
-		(at 96.52 124.46 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "8240c3ad-ce7c-47e2-9a3b-099e5e411104")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 115.4707 124.46 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
 				(hide yes)
 			)
 		)

@@ -880,6 +880,16 @@
 	)
 	(wire
 		(pts
+			(xy 176.53 69.85) (xy 172.72 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2999d5b0-02ec-4a0f-ba94-9532e7f6096f")
+	)
+	(wire
+		(pts
 			(xy 80.01 31.75) (xy 80.01 38.1)
 		)
 		(stroke
@@ -897,6 +907,16 @@
 			(type default)
 		)
 		(uuid "55a4c6b1-82dc-4a1d-b46f-6f8de9880a2b")
+	)
+	(wire
+		(pts
+			(xy 172.72 69.85) (xy 172.72 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6427c177-51b0-4aff-a03f-b49fbe920bcc")
 	)
 	(wire
 		(pts
@@ -1109,6 +1129,17 @@
 		)
 		(uuid "115ad7eb-c7e8-43da-b58d-a3c1ad2a34bb")
 	)
+	(text "toPanelBorad"
+		(exclude_from_sim no)
+		(at 162.56 54.102 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+			)
+			(justify left)
+		)
+		(uuid "3af69ee8-e077-4bf5-8cff-454929443261")
+	)
 	(text "CV OUT"
 		(exclude_from_sim no)
 		(at 103.378 20.574 0)
@@ -1186,6 +1217,28 @@
 			)
 		)
 	)
+	(global_label "D_I2C_SDA"
+		(shape bidirectional)
+		(at 176.53 62.23 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "2cf4c1a8-371f-4028-a7c3-e40fbd1a5288")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 166.4086 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "A+5.333V"
 		(shape output)
 		(at 165.1 143.51 180)
@@ -1199,6 +1252,28 @@
 		(uuid "3397e6b7-06cd-4a85-a600-99e93269761b")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 156.9743 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "D+3.3V"
+		(shape output)
+		(at 176.53 59.69 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "3a509c4a-bd5a-4546-bf92-d0243d2d2cf0")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 166.59 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1384,6 +1459,28 @@
 			)
 		)
 	)
+	(global_label "A+TEMPO"
+		(shape output)
+		(at 176.53 67.31 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "9b048d06-78ee-44c1-bae4-108143f917e7")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 164.7153 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "D+5V_SyncIn"
 		(shape input)
 		(at 128.27 115.57 0)
@@ -1419,6 +1516,28 @@
 		(uuid "c243709f-f22c-4393-85f5-fe86765edae9")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 96.1352 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "D_I2C_SCL"
+		(shape output)
+		(at 176.53 64.77 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "c94c7694-462c-41b8-9e43-5a3ef8867cfc")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 166.4086 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2276,6 +2395,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GNDD")
+		(at 172.72 71.12 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8b9762b9-c6c2-4611-a139-9fd4e443eab3")
+		(property "Reference" "#PWR026"
+			(at 172.72 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GNDD"
+			(at 172.72 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 172.72 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 172.72 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GNDD\" , digital ground"
+			(at 172.72 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c3bfe2a0-7d9e-4b40-ba5c-8d6a61cf31c3")
+		)
+		(instances
+			(project "mainBorad"
+				(path "/83af791a-9776-40a7-82ad-9528ff7474b8/84399fb9-099f-4a2f-878a-57c8535f6267"
+					(reference "#PWR026")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "SamacSys_Parts:MJ-8435")
 		(at 97.79 31.75 0)
 		(unit 1)
@@ -2548,6 +2733,85 @@
 			(project "mainBorad"
 				(path "/83af791a-9776-40a7-82ad-9528ff7474b8/84399fb9-099f-4a2f-878a-57c8535f6267"
 					(reference "#PWR024")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x05")
+		(at 181.61 64.77 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d0705513-2839-47d0-ad01-20c8d0f4b1ce")
+		(property "Reference" "J14"
+			(at 184.15 63.4999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Conn_01x05"
+			(at 184.15 66.0399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Connector_JST:JST_XH_S5B-XH-A-1_1x05_P2.50mm_Horizontal"
+			(at 181.61 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 181.61 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x05, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 181.61 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b9c85aee-5316-4f05-a9ad-624dfc33fff2")
+		)
+		(pin "2"
+			(uuid "10fa856a-6fd8-403a-b312-217f51f911bb")
+		)
+		(pin "4"
+			(uuid "c8bdce77-fe04-4dc5-a551-1e594b61674e")
+		)
+		(pin "5"
+			(uuid "7f52ee05-d0b2-4738-aec6-50f173722c5b")
+		)
+		(pin "3"
+			(uuid "0b6c729d-097d-483e-846d-5afd405b0120")
+		)
+		(instances
+			(project ""
+				(path "/83af791a-9776-40a7-82ad-9528ff7474b8/84399fb9-099f-4a2f-878a-57c8535f6267"
+					(reference "J14")
 					(unit 1)
 				)
 			)

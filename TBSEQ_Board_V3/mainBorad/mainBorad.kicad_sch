@@ -423,44 +423,6 @@
 			)
 		)
 	)
-	(sheet
-		(at 158.75 50.8)
-		(size 17.78 8.89)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0.0000)
-		)
-		(uuid "f3a69440-3517-4301-a09f-069bb3281b47")
-		(property "Sheetname" "TEMPO"
-			(at 158.75 50.0884 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "TEMPO.kicad_sch"
-			(at 158.75 60.2746 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(instances
-			(project "mainBorad"
-				(path "/83af791a-9776-40a7-82ad-9528ff7474b8"
-					(page "13")
-				)
-			)
-		)
-	)
 	(sheet_instances
 		(path "/"
 			(page "1")

@@ -1,4 +1,4 @@
-24704703772352927
+24706445636650421
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -91243,6 +91243,13 @@ D (R-PDSO-G8)
 Integrated Circuit
 0
 8
+8
+SamacSys_Parts
+NJM2125F-SOT95&DIP8
+SOT-23-5 (MTP-5)-ren1
+Integrated Circuit
+0
+13
 8
 SamacSys_Parts
 NJM2845DL133TE1

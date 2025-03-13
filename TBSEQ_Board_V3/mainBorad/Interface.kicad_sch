@@ -2374,7 +2374,7 @@
 				)
 			)
 		)
-		(symbol "SamacSys_Parts:NJM2125F-TE1"
+		(symbol "SamacSys_Parts:NJM2125F-TE1_DIP-8"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -2387,7 +2387,7 @@
 					(justify left top)
 				)
 			)
-			(property "Value" "NJM2125F-TE1"
+			(property "Value" "NJM2125F-TE1_DIP8"
 				(at 29.21 5.08 0)
 				(effects
 					(font
@@ -2495,7 +2495,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "NJM2125F-TE1_1_1"
+			(symbol "NJM2125F-TE1_DIP-8_1_1"
 				(rectangle
 					(start 5.08 2.54)
 					(end 27.94 -7.62)
@@ -2508,9 +2508,9 @@
 					)
 				)
 				(pin passive line
-					(at 0 0 0)
+					(at 33.02 0 180)
 					(length 5.08)
-					(name "+INPUT"
+					(name "OUTPUT"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2518,24 +2518,6 @@
 						)
 					)
 					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -2.54 0)
-					(length 5.08)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2553,6 +2535,24 @@
 							)
 						)
 					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 0 0)
+					(length 5.08)
+					(name "+INPUT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
 					(number "3"
 						(effects
 							(font
@@ -2562,9 +2562,9 @@
 					)
 				)
 				(pin passive line
-					(at 33.02 0 180)
+					(at 0 -2.54 0)
 					(length 5.08)
-					(name "OUTPUT"
+					(name "GND"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2572,6 +2572,60 @@
 						)
 					)
 					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin no_connect line
+					(at 15.24 -10.16 90)
+					(length 2.54)
+					(name "NC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin no_connect line
+					(at 19.05 -10.16 90)
+					(length 2.54)
+					(name "NC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin no_connect line
+					(at 22.86 -10.16 90)
+					(length 2.54)
+					(name "NC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2589,7 +2643,7 @@
 							)
 						)
 					)
-					(number "5"
+					(number "8"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2988,7 +3042,7 @@
 		(uuid "2fa019d0-714d-4117-87ff-76872530c60a")
 	)
 	(junction
-		(at 139.7 29.21)
+		(at 139.7 31.75)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "3473b137-e3ce-46cc-af45-e6509a12f9a4")
@@ -3018,10 +3072,10 @@
 		(uuid "6ebafe33-bfa4-44ea-93ac-13b77277d7e5")
 	)
 	(junction
-		(at 125.73 29.21)
+		(at 125.73 31.75)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "7f27cc0b-8352-4742-a47b-b6c89ed7d549")
+		(uuid "7bd996be-a88e-4470-81f1-d08f99dbdaf8")
 	)
 	(junction
 		(at 110.49 111.76)
@@ -3267,7 +3321,7 @@
 	)
 	(wire
 		(pts
-			(xy 123.19 29.21) (xy 125.73 29.21)
+			(xy 123.19 25.4) (xy 125.73 25.4)
 		)
 		(stroke
 			(width 0)
@@ -3387,7 +3441,7 @@
 	)
 	(wire
 		(pts
-			(xy 125.73 29.21) (xy 125.73 39.37)
+			(xy 125.73 25.4) (xy 125.73 31.75)
 		)
 		(stroke
 			(width 0)
@@ -3417,6 +3471,16 @@
 	)
 	(wire
 		(pts
+			(xy 125.73 31.75) (xy 125.73 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "306b5245-14d8-46bb-968b-ed4a57576da6")
+	)
+	(wire
+		(pts
 			(xy 163.83 83.82) (xy 163.83 85.09)
 		)
 		(stroke
@@ -3427,7 +3491,7 @@
 	)
 	(wire
 		(pts
-			(xy 130.81 50.8) (xy 130.81 31.75)
+			(xy 130.81 50.8) (xy 130.81 27.94)
 		)
 		(stroke
 			(width 0)
@@ -3447,7 +3511,7 @@
 	)
 	(wire
 		(pts
-			(xy 139.7 29.21) (xy 139.7 30.48)
+			(xy 139.7 31.75) (xy 139.7 33.02)
 		)
 		(stroke
 			(width 0)
@@ -3477,7 +3541,7 @@
 	)
 	(wire
 		(pts
-			(xy 139.7 17.78) (xy 139.7 20.32)
+			(xy 139.7 20.32) (xy 139.7 22.86)
 		)
 		(stroke
 			(width 0)
@@ -3517,7 +3581,7 @@
 	)
 	(wire
 		(pts
-			(xy 86.36 31.75) (xy 86.36 36.83)
+			(xy 86.36 27.94) (xy 86.36 36.83)
 		)
 		(stroke
 			(width 0)
@@ -3527,7 +3591,7 @@
 	)
 	(wire
 		(pts
-			(xy 90.17 34.29) (xy 90.17 39.37)
+			(xy 90.17 30.48) (xy 90.17 39.37)
 		)
 		(stroke
 			(width 0)
@@ -3547,7 +3611,7 @@
 	)
 	(wire
 		(pts
-			(xy 90.17 31.75) (xy 86.36 31.75)
+			(xy 90.17 27.94) (xy 86.36 27.94)
 		)
 		(stroke
 			(width 0)
@@ -3727,7 +3791,7 @@
 	)
 	(wire
 		(pts
-			(xy 82.55 29.21) (xy 90.17 29.21)
+			(xy 82.55 25.4) (xy 90.17 25.4)
 		)
 		(stroke
 			(width 0)
@@ -3977,7 +4041,7 @@
 	)
 	(wire
 		(pts
-			(xy 144.78 29.21) (xy 139.7 29.21)
+			(xy 144.78 31.75) (xy 139.7 31.75)
 		)
 		(stroke
 			(width 0)
@@ -4197,7 +4261,7 @@
 	)
 	(wire
 		(pts
-			(xy 130.81 31.75) (xy 123.19 31.75)
+			(xy 130.81 27.94) (xy 123.19 27.94)
 		)
 		(stroke
 			(width 0)
@@ -4297,7 +4361,7 @@
 	)
 	(wire
 		(pts
-			(xy 140.97 17.78) (xy 139.7 17.78)
+			(xy 140.97 20.32) (xy 139.7 20.32)
 		)
 		(stroke
 			(width 0)
@@ -4327,7 +4391,7 @@
 	)
 	(wire
 		(pts
-			(xy 139.7 38.1) (xy 139.7 39.37)
+			(xy 139.7 40.64) (xy 139.7 41.91)
 		)
 		(stroke
 			(width 0)
@@ -4384,6 +4448,16 @@
 			(type default)
 		)
 		(uuid "bc0b963e-ea55-424d-b5c4-9dae98c03307")
+	)
+	(wire
+		(pts
+			(xy 82.55 25.4) (xy 82.55 29.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bc883995-11c0-4967-8d41-406e96bc15db")
 	)
 	(polyline
 		(pts
@@ -4477,7 +4551,7 @@
 	)
 	(wire
 		(pts
-			(xy 125.73 29.21) (xy 139.7 29.21)
+			(xy 125.73 31.75) (xy 139.7 31.75)
 		)
 		(stroke
 			(width 0)
@@ -4597,7 +4671,7 @@
 	)
 	(wire
 		(pts
-			(xy 139.7 27.94) (xy 139.7 29.21)
+			(xy 139.7 30.48) (xy 139.7 31.75)
 		)
 		(stroke
 			(width 0)
@@ -5798,7 +5872,7 @@
 	)
 	(global_label "A+5.333V"
 		(shape input)
-		(at 140.97 17.78 0)
+		(at 140.97 20.32 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5808,7 +5882,7 @@
 		)
 		(uuid "bdd04ee5-a8d8-489d-8038-b9589d21c0f4")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 153.1476 17.78 0)
+			(at 153.1476 20.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5996,7 +6070,7 @@
 	)
 	(global_label "A+VCO_CV"
 		(shape output)
-		(at 144.78 29.21 0)
+		(at 144.78 31.75 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -6006,7 +6080,7 @@
 		)
 		(uuid "e651d21d-380a-4776-8fd3-183fbea1f498")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 157.4415 29.21 0)
+			(at 157.4415 31.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6057,6 +6131,164 @@
 				)
 				(justify right)
 				(hide yes)
+			)
+		)
+	)
+	(symbol
+		(lib_id "SamacSys_Parts:NJM2125F-TE1_DIP-8")
+		(at 90.17 25.4 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "02ff2c31-f4e1-49a1-9ad4-116817faba42")
+		(property "Reference" "IC2"
+			(at 106.68 17.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "NJM2125F-TE1_DIP8"
+			(at 106.68 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "SamacSys_Parts:NJM2125F-SOT95&DIP8"
+			(at 119.38 120.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://componentsearchengine.com/Datasheets/1/NJM2125F-TE1.pdf"
+			(at 119.38 220.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "Operational Amplifiers - Op Amps Single Supply"
+			(at 90.17 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Height" "1.3"
+			(at 119.38 420.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "New Japan Radio"
+			(at 119.38 520.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "NJM2125F-TE1"
+			(at 119.38 620.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "513-NJM2125F-TE1"
+			(at 119.38 720.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/NJR/NJM2125F-TE1?qs=SzzEZJ0VecQ3YU3q3zUUYw%3D%3D"
+			(at 119.38 820.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Arrow Part Number" ""
+			(at 119.38 920.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Arrow Price/Stock" ""
+			(at 119.38 1020.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "6"
+			(uuid "9921b183-9a19-43a6-af0c-a1790002cedf")
+		)
+		(pin "4"
+			(uuid "06db5715-ca9d-458c-8c48-244ffbb91696")
+		)
+		(pin "3"
+			(uuid "f7e0a28d-a3e7-4796-818f-a3ad8fe4fb09")
+		)
+		(pin "2"
+			(uuid "4ab394a0-ea58-48fa-9f54-3a4a05808f91")
+		)
+		(pin "5"
+			(uuid "a08b46fc-5dec-4d30-83c4-910a35d1fefb")
+		)
+		(pin "7"
+			(uuid "b91f7bb2-ddb8-44f2-b468-8c06e09c0ac9")
+		)
+		(pin "1"
+			(uuid "b6c4e67d-bd1d-49a1-9cc9-94954920d561")
+		)
+		(pin "8"
+			(uuid "2fed2fff-1d9d-4b5c-98c3-e7cb294b0ba4")
+		)
+		(instances
+			(project ""
+				(path "/83af791a-9776-40a7-82ad-9528ff7474b8/89dc079b-4bec-462d-b3d4-975f87bf224f"
+					(reference "IC2")
+					(unit 1)
+				)
 			)
 		)
 	)
@@ -6141,7 +6373,7 @@
 	)
 	(symbol
 		(lib_id "Device:D")
-		(at 139.7 34.29 270)
+		(at 139.7 36.83 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6149,7 +6381,7 @@
 		(dnp no)
 		(uuid "0bf5d0c2-a91c-4e1b-93e3-25328e5fb2b1")
 		(property "Reference" "D32"
-			(at 137.16 35.5601 90)
+			(at 137.16 38.1001 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6158,7 +6390,7 @@
 			)
 		)
 		(property "Value" "D"
-			(at 137.16 33.0201 90)
+			(at 137.16 35.5601 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6167,7 +6399,7 @@
 			)
 		)
 		(property "Footprint" "Diode_THT:D_A-405_P2.54mm_Vertical_AnodeUp"
-			(at 139.7 34.29 0)
+			(at 139.7 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6176,7 +6408,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 139.7 34.29 0)
+			(at 139.7 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6185,7 +6417,7 @@
 			)
 		)
 		(property "Description" "Diode"
-			(at 139.7 34.29 0)
+			(at 139.7 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6194,7 +6426,7 @@
 			)
 		)
 		(property "Sim.Device" "D"
-			(at 139.7 34.29 0)
+			(at 139.7 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6203,7 +6435,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 139.7 34.29 0)
+			(at 139.7 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7760,7 +7992,7 @@
 	)
 	(symbol
 		(lib_id "Device:D")
-		(at 139.7 24.13 270)
+		(at 139.7 26.67 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7768,7 +8000,7 @@
 		(dnp no)
 		(uuid "53351b15-b55e-44ce-b4a7-0f98f4d84f34")
 		(property "Reference" "D31"
-			(at 137.16 25.4001 90)
+			(at 137.16 27.9401 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7777,7 +8009,7 @@
 			)
 		)
 		(property "Value" "D"
-			(at 137.16 22.8601 90)
+			(at 137.16 25.4001 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7786,7 +8018,7 @@
 			)
 		)
 		(property "Footprint" "Diode_THT:D_A-405_P2.54mm_Vertical_AnodeUp"
-			(at 139.7 24.13 0)
+			(at 139.7 26.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7795,7 +8027,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 139.7 24.13 0)
+			(at 139.7 26.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7804,7 +8036,7 @@
 			)
 		)
 		(property "Description" "Diode"
-			(at 139.7 24.13 0)
+			(at 139.7 26.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7813,7 +8045,7 @@
 			)
 		)
 		(property "Sim.Device" "D"
-			(at 139.7 24.13 0)
+			(at 139.7 26.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7822,7 +8054,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 139.7 24.13 0)
+			(at 139.7 26.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7852,155 +8084,6 @@
 			(project "analog"
 				(path "/9f46303d-d943-4531-8552-3d499521569d/addc5987-d1ba-4ae2-823d-8b32950df557"
 					(reference "D31")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "SamacSys_Parts:NJM2125F-TE1")
-		(at 90.17 29.21 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "59d42f18-a9d7-403b-a995-6261330646cb")
-		(property "Reference" "IC2"
-			(at 106.68 22.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "NJM2125F-TE1"
-			(at 106.68 25.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "SOT95P280X130-5N"
-			(at 119.38 124.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://componentsearchengine.com/Datasheets/1/NJM2125F-TE1.pdf"
-			(at 119.38 224.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Description" "Operational Amplifiers - Op Amps Single Supply"
-			(at 90.17 29.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Height" "1.3"
-			(at 119.38 424.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Name" "New Japan Radio"
-			(at 119.38 524.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Part_Number" "NJM2125F-TE1"
-			(at 119.38 624.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Mouser Part Number" "513-NJM2125F-TE1"
-			(at 119.38 724.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/NJR/NJM2125F-TE1?qs=SzzEZJ0VecQ3YU3q3zUUYw%3D%3D"
-			(at 119.38 824.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Arrow Part Number" ""
-			(at 119.38 924.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Arrow Price/Stock" ""
-			(at 119.38 1024.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "ab12be9e-2164-4fc4-b828-ffbbcebf0832")
-		)
-		(pin "4"
-			(uuid "f8a52ac7-cb61-4549-a29a-1b609d9cc56c")
-		)
-		(pin "2"
-			(uuid "639d6189-8eee-44fe-a92b-405f6b5dfafb")
-		)
-		(pin "3"
-			(uuid "ec7571a9-fab0-4295-be8e-a7f3041f40f3")
-		)
-		(pin "5"
-			(uuid "3117c1b4-5b9a-45e2-944f-8ae88bc56aa1")
-		)
-		(instances
-			(project ""
-				(path "/83af791a-9776-40a7-82ad-9528ff7474b8/89dc079b-4bec-462d-b3d4-975f87bf224f"
-					(reference "IC2")
 					(unit 1)
 				)
 			)
@@ -10956,7 +11039,7 @@
 	)
 	(symbol
 		(lib_id "power:GNDA")
-		(at 139.7 39.37 0)
+		(at 139.7 41.91 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -10965,7 +11048,7 @@
 		(fields_autoplaced yes)
 		(uuid "cd87cea1-1d3e-406e-9109-b39a5f9592b0")
 		(property "Reference" "#PWR0108"
-			(at 139.7 45.72 0)
+			(at 139.7 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10974,7 +11057,7 @@
 			)
 		)
 		(property "Value" "GNDA"
-			(at 139.7 44.45 0)
+			(at 139.7 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10982,7 +11065,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 139.7 39.37 0)
+			(at 139.7 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10991,7 +11074,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 139.7 39.37 0)
+			(at 139.7 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11000,7 +11083,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GNDA\" , analog ground"
-			(at 139.7 39.37 0)
+			(at 139.7 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)

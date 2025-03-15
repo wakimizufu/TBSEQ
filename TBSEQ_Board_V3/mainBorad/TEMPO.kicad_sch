@@ -533,8 +533,8 @@
 				)
 			)
 			(project "HT16K33Panel"
-				(path "/83af791a-9776-40a7-82ad-9528ff7474b8/f3a69440-3517-4301-a09f-069bb3281b47"
-					(reference "#PWR0140")
+				(path "/83af791a-9776-40a7-82ad-9528ff7474b8/67c88aa0-cd33-4e9c-b3f5-33809b562701"
+					(reference "#PWR0130")
 					(unit 1)
 				)
 			)
@@ -604,8 +604,8 @@
 				)
 			)
 			(project "HT16K33Panel"
-				(path "/83af791a-9776-40a7-82ad-9528ff7474b8/f3a69440-3517-4301-a09f-069bb3281b47"
-					(reference "#PWR0141")
+				(path "/83af791a-9776-40a7-82ad-9528ff7474b8/67c88aa0-cd33-4e9c-b3f5-33809b562701"
+					(reference "#PWR0132")
 					(unit 1)
 				)
 			)
@@ -735,6 +735,24 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Library" ""
+			(at 101.6 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" ""
+			(at 101.6 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "MH2"
 			(uuid "ac98db71-1f64-4f8f-bd7a-de1f48f79a4d")
 		)
@@ -758,7 +776,7 @@
 				)
 			)
 			(project "HT16K33Panel"
-				(path "/83af791a-9776-40a7-82ad-9528ff7474b8/f3a69440-3517-4301-a09f-069bb3281b47"
+				(path "/83af791a-9776-40a7-82ad-9528ff7474b8/67c88aa0-cd33-4e9c-b3f5-33809b562701"
 					(reference "VR1")
 					(unit 1)
 				)

@@ -663,7 +663,7 @@
     ],
     [
       "823be519-bdcf-42c8-a9bd-38752cead0eb",
-      "MIDIRx"
+      "MIDIRxTx"
     ],
     [
       "df077139-68fe-4311-bd8c-6d4deac1eeeb",
@@ -700,6 +700,10 @@
     [
       "60eab4e1-ce34-4d77-8d9b-d611705cbf82",
       "VCA"
+    ],
+    [
+      "67c88aa0-cd33-4e9c-b3f5-33809b562701",
+      "TEMPO"
     ]
   ],
   "text_variables": {}

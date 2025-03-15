@@ -5831,6 +5831,24 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Library" ""
+			(at 128.27 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" ""
+			(at 128.27 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "3649cb7d-078e-4c96-a21b-01946e3713e8")
 		)
@@ -5904,6 +5922,24 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 182.88 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Library" ""
+			(at 182.88 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" ""
 			(at 182.88 26.67 0)
 			(effects
 				(font
@@ -5993,6 +6029,24 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Library" ""
+			(at 64.77 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" ""
+			(at 64.77 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "69a1e4a0-9e9a-4e48-8b68-c29edd6f1cbc")
 		)
@@ -6066,6 +6120,24 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 234.95 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Library" ""
+			(at 234.95 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" ""
 			(at 234.95 125.73 0)
 			(effects
 				(font
@@ -6233,6 +6305,24 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Library" ""
+			(at 64.77 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" ""
+			(at 64.77 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "f48f301d-6abc-44bf-8688-9b462e3f6e19")
 		)
@@ -6306,6 +6396,24 @@
 			)
 		)
 		(property "Description" "Polarized capacitor, small symbol"
+			(at 234.95 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Library" ""
+			(at 234.95 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" ""
 			(at 234.95 87.63 0)
 			(effects
 				(font
@@ -6543,6 +6651,24 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Library" ""
+			(at 80.01 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" ""
+			(at 80.01 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "29cae4fb-cc7c-4c09-9c51-f1ca2f2e330c")
 		)
@@ -6622,6 +6748,24 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 196.85 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Library" ""
+			(at 196.85 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" ""
 			(at 196.85 57.15 0)
 			(effects
 				(font
@@ -6711,6 +6855,24 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Library" ""
+			(at 68.58 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" ""
+			(at 68.58 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "4fdd417e-8c53-42ee-8cca-52ce93ce1638")
 		)
@@ -6790,6 +6952,24 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Library" ""
+			(at 96.52 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" ""
+			(at 96.52 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "5300457e-fcc7-4f0c-b14b-b886bedda30c")
 		)
@@ -6861,6 +7041,24 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 96.52 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Library" ""
+			(at 96.52 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" ""
 			(at 96.52 54.61 0)
 			(effects
 				(font
@@ -6950,6 +7148,24 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Library" ""
+			(at 199.39 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" ""
+			(at 199.39 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "2153cf69-0e29-4276-a29b-89942d2d165e")
 		)
@@ -7023,6 +7239,24 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 173.99 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Library" ""
+			(at 173.99 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" ""
 			(at 173.99 26.67 0)
 			(effects
 				(font
@@ -7113,6 +7347,24 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Library" ""
+			(at 210.82 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" ""
+			(at 210.82 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "e65577c4-b509-428b-8b3e-e73130f267dd")
 		)
@@ -7186,6 +7438,24 @@
 			)
 		)
 		(property "Description" "NPN transistor, emitter/collector/base"
+			(at 102.87 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Library" ""
+			(at 102.87 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" ""
 			(at 102.87 99.06 0)
 			(effects
 				(font
@@ -7356,6 +7626,24 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Library" ""
+			(at 44.45 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" ""
+			(at 44.45 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "476f18a5-d4a7-4765-b68e-aca0f6ffec03")
 		)
@@ -7427,6 +7715,24 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 134.62 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Library" ""
+			(at 134.62 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" ""
 			(at 134.62 46.99 0)
 			(effects
 				(font
@@ -7583,6 +7889,24 @@
 					(size 1.27 1.27)
 				)
 				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Sim.Library" ""
+			(at 78.74 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" ""
+			(at 78.74 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 				(hide yes)
 			)
 		)
@@ -7751,6 +8075,24 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Library" ""
+			(at 166.37 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" ""
+			(at 166.37 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "84273988-3b92-4465-9293-584cabc90159")
 		)
@@ -7832,6 +8174,24 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Library" ""
+			(at 166.37 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" ""
+			(at 166.37 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "b31685a7-c81c-402a-a515-13aba91e677a")
 		)
@@ -7905,6 +8265,24 @@
 			)
 		)
 		(property "Description" "PNP transistor, emitter/collector/base"
+			(at 138.43 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Library" ""
+			(at 138.43 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" ""
 			(at 138.43 156.21 0)
 			(effects
 				(font
@@ -7997,6 +8375,24 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Library" ""
+			(at 143.51 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" ""
+			(at 143.51 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "8415757d-a7fa-4253-91e4-ec9b7e1b68ac")
 		)
@@ -8070,6 +8466,24 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 162.56 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Library" ""
+			(at 162.56 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" ""
 			(at 162.56 156.21 0)
 			(effects
 				(font
@@ -8227,6 +8641,24 @@
 					(size 1.27 1.27)
 				)
 				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Sim.Library" ""
+			(at 241.3 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" ""
+			(at 241.3 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 				(hide yes)
 			)
 		)
@@ -8401,6 +8833,24 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Library" ""
+			(at 193.04 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" ""
+			(at 193.04 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "94ef8b10-5789-4d34-aebe-4c7bc3e5164c")
 		)
@@ -8552,6 +9002,24 @@
 					(size 1.27 1.27)
 				)
 				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Sim.Library" ""
+			(at 151.13 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" ""
+			(at 151.13 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 				(hide yes)
 			)
 		)
@@ -8798,6 +9266,24 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Library" ""
+			(at 203.2 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" ""
+			(at 203.2 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "f7b46771-9132-4e16-89b7-38dd374f2396")
 		)
@@ -8871,6 +9357,24 @@
 			)
 		)
 		(property "Description" "NPN transistor, emitter/collector/base"
+			(at 179.07 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Library" ""
+			(at 179.07 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" ""
 			(at 179.07 101.6 0)
 			(effects
 				(font
@@ -9041,6 +9545,24 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Library" ""
+			(at 194.31 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" ""
+			(at 194.31 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "e8681fc9-0ce5-4ae7-9bd9-c2e7921fd1ea")
 		)
@@ -9117,6 +9639,24 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 236.22 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Library" ""
+			(at 236.22 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" ""
 			(at 236.22 147.32 0)
 			(effects
 				(font
@@ -9362,6 +9902,24 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Library" ""
+			(at 88.9 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" ""
+			(at 88.9 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "2ba29e16-f2c2-40a8-b635-da67e3cb8bf9")
 		)
@@ -9522,6 +10080,24 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Library" ""
+			(at 107.95 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" ""
+			(at 107.95 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "a81e4586-6fd1-490f-ab1c-58969b0b381d")
 		)
@@ -9599,6 +10175,24 @@
 			)
 		)
 		(property "Description" "NPN transistor, emitter/collector/base"
+			(at 88.9 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Library" ""
+			(at 88.9 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" ""
 			(at 88.9 99.06 0)
 			(effects
 				(font
@@ -9692,6 +10286,24 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Library" ""
+			(at 88.9 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" ""
+			(at 88.9 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "18c50a6f-0ccb-43a8-ab71-8a6c5c45477d")
 		)
@@ -9768,6 +10380,24 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 181.61 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Library" ""
+			(at 181.61 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" ""
 			(at 181.61 114.3 0)
 			(effects
 				(font
@@ -9927,6 +10557,24 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Library" ""
+			(at 242.57 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" ""
+			(at 242.57 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "31b021bd-d63f-42a1-bb3b-293599e54e6e")
 		)
@@ -10012,6 +10660,24 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 148.59 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Library" ""
+			(at 148.59 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" ""
 			(at 148.59 162.56 0)
 			(effects
 				(font
@@ -10109,6 +10775,24 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
+			(at 227.33 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Library" ""
+			(at 227.33 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" ""
 			(at 227.33 100.33 0)
 			(effects
 				(font
@@ -10276,6 +10960,24 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Library" ""
+			(at 176.53 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" ""
+			(at 176.53 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "67fa1d4d-93a7-4b95-b294-f0ec41d1f6a6")
 		)
@@ -10349,6 +11051,24 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 162.56 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Library" ""
+			(at 162.56 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" ""
 			(at 162.56 149.86 0)
 			(effects
 				(font
@@ -10437,6 +11157,24 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Library" ""
+			(at 223.52 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" ""
+			(at 223.52 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "a7d5dea7-55c7-4278-9581-18ca11657156")
 		)
@@ -10504,6 +11242,24 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 36.83 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Library" ""
+			(at 36.83 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" ""
 			(at 36.83 118.11 0)
 			(effects
 				(font
@@ -10593,6 +11349,24 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Library" ""
+			(at 210.82 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" ""
+			(at 210.82 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "432cfbb3-ffd9-4d97-8b3e-f24594a451a0")
 		)
@@ -10666,6 +11440,24 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 100.33 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Library" ""
+			(at 100.33 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" ""
 			(at 100.33 175.26 0)
 			(effects
 				(font
@@ -10825,6 +11617,24 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Library" ""
+			(at 242.57 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" ""
+			(at 242.57 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "d0653f53-ecf0-4f8a-9ac8-523f2b2bbc3f")
 		)
@@ -10918,6 +11728,24 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Library" ""
+			(at 114.3 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" ""
+			(at 114.3 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "78f94ecf-3dfd-49f4-8201-e63f390277ea")
 		)
@@ -10991,6 +11819,24 @@
 			)
 		)
 		(property "Description" "NPN transistor, emitter/collector/base"
+			(at 102.87 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Library" ""
+			(at 102.87 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" ""
 			(at 102.87 81.28 0)
 			(effects
 				(font
@@ -11083,6 +11929,24 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Library" ""
+			(at 53.34 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" ""
+			(at 53.34 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "d7e39002-e398-45af-b518-9a13b46c1e8d")
 		)
@@ -11154,6 +12018,24 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 96.52 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Library" ""
+			(at 96.52 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" ""
 			(at 96.52 106.68 0)
 			(effects
 				(font
@@ -11236,6 +12118,24 @@
 			)
 		)
 		(property "Description" "NPN transistor, emitter/collector/base"
+			(at 88.9 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Library" ""
+			(at 88.9 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" ""
 			(at 88.9 63.5 0)
 			(effects
 				(font
@@ -11482,6 +12382,24 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Library" ""
+			(at 96.52 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" ""
+			(at 96.52 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "a3867222-c40b-4254-8686-88cd38cc8d8a")
 		)
@@ -11555,6 +12473,24 @@
 			)
 		)
 		(property "Description" "Polarized capacitor, small symbol"
+			(at 132.08 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Library" ""
+			(at 132.08 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" ""
 			(at 132.08 128.27 0)
 			(effects
 				(font
@@ -11644,6 +12580,24 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Library" ""
+			(at 128.27 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" ""
+			(at 128.27 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "78801979-e18a-4058-a033-b4fc2b25cc23")
 		)
@@ -11725,6 +12679,24 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Library" ""
+			(at 53.34 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" ""
+			(at 53.34 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "e1172df2-d63c-491c-94bd-23666c613562")
 		)
@@ -11792,6 +12764,24 @@
 			)
 		)
 		(property "Description" "Polarized capacitor, small symbol"
+			(at 166.37 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Library" ""
+			(at 166.37 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" ""
 			(at 166.37 60.96 0)
 			(effects
 				(font
@@ -11881,6 +12871,24 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Library" ""
+			(at 144.78 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" ""
+			(at 144.78 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "5943fe88-8b6d-42ea-bfa3-739a981d778a")
 		)
@@ -11954,6 +12962,24 @@
 			)
 		)
 		(property "Description" "NPN transistor, emitter/collector/base"
+			(at 102.87 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Library" ""
+			(at 102.87 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" ""
 			(at 102.87 63.5 0)
 			(effects
 				(font
@@ -12046,6 +13072,24 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Library" ""
+			(at 38.1 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" ""
+			(at 38.1 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "3c09acb6-08b0-4e72-a392-670e91166970")
 		)
@@ -12117,6 +13161,24 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 133.35 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Library" ""
+			(at 133.35 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" ""
 			(at 133.35 33.02 0)
 			(effects
 				(font
@@ -12198,6 +13260,24 @@
 			)
 		)
 		(property "Description" "Polarized capacitor, small symbol"
+			(at 38.1 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Library" ""
+			(at 38.1 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" ""
 			(at 38.1 36.83 0)
 			(effects
 				(font
@@ -12288,6 +13368,24 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Library" ""
+			(at 124.46 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" ""
+			(at 124.46 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "b02bc0f1-4ead-4ddf-a765-7c6e713ae305")
 		)
@@ -12364,6 +13462,24 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 66.04 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Library" ""
+			(at 66.04 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" ""
 			(at 66.04 139.7 0)
 			(effects
 				(font
@@ -12531,6 +13647,24 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Library" ""
+			(at 142.24 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" ""
+			(at 142.24 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "1d6eedf7-e5d2-43ed-944c-8f4e204bc217")
 		)
@@ -12607,6 +13741,24 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 227.33 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Library" ""
+			(at 227.33 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" ""
 			(at 227.33 87.63 0)
 			(effects
 				(font
@@ -12696,6 +13848,24 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Library" ""
+			(at 48.26 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" ""
+			(at 48.26 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "117981bd-c79c-41b5-85bd-46bf753ed8af")
 		)
@@ -12770,6 +13940,24 @@
 			)
 		)
 		(property "Description" "Polarized capacitor, small symbol"
+			(at 157.48 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Library" ""
+			(at 157.48 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" ""
 			(at 157.48 101.6 0)
 			(effects
 				(font
@@ -12929,6 +14117,24 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 128.27 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Library" ""
+			(at 128.27 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" ""
 			(at 128.27 62.23 0)
 			(effects
 				(font

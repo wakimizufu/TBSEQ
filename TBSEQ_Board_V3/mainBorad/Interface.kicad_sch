@@ -981,289 +981,6 @@
 				)
 			)
 		)
-		(symbol "Connector:Conn_01x05_Pin"
-			(pin_names
-				(offset 1.016) hide)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "J"
-				(at 0 7.62 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "Conn_01x05_Pin"
-				(at 0 -7.62 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Generic connector, single row, 01x05, script generated"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_locked" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "connector"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "Connector*:*_1x??_*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "Conn_01x05_Pin_1_1"
-				(polyline
-					(pts
-						(xy 1.27 -5.08) (xy 0.8636 -5.08)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 -2.54) (xy 0.8636 -2.54)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 0) (xy 0.8636 0)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 2.54) (xy 0.8636 2.54)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 5.08) (xy 0.8636 5.08)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start 0.8636 -4.953)
-					(end 0 -5.207)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(rectangle
-					(start 0.8636 -2.413)
-					(end 0 -2.667)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(rectangle
-					(start 0.8636 0.127)
-					(end 0 -0.127)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(rectangle
-					(start 0.8636 2.667)
-					(end 0 2.413)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(rectangle
-					(start 0.8636 5.207)
-					(end 0 4.953)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(pin passive line
-					(at 5.08 5.08 180)
-					(length 3.81)
-					(name "Pin_1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 5.08 2.54 180)
-					(length 3.81)
-					(name "Pin_2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 5.08 0 180)
-					(length 3.81)
-					(name "Pin_3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 5.08 -2.54 180)
-					(length 3.81)
-					(name "Pin_4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 5.08 -5.08 180)
-					(length 3.81)
-					(name "Pin_5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
 		(symbol "Device:C_Polarized_Small"
 			(pin_numbers hide)
 			(pin_names
@@ -2374,7 +2091,7 @@
 				)
 			)
 		)
-		(symbol "SamacSys_Parts:NJM2125F-TE1_DIP-8"
+		(symbol "SamacSys_Parts:NJM2125F-TE1"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -2387,7 +2104,7 @@
 					(justify left top)
 				)
 			)
-			(property "Value" "NJM2125F-TE1_DIP8"
+			(property "Value" "NJM2125F-TE1"
 				(at 29.21 5.08 0)
 				(effects
 					(font
@@ -2495,7 +2212,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "NJM2125F-TE1_DIP-8_1_1"
+			(symbol "NJM2125F-TE1_1_1"
 				(rectangle
 					(start 5.08 2.54)
 					(end 27.94 -7.62)
@@ -2508,42 +2225,6 @@
 					)
 				)
 				(pin passive line
-					(at 33.02 0 180)
-					(length 5.08)
-					(name "OUTPUT"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -5.08 0)
-					(length 5.08)
-					(name "-INPUT"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
 					(at 0 0 0)
 					(length 5.08)
 					(name "+INPUT"
@@ -2553,7 +2234,7 @@
 							)
 						)
 					)
-					(number "3"
+					(number "1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2571,61 +2252,43 @@
 							)
 						)
 					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -5.08 0)
+					(length 5.08)
+					(name "-INPUT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 33.02 0 180)
+					(length 5.08)
+					(name "OUTPUT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
 					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin no_connect line
-					(at 15.24 -10.16 90)
-					(length 2.54)
-					(name "NC"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin no_connect line
-					(at 19.05 -10.16 90)
-					(length 2.54)
-					(name "NC"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin no_connect line
-					(at 22.86 -10.16 90)
-					(length 2.54)
-					(name "NC"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "7"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2643,7 +2306,7 @@
 							)
 						)
 					)
-					(number "8"
+					(number "5"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3138,12 +2801,6 @@
 		(uuid "b565e61b-b8a7-460c-861d-4d777118ae82")
 	)
 	(junction
-		(at 125.73 39.37)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "bd561b4f-7f68-4adf-bc75-aa7a582e7d22")
-	)
-	(junction
 		(at 101.6 170.18)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3186,6 +2843,12 @@
 		(uuid "ef49d4da-785d-4e87-9ad5-f183be18839a")
 	)
 	(junction
+		(at 125.73 41.91)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f0d16498-81c7-4427-868f-bd15ecc653a9")
+	)
+	(junction
 		(at 171.45 114.3)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3200,10 +2863,6 @@
 	(no_connect
 		(at 173.99 91.44)
 		(uuid "7ae9c22f-0378-461d-a5b1-96c93e5ea2f7")
-	)
-	(no_connect
-		(at 180.34 33.02)
-		(uuid "c1b1f46d-145f-4513-abeb-4288ef5d0634")
 	)
 	(no_connect
 		(at 113.03 119.38)
@@ -3321,7 +2980,7 @@
 	)
 	(wire
 		(pts
-			(xy 123.19 25.4) (xy 125.73 25.4)
+			(xy 123.19 22.86) (xy 125.73 22.86)
 		)
 		(stroke
 			(width 0)
@@ -3351,7 +3010,7 @@
 	)
 	(wire
 		(pts
-			(xy 125.73 59.69) (xy 125.73 39.37)
+			(xy 125.73 59.69) (xy 125.73 41.91)
 		)
 		(stroke
 			(width 0)
@@ -3441,7 +3100,7 @@
 	)
 	(wire
 		(pts
-			(xy 125.73 25.4) (xy 125.73 31.75)
+			(xy 125.73 22.86) (xy 125.73 31.75)
 		)
 		(stroke
 			(width 0)
@@ -3471,16 +3130,6 @@
 	)
 	(wire
 		(pts
-			(xy 125.73 31.75) (xy 125.73 39.37)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "306b5245-14d8-46bb-968b-ed4a57576da6")
-	)
-	(wire
-		(pts
 			(xy 163.83 83.82) (xy 163.83 85.09)
 		)
 		(stroke
@@ -3491,7 +3140,7 @@
 	)
 	(wire
 		(pts
-			(xy 130.81 50.8) (xy 130.81 27.94)
+			(xy 130.81 50.8) (xy 130.81 25.4)
 		)
 		(stroke
 			(width 0)
@@ -3581,7 +3230,7 @@
 	)
 	(wire
 		(pts
-			(xy 86.36 27.94) (xy 86.36 36.83)
+			(xy 86.36 25.4) (xy 86.36 36.83)
 		)
 		(stroke
 			(width 0)
@@ -3591,7 +3240,7 @@
 	)
 	(wire
 		(pts
-			(xy 90.17 30.48) (xy 90.17 39.37)
+			(xy 90.17 27.94) (xy 90.17 41.91)
 		)
 		(stroke
 			(width 0)
@@ -3611,7 +3260,7 @@
 	)
 	(wire
 		(pts
-			(xy 90.17 27.94) (xy 86.36 27.94)
+			(xy 90.17 25.4) (xy 86.36 25.4)
 		)
 		(stroke
 			(width 0)
@@ -3781,17 +3430,7 @@
 	)
 	(wire
 		(pts
-			(xy 186.69 22.86) (xy 180.34 22.86)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "567bf9ad-129d-4e2d-a450-d66b4a5702d0")
-	)
-	(wire
-		(pts
-			(xy 82.55 25.4) (xy 90.17 25.4)
+			(xy 82.55 22.86) (xy 90.17 22.86)
 		)
 		(stroke
 			(width 0)
@@ -3868,16 +3507,6 @@
 			(type default)
 		)
 		(uuid "5fe38589-ed9e-4b9b-ad4f-bf80b45a66ec")
-	)
-	(wire
-		(pts
-			(xy 186.69 27.94) (xy 180.34 27.94)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "604a4f60-7df1-45cd-b2e6-61561f8f8fa5")
 	)
 	(wire
 		(pts
@@ -4101,16 +3730,6 @@
 	)
 	(wire
 		(pts
-			(xy 186.69 30.48) (xy 180.34 30.48)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "84495da6-5772-47e1-9689-68227bae428e")
-	)
-	(wire
-		(pts
 			(xy 99.06 49.53) (xy 72.39 49.53)
 		)
 		(stroke
@@ -4261,7 +3880,7 @@
 	)
 	(wire
 		(pts
-			(xy 130.81 27.94) (xy 123.19 27.94)
+			(xy 130.81 25.4) (xy 123.19 25.4)
 		)
 		(stroke
 			(width 0)
@@ -4391,6 +4010,16 @@
 	)
 	(wire
 		(pts
+			(xy 125.73 31.75) (xy 125.73 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a9f7ceed-7c94-42ed-9d62-08fadac00a02")
+	)
+	(wire
+		(pts
 			(xy 139.7 40.64) (xy 139.7 41.91)
 		)
 		(stroke
@@ -4451,7 +4080,7 @@
 	)
 	(wire
 		(pts
-			(xy 82.55 25.4) (xy 82.55 29.21)
+			(xy 82.55 22.86) (xy 82.55 29.21)
 		)
 		(stroke
 			(width 0)
@@ -4511,16 +4140,6 @@
 	)
 	(wire
 		(pts
-			(xy 186.69 25.4) (xy 180.34 25.4)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c42a4b2d-15b0-4df7-a138-a348435570b5")
-	)
-	(wire
-		(pts
 			(xy 85.09 123.19) (xy 110.49 123.19)
 		)
 		(stroke
@@ -4561,7 +4180,7 @@
 	)
 	(wire
 		(pts
-			(xy 110.49 39.37) (xy 125.73 39.37)
+			(xy 110.49 41.91) (xy 125.73 41.91)
 		)
 		(stroke
 			(width 0)
@@ -4611,7 +4230,7 @@
 	)
 	(wire
 		(pts
-			(xy 90.17 39.37) (xy 102.87 39.37)
+			(xy 90.17 41.91) (xy 102.87 41.91)
 		)
 		(stroke
 			(width 0)
@@ -5322,16 +4941,6 @@
 			"rkJggg=="
 		)
 	)
-	(text "InputSignal"
-		(exclude_from_sim no)
-		(at 185.42 15.494 0)
-		(effects
-			(font
-				(size 2.54 2.54)
-			)
-		)
-		(uuid "091a190c-3788-42ce-bc81-ca7416c9dd07")
-	)
 	(text "Accent"
 		(exclude_from_sim no)
 		(at 157.734 75.692 0)
@@ -5562,28 +5171,6 @@
 			)
 		)
 	)
-	(global_label "D+GATE"
-		(shape input)
-		(at 186.69 30.48 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "4ee92263-743b-4a85-ad81-d6ba147c6377")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 196.9928 30.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "A+12V"
 		(shape input)
 		(at 248.92 21.59 180)
@@ -5668,28 +5255,6 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "D+SLIDE"
-		(shape input)
-		(at 186.69 25.4 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "7ea98c6d-7d18-4890-99b2-4e5388b85f16")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 197.779 25.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
 				(hide yes)
 			)
 		)
@@ -5795,28 +5360,6 @@
 		(uuid "aa376663-e05a-4461-a9df-b480d87d187b")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 91.1595 153.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "D-ACC"
-		(shape input)
-		(at 186.69 27.94 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "add85b34-b9f6-47aa-83ac-b95147d12542")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 197.779 27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5949,28 +5492,6 @@
 		(uuid "c75bbc97-0b08-490e-b5b3-35ab2f2dc29e")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 142.9876 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "A+CV"
-		(shape input)
-		(at 186.69 22.86 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "d4f2a685-8b07-4629-91cc-275946c017eb")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 197.779 22.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6135,164 +5656,6 @@
 		)
 	)
 	(symbol
-		(lib_id "SamacSys_Parts:NJM2125F-TE1_DIP-8")
-		(at 90.17 25.4 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "02ff2c31-f4e1-49a1-9ad4-116817faba42")
-		(property "Reference" "IC2"
-			(at 106.68 17.78 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "NJM2125F-TE1_DIP8"
-			(at 106.68 20.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "SamacSys_Parts:NJM2125F-SOT95&DIP8"
-			(at 119.38 120.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://componentsearchengine.com/Datasheets/1/NJM2125F-TE1.pdf"
-			(at 119.38 220.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Description" "Operational Amplifiers - Op Amps Single Supply"
-			(at 90.17 25.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Height" "1.3"
-			(at 119.38 420.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Name" "New Japan Radio"
-			(at 119.38 520.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Part_Number" "NJM2125F-TE1"
-			(at 119.38 620.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Mouser Part Number" "513-NJM2125F-TE1"
-			(at 119.38 720.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/NJR/NJM2125F-TE1?qs=SzzEZJ0VecQ3YU3q3zUUYw%3D%3D"
-			(at 119.38 820.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Arrow Part Number" ""
-			(at 119.38 920.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Arrow Price/Stock" ""
-			(at 119.38 1020.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(pin "6"
-			(uuid "9921b183-9a19-43a6-af0c-a1790002cedf")
-		)
-		(pin "4"
-			(uuid "06db5715-ca9d-458c-8c48-244ffbb91696")
-		)
-		(pin "3"
-			(uuid "f7e0a28d-a3e7-4796-818f-a3ad8fe4fb09")
-		)
-		(pin "2"
-			(uuid "4ab394a0-ea58-48fa-9f54-3a4a05808f91")
-		)
-		(pin "5"
-			(uuid "a08b46fc-5dec-4d30-83c4-910a35d1fefb")
-		)
-		(pin "7"
-			(uuid "b91f7bb2-ddb8-44f2-b468-8c06e09c0ac9")
-		)
-		(pin "1"
-			(uuid "b6c4e67d-bd1d-49a1-9cc9-94954920d561")
-		)
-		(pin "8"
-			(uuid "2fed2fff-1d9d-4b5c-98c3-e7cb294b0ba4")
-		)
-		(instances
-			(project ""
-				(path "/83af791a-9776-40a7-82ad-9528ff7474b8/89dc079b-4bec-462d-b3d4-975f87bf224f"
-					(reference "IC2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R")
 		(at 90.17 170.18 270)
 		(unit 1)
@@ -6336,6 +5699,24 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 90.17 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Library" ""
+			(at 90.17 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" ""
 			(at 90.17 170.18 0)
 			(effects
 				(font
@@ -6443,6 +5824,24 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Library" ""
+			(at 139.7 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" ""
+			(at 139.7 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "02052a94-1b19-4a17-a9b2-c88b95c37cd5")
 		)
@@ -6524,6 +5923,24 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Library" ""
+			(at 166.37 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" ""
+			(at 166.37 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "524a8c1f-b35f-460c-af8a-887b0ca18b94")
 		)
@@ -6580,7 +5997,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_THT:TO-92_Inline"
+		(property "Footprint" "Package_TO_SOT_THT:TO-92_HandSolder"
 			(at 181.61 140.97 0)
 			(effects
 				(font
@@ -6599,6 +6016,24 @@
 			)
 		)
 		(property "Description" "PNP transistor, emitter/collector/base"
+			(at 176.53 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Library" ""
+			(at 176.53 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" ""
 			(at 176.53 138.43 0)
 			(effects
 				(font
@@ -6702,6 +6137,24 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
+			(at 69.85 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Library" ""
+			(at 69.85 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" ""
 			(at 69.85 127 0)
 			(effects
 				(font
@@ -6861,6 +6314,24 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 95.25 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Library" ""
+			(at 95.25 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" ""
 			(at 95.25 161.29 0)
 			(effects
 				(font
@@ -7104,6 +6575,24 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Library" ""
+			(at 29.21 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" ""
+			(at 29.21 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "ad71373f-d76f-48d2-af8a-6be9c17d7573")
 		)
@@ -7261,6 +6750,24 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Library" ""
+			(at 144.78 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" ""
+			(at 144.78 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "0dfc062b-0514-4fa5-8912-74c65e6d8c10")
 		)
@@ -7316,7 +6823,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_THT:TO-92_Inline"
+		(property "Footprint" "Package_TO_SOT_THT:TO-92_HandSolder"
 			(at 240.03 148.59 0)
 			(effects
 				(font
@@ -7335,6 +6842,24 @@
 			)
 		)
 		(property "Description" "N-JFET transistor, drain/gate/source"
+			(at 234.95 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Library" ""
+			(at 234.95 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" ""
 			(at 234.95 151.13 0)
 			(effects
 				(font
@@ -7506,6 +7031,24 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Library" ""
+			(at 110.49 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" ""
+			(at 110.49 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "3149ba53-210c-4835-bc87-d0cbc76ec86f")
 		)
@@ -7573,6 +7116,24 @@
 			)
 		)
 		(property "Description" "Polarized capacitor, small symbol"
+			(at 101.6 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Library" ""
+			(at 101.6 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" ""
 			(at 101.6 162.56 0)
 			(effects
 				(font
@@ -7831,7 +7392,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 106.68 39.37 90)
+		(at 106.68 41.91 90)
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
@@ -7840,7 +7401,7 @@
 		(dnp no)
 		(uuid "4e56d6cb-2974-4143-a87a-7764960ce763")
 		(property "Reference" "R107"
-			(at 103.886 41.91 90)
+			(at 103.886 44.45 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7848,7 +7409,7 @@
 			)
 		)
 		(property "Value" "2.2K"
-			(at 109.474 41.91 90)
+			(at 109.474 44.45 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7856,7 +7417,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical"
-			(at 106.68 37.592 90)
+			(at 106.68 40.132 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7865,7 +7426,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 106.68 39.37 0)
+			(at 106.68 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7874,7 +7435,25 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 106.68 39.37 0)
+			(at 106.68 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Library" ""
+			(at 106.68 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" ""
+			(at 106.68 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7955,6 +7534,24 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 72.39 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Library" ""
+			(at 72.39 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" ""
 			(at 72.39 39.37 0)
 			(effects
 				(font
@@ -8062,6 +7659,24 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Library" ""
+			(at 139.7 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" ""
+			(at 139.7 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "08ac5e08-827f-4326-804c-a6dbee204311")
 		)
@@ -8084,6 +7699,173 @@
 			(project "analog"
 				(path "/9f46303d-d943-4531-8552-3d499521569d/addc5987-d1ba-4ae2-823d-8b32950df557"
 					(reference "D31")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "SamacSys_Parts:NJM2125F-TE1")
+		(at 90.17 22.86 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "58bf319b-2300-4d7d-a778-a243cdadd95b")
+		(property "Reference" "IC2"
+			(at 106.68 15.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "NJM2125F-TE1"
+			(at 106.68 17.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "SamacSys_Parts:SOT95P280X130-5N"
+			(at 119.38 117.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://componentsearchengine.com/Datasheets/1/NJM2125F-TE1.pdf"
+			(at 119.38 217.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "Operational Amplifiers - Op Amps Single Supply"
+			(at 90.17 22.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Height" "1.3"
+			(at 119.38 417.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "New Japan Radio"
+			(at 119.38 517.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "NJM2125F-TE1"
+			(at 119.38 617.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "513-NJM2125F-TE1"
+			(at 119.38 717.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/NJR/NJM2125F-TE1?qs=SzzEZJ0VecQ3YU3q3zUUYw%3D%3D"
+			(at 119.38 817.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Arrow Part Number" ""
+			(at 119.38 917.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Arrow Price/Stock" ""
+			(at 119.38 1017.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Sim.Library" ""
+			(at 90.17 22.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" ""
+			(at 90.17 22.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0a2a6199-db84-49e0-9fe0-efdbba382d8a")
+		)
+		(pin "2"
+			(uuid "d655061f-4895-4436-aac0-faa73c90564d")
+		)
+		(pin "5"
+			(uuid "b515cfb9-203c-4382-92ea-20775f29d813")
+		)
+		(pin "4"
+			(uuid "2d0839da-5d9c-40e9-831c-6a85f5be10e5")
+		)
+		(pin "3"
+			(uuid "8015acbd-3173-44a7-969e-1d774b4433f5")
+		)
+		(instances
+			(project ""
+				(path "/83af791a-9776-40a7-82ad-9528ff7474b8/89dc079b-4bec-462d-b3d4-975f87bf224f"
+					(reference "IC2")
 					(unit 1)
 				)
 			)
@@ -8117,7 +7899,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_THT:TO-92_Inline"
+		(property "Footprint" "Package_TO_SOT_THT:TO-92_HandSolder"
 			(at 53.34 59.69 0)
 			(effects
 				(font
@@ -8136,6 +7918,24 @@
 			)
 		)
 		(property "Description" "NPN transistor, emitter/collector/base"
+			(at 48.26 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Library" ""
+			(at 48.26 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" ""
 			(at 48.26 62.23 0)
 			(effects
 				(font
@@ -8227,6 +8027,24 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Library" ""
+			(at 55.88 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" ""
+			(at 55.88 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "3b1dfdd0-1091-4c55-a1b2-4785781bcabd")
 		)
@@ -8282,7 +8100,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_THT:TO-92_Inline"
+		(property "Footprint" "Package_TO_SOT_THT:TO-92_HandSolder"
 			(at 46.99 106.68 0)
 			(effects
 				(font
@@ -8301,6 +8119,24 @@
 			)
 		)
 		(property "Description" "NPN transistor, emitter/collector/base"
+			(at 41.91 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Library" ""
+			(at 41.91 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" ""
 			(at 41.91 109.22 0)
 			(effects
 				(font
@@ -8384,6 +8220,24 @@
 			)
 		)
 		(property "Description" "Quad Analog Switches"
+			(at 96.52 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Library" ""
+			(at 96.52 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" ""
 			(at 96.52 111.76 0)
 			(effects
 				(font
@@ -8497,6 +8351,24 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Library" ""
+			(at 50.8 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" ""
+			(at 50.8 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "697e77a4-a2c8-4f78-a12f-0be6a42e2293")
 		)
@@ -8569,6 +8441,24 @@
 			)
 		)
 		(property "Description" "Quad Analog Switches"
+			(at 118.11 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Library" ""
+			(at 118.11 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" ""
 			(at 118.11 59.69 0)
 			(effects
 				(font
@@ -8759,6 +8649,24 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Library" ""
+			(at 134.62 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" ""
+			(at 134.62 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "8ceec1c0-fec7-4cc3-a594-896c9b870700")
 		)
@@ -8838,6 +8746,24 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Library" ""
+			(at 205.74 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" ""
+			(at 205.74 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "4734cc36-408a-49e5-b1ec-bf6fe0104ef3")
 		)
@@ -8860,95 +8786,6 @@
 			(project "analog"
 				(path "/9f46303d-d943-4531-8552-3d499521569d/addc5987-d1ba-4ae2-823d-8b32950df557"
 					(reference "R152")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:Conn_01x05_Pin")
-		(at 175.26 27.94 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "8dfb4647-39b3-4e19-a66a-2c8494960f2e")
-		(property "Reference" "J2"
-			(at 175.895 17.78 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Conn_01x05_Pin"
-			(at 175.895 20.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical"
-			(at 175.26 27.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 175.26 27.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Generic connector, single row, 01x05, script generated"
-			(at 175.26 27.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "4"
-			(uuid "c329842c-950c-496b-8632-f77b6de368a1")
-		)
-		(pin "5"
-			(uuid "d73944fb-3c99-4a3c-a295-8a9ca819de30")
-		)
-		(pin "3"
-			(uuid "5e3bb3fc-4b49-4222-a639-cf0691b3525f")
-		)
-		(pin "1"
-			(uuid "0b8c7fe3-3195-4543-be11-d132c744d51b")
-		)
-		(pin "2"
-			(uuid "4ca27ba9-00d5-49f1-b7ac-7ea19d38eaae")
-		)
-		(instances
-			(project "analog_separate"
-				(path "/83af791a-9776-40a7-82ad-9528ff7474b8/89dc079b-4bec-462d-b3d4-975f87bf224f"
-					(reference "J2")
-					(unit 1)
-				)
-			)
-			(project "analog_separate"
-				(path "/96522794-a695-4466-86ba-4264882708e5/f3375c55-8148-47b4-9d07-6863d0fa6703"
-					(reference "J2")
-					(unit 1)
-				)
-			)
-			(project "analog"
-				(path "/9f46303d-d943-4531-8552-3d499521569d/addc5987-d1ba-4ae2-823d-8b32950df557"
-					(reference "J2")
 					(unit 1)
 				)
 			)
@@ -9000,6 +8837,24 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 35.56 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Library" ""
+			(at 35.56 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" ""
 			(at 35.56 115.57 0)
 			(effects
 				(font
@@ -9129,7 +8984,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_THT:TO-92_Inline"
+		(property "Footprint" "Package_TO_SOT_THT:TO-92_HandSolder"
 			(at 228.6 129.54 0)
 			(effects
 				(font
@@ -9148,6 +9003,24 @@
 			)
 		)
 		(property "Description" "NPN transistor, emitter/collector/base"
+			(at 223.52 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Library" ""
+			(at 223.52 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" ""
 			(at 223.52 132.08 0)
 			(effects
 				(font
@@ -9215,7 +9088,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_THT:TO-92_Inline"
+		(property "Footprint" "Package_TO_SOT_THT:TO-92_HandSolder"
 			(at 113.03 172.72 0)
 			(effects
 				(font
@@ -9234,6 +9107,24 @@
 			)
 		)
 		(property "Description" "PNP transistor, emitter/collector/base"
+			(at 107.95 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Library" ""
+			(at 107.95 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" ""
 			(at 107.95 170.18 0)
 			(effects
 				(font
@@ -9327,6 +9218,24 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Library" ""
+			(at 179.07 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" ""
+			(at 179.07 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "990c3774-89ad-4499-b444-12897a0214c4")
 		)
@@ -9409,6 +9318,24 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Library" ""
+			(at 153.67 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" ""
+			(at 153.67 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "303eb29b-b1d5-45dd-af56-0ac8f6cf7982")
 		)
@@ -9481,6 +9408,24 @@
 			)
 		)
 		(property "Description" "Quad Analog Switches"
+			(at 96.52 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Library" ""
+			(at 96.52 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" ""
 			(at 96.52 90.17 0)
 			(effects
 				(font
@@ -9587,6 +9532,24 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 179.07 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Library" ""
+			(at 179.07 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" ""
 			(at 179.07 151.13 0)
 			(effects
 				(font
@@ -9753,6 +9716,24 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Library" ""
+			(at 179.07 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" ""
+			(at 179.07 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "0c0ef6a8-685f-45ba-b81c-1b030e043d84")
 		)
@@ -9817,6 +9798,24 @@
 			)
 		)
 		(property "Description" "Polarized capacitor, small symbol"
+			(at 210.82 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Library" ""
+			(at 210.82 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" ""
 			(at 210.82 153.67 0)
 			(effects
 				(font
@@ -9984,6 +9983,24 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Library" ""
+			(at 62.23 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" ""
+			(at 62.23 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "b4c16c0d-1a8c-44dd-8b47-dd2cef7a0830")
 		)
@@ -10136,6 +10153,24 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Library" ""
+			(at 99.06 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" ""
+			(at 99.06 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "fd255672-eb00-4af8-8cde-69dc76dc690f")
 		)
@@ -10232,6 +10267,24 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 57.15 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Library" ""
+			(at 57.15 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" ""
 			(at 57.15 55.88 0)
 			(effects
 				(font
@@ -10340,6 +10393,24 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Library" ""
+			(at 69.85 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" ""
+			(at 69.85 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "3316d3ac-12a8-4761-a82d-716125d6ff63")
 		)
@@ -10395,7 +10466,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_THT:TO-92_Inline"
+		(property "Footprint" "Package_TO_SOT_THT:TO-92_HandSolder"
 			(at 240.03 135.89 0)
 			(effects
 				(font
@@ -10414,6 +10485,24 @@
 			)
 		)
 		(property "Description" "NPN transistor, emitter/collector/base"
+			(at 234.95 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Library" ""
+			(at 234.95 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" ""
 			(at 234.95 138.43 0)
 			(effects
 				(font
@@ -10499,6 +10588,24 @@
 			)
 		)
 		(property "Description" "Quad Analog Switches"
+			(at 255.27 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Library" ""
+			(at 255.27 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" ""
 			(at 255.27 34.29 0)
 			(effects
 				(font
@@ -10605,6 +10712,24 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 63.5 182.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Library" ""
+			(at 63.5 182.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" ""
 			(at 63.5 182.88 0)
 			(effects
 				(font
@@ -10764,6 +10889,24 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Library" ""
+			(at 113.03 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" ""
+			(at 113.03 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "f64903e3-caee-45a1-947b-7dc8ab73a89f")
 		)
@@ -10847,6 +10990,24 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 210.82 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Library" ""
+			(at 210.82 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" ""
 			(at 210.82 132.08 0)
 			(effects
 				(font
@@ -11013,6 +11174,24 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Library" ""
+			(at 210.82 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" ""
+			(at 210.82 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "050b68ab-6688-4560-9a86-30b419c86e4a")
 		)
@@ -11160,6 +11339,24 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 35.56 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Library" ""
+			(at 35.56 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" ""
 			(at 35.56 62.23 0)
 			(effects
 				(font
@@ -11392,6 +11589,24 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Library" ""
+			(at 173.99 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" ""
+			(at 173.99 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "0ef0954c-b26b-43bc-9398-1c561c98b1c6")
 		)
@@ -11493,6 +11708,24 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
+			(at 194.31 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Library" ""
+			(at 194.31 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" ""
 			(at 194.31 146.05 0)
 			(effects
 				(font
@@ -11711,7 +11944,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_THT:TO-92_Inline"
+		(property "Footprint" "Package_TO_SOT_THT:TO-92_HandSolder"
 			(at 74.93 53.34 0)
 			(effects
 				(font
@@ -11730,6 +11963,24 @@
 			)
 		)
 		(property "Description" "NPN transistor, emitter/collector/base"
+			(at 69.85 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Library" ""
+			(at 69.85 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" ""
 			(at 69.85 55.88 0)
 			(effects
 				(font
@@ -11918,6 +12169,24 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Library" ""
+			(at 69.85 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" ""
+			(at 69.85 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "04490035-282c-4d90-aa97-0e29e21faf60")
 		)
@@ -11998,6 +12267,24 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Library" ""
+			(at 209.55 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" ""
+			(at 209.55 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "487433f0-2e64-4896-854c-a64942dcd056")
 		)
@@ -12066,6 +12353,24 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 109.22 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Library" ""
+			(at 109.22 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" ""
 			(at 109.22 68.58 0)
 			(effects
 				(font
@@ -12156,6 +12461,24 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Library" ""
+			(at 110.49 182.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" ""
+			(at 110.49 182.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "ff748c38-03ee-440d-a64f-6be210958d5b")
 		)
@@ -12210,7 +12533,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_THT:TO-92_Inline"
+		(property "Footprint" "Package_TO_SOT_THT:TO-92_HandSolder"
 			(at 77.47 175.26 0)
 			(effects
 				(font
@@ -12229,6 +12552,24 @@
 			)
 		)
 		(property "Description" "NPN transistor, emitter/collector/base"
+			(at 72.39 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Library" ""
+			(at 72.39 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" ""
 			(at 72.39 177.8 0)
 			(effects
 				(font
@@ -12314,6 +12655,24 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 44.45 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Library" ""
+			(at 44.45 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" ""
 			(at 44.45 92.71 0)
 			(effects
 				(font

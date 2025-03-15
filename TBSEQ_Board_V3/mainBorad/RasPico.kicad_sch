@@ -2403,6 +2403,12 @@
 		(uuid "458be1ce-02ef-4cee-8524-fc78d567adf2")
 	)
 	(junction
+		(at 88.9 80.01)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "57e90acc-8a8c-4525-b65c-03af0e52548e")
+	)
+	(junction
 		(at 49.53 101.6)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2421,6 +2427,12 @@
 		(uuid "75c234c0-c474-4b49-aa0b-b4e9338cef65")
 	)
 	(junction
+		(at 82.55 82.55)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7a9c7543-70e0-417d-8120-231ba94163a9")
+	)
+	(junction
 		(at 49.53 80.01)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2431,12 +2443,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "96e5250b-4bef-4b3c-acde-3ca7a3d8ea9b")
-	)
-	(junction
-		(at 87.63 82.55)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "9b400e74-7a8e-4dab-bfc7-7ba541a25660")
 	)
 	(junction
 		(at 156.21 74.93)
@@ -2788,7 +2794,7 @@
 	)
 	(wire
 		(pts
-			(xy 87.63 73.66) (xy 83.82 73.66)
+			(xy 82.55 73.66) (xy 77.47 73.66)
 		)
 		(stroke
 			(width 0)
@@ -2815,6 +2821,16 @@
 			(type default)
 		)
 		(uuid "5a2a14e0-05f8-4482-a9a1-1ef08371a3b2")
+	)
+	(wire
+		(pts
+			(xy 77.47 71.12) (xy 88.9 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "622839fb-02d0-4a8e-a74c-db6004a2ba41")
 	)
 	(wire
 		(pts
@@ -3008,7 +3024,7 @@
 	)
 	(wire
 		(pts
-			(xy 80.01 82.55) (xy 87.63 82.55)
+			(xy 80.01 82.55) (xy 82.55 82.55)
 		)
 		(stroke
 			(width 0)
@@ -3055,6 +3071,16 @@
 			(type default)
 		)
 		(uuid "95570552-e4d9-4551-a84d-8d9fdab3ce3e")
+	)
+	(wire
+		(pts
+			(xy 82.55 82.55) (xy 87.63 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "974943b6-618e-4721-a231-eecb44e7737e")
 	)
 	(wire
 		(pts
@@ -3338,13 +3364,23 @@
 	)
 	(wire
 		(pts
-			(xy 87.63 82.55) (xy 87.63 73.66)
+			(xy 82.55 82.55) (xy 82.55 73.66)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "d81181d2-305c-4be3-a6f3-146549d7a119")
+	)
+	(wire
+		(pts
+			(xy 88.9 71.12) (xy 88.9 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d8f97b2c-7353-4505-9c97-af3adc88da61")
 	)
 	(wire
 		(pts
@@ -3749,8 +3785,8 @@
 		)
 	)
 	(global_label "D+3.3V_MIDIRX"
-		(shape output)
-		(at 83.82 73.66 180)
+		(shape input)
+		(at 77.47 73.66 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3760,7 +3796,7 @@
 		)
 		(uuid "4f165a97-e67e-43a3-9145-b39c7e8e37fd")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 72.0053 73.66 0)
+			(at 65.6553 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3915,6 +3951,28 @@
 		(uuid "9f982986-1894-4c33-9195-eb3a8f0241dc")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 52.8346 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "D+3.3V_MIDITX"
+		(shape output)
+		(at 77.47 71.12 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "ac7e4a04-6312-4bc0-9c39-51d4e28466de")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 65.6553 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4168,6 +4226,24 @@
 		)
 		(property "Description" ""
 			(at 106.68 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Library" ""
+			(at 107.95 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" ""
+			(at 107.95 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4429,6 +4505,24 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Library" ""
+			(at 180.34 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" ""
+			(at 180.34 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "e0397554-9522-4062-b58b-ffb88b0852f0")
 		)
@@ -4507,6 +4601,24 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Library" ""
+			(at 135.89 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" ""
+			(at 135.89 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "5ab36ddd-d623-451c-90ee-1c05d4083b3f")
 		)
@@ -4572,6 +4684,24 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 74.93 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Library" ""
+			(at 74.93 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" ""
 			(at 74.93 82.55 0)
 			(effects
 				(font
@@ -4655,6 +4785,24 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Library" ""
+			(at 49.53 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" ""
+			(at 49.53 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "5642e7df-4017-48b3-8e88-6ef94642056b")
 		)
@@ -4717,6 +4865,24 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x08, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 52.07 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Library" ""
+			(at 52.07 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" ""
 			(at 52.07 114.3 0)
 			(effects
 				(font
@@ -4805,6 +4971,24 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 172.72 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Library" ""
+			(at 172.72 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" ""
 			(at 172.72 95.25 0)
 			(effects
 				(font
@@ -5348,6 +5532,24 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 43.18 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Library" ""
+			(at 43.18 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" ""
 			(at 43.18 86.36 0)
 			(effects
 				(font

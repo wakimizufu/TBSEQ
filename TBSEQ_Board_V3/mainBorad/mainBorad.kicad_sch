@@ -120,6 +120,44 @@
 		)
 	)
 	(sheet
+		(at 160.02 49.53)
+		(size 15.24 8.89)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "67c88aa0-cd33-4e9c-b3f5-33809b562701")
+		(property "Sheetname" "TEMPO"
+			(at 160.02 48.8184 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "TEMPO.kicad_sch"
+			(at 160.02 59.0046 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "mainBorad"
+				(path "/83af791a-9776-40a7-82ad-9528ff7474b8"
+					(page "13")
+				)
+			)
+		)
+	)
+	(sheet
 		(at 204.47 22.86)
 		(size 20.32 10.16)
 		(fields_autoplaced yes)
@@ -245,7 +283,7 @@
 			(color 0 0 0 0.0000)
 		)
 		(uuid "823be519-bdcf-42c8-a9bd-38752cead0eb")
-		(property "Sheetname" "MIDIRx"
+		(property "Sheetname" "MIDIRxTx"
 			(at 54.61 20.8784 0)
 			(effects
 				(font

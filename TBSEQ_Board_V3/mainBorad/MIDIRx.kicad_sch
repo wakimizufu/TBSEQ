@@ -424,6 +424,505 @@
 				)
 			)
 		)
+		(symbol "SamacSys_Parts:2SC3325-Y"
+			(pin_names hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "Q"
+				(at 13.97 1.27 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Value" "2SC3325-Y"
+				(at 13.97 -1.27 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Footprint" "2SC3325YLF"
+				(at 13.97 -101.27 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://toshiba.semicon-storage.com/info/docget.jsp?did=19247&prodName=2SC3325"
+				(at 13.97 -201.27 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Description" "Transistor for low frequency small-signal amplification"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Height" "1"
+				(at 13.97 -401.27 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer_Name" "Toshiba"
+				(at 13.97 -501.27 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer_Part_Number" "2SC3325-Y"
+				(at 13.97 -601.27 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Mouser Part Number" ""
+				(at 13.97 -701.27 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Mouser Price/Stock" ""
+				(at 13.97 -801.27 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Arrow Part Number" ""
+				(at 13.97 -901.27 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Arrow Price/Stock" ""
+				(at 13.97 -1001.27 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(symbol "2SC3325-Y_1_1"
+				(polyline
+					(pts
+						(xy 2.54 0) (xy 7.62 0)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 7.62 -1.27) (xy 10.16 -3.81)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 7.62 1.27) (xy 10.16 3.81)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 7.62 2.54) (xy 7.62 -2.54)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 10.16 -3.81) (xy 10.16 -5.08)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 10.16 3.81) (xy 10.16 5.08)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 8.382 -2.54) (xy 8.89 -2.032) (xy 9.398 -3.048) (xy 8.382 -2.54)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(circle
+					(center 8.89 0)
+					(radius 4.016)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at 0 0 0)
+					(length 2.54)
+					(name "B"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 10.16 -7.62 90)
+					(length 2.54)
+					(name "E"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 10.16 7.62 270)
+					(length 2.54)
+					(name "C"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "SamacSys_Parts:74AHC1G04W5-7"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "IC"
+				(at 21.59 7.62 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Value" "74AHC1G04W5-7"
+				(at 21.59 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Footprint" "SOT95P285X140-5N"
+				(at 21.59 -94.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://www.diodes.com//assets/Datasheets/74AHC1G04.pdf"
+				(at 21.59 -194.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Description" "DIODES INC. - 74AHC1G04W5-7 - Inverter, 74AHC1G04, 1 Input, 8 mA, 2 V to 5.5 V, SOT-25-5"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Height" "1.4"
+				(at 21.59 -394.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer_Name" "Diodes Incorporated"
+				(at 21.59 -494.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer_Part_Number" "74AHC1G04W5-7"
+				(at 21.59 -594.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Mouser Part Number" "621-74AHC1G04W5-7"
+				(at 21.59 -694.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Diodes-Incorporated/74AHC1G04W5-7?qs=aOs975IaWll1ZDKu8p4JVA%3D%3D"
+				(at 21.59 -794.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Arrow Part Number" "74AHC1G04W5-7"
+				(at 21.59 -894.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Arrow Price/Stock" "https://www.arrow.com/en/products/74ahc1g04w5-7/diodes-incorporated?region=europe"
+				(at 21.59 -994.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(symbol "74AHC1G04W5-7_1_1"
+				(rectangle
+					(start 5.08 2.54)
+					(end 20.32 -7.62)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin no_connect line
+					(at 0 0 0)
+					(length 5.08)
+					(name "NC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -2.54 0)
+					(length 5.08)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -5.08 0)
+					(length 5.08)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 25.4 0 180)
+					(length 5.08)
+					(name "Y"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 25.4 -2.54 180)
+					(length 5.08)
+					(name "VCC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "SamacSys_Parts:KDJ03-5"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -1043,6 +1542,12 @@
 		(uuid "063496d5-d43c-450f-9f2b-721d0fdb8a57")
 	)
 	(junction
+		(at 182.88 101.6)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "094640a8-8156-4d54-bb1e-3d1989421644")
+	)
+	(junction
 		(at 143.51 55.88)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1091,8 +1596,46 @@
 		(uuid "5ee0c3eb-c4c7-48a7-9ab8-b3d14e8b0532")
 	)
 	(no_connect
+		(at 151.13 99.06)
+		(uuid "6650b3be-23b2-48e2-a22f-348afdf7cdb3")
+	)
+	(no_connect
+		(at 151.13 104.14)
+		(uuid "d2db929a-71a1-4c31-9763-905b38de668c")
+	)
+	(no_connect
 		(at 85.09 55.88)
 		(uuid "e32c738a-058e-4fba-b645-4c929a4f7589")
+	)
+	(wire
+		(pts
+			(xy 173.99 130.81) (xy 149.86 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "07dbce15-dd4a-4210-8cc6-bcebb2c79568")
+	)
+	(wire
+		(pts
+			(xy 120.65 140.97) (xy 120.65 151.13)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0fda28ec-a956-4b14-b364-3bd462eab0c1")
+	)
+	(wire
+		(pts
+			(xy 91.44 143.51) (xy 91.44 148.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "100af4ff-70f2-4cf1-ad4e-db7056be915a")
 	)
 	(wire
 		(pts
@@ -1136,6 +1679,16 @@
 	)
 	(wire
 		(pts
+			(xy 120.65 151.13) (xy 116.84 151.13)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2a8555d9-ec04-42c1-8e0f-632baf044b12")
+	)
+	(wire
+		(pts
 			(xy 81.28 58.42) (xy 81.28 67.31)
 		)
 		(stroke
@@ -1143,6 +1696,16 @@
 			(type default)
 		)
 		(uuid "2e3b29db-e069-41c5-b0d4-b0e716f48f1b")
+	)
+	(wire
+		(pts
+			(xy 182.88 99.06) (xy 182.88 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "34cf7c84-e677-4c7a-85a0-6c771a642dc7")
 	)
 	(wire
 		(pts
@@ -1156,6 +1719,16 @@
 	)
 	(wire
 		(pts
+			(xy 151.13 101.6) (xy 147.32 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3e6aa434-134c-48c9-aef1-bb82b05d3ad0")
+	)
+	(wire
+		(pts
 			(xy 24.13 58.42) (xy 33.02 58.42)
 		)
 		(stroke
@@ -1163,6 +1736,26 @@
 			(type default)
 		)
 		(uuid "43471cca-0aa9-460f-959c-47ba0e62dfab")
+	)
+	(wire
+		(pts
+			(xy 173.99 99.06) (xy 182.88 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "45478f03-c1ab-49aa-ae2a-f896a2d439ea")
+	)
+	(wire
+		(pts
+			(xy 120.65 138.43) (xy 116.84 138.43)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "53af8902-a28a-4ff1-899e-c1282b9515bb")
 	)
 	(wire
 		(pts
@@ -1183,6 +1776,16 @@
 			(type default)
 		)
 		(uuid "5c454057-363f-4d5a-9dca-0d87fbccfb04")
+	)
+	(wire
+		(pts
+			(xy 130.81 146.05) (xy 130.81 149.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "66b2227e-b846-4145-870a-4ba01a3be70d")
 	)
 	(wire
 		(pts
@@ -1246,6 +1849,16 @@
 	)
 	(wire
 		(pts
+			(xy 173.99 101.6) (xy 182.88 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a4f0606c-c410-4bd4-ae82-e2bfd0677502")
+	)
+	(wire
+		(pts
 			(xy 139.7 63.5) (xy 132.08 63.5)
 		)
 		(stroke
@@ -1253,6 +1866,16 @@
 			(type default)
 		)
 		(uuid "a9c2600c-c4a1-4244-8317-c9e11615bc6f")
+	)
+	(wire
+		(pts
+			(xy 135.89 96.52) (xy 139.7 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b08d3969-a627-4fa3-af04-d9b65c5d3034")
 	)
 	(wire
 		(pts
@@ -1276,6 +1899,36 @@
 	)
 	(wire
 		(pts
+			(xy 173.99 104.14) (xy 173.99 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "baac0538-d450-494f-8faf-02d57623ae41")
+	)
+	(wire
+		(pts
+			(xy 182.88 101.6) (xy 182.88 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bea254d5-79a4-4c0f-8df5-ac6e8c74d252")
+	)
+	(wire
+		(pts
+			(xy 116.84 140.97) (xy 120.65 140.97)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c003da11-ef41-4d09-a1f7-23ea002414ad")
+	)
+	(wire
+		(pts
 			(xy 132.08 39.37) (xy 132.08 43.18)
 		)
 		(stroke
@@ -1283,6 +1936,16 @@
 			(type default)
 		)
 		(uuid "c4c3ed19-27d9-4571-acd0-1edd16868c27")
+	)
+	(wire
+		(pts
+			(xy 147.32 101.6) (xy 147.32 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c861c9f0-8acd-4e05-be6e-098e4811b6b1")
 	)
 	(wire
 		(pts
@@ -1336,6 +1999,16 @@
 	)
 	(wire
 		(pts
+			(xy 130.81 130.81) (xy 142.24 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e2a875bc-cf47-4992-a95e-063f06d1d9b5")
+	)
+	(wire
+		(pts
 			(xy 55.88 53.34) (xy 66.04 53.34)
 		)
 		(stroke
@@ -1353,6 +2026,26 @@
 			(type default)
 		)
 		(uuid "e2efb3e6-ad98-47cc-8b3f-ffd7006e4e7c")
+	)
+	(wire
+		(pts
+			(xy 147.32 96.52) (xy 151.13 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e64164aa-7913-413f-a242-0c8f556ec21d")
+	)
+	(wire
+		(pts
+			(xy 87.63 140.97) (xy 91.44 140.97)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e9eaf54d-6de3-4532-962c-91e2d1a89897")
 	)
 	(wire
 		(pts
@@ -1374,7 +2067,18 @@
 		)
 		(uuid "1f607e88-948d-4040-b795-1046140b1a19")
 	)
-	(text "MIDI Interface(RX only)"
+	(text "MIDI Interface Tx"
+		(exclude_from_sim no)
+		(at 100.076 109.728 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+			)
+			(justify left)
+		)
+		(uuid "7e37b2bf-847a-4607-9ecd-6d478d07f26c")
+	)
+	(text "MIDI Interface Rx"
 		(exclude_from_sim no)
 		(at 74.676 23.368 0)
 		(effects
@@ -1394,6 +2098,28 @@
 			)
 		)
 		(uuid "eaa024ca-10c3-4bd4-b0b5-e4ba2e309f08")
+	)
+	(global_label "D+5V"
+		(shape input)
+		(at 135.89 96.52 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "2c0c70c6-449c-4708-ac40-4d38c73ffb0e")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 127.7643 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
 	)
 	(global_label "D+5V"
 		(shape input)
@@ -1417,6 +2143,28 @@
 			)
 		)
 	)
+	(global_label "D+5V_MIDITX"
+		(shape input)
+		(at 87.63 140.97 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "8d1f601d-c93a-4f9f-a37c-0d0c55f0e9d0")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 72.4286 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "D+5V_MIDIRx"
 		(shape output)
 		(at 149.86 55.88 0)
@@ -1436,6 +2184,94 @@
 				)
 				(justify left)
 				(hide yes)
+			)
+		)
+	)
+	(global_label "D+5V"
+		(shape input)
+		(at 116.84 151.13 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "ee5dfea0-7485-4383-8e11-18a5f3436bce")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 108.7143 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GNDD")
+		(at 130.81 149.86 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "00e2b3a1-3825-4cad-9d6e-63dd0bfc6851")
+		(property "Reference" "#PWR059"
+			(at 130.81 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GNDD"
+			(at 130.81 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 130.81 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 130.81 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GNDD\" , digital ground"
+			(at 130.81 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "eea3ff32-1875-48bf-8f1c-c54bb1fb015c")
+		)
+		(instances
+			(project "mainBorad"
+				(path "/83af791a-9776-40a7-82ad-9528ff7474b8/823be519-bdcf-42c8-a9bd-38752cead0eb"
+					(reference "#PWR059")
+					(unit 1)
+				)
 			)
 		)
 	)
@@ -1507,6 +2343,301 @@
 	)
 	(symbol
 		(lib_id "power:GNDD")
+		(at 147.32 115.57 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3493626d-05c6-4687-b7e4-e8a989786930")
+		(property "Reference" "#PWR058"
+			(at 147.32 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GNDD"
+			(at 147.32 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 147.32 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 147.32 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GNDD\" , digital ground"
+			(at 147.32 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "61c4f41e-34a3-4619-9571-22ab21f992f3")
+		)
+		(instances
+			(project "mainBorad"
+				(path "/83af791a-9776-40a7-82ad-9528ff7474b8/823be519-bdcf-42c8-a9bd-38752cead0eb"
+					(reference "#PWR058")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GNDD")
+		(at 91.44 148.59 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "44995f94-a32f-412c-8123-9482fd4fd883")
+		(property "Reference" "#PWR060"
+			(at 91.44 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GNDD"
+			(at 91.44 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 91.44 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 91.44 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GNDD\" , digital ground"
+			(at 91.44 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ecff9b7a-e22e-4dab-8f27-458cf3371ff1")
+		)
+		(instances
+			(project "mainBorad"
+				(path "/83af791a-9776-40a7-82ad-9528ff7474b8/823be519-bdcf-42c8-a9bd-38752cead0eb"
+					(reference "#PWR060")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "SamacSys_Parts:2SC3325-Y")
+		(at 120.65 138.43 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "50f8c909-4299-45a8-9f6b-9eeae42ea2f8")
+		(property "Reference" "Q4"
+			(at 134.62 137.1599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "2SC3325-Y"
+			(at 134.62 139.6999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "2SC3325YLF"
+			(at 134.62 239.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://toshiba.semicon-storage.com/info/docget.jsp?did=19247&prodName=2SC3325"
+			(at 134.62 339.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "Transistor for low frequency small-signal amplification"
+			(at 120.65 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Height" "1"
+			(at 134.62 539.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "Toshiba"
+			(at 134.62 639.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "2SC3325-Y"
+			(at 134.62 739.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" ""
+			(at 134.62 839.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" ""
+			(at 134.62 939.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Arrow Part Number" ""
+			(at 134.62 1039.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Arrow Price/Stock" ""
+			(at 134.62 1139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Sim.Library" ""
+			(at 120.65 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" ""
+			(at 120.65 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "610963dd-e5f6-41a5-8e32-2fc9e639ba93")
+		)
+		(pin "3"
+			(uuid "663d9c64-8e89-4429-ace7-b018c6b53912")
+		)
+		(pin "1"
+			(uuid "22c543e9-c59d-4ae4-a7f1-b98587eaca32")
+		)
+		(instances
+			(project ""
+				(path "/83af791a-9776-40a7-82ad-9528ff7474b8/823be519-bdcf-42c8-a9bd-38752cead0eb"
+					(reference "Q4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GNDD")
 		(at 139.7 63.5 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -1566,6 +2697,173 @@
 			(project "mainBorad"
 				(path "/83af791a-9776-40a7-82ad-9528ff7474b8/823be519-bdcf-42c8-a9bd-38752cead0eb"
 					(reference "#PWR013")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "SamacSys_Parts:74AHC1G04W5-7")
+		(at 91.44 138.43 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "598684d0-782c-4d09-9e23-161516821290")
+		(property "Reference" "IC3"
+			(at 104.14 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "74AHC1G04W5-7"
+			(at 104.14 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "SOT95P285X140-5N"
+			(at 113.03 233.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.diodes.com//assets/Datasheets/74AHC1G04.pdf"
+			(at 113.03 333.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "DIODES INC. - 74AHC1G04W5-7 - Inverter, 74AHC1G04, 1 Input, 8 mA, 2 V to 5.5 V, SOT-25-5"
+			(at 91.44 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Height" "1.4"
+			(at 113.03 533.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "Diodes Incorporated"
+			(at 113.03 633.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "74AHC1G04W5-7"
+			(at 113.03 733.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "621-74AHC1G04W5-7"
+			(at 113.03 833.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Diodes-Incorporated/74AHC1G04W5-7?qs=aOs975IaWll1ZDKu8p4JVA%3D%3D"
+			(at 113.03 933.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Arrow Part Number" "74AHC1G04W5-7"
+			(at 113.03 1033.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Arrow Price/Stock" "https://www.arrow.com/en/products/74ahc1g04w5-7/diodes-incorporated?region=europe"
+			(at 113.03 1133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Sim.Library" ""
+			(at 91.44 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" ""
+			(at 91.44 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "5"
+			(uuid "0cf02144-0ce5-4b2d-8a64-dcb3da483cd0")
+		)
+		(pin "1"
+			(uuid "b9b83069-f19c-4e1f-af53-018abcb260b1")
+		)
+		(pin "3"
+			(uuid "a59f4e62-880a-4cee-aa49-32c0825d99d4")
+		)
+		(pin "4"
+			(uuid "6e3a2117-e330-4e88-a47c-386553410066")
+		)
+		(pin "2"
+			(uuid "e5dbaefb-0f48-4068-b9cc-8fdcb948f2ac")
+		)
+		(instances
+			(project ""
+				(path "/83af791a-9776-40a7-82ad-9528ff7474b8/823be519-bdcf-42c8-a9bd-38752cead0eb"
+					(reference "IC3")
 					(unit 1)
 				)
 			)
@@ -1696,6 +2994,24 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Library" ""
+			(at 85.09 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" ""
+			(at 85.09 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "4"
 			(uuid "27181ca9-d02b-4576-a22a-daa7bc3eb403")
 		)
@@ -1768,6 +3084,24 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 69.85 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Library" ""
+			(at 69.85 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" ""
 			(at 69.85 53.34 0)
 			(effects
 				(font
@@ -1861,6 +3195,24 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Library" ""
+			(at 77.47 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" ""
+			(at 77.47 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "b6f64791-1859-46b0-a769-ab74e220549e")
 		)
@@ -1871,6 +3223,158 @@
 			(project "mainBorad"
 				(path "/83af791a-9776-40a7-82ad-9528ff7474b8/823be519-bdcf-42c8-a9bd-38752cead0eb"
 					(reference "DgD1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 146.05 130.81 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7a6941db-c993-4fd7-9899-f9b6521bcb40")
+		(property "Reference" "DgR9"
+			(at 146.05 124.46 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "220"
+			(at 146.05 127 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+			(at 146.05 132.588 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 146.05 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 146.05 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Library" ""
+			(at 146.05 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" ""
+			(at 146.05 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d3b728a7-b86a-4a49-87f1-9ae14c0f8658")
+		)
+		(pin "2"
+			(uuid "1bed7022-e124-4266-b4aa-76aa08da5fe8")
+		)
+		(instances
+			(project "mainBorad"
+				(path "/83af791a-9776-40a7-82ad-9528ff7474b8/823be519-bdcf-42c8-a9bd-38752cead0eb"
+					(reference "DgR9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GNDD")
+		(at 182.88 115.57 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8b820054-45e9-4134-83ff-05dc9d55d084")
+		(property "Reference" "#PWR057"
+			(at 182.88 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GNDD"
+			(at 182.88 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 182.88 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 182.88 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GNDD\" , digital ground"
+			(at 182.88 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "cb22e9dc-45d1-4b91-b4cc-a0062e8ffeae")
+		)
+		(instances
+			(project "mainBorad"
+				(path "/83af791a-9776-40a7-82ad-9528ff7474b8/823be519-bdcf-42c8-a9bd-38752cead0eb"
+					(reference "#PWR057")
 					(unit 1)
 				)
 			)
@@ -1931,6 +3435,24 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Library" ""
+			(at 143.51 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" ""
+			(at 143.51 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "143f3da7-b1f1-44a8-8b1d-0fcc3f47e17f")
 		)
@@ -1941,6 +3463,265 @@
 			(project "mainBorad"
 				(path "/83af791a-9776-40a7-82ad-9528ff7474b8/823be519-bdcf-42c8-a9bd-38752cead0eb"
 					(reference "DgR4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "SamacSys_Parts:KDJ03-5")
+		(at 151.13 104.14 0)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "a329d04b-1c90-444f-ad40-86f6faa24506")
+		(property "Reference" "DgJ1"
+			(at 162.56 89.154 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "KDJ03-5 MIDIOUT"
+			(at 162.814 91.948 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "SamacSys_Parts:KDJ035"
+			(at 170.18 9.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://akizukidenshi.com/download/ds/useconn/KDJ03-5.pdf"
+			(at 170.18 -90.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "5-Pin DIN Jack"
+			(at 151.13 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Height" "19.8"
+			(at 170.18 -290.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "Useconn Electronics"
+			(at 170.18 -390.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "KDJ03-5"
+			(at 170.18 -490.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" ""
+			(at 170.18 -590.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" ""
+			(at 170.18 -690.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Arrow Part Number" ""
+			(at 170.18 -790.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Arrow Price/Stock" ""
+			(at 170.18 -890.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Sim.Library" ""
+			(at 151.13 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" ""
+			(at 151.13 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "4"
+			(uuid "f5ced753-0737-425a-bd75-0ebb1b12efb2")
+		)
+		(pin "5"
+			(uuid "7636aaba-7328-4ac7-adfc-b38897112580")
+		)
+		(pin "MH1"
+			(uuid "4a861c2d-0269-4271-87e7-a04b74747e47")
+		)
+		(pin "MH2"
+			(uuid "d3802a27-978b-4ea8-9c0b-facbf7b81dae")
+		)
+		(pin "1"
+			(uuid "b06e9b03-918c-4be4-bf90-3f1774f2753c")
+		)
+		(pin "3"
+			(uuid "17ed3dc6-4f1f-4f77-a9a0-0d3425561a81")
+		)
+		(pin "2"
+			(uuid "ecd77913-6c97-43cc-a110-3616485ef542")
+		)
+		(instances
+			(project "mainBorad"
+				(path "/83af791a-9776-40a7-82ad-9528ff7474b8/823be519-bdcf-42c8-a9bd-38752cead0eb"
+					(reference "DgJ1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 143.51 96.52 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b172d301-faf8-451b-9329-aaef147d3a58")
+		(property "Reference" "DgR8"
+			(at 143.51 90.17 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "220"
+			(at 143.51 92.71 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+			(at 143.51 98.298 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 143.51 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 143.51 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Library" ""
+			(at 143.51 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" ""
+			(at 143.51 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "bffb1e30-25d0-4962-8168-abe59f4885b5")
+		)
+		(pin "2"
+			(uuid "1f8182c4-1fe2-467c-8977-db28e2077705")
+		)
+		(instances
+			(project "mainBorad"
+				(path "/83af791a-9776-40a7-82ad-9528ff7474b8/823be519-bdcf-42c8-a9bd-38752cead0eb"
+					(reference "DgR8")
 					(unit 1)
 				)
 			)
@@ -1963,7 +3744,7 @@
 				)
 			)
 		)
-		(property "Value" "KDJ03-5"
+		(property "Value" "KDJ03-5 MIDIIN"
 			(at 44.196 48.768 0)
 			(effects
 				(font
@@ -2070,6 +3851,24 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Library" ""
+			(at 55.88 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" ""
+			(at 55.88 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "4"
 			(uuid "4715ab59-f6dc-432a-89f8-efa64be8378a")
 		)
@@ -2147,6 +3946,24 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 132.08 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Library" ""
+			(at 132.08 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" ""
 			(at 132.08 46.99 0)
 			(effects
 				(font

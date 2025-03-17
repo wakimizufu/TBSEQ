@@ -4828,7 +4828,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "27ecd48d-6060-450e-b10b-11297da4348b")
-		(property "Reference" "J1"
+		(property "Reference" "DgJ2"
 			(at 49.53 114.2999 0)
 			(effects
 				(font
@@ -4918,7 +4918,7 @@
 		(instances
 			(project ""
 				(path "/83af791a-9776-40a7-82ad-9528ff7474b8/2a7aa622-1b89-4529-84ec-ef6853ee06a0"
-					(reference "J1")
+					(reference "DgJ2")
 					(unit 1)
 				)
 			)

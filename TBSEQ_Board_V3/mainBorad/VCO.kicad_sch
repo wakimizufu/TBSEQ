@@ -1891,7 +1891,7 @@
 				)
 			)
 		)
-		(symbol "SamacSys_Parts:NJM2125F-TE1_DIP-8"
+		(symbol "SamacSys_Parts:NJM2125F-TE1"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -1904,7 +1904,7 @@
 					(justify left top)
 				)
 			)
-			(property "Value" "NJM2125F-TE1_DIP8"
+			(property "Value" "NJM2125F-TE1"
 				(at 29.21 5.08 0)
 				(effects
 					(font
@@ -2012,7 +2012,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "NJM2125F-TE1_DIP-8_1_1"
+			(symbol "NJM2125F-TE1_1_1"
 				(rectangle
 					(start 5.08 2.54)
 					(end 27.94 -7.62)
@@ -2025,42 +2025,6 @@
 					)
 				)
 				(pin passive line
-					(at 33.02 0 180)
-					(length 5.08)
-					(name "OUTPUT"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -5.08 0)
-					(length 5.08)
-					(name "-INPUT"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
 					(at 0 0 0)
 					(length 5.08)
 					(name "+INPUT"
@@ -2070,7 +2034,7 @@
 							)
 						)
 					)
-					(number "3"
+					(number "1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2088,61 +2052,43 @@
 							)
 						)
 					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -5.08 0)
+					(length 5.08)
+					(name "-INPUT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 33.02 0 180)
+					(length 5.08)
+					(name "OUTPUT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
 					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin no_connect line
-					(at 15.24 -10.16 90)
-					(length 2.54)
-					(name "NC"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin no_connect line
-					(at 19.05 -10.16 90)
-					(length 2.54)
-					(name "NC"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin no_connect line
-					(at 22.86 -10.16 90)
-					(length 2.54)
-					(name "NC"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "7"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2160,7 +2106,7 @@
 							)
 						)
 					)
-					(number "8"
+					(number "5"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2529,22 +2475,28 @@
 		(uuid "153109bf-cbc9-4d00-8ce4-92e51ea4077d")
 	)
 	(junction
+		(at 72.39 125.73)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1e00ea2f-c329-460a-a051-2acb9189b5c0")
+	)
+	(junction
 		(at 146.05 87.63)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "337f69a3-d5e9-4812-b1d1-14ca5363dffb")
 	)
 	(junction
-		(at 72.39 125.73)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "3c9ea015-f179-4b03-8c9a-82d702f1ac6e")
-	)
-	(junction
 		(at 101.6 81.28)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "498883e8-10e3-4fc4-a19c-427f2e5ac116")
+	)
+	(junction
+		(at 39.37 130.81)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "608f161d-69bb-483e-9fd7-7eeeaf4e24d8")
 	)
 	(junction
 		(at 74.93 100.33)
@@ -2557,12 +2509,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "6616ad5c-fd23-429c-bdf0-5b8fe96433a8")
-	)
-	(junction
-		(at 39.37 130.81)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "665de13e-9d0f-446c-b6e6-27e7890533de")
 	)
 	(junction
 		(at 186.69 106.68)
@@ -6030,182 +5976,6 @@
 		)
 	)
 	(symbol
-		(lib_id "SamacSys_Parts:NJM2125F-TE1_DIP-8")
-		(at 39.37 125.73 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "3f29e9cd-5adc-49b9-bed3-0a780bf83cd6")
-		(property "Reference" "IC5"
-			(at 55.88 118.11 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "NJM2125F-TE1_DIP8"
-			(at 55.88 120.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "SamacSys_Parts:NJM2125F-SOT95&DIP8"
-			(at 68.58 220.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://componentsearchengine.com/Datasheets/1/NJM2125F-TE1.pdf"
-			(at 68.58 320.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Description" "Operational Amplifiers - Op Amps Single Supply"
-			(at 39.37 125.73 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Height" "1.3"
-			(at 68.58 520.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Name" "New Japan Radio"
-			(at 68.58 620.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Part_Number" "NJM2125F-TE1"
-			(at 68.58 720.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Mouser Part Number" "513-NJM2125F-TE1"
-			(at 68.58 820.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/NJR/NJM2125F-TE1?qs=SzzEZJ0VecQ3YU3q3zUUYw%3D%3D"
-			(at 68.58 920.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Arrow Part Number" ""
-			(at 68.58 1020.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Arrow Price/Stock" ""
-			(at 68.58 1120.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Sim.Library" ""
-			(at 39.37 125.73 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Name" ""
-			(at 39.37 125.73 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "8"
-			(uuid "84ec52c0-7200-4459-b350-dcaea408bfc7")
-		)
-		(pin "2"
-			(uuid "13edaf5c-7d38-43fe-9f56-13a448d612bf")
-		)
-		(pin "3"
-			(uuid "e476d12c-de3b-4238-a797-c9fdd10de5d4")
-		)
-		(pin "5"
-			(uuid "32ce0527-d008-478a-b79c-906f45432347")
-		)
-		(pin "4"
-			(uuid "290cb320-060f-43e6-a0be-be2d3f51d2cc")
-		)
-		(pin "6"
-			(uuid "5b518c79-a225-4ad3-b9eb-5afe6a7b16d2")
-		)
-		(pin "1"
-			(uuid "2fb671cd-2c29-4285-9598-496d0fc01801")
-		)
-		(pin "7"
-			(uuid "74489e71-0343-41ee-b231-4c3772f74b0e")
-		)
-		(instances
-			(project ""
-				(path "/83af791a-9776-40a7-82ad-9528ff7474b8/765da965-e62c-424b-9b1b-9538054aabf6"
-					(reference "IC5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:Q_NPN_ECB")
 		(at 104.14 53.34 0)
 		(mirror y)
@@ -8052,6 +7822,155 @@
 		)
 	)
 	(symbol
+		(lib_id "SamacSys_Parts:NJM2125F-TE1")
+		(at 39.37 125.73 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ad0171c9-8fa2-46c8-9dcb-7b7b879db749")
+		(property "Reference" "IC5"
+			(at 55.88 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "NJM2125F-TE1"
+			(at 55.88 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "SamacSys_Parts:SOT95P280X130-5N"
+			(at 68.58 220.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://componentsearchengine.com/Datasheets/1/NJM2125F-TE1.pdf"
+			(at 68.58 320.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "Operational Amplifiers - Op Amps Single Supply"
+			(at 39.37 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Height" "1.3"
+			(at 68.58 520.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "New Japan Radio"
+			(at 68.58 620.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "NJM2125F-TE1"
+			(at 68.58 720.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "513-NJM2125F-TE1"
+			(at 68.58 820.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/NJR/NJM2125F-TE1?qs=SzzEZJ0VecQ3YU3q3zUUYw%3D%3D"
+			(at 68.58 920.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Arrow Part Number" ""
+			(at 68.58 1020.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Arrow Price/Stock" ""
+			(at 68.58 1120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2e2b8448-b4fb-4a8c-9e43-1de953f54d4e")
+		)
+		(pin "4"
+			(uuid "e2be6202-b925-4176-b367-754375d5fea9")
+		)
+		(pin "3"
+			(uuid "665b1fd5-67e1-46e1-a37e-4e8b1a5ebf89")
+		)
+		(pin "2"
+			(uuid "f15d011a-ea2d-438b-9a90-f2f9d6f380b6")
+		)
+		(pin "5"
+			(uuid "98b401ab-576d-44f6-a490-7dfe87e08a4b")
+		)
+		(instances
+			(project ""
+				(path "/83af791a-9776-40a7-82ad-9528ff7474b8/765da965-e62c-424b-9b1b-9538054aabf6"
+					(reference "IC5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 49.53 77.47 0)
 		(unit 1)
@@ -8176,7 +8095,7 @@
 				)
 			)
 		)
-		(property "Footprint" "SamacSys_Parts:HN1C01FUGRLF_SOT23&DIP8"
+		(property "Footprint" "SamacSys_Parts:HN1C01FUGRLF"
 			(at 97.79 185.09 0)
 			(effects
 				(font

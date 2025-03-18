@@ -2347,7 +2347,7 @@
 				)
 			)
 		)
-		(symbol "SamacSys_Parts:NJM2125F-TE1_DIP-8"
+		(symbol "SamacSys_Parts:NJM2125F-TE1"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -2360,7 +2360,7 @@
 					(justify left top)
 				)
 			)
-			(property "Value" "NJM2125F-TE1_DIP8"
+			(property "Value" "NJM2125F-TE1"
 				(at 29.21 5.08 0)
 				(effects
 					(font
@@ -2468,7 +2468,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "NJM2125F-TE1_DIP-8_1_1"
+			(symbol "NJM2125F-TE1_1_1"
 				(rectangle
 					(start 5.08 2.54)
 					(end 27.94 -7.62)
@@ -2481,42 +2481,6 @@
 					)
 				)
 				(pin passive line
-					(at 33.02 0 180)
-					(length 5.08)
-					(name "OUTPUT"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -5.08 0)
-					(length 5.08)
-					(name "-INPUT"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
 					(at 0 0 0)
 					(length 5.08)
 					(name "+INPUT"
@@ -2526,7 +2490,7 @@
 							)
 						)
 					)
-					(number "3"
+					(number "1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2544,61 +2508,43 @@
 							)
 						)
 					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -5.08 0)
+					(length 5.08)
+					(name "-INPUT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 33.02 0 180)
+					(length 5.08)
+					(name "OUTPUT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
 					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin no_connect line
-					(at 15.24 -10.16 90)
-					(length 2.54)
-					(name "NC"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin no_connect line
-					(at 19.05 -10.16 90)
-					(length 2.54)
-					(name "NC"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin no_connect line
-					(at 22.86 -10.16 90)
-					(length 2.54)
-					(name "NC"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "7"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2616,7 +2562,7 @@
 							)
 						)
 					)
-					(number "8"
+					(number "5"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -5908,92 +5854,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C_Small")
-		(at 222.25 93.98 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "337b458f-e4a9-4ed4-a16d-36df6fd67a6f")
-		(property "Reference" "C21"
-			(at 216.408 93.218 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "0.033uF"
-			(at 216.662 95.758 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Capacitor_THT:C_Rect_L7.2mm_W2.5mm_P5.00mm_FKS2_FKP2_MKS2_MKP2"
-			(at 222.25 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 222.25 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 222.25 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Library" ""
-			(at 222.25 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Name" ""
-			(at 222.25 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "c9346435-e285-4f52-afe7-41eb6ebd3582")
-		)
-		(pin "1"
-			(uuid "6432437a-c3d9-427c-a672-f06816818183")
-		)
-		(instances
-			(project "mainBorad"
-				(path "/83af791a-9776-40a7-82ad-9528ff7474b8/60eab4e1-ce34-4d77-8d9b-d611705cbf82"
-					(reference "C21")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "SamacSys_Parts:NJM2125F-TE1_DIP-8")
+		(lib_id "SamacSys_Parts:NJM2125F-TE1")
 		(at 101.6 147.32 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -6001,7 +5862,7 @@
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "386567c7-d3c0-4686-ba70-d0f1b7fa8f7a")
+		(uuid "2f5c7d5e-07f5-4b8c-b43c-ed211c9a9feb")
 		(property "Reference" "IC1"
 			(at 118.11 139.7 0)
 			(effects
@@ -6010,7 +5871,7 @@
 				)
 			)
 		)
-		(property "Value" "NJM2125F-TE1_DIP8"
+		(property "Value" "NJM2125F-TE1"
 			(at 118.11 142.24 0)
 			(effects
 				(font
@@ -6018,7 +5879,7 @@
 				)
 			)
 		)
-		(property "Footprint" "SamacSys_Parts:NJM2125F-SOT95&DIP8"
+		(property "Footprint" "SamacSys_Parts:SOT95P280X130-5N"
 			(at 130.81 242.24 0)
 			(effects
 				(font
@@ -6117,8 +5978,84 @@
 				(hide yes)
 			)
 		)
+		(pin "2"
+			(uuid "6a253020-6d1b-4161-8cf7-e17528c12d61")
+		)
+		(pin "4"
+			(uuid "8fc0c36f-cd07-41d0-a9fe-6724a7b3a09a")
+		)
+		(pin "5"
+			(uuid "fdd67649-9516-444d-b8d7-c05e8b9c455b")
+		)
+		(pin "3"
+			(uuid "655b4dac-4a0c-462c-a693-4d60038f2489")
+		)
+		(pin "1"
+			(uuid "730e6e4d-231a-43b3-9cec-b246e4d26dfa")
+		)
+		(instances
+			(project ""
+				(path "/83af791a-9776-40a7-82ad-9528ff7474b8/60eab4e1-ce34-4d77-8d9b-d611705cbf82"
+					(reference "IC1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 222.25 93.98 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "337b458f-e4a9-4ed4-a16d-36df6fd67a6f")
+		(property "Reference" "C21"
+			(at 216.408 93.218 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "0.033uF"
+			(at 216.662 95.758 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_THT:C_Rect_L7.2mm_W2.5mm_P5.00mm_FKS2_FKP2_MKS2_MKP2"
+			(at 222.25 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 222.25 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 222.25 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(property "Sim.Library" ""
-			(at 101.6 147.32 0)
+			(at 222.25 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6127,7 +6064,7 @@
 			)
 		)
 		(property "Sim.Name" ""
-			(at 101.6 147.32 0)
+			(at 222.25 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6135,34 +6072,16 @@
 				(hide yes)
 			)
 		)
-		(pin "4"
-			(uuid "b7579ead-28e9-4d78-9381-a55130df3d62")
-		)
-		(pin "7"
-			(uuid "95efa9c6-9fbe-4ed3-ba62-448ebc1e1c9c")
+		(pin "2"
+			(uuid "c9346435-e285-4f52-afe7-41eb6ebd3582")
 		)
 		(pin "1"
-			(uuid "b119e4b4-f311-4f71-904e-d7c5def46207")
-		)
-		(pin "3"
-			(uuid "66e53e3d-a78a-4f8a-b63f-ce35cfee74c9")
-		)
-		(pin "8"
-			(uuid "1a04eb2b-4f0a-4208-99a1-16205d0bfcee")
-		)
-		(pin "5"
-			(uuid "d9e5b828-b8ce-4577-93de-66aa0e373c0d")
-		)
-		(pin "6"
-			(uuid "43e1e236-50d5-44e6-8b0b-ecd9971b64c3")
-		)
-		(pin "2"
-			(uuid "ab918f8a-14a0-4f03-ad14-bed389c8069d")
+			(uuid "6432437a-c3d9-427c-a672-f06816818183")
 		)
 		(instances
-			(project ""
+			(project "mainBorad"
 				(path "/83af791a-9776-40a7-82ad-9528ff7474b8/60eab4e1-ce34-4d77-8d9b-d611705cbf82"
-					(reference "IC1")
+					(reference "C21")
 					(unit 1)
 				)
 			)

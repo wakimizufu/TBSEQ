@@ -835,6 +835,292 @@
 				)
 			)
 		)
+		(symbol "Device:Opamp_Dual"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "Opamp_Dual"
+				(at 0 -5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Dual operational amplifier"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Library" "${KICAD7_SYMBOL_DIR}/Simulation_SPICE.sp"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Name" "kicad_builtin_opamp_dual"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Device" "SUBCKT"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Pins" "1=out1 2=in1- 3=in1+ 4=vee 5=in2+ 6=in2- 7=out2 8=vcc"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_locked" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "dual opamp"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "SOIC*3.9x4.9mm*P1.27mm* DIP*W7.62mm* MSOP*3x3mm*P0.65mm* SSOP*2.95x2.8mm*P0.65mm* TSSOP*3x3mm*P0.65mm* VSSOP*P0.5mm* TO?99*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Opamp_Dual_1_1"
+				(polyline
+					(pts
+						(xy -5.08 5.08) (xy 5.08 0) (xy -5.08 -5.08) (xy -5.08 5.08)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin output line
+					(at 7.62 0 180)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -7.62 -2.54 0)
+					(length 2.54)
+					(name "-"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -7.62 2.54 0)
+					(length 2.54)
+					(name "+"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "Opamp_Dual_2_1"
+				(polyline
+					(pts
+						(xy -5.08 5.08) (xy 5.08 0) (xy -5.08 -5.08) (xy -5.08 5.08)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin input line
+					(at -7.62 2.54 0)
+					(length 2.54)
+					(name "+"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -7.62 -2.54 0)
+					(length 2.54)
+					(name "-"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 7.62 0 180)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "Opamp_Dual_3_1"
+				(pin power_in line
+					(at -2.54 -7.62 90)
+					(length 3.81)
+					(name "V-"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -2.54 7.62 270)
+					(length 3.81)
+					(name "V+"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "Device:R"
 			(pin_numbers hide)
 			(pin_names
@@ -1695,231 +1981,6 @@
 				)
 			)
 		)
-		(symbol "SamacSys_Parts:NJM2125F-TE1"
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "IC"
-				(at 29.21 7.62 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-				)
-			)
-			(property "Value" "NJM2125F-TE1"
-				(at 29.21 5.08 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-				)
-			)
-			(property "Footprint" "SOT95P280X130-5N"
-				(at 29.21 -94.92 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "https://componentsearchengine.com/Datasheets/1/NJM2125F-TE1.pdf"
-				(at 29.21 -194.92 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(property "Description" "Operational Amplifiers - Op Amps Single Supply"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Height" "1.3"
-				(at 29.21 -394.92 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(property "Manufacturer_Name" "New Japan Radio"
-				(at 29.21 -494.92 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(property "Manufacturer_Part_Number" "NJM2125F-TE1"
-				(at 29.21 -594.92 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(property "Mouser Part Number" "513-NJM2125F-TE1"
-				(at 29.21 -694.92 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/NJR/NJM2125F-TE1?qs=SzzEZJ0VecQ3YU3q3zUUYw%3D%3D"
-				(at 29.21 -794.92 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(property "Arrow Part Number" ""
-				(at 29.21 -894.92 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(property "Arrow Price/Stock" ""
-				(at 29.21 -994.92 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(symbol "NJM2125F-TE1_1_1"
-				(rectangle
-					(start 5.08 2.54)
-					(end 27.94 -7.62)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(pin passive line
-					(at 0 0 0)
-					(length 5.08)
-					(name "+INPUT"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -2.54 0)
-					(length 5.08)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -5.08 0)
-					(length 5.08)
-					(name "-INPUT"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 33.02 0 180)
-					(length 5.08)
-					(name "OUTPUT"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 33.02 -2.54 180)
-					(length 5.08)
-					(name "V+"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
 		(symbol "SamacSys_Parts:SBM245L"
 			(pin_names hide)
 			(exclude_from_sim no)
@@ -2490,12 +2551,6 @@
 		(uuid "1020e1e4-dea5-4840-bc09-80eae6772ade")
 	)
 	(junction
-		(at 220.98 67.31)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "191e81dc-7a10-4962-bf97-88b6321c618a")
-	)
-	(junction
 		(at 36.83 83.82)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2512,6 +2567,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "3b185e31-1e05-4eb6-aafc-e4f8b9a879e0")
+	)
+	(junction
+		(at 251.46 64.77)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "451e2f03-6e25-4f65-99b3-69375bf117ec")
 	)
 	(junction
 		(at 101.6 45.72)
@@ -2544,6 +2605,12 @@
 		(uuid "6105acb4-8b47-49a6-b086-7c184a956ded")
 	)
 	(junction
+		(at 259.08 64.77)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "62b4ade8-772b-4094-a686-11db851fd952")
+	)
+	(junction
 		(at 144.78 133.35)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2568,12 +2635,6 @@
 		(uuid "8c9f8945-0fce-49aa-bb98-4a5ed8390021")
 	)
 	(junction
-		(at 266.7 67.31)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "915c742d-b296-4c0c-be3d-4a9b018c92d6")
-	)
-	(junction
 		(at 208.28 67.31)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2590,6 +2651,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "a66c143a-14af-41be-9a8f-4764a52e8683")
+	)
+	(junction
+		(at 220.98 67.31)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ab7f4a12-c224-4a0c-8995-6baa7b8899d8")
 	)
 	(junction
 		(at 129.54 45.72)
@@ -2789,16 +2856,6 @@
 	)
 	(wire
 		(pts
-			(xy 264.16 67.31) (xy 266.7 67.31)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "189136ad-b1c5-4cc3-a554-f7cbb532d872")
-	)
-	(wire
-		(pts
 			(xy 41.91 57.15) (xy 41.91 67.31)
 		)
 		(stroke
@@ -2866,6 +2923,16 @@
 			(type default)
 		)
 		(uuid "25c7b1ef-d715-4621-b7fb-75b3bf887c61")
+	)
+	(wire
+		(pts
+			(xy 247.65 64.77) (xy 251.46 64.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "283b2d7a-28bb-4e06-a1d8-5bfe55593107")
 	)
 	(wire
 		(pts
@@ -2946,6 +3013,16 @@
 			(type default)
 		)
 		(uuid "3df47c9e-e2dc-4727-8ad9-09737e3ab059")
+	)
+	(wire
+		(pts
+			(xy 233.68 100.33) (xy 233.68 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "423f4a9d-9487-42b8-b400-52fbfcc3d807")
 	)
 	(wire
 		(pts
@@ -3046,16 +3123,6 @@
 			(type default)
 		)
 		(uuid "4f534a00-1c88-432d-9f60-d6b52be84fc1")
-	)
-	(wire
-		(pts
-			(xy 228.6 69.85) (xy 228.6 81.28)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4f5eb7e0-c7d5-4161-bfda-8f699b55d06e")
 	)
 	(wire
 		(pts
@@ -3169,6 +3236,16 @@
 	)
 	(wire
 		(pts
+			(xy 254 97.79) (xy 254 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7877eb10-0dc6-408c-b483-741f085c479b")
+	)
+	(wire
+		(pts
 			(xy 101.6 45.72) (xy 105.41 45.72)
 		)
 		(stroke
@@ -3186,6 +3263,16 @@
 			(type default)
 		)
 		(uuid "7a99cba9-f51a-47ff-b49e-5ed97f64f2a9")
+	)
+	(wire
+		(pts
+			(xy 233.68 106.68) (xy 254 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7adfd22e-c565-47be-821c-98b285123b4e")
 	)
 	(wire
 		(pts
@@ -3209,26 +3296,6 @@
 	)
 	(wire
 		(pts
-			(xy 220.98 67.31) (xy 231.14 67.31)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "886feeb6-7f83-4955-a514-e66d06328149")
-	)
-	(wire
-		(pts
-			(xy 231.14 76.2) (xy 266.7 76.2)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8c899a59-bc9a-4862-8ae7-bbd827d9716a")
-	)
-	(wire
-		(pts
 			(xy 187.96 35.56) (xy 185.42 35.56)
 		)
 		(stroke
@@ -3239,7 +3306,7 @@
 	)
 	(wire
 		(pts
-			(xy 266.7 67.31) (xy 270.51 67.31)
+			(xy 259.08 64.77) (xy 262.89 64.77)
 		)
 		(stroke
 			(width 0)
@@ -3309,6 +3376,16 @@
 	)
 	(wire
 		(pts
+			(xy 220.98 67.31) (xy 232.41 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a4e436f4-228d-481e-97f1-ff330e088515")
+	)
+	(wire
+		(pts
 			(xy 144.78 116.84) (xy 153.67 116.84)
 		)
 		(stroke
@@ -3329,16 +3406,6 @@
 	)
 	(wire
 		(pts
-			(xy 264.16 78.74) (xy 264.16 69.85)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ab0036b4-e084-4a3c-83a2-530de8699058")
-	)
-	(wire
-		(pts
 			(xy 127 105.41) (xy 127 116.84)
 		)
 		(stroke
@@ -3356,16 +3423,6 @@
 			(type default)
 		)
 		(uuid "abadaa4d-4fbb-448a-8579-a3497d3c8c77")
-	)
-	(wire
-		(pts
-			(xy 259.08 78.74) (xy 264.16 78.74)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "abe8722d-a3e3-4356-8c22-421367e53a7a")
 	)
 	(wire
 		(pts
@@ -3449,6 +3506,16 @@
 	)
 	(wire
 		(pts
+			(xy 229.87 62.23) (xy 232.41 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b8319a12-c4ae-4bf6-a82e-145d75e1c3a7")
+	)
+	(wire
+		(pts
 			(xy 167.64 116.84) (xy 182.88 116.84)
 		)
 		(stroke
@@ -3489,6 +3556,16 @@
 	)
 	(wire
 		(pts
+			(xy 238.76 100.33) (xy 233.68 100.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c51c8156-0687-4ce3-90b8-0aad96b547e2")
+	)
+	(wire
+		(pts
 			(xy 127 116.84) (xy 129.54 116.84)
 		)
 		(stroke
@@ -3519,6 +3596,16 @@
 	)
 	(wire
 		(pts
+			(xy 231.14 95.25) (xy 238.76 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cb14078c-aa4c-4c90-8726-bd8b81c2393a")
+	)
+	(wire
+		(pts
 			(xy 129.54 31.75) (xy 129.54 45.72)
 		)
 		(stroke
@@ -3536,16 +3623,6 @@
 			(type default)
 		)
 		(uuid "cdc57a05-703e-4e77-bfda-2fc0ee0dcf98")
-	)
-	(wire
-		(pts
-			(xy 266.7 76.2) (xy 266.7 67.31)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ce8b5e38-2de4-42ba-8cce-868fbe931e99")
 	)
 	(wire
 		(pts
@@ -3569,6 +3646,16 @@
 	)
 	(wire
 		(pts
+			(xy 251.46 64.77) (xy 251.46 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d1088e2d-c084-47b5-8d47-3f3fb463ff99")
+	)
+	(wire
+		(pts
 			(xy 208.28 45.72) (xy 208.28 54.61)
 		)
 		(stroke
@@ -3579,7 +3666,17 @@
 	)
 	(wire
 		(pts
-			(xy 266.7 62.23) (xy 266.7 67.31)
+			(xy 251.46 64.77) (xy 259.08 64.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d39a2c89-0344-4421-8993-815a581d1318")
+	)
+	(wire
+		(pts
+			(xy 259.08 59.69) (xy 259.08 64.77)
 		)
 		(stroke
 			(width 0)
@@ -3599,6 +3696,16 @@
 	)
 	(wire
 		(pts
+			(xy 251.46 57.15) (xy 229.87 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d55e7e21-7be4-466e-afe0-0d1c02fa00dd")
+	)
+	(wire
+		(pts
 			(xy 87.63 119.38) (xy 87.63 133.35)
 		)
 		(stroke
@@ -3606,16 +3713,6 @@
 			(type default)
 		)
 		(uuid "dde9e3bf-93de-497b-9768-ab8d4d8c3477")
-	)
-	(wire
-		(pts
-			(xy 231.14 69.85) (xy 228.6 69.85)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "def9cd81-74b3-4852-8b01-be43f8665c0d")
 	)
 	(wire
 		(pts
@@ -3689,6 +3786,16 @@
 	)
 	(wire
 		(pts
+			(xy 229.87 57.15) (xy 229.87 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e776795d-f2fe-4292-a482-a32055e9a4da")
+	)
+	(wire
+		(pts
 			(xy 194.31 82.55) (xy 194.31 85.09)
 		)
 		(stroke
@@ -3706,16 +3813,6 @@
 			(type default)
 		)
 		(uuid "ef709972-2bca-491d-8b9e-eec0de37eb9d")
-	)
-	(wire
-		(pts
-			(xy 231.14 72.39) (xy 231.14 76.2)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f3e2f737-3bee-4072-b535-062785ab257e")
 	)
 	(wire
 		(pts
@@ -3883,6 +3980,28 @@
 			)
 		)
 	)
+	(global_label "A+12V"
+		(shape input)
+		(at 242.57 111.76 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "4c2d1f72-9ed2-476b-92a7-875ca7922a1e")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 233.4162 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "ADAPTER+15V"
 		(shape input)
 		(at 50.8 83.82 0)
@@ -3905,9 +4024,9 @@
 			)
 		)
 	)
-	(global_label "A+12V"
-		(shape input)
-		(at 259.08 78.74 180)
+	(global_label "A+5.333V"
+		(shape output)
+		(at 231.14 95.25 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3915,9 +4034,9 @@
 			)
 			(justify right)
 		)
-		(uuid "65702428-30b6-4e1e-bc60-cfab445893ee")
+		(uuid "6caf24b7-f3db-4e91-b67b-0dd8afe8b422")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 249.9262 78.74 0)
+			(at 218.9624 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3973,7 +4092,7 @@
 	)
 	(global_label "A+5.333V"
 		(shape output)
-		(at 270.51 67.31 0)
+		(at 262.89 64.77 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3983,7 +4102,7 @@
 		)
 		(uuid "94e11a5d-d019-41f0-b5dc-d02ccbebf0f0")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 278.6357 67.31 0)
+			(at 271.0157 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4056,173 +4175,6 @@
 				)
 				(justify left)
 				(hide yes)
-			)
-		)
-	)
-	(symbol
-		(lib_id "SamacSys_Parts:NJM2125F-TE1")
-		(at 231.14 67.31 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "0b720056-18fb-4112-b088-92262e621081")
-		(property "Reference" "IC4"
-			(at 247.65 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "NJM2125F-TE1"
-			(at 247.65 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "SOT95P280X130-5N"
-			(at 260.35 162.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://componentsearchengine.com/Datasheets/1/NJM2125F-TE1.pdf"
-			(at 260.35 262.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Description" "Operational Amplifiers - Op Amps Single Supply"
-			(at 231.14 67.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Height" "1.3"
-			(at 260.35 462.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Name" "New Japan Radio"
-			(at 260.35 562.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Part_Number" "NJM2125F-TE1"
-			(at 260.35 662.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Mouser Part Number" "513-NJM2125F-TE1"
-			(at 260.35 762.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/NJR/NJM2125F-TE1?qs=SzzEZJ0VecQ3YU3q3zUUYw%3D%3D"
-			(at 260.35 862.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Arrow Part Number" ""
-			(at 260.35 962.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Arrow Price/Stock" ""
-			(at 260.35 1062.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Sim.Library" ""
-			(at 231.14 67.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Name" ""
-			(at 231.14 67.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "195d70da-834d-49f1-b7cf-7ae19746c213")
-		)
-		(pin "4"
-			(uuid "c23de528-93a5-4afa-8689-d8d1bfcb4949")
-		)
-		(pin "2"
-			(uuid "dfd794d4-99d8-4186-9a84-ac4a45204490")
-		)
-		(pin "3"
-			(uuid "97756c0b-7a9f-4b4c-997c-6c8db06485ee")
-		)
-		(pin "5"
-			(uuid "cf06d8b1-3e95-4bf1-a354-555337e593b1")
-		)
-		(instances
-			(project "mainBorad"
-				(path "/83af791a-9776-40a7-82ad-9528ff7474b8/7067d32e-232c-4c33-be2e-744ed9661c4e"
-					(reference "IC4")
-					(unit 1)
-				)
 			)
 		)
 	)
@@ -4308,6 +4260,130 @@
 				(path "/83af791a-9776-40a7-82ad-9528ff7474b8/7067d32e-232c-4c33-be2e-744ed9661c4e"
 					(reference "PwJ2")
 					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:Opamp_Dual")
+		(at 245.11 119.38 0)
+		(unit 3)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "195629de-429d-4b75-8ce9-5420b649deac")
+		(property "Reference" "U5"
+			(at 243.84 118.1099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Opamp_Dual"
+			(at 243.84 120.6499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_DIP:DIP-8_W7.62mm_LongPads"
+			(at 245.11 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 245.11 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Dual operational amplifier"
+			(at 245.11 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Library" "${KICAD7_SYMBOL_DIR}/Simulation_SPICE.sp"
+			(at 245.11 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" "kicad_builtin_opamp_dual"
+			(at 245.11 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "SUBCKT"
+			(at 245.11 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=out1 2=in1- 3=in1+ 4=vee 5=in2+ 6=in2- 7=out2 8=vcc"
+			(at 245.11 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "8"
+			(uuid "bb8451ec-c8bd-4b3e-bf71-4a5261e32c56")
+		)
+		(pin "6"
+			(uuid "69ca5663-55c2-4211-97f4-494a7581cab2")
+		)
+		(pin "1"
+			(uuid "a99f223a-bd8c-4b40-bbab-890e3d0b1a70")
+		)
+		(pin "3"
+			(uuid "718bd118-1f86-4116-8aec-dae47fcf8eb9")
+		)
+		(pin "4"
+			(uuid "7f6154bd-1249-49ac-8f9c-7485dbc1b0e0")
+		)
+		(pin "7"
+			(uuid "24936b63-b1d1-415a-98ae-896dc1902b4e")
+		)
+		(pin "2"
+			(uuid "414472b6-8c28-41c2-9f32-46e612278cf7")
+		)
+		(pin "5"
+			(uuid "890ea392-6cd7-4e9e-9b38-3d5861237c6c")
+		)
+		(instances
+			(project ""
+				(path "/83af791a-9776-40a7-82ad-9528ff7474b8/7067d32e-232c-4c33-be2e-744ed9661c4e"
+					(reference "U5")
+					(unit 3)
 				)
 			)
 		)
@@ -4631,6 +4707,127 @@
 				(path "/83af791a-9776-40a7-82ad-9528ff7474b8/7067d32e-232c-4c33-be2e-744ed9661c4e"
 					(reference "R19")
 					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:Opamp_Dual")
+		(at 246.38 97.79 0)
+		(unit 2)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "4796fee1-0ed6-4daf-bcd8-bdeafe9504af")
+		(property "Reference" "U5"
+			(at 246.38 84.836 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Opamp_Dual"
+			(at 246.38 87.376 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_DIP:DIP-8_W7.62mm_LongPads"
+			(at 246.38 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 246.38 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Dual operational amplifier"
+			(at 246.38 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Library" "${KICAD7_SYMBOL_DIR}/Simulation_SPICE.sp"
+			(at 246.38 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" "kicad_builtin_opamp_dual"
+			(at 246.38 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "SUBCKT"
+			(at 246.38 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=out1 2=in1- 3=in1+ 4=vee 5=in2+ 6=in2- 7=out2 8=vcc"
+			(at 246.38 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "8"
+			(uuid "bb8451ec-c8bd-4b3e-bf71-4a5261e32c57")
+		)
+		(pin "6"
+			(uuid "69ca5663-55c2-4211-97f4-494a7581cab3")
+		)
+		(pin "1"
+			(uuid "a99f223a-bd8c-4b40-bbab-890e3d0b1a71")
+		)
+		(pin "3"
+			(uuid "718bd118-1f86-4116-8aec-dae47fcf8eba")
+		)
+		(pin "4"
+			(uuid "7f6154bd-1249-49ac-8f9c-7485dbc1b0e1")
+		)
+		(pin "7"
+			(uuid "24936b63-b1d1-415a-98ae-896dc1902b4f")
+		)
+		(pin "2"
+			(uuid "414472b6-8c28-41c2-9f32-46e612278cf8")
+		)
+		(pin "5"
+			(uuid "890ea392-6cd7-4e9e-9b38-3d5861237c6d")
+		)
+		(instances
+			(project ""
+				(path "/83af791a-9776-40a7-82ad-9528ff7474b8/7067d32e-232c-4c33-be2e-744ed9661c4e"
+					(reference "U5")
+					(unit 2)
 				)
 			)
 		)
@@ -5001,6 +5198,72 @@
 			(project "mainBorad"
 				(path "/83af791a-9776-40a7-82ad-9528ff7474b8/7067d32e-232c-4c33-be2e-744ed9661c4e"
 					(reference "#FLG06")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GNDA")
+		(at 242.57 127 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "74a8109b-1fd5-4c21-bf05-6053e58d4fb6")
+		(property "Reference" "#PWR051"
+			(at 242.57 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GNDA"
+			(at 242.57 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 242.57 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 242.57 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GNDA\" , analog ground"
+			(at 242.57 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c80fbb51-fedd-4bd1-9a60-7c46ee6bc417")
+		)
+		(instances
+			(project "mainBorad"
+				(path "/83af791a-9776-40a7-82ad-9528ff7474b8/7067d32e-232c-4c33-be2e-744ed9661c4e"
+					(reference "#PWR051")
 					(unit 1)
 				)
 			)
@@ -6063,72 +6326,6 @@
 			(project "mainBorad"
 				(path "/83af791a-9776-40a7-82ad-9528ff7474b8/7067d32e-232c-4c33-be2e-744ed9661c4e"
 					(reference "PwF2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GNDA")
-		(at 228.6 81.28 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "9afbd00a-a12d-464a-b808-06154919cc77")
-		(property "Reference" "#PWR054"
-			(at 228.6 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GNDA"
-			(at 228.6 86.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 228.6 81.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 228.6 81.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GNDA\" , analog ground"
-			(at 228.6 81.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "e25bf7b5-2cb6-46d3-87bd-a03d8a4d5ad3")
-		)
-		(instances
-			(project "mainBorad"
-				(path "/83af791a-9776-40a7-82ad-9528ff7474b8/7067d32e-232c-4c33-be2e-744ed9661c4e"
-					(reference "#PWR054")
 					(unit 1)
 				)
 			)
@@ -7368,7 +7565,7 @@
 	)
 	(symbol
 		(lib_id "power:PWR_FLAG")
-		(at 266.7 62.23 0)
+		(at 259.08 59.69 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7377,7 +7574,7 @@
 		(fields_autoplaced yes)
 		(uuid "f69a1015-46f2-4983-bea3-e213bcd148b0")
 		(property "Reference" "#FLG011"
-			(at 266.7 60.325 0)
+			(at 259.08 57.785 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7386,7 +7583,7 @@
 			)
 		)
 		(property "Value" "PWR_FLAG"
-			(at 266.7 57.15 0)
+			(at 259.08 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7394,7 +7591,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 266.7 62.23 0)
+			(at 259.08 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7403,7 +7600,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 266.7 62.23 0)
+			(at 259.08 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7412,7 +7609,7 @@
 			)
 		)
 		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 266.7 62.23 0)
+			(at 259.08 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7427,6 +7624,128 @@
 			(project "mainBorad"
 				(path "/83af791a-9776-40a7-82ad-9528ff7474b8/7067d32e-232c-4c33-be2e-744ed9661c4e"
 					(reference "#FLG011")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:Opamp_Dual")
+		(at 240.03 64.77 0)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "fff9b4cc-e7fb-49c6-a608-8e23949d681c")
+		(property "Reference" "U5"
+			(at 233.68 55.372 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Opamp_Dual"
+			(at 242.824 55.372 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_DIP:DIP-8_W7.62mm_LongPads"
+			(at 240.03 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 240.03 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Dual operational amplifier"
+			(at 240.03 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Library" "${KICAD7_SYMBOL_DIR}/Simulation_SPICE.sp"
+			(at 240.03 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" "kicad_builtin_opamp_dual"
+			(at 240.03 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "SUBCKT"
+			(at 240.03 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=out1 2=in1- 3=in1+ 4=vee 5=in2+ 6=in2- 7=out2 8=vcc"
+			(at 240.03 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "8"
+			(uuid "bb8451ec-c8bd-4b3e-bf71-4a5261e32c58")
+		)
+		(pin "6"
+			(uuid "69ca5663-55c2-4211-97f4-494a7581cab4")
+		)
+		(pin "1"
+			(uuid "a99f223a-bd8c-4b40-bbab-890e3d0b1a72")
+		)
+		(pin "3"
+			(uuid "718bd118-1f86-4116-8aec-dae47fcf8ebb")
+		)
+		(pin "4"
+			(uuid "7f6154bd-1249-49ac-8f9c-7485dbc1b0e2")
+		)
+		(pin "7"
+			(uuid "24936b63-b1d1-415a-98ae-896dc1902b50")
+		)
+		(pin "2"
+			(uuid "414472b6-8c28-41c2-9f32-46e612278cf9")
+		)
+		(pin "5"
+			(uuid "890ea392-6cd7-4e9e-9b38-3d5861237c6e")
+		)
+		(instances
+			(project ""
+				(path "/83af791a-9776-40a7-82ad-9528ff7474b8/7067d32e-232c-4c33-be2e-744ed9661c4e"
+					(reference "U5")
 					(unit 1)
 				)
 			)

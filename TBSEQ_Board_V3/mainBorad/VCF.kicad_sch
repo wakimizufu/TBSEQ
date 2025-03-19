@@ -6552,7 +6552,7 @@
 				)
 			)
 		)
-		(property "Footprint" "SamacSys_Parts:HN1C01FUGRLF"
+		(property "Footprint" "SamacSys_Parts:HN1C01FUGRLF_DIP8"
 			(at 99.06 124.13 0)
 			(effects
 				(font
@@ -7793,7 +7793,7 @@
 				)
 			)
 		)
-		(property "Footprint" "SamacSys_Parts:HN1C01FUGRLF"
+		(property "Footprint" "SamacSys_Parts:HN1C01FUGRLF_DIP8"
 			(at 97.79 213.03 0)
 			(effects
 				(font
@@ -8906,7 +8906,7 @@
 				)
 			)
 		)
-		(property "Footprint" "SamacSys_Parts:HN1C01FUGRLF"
+		(property "Footprint" "SamacSys_Parts:HN1C01FUGRLF_DIP8"
 			(at 170.18 127.94 0)
 			(effects
 				(font

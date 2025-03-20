@@ -2605,12 +2605,6 @@
 		(uuid "6105acb4-8b47-49a6-b086-7c184a956ded")
 	)
 	(junction
-		(at 259.08 64.77)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "62b4ade8-772b-4094-a686-11db851fd952")
-	)
-	(junction
 		(at 144.78 133.35)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3306,7 +3300,7 @@
 	)
 	(wire
 		(pts
-			(xy 259.08 64.77) (xy 262.89 64.77)
+			(xy 251.46 64.77) (xy 262.89 64.77)
 		)
 		(stroke
 			(width 0)
@@ -3663,26 +3657,6 @@
 			(type default)
 		)
 		(uuid "d1adcf09-85ed-4d18-bfa8-3fe9ca06e6f8")
-	)
-	(wire
-		(pts
-			(xy 251.46 64.77) (xy 259.08 64.77)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d39a2c89-0344-4421-8993-815a581d1318")
-	)
-	(wire
-		(pts
-			(xy 259.08 59.69) (xy 259.08 64.77)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d4b4be4a-dc08-4f9d-b2db-5be9b960e110")
 	)
 	(wire
 		(pts
@@ -7558,72 +7532,6 @@
 			(project "mainBorad"
 				(path "/83af791a-9776-40a7-82ad-9528ff7474b8/7067d32e-232c-4c33-be2e-744ed9661c4e"
 					(reference "#FLG010")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:PWR_FLAG")
-		(at 259.08 59.69 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "f69a1015-46f2-4983-bea3-e213bcd148b0")
-		(property "Reference" "#FLG011"
-			(at 259.08 57.785 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "PWR_FLAG"
-			(at 259.08 54.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 259.08 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 259.08 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 259.08 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "746c7b11-17ca-4710-8a3d-abd68b7c29ae")
-		)
-		(instances
-			(project "mainBorad"
-				(path "/83af791a-9776-40a7-82ad-9528ff7474b8/7067d32e-232c-4c33-be2e-744ed9661c4e"
-					(reference "#FLG011")
 					(unit 1)
 				)
 			)

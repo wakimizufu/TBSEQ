@@ -1,0 +1,165 @@
+(kicad_sch
+	(version 20231120)
+	(generator "eeschema")
+	(generator_version "8.0")
+	(uuid "e4888aad-78d5-4afc-b382-d3fab1889a4d")
+	(paper "A4")
+	(lib_symbols)
+	(sheet
+		(at 147.32 34.29)
+		(size 12.7 7.62)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "1a1a0aa4-57dd-497b-b0ec-216c90fc74ae")
+		(property "Sheetname" "Jack"
+			(at 147.32 33.5784 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Jack.kicad_sch"
+			(at 147.32 42.4946 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "panelBoard"
+				(path "/e4888aad-78d5-4afc-b382-d3fab1889a4d"
+					(page "5")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 68.58 33.02)
+		(size 16.51 8.89)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "32d24ddb-6f9c-4c4b-9223-e81aaaf5df19")
+		(property "Sheetname" "LEDMatrix"
+			(at 68.58 32.3084 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "LEDMatrix.kicad_sch"
+			(at 68.58 42.4946 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "panelBoard"
+				(path "/e4888aad-78d5-4afc-b382-d3fab1889a4d"
+					(page "3")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 35.56 33.02)
+		(size 16.51 8.89)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "357f53c3-9934-46e1-a766-db83fe7e83fd")
+		(property "Sheetname" "HT16K33"
+			(at 35.56 32.3084 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "HT16K33.kicad_sch"
+			(at 35.56 42.4946 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "panelBoard"
+				(path "/e4888aad-78d5-4afc-b382-d3fab1889a4d"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 105.41 34.29)
+		(size 16.51 7.62)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "8ab7d7d0-8f62-497e-9d72-72d99ca807cc")
+		(property "Sheetname" "SwitchMatrix"
+			(at 105.41 33.5784 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "SwitchMatrix.kicad_sch"
+			(at 105.41 42.4946 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "panelBoard"
+				(path "/e4888aad-78d5-4afc-b382-d3fab1889a4d"
+					(page "4")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+)

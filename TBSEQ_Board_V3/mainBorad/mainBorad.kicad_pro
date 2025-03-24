@@ -509,7 +509,7 @@
       "gencad": "",
       "idf": "",
       "netlist": "",
-      "plot": "",
+      "plot": "gaberData/",
       "pos_files": "",
       "specctra_dsn": "",
       "step": "",

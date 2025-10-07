@@ -5,17 +5,33 @@
 	ptPanelManager:panelManagerクラスポインタ
 	ptVoltage     :voltageクラスポインタ
 */
-paternPlay::paternPlay(panelManager* ptPanelManager, voltage* ptVoltage, sequenceMap* ptSequenceMap) :mode(MODE_NAME::PATERN_PLAY, ptPanelManager, ptVoltage, ptSequenceMap, 0) {
+paternPlay::paternPlay(panelManager* ptPanelManager, voltage* ptVoltage, sequenceMap* ptSequenceMap, int _initBank, int _initPattern) :mode(MODE_NAME::PATERN_PLAY, ptPanelManager, ptVoltage, ptSequenceMap, 0) {
 
 	//各状態を初期値に変更する
-	_pattern = PATTERN_START_IDX;				//指定パターン
+
 	_step = STEP_START_IDX;						//現在ステップ
 	_LEDCount = 0;								//LED点滅カウント
 	_pushRunSW = false;							//ラン/ストップ前回状態フラグ
 	_midiclock_16note = MIDICLOCK_START_16NOTE;	//16音符毎MIDIクロックカウント
     _LEDtempo=true;                             //テンポカウント時LED点灯フラグ
 	_LEDstep=0;									//テンポカウント時ステップカウンタ
-	_next_pattern=_pattern;						//次に演奏する指定パターン(1-8)
+
+	//指定バンク
+	if (( _initBank < BANK_START_IDX) || ( _initBank >= SEQUENCE_BANK_LENGTH)){
+		_bank = BANK_START_IDX;
+	} else {
+		_bank = _initBank;
+	}
+
+	//指定パターン
+	if (( _initPattern < PATTERN_START_IDX) || ( _initPattern >= SEQUENCE_PATTERN_LENGTH)){
+		_pattern = PATTERN_START_IDX;
+	} else {
+		_pattern = _initPattern;
+	}
+
+	//次に演奏する指定パターン(1-8)
+	_next_pattern=_pattern;						
 
 	//ラン/ストップフラグ←ストップ
 	_run_stop = RUN_STOP::STOP;
@@ -385,6 +401,13 @@ int	paternPlay::getCurrnetPattern(){
 	return	_pattern;
 }
 
+/*
+次に演奏する指定パターンを設定する
+戻り値:指定パターン(1-8)
+*/
+void paternPlay::presetNextPattern(){
+	_next_pattern=_pattern;	
+}
 
 /*
 16音符毎MIDIクロックカウントが最初ならゲートをオンする

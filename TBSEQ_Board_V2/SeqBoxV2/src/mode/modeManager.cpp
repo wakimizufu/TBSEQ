@@ -24,7 +24,7 @@ modeManager::modeManager(panelManager* ptPanelManager, voltage* ptVoltage, int n
 
 
 	//現在のモードクラスの初期値を設定する
-	_currentMode = new paternPlay( _panelManager, _voltage, &_sequenceMap);
+	_currentMode = new paternPlay( _panelManager, _voltage, &_sequenceMap, BANK_START_IDX, PATTERN_START_IDX);
 	_currentMode->setBank(_bank);
 
 	_clockCount = 0;							//現在のMIDIクロックカウンタ値
@@ -440,9 +440,7 @@ void	modeManager::_changeMode() {
 	delete	_currentMode;
 
 	if (MODE_NAME::PATERN_PLAY == changeMode) {
-		_currentMode = new paternPlay( _panelManager, _voltage, &_sequenceMap);
-		_currentMode->setBank(_bank);
-		_currentMode->setPattern(_currentPatern);
+		_currentMode = new paternPlay( _panelManager, _voltage, &_sequenceMap, _bank, _currentPatern);
 	}
 	else if (MODE_NAME::PATERN_WRITE == changeMode) {
 		_currentMode = new paternWrite( _panelManager, _voltage, &_sequenceMap, _currentPatern);

@@ -16,8 +16,10 @@ class paternPlay: public mode{
 		ptPanelManager:panelManagerクラスポインタ
 		ptVoltage     :voltageクラスポインタ
 		ptSequenceMap :sequenceMapクラスポインタ
+		_initBank     :演奏対象バンク(1～4)
+		_initPattern  :演奏対象パターン(1～16)
     */
-		paternPlay(panelManager* ptPanelManager, voltage* ptVoltage, sequenceMap* ptSequenceMap);
+		paternPlay(panelManager* ptPanelManager, voltage* ptVoltage, sequenceMap* ptSequenceMap, int _initBank, int _initPattern);
 
 		/*
 		[仮想関数]カウント閾値達成時に実行されるアプリケーションを実施する
@@ -69,7 +71,12 @@ class paternPlay: public mode{
 		*/
 		int	getCurrnetPattern();
 
-		
+		/*
+		次に演奏する指定パターンを設定する
+		戻り値:指定パターン(1-8)
+		*/
+		void presetNextPattern();
+
   private:
 		int		_LEDCount;	//LED点滅カウント
 		bool	_pushRunSW;	//ラン/ストップSW前回状態フラグ

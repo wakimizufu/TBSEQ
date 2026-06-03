@@ -1,0 +1,8982 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "847e5a78-485a-4232-8a89-3bb474f3212c")
+	(paper "A4")
+	(lib_symbols
+		(symbol "SamacSys_Parts:B3F-1000S"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "S"
+				(at 29.21 7.62 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Value" "B3F-1000S"
+				(at 29.21 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Footprint" "B3F1060"
+				(at 29.21 -94.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://www.mouser.com/datasheet/2/307/en-b3f-13826.pdf"
+				(at 29.21 -194.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Description" "Tactile Switches 6x6 Flat 4.3mm Btn Force 100g w/o Grd"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Height" "7"
+				(at 29.21 -394.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer_Name" "Omron Electronics"
+				(at 29.21 -494.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer_Part_Number" "B3F-1000S"
+				(at 29.21 -594.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Mouser Part Number" "653-B3F-1000-S"
+				(at 29.21 -694.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Omron-Electronics/B3F-1000S?qs=C6KiJco3hx0Z3qfxWTJOrg%3D%3D"
+				(at 29.21 -794.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Arrow Part Number" ""
+				(at 29.21 -894.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Arrow Price/Stock" ""
+				(at 29.21 -994.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(symbol "B3F-1000S_1_1"
+				(rectangle
+					(start 5.08 2.54)
+					(end 27.94 -5.08)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin passive line
+					(at 0 0 0)
+					(length 5.08)
+					(name "N.O._2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -2.54 0)
+					(length 5.08)
+					(name "COM_2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 33.02 0 180)
+					(length 5.08)
+					(name "N.O._1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 33.02 -2.54 180)
+					(length 5.08)
+					(name "COM_1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+	)
+	(text "3:D"
+		(exclude_from_sim no)
+		(at 55.88 54.864 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "11554df1-76fa-4c84-ac28-f8806384df69")
+	)
+	(text "29:BANK C"
+		(exclude_from_sim no)
+		(at 213.36 53.848 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "2372b93b-a33f-45ed-8fd7-1f7eb073b96e")
+	)
+	(text "6:F\n"
+		(exclude_from_sim no)
+		(at 55.88 92.71 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "29705f05-750c-4ba4-8b26-8be1ec1da789")
+	)
+	(text "17:SLIDE"
+		(exclude_from_sim no)
+		(at 134.112 66.802 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "31a8087d-9eeb-4bd6-9dff-5dd557a97fd6")
+	)
+	(text "20:BACK"
+		(exclude_from_sim no)
+		(at 134.366 104.648 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "3d14b220-9d5d-4085-a510-d57da140bc42")
+	)
+	(text "27:BANK A"
+		(exclude_from_sim no)
+		(at 213.868 28.194 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "4bb7f360-c0e6-47b0-a36c-a7bc4c344fab")
+	)
+	(text "24:\nTRACK"
+		(exclude_from_sim no)
+		(at 134.366 156.464 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "592c6ed3-7a65-4f74-99a0-e1a989699e33")
+	)
+	(text "11:A#"
+		(exclude_from_sim no)
+		(at 55.626 157.734 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "6285586f-6d78-4890-8355-400fb131813c")
+	)
+	(text "25:\nPATTERN"
+		(exclude_from_sim no)
+		(at 134.62 169.418 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "6420528e-47c8-4d4a-b9ec-5d0d294d02e1")
+	)
+	(text "2:C#"
+		(exclude_from_sim no)
+		(at 55.88 41.91 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "653dcfb5-752f-480c-955c-85a93ed06b29")
+	)
+	(text "4:D#"
+		(exclude_from_sim no)
+		(at 56.388 67.564 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "654f4cbb-7496-4f92-8568-5164ab56865c")
+	)
+	(text "5:E"
+		(exclude_from_sim no)
+		(at 56.388 80.264 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "69982d3f-b734-445f-a6ff-e7ce1ff87e9a")
+	)
+	(text "1:C"
+		(exclude_from_sim no)
+		(at 55.88 29.464 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "6e78834c-6c9c-4eaf-9d71-8b81e24ee26d")
+	)
+	(text "22:\nRUN/STOP"
+		(exclude_from_sim no)
+		(at 134.62 129.54 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "75c33ff4-8d18-408b-8252-cf815c5e554f")
+	)
+	(text "14:UP"
+		(exclude_from_sim no)
+		(at 134.62 27.94 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "7ac377c7-2874-48db-be63-b9a8c1076269")
+	)
+	(text "18:ACC"
+		(exclude_from_sim no)
+		(at 133.858 78.994 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "7d767bdb-af30-4930-8954-a0da6f08a738")
+	)
+	(text "9:G#"
+		(exclude_from_sim no)
+		(at 55.372 131.064 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "8725ad25-ec0d-4ce7-8d66-cdd5d7a6a3e0")
+	)
+	(text "15:DOWN"
+		(exclude_from_sim no)
+		(at 134.62 40.894 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "9c8fddc7-da86-490e-98d4-5dcfe1977193")
+	)
+	(text "10:A"
+		(exclude_from_sim no)
+		(at 55.88 143.764 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "a4f4a426-44c6-441a-a25d-cc0275f19f2b")
+	)
+	(text "8:G"
+		(exclude_from_sim no)
+		(at 56.388 118.364 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "af843449-e82c-4578-aa08-bb523c6189e5")
+	)
+	(text "19:NEXT"
+		(exclude_from_sim no)
+		(at 134.62 91.694 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "c143af87-83bf-43f4-b87f-a698743c1e1e")
+	)
+	(text "26:\nPLAY/WRITE"
+		(exclude_from_sim no)
+		(at 134.62 182.88 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "cf659894-354c-43b3-8063-8b31d4e95252")
+	)
+	(text "30:BANK D"
+		(exclude_from_sim no)
+		(at 213.106 66.548 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "d598bb6a-5be3-4e44-b18a-1447ae2d0c3d")
+	)
+	(text "16:NOTE"
+		(exclude_from_sim no)
+		(at 134.62 53.848 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "d6dd60a4-bd58-47e9-868f-d7611f52f7f2")
+	)
+	(text "12:B"
+		(exclude_from_sim no)
+		(at 55.626 170.434 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "d9ec35fd-baab-4d25-91de-658c1e4154ea")
+	)
+	(text "28:BANK B"
+		(exclude_from_sim no)
+		(at 213.868 41.402 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "ddb96af4-9e57-4b5c-83fc-6e5d0d711705")
+	)
+	(text "21:\nLENMAX"
+		(exclude_from_sim no)
+		(at 134.62 117.094 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "e430e9cb-b4dd-4bec-86a5-b1c62bf9cfe4")
+	)
+	(text "7:F#\n"
+		(exclude_from_sim no)
+		(at 55.626 105.41 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "ee2b1b15-4003-4d2c-bfb0-378a45089628")
+	)
+	(text "13:C2"
+		(exclude_from_sim no)
+		(at 55.88 184.658 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "f5419fed-b4d2-4223-a2b9-5ece039ec6c6")
+	)
+	(junction
+		(at 39.37 187.96)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0583fee9-d7c1-4e58-bc43-ff7404d290ed")
+	)
+	(junction
+		(at 72.39 167.64)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "08fe526c-0c5c-4491-ba4c-67f43fc80297")
+	)
+	(junction
+		(at 39.37 173.99)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0a018f00-d62d-41d7-9790-18fab30ef721")
+	)
+	(junction
+		(at 72.39 77.47)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0d263298-7960-4cfc-975a-4ed2c6ccb24e")
+	)
+	(junction
+		(at 118.11 58.42)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0ef0c441-c8e4-41f6-b5c0-601738d26c5a")
+	)
+	(junction
+		(at 118.11 121.92)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0f5bfc44-1844-4157-bf59-e0781bdaf320")
+	)
+	(junction
+		(at 72.39 154.94)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "162bc9da-db35-4fa8-8123-2ac91f47662a")
+	)
+	(junction
+		(at 151.13 153.67)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "17a6f326-fe23-4c60-a94a-6f163b9d1466")
+	)
+	(junction
+		(at 34.29 147.32)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1875b538-16c7-4c1c-a549-de9ce0a466b6")
+	)
+	(junction
+		(at 111.76 134.62)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1e7bed9e-48ef-47fb-8850-c5ff680d2f60")
+	)
+	(junction
+		(at 72.39 90.17)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "22b2f4b8-cd91-41ec-8849-ea25a8960a1a")
+	)
+	(junction
+		(at 151.13 38.1)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "22ed8a44-7399-441f-84b1-7dce1c91d8bd")
+	)
+	(junction
+		(at 111.76 58.42)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "26d08588-1948-44d5-9048-5e01cb97e76b")
+	)
+	(junction
+		(at 118.11 161.29)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2f2b3eb2-f47c-48b2-abbc-477776d282ff")
+	)
+	(junction
+		(at 39.37 109.22)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "30c561ae-30e8-4edb-a189-58c3c084c31d")
+	)
+	(junction
+		(at 111.76 83.82)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3809ce8b-d5be-49a8-ae36-92381dc27188")
+	)
+	(junction
+		(at 34.29 121.92)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3d1cbec5-9ea4-470a-a26b-97555ef61058")
+	)
+	(junction
+		(at 72.39 102.87)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3de8eabe-6ffc-4941-8774-df0510633224")
+	)
+	(junction
+		(at 151.13 127)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3e3ef94f-365c-41b1-b14b-37e50a231ba9")
+	)
+	(junction
+		(at 39.37 58.42)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "436f8ccd-8f3a-46c6-b6dd-c4f1cb9815b8")
+	)
+	(junction
+		(at 39.37 33.02)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4c875caa-e8ea-4b78-88ee-bb1c6a1a6e05")
+	)
+	(junction
+		(at 151.13 114.3)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4eceeaa2-53c7-4ce3-b3ac-8b5150d5c85a")
+	)
+	(junction
+		(at 34.29 161.29)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "54e553f5-312e-4aad-91bf-0474b0be7000")
+	)
+	(junction
+		(at 151.13 88.9)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "55bda428-d2a1-4ca3-8097-98ce0eeb8b02")
+	)
+	(junction
+		(at 72.39 52.07)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "594bb496-3e99-4dc7-9f9c-19f74b65bdfc")
+	)
+	(junction
+		(at 196.85 45.72)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5ccde4c3-d68e-4ad5-85cf-ae36af12ef80")
+	)
+	(junction
+		(at 111.76 173.99)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5e27b1bd-083e-45f2-9270-e4dad2746bc9")
+	)
+	(junction
+		(at 118.11 71.12)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5f01650f-3ac4-47bd-9c4d-3092a0df7578")
+	)
+	(junction
+		(at 34.29 33.02)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "60c3f4f1-b84f-4897-9556-cf8eba07148a")
+	)
+	(junction
+		(at 34.29 109.22)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "610cdb05-c469-4866-923b-6a1ea258b292")
+	)
+	(junction
+		(at 111.76 109.22)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "62939f08-d2ff-4065-9d8d-e01c8d6df4ba")
+	)
+	(junction
+		(at 34.29 58.42)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "65ea0820-2e30-4bf6-8129-bed885d9fd67")
+	)
+	(junction
+		(at 72.39 26.67)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "690129e7-a358-4e31-b14e-2f8fa0ac969f")
+	)
+	(junction
+		(at 111.76 33.02)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6a5a9e14-6858-473d-aa56-df1af1946e32")
+	)
+	(junction
+		(at 196.85 58.42)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "809e3ec8-d519-49a1-a42a-eb2c1674d642")
+	)
+	(junction
+		(at 39.37 134.62)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "819554d5-0eb0-4fcd-be68-330dd9800ffd")
+	)
+	(junction
+		(at 111.76 96.52)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8d504e7b-80f7-47df-8486-195d69dc70b2")
+	)
+	(junction
+		(at 118.11 83.82)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8ec7894a-48f7-4cdc-839b-49110af44fad")
+	)
+	(junction
+		(at 39.37 71.12)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "909e0a54-f97e-4a96-aa81-9c7a41793471")
+	)
+	(junction
+		(at 72.39 64.77)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "91f2f5fa-79a4-4f54-924a-c24103de77e5")
+	)
+	(junction
+		(at 72.39 181.61)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9213465d-2d5d-41d5-8656-ce904f124871")
+	)
+	(junction
+		(at 118.11 33.02)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9b4630ad-ef8a-4036-b15a-459546abf298")
+	)
+	(junction
+		(at 118.11 173.99)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9ea962a5-baf0-4f09-907b-aa840694c1da")
+	)
+	(junction
+		(at 34.29 96.52)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a007b914-9c76-45b4-8a89-342b1e72aa04")
+	)
+	(junction
+		(at 34.29 173.99)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a0e1e522-e948-4191-bc55-5c929145b23e")
+	)
+	(junction
+		(at 34.29 71.12)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a6d8da97-d230-4ee1-afc6-fc359f89df0d")
+	)
+	(junction
+		(at 151.13 25.4)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "aa3e8292-bced-4936-b956-f4e345a40074")
+	)
+	(junction
+		(at 39.37 147.32)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "aafe6a08-688b-4ef2-bab2-2cdfc94bb1e2")
+	)
+	(junction
+		(at 72.39 39.37)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ad0cb03d-5b3f-48eb-ab41-26d4ab3b1c27")
+	)
+	(junction
+		(at 229.87 38.1)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b01422ac-b98d-4756-92a2-6eed2809798f")
+	)
+	(junction
+		(at 196.85 71.12)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b597a447-3dde-434c-a74c-c64c945c3335")
+	)
+	(junction
+		(at 39.37 161.29)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b8e8f29f-9c29-4b78-a879-376b075d4cd4")
+	)
+	(junction
+		(at 118.11 96.52)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "bc4c6276-6be9-4a9d-9aec-766171c9065f")
+	)
+	(junction
+		(at 151.13 76.2)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "bc800391-deed-456d-81f2-a2c7c3aa11a3")
+	)
+	(junction
+		(at 196.85 33.02)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "bcb97b13-3e95-4d34-9bec-ef3516f93add")
+	)
+	(junction
+		(at 151.13 50.8)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c03ac5e9-c7b2-414e-a11b-e8fc31424b8d")
+	)
+	(junction
+		(at 72.39 128.27)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c20f1f2b-b580-4790-93bc-811021284416")
+	)
+	(junction
+		(at 151.13 63.5)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c4a4e120-7c99-4139-94d1-df6ea3d04257")
+	)
+	(junction
+		(at 187.96 33.02)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c61cf26b-88c8-4135-841f-4ceb61b86568")
+	)
+	(junction
+		(at 229.87 25.4)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c76f449e-7336-413b-b297-63443723a495")
+	)
+	(junction
+		(at 151.13 180.34)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "cbb68fe6-988b-43a0-9f29-574b1686a089")
+	)
+	(junction
+		(at 229.87 63.5)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "cd4b3d93-a4f2-45cc-98de-ee281a1eca91")
+	)
+	(junction
+		(at 34.29 45.72)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d21d0819-af05-4e3b-b9c0-bee74e19c95c")
+	)
+	(junction
+		(at 39.37 96.52)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d4cedca2-9f9f-4eb6-860a-9f6cf67f33cb")
+	)
+	(junction
+		(at 118.11 109.22)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d9001d5f-9d21-4d3a-9502-a2bca26bc78e")
+	)
+	(junction
+		(at 39.37 45.72)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d960294f-35f0-409f-9614-24d1e4ae0ba1")
+	)
+	(junction
+		(at 151.13 101.6)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d98749af-c08e-46e2-8f6d-3c40b4d19238")
+	)
+	(junction
+		(at 111.76 161.29)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "dcb9aa66-c766-4863-83d5-e589640003c2")
+	)
+	(junction
+		(at 118.11 187.96)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "dd644bf5-c5cd-4546-902a-b279b3b468dc")
+	)
+	(junction
+		(at 111.76 71.12)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ddebef5b-e3d9-427a-b368-7fb75688b24c")
+	)
+	(junction
+		(at 151.13 166.37)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e4c09025-bf7a-4732-8fb1-88d56ada145a")
+	)
+	(junction
+		(at 72.39 115.57)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e65f3c69-44f2-443a-b4f5-d61e2360169a")
+	)
+	(junction
+		(at 34.29 134.62)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e6aaa5cc-1c69-49f4-bf2c-3bd1e61200e8")
+	)
+	(junction
+		(at 39.37 121.92)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e6e85a1c-ea07-48b7-9571-3b14424d4ee0")
+	)
+	(junction
+		(at 229.87 50.8)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e79a188f-a98e-458c-b29c-20a94288ee57")
+	)
+	(junction
+		(at 34.29 83.82)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e7f17d29-6f48-43fa-a7da-dc094c256671")
+	)
+	(junction
+		(at 72.39 140.97)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e806244c-d2b6-4d45-90a1-28c07f950fb1")
+	)
+	(junction
+		(at 187.96 45.72)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "eb764fcc-4d61-4052-90c3-431e28dc3007")
+	)
+	(junction
+		(at 187.96 58.42)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f23a7d41-f0fc-4990-9c9d-4b2ab55d7c41")
+	)
+	(junction
+		(at 39.37 83.82)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f4087e93-d44c-44fe-8288-8cad47486f3e")
+	)
+	(junction
+		(at 111.76 121.92)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f5810cea-9e6c-4720-9f80-2e1753fa0e97")
+	)
+	(junction
+		(at 118.11 134.62)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f5b45854-7937-4c07-ab11-359aa8224bcd")
+	)
+	(junction
+		(at 111.76 45.72)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f6756cd7-5fa6-41bc-9ec8-1a0c65c257d7")
+	)
+	(junction
+		(at 118.11 45.72)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "fe72c13b-60f0-41c8-a2f4-2d194bc5c6c7")
+	)
+	(wire
+		(pts
+			(xy 34.29 33.02) (xy 39.37 33.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "026df1ec-f3e0-44f0-8e37-66c1ef2d40da")
+	)
+	(wire
+		(pts
+			(xy 151.13 151.13) (xy 151.13 153.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "05159479-2f4d-425b-9e21-28cacd991dd6")
+	)
+	(wire
+		(pts
+			(xy 39.37 142.24) (xy 39.37 138.43)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "08d3b765-fe0a-4056-8dbb-3f0e06be123b")
+	)
+	(wire
+		(pts
+			(xy 151.13 180.34) (xy 156.21 180.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "08dc5ce3-882d-4496-9b58-2bd448739ffe")
+	)
+	(wire
+		(pts
+			(xy 39.37 71.12) (xy 39.37 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "093e82be-c0e7-430a-b4d7-d4d3091d2678")
+	)
+	(wire
+		(pts
+			(xy 39.37 182.88) (xy 39.37 179.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "09451435-7718-4787-bca6-304c3787c1d9")
+	)
+	(wire
+		(pts
+			(xy 34.29 19.05) (xy 34.29 33.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "09d4dd59-d1e8-4cc5-a9ad-7495338f5cf5")
+	)
+	(wire
+		(pts
+			(xy 39.37 87.63) (xy 72.39 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "09fc5ecf-5c9c-459f-8b3e-3a0ff1c1c6d2")
+	)
+	(wire
+		(pts
+			(xy 72.39 185.42) (xy 72.39 189.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0b92a011-7ace-4cd2-8529-619243c56c5d")
+	)
+	(wire
+		(pts
+			(xy 72.39 85.09) (xy 39.37 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0c42cde2-a79b-457a-a0cb-039eebd6c00c")
+	)
+	(wire
+		(pts
+			(xy 229.87 22.86) (xy 229.87 25.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0cc9f5b7-d3ee-4c78-9b2a-3fed2fc67796")
+	)
+	(wire
+		(pts
+			(xy 72.39 128.27) (xy 72.39 129.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0e01df01-c72a-4650-9673-134123a1dc05")
+	)
+	(wire
+		(pts
+			(xy 111.76 45.72) (xy 111.76 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0e1fa2ed-4934-4713-b2a1-c27d94498e2d")
+	)
+	(wire
+		(pts
+			(xy 34.29 121.92) (xy 34.29 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0f3ff734-479e-44e1-bea0-f56684538605")
+	)
+	(wire
+		(pts
+			(xy 111.76 134.62) (xy 111.76 161.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0ff76cb7-4850-4061-8d04-afbd8855a770")
+	)
+	(wire
+		(pts
+			(xy 34.29 121.92) (xy 39.37 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "10552b1d-b6af-4ee8-9d5d-f413c23b689a")
+	)
+	(wire
+		(pts
+			(xy 39.37 33.02) (xy 39.37 30.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "12776ac3-03e6-4b5a-9bb9-1c793ddfccd1")
+	)
+	(wire
+		(pts
+			(xy 229.87 38.1) (xy 229.87 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "13ab424b-d06f-4cfe-b2dd-5cc5aa469eba")
+	)
+	(wire
+		(pts
+			(xy 151.13 101.6) (xy 156.21 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "14e480de-38f9-416e-b68a-9fd6b866bb62")
+	)
+	(wire
+		(pts
+			(xy 72.39 128.27) (xy 77.47 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "150ac08a-eb70-459c-b6d0-a60f15d1d241")
+	)
+	(wire
+		(pts
+			(xy 34.29 173.99) (xy 39.37 173.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "160eb56a-229f-4de6-9a79-994afcc24fea")
+	)
+	(wire
+		(pts
+			(xy 39.37 121.92) (xy 39.37 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "179e7e41-f65a-4e1b-816d-4b2019dee389")
+	)
+	(wire
+		(pts
+			(xy 39.37 97.79) (xy 39.37 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "181183ab-4320-415f-86a6-a532f4d74902")
+	)
+	(wire
+		(pts
+			(xy 151.13 127) (xy 151.13 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "19f2fb88-3ba7-4466-9957-d9f8aba11622")
+	)
+	(wire
+		(pts
+			(xy 72.39 102.87) (xy 77.47 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1aa47ec6-89ce-4e40-832d-425cbabca796")
+	)
+	(wire
+		(pts
+			(xy 72.39 154.94) (xy 72.39 156.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1b168004-4b81-4f7b-b0fb-879e99fa6199")
+	)
+	(wire
+		(pts
+			(xy 118.11 39.37) (xy 118.11 35.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1bbc9390-d93f-4aa1-acb5-29d1e1814923")
+	)
+	(wire
+		(pts
+			(xy 151.13 92.71) (xy 151.13 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1c28a97f-5e66-46ad-856a-25ef549dae13")
+	)
+	(wire
+		(pts
+			(xy 118.11 163.83) (xy 151.13 163.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1cbad42a-55fe-4249-912a-a7ce9d149244")
+	)
+	(wire
+		(pts
+			(xy 118.11 96.52) (xy 111.76 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1d3b1d53-832a-4738-8b3f-eb1a70c4ef63")
+	)
+	(wire
+		(pts
+			(xy 151.13 177.8) (xy 151.13 180.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1e4d1da3-456f-4565-a3bb-e192f683dfaa")
+	)
+	(wire
+		(pts
+			(xy 72.39 36.83) (xy 72.39 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1e5a11e8-6292-46dd-a3d7-83745feb5b0f")
+	)
+	(wire
+		(pts
+			(xy 39.37 83.82) (xy 39.37 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1f7d1482-b1eb-48a6-90bd-15f23e044ee7")
+	)
+	(wire
+		(pts
+			(xy 72.39 140.97) (xy 77.47 140.97)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1f7e26a7-1e26-4a06-aa84-285bd55241ea")
+	)
+	(wire
+		(pts
+			(xy 72.39 74.93) (xy 72.39 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "20a598cc-6bf2-4604-a21f-4a2a379965d9")
+	)
+	(wire
+		(pts
+			(xy 72.39 100.33) (xy 72.39 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "21f1a3fd-f5b2-4366-a703-a52cba05565e")
+	)
+	(wire
+		(pts
+			(xy 151.13 173.99) (xy 118.11 173.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "22758d0d-dff9-4a4c-a58d-6d3076a92fc5")
+	)
+	(wire
+		(pts
+			(xy 72.39 26.67) (xy 77.47 26.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "230ca7c2-200f-4629-b0ec-93185b3f21e8")
+	)
+	(wire
+		(pts
+			(xy 34.29 134.62) (xy 34.29 147.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2403a594-e96b-4c43-994a-1c18d6c1d960")
+	)
+	(wire
+		(pts
+			(xy 72.39 152.4) (xy 72.39 154.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "24223648-9751-40a8-9a74-c474ca981075")
+	)
+	(wire
+		(pts
+			(xy 229.87 63.5) (xy 229.87 64.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "244154da-9e49-48de-bf98-b727f82763d3")
+	)
+	(wire
+		(pts
+			(xy 111.76 19.05) (xy 111.76 33.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "25b1e245-4d53-4ca4-8288-d3dffd4575b5")
+	)
+	(wire
+		(pts
+			(xy 34.29 161.29) (xy 34.29 173.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "26155c5c-45c6-406f-9572-5953d80de032")
+	)
+	(wire
+		(pts
+			(xy 72.39 52.07) (xy 77.47 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2714f971-f8fa-4660-a999-ee9ee8a53665")
+	)
+	(wire
+		(pts
+			(xy 34.29 45.72) (xy 34.29 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "27b0459f-2ba8-4d26-a50b-a1bea96d5be6")
+	)
+	(wire
+		(pts
+			(xy 111.76 83.82) (xy 111.76 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "27b22a4b-4486-43e6-8696-d347e733e8af")
+	)
+	(wire
+		(pts
+			(xy 118.11 45.72) (xy 118.11 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "28ac5aed-cf2c-4a74-aa00-e45dedea015a")
+	)
+	(wire
+		(pts
+			(xy 151.13 99.06) (xy 151.13 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2929efc7-1354-4fa8-97ca-c973fbcbe975")
+	)
+	(wire
+		(pts
+			(xy 39.37 72.39) (xy 39.37 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "29e17219-6224-4e88-bb37-ae49bb6de3e2")
+	)
+	(wire
+		(pts
+			(xy 151.13 50.8) (xy 156.21 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "29f2ae58-fe53-4d95-ba39-651b48a0f669")
+	)
+	(wire
+		(pts
+			(xy 196.85 35.56) (xy 229.87 35.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2b7988d9-dfba-441b-9b3f-d6a5986989fa")
+	)
+	(wire
+		(pts
+			(xy 39.37 123.19) (xy 39.37 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2b990b43-9641-4bda-9b0a-5c3f5142e3c8")
+	)
+	(wire
+		(pts
+			(xy 118.11 58.42) (xy 111.76 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2c8ecae0-5a74-44a5-8c3b-ded6f38d738e")
+	)
+	(wire
+		(pts
+			(xy 39.37 45.72) (xy 39.37 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2dcdc5a2-2a1a-4998-a23e-90d0f5bf9bd0")
+	)
+	(wire
+		(pts
+			(xy 72.39 148.59) (xy 39.37 148.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2eddcec5-85d7-4f02-b435-0de6de767d68")
+	)
+	(wire
+		(pts
+			(xy 72.39 106.68) (xy 72.39 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2f044d38-0e5e-43c3-b3ce-4f70a7ddf316")
+	)
+	(wire
+		(pts
+			(xy 34.29 71.12) (xy 34.29 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "31638b03-3947-431e-aad7-a0d066fc1135")
+	)
+	(wire
+		(pts
+			(xy 39.37 110.49) (xy 39.37 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "31a6c8f0-e9fa-47ce-afa3-49dca5f0d0c7")
+	)
+	(wire
+		(pts
+			(xy 118.11 64.77) (xy 118.11 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "31cf65cd-03c7-4d36-bed3-4abee9d96981")
+	)
+	(wire
+		(pts
+			(xy 196.85 26.67) (xy 196.85 22.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "32052271-c22b-4bc3-b97e-97184ee07cf0")
+	)
+	(wire
+		(pts
+			(xy 72.39 90.17) (xy 77.47 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "340e0663-8394-48b7-ba0d-e066115bf304")
+	)
+	(wire
+		(pts
+			(xy 151.13 130.81) (xy 151.13 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "35047570-bc13-4fc3-9006-93e246f50abe")
+	)
+	(wire
+		(pts
+			(xy 118.11 96.52) (xy 118.11 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "35bd5d97-f1e8-485f-9a9a-e6a95f3f1472")
+	)
+	(wire
+		(pts
+			(xy 151.13 50.8) (xy 151.13 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "35c4df9f-1b47-4f67-8b2f-2888c48784ea")
+	)
+	(wire
+		(pts
+			(xy 151.13 76.2) (xy 151.13 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "36a756a3-bcc7-4aed-a25f-ac0f3116ebce")
+	)
+	(wire
+		(pts
+			(xy 151.13 127) (xy 156.21 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "39b8f7e4-3311-43ed-af27-088f2062fde0")
+	)
+	(wire
+		(pts
+			(xy 151.13 58.42) (xy 118.11 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3ad218d0-7289-4518-86b2-96a6d32ec6db")
+	)
+	(wire
+		(pts
+			(xy 39.37 189.23) (xy 39.37 187.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3c969827-0231-427c-bcb8-41b8302c4147")
+	)
+	(wire
+		(pts
+			(xy 151.13 153.67) (xy 156.21 153.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3cee6fc3-18dd-4248-96a0-5342582f25f1")
+	)
+	(wire
+		(pts
+			(xy 118.11 115.57) (xy 118.11 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3e15ca10-230d-4d3f-8368-d538542d92d1")
+	)
+	(wire
+		(pts
+			(xy 39.37 168.91) (xy 39.37 165.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3e1b9470-fa5a-4de3-baa3-2a4c62dcfd43")
+	)
+	(wire
+		(pts
+			(xy 151.13 153.67) (xy 151.13 154.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3f3008fc-78fb-4855-b1be-973519c58a8b")
+	)
+	(wire
+		(pts
+			(xy 72.39 181.61) (xy 77.47 181.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3f32a94c-06b8-420e-a8f6-bbcc0055a365")
+	)
+	(wire
+		(pts
+			(xy 39.37 147.32) (xy 39.37 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "400cdc7e-816c-455b-aad2-5c1062d22461")
+	)
+	(wire
+		(pts
+			(xy 39.37 53.34) (xy 39.37 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "40469ea5-c382-4d04-9c6d-cc196829e10b")
+	)
+	(wire
+		(pts
+			(xy 34.29 71.12) (xy 39.37 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "430044a1-41a9-4507-b6a7-7ff75e283cfd")
+	)
+	(wire
+		(pts
+			(xy 187.96 45.72) (xy 196.85 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4493b141-a1a0-47c2-bfe6-4175d2e9cde5")
+	)
+	(wire
+		(pts
+			(xy 118.11 60.96) (xy 151.13 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "44a4ab9e-1bec-4a54-85a7-8a2ddd355219")
+	)
+	(wire
+		(pts
+			(xy 72.39 167.64) (xy 77.47 167.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "44d3a09c-9cab-404d-9691-6bbf469475ab")
+	)
+	(wire
+		(pts
+			(xy 151.13 121.92) (xy 118.11 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "46a3d8e4-7d85-4f44-976d-5673f9c03429")
+	)
+	(wire
+		(pts
+			(xy 118.11 109.22) (xy 118.11 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "47425084-5083-4ecc-b053-d5045f2aa32a")
+	)
+	(wire
+		(pts
+			(xy 151.13 111.76) (xy 151.13 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "47de9ef4-24e0-4a54-a1b1-8245b25522f4")
+	)
+	(wire
+		(pts
+			(xy 118.11 173.99) (xy 111.76 173.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "48ef8568-d149-40b5-92fb-76d915afd361")
+	)
+	(wire
+		(pts
+			(xy 72.39 59.69) (xy 39.37 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4b392e00-ec8e-4cee-a05f-460d2defaffc")
+	)
+	(wire
+		(pts
+			(xy 72.39 77.47) (xy 72.39 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4b48dba9-10e9-4ff4-8933-6040e89c4a91")
+	)
+	(wire
+		(pts
+			(xy 72.39 30.48) (xy 72.39 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4b8a662f-fe6f-409e-bd96-07482a433578")
+	)
+	(wire
+		(pts
+			(xy 118.11 58.42) (xy 118.11 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4bb13f01-d116-4c6d-a9fa-bba92eef703f")
+	)
+	(wire
+		(pts
+			(xy 72.39 138.43) (xy 72.39 140.97)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4bcdb95b-42c5-4d27-bb75-c3189c30fa36")
+	)
+	(wire
+		(pts
+			(xy 111.76 161.29) (xy 111.76 173.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4c5c64ce-19c2-4149-9f9b-bb5c73e3e1eb")
+	)
+	(wire
+		(pts
+			(xy 118.11 83.82) (xy 118.11 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4d3f9b72-e1cd-4d86-be41-5897e1e818cf")
+	)
+	(wire
+		(pts
+			(xy 39.37 135.89) (xy 39.37 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4df0aa18-f552-4d28-bc32-19a7540967b8")
+	)
+	(wire
+		(pts
+			(xy 72.39 125.73) (xy 72.39 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4ea0f68e-cf3f-4b52-9c45-7f2789fc1757")
+	)
+	(wire
+		(pts
+			(xy 229.87 50.8) (xy 234.95 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4fc1ea43-b11e-4ba7-a9ec-ba42c513794e")
+	)
+	(wire
+		(pts
+			(xy 111.76 109.22) (xy 111.76 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "50f8a8ab-8809-4bed-bdd5-a592ff16df68")
+	)
+	(wire
+		(pts
+			(xy 118.11 22.86) (xy 151.13 22.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "510eba56-1d0b-4cd4-9c57-2bc61cdb979b")
+	)
+	(wire
+		(pts
+			(xy 39.37 59.69) (xy 39.37 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "51b25dcd-5d48-4428-8af2-99c4115099d7")
+	)
+	(wire
+		(pts
+			(xy 72.39 34.29) (xy 39.37 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "52c22d51-a009-4cea-bdfd-c8f7ec729841")
+	)
+	(wire
+		(pts
+			(xy 72.39 135.89) (xy 39.37 135.89)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "52fb3376-1fb4-492e-9e6a-3176c4648545")
+	)
+	(wire
+		(pts
+			(xy 72.39 77.47) (xy 77.47 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "537761a3-052e-4e5a-bd35-0eb98532813d")
+	)
+	(wire
+		(pts
+			(xy 72.39 119.38) (xy 72.39 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "544c6150-4489-44a7-b652-a44fe5528c03")
+	)
+	(wire
+		(pts
+			(xy 72.39 165.1) (xy 72.39 167.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "55007bb2-254d-4b61-9429-3949e935bedc")
+	)
+	(wire
+		(pts
+			(xy 72.39 43.18) (xy 72.39 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "55521cc2-ddb6-4f50-9a23-c59e1528594d")
+	)
+	(wire
+		(pts
+			(xy 39.37 96.52) (xy 39.37 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "557c1c5e-e3d6-4c4f-9ff2-0a7218fca1c3")
+	)
+	(wire
+		(pts
+			(xy 118.11 173.99) (xy 118.11 170.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "56c10232-e3af-415f-be3c-40480a3315d5")
+	)
+	(wire
+		(pts
+			(xy 39.37 78.74) (xy 39.37 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5723e49e-ee0a-446b-8a72-b1fd8f64f98f")
+	)
+	(wire
+		(pts
+			(xy 187.96 58.42) (xy 187.96 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "58b3acbf-c2e4-49a5-97f9-0080a588807f")
+	)
+	(wire
+		(pts
+			(xy 118.11 77.47) (xy 118.11 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "590e1a5e-acbd-4b88-b467-991e37150e9a")
+	)
+	(wire
+		(pts
+			(xy 187.96 19.05) (xy 187.96 33.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "59f7fc37-d07a-4b1a-9ac8-a6ea7bf5e3a9")
+	)
+	(wire
+		(pts
+			(xy 39.37 100.33) (xy 72.39 100.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5cbba51a-bb0d-4c9d-b6bc-bed0e15cd96f")
+	)
+	(wire
+		(pts
+			(xy 118.11 109.22) (xy 111.76 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5d460695-5d5a-41fb-8fab-d9b3611b7a40")
+	)
+	(wire
+		(pts
+			(xy 34.29 58.42) (xy 39.37 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5f6f7cb9-4a68-46bb-99a8-ad001a24524e")
+	)
+	(wire
+		(pts
+			(xy 118.11 124.46) (xy 151.13 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5fdd5e46-b7e8-496c-81b3-16f7a16c1413")
+	)
+	(wire
+		(pts
+			(xy 39.37 40.64) (xy 39.37 36.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "610c9d22-0235-44e3-858f-f16edd16a5e0")
+	)
+	(wire
+		(pts
+			(xy 34.29 134.62) (xy 39.37 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "631e44b7-5581-45fb-8149-4e1f7c53c722")
+	)
+	(wire
+		(pts
+			(xy 111.76 121.92) (xy 111.76 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "63c8d0ef-cbb8-429c-ab0f-3e3e78829f1f")
+	)
+	(wire
+		(pts
+			(xy 72.39 179.07) (xy 72.39 181.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "64f34c0b-c615-4bf9-9999-1709fc6895d6")
+	)
+	(wire
+		(pts
+			(xy 151.13 161.29) (xy 118.11 161.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6643fa55-b0d7-46a2-bfe5-5112c9a0733d")
+	)
+	(wire
+		(pts
+			(xy 39.37 49.53) (xy 72.39 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "68b72059-a2d9-40cb-8650-be1c8964fb66")
+	)
+	(wire
+		(pts
+			(xy 39.37 113.03) (xy 72.39 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "69799a9e-6808-4a80-ac3b-53f199bc5809")
+	)
+	(wire
+		(pts
+			(xy 151.13 96.52) (xy 118.11 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6a60a39d-8436-4741-8df0-88ccbb7f01fb")
+	)
+	(wire
+		(pts
+			(xy 118.11 167.64) (xy 118.11 163.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6caea9d0-be6a-41bb-9c3d-265ec06b369e")
+	)
+	(wire
+		(pts
+			(xy 72.39 62.23) (xy 72.39 64.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6d2b0b16-dfda-444e-a43c-f43ae5e95145")
+	)
+	(wire
+		(pts
+			(xy 151.13 88.9) (xy 151.13 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6f4da99a-2640-46bd-aec0-3ae621b70edf")
+	)
+	(wire
+		(pts
+			(xy 72.39 158.75) (xy 72.39 162.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6f98ffc1-7546-4f55-ad25-d53110d792d6")
+	)
+	(wire
+		(pts
+			(xy 151.13 166.37) (xy 151.13 167.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "708faf0b-0dff-4ed2-91b6-b1a20de5fb9a")
+	)
+	(wire
+		(pts
+			(xy 118.11 33.02) (xy 111.76 33.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "709ab6f8-3e78-444a-a727-c360600e2afe")
+	)
+	(wire
+		(pts
+			(xy 151.13 67.31) (xy 151.13 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7136eba9-5a32-4337-ae4b-54235613b89b")
+	)
+	(wire
+		(pts
+			(xy 151.13 109.22) (xy 118.11 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "71a8c5c1-c590-4e53-9077-032dd9888d2c")
+	)
+	(wire
+		(pts
+			(xy 229.87 48.26) (xy 229.87 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "71b32123-860f-4f5d-836b-2be411431527")
+	)
+	(wire
+		(pts
+			(xy 118.11 86.36) (xy 151.13 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "727f54a9-9d4e-4c91-b864-23344c8617dc")
+	)
+	(wire
+		(pts
+			(xy 229.87 25.4) (xy 229.87 26.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "734c6839-fba6-4573-9371-197bd21fc8df")
+	)
+	(wire
+		(pts
+			(xy 151.13 25.4) (xy 151.13 26.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7620f18f-c4a6-4bdb-9ff1-c87bacda5895")
+	)
+	(wire
+		(pts
+			(xy 229.87 45.72) (xy 196.85 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7671e796-1227-49b9-a4de-259cc07bbe43")
+	)
+	(wire
+		(pts
+			(xy 39.37 173.99) (xy 39.37 171.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "768aea7b-df49-4980-8839-10cf00a8a35f")
+	)
+	(wire
+		(pts
+			(xy 229.87 58.42) (xy 196.85 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "769e1da2-10a1-41b1-bd2a-2dba7f72fd3f")
+	)
+	(wire
+		(pts
+			(xy 151.13 114.3) (xy 151.13 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "76ee241a-8f9d-445b-9132-6a8f44a57365")
+	)
+	(wire
+		(pts
+			(xy 109.22 19.05) (xy 111.76 19.05)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "76f24c43-67b9-4675-bea5-9938cd0b4eae")
+	)
+	(wire
+		(pts
+			(xy 39.37 187.96) (xy 39.37 185.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "77b14a90-7d0d-4abf-a5b1-6f074fae9f3b")
+	)
+	(wire
+		(pts
+			(xy 151.13 41.91) (xy 151.13 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "78d6eb3a-18ce-4a0f-8703-26f42cba1bf6")
+	)
+	(wire
+		(pts
+			(xy 229.87 35.56) (xy 229.87 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "78f8e87a-b7dc-4429-ab4e-66918632bda4")
+	)
+	(wire
+		(pts
+			(xy 229.87 54.61) (xy 229.87 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "792e1ac8-9cff-4537-b87e-e5dfd2359caf")
+	)
+	(wire
+		(pts
+			(xy 118.11 161.29) (xy 118.11 157.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7ab223ff-d9c6-4090-ae01-c5fe63356f05")
+	)
+	(wire
+		(pts
+			(xy 229.87 71.12) (xy 196.85 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7b81a0cd-f729-4a28-9c83-5883dcd5b12a")
+	)
+	(wire
+		(pts
+			(xy 72.39 189.23) (xy 39.37 189.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7bd48389-5aba-4c5f-8178-0f90272ebcb7")
+	)
+	(wire
+		(pts
+			(xy 151.13 38.1) (xy 156.21 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7c52b0fd-ed26-4d28-8dc0-99f562ea3820")
+	)
+	(wire
+		(pts
+			(xy 72.39 167.64) (xy 72.39 168.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7c6fc1a8-5aa6-4f29-a3e4-1006dd576616")
+	)
+	(wire
+		(pts
+			(xy 151.13 166.37) (xy 156.21 166.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7cc308e3-a4de-477b-a34a-1c4c73339628")
+	)
+	(wire
+		(pts
+			(xy 39.37 138.43) (xy 72.39 138.43)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7cf3b05f-10d8-4e4b-b832-840d0fd910a9")
+	)
+	(wire
+		(pts
+			(xy 72.39 39.37) (xy 72.39 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7d5482ad-a16a-4498-8325-e14212ee6e0a")
+	)
+	(wire
+		(pts
+			(xy 151.13 88.9) (xy 156.21 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7da75641-916c-4157-a4c5-11ae7d10304d")
+	)
+	(wire
+		(pts
+			(xy 72.39 93.98) (xy 72.39 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7e01ddc3-bb5c-4900-b7ed-1b803f627692")
+	)
+	(wire
+		(pts
+			(xy 187.96 33.02) (xy 187.96 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "800ca372-fa84-4c9b-ba4a-523ddeafce95")
+	)
+	(wire
+		(pts
+			(xy 187.96 58.42) (xy 196.85 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "801359f7-e87d-4f97-b6bf-ba794fd6ceb4")
+	)
+	(wire
+		(pts
+			(xy 39.37 91.44) (xy 39.37 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "81908588-4a19-42fe-aa13-75127ba25e87")
+	)
+	(wire
+		(pts
+			(xy 72.39 81.28) (xy 72.39 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8365a7fe-eb09-4450-a5c2-d25a62aea210")
+	)
+	(wire
+		(pts
+			(xy 34.29 109.22) (xy 34.29 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "83684c21-d935-4b21-9bae-28c7c51d6aef")
+	)
+	(wire
+		(pts
+			(xy 72.39 154.94) (xy 77.47 154.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "83864202-b9f6-4977-9d93-3e41ea5591be")
+	)
+	(wire
+		(pts
+			(xy 196.85 58.42) (xy 196.85 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "84aa05e9-ee06-40df-89cf-3affdb5bebcd")
+	)
+	(wire
+		(pts
+			(xy 111.76 33.02) (xy 111.76 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "851fc632-a4ce-4d94-b879-7378197810ef")
+	)
+	(wire
+		(pts
+			(xy 39.37 74.93) (xy 72.39 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "86af3d9e-51c0-43ee-b94c-17e1bc052b66")
+	)
+	(wire
+		(pts
+			(xy 151.13 48.26) (xy 151.13 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "86d7b0b9-221e-4a98-be57-d6f36d11a446")
+	)
+	(wire
+		(pts
+			(xy 39.37 58.42) (xy 39.37 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "87627b9a-0987-49fb-9a98-9f27a1fe1a42")
+	)
+	(wire
+		(pts
+			(xy 229.87 29.21) (xy 229.87 33.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "890e3fdc-d07f-486e-b4eb-24d34096444b")
+	)
+	(wire
+		(pts
+			(xy 34.29 147.32) (xy 34.29 161.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "89d1734a-be5d-44c4-8cdd-3de9af87dd7e")
+	)
+	(wire
+		(pts
+			(xy 151.13 124.46) (xy 151.13 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8a3d9043-4a1a-4de0-b706-51107af97adc")
+	)
+	(wire
+		(pts
+			(xy 34.29 83.82) (xy 34.29 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8a917d15-68fd-42a6-9b6d-97a45f657734")
+	)
+	(wire
+		(pts
+			(xy 118.11 177.8) (xy 151.13 177.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8aa1c105-4ee9-4d58-be1f-de3895b99581")
+	)
+	(wire
+		(pts
+			(xy 39.37 116.84) (xy 39.37 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8af184bb-f9e4-445b-a9e8-c63321aab2cd")
+	)
+	(wire
+		(pts
+			(xy 118.11 90.17) (xy 118.11 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8bb48536-496e-4980-a62d-82788e357e57")
+	)
+	(wire
+		(pts
+			(xy 118.11 154.94) (xy 118.11 151.13)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8c1a08a5-b152-46ce-9936-09bf02b855d8")
+	)
+	(wire
+		(pts
+			(xy 72.39 72.39) (xy 39.37 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8c594d5a-70cd-4b02-8753-585c5999884f")
+	)
+	(wire
+		(pts
+			(xy 111.76 96.52) (xy 111.76 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8c71e74c-38d2-44ec-9272-b1cf2836004a")
+	)
+	(wire
+		(pts
+			(xy 151.13 118.11) (xy 151.13 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8ecbcb0b-2bff-4b09-ac90-584538851e79")
+	)
+	(wire
+		(pts
+			(xy 39.37 156.21) (xy 39.37 152.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "90dbe134-9328-4c7d-8883-e27c855e0bc3")
+	)
+	(wire
+		(pts
+			(xy 151.13 29.21) (xy 151.13 33.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "931c6bfa-9579-487d-bac3-517105f6d4b1")
+	)
+	(wire
+		(pts
+			(xy 229.87 63.5) (xy 234.95 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "93ea24ae-aadc-4745-a8d9-b83a50b33299")
+	)
+	(wire
+		(pts
+			(xy 118.11 45.72) (xy 111.76 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9520411d-0c23-4861-a35a-a1ca6842cfc9")
+	)
+	(wire
+		(pts
+			(xy 34.29 33.02) (xy 34.29 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "95223f58-7f31-4733-b0c9-6e57e161bbe8")
+	)
+	(wire
+		(pts
+			(xy 229.87 60.96) (xy 229.87 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "95dbd198-ec5c-4d69-b73b-b8fb1669d4ea")
+	)
+	(wire
+		(pts
+			(xy 72.39 64.77) (xy 72.39 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "96539cc4-23f7-4065-b027-19f7c1cc150c")
+	)
+	(wire
+		(pts
+			(xy 151.13 157.48) (xy 151.13 161.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "96a9d12e-001d-4e76-a6e7-34d86275862a")
+	)
+	(wire
+		(pts
+			(xy 118.11 121.92) (xy 111.76 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "997b8fa6-11bd-4ed0-802d-4d40614bc096")
+	)
+	(wire
+		(pts
+			(xy 151.13 180.34) (xy 151.13 181.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9a028e65-a005-4306-92b5-d94a773fbc18")
+	)
+	(wire
+		(pts
+			(xy 72.39 175.26) (xy 39.37 175.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9a413558-c0b1-4437-8c52-9f0ffa003b30")
+	)
+	(wire
+		(pts
+			(xy 39.37 36.83) (xy 72.39 36.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9a479ca2-7d7c-4252-8185-5bb61af5198f")
+	)
+	(wire
+		(pts
+			(xy 34.29 58.42) (xy 34.29 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9b5c7014-22ef-4b52-b7bb-eee61a9bd458")
+	)
+	(wire
+		(pts
+			(xy 151.13 54.61) (xy 151.13 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9b9e4e01-24e9-498e-957a-b706e462b196")
+	)
+	(wire
+		(pts
+			(xy 196.85 33.02) (xy 196.85 29.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9c4724cb-eef3-4962-92fb-24e38cf6d83e")
+	)
+	(wire
+		(pts
+			(xy 72.39 171.45) (xy 72.39 175.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9c535cca-d9dc-4778-acf7-3357b8a6aefa")
+	)
+	(wire
+		(pts
+			(xy 72.39 87.63) (xy 72.39 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9d2ea64d-5abf-43d6-a1c2-095fc7d4cda5")
+	)
+	(wire
+		(pts
+			(xy 39.37 134.62) (xy 39.37 132.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9e8400c6-71e0-4b4e-9763-f9cc91acfeaf")
+	)
+	(wire
+		(pts
+			(xy 111.76 173.99) (xy 111.76 187.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9f3143b6-49b6-40b5-ab71-ed4be5cc2f98")
+	)
+	(wire
+		(pts
+			(xy 118.11 71.12) (xy 118.11 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a0b5a181-4a88-4b74-ac25-1918516212b7")
+	)
+	(wire
+		(pts
+			(xy 39.37 27.94) (xy 39.37 24.13)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a1246783-d3a0-45bd-b5bf-9f3ae04ce20c")
+	)
+	(wire
+		(pts
+			(xy 196.85 71.12) (xy 196.85 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a173cddf-82dc-4e80-b0c5-223fb9a0ea58")
+	)
+	(wire
+		(pts
+			(xy 151.13 60.96) (xy 151.13 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a22bf4a6-4fd3-4aa1-9853-449718390ac6")
+	)
+	(wire
+		(pts
+			(xy 39.37 34.29) (xy 39.37 33.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a23a13ab-e766-4b3e-94af-4283f3421439")
+	)
+	(wire
+		(pts
+			(xy 229.87 67.31) (xy 229.87 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a4826a0e-4810-4798-93be-bd733f985b57")
+	)
+	(wire
+		(pts
+			(xy 151.13 73.66) (xy 151.13 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a4efd81a-60cd-4969-9a04-4bf764574e11")
+	)
+	(wire
+		(pts
+			(xy 72.39 110.49) (xy 39.37 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a5927c0d-a9fd-4ac2-a752-a64e124eb248")
+	)
+	(wire
+		(pts
+			(xy 229.87 41.91) (xy 229.87 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a5ca908b-e73e-454c-9555-5ac8251048c2")
+	)
+	(wire
+		(pts
+			(xy 72.39 64.77) (xy 77.47 64.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a6ae69e6-07ef-44bc-888d-807488f8d258")
+	)
+	(wire
+		(pts
+			(xy 72.39 24.13) (xy 72.39 26.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a6d12205-54c3-423d-a5bc-c91756245200")
+	)
+	(wire
+		(pts
+			(xy 34.29 147.32) (xy 39.37 147.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a70ce8de-5aa6-4fe0-b7ee-e5d08065d6bf")
+	)
+	(wire
+		(pts
+			(xy 151.13 63.5) (xy 156.21 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a8ca2115-8175-40b5-90da-3f87ef1785fc")
+	)
+	(wire
+		(pts
+			(xy 151.13 35.56) (xy 151.13 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a9511d82-af0b-43ce-9d6e-ca0db5bd2ee1")
+	)
+	(wire
+		(pts
+			(xy 72.39 115.57) (xy 77.47 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a9d1bbf6-7659-4743-b761-c8af338dced6")
+	)
+	(wire
+		(pts
+			(xy 196.85 60.96) (xy 229.87 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "aa6235c5-a21e-4a9e-aaab-0858918be0bc")
+	)
+	(wire
+		(pts
+			(xy 34.29 161.29) (xy 39.37 161.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ab40829d-dc1b-47d1-ae00-264a0d2c6b54")
+	)
+	(wire
+		(pts
+			(xy 39.37 148.59) (xy 39.37 147.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ab98e92d-f59d-4f7c-8535-1e867d8e3940")
+	)
+	(wire
+		(pts
+			(xy 118.11 99.06) (xy 151.13 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ac81f416-b096-4000-b614-27ef14fb2885")
+	)
+	(wire
+		(pts
+			(xy 229.87 50.8) (xy 229.87 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ad91df68-d4ca-4fea-8f2e-6d05096b2a7d")
+	)
+	(wire
+		(pts
+			(xy 151.13 170.18) (xy 151.13 173.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "add92a5b-42ef-4dfc-b597-8cd3edb4b344")
+	)
+	(wire
+		(pts
+			(xy 118.11 33.02) (xy 118.11 29.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ae75cf4b-59b9-4ab4-9fd3-27905dd28ab3")
+	)
+	(wire
+		(pts
+			(xy 118.11 83.82) (xy 111.76 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "aeb91a56-ddca-44bd-9056-c1644ca2b7c1")
+	)
+	(wire
+		(pts
+			(xy 196.85 48.26) (xy 229.87 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "afdcd28b-b84a-418a-a815-d7285e4f1fa2")
+	)
+	(wire
+		(pts
+			(xy 229.87 33.02) (xy 196.85 33.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b03574e3-aa7a-46ae-b91b-303c13fab419")
+	)
+	(wire
+		(pts
+			(xy 151.13 76.2) (xy 156.21 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b077adbc-2500-45f7-bd30-1bc0fbba1daa")
+	)
+	(wire
+		(pts
+			(xy 72.39 113.03) (xy 72.39 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b07bd238-5c61-4789-99af-df6bcbdaa866")
+	)
+	(wire
+		(pts
+			(xy 72.39 132.08) (xy 72.39 135.89)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b2d65b72-e264-472f-9236-e1eff07879e4")
+	)
+	(wire
+		(pts
+			(xy 118.11 26.67) (xy 118.11 22.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b323d32a-487d-4b34-b041-bb6760a5ec2b")
+	)
+	(wire
+		(pts
+			(xy 118.11 181.61) (xy 118.11 177.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b6c6b6aa-29a1-47aa-8dbf-f99f1293c47e")
+	)
+	(wire
+		(pts
+			(xy 39.37 152.4) (xy 72.39 152.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b789b595-dd21-488d-9c30-4ea70a47a65a")
+	)
+	(wire
+		(pts
+			(xy 39.37 46.99) (xy 39.37 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b79cc205-d771-4530-bca8-eb8ba1d85e55")
+	)
+	(wire
+		(pts
+			(xy 118.11 73.66) (xy 151.13 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b83a0002-9f16-4b85-a418-7a809aeec050")
+	)
+	(wire
+		(pts
+			(xy 34.29 96.52) (xy 39.37 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b9a6692e-1bbc-4e77-8f99-2736e1d9c067")
+	)
+	(wire
+		(pts
+			(xy 151.13 101.6) (xy 151.13 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bb5aa7c6-75b6-4c43-beef-4fb4f93b828e")
+	)
+	(wire
+		(pts
+			(xy 39.37 24.13) (xy 72.39 24.13)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bbfc3a81-72ea-4afc-94a8-dd0ca862d9a1")
+	)
+	(wire
+		(pts
+			(xy 196.85 45.72) (xy 196.85 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bce4251b-cfbc-40f8-9393-a9cf39426c4b")
+	)
+	(wire
+		(pts
+			(xy 118.11 128.27) (xy 118.11 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "be473ad9-35fd-47d8-82f4-50a928cbaa39")
+	)
+	(wire
+		(pts
+			(xy 39.37 125.73) (xy 72.39 125.73)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c022d3da-4d77-4439-bb39-5526b179b0c8")
+	)
+	(wire
+		(pts
+			(xy 118.11 187.96) (xy 118.11 184.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c1e9ab3e-fd2b-45f9-8784-f716d1f09c12")
+	)
+	(wire
+		(pts
+			(xy 151.13 63.5) (xy 151.13 64.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c3aa2c10-0b91-454c-a282-1e9238adfed4")
+	)
+	(wire
+		(pts
+			(xy 39.37 104.14) (xy 39.37 100.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c40024c8-9ea6-41c4-be9e-3bfaea88c83e")
+	)
+	(wire
+		(pts
+			(xy 151.13 134.62) (xy 118.11 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c4985850-4d9a-458a-8f9d-264ed6ea8478")
+	)
+	(wire
+		(pts
+			(xy 34.29 187.96) (xy 39.37 187.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c6ce8d71-1ce7-42dd-8f80-6e7833a2a3ba")
+	)
+	(wire
+		(pts
+			(xy 72.39 144.78) (xy 72.39 148.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c8098f77-3388-42e9-ba19-d67e2fe0890d")
+	)
+	(wire
+		(pts
+			(xy 118.11 134.62) (xy 111.76 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c8cd336c-611a-4ef2-a02c-72e85bf5d45e")
+	)
+	(wire
+		(pts
+			(xy 39.37 165.1) (xy 72.39 165.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c9b76a6a-71ae-4070-95f2-1667360371c8")
+	)
+	(wire
+		(pts
+			(xy 151.13 25.4) (xy 156.21 25.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cae5adf1-07db-4eba-9ef1-08bac4768870")
+	)
+	(wire
+		(pts
+			(xy 151.13 184.15) (xy 151.13 187.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cc0a0eb5-15de-49ed-9938-b2d10e9b0255")
+	)
+	(wire
+		(pts
+			(xy 118.11 71.12) (xy 111.76 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cd2d84fb-aac3-4f3a-9bd7-962a5ecd2134")
+	)
+	(wire
+		(pts
+			(xy 39.37 179.07) (xy 72.39 179.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cd6695e3-a958-4a9d-a3ff-ea91a8101c4a")
+	)
+	(wire
+		(pts
+			(xy 187.96 33.02) (xy 196.85 33.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ce50d247-a9b1-4fc8-817d-4ac4b87d4314")
+	)
+	(wire
+		(pts
+			(xy 72.39 49.53) (xy 72.39 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ce5a9737-df3e-449f-849d-a3f98904e527")
+	)
+	(wire
+		(pts
+			(xy 72.39 52.07) (xy 72.39 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cf5b9a30-d80d-4bf2-b34e-fd80d74c48f2")
+	)
+	(wire
+		(pts
+			(xy 72.39 140.97) (xy 72.39 142.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d0632fdc-1a81-4844-9f6f-76e31c0ff9e0")
+	)
+	(wire
+		(pts
+			(xy 229.87 38.1) (xy 234.95 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d11c1c23-bc54-4e8c-befb-aaae202eba79")
+	)
+	(wire
+		(pts
+			(xy 118.11 134.62) (xy 118.11 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d13ffaf4-2935-40fd-9013-5b06b0dac7e3")
+	)
+	(wire
+		(pts
+			(xy 39.37 62.23) (xy 72.39 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d293176e-49a1-406a-99f5-11f397206d6c")
+	)
+	(wire
+		(pts
+			(xy 118.11 52.07) (xy 118.11 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d2fa196e-8ee5-47a9-b34a-e8d0858268b2")
+	)
+	(wire
+		(pts
+			(xy 72.39 181.61) (xy 72.39 182.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d39e1cb0-a845-4bb0-95f7-aa47b3aa2d22")
+	)
+	(wire
+		(pts
+			(xy 151.13 163.83) (xy 151.13 166.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d4376548-258a-47f3-8c20-983c8f5f16b1")
+	)
+	(wire
+		(pts
+			(xy 34.29 45.72) (xy 39.37 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d4a44717-4cfb-467a-8593-9be4256a7dea")
+	)
+	(wire
+		(pts
+			(xy 118.11 187.96) (xy 111.76 187.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d7ba9bce-0381-4c99-b19e-e7be6f26b906")
+	)
+	(wire
+		(pts
+			(xy 118.11 151.13) (xy 151.13 151.13)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d8036a5b-9d00-498f-8254-8c18882d121a")
+	)
+	(wire
+		(pts
+			(xy 72.39 68.58) (xy 72.39 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d889708e-dac8-4134-97a4-97cf73d20db1")
+	)
+	(wire
+		(pts
+			(xy 72.39 90.17) (xy 72.39 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dbcdaaf1-24e9-4a3f-84dd-6519fedfc24d")
+	)
+	(wire
+		(pts
+			(xy 196.85 22.86) (xy 229.87 22.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dbcfaeaf-1333-42d9-94a3-10bc988ad9ea")
+	)
+	(wire
+		(pts
+			(xy 151.13 33.02) (xy 118.11 33.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dc0932e1-0729-4864-89e0-8f99bd57f074")
+	)
+	(wire
+		(pts
+			(xy 72.39 46.99) (xy 39.37 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dc1653a9-b84d-4315-8570-41d4fdae6621")
+	)
+	(wire
+		(pts
+			(xy 187.96 71.12) (xy 196.85 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dc6034c5-3abe-439a-954d-6726a8d3492d")
+	)
+	(wire
+		(pts
+			(xy 151.13 187.96) (xy 118.11 187.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dcca725d-631b-4a8c-a1bf-44adbbd0a692")
+	)
+	(wire
+		(pts
+			(xy 111.76 58.42) (xy 111.76 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dd646daa-dbdf-44b7-a15f-2858987cddf8")
+	)
+	(wire
+		(pts
+			(xy 72.39 123.19) (xy 39.37 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dee47466-55b7-49f2-a795-2010dc5fd925")
+	)
+	(wire
+		(pts
+			(xy 151.13 105.41) (xy 151.13 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dfc0c6f3-5d1a-4c79-90ad-b763864e3eea")
+	)
+	(wire
+		(pts
+			(xy 39.37 161.29) (xy 39.37 158.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dfebb819-270e-4b47-aeb1-7fa06f9089ef")
+	)
+	(wire
+		(pts
+			(xy 196.85 64.77) (xy 196.85 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e122b4c6-212a-4eb9-8c38-7bef5266894a")
+	)
+	(wire
+		(pts
+			(xy 39.37 162.56) (xy 39.37 161.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e1c75e79-81dd-481d-80ae-cc9c8fd5942a")
+	)
+	(wire
+		(pts
+			(xy 39.37 85.09) (xy 39.37 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e20d02d7-7f3f-4547-8cb5-7007c0220006")
+	)
+	(wire
+		(pts
+			(xy 184.15 19.05) (xy 187.96 19.05)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e27f3499-ede5-4829-893a-50a19fa8fb92")
+	)
+	(wire
+		(pts
+			(xy 187.96 45.72) (xy 187.96 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e2b7f458-4f23-4bd9-b7d5-24be5173012d")
+	)
+	(wire
+		(pts
+			(xy 196.85 52.07) (xy 196.85 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e406ff03-8849-4a05-8270-c001b02364f3")
+	)
+	(wire
+		(pts
+			(xy 118.11 102.87) (xy 118.11 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e60672a6-770d-4fff-ae65-b7c6b987aff9")
+	)
+	(wire
+		(pts
+			(xy 151.13 114.3) (xy 156.21 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e654b387-65b0-463b-a2bb-03a99cfb46ed")
+	)
+	(wire
+		(pts
+			(xy 72.39 55.88) (xy 72.39 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e6add796-056d-4e14-8712-cdb808a67ad2")
+	)
+	(wire
+		(pts
+			(xy 39.37 129.54) (xy 39.37 125.73)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e80c6041-7e8b-464a-9399-e03881e61065")
+	)
+	(wire
+		(pts
+			(xy 118.11 35.56) (xy 151.13 35.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e87a48ab-3d7d-4f7d-a7f7-e0b839e77ac1")
+	)
+	(wire
+		(pts
+			(xy 39.37 109.22) (xy 39.37 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e98dbdd9-346d-4558-b381-880bde8740cd")
+	)
+	(wire
+		(pts
+			(xy 34.29 83.82) (xy 39.37 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ea426455-1c06-4108-b426-967aca04bcc9")
+	)
+	(wire
+		(pts
+			(xy 111.76 71.12) (xy 111.76 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ec9ba2c4-c69b-4069-b04c-7266a289fca6")
+	)
+	(wire
+		(pts
+			(xy 196.85 39.37) (xy 196.85 35.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ece6bdfd-d346-40e4-838a-fda33f26bb5f")
+	)
+	(wire
+		(pts
+			(xy 118.11 121.92) (xy 118.11 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ed38a4d8-1a31-4e40-a1d1-a9d16d0fd424")
+	)
+	(wire
+		(pts
+			(xy 151.13 86.36) (xy 151.13 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "edbc64fd-32e8-4056-b9b3-78a0eeecffb6")
+	)
+	(wire
+		(pts
+			(xy 151.13 71.12) (xy 118.11 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f10450a2-0705-40c0-af31-5a4fee06bdc7")
+	)
+	(wire
+		(pts
+			(xy 72.39 115.57) (xy 72.39 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f1862930-1b71-43f2-8323-ad8ae85ed196")
+	)
+	(wire
+		(pts
+			(xy 72.39 162.56) (xy 39.37 162.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f25c0fff-b877-4796-800a-10f56283eda8")
+	)
+	(wire
+		(pts
+			(xy 34.29 173.99) (xy 34.29 187.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f2ffb563-0b12-4c31-a974-225ec15a49fe")
+	)
+	(wire
+		(pts
+			(xy 118.11 161.29) (xy 111.76 161.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f4332f30-fabf-43e8-83ca-44e4dec4b4f6")
+	)
+	(wire
+		(pts
+			(xy 34.29 96.52) (xy 34.29 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f6f61a1a-5f49-4141-8f1b-61f2e2420b4d")
+	)
+	(wire
+		(pts
+			(xy 72.39 97.79) (xy 39.37 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f7705777-13ef-4957-a2fc-cc39187c46b2")
+	)
+	(wire
+		(pts
+			(xy 229.87 25.4) (xy 234.95 25.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f8984bb8-930c-47fa-b637-61a3718cd20b")
+	)
+	(wire
+		(pts
+			(xy 151.13 22.86) (xy 151.13 25.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f9ba612e-70ab-46e5-80b6-121e481d2a02")
+	)
+	(wire
+		(pts
+			(xy 151.13 45.72) (xy 118.11 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fa3e747b-1e78-4769-999d-d333ff5b914c")
+	)
+	(wire
+		(pts
+			(xy 39.37 175.26) (xy 39.37 173.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fa54f951-9e40-49f7-bd3b-430331a109b0")
+	)
+	(wire
+		(pts
+			(xy 151.13 80.01) (xy 151.13 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fa5644a1-5719-4b50-9c7b-f5bb24b81f0c")
+	)
+	(wire
+		(pts
+			(xy 34.29 109.22) (xy 39.37 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fa7bb3d0-d780-4fac-8a22-4dc5435700a4")
+	)
+	(wire
+		(pts
+			(xy 31.75 19.05) (xy 34.29 19.05)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fa8922e5-5375-494c-8c99-2d015ec56910")
+	)
+	(wire
+		(pts
+			(xy 72.39 39.37) (xy 77.47 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "facdfb1a-d00b-4b22-9090-0c46e1863fd5")
+	)
+	(wire
+		(pts
+			(xy 72.39 26.67) (xy 72.39 27.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fb5e579f-6026-42e0-937f-523ec73a97a9")
+	)
+	(wire
+		(pts
+			(xy 72.39 102.87) (xy 72.39 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fd4b9255-3346-43c2-82d8-d666cd75b478")
+	)
+	(wire
+		(pts
+			(xy 39.37 66.04) (xy 39.37 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fd758ae0-aaca-4fd3-ac8d-40c309653ffa")
+	)
+	(wire
+		(pts
+			(xy 118.11 111.76) (xy 151.13 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fdc62a71-bac1-46a7-a440-04f326f0c2e3")
+	)
+	(wire
+		(pts
+			(xy 118.11 48.26) (xy 151.13 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fe17a6a1-facf-45e7-a04f-e1ed88d45dc7")
+	)
+	(wire
+		(pts
+			(xy 151.13 38.1) (xy 151.13 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ff2a1b87-e515-4fb6-8610-2dc191e4764f")
+	)
+	(wire
+		(pts
+			(xy 151.13 83.82) (xy 118.11 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ffb173d1-bbc5-420b-ad72-bb6438533bc6")
+	)
+	(global_label "RowK4"
+		(shape output)
+		(at 156.21 38.1 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "102122de-6d72-4767-a044-59a1bf8ef975")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 165.4242 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "RowK6"
+		(shape output)
+		(at 234.95 63.5 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "11706e41-38fc-4709-b02c-61deac2c98af")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 244.1642 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "COM1{slash}KS0"
+		(shape output)
+		(at 31.75 19.05 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "197f7e12-88cb-48f6-9939-4307bcea5976")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 18.4839 19.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "RowK6"
+		(shape output)
+		(at 77.47 64.77 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "1ec4bba7-2ae2-455b-8b1c-7fb4501851d7")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 86.6842 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "RowK10"
+		(shape output)
+		(at 77.47 115.57 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "3402cdb5-f81d-482a-9673-ccb976096e3f")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 86.6842 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "RowK14"
+		(shape output)
+		(at 156.21 166.37 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "3fa7e11f-9890-4ab7-a328-26fd21d36936")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 165.4242 166.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "RowK4"
+		(shape output)
+		(at 77.47 39.37 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "52257eb7-214b-46a5-a46e-2afd5d93ae69")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 86.6842 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "RowK15"
+		(shape output)
+		(at 156.21 180.34 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "65dc5a41-e8e9-47b5-93a6-b0f2348e8470")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 165.4242 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "RowK8"
+		(shape output)
+		(at 156.21 88.9 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "72608eda-c30d-48e8-a853-756a71e73ff9")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 165.4242 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "RowK14"
+		(shape output)
+		(at 77.47 167.64 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "7d3ae1e2-72c2-45b8-a4c8-529e6fb840ce")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 86.6842 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "RowK15"
+		(shape output)
+		(at 77.47 181.61 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "828d5ae0-a29c-4a2c-b093-1eb4db6debc7")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 86.6842 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "RowK13"
+		(shape output)
+		(at 77.47 154.94 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "88560b4e-b841-42ea-af08-5883ac1547ca")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 86.6842 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "RowK5"
+		(shape output)
+		(at 234.95 50.8 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "8b5a0d50-ffc0-44b6-9b0d-068b69392a58")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 244.1642 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "RowK5"
+		(shape output)
+		(at 77.47 52.07 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "9c02751e-00f5-41fb-943b-a3f43310903c")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 86.6842 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "RowK10"
+		(shape output)
+		(at 156.21 114.3 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "a0a9ffc8-144b-40e0-94d5-ef617f44fb51")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 165.4242 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "RowK7"
+		(shape output)
+		(at 77.47 77.47 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "acfeb50a-bba4-43e8-85aa-b2e17564a42c")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 86.6842 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "RowK4"
+		(shape output)
+		(at 234.95 38.1 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "ba85d0d5-e097-470e-95a5-3646de6a4f22")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 244.1642 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "RowK3"
+		(shape output)
+		(at 234.95 25.4 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "bb8791cb-d139-43e0-bb4d-cba37226a341")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 244.1642 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "RowK11"
+		(shape output)
+		(at 156.21 127 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "be347279-ff1b-4c95-9e6e-16376c445c7e")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 165.4242 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "RowK5"
+		(shape output)
+		(at 156.21 50.8 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "c0955f36-8cf5-4cc6-9ae2-ab2208bbf3c3")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 165.4242 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "RowK3"
+		(shape output)
+		(at 77.47 26.67 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "c484985d-7d2d-477a-b339-efdc78f8a160")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 86.6842 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "RowK13"
+		(shape output)
+		(at 156.21 153.67 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "cdfc6956-4b2b-4c3e-a9f6-eb2ee2f77d30")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 165.4242 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "COM3/KS2"
+		(shape output)
+		(at 184.15 19.05 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "d36c81a4-08ea-4adc-8945-52f1e4fb833b")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 170.8839 19.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "RowK12"
+		(shape output)
+		(at 77.47 140.97 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "d50d27ff-5634-4c21-89b6-c12bc7f5fc55")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 86.6842 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "RowK8"
+		(shape output)
+		(at 77.47 90.17 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "d726d74b-04bb-4244-a68a-6989471d11dd")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 86.6842 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "RowK11"
+		(shape output)
+		(at 77.47 128.27 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "df8f39dd-ace3-4a72-a04c-1bec8acf0631")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 86.6842 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "RowK9"
+		(shape output)
+		(at 77.47 102.87 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "e184c14a-66ad-440b-907c-3b063c8fcd28")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 86.6842 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "RowK6"
+		(shape output)
+		(at 156.21 63.5 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "e275b62f-4562-4171-99c4-9f36565bad73")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 165.4242 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "RowK9"
+		(shape output)
+		(at 156.21 101.6 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "e8cfc571-037e-48a5-88db-78e60c35219d")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 165.4242 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "RowK3"
+		(shape output)
+		(at 156.21 25.4 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "f6b43f95-08f4-4b38-9584-7222fa327936")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 165.4242 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "COM2/KS1"
+		(shape output)
+		(at 109.22 19.05 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "f946c1da-5a83-43a2-bea5-cf32777a1384")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 95.9539 19.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "RowK7"
+		(shape output)
+		(at 156.21 76.2 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "f97b78e6-fdb7-42c5-8f8d-83a814fc23a3")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 165.4242 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(symbol
+		(lib_id "SamacSys_Parts:B3F-1000S")
+		(at 118.11 64.77 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "0b153c18-0be1-4339-aa64-7a711549c191")
+		(property "Reference" "S18"
+			(at 125.73 59.436 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "B3F-1000S"
+			(at 134.62 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "SamacSys_parts:B3F1060"
+			(at 147.32 159.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.mouser.com/datasheet/2/307/en-b3f-13826.pdf"
+			(at 147.32 259.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "Tactile Switches 6x6 Flat 4.3mm Btn Force 100g w/o Grd"
+			(at 118.11 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Height" "7"
+			(at 147.32 459.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "Omron Electronics"
+			(at 147.32 559.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "B3F-1000S"
+			(at 147.32 659.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "653-B3F-1000-S"
+			(at 147.32 759.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Omron-Electronics/B3F-1000S?qs=C6KiJco3hx0Z3qfxWTJOrg%3D%3D"
+			(at 147.32 859.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Arrow Part Number" ""
+			(at 147.32 959.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Arrow Price/Stock" ""
+			(at 147.32 1059.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "eea140c7-3323-4416-8fba-d70886760c48")
+		)
+		(pin "2"
+			(uuid "4709579d-d6b3-4ef0-9098-331edd0bb3f1")
+		)
+		(pin "4"
+			(uuid "b996f67c-024c-4b2e-abb8-b64a7d55b757")
+		)
+		(pin "1"
+			(uuid "b7e8ec0b-6e65-4e8c-826a-a8303f3cabd2")
+		)
+		(instances
+			(project "mainBorad_R1"
+				(path "/83af791a-9776-40a7-82ad-9528ff7474b8/24e2804b-4742-4200-b229-1e746b2fe8ab"
+					(reference "S18")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "SamacSys_Parts:B3F-1000S")
+		(at 39.37 116.84 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "0e983437-6011-428e-b07b-77f485e04d88")
+		(property "Reference" "S9"
+			(at 46.99 111.506 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "B3F-1000S"
+			(at 55.88 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "SamacSys_parts:B3F1060"
+			(at 68.58 211.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.mouser.com/datasheet/2/307/en-b3f-13826.pdf"
+			(at 68.58 311.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "Tactile Switches 6x6 Flat 4.3mm Btn Force 100g w/o Grd"
+			(at 39.37 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Height" "7"
+			(at 68.58 511.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "Omron Electronics"
+			(at 68.58 611.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "B3F-1000S"
+			(at 68.58 711.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "653-B3F-1000-S"
+			(at 68.58 811.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Omron-Electronics/B3F-1000S?qs=C6KiJco3hx0Z3qfxWTJOrg%3D%3D"
+			(at 68.58 911.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Arrow Part Number" ""
+			(at 68.58 1011.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Arrow Price/Stock" ""
+			(at 68.58 1111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "35fb864f-36b1-4466-ae65-0c1143d9d63c")
+		)
+		(pin "2"
+			(uuid "45d37ad9-327a-4bc6-aa44-70eb33d48616")
+		)
+		(pin "4"
+			(uuid "0b09e3d8-74b8-4828-afa9-5cd8ed7709d7")
+		)
+		(pin "1"
+			(uuid "b7c9f8b0-1bea-4b67-8074-2bf474fdbed5")
+		)
+		(instances
+			(project "mainBorad_R1"
+				(path "/83af791a-9776-40a7-82ad-9528ff7474b8/24e2804b-4742-4200-b229-1e746b2fe8ab"
+					(reference "S9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "SamacSys_Parts:B3F-1000S")
+		(at 196.85 26.67 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "0f397d57-011c-439a-855f-3c18da5c0c94")
+		(property "Reference" "S27"
+			(at 204.47 21.336 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "B3F-1000S"
+			(at 213.36 21.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "SamacSys_parts:B3F1060"
+			(at 226.06 121.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.mouser.com/datasheet/2/307/en-b3f-13826.pdf"
+			(at 226.06 221.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "Tactile Switches 6x6 Flat 4.3mm Btn Force 100g w/o Grd"
+			(at 196.85 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Height" "7"
+			(at 226.06 421.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "Omron Electronics"
+			(at 226.06 521.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "B3F-1000S"
+			(at 226.06 621.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "653-B3F-1000-S"
+			(at 226.06 721.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Omron-Electronics/B3F-1000S?qs=C6KiJco3hx0Z3qfxWTJOrg%3D%3D"
+			(at 226.06 821.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Arrow Part Number" ""
+			(at 226.06 921.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Arrow Price/Stock" ""
+			(at 226.06 1021.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "73a50651-f898-45e6-9d52-eb698293ade2")
+		)
+		(pin "2"
+			(uuid "a3c774fe-e460-4154-a2f4-53ce8524f70e")
+		)
+		(pin "4"
+			(uuid "dc378fad-bf3b-44ef-9f63-5f29c849beed")
+		)
+		(pin "1"
+			(uuid "6eb39c58-033b-47f8-b39b-3fc61279d793")
+		)
+		(instances
+			(project "mainBorad_R1"
+				(path "/83af791a-9776-40a7-82ad-9528ff7474b8/24e2804b-4742-4200-b229-1e746b2fe8ab"
+					(reference "S27")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "SamacSys_Parts:B3F-1000S")
+		(at 39.37 27.94 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "140e68c7-7e83-4ecc-b92a-f81803b72fa4")
+		(property "Reference" "S2"
+			(at 46.99 22.606 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "B3F-1000S"
+			(at 55.88 22.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "SamacSys_parts:B3F1060"
+			(at 68.58 122.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.mouser.com/datasheet/2/307/en-b3f-13826.pdf"
+			(at 68.58 222.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "Tactile Switches 6x6 Flat 4.3mm Btn Force 100g w/o Grd"
+			(at 39.37 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Height" "7"
+			(at 68.58 422.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "Omron Electronics"
+			(at 68.58 522.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "B3F-1000S"
+			(at 68.58 622.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "653-B3F-1000-S"
+			(at 68.58 722.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Omron-Electronics/B3F-1000S?qs=C6KiJco3hx0Z3qfxWTJOrg%3D%3D"
+			(at 68.58 822.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Arrow Part Number" ""
+			(at 68.58 922.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Arrow Price/Stock" ""
+			(at 68.58 1022.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "a4be5717-557e-485a-82e4-9e921a29bc9a")
+		)
+		(pin "2"
+			(uuid "dbaf5709-ee73-4d78-a0ec-ec41dd32b74c")
+		)
+		(pin "4"
+			(uuid "686c54bb-b844-43c0-addf-0c7c6be223a7")
+		)
+		(pin "1"
+			(uuid "b9b1c675-95b0-4006-b0d2-c2f340486bfb")
+		)
+		(instances
+			(project "mainBorad_R1"
+				(path "/83af791a-9776-40a7-82ad-9528ff7474b8/24e2804b-4742-4200-b229-1e746b2fe8ab"
+					(reference "S2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "SamacSys_Parts:B3F-1000S")
+		(at 118.11 128.27 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "2ae2cf98-1c9c-4c86-975b-5961676d5560")
+		(property "Reference" "S23"
+			(at 126.492 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "B3F-1000S"
+			(at 134.62 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "SamacSys_parts:B3F1060"
+			(at 147.32 223.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.mouser.com/datasheet/2/307/en-b3f-13826.pdf"
+			(at 147.32 323.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "Tactile Switches 6x6 Flat 4.3mm Btn Force 100g w/o Grd"
+			(at 118.11 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Height" "7"
+			(at 147.32 523.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "Omron Electronics"
+			(at 147.32 623.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "B3F-1000S"
+			(at 147.32 723.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "653-B3F-1000-S"
+			(at 147.32 823.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Omron-Electronics/B3F-1000S?qs=C6KiJco3hx0Z3qfxWTJOrg%3D%3D"
+			(at 147.32 923.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Arrow Part Number" ""
+			(at 147.32 1023.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Arrow Price/Stock" ""
+			(at 147.32 1123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "f9f59900-5c7a-446d-b76a-3995d6863082")
+		)
+		(pin "2"
+			(uuid "68c972bd-0200-4764-bda3-7df90de8129d")
+		)
+		(pin "4"
+			(uuid "d68ec2d0-77df-450b-8428-15e1fa24ac70")
+		)
+		(pin "1"
+			(uuid "892aa79f-431a-4d50-8a78-7affe845af76")
+		)
+		(instances
+			(project "mainBorad_R1"
+				(path "/83af791a-9776-40a7-82ad-9528ff7474b8/24e2804b-4742-4200-b229-1e746b2fe8ab"
+					(reference "S23")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "SamacSys_Parts:B3F-1000S")
+		(at 39.37 168.91 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "4fab7d13-8eb5-487e-965c-67339739ac2a")
+		(property "Reference" "S13"
+			(at 47.752 163.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "B3F-1000S"
+			(at 55.88 163.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "SamacSys_parts:B3F1060"
+			(at 68.58 263.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.mouser.com/datasheet/2/307/en-b3f-13826.pdf"
+			(at 68.58 363.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "Tactile Switches 6x6 Flat 4.3mm Btn Force 100g w/o Grd"
+			(at 39.37 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Height" "7"
+			(at 68.58 563.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "Omron Electronics"
+			(at 68.58 663.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "B3F-1000S"
+			(at 68.58 763.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "653-B3F-1000-S"
+			(at 68.58 863.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Omron-Electronics/B3F-1000S?qs=C6KiJco3hx0Z3qfxWTJOrg%3D%3D"
+			(at 68.58 963.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Arrow Part Number" ""
+			(at 68.58 1063.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Arrow Price/Stock" ""
+			(at 68.58 1163.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "94f60dd3-8c51-4fa7-ae4f-c0ea01fc1c04")
+		)
+		(pin "2"
+			(uuid "a39d04c4-ef43-4979-8324-649bcd1cfcf5")
+		)
+		(pin "4"
+			(uuid "a9b4c6fa-68ff-4b44-b4ac-75767df1201f")
+		)
+		(pin "1"
+			(uuid "4265f698-9fb9-424d-b45e-386ec2e375a5")
+		)
+		(instances
+			(project "mainBorad_R1"
+				(path "/83af791a-9776-40a7-82ad-9528ff7474b8/24e2804b-4742-4200-b229-1e746b2fe8ab"
+					(reference "S13")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "SamacSys_Parts:B3F-1000S")
+		(at 39.37 78.74 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "50090e26-d42d-4639-bc02-2f63cb72fddb")
+		(property "Reference" "S6"
+			(at 46.99 73.406 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "B3F-1000S"
+			(at 55.88 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "SamacSys_parts:B3F1060"
+			(at 68.58 173.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.mouser.com/datasheet/2/307/en-b3f-13826.pdf"
+			(at 68.58 273.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "Tactile Switches 6x6 Flat 4.3mm Btn Force 100g w/o Grd"
+			(at 39.37 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Height" "7"
+			(at 68.58 473.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "Omron Electronics"
+			(at 68.58 573.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "B3F-1000S"
+			(at 68.58 673.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "653-B3F-1000-S"
+			(at 68.58 773.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Omron-Electronics/B3F-1000S?qs=C6KiJco3hx0Z3qfxWTJOrg%3D%3D"
+			(at 68.58 873.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Arrow Part Number" ""
+			(at 68.58 973.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Arrow Price/Stock" ""
+			(at 68.58 1073.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "3e11c5a1-ad15-42bf-9721-1f2c21dc9127")
+		)
+		(pin "2"
+			(uuid "e5d0ca8a-bac4-4bad-a410-9e0cf31b6bb0")
+		)
+		(pin "4"
+			(uuid "044661c1-d580-4f92-9eab-43edc5786ae9")
+		)
+		(pin "1"
+			(uuid "46681536-3024-4d37-9752-f240a9b15baf")
+		)
+		(instances
+			(project "mainBorad_R1"
+				(path "/83af791a-9776-40a7-82ad-9528ff7474b8/24e2804b-4742-4200-b229-1e746b2fe8ab"
+					(reference "S6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "SamacSys_Parts:B3F-1000S")
+		(at 118.11 77.47 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "543275cc-326d-4a6b-8a3f-77a88145b20b")
+		(property "Reference" "S19"
+			(at 125.73 72.136 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "B3F-1000S"
+			(at 134.62 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "SamacSys_parts:B3F1060"
+			(at 147.32 172.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.mouser.com/datasheet/2/307/en-b3f-13826.pdf"
+			(at 147.32 272.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "Tactile Switches 6x6 Flat 4.3mm Btn Force 100g w/o Grd"
+			(at 118.11 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Height" "7"
+			(at 147.32 472.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "Omron Electronics"
+			(at 147.32 572.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "B3F-1000S"
+			(at 147.32 672.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "653-B3F-1000-S"
+			(at 147.32 772.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Omron-Electronics/B3F-1000S?qs=C6KiJco3hx0Z3qfxWTJOrg%3D%3D"
+			(at 147.32 872.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Arrow Part Number" ""
+			(at 147.32 972.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Arrow Price/Stock" ""
+			(at 147.32 1072.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "d3f53c0e-4e44-4089-9f74-ae30a7513aa7")
+		)
+		(pin "2"
+			(uuid "31dc5d59-4619-4766-806b-354b1f7124cc")
+		)
+		(pin "4"
+			(uuid "78cb5522-d374-4632-8e25-24842b3d5947")
+		)
+		(pin "1"
+			(uuid "ff4e91ca-cee6-4542-a208-265c5e29a9bd")
+		)
+		(instances
+			(project "mainBorad_R1"
+				(path "/83af791a-9776-40a7-82ad-9528ff7474b8/24e2804b-4742-4200-b229-1e746b2fe8ab"
+					(reference "S19")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "SamacSys_Parts:B3F-1000S")
+		(at 39.37 66.04 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "70ce0c11-6070-4afb-86a9-4b4bc78aff42")
+		(property "Reference" "S5"
+			(at 46.99 60.706 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "B3F-1000S"
+			(at 55.88 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "SamacSys_parts:B3F1060"
+			(at 68.58 160.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.mouser.com/datasheet/2/307/en-b3f-13826.pdf"
+			(at 68.58 260.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "Tactile Switches 6x6 Flat 4.3mm Btn Force 100g w/o Grd"
+			(at 39.37 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Height" "7"
+			(at 68.58 460.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "Omron Electronics"
+			(at 68.58 560.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "B3F-1000S"
+			(at 68.58 660.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "653-B3F-1000-S"
+			(at 68.58 760.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Omron-Electronics/B3F-1000S?qs=C6KiJco3hx0Z3qfxWTJOrg%3D%3D"
+			(at 68.58 860.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Arrow Part Number" ""
+			(at 68.58 960.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Arrow Price/Stock" ""
+			(at 68.58 1060.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "204258da-5daf-413e-bed0-9e1c92c6f4ed")
+		)
+		(pin "2"
+			(uuid "392b2f27-2f2c-4902-be89-e48e3dd11f4a")
+		)
+		(pin "4"
+			(uuid "ed18c6f7-d312-4438-98f1-5ce6a376ad97")
+		)
+		(pin "1"
+			(uuid "da840186-bc22-4469-bd85-d3000ab3bf34")
+		)
+		(instances
+			(project "mainBorad_R1"
+				(path "/83af791a-9776-40a7-82ad-9528ff7474b8/24e2804b-4742-4200-b229-1e746b2fe8ab"
+					(reference "S5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "SamacSys_Parts:B3F-1000S")
+		(at 118.11 26.67 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "808777d5-2cd6-458f-b3ac-d19fc11f5be5")
+		(property "Reference" "S15"
+			(at 125.73 21.336 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "B3F-1000S"
+			(at 134.62 21.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "SamacSys_parts:B3F1060"
+			(at 147.32 121.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.mouser.com/datasheet/2/307/en-b3f-13826.pdf"
+			(at 147.32 221.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "Tactile Switches 6x6 Flat 4.3mm Btn Force 100g w/o Grd"
+			(at 118.11 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Height" "7"
+			(at 147.32 421.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "Omron Electronics"
+			(at 147.32 521.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "B3F-1000S"
+			(at 147.32 621.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "653-B3F-1000-S"
+			(at 147.32 721.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Omron-Electronics/B3F-1000S?qs=C6KiJco3hx0Z3qfxWTJOrg%3D%3D"
+			(at 147.32 821.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Arrow Part Number" ""
+			(at 147.32 921.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Arrow Price/Stock" ""
+			(at 147.32 1021.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "cbbe6103-7435-47df-963f-7b2eb4605a3d")
+		)
+		(pin "2"
+			(uuid "354d86ad-9079-4d73-baec-797ef427b211")
+		)
+		(pin "4"
+			(uuid "70897653-0327-4124-8575-df9e1d4382a5")
+		)
+		(pin "1"
+			(uuid "b4bff299-e2a2-42ee-aa82-5b97d195cfb4")
+		)
+		(instances
+			(project "mainBorad_R1"
+				(path "/83af791a-9776-40a7-82ad-9528ff7474b8/24e2804b-4742-4200-b229-1e746b2fe8ab"
+					(reference "S15")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "SamacSys_Parts:B3F-1000S")
+		(at 196.85 64.77 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "882b755f-1748-4657-b49f-cbac01969162")
+		(property "Reference" "S30"
+			(at 204.47 59.436 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "B3F-1000S"
+			(at 213.36 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "SamacSys_parts:B3F1060"
+			(at 226.06 159.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.mouser.com/datasheet/2/307/en-b3f-13826.pdf"
+			(at 226.06 259.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "Tactile Switches 6x6 Flat 4.3mm Btn Force 100g w/o Grd"
+			(at 196.85 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Height" "7"
+			(at 226.06 459.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "Omron Electronics"
+			(at 226.06 559.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "B3F-1000S"
+			(at 226.06 659.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "653-B3F-1000-S"
+			(at 226.06 759.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Omron-Electronics/B3F-1000S?qs=C6KiJco3hx0Z3qfxWTJOrg%3D%3D"
+			(at 226.06 859.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Arrow Part Number" ""
+			(at 226.06 959.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Arrow Price/Stock" ""
+			(at 226.06 1059.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "6c99bbb8-f841-4e9a-87c0-0098f5be7d7b")
+		)
+		(pin "2"
+			(uuid "a56b03ee-0cb1-4364-983d-6fa51a6372ec")
+		)
+		(pin "4"
+			(uuid "c9d66611-a7eb-44c6-bc93-cebdcf152017")
+		)
+		(pin "1"
+			(uuid "b836b6ed-8d8b-4254-a92d-b79f75fc126b")
+		)
+		(instances
+			(project "mainBorad_R1"
+				(path "/83af791a-9776-40a7-82ad-9528ff7474b8/24e2804b-4742-4200-b229-1e746b2fe8ab"
+					(reference "S30")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "SamacSys_Parts:B3F-1000S")
+		(at 39.37 142.24 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "8e6079a4-00f7-4bea-9ecc-c01dff43a0c9")
+		(property "Reference" "S11"
+			(at 47.752 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "B3F-1000S"
+			(at 55.88 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "SamacSys_parts:B3F1060"
+			(at 68.58 237.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.mouser.com/datasheet/2/307/en-b3f-13826.pdf"
+			(at 68.58 337.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "Tactile Switches 6x6 Flat 4.3mm Btn Force 100g w/o Grd"
+			(at 39.37 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Height" "7"
+			(at 68.58 537.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "Omron Electronics"
+			(at 68.58 637.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "B3F-1000S"
+			(at 68.58 737.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "653-B3F-1000-S"
+			(at 68.58 837.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Omron-Electronics/B3F-1000S?qs=C6KiJco3hx0Z3qfxWTJOrg%3D%3D"
+			(at 68.58 937.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Arrow Part Number" ""
+			(at 68.58 1037.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Arrow Price/Stock" ""
+			(at 68.58 1137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "7dca890e-ff37-4fa8-a8dc-b9530cc4622e")
+		)
+		(pin "2"
+			(uuid "7a31f400-1067-4711-8f2a-48afb1189bc6")
+		)
+		(pin "4"
+			(uuid "72ddbd08-2906-44c0-9fc9-16fb6f4e65e4")
+		)
+		(pin "1"
+			(uuid "5a65bf68-b0b8-4d5b-b5be-cebc1315cf41")
+		)
+		(instances
+			(project "mainBorad_R1"
+				(path "/83af791a-9776-40a7-82ad-9528ff7474b8/24e2804b-4742-4200-b229-1e746b2fe8ab"
+					(reference "S11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "SamacSys_Parts:B3F-1000S")
+		(at 118.11 115.57 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "9a2300b7-f973-42e6-a27d-f5665038fdef")
+		(property "Reference" "S22"
+			(at 125.73 110.236 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "B3F-1000S"
+			(at 134.62 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "SamacSys_parts:B3F1060"
+			(at 147.32 210.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.mouser.com/datasheet/2/307/en-b3f-13826.pdf"
+			(at 147.32 310.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "Tactile Switches 6x6 Flat 4.3mm Btn Force 100g w/o Grd"
+			(at 118.11 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Height" "7"
+			(at 147.32 510.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "Omron Electronics"
+			(at 147.32 610.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "B3F-1000S"
+			(at 147.32 710.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "653-B3F-1000-S"
+			(at 147.32 810.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Omron-Electronics/B3F-1000S?qs=C6KiJco3hx0Z3qfxWTJOrg%3D%3D"
+			(at 147.32 910.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Arrow Part Number" ""
+			(at 147.32 1010.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Arrow Price/Stock" ""
+			(at 147.32 1110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "32b3ebf4-1d81-4333-9bd5-e8866985b392")
+		)
+		(pin "2"
+			(uuid "bb64669f-80d8-4038-9574-f4732c454267")
+		)
+		(pin "4"
+			(uuid "17455b27-6c99-4111-b003-bbe26b675a4e")
+		)
+		(pin "1"
+			(uuid "fa3b394a-00e6-4054-9a7b-b7a2f38d4324")
+		)
+		(instances
+			(project "mainBorad_R1"
+				(path "/83af791a-9776-40a7-82ad-9528ff7474b8/24e2804b-4742-4200-b229-1e746b2fe8ab"
+					(reference "S22")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "SamacSys_Parts:B3F-1000S")
+		(at 39.37 156.21 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "a2350e42-f6d2-44c8-a717-4a814fef8fbf")
+		(property "Reference" "S12"
+			(at 47.752 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "B3F-1000S"
+			(at 55.88 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "SamacSys_parts:B3F1060"
+			(at 68.58 251.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.mouser.com/datasheet/2/307/en-b3f-13826.pdf"
+			(at 68.58 351.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "Tactile Switches 6x6 Flat 4.3mm Btn Force 100g w/o Grd"
+			(at 39.37 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Height" "7"
+			(at 68.58 551.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "Omron Electronics"
+			(at 68.58 651.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "B3F-1000S"
+			(at 68.58 751.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "653-B3F-1000-S"
+			(at 68.58 851.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Omron-Electronics/B3F-1000S?qs=C6KiJco3hx0Z3qfxWTJOrg%3D%3D"
+			(at 68.58 951.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Arrow Part Number" ""
+			(at 68.58 1051.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Arrow Price/Stock" ""
+			(at 68.58 1151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "78ad2417-2735-45c3-b0d8-d120d350fd61")
+		)
+		(pin "2"
+			(uuid "45646ba9-3eba-434b-9ea8-270dba097d30")
+		)
+		(pin "4"
+			(uuid "c83e13f0-a2a0-4003-9807-5ce32b339531")
+		)
+		(pin "1"
+			(uuid "488136d0-6631-4460-9cc2-29d2946e2cf8")
+		)
+		(instances
+			(project "mainBorad_R1"
+				(path "/83af791a-9776-40a7-82ad-9528ff7474b8/24e2804b-4742-4200-b229-1e746b2fe8ab"
+					(reference "S12")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "SamacSys_Parts:B3F-1000S")
+		(at 196.85 52.07 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "a3c1879d-24fc-4ee2-a103-0aff06484cd7")
+		(property "Reference" "S29"
+			(at 204.47 46.736 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "B3F-1000S"
+			(at 213.36 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "SamacSys_parts:B3F1060"
+			(at 226.06 146.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.mouser.com/datasheet/2/307/en-b3f-13826.pdf"
+			(at 226.06 246.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "Tactile Switches 6x6 Flat 4.3mm Btn Force 100g w/o Grd"
+			(at 196.85 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Height" "7"
+			(at 226.06 446.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "Omron Electronics"
+			(at 226.06 546.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "B3F-1000S"
+			(at 226.06 646.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "653-B3F-1000-S"
+			(at 226.06 746.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Omron-Electronics/B3F-1000S?qs=C6KiJco3hx0Z3qfxWTJOrg%3D%3D"
+			(at 226.06 846.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Arrow Part Number" ""
+			(at 226.06 946.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Arrow Price/Stock" ""
+			(at 226.06 1046.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "bfb526a7-7995-4d9b-be90-db11f21a3f4b")
+		)
+		(pin "2"
+			(uuid "98158253-2948-48eb-be6a-7e150c968809")
+		)
+		(pin "4"
+			(uuid "6f84f19d-bd95-4268-a4ae-0b2adb681218")
+		)
+		(pin "1"
+			(uuid "2df56e59-5b23-4935-b6fc-7654b142d495")
+		)
+		(instances
+			(project "mainBorad_R1"
+				(path "/83af791a-9776-40a7-82ad-9528ff7474b8/24e2804b-4742-4200-b229-1e746b2fe8ab"
+					(reference "S29")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "SamacSys_Parts:B3F-1000S")
+		(at 196.85 39.37 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "a60355ad-c216-4b4c-bfc0-680183bf6648")
+		(property "Reference" "S28"
+			(at 204.47 34.036 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "B3F-1000S"
+			(at 213.36 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "SamacSys_parts:B3F1060"
+			(at 226.06 134.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.mouser.com/datasheet/2/307/en-b3f-13826.pdf"
+			(at 226.06 234.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "Tactile Switches 6x6 Flat 4.3mm Btn Force 100g w/o Grd"
+			(at 196.85 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Height" "7"
+			(at 226.06 434.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "Omron Electronics"
+			(at 226.06 534.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "B3F-1000S"
+			(at 226.06 634.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "653-B3F-1000-S"
+			(at 226.06 734.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Omron-Electronics/B3F-1000S?qs=C6KiJco3hx0Z3qfxWTJOrg%3D%3D"
+			(at 226.06 834.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Arrow Part Number" ""
+			(at 226.06 934.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Arrow Price/Stock" ""
+			(at 226.06 1034.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "809f1446-72b3-4869-902f-cc8dde44c6e5")
+		)
+		(pin "2"
+			(uuid "333c1fda-e740-46f6-b259-532a25d52707")
+		)
+		(pin "4"
+			(uuid "13bbb1e0-9713-4cc3-b428-8de00e063962")
+		)
+		(pin "1"
+			(uuid "3d344a8d-56e2-4606-8981-162428e3efa0")
+		)
+		(instances
+			(project "mainBorad_R1"
+				(path "/83af791a-9776-40a7-82ad-9528ff7474b8/24e2804b-4742-4200-b229-1e746b2fe8ab"
+					(reference "S28")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "SamacSys_Parts:B3F-1000S")
+		(at 39.37 40.64 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "a9b1bb35-f1f6-4030-9083-403a61f711aa")
+		(property "Reference" "S3"
+			(at 46.99 35.306 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "B3F-1000S"
+			(at 55.88 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "SamacSys_parts:B3F1060"
+			(at 68.58 135.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.mouser.com/datasheet/2/307/en-b3f-13826.pdf"
+			(at 68.58 235.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "Tactile Switches 6x6 Flat 4.3mm Btn Force 100g w/o Grd"
+			(at 39.37 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Height" "7"
+			(at 68.58 435.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "Omron Electronics"
+			(at 68.58 535.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "B3F-1000S"
+			(at 68.58 635.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "653-B3F-1000-S"
+			(at 68.58 735.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Omron-Electronics/B3F-1000S?qs=C6KiJco3hx0Z3qfxWTJOrg%3D%3D"
+			(at 68.58 835.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Arrow Part Number" ""
+			(at 68.58 935.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Arrow Price/Stock" ""
+			(at 68.58 1035.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "47b8fc01-9dcd-4ad6-be86-bab54bab8574")
+		)
+		(pin "2"
+			(uuid "84aa2fa1-015e-421d-9828-c1beb8c530dc")
+		)
+		(pin "4"
+			(uuid "bd04cd4e-c666-4315-8993-ab83ffda70b1")
+		)
+		(pin "1"
+			(uuid "6e4712d9-daa8-41dc-aa73-8d7efa253ddc")
+		)
+		(instances
+			(project "mainBorad_R1"
+				(path "/83af791a-9776-40a7-82ad-9528ff7474b8/24e2804b-4742-4200-b229-1e746b2fe8ab"
+					(reference "S3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "SamacSys_Parts:B3F-1000S")
+		(at 118.11 52.07 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "afce4b4d-5654-4570-b46a-777a7fb3a148")
+		(property "Reference" "S17"
+			(at 125.73 46.736 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "B3F-1000S"
+			(at 134.62 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "SamacSys_parts:B3F1060"
+			(at 147.32 146.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.mouser.com/datasheet/2/307/en-b3f-13826.pdf"
+			(at 147.32 246.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "Tactile Switches 6x6 Flat 4.3mm Btn Force 100g w/o Grd"
+			(at 118.11 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Height" "7"
+			(at 147.32 446.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "Omron Electronics"
+			(at 147.32 546.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "B3F-1000S"
+			(at 147.32 646.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "653-B3F-1000-S"
+			(at 147.32 746.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Omron-Electronics/B3F-1000S?qs=C6KiJco3hx0Z3qfxWTJOrg%3D%3D"
+			(at 147.32 846.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Arrow Part Number" ""
+			(at 147.32 946.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Arrow Price/Stock" ""
+			(at 147.32 1046.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "52b01d95-537e-4d37-bbfc-9358e2c7365a")
+		)
+		(pin "2"
+			(uuid "21d3a5ec-3ff3-4f72-85d0-24451ff9c2ef")
+		)
+		(pin "4"
+			(uuid "23fa61eb-2302-4842-ab84-d5d1d613844e")
+		)
+		(pin "1"
+			(uuid "f8935d0b-b794-40d3-a020-069ce6203947")
+		)
+		(instances
+			(project "mainBorad_R1"
+				(path "/83af791a-9776-40a7-82ad-9528ff7474b8/24e2804b-4742-4200-b229-1e746b2fe8ab"
+					(reference "S17")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "SamacSys_Parts:B3F-1000S")
+		(at 118.11 181.61 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "b1fe0834-52dc-4f52-8eed-2a2ecc4fec7a")
+		(property "Reference" "S26"
+			(at 126.492 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "B3F-1000S"
+			(at 134.62 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "SamacSys_parts:B3F1060"
+			(at 147.32 276.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.mouser.com/datasheet/2/307/en-b3f-13826.pdf"
+			(at 147.32 376.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "Tactile Switches 6x6 Flat 4.3mm Btn Force 100g w/o Grd"
+			(at 118.11 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Height" "7"
+			(at 147.32 576.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "Omron Electronics"
+			(at 147.32 676.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "B3F-1000S"
+			(at 147.32 776.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "653-B3F-1000-S"
+			(at 147.32 876.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Omron-Electronics/B3F-1000S?qs=C6KiJco3hx0Z3qfxWTJOrg%3D%3D"
+			(at 147.32 976.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Arrow Part Number" ""
+			(at 147.32 1076.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Arrow Price/Stock" ""
+			(at 147.32 1176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "e1925fd6-f329-47a7-9613-267d2dc94016")
+		)
+		(pin "2"
+			(uuid "0e0a96e3-d96b-4c84-a441-d8520166981f")
+		)
+		(pin "4"
+			(uuid "f57d8e69-de5d-4e72-b0fa-1da098630f88")
+		)
+		(pin "1"
+			(uuid "61ac1d4a-6171-4830-b116-e68a4a2ded3b")
+		)
+		(instances
+			(project "mainBorad_R1"
+				(path "/83af791a-9776-40a7-82ad-9528ff7474b8/24e2804b-4742-4200-b229-1e746b2fe8ab"
+					(reference "S26")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "SamacSys_Parts:B3F-1000S")
+		(at 118.11 154.94 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "beb50474-22bd-4bb9-9cda-95408fcb809f")
+		(property "Reference" "S24"
+			(at 126.492 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "B3F-1000S"
+			(at 134.62 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "SamacSys_parts:B3F1060"
+			(at 147.32 249.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.mouser.com/datasheet/2/307/en-b3f-13826.pdf"
+			(at 147.32 349.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "Tactile Switches 6x6 Flat 4.3mm Btn Force 100g w/o Grd"
+			(at 118.11 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Height" "7"
+			(at 147.32 549.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "Omron Electronics"
+			(at 147.32 649.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "B3F-1000S"
+			(at 147.32 749.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "653-B3F-1000-S"
+			(at 147.32 849.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Omron-Electronics/B3F-1000S?qs=C6KiJco3hx0Z3qfxWTJOrg%3D%3D"
+			(at 147.32 949.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Arrow Part Number" ""
+			(at 147.32 1049.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Arrow Price/Stock" ""
+			(at 147.32 1149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "a2a934fa-5f3c-441f-b97d-874a074ee43e")
+		)
+		(pin "2"
+			(uuid "435c8abb-2025-4a3b-abfd-5aeae837a99d")
+		)
+		(pin "4"
+			(uuid "129d2814-dc11-4867-9731-524b707a5545")
+		)
+		(pin "1"
+			(uuid "2b089418-5317-4f1d-b741-70fe8f35031c")
+		)
+		(instances
+			(project "mainBorad_R1"
+				(path "/83af791a-9776-40a7-82ad-9528ff7474b8/24e2804b-4742-4200-b229-1e746b2fe8ab"
+					(reference "S24")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "SamacSys_Parts:B3F-1000S")
+		(at 118.11 90.17 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "c50967db-12d8-4494-bfb8-6059c9c57b62")
+		(property "Reference" "S20"
+			(at 125.73 84.836 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "B3F-1000S"
+			(at 134.62 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "SamacSys_parts:B3F1060"
+			(at 147.32 185.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.mouser.com/datasheet/2/307/en-b3f-13826.pdf"
+			(at 147.32 285.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "Tactile Switches 6x6 Flat 4.3mm Btn Force 100g w/o Grd"
+			(at 118.11 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Height" "7"
+			(at 147.32 485.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "Omron Electronics"
+			(at 147.32 585.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "B3F-1000S"
+			(at 147.32 685.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "653-B3F-1000-S"
+			(at 147.32 785.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Omron-Electronics/B3F-1000S?qs=C6KiJco3hx0Z3qfxWTJOrg%3D%3D"
+			(at 147.32 885.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Arrow Part Number" ""
+			(at 147.32 985.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Arrow Price/Stock" ""
+			(at 147.32 1085.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "30102437-b7d3-4737-a906-5bc8367dfa3d")
+		)
+		(pin "2"
+			(uuid "500b98e5-398c-42e5-bbe6-13553d8b7912")
+		)
+		(pin "4"
+			(uuid "14374de2-c761-4c48-b557-9926c8023437")
+		)
+		(pin "1"
+			(uuid "a86e5097-842d-4965-bd30-de137d50850b")
+		)
+		(instances
+			(project "mainBorad_R1"
+				(path "/83af791a-9776-40a7-82ad-9528ff7474b8/24e2804b-4742-4200-b229-1e746b2fe8ab"
+					(reference "S20")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "SamacSys_Parts:B3F-1000S")
+		(at 118.11 102.87 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "c64a87bd-c7b3-4cea-80f3-f6fbd9fa3b88")
+		(property "Reference" "S21"
+			(at 125.73 97.536 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "B3F-1000S"
+			(at 134.62 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "SamacSys_parts:B3F1060"
+			(at 147.32 197.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.mouser.com/datasheet/2/307/en-b3f-13826.pdf"
+			(at 147.32 297.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "Tactile Switches 6x6 Flat 4.3mm Btn Force 100g w/o Grd"
+			(at 118.11 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Height" "7"
+			(at 147.32 497.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "Omron Electronics"
+			(at 147.32 597.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "B3F-1000S"
+			(at 147.32 697.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "653-B3F-1000-S"
+			(at 147.32 797.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Omron-Electronics/B3F-1000S?qs=C6KiJco3hx0Z3qfxWTJOrg%3D%3D"
+			(at 147.32 897.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Arrow Part Number" ""
+			(at 147.32 997.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Arrow Price/Stock" ""
+			(at 147.32 1097.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "e013a4a1-b744-465c-b9ae-5248cf99c014")
+		)
+		(pin "2"
+			(uuid "1ec2b583-ced3-4a09-abc3-78982094c84f")
+		)
+		(pin "4"
+			(uuid "5f89114a-a98e-4086-88a9-b15b372c5d10")
+		)
+		(pin "1"
+			(uuid "2b2a8864-12ff-479d-9b3d-aee3c1998a6a")
+		)
+		(instances
+			(project "mainBorad_R1"
+				(path "/83af791a-9776-40a7-82ad-9528ff7474b8/24e2804b-4742-4200-b229-1e746b2fe8ab"
+					(reference "S21")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "SamacSys_Parts:B3F-1000S")
+		(at 39.37 91.44 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "d29f9e5f-d1b8-4c3e-a12f-aebd6df3ab7c")
+		(property "Reference" "S7"
+			(at 46.99 86.106 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "B3F-1000S"
+			(at 55.88 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "SamacSys_parts:B3F1060"
+			(at 68.58 186.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.mouser.com/datasheet/2/307/en-b3f-13826.pdf"
+			(at 68.58 286.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "Tactile Switches 6x6 Flat 4.3mm Btn Force 100g w/o Grd"
+			(at 39.37 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Height" "7"
+			(at 68.58 486.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "Omron Electronics"
+			(at 68.58 586.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "B3F-1000S"
+			(at 68.58 686.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "653-B3F-1000-S"
+			(at 68.58 786.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Omron-Electronics/B3F-1000S?qs=C6KiJco3hx0Z3qfxWTJOrg%3D%3D"
+			(at 68.58 886.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Arrow Part Number" ""
+			(at 68.58 986.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Arrow Price/Stock" ""
+			(at 68.58 1086.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "23ae8f98-5f87-47cf-90f4-167ab94e44ef")
+		)
+		(pin "2"
+			(uuid "2391ddb0-97e1-4b2c-80d9-05d278ebf571")
+		)
+		(pin "4"
+			(uuid "013afc95-59c1-4dfa-82e8-d395e7b86e32")
+		)
+		(pin "1"
+			(uuid "f5062951-2a33-4a68-96f7-591c9c5fb5dd")
+		)
+		(instances
+			(project "mainBorad_R1"
+				(path "/83af791a-9776-40a7-82ad-9528ff7474b8/24e2804b-4742-4200-b229-1e746b2fe8ab"
+					(reference "S7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "SamacSys_Parts:B3F-1000S")
+		(at 39.37 129.54 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "d3011de5-559f-4cce-b47e-5e23ec758d8e")
+		(property "Reference" "S10"
+			(at 47.752 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "B3F-1000S"
+			(at 55.88 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "SamacSys_parts:B3F1060"
+			(at 68.58 224.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.mouser.com/datasheet/2/307/en-b3f-13826.pdf"
+			(at 68.58 324.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "Tactile Switches 6x6 Flat 4.3mm Btn Force 100g w/o Grd"
+			(at 39.37 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Height" "7"
+			(at 68.58 524.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "Omron Electronics"
+			(at 68.58 624.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "B3F-1000S"
+			(at 68.58 724.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "653-B3F-1000-S"
+			(at 68.58 824.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Omron-Electronics/B3F-1000S?qs=C6KiJco3hx0Z3qfxWTJOrg%3D%3D"
+			(at 68.58 924.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Arrow Part Number" ""
+			(at 68.58 1024.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Arrow Price/Stock" ""
+			(at 68.58 1124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "28fe70a5-1aa2-4567-a733-a889470c2047")
+		)
+		(pin "2"
+			(uuid "40d11600-6521-4048-b77b-741497de3982")
+		)
+		(pin "4"
+			(uuid "a1185ee8-ebb3-472b-9b4f-3e2e1ce2edfd")
+		)
+		(pin "1"
+			(uuid "f5f73fbf-16cd-4454-bd2a-08e782afd0e5")
+		)
+		(instances
+			(project "mainBorad_R1"
+				(path "/83af791a-9776-40a7-82ad-9528ff7474b8/24e2804b-4742-4200-b229-1e746b2fe8ab"
+					(reference "S10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "SamacSys_Parts:B3F-1000S")
+		(at 39.37 53.34 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "d7452a49-2bfd-4807-abcc-7f37ea6f5306")
+		(property "Reference" "S4"
+			(at 46.99 48.006 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "B3F-1000S"
+			(at 55.88 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "SamacSys_parts:B3F1060"
+			(at 68.58 148.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.mouser.com/datasheet/2/307/en-b3f-13826.pdf"
+			(at 68.58 248.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "Tactile Switches 6x6 Flat 4.3mm Btn Force 100g w/o Grd"
+			(at 39.37 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Height" "7"
+			(at 68.58 448.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "Omron Electronics"
+			(at 68.58 548.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "B3F-1000S"
+			(at 68.58 648.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "653-B3F-1000-S"
+			(at 68.58 748.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Omron-Electronics/B3F-1000S?qs=C6KiJco3hx0Z3qfxWTJOrg%3D%3D"
+			(at 68.58 848.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Arrow Part Number" ""
+			(at 68.58 948.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Arrow Price/Stock" ""
+			(at 68.58 1048.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "f79c258c-0f78-4a55-b7cf-eba7922bfd6e")
+		)
+		(pin "2"
+			(uuid "0cf4930f-72ee-493e-9983-9caadd872aa0")
+		)
+		(pin "4"
+			(uuid "1e302702-4bc3-4e71-b00b-e09e9f5236a6")
+		)
+		(pin "1"
+			(uuid "f6756824-8d78-44d1-9bff-a3447715bb35")
+		)
+		(instances
+			(project "mainBorad_R1"
+				(path "/83af791a-9776-40a7-82ad-9528ff7474b8/24e2804b-4742-4200-b229-1e746b2fe8ab"
+					(reference "S4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "SamacSys_Parts:B3F-1000S")
+		(at 118.11 167.64 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "eae287db-76b8-4cc9-b8dc-1dda1926c87c")
+		(property "Reference" "S25"
+			(at 126.492 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "B3F-1000S"
+			(at 134.62 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "SamacSys_parts:B3F1060"
+			(at 147.32 262.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.mouser.com/datasheet/2/307/en-b3f-13826.pdf"
+			(at 147.32 362.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "Tactile Switches 6x6 Flat 4.3mm Btn Force 100g w/o Grd"
+			(at 118.11 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Height" "7"
+			(at 147.32 562.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "Omron Electronics"
+			(at 147.32 662.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "B3F-1000S"
+			(at 147.32 762.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "653-B3F-1000-S"
+			(at 147.32 862.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Omron-Electronics/B3F-1000S?qs=C6KiJco3hx0Z3qfxWTJOrg%3D%3D"
+			(at 147.32 962.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Arrow Part Number" ""
+			(at 147.32 1062.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Arrow Price/Stock" ""
+			(at 147.32 1162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "d3fd092e-27d2-4091-a0a0-9cd00d1f7cb9")
+		)
+		(pin "2"
+			(uuid "4ec5f9b1-6a24-446d-828b-e5fb8546d775")
+		)
+		(pin "4"
+			(uuid "2ca71e9a-7976-496f-872e-88fdb0f448ae")
+		)
+		(pin "1"
+			(uuid "252df5f3-8e21-4940-aec9-0437b0072e4f")
+		)
+		(instances
+			(project "mainBorad_R1"
+				(path "/83af791a-9776-40a7-82ad-9528ff7474b8/24e2804b-4742-4200-b229-1e746b2fe8ab"
+					(reference "S25")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "SamacSys_Parts:B3F-1000S")
+		(at 39.37 182.88 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ede18ded-37aa-4dc0-b610-827b022da229")
+		(property "Reference" "S14"
+			(at 47.752 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "B3F-1000S"
+			(at 55.88 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "SamacSys_parts:B3F1060"
+			(at 68.58 277.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.mouser.com/datasheet/2/307/en-b3f-13826.pdf"
+			(at 68.58 377.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "Tactile Switches 6x6 Flat 4.3mm Btn Force 100g w/o Grd"
+			(at 39.37 182.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Height" "7"
+			(at 68.58 577.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "Omron Electronics"
+			(at 68.58 677.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "B3F-1000S"
+			(at 68.58 777.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "653-B3F-1000-S"
+			(at 68.58 877.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Omron-Electronics/B3F-1000S?qs=C6KiJco3hx0Z3qfxWTJOrg%3D%3D"
+			(at 68.58 977.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Arrow Part Number" ""
+			(at 68.58 1077.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Arrow Price/Stock" ""
+			(at 68.58 1177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "3fe5463a-d914-472c-b217-0211fe6c4bdb")
+		)
+		(pin "2"
+			(uuid "1739fe08-0b8a-43e0-9654-e4f36cdff400")
+		)
+		(pin "4"
+			(uuid "0c90bb19-ab77-4239-a414-d56b5472bcdc")
+		)
+		(pin "1"
+			(uuid "9b24f37e-28ed-4ece-9d45-d309d907aeef")
+		)
+		(instances
+			(project "mainBorad_R1"
+				(path "/83af791a-9776-40a7-82ad-9528ff7474b8/24e2804b-4742-4200-b229-1e746b2fe8ab"
+					(reference "S14")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "SamacSys_Parts:B3F-1000S")
+		(at 118.11 39.37 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "f2a79664-2293-49dd-a454-b1015d8474e0")
+		(property "Reference" "S16"
+			(at 125.73 34.036 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "B3F-1000S"
+			(at 134.62 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "SamacSys_parts:B3F1060"
+			(at 147.32 134.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.mouser.com/datasheet/2/307/en-b3f-13826.pdf"
+			(at 147.32 234.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "Tactile Switches 6x6 Flat 4.3mm Btn Force 100g w/o Grd"
+			(at 118.11 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Height" "7"
+			(at 147.32 434.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "Omron Electronics"
+			(at 147.32 534.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "B3F-1000S"
+			(at 147.32 634.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "653-B3F-1000-S"
+			(at 147.32 734.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Omron-Electronics/B3F-1000S?qs=C6KiJco3hx0Z3qfxWTJOrg%3D%3D"
+			(at 147.32 834.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Arrow Part Number" ""
+			(at 147.32 934.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Arrow Price/Stock" ""
+			(at 147.32 1034.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "feb229cd-0b6d-4d6f-8be2-10613488c45d")
+		)
+		(pin "2"
+			(uuid "4cd3f8e9-3330-4df1-9236-184ea812d488")
+		)
+		(pin "4"
+			(uuid "c57ecfa3-823a-4747-b5f4-5f3f17a4c4c0")
+		)
+		(pin "1"
+			(uuid "a9a8de79-e2aa-4436-b1b4-0454ad3cf494")
+		)
+		(instances
+			(project "mainBorad_R1"
+				(path "/83af791a-9776-40a7-82ad-9528ff7474b8/24e2804b-4742-4200-b229-1e746b2fe8ab"
+					(reference "S16")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "SamacSys_Parts:B3F-1000S")
+		(at 39.37 104.14 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "f8e30fb5-2f41-4932-9b6f-fe2218e32a1f")
+		(property "Reference" "S8"
+			(at 46.99 98.806 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "B3F-1000S"
+			(at 55.88 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "SamacSys_parts:B3F1060"
+			(at 68.58 199.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.mouser.com/datasheet/2/307/en-b3f-13826.pdf"
+			(at 68.58 299.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "Tactile Switches 6x6 Flat 4.3mm Btn Force 100g w/o Grd"
+			(at 39.37 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Height" "7"
+			(at 68.58 499.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "Omron Electronics"
+			(at 68.58 599.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "B3F-1000S"
+			(at 68.58 699.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "653-B3F-1000-S"
+			(at 68.58 799.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Omron-Electronics/B3F-1000S?qs=C6KiJco3hx0Z3qfxWTJOrg%3D%3D"
+			(at 68.58 899.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Arrow Part Number" ""
+			(at 68.58 999.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Arrow Price/Stock" ""
+			(at 68.58 1099.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "b098bf1a-7941-4cc1-979f-43dc666c27a3")
+		)
+		(pin "2"
+			(uuid "de7b9266-0415-49dd-885d-1085b9f32f01")
+		)
+		(pin "4"
+			(uuid "5902654c-c646-439f-9f5b-7322320a792c")
+		)
+		(pin "1"
+			(uuid "1762712c-3f8f-48e8-9e8d-871f7231ae9b")
+		)
+		(instances
+			(project "mainBorad_R1"
+				(path "/83af791a-9776-40a7-82ad-9528ff7474b8/24e2804b-4742-4200-b229-1e746b2fe8ab"
+					(reference "S8")
+					(unit 1)
+				)
+			)
+		)
+	)
+)

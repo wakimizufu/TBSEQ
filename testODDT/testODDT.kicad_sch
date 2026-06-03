@@ -1,0 +1,308 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "c24ee429-2bfa-4963-894a-0e2587243135")
+	(paper "A4")
+	(lib_symbols)
+	(sheet
+		(at 110.49 22.86)
+		(size 24.13 10.16)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "1a6818da-8b55-497e-93d0-e7e39053a627")
+		(property "Sheetname" "Ibanez Tube Screamer TS808"
+			(at 110.49 22.1484 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Ibanez_Tube_Screamer_TS808.kicad_sch"
+			(at 110.49 33.6046 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "testODDT"
+				(path "/c24ee429-2bfa-4963-894a-0e2587243135"
+					(page "4")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 69.85 49.53)
+		(size 22.86 10.16)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "6638ffb4-7b30-4a49-bcb5-66db12efb7d7")
+		(property "Sheetname" "BOSS_OD-2_Clipper"
+			(at 69.85 48.8184 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "BOSS_OD-2_Clipper.kicad_sch"
+			(at 69.85 60.2746 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "testODDT"
+				(path "/c24ee429-2bfa-4963-894a-0e2587243135"
+					(page "7")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 69.85 22.86)
+		(size 24.13 10.16)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "7d43a29c-888b-4eb4-a500-2c68531cfaae")
+		(property "Sheetname" "BOSS DS-1 Clipper"
+			(at 69.85 22.1484 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "BOSS_DS-1_Clipper.kicad_sch"
+			(at 69.85 33.6046 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "testODDT"
+				(path "/c24ee429-2bfa-4963-894a-0e2587243135"
+					(page "3")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 111.76 49.53)
+		(size 24.13 10.16)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "a1b9d3b0-6cb6-473d-b80f-166ea001d984")
+		(property "Sheetname" "DanArmstring_OrangeSquezzer"
+			(at 111.76 48.8184 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "DanArmstring_OrangeSquezzer.kicad_sch"
+			(at 111.76 60.2746 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "testODDT"
+				(path "/c24ee429-2bfa-4963-894a-0e2587243135"
+					(page "8")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 31.75 49.53)
+		(size 25.4 10.16)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "b1864a46-c351-4978-939d-c3b02950b13b")
+		(property "Sheetname" "最新エフェクター製作81_サステナー"
+			(at 31.75 48.8184 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "NewEffector81_Sastener.kicad_sch"
+			(at 31.75 60.2746 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "testODDT"
+				(path "/c24ee429-2bfa-4963-894a-0e2587243135"
+					(page "6")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 33.02 22.86)
+		(size 25.4 10.16)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "c45a520e-e0ef-44fb-a3f2-a0e9dfaf5b25")
+		(property "Sheetname" "Power"
+			(at 33.02 22.1484 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Power.kicad_sch"
+			(at 33.02 33.6046 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "testODDT"
+				(path "/c24ee429-2bfa-4963-894a-0e2587243135"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 158.75 22.86)
+		(size 25.4 10.16)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "e93a551f-5799-4e3d-9378-72cb04dc26b5")
+		(property "Sheetname" "Moog Sub Phatty Overdrive"
+			(at 158.75 22.1484 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Moog Sub Phatty Overdrive.kicad_sch"
+			(at 158.75 33.6046 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "testODDT"
+				(path "/c24ee429-2bfa-4963-894a-0e2587243135"
+					(page "5")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
+)

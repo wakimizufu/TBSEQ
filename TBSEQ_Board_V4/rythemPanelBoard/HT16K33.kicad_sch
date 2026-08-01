@@ -1187,6 +1187,113 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "power:PWR_FLAG"
+			(power)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#FLG"
+				(at 0 1.905 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "PWR_FLAG"
+				(at 0 3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Special symbol for telling ERC where power comes from"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "flag power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "PWR_FLAG_0_0"
+				(pin power_out line
+					(at 0 0 90)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "PWR_FLAG_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 1.27) (xy -1.016 1.905) (xy 0 2.54) (xy 1.016 1.905) (xy 0 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+	)
+	(junction
+		(at 109.22 38.1)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "26453c8b-dcd6-4613-ba82-edb117e2f258")
 	)
 	(junction
 		(at 109.22 59.69)
@@ -1542,7 +1649,7 @@
 	)
 	(wire
 		(pts
-			(xy 118.11 38.1) (xy 101.6 38.1)
+			(xy 118.11 38.1) (xy 109.22 38.1)
 		)
 		(stroke
 			(width 0)
@@ -1719,6 +1826,16 @@
 			(type default)
 		)
 		(uuid "b48d67a2-3753-4776-b10b-2a30d20b2e93")
+	)
+	(wire
+		(pts
+			(xy 109.22 38.1) (xy 101.6 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b82c821e-2ac0-4140-8ee0-d8746f7652e5")
 	)
 	(wire
 		(pts
@@ -3068,14 +3185,14 @@
 					(unit 1)
 				)
 			)
-			(project "frontPanel"
-				(path "/cb8e3fb6-70fc-4f13-8abd-15b04d6c762c/362cfec2-7e3d-46a6-8792-68341e7a46bc"
+			(project "HT16K33Panel"
+				(path "/b6043b97-033c-4ff5-a42a-dc988563939b/94d1d237-97f6-432c-9d17-117e68031fe3"
 					(reference "R11")
 					(unit 1)
 				)
 			)
-			(project "HT16K33Panel"
-				(path "/e4888aad-78d5-4afc-b382-d3fab1889a4d/357f53c3-9934-46e1-a766-db83fe7e83fd"
+			(project "frontPanel"
+				(path "/cb8e3fb6-70fc-4f13-8abd-15b04d6c762c/362cfec2-7e3d-46a6-8792-68341e7a46bc"
 					(reference "R11")
 					(unit 1)
 				)
@@ -3148,14 +3265,14 @@
 					(unit 1)
 				)
 			)
-			(project "frontPanel"
-				(path "/cb8e3fb6-70fc-4f13-8abd-15b04d6c762c/362cfec2-7e3d-46a6-8792-68341e7a46bc"
+			(project "HT16K33Panel"
+				(path "/b6043b97-033c-4ff5-a42a-dc988563939b/94d1d237-97f6-432c-9d17-117e68031fe3"
 					(reference "R9")
 					(unit 1)
 				)
 			)
-			(project "HT16K33Panel"
-				(path "/e4888aad-78d5-4afc-b382-d3fab1889a4d/357f53c3-9934-46e1-a766-db83fe7e83fd"
+			(project "frontPanel"
+				(path "/cb8e3fb6-70fc-4f13-8abd-15b04d6c762c/362cfec2-7e3d-46a6-8792-68341e7a46bc"
 					(reference "R9")
 					(unit 1)
 				)
@@ -3245,14 +3362,14 @@
 					(unit 1)
 				)
 			)
-			(project "frontPanel"
-				(path "/cb8e3fb6-70fc-4f13-8abd-15b04d6c762c/362cfec2-7e3d-46a6-8792-68341e7a46bc"
+			(project "HT16K33Panel"
+				(path "/b6043b97-033c-4ff5-a42a-dc988563939b/94d1d237-97f6-432c-9d17-117e68031fe3"
 					(reference "D1")
 					(unit 1)
 				)
 			)
-			(project "HT16K33Panel"
-				(path "/e4888aad-78d5-4afc-b382-d3fab1889a4d/357f53c3-9934-46e1-a766-db83fe7e83fd"
+			(project "frontPanel"
+				(path "/cb8e3fb6-70fc-4f13-8abd-15b04d6c762c/362cfec2-7e3d-46a6-8792-68341e7a46bc"
 					(reference "D1")
 					(unit 1)
 				)
@@ -3325,14 +3442,14 @@
 					(unit 1)
 				)
 			)
-			(project "frontPanel"
-				(path "/cb8e3fb6-70fc-4f13-8abd-15b04d6c762c/362cfec2-7e3d-46a6-8792-68341e7a46bc"
+			(project "HT16K33Panel"
+				(path "/b6043b97-033c-4ff5-a42a-dc988563939b/94d1d237-97f6-432c-9d17-117e68031fe3"
 					(reference "R2")
 					(unit 1)
 				)
 			)
-			(project "HT16K33Panel"
-				(path "/e4888aad-78d5-4afc-b382-d3fab1889a4d/357f53c3-9934-46e1-a766-db83fe7e83fd"
+			(project "frontPanel"
+				(path "/cb8e3fb6-70fc-4f13-8abd-15b04d6c762c/362cfec2-7e3d-46a6-8792-68341e7a46bc"
 					(reference "R2")
 					(unit 1)
 				)
@@ -3405,14 +3522,14 @@
 					(unit 1)
 				)
 			)
-			(project "frontPanel"
-				(path "/cb8e3fb6-70fc-4f13-8abd-15b04d6c762c/362cfec2-7e3d-46a6-8792-68341e7a46bc"
+			(project "HT16K33Panel"
+				(path "/b6043b97-033c-4ff5-a42a-dc988563939b/94d1d237-97f6-432c-9d17-117e68031fe3"
 					(reference "R7")
 					(unit 1)
 				)
 			)
-			(project "HT16K33Panel"
-				(path "/e4888aad-78d5-4afc-b382-d3fab1889a4d/357f53c3-9934-46e1-a766-db83fe7e83fd"
+			(project "frontPanel"
+				(path "/cb8e3fb6-70fc-4f13-8abd-15b04d6c762c/362cfec2-7e3d-46a6-8792-68341e7a46bc"
 					(reference "R7")
 					(unit 1)
 				)
@@ -3485,14 +3602,14 @@
 					(unit 1)
 				)
 			)
-			(project "frontPanel"
-				(path "/cb8e3fb6-70fc-4f13-8abd-15b04d6c762c/362cfec2-7e3d-46a6-8792-68341e7a46bc"
+			(project "HT16K33Panel"
+				(path "/b6043b97-033c-4ff5-a42a-dc988563939b/94d1d237-97f6-432c-9d17-117e68031fe3"
 					(reference "R6")
 					(unit 1)
 				)
 			)
-			(project "HT16K33Panel"
-				(path "/e4888aad-78d5-4afc-b382-d3fab1889a4d/357f53c3-9934-46e1-a766-db83fe7e83fd"
+			(project "frontPanel"
+				(path "/cb8e3fb6-70fc-4f13-8abd-15b04d6c762c/362cfec2-7e3d-46a6-8792-68341e7a46bc"
 					(reference "R6")
 					(unit 1)
 				)
@@ -3525,7 +3642,7 @@
 				)
 			)
 		)
-		(property "Footprint" "SOIC127P1031X264-28N"
+		(property "Footprint" "SamacSys_parts:SOIC127P1031X264-28N"
 			(at 160.02 149.53 0)
 			(effects
 				(font
@@ -3715,14 +3832,14 @@
 					(unit 1)
 				)
 			)
-			(project "frontPanel"
-				(path "/cb8e3fb6-70fc-4f13-8abd-15b04d6c762c/362cfec2-7e3d-46a6-8792-68341e7a46bc"
+			(project "HT16K33Panel"
+				(path "/b6043b97-033c-4ff5-a42a-dc988563939b/94d1d237-97f6-432c-9d17-117e68031fe3"
 					(reference "U7")
 					(unit 1)
 				)
 			)
-			(project "HT16K33Panel"
-				(path "/e4888aad-78d5-4afc-b382-d3fab1889a4d/357f53c3-9934-46e1-a766-db83fe7e83fd"
+			(project "frontPanel"
+				(path "/cb8e3fb6-70fc-4f13-8abd-15b04d6c762c/362cfec2-7e3d-46a6-8792-68341e7a46bc"
 					(reference "U7")
 					(unit 1)
 				)
@@ -3792,15 +3909,81 @@
 					(unit 1)
 				)
 			)
+			(project "HT16K33Panel"
+				(path "/b6043b97-033c-4ff5-a42a-dc988563939b/94d1d237-97f6-432c-9d17-117e68031fe3"
+					(reference "#PWR01")
+					(unit 1)
+				)
+			)
 			(project "frontPanel"
 				(path "/cb8e3fb6-70fc-4f13-8abd-15b04d6c762c/362cfec2-7e3d-46a6-8792-68341e7a46bc"
 					(reference "#PWR0101")
 					(unit 1)
 				)
 			)
-			(project "HT16K33Panel"
-				(path "/e4888aad-78d5-4afc-b382-d3fab1889a4d/357f53c3-9934-46e1-a766-db83fe7e83fd"
-					(reference "#PWR01")
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 109.22 38.1 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "75e19871-1284-4a57-bb18-f980002b0343")
+		(property "Reference" "#FLG01"
+			(at 109.22 36.195 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 109.22 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 109.22 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 109.22 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 109.22 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8380f1e5-e07e-416d-a708-ffc4b1285fb1")
+		)
+		(instances
+			(project ""
+				(path "/b6043b97-033c-4ff5-a42a-dc988563939b/94d1d237-97f6-432c-9d17-117e68031fe3"
+					(reference "#FLG01")
 					(unit 1)
 				)
 			)
@@ -3889,14 +4072,14 @@
 					(unit 1)
 				)
 			)
-			(project "frontPanel"
-				(path "/cb8e3fb6-70fc-4f13-8abd-15b04d6c762c/362cfec2-7e3d-46a6-8792-68341e7a46bc"
+			(project "HT16K33Panel"
+				(path "/b6043b97-033c-4ff5-a42a-dc988563939b/94d1d237-97f6-432c-9d17-117e68031fe3"
 					(reference "D3")
 					(unit 1)
 				)
 			)
-			(project "HT16K33Panel"
-				(path "/e4888aad-78d5-4afc-b382-d3fab1889a4d/357f53c3-9934-46e1-a766-db83fe7e83fd"
+			(project "frontPanel"
+				(path "/cb8e3fb6-70fc-4f13-8abd-15b04d6c762c/362cfec2-7e3d-46a6-8792-68341e7a46bc"
 					(reference "D3")
 					(unit 1)
 				)
@@ -3966,14 +4149,14 @@
 					(unit 1)
 				)
 			)
-			(project "frontPanel"
-				(path "/cb8e3fb6-70fc-4f13-8abd-15b04d6c762c/362cfec2-7e3d-46a6-8792-68341e7a46bc"
+			(project "HT16K33Panel"
+				(path "/b6043b97-033c-4ff5-a42a-dc988563939b/94d1d237-97f6-432c-9d17-117e68031fe3"
 					(reference "#PWR02")
 					(unit 1)
 				)
 			)
-			(project "HT16K33Panel"
-				(path "/e4888aad-78d5-4afc-b382-d3fab1889a4d/357f53c3-9934-46e1-a766-db83fe7e83fd"
+			(project "frontPanel"
+				(path "/cb8e3fb6-70fc-4f13-8abd-15b04d6c762c/362cfec2-7e3d-46a6-8792-68341e7a46bc"
 					(reference "#PWR02")
 					(unit 1)
 				)
@@ -4046,14 +4229,14 @@
 					(unit 1)
 				)
 			)
-			(project "frontPanel"
-				(path "/cb8e3fb6-70fc-4f13-8abd-15b04d6c762c/362cfec2-7e3d-46a6-8792-68341e7a46bc"
+			(project "HT16K33Panel"
+				(path "/b6043b97-033c-4ff5-a42a-dc988563939b/94d1d237-97f6-432c-9d17-117e68031fe3"
 					(reference "R10")
 					(unit 1)
 				)
 			)
-			(project "HT16K33Panel"
-				(path "/e4888aad-78d5-4afc-b382-d3fab1889a4d/357f53c3-9934-46e1-a766-db83fe7e83fd"
+			(project "frontPanel"
+				(path "/cb8e3fb6-70fc-4f13-8abd-15b04d6c762c/362cfec2-7e3d-46a6-8792-68341e7a46bc"
 					(reference "R10")
 					(unit 1)
 				)
@@ -4126,14 +4309,14 @@
 					(unit 1)
 				)
 			)
-			(project "frontPanel"
-				(path "/cb8e3fb6-70fc-4f13-8abd-15b04d6c762c/362cfec2-7e3d-46a6-8792-68341e7a46bc"
+			(project "HT16K33Panel"
+				(path "/b6043b97-033c-4ff5-a42a-dc988563939b/94d1d237-97f6-432c-9d17-117e68031fe3"
 					(reference "R12")
 					(unit 1)
 				)
 			)
-			(project "HT16K33Panel"
-				(path "/e4888aad-78d5-4afc-b382-d3fab1889a4d/357f53c3-9934-46e1-a766-db83fe7e83fd"
+			(project "frontPanel"
+				(path "/cb8e3fb6-70fc-4f13-8abd-15b04d6c762c/362cfec2-7e3d-46a6-8792-68341e7a46bc"
 					(reference "R12")
 					(unit 1)
 				)
@@ -4206,14 +4389,14 @@
 					(unit 1)
 				)
 			)
-			(project "frontPanel"
-				(path "/cb8e3fb6-70fc-4f13-8abd-15b04d6c762c/362cfec2-7e3d-46a6-8792-68341e7a46bc"
+			(project "HT16K33Panel"
+				(path "/b6043b97-033c-4ff5-a42a-dc988563939b/94d1d237-97f6-432c-9d17-117e68031fe3"
 					(reference "R13")
 					(unit 1)
 				)
 			)
-			(project "HT16K33Panel"
-				(path "/e4888aad-78d5-4afc-b382-d3fab1889a4d/357f53c3-9934-46e1-a766-db83fe7e83fd"
+			(project "frontPanel"
+				(path "/cb8e3fb6-70fc-4f13-8abd-15b04d6c762c/362cfec2-7e3d-46a6-8792-68341e7a46bc"
 					(reference "R13")
 					(unit 1)
 				)
@@ -4286,14 +4469,14 @@
 					(unit 1)
 				)
 			)
-			(project "frontPanel"
-				(path "/cb8e3fb6-70fc-4f13-8abd-15b04d6c762c/362cfec2-7e3d-46a6-8792-68341e7a46bc"
+			(project "HT16K33Panel"
+				(path "/b6043b97-033c-4ff5-a42a-dc988563939b/94d1d237-97f6-432c-9d17-117e68031fe3"
 					(reference "R8")
 					(unit 1)
 				)
 			)
-			(project "HT16K33Panel"
-				(path "/e4888aad-78d5-4afc-b382-d3fab1889a4d/357f53c3-9934-46e1-a766-db83fe7e83fd"
+			(project "frontPanel"
+				(path "/cb8e3fb6-70fc-4f13-8abd-15b04d6c762c/362cfec2-7e3d-46a6-8792-68341e7a46bc"
 					(reference "R8")
 					(unit 1)
 				)
@@ -4383,14 +4566,14 @@
 					(unit 1)
 				)
 			)
-			(project "frontPanel"
-				(path "/cb8e3fb6-70fc-4f13-8abd-15b04d6c762c/362cfec2-7e3d-46a6-8792-68341e7a46bc"
+			(project "HT16K33Panel"
+				(path "/b6043b97-033c-4ff5-a42a-dc988563939b/94d1d237-97f6-432c-9d17-117e68031fe3"
 					(reference "D2")
 					(unit 1)
 				)
 			)
-			(project "HT16K33Panel"
-				(path "/e4888aad-78d5-4afc-b382-d3fab1889a4d/357f53c3-9934-46e1-a766-db83fe7e83fd"
+			(project "frontPanel"
+				(path "/cb8e3fb6-70fc-4f13-8abd-15b04d6c762c/362cfec2-7e3d-46a6-8792-68341e7a46bc"
 					(reference "D2")
 					(unit 1)
 				)
@@ -4463,14 +4646,14 @@
 					(unit 1)
 				)
 			)
-			(project "frontPanel"
-				(path "/cb8e3fb6-70fc-4f13-8abd-15b04d6c762c/362cfec2-7e3d-46a6-8792-68341e7a46bc"
+			(project "HT16K33Panel"
+				(path "/b6043b97-033c-4ff5-a42a-dc988563939b/94d1d237-97f6-432c-9d17-117e68031fe3"
 					(reference "R3")
 					(unit 1)
 				)
 			)
-			(project "HT16K33Panel"
-				(path "/e4888aad-78d5-4afc-b382-d3fab1889a4d/357f53c3-9934-46e1-a766-db83fe7e83fd"
+			(project "frontPanel"
+				(path "/cb8e3fb6-70fc-4f13-8abd-15b04d6c762c/362cfec2-7e3d-46a6-8792-68341e7a46bc"
 					(reference "R3")
 					(unit 1)
 				)
@@ -4545,14 +4728,14 @@
 					(unit 1)
 				)
 			)
-			(project "frontPanel"
-				(path "/cb8e3fb6-70fc-4f13-8abd-15b04d6c762c/362cfec2-7e3d-46a6-8792-68341e7a46bc"
+			(project "HT16K33Panel"
+				(path "/b6043b97-033c-4ff5-a42a-dc988563939b/94d1d237-97f6-432c-9d17-117e68031fe3"
 					(reference "C1")
 					(unit 1)
 				)
 			)
-			(project "HT16K33Panel"
-				(path "/e4888aad-78d5-4afc-b382-d3fab1889a4d/357f53c3-9934-46e1-a766-db83fe7e83fd"
+			(project "frontPanel"
+				(path "/cb8e3fb6-70fc-4f13-8abd-15b04d6c762c/362cfec2-7e3d-46a6-8792-68341e7a46bc"
 					(reference "C1")
 					(unit 1)
 				)
@@ -4625,14 +4808,14 @@
 					(unit 1)
 				)
 			)
-			(project "frontPanel"
-				(path "/cb8e3fb6-70fc-4f13-8abd-15b04d6c762c/362cfec2-7e3d-46a6-8792-68341e7a46bc"
+			(project "HT16K33Panel"
+				(path "/b6043b97-033c-4ff5-a42a-dc988563939b/94d1d237-97f6-432c-9d17-117e68031fe3"
 					(reference "R4")
 					(unit 1)
 				)
 			)
-			(project "HT16K33Panel"
-				(path "/e4888aad-78d5-4afc-b382-d3fab1889a4d/357f53c3-9934-46e1-a766-db83fe7e83fd"
+			(project "frontPanel"
+				(path "/cb8e3fb6-70fc-4f13-8abd-15b04d6c762c/362cfec2-7e3d-46a6-8792-68341e7a46bc"
 					(reference "R4")
 					(unit 1)
 				)
@@ -4705,14 +4888,14 @@
 					(unit 1)
 				)
 			)
-			(project "frontPanel"
-				(path "/cb8e3fb6-70fc-4f13-8abd-15b04d6c762c/362cfec2-7e3d-46a6-8792-68341e7a46bc"
+			(project "HT16K33Panel"
+				(path "/b6043b97-033c-4ff5-a42a-dc988563939b/94d1d237-97f6-432c-9d17-117e68031fe3"
 					(reference "R1")
 					(unit 1)
 				)
 			)
-			(project "HT16K33Panel"
-				(path "/e4888aad-78d5-4afc-b382-d3fab1889a4d/357f53c3-9934-46e1-a766-db83fe7e83fd"
+			(project "frontPanel"
+				(path "/cb8e3fb6-70fc-4f13-8abd-15b04d6c762c/362cfec2-7e3d-46a6-8792-68341e7a46bc"
 					(reference "R1")
 					(unit 1)
 				)
@@ -4785,14 +4968,14 @@
 					(unit 1)
 				)
 			)
-			(project "frontPanel"
-				(path "/cb8e3fb6-70fc-4f13-8abd-15b04d6c762c/362cfec2-7e3d-46a6-8792-68341e7a46bc"
+			(project "HT16K33Panel"
+				(path "/b6043b97-033c-4ff5-a42a-dc988563939b/94d1d237-97f6-432c-9d17-117e68031fe3"
 					(reference "R5")
 					(unit 1)
 				)
 			)
-			(project "HT16K33Panel"
-				(path "/e4888aad-78d5-4afc-b382-d3fab1889a4d/357f53c3-9934-46e1-a766-db83fe7e83fd"
+			(project "frontPanel"
+				(path "/cb8e3fb6-70fc-4f13-8abd-15b04d6c762c/362cfec2-7e3d-46a6-8792-68341e7a46bc"
 					(reference "R5")
 					(unit 1)
 				)

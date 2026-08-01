@@ -1,0 +1,224 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "b6043b97-033c-4ff5-a42a-dc988563939b")
+	(paper "A4")
+	(lib_symbols)
+	(sheet
+		(at 210.82 34.29)
+		(size 20.32 11.43)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "789d42d3-2bcc-4e87-98dc-adb5bd336a3a")
+		(property "Sheetname" "TEMPO"
+			(at 210.82 33.5784 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "TEMPO.kicad_sch"
+			(at 210.82 46.3046 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "rythemPanelBoard"
+				(path "/b6043b97-033c-4ff5-a42a-dc988563939b"
+					(page "6")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 125.73 34.29)
+		(size 34.29 15.24)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "87c842c8-84ba-41f2-8442-7cac73e76249")
+		(property "Sheetname" "SwitchMatrix"
+			(at 125.73 33.5784 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "SwitchMatrix.kicad_sch"
+			(at 125.73 50.1146 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "rythemPanelBoard"
+				(path "/b6043b97-033c-4ff5-a42a-dc988563939b"
+					(page "4")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 29.21 30.48)
+		(size 36.83 16.51)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "94d1d237-97f6-432c-9d17-117e68031fe3")
+		(property "Sheetname" "HT16K33"
+			(at 29.21 29.7684 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "HT16K33.kicad_sch"
+			(at 29.21 47.5746 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "rythemPanelBoard"
+				(path "/b6043b97-033c-4ff5-a42a-dc988563939b"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 168.91 31.75)
+		(size 30.48 12.7)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "c11c771e-d93f-4aa0-9802-52c492a5fe79")
+		(property "Sheetname" "Jack"
+			(at 168.91 31.0384 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Jack.kicad_sch"
+			(at 168.91 45.0346 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "rythemPanelBoard"
+				(path "/b6043b97-033c-4ff5-a42a-dc988563939b"
+					(page "5")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 81.28 31.75)
+		(size 31.75 13.97)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "dcdca6b2-c402-4156-b726-79ac708e13db")
+		(property "Sheetname" "LEDMatrix"
+			(at 81.28 31.0384 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "LEDMatrix.kicad_sch"
+			(at 81.28 46.3046 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "rythemPanelBoard"
+				(path "/b6043b97-033c-4ff5-a42a-dc988563939b"
+					(page "3")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
+)

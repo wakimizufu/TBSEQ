@@ -1,0 +1,9447 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "22c7acfe-73ea-46cb-bf4f-bb34b8cb9f88")
+	(paper "A4")
+	(lib_symbols
+		(symbol "SamacSys_Parts:FSM6JSMATR"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "S"
+				(at 26.67 7.62 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Value" "FSM6JSMATR"
+				(at 26.67 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Footprint" "FSM6JSMATR"
+				(at 26.67 -94.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1654270-2&DocType=Catalog%20Section&DocLang=English&PartCntxt=5-1437565-0&DocFormat=pdf"
+				(at 26.67 -194.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Description" "Body Features: Actuator Force 160 G | Cover Material Steel | Actuator Force 5.64 OZ | Case Color Brown | Product Orientation Vertical | Case Material Polyamide | Actuator Material Polyamide | Actuator Color Black | Actuator Profile Extended | Configuration Features: Switch Feedback Type Tactile | ESD Grounding Terminal Without | Operating Function NO | Number of Actuators Single | Configuration (Pole-Throw) Single Pole - Single Throw | Support Bracket Without | Ganged With | Contact Features: Switch Contact"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Height" "7.26"
+				(at 26.67 -394.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer_Name" "TE Connectivity"
+				(at 26.67 -494.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer_Part_Number" "FSM6JSMATR"
+				(at 26.67 -594.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Mouser Part Number" "N/A"
+				(at 26.67 -694.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/TE-Connectivity-Alcoswitch/FSM6JSMATR?qs=Im7Ui%252B8riBUZTeJpDMC8Dg%3D%3D"
+				(at 26.67 -794.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Arrow Part Number" "FSM6JSMATR"
+				(at 26.67 -894.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Arrow Price/Stock" "https://www.arrow.com/en/products/fsm6jsmatr/te-connectivity?utm_currency=USD&region=nac"
+				(at 26.67 -994.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(symbol "FSM6JSMATR_1_1"
+				(rectangle
+					(start 5.08 2.54)
+					(end 25.4 -5.08)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin passive line
+					(at 0 0 0)
+					(length 5.08)
+					(name "NO_1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -2.54 0)
+					(length 5.08)
+					(name "NO_2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 30.48 0 180)
+					(length 5.08)
+					(name "COM_1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 30.48 -2.54 180)
+					(length 5.08)
+					(name "COM_2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+	)
+	(text "4:STEP4"
+		(exclude_from_sim no)
+		(at 41.656 61.722 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "02841135-29d6-44ad-8fce-bede5947a869")
+	)
+	(text "13:STEP13"
+		(exclude_from_sim no)
+		(at 41.148 178.816 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "036fdeaa-86d9-4271-9ed1-0b6d007db2ac")
+	)
+	(text "11:STEP11"
+		(exclude_from_sim no)
+		(at 40.894 151.892 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "0b160b9d-79b9-4215-8ca0-03f5d142e775")
+	)
+	(text "1:STEP1"
+		(exclude_from_sim no)
+		(at 41.148 23.622 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "138d8fed-973e-4872-8f06-3d1dde0672bd")
+	)
+	(text "19:PATTERN"
+		(exclude_from_sim no)
+		(at 120.142 84.582 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "17c9c09f-6b63-473a-8b4a-591f6e0dcaca")
+	)
+	(text "10:STEP10"
+		(exclude_from_sim no)
+		(at 41.148 137.922 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "21d3a838-dc1b-4843-923d-adfcb8bd1200")
+	)
+	(text "27:BANK C"
+		(exclude_from_sim no)
+		(at 199.644 20.574 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "254804c9-4c55-498f-887c-e9af0e61a1aa")
+	)
+	(text "5:STEP5"
+		(exclude_from_sim no)
+		(at 41.656 74.422 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "266bfa8d-1099-42a9-a132-5325c8bc66b0")
+	)
+	(text "14:STEP14"
+		(exclude_from_sim no)
+		(at 120.142 20.828 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "2be83ecf-4284-4ba9-ab31-1ba5384f13ac")
+	)
+	(text "2:STEP2"
+		(exclude_from_sim no)
+		(at 41.148 36.068 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "3373f824-ddfb-4695-a25c-42d3d610c9ec")
+	)
+	(text "18:TRACK"
+		(exclude_from_sim no)
+		(at 119.38 71.882 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "396b1e23-d8f4-46a8-8236-c652436763a9")
+	)
+	(text "24:FUNC"
+		(exclude_from_sim no)
+		(at 119.888 149.352 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "4b885bd0-fb70-4456-9474-6b63f0f197dc")
+	)
+	(text "16:STEP16"
+		(exclude_from_sim no)
+		(at 120.142 46.736 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "653a3651-4b56-45a7-a2be-13511c9cdf8a")
+	)
+	(text "3:STEP3"
+		(exclude_from_sim no)
+		(at 41.148 49.022 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "672f2de0-9371-4b71-85be-28d5bca514d9")
+	)
+	(text "7:STEP7"
+		(exclude_from_sim no)
+		(at 40.894 99.568 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "673f5b36-cb2d-4e11-9fe0-4bf2c99d10b2")
+	)
+	(text "31:SCALE C"
+		(exclude_from_sim no)
+		(at 198.882 71.374 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "68adeeff-6693-48af-ba40-db73e52f8af4")
+	)
+	(text "8:STEP8"
+		(exclude_from_sim no)
+		(at 41.656 112.522 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "69747ffb-a00c-4554-b765-d4e46c6ed3e8")
+	)
+	(text "6:STEP6"
+		(exclude_from_sim no)
+		(at 41.148 86.868 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "6a96f5b5-1255-4a21-8a2c-2f30f8fb6b94")
+	)
+	(text "32:SCALE D"
+		(exclude_from_sim no)
+		(at 199.136 84.328 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "75e0d836-4c5f-4b87-83f0-c6017ef69e19")
+	)
+	(text "21:INST"
+		(exclude_from_sim no)
+		(at 120.142 109.982 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "8a7a8a73-8d9a-44e3-aaf9-376262471da0")
+	)
+	(text "26:BANK B"
+		(exclude_from_sim no)
+		(at 120.142 175.768 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "9995edd5-d04b-408a-aa60-a3d04e57a4ce")
+	)
+	(text "17:RUN/STOP"
+		(exclude_from_sim no)
+		(at 119.634 59.69 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "9c4acfc9-358f-4410-8a3d-ad3be3b9b496")
+	)
+	(text "23:SHUFFLE"
+		(exclude_from_sim no)
+		(at 120.142 135.382 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "a4da0e45-c2fd-4f76-8bdf-ccbfb94a95af")
+	)
+	(text "9:STEP9"
+		(exclude_from_sim no)
+		(at 40.64 125.222 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "c47744e3-925b-44c9-b7a4-3008ac616e70")
+	)
+	(text "25:BANK A"
+		(exclude_from_sim no)
+		(at 120.142 162.306 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "c7bdd151-e442-48c7-918e-b5474c14de5b")
+	)
+	(text "29:SCALE A"
+		(exclude_from_sim no)
+		(at 199.136 46.228 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "cb50c872-ccce-4d6d-910f-dacc25f7da0c")
+	)
+	(text "12:STEP12"
+		(exclude_from_sim no)
+		(at 40.894 164.592 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "ce5adc4f-6aee-42c1-a176-7d69c7517a09")
+	)
+	(text "22:LENGTH"
+		(exclude_from_sim no)
+		(at 120.142 122.428 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "cf152b76-1440-4954-adc0-e809d6f663ae")
+	)
+	(text "20:WRITE"
+		(exclude_from_sim no)
+		(at 119.888 97.536 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "e8a817f0-99c0-4abb-b0be-a1da264840cc")
+	)
+	(text "15:STEP15"
+		(exclude_from_sim no)
+		(at 120.142 33.782 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "f94b1068-4dc7-4eed-97cf-4b338c8c1198")
+	)
+	(text "30:SCALE B"
+		(exclude_from_sim no)
+		(at 198.882 58.928 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "f9589c21-7d06-470f-bcbb-6ee8e75f22ad")
+	)
+	(text "28:BANK D"
+		(exclude_from_sim no)
+		(at 199.644 33.782 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "fe400dc8-5918-48e8-8a44-3988f182fe3c")
+	)
+	(junction
+		(at 114.3 25.4)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "02909140-d789-4c24-8bb4-4d2be2fe0de5")
+	)
+	(junction
+		(at 193.04 25.4)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "02efc245-eea0-49d7-8442-b940bf921266")
+	)
+	(junction
+		(at 40.64 166.37)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "059d054d-3e28-4516-bc0a-4faca5d6f815")
+	)
+	(junction
+		(at 76.2 153.67)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "09a84b3e-8c2c-4582-a236-5a7b3af6e683")
+	)
+	(junction
+		(at 153.67 36.83)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0ffad16e-7052-414a-bf87-b524283b1918")
+	)
+	(junction
+		(at 76.2 50.8)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1d6e6531-81c7-4468-9235-10ff9be2c553")
+	)
+	(junction
+		(at 114.3 87.63)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1dbfce31-9213-4100-84f9-842f30f6f505")
+	)
+	(junction
+		(at 118.11 62.23)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1e746efe-a1fb-4ffd-ad3e-7b3a5db0fd89")
+	)
+	(junction
+		(at 76.2 26.67)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "204ccded-f940-4d8d-87ed-5206efa402ce")
+	)
+	(junction
+		(at 232.41 74.93)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2184ad53-67cb-405c-a842-95183c1751b7")
+	)
+	(junction
+		(at 193.04 62.23)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "25ac5797-4a6c-49ca-8f23-47c7417e27dc")
+	)
+	(junction
+		(at 36.83 63.5)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "265bfb3b-152b-4b50-8359-2aa5466d2a9b")
+	)
+	(junction
+		(at 118.11 125.73)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "278397d6-834d-4f54-8e26-3d1a1f242c52")
+	)
+	(junction
+		(at 196.85 49.53)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "27d60ec5-c34d-4144-af19-72e35bb85442")
+	)
+	(junction
+		(at 40.64 114.3)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "34f3ed37-ac95-4757-b5d4-3eb985d0cfc9")
+	)
+	(junction
+		(at 36.83 139.7)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3b61de9e-601a-41ab-9b27-bdcdec53f204")
+	)
+	(junction
+		(at 36.83 26.67)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3e70fa6b-3dc6-43b6-9c05-e8618fe3c305")
+	)
+	(junction
+		(at 153.67 100.33)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "47011205-d132-41e5-93ed-53b599b11a11")
+	)
+	(junction
+		(at 196.85 87.63)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "48e96aef-6462-46a0-b9ba-b89fbd497c5a")
+	)
+	(junction
+		(at 153.67 25.4)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5059691b-7247-46f0-8ccc-8bc70bfe737a")
+	)
+	(junction
+		(at 153.67 49.53)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "51f69b5e-4580-4bbe-a7b8-0357436f3dea")
+	)
+	(junction
+		(at 36.83 166.37)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "53290651-14cb-4c0d-a501-9449d4ac86d0")
+	)
+	(junction
+		(at 114.3 152.4)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "555c8403-fc4e-4811-9edb-bae4768814f4")
+	)
+	(junction
+		(at 118.11 49.53)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "556e16c7-aa0a-4ec5-b02d-e4db71ea6db9")
+	)
+	(junction
+		(at 36.83 114.3)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5766f07a-ebba-4478-ab71-349a2db3572b")
+	)
+	(junction
+		(at 40.64 88.9)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "57ac2d0b-dcf9-4ce4-92b7-1d7078828247")
+	)
+	(junction
+		(at 118.11 74.93)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "59948aa8-82cf-4ef9-baaa-9244cd80ee64")
+	)
+	(junction
+		(at 36.83 38.1)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5bf8ee00-bd02-4d36-9b3e-6fd7abda9270")
+	)
+	(junction
+		(at 196.85 36.83)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5d62fe3d-c7fe-4f52-913d-e673bacbdd2e")
+	)
+	(junction
+		(at 153.67 113.03)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5fbedb74-439c-4f0a-a5ee-b7c13a881681")
+	)
+	(junction
+		(at 76.2 38.1)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6035ae5b-2bd6-4c1b-b665-306e95eeac75")
+	)
+	(junction
+		(at 36.83 88.9)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "60ab32ae-4443-4e9d-99bc-e1394f1e7def")
+	)
+	(junction
+		(at 114.3 74.93)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "640c566b-3daa-4950-ae92-60b147772bf0")
+	)
+	(junction
+		(at 76.2 139.7)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6410dc13-109f-403e-b904-ec1e10871a61")
+	)
+	(junction
+		(at 114.3 138.43)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "694e06b2-d6ab-49e3-a17c-d71f9a5f39bb")
+	)
+	(junction
+		(at 118.11 138.43)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6a2464f8-8d94-4005-af50-21630afa6a66")
+	)
+	(junction
+		(at 36.83 101.6)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6b8ef9ab-1f70-42dd-a943-20611e1311e4")
+	)
+	(junction
+		(at 232.41 49.53)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6e576c77-0e76-458c-bcdb-fe2cede5db57")
+	)
+	(junction
+		(at 40.64 180.34)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "77afa442-ca38-4da1-b06c-e241ac650c97")
+	)
+	(junction
+		(at 114.3 49.53)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "786958de-27f8-407f-96bf-f0abd4c49941")
+	)
+	(junction
+		(at 153.67 87.63)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7994960b-0cda-4ad6-923e-815d91d5ecae")
+	)
+	(junction
+		(at 76.2 101.6)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7c54a8e8-4283-49d1-9aa1-a55daa25b5d6")
+	)
+	(junction
+		(at 118.11 100.33)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "801bb16b-0a2f-4cf0-b276-bcfdd2a296ca")
+	)
+	(junction
+		(at 36.83 127)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "86608a05-8bf9-47e3-bd8e-a2fa3554487f")
+	)
+	(junction
+		(at 40.64 153.67)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "87782f4a-2108-46f9-9724-e7d2e9d8273f")
+	)
+	(junction
+		(at 114.3 62.23)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "898c6e24-4d7b-4060-bdb8-e492245dcd6c")
+	)
+	(junction
+		(at 114.3 100.33)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8b2faf7b-5d4a-419d-8cf1-4c769c4cbc4c")
+	)
+	(junction
+		(at 118.11 36.83)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8c4b005d-8d7f-41ca-8f48-d553598fa97b")
+	)
+	(junction
+		(at 40.64 127)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "905d40c9-76e0-4e2a-9d16-fc0fa8138070")
+	)
+	(junction
+		(at 153.67 62.23)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "98ed19f5-dc8e-437d-bd14-664daf36ba1f")
+	)
+	(junction
+		(at 153.67 125.73)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "99ea08cd-6d25-46e3-b052-34f9a8f609cb")
+	)
+	(junction
+		(at 153.67 138.43)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9c14fe8f-3c43-440a-a297-921334cffbef")
+	)
+	(junction
+		(at 118.11 113.03)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a0cc5675-6925-49cb-aeb0-819afb40c835")
+	)
+	(junction
+		(at 118.11 25.4)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a4c54d70-6c43-4f0b-a670-f6340dff6527")
+	)
+	(junction
+		(at 40.64 63.5)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a6689446-6fc6-4c70-a399-6b8365caefc7")
+	)
+	(junction
+		(at 232.41 25.4)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ab8d7385-a0f1-44d3-93ff-632bfd0d84e1")
+	)
+	(junction
+		(at 36.83 153.67)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b0e666b6-f0c8-4cf6-98db-498aaae78d91")
+	)
+	(junction
+		(at 40.64 38.1)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b3157be3-bbfc-4e00-9552-e52b5fb1a96f")
+	)
+	(junction
+		(at 40.64 139.7)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b446a124-63fb-4e80-a6e1-9e20d7b365ed")
+	)
+	(junction
+		(at 76.2 76.2)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b78c1b86-c306-4fa9-aee4-7b8e0ee60b7b")
+	)
+	(junction
+		(at 114.3 36.83)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b986c93f-cd49-4972-b3d4-1d6442c90a43")
+	)
+	(junction
+		(at 114.3 165.1)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ba9816fa-324d-490c-a3fd-5046bcc33f12")
+	)
+	(junction
+		(at 76.2 114.3)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "bc4b9bfc-7db3-4395-a145-f4ae7433ef1f")
+	)
+	(junction
+		(at 76.2 180.34)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "bd3ecad4-e023-4262-afda-07f9c68252d7")
+	)
+	(junction
+		(at 153.67 74.93)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c514ad66-e8ef-4550-95cc-4a188dc39129")
+	)
+	(junction
+		(at 118.11 165.1)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c5b1c5e5-6200-400c-b234-622fa504383e")
+	)
+	(junction
+		(at 36.83 50.8)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c6127b75-870e-4b55-b9f4-fbaf68f056ee")
+	)
+	(junction
+		(at 193.04 74.93)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c687d9de-7f9a-4c89-8c46-61f67dfb7251")
+	)
+	(junction
+		(at 40.64 101.6)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c7090e8f-eaf6-4dea-80ec-782c89fe80bd")
+	)
+	(junction
+		(at 196.85 25.4)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ca39331a-8bd9-44ff-bf9c-47636cfddcae")
+	)
+	(junction
+		(at 40.64 26.67)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ca3b15ec-dcc4-49a2-bb4c-901e5c308926")
+	)
+	(junction
+		(at 232.41 36.83)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "cc5e3a3e-f115-4005-9273-f22c43067a2c")
+	)
+	(junction
+		(at 232.41 87.63)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "cd9f7fe2-c16c-4d96-9fe6-03b999111536")
+	)
+	(junction
+		(at 193.04 36.83)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ce5c9fde-2824-4280-aab0-1d14a625cf4c")
+	)
+	(junction
+		(at 196.85 74.93)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d1acac14-be86-45eb-a69b-963d6bb2f360")
+	)
+	(junction
+		(at 40.64 76.2)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d57694e2-d76b-4e20-9581-2f1a10cfd497")
+	)
+	(junction
+		(at 118.11 179.07)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d89b5d37-d9ce-48fb-8b8d-a3a42eba5a47")
+	)
+	(junction
+		(at 40.64 50.8)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d9888ddb-2edf-44f2-9282-b0c20e621e6a")
+	)
+	(junction
+		(at 153.67 179.07)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "da02fc65-760f-4b39-bec3-b5a70c21e22e")
+	)
+	(junction
+		(at 153.67 152.4)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "de300784-f4dd-4a50-9e4b-6e70b2373279")
+	)
+	(junction
+		(at 76.2 127)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e00e1e80-9a57-4c38-abc9-9a327a7d4c60")
+	)
+	(junction
+		(at 76.2 166.37)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e1ac141d-4060-4052-b3a5-9c94adf0a6df")
+	)
+	(junction
+		(at 232.41 62.23)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e4580769-2af6-40e2-9b69-d413525e8935")
+	)
+	(junction
+		(at 193.04 49.53)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e81927ca-0d5e-470c-9327-6a1dc9afecd3")
+	)
+	(junction
+		(at 114.3 125.73)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "eb614ce7-4600-4a24-96d6-abd92e877504")
+	)
+	(junction
+		(at 118.11 152.4)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ebef5c98-9583-44e8-81f3-e6a415100d97")
+	)
+	(junction
+		(at 196.85 62.23)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f46b6ba3-6578-439d-87b4-a50ce0f591b1")
+	)
+	(junction
+		(at 118.11 87.63)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f514d7c1-3bfc-471c-af66-16645ed3065b")
+	)
+	(junction
+		(at 114.3 113.03)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f5c496ee-16a2-4dd5-8352-f11adb225c1a")
+	)
+	(junction
+		(at 76.2 88.9)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f63943d9-bcf1-4909-88a8-fa09da3a5a8c")
+	)
+	(junction
+		(at 76.2 63.5)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "fb07e11a-6732-4f1e-ad6c-2f1f0c0ec726")
+	)
+	(junction
+		(at 36.83 76.2)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "fb65044e-7cf1-4de0-b2d5-f82020ce13fe")
+	)
+	(junction
+		(at 153.67 165.1)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "fc65a99e-f1d3-4742-a975-be025f12e9f8")
+	)
+	(wire
+		(pts
+			(xy 36.83 50.8) (xy 36.83 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0064537d-3622-4cf5-a9d5-945596330d09")
+	)
+	(wire
+		(pts
+			(xy 199.39 52.07) (xy 196.85 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "007a8878-a76e-49e0-82d2-342099c85cea")
+	)
+	(wire
+		(pts
+			(xy 118.11 102.87) (xy 118.11 100.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0294b7db-98b3-4350-9cc6-11275fb04e88")
+	)
+	(wire
+		(pts
+			(xy 232.41 64.77) (xy 232.41 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "05f2c7da-7085-48c9-9881-3540a7d02a0d")
+	)
+	(wire
+		(pts
+			(xy 73.66 101.6) (xy 76.2 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "090b4dd0-d1fe-4fac-b533-1df11d562e3e")
+	)
+	(wire
+		(pts
+			(xy 76.2 26.67) (xy 80.01 26.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "094d3c91-1f70-45d8-a62a-bad6f567360f")
+	)
+	(wire
+		(pts
+			(xy 120.65 115.57) (xy 118.11 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "09bf22b5-eb55-40ba-823c-90da6ecdc678")
+	)
+	(wire
+		(pts
+			(xy 36.83 166.37) (xy 40.64 166.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0a87b745-5be7-4820-9350-512bf7db7dc7")
+	)
+	(wire
+		(pts
+			(xy 76.2 88.9) (xy 80.01 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0aaa9845-d2b7-47ff-be88-f6e1134c93f4")
+	)
+	(wire
+		(pts
+			(xy 118.11 140.97) (xy 118.11 138.43)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0b89d643-06e3-4723-894c-6e2a7c0b26cd")
+	)
+	(wire
+		(pts
+			(xy 114.3 17.78) (xy 114.3 25.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0d56c733-1c58-4e19-8be9-c89f3f7f5f5d")
+	)
+	(wire
+		(pts
+			(xy 43.18 53.34) (xy 40.64 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0fae3d89-1e83-48f5-92c9-0c001c6c68e7")
+	)
+	(wire
+		(pts
+			(xy 73.66 63.5) (xy 76.2 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "103ab995-33e7-4048-9ad5-8a04353865d3")
+	)
+	(wire
+		(pts
+			(xy 151.13 52.07) (xy 153.67 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "105076b9-1e72-487a-8c74-e1e1e7182e78")
+	)
+	(wire
+		(pts
+			(xy 118.11 154.94) (xy 118.11 152.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "10e4e31e-1cf4-4d13-8d00-6ca1bf64244c")
+	)
+	(wire
+		(pts
+			(xy 43.18 182.88) (xy 40.64 182.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "12252ae5-7211-4671-ada2-382c8910037d")
+	)
+	(wire
+		(pts
+			(xy 36.83 38.1) (xy 36.83 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1319aa8a-cec0-481d-b866-9a543a770594")
+	)
+	(wire
+		(pts
+			(xy 36.83 88.9) (xy 40.64 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "13fb0c1e-be1b-4f67-b387-bc993b99fa66")
+	)
+	(wire
+		(pts
+			(xy 153.67 100.33) (xy 157.48 100.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "16287cf2-4e8a-4c0a-80d2-25d91b6e8787")
+	)
+	(wire
+		(pts
+			(xy 73.66 127) (xy 76.2 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1699afeb-d64f-4ced-9248-4e48c2475b16")
+	)
+	(wire
+		(pts
+			(xy 153.67 27.94) (xy 153.67 25.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "18ad3c94-0625-4875-a308-d5143722c9c6")
+	)
+	(wire
+		(pts
+			(xy 73.66 166.37) (xy 76.2 166.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "194d2470-a912-4778-bb12-b1bb23eafa31")
+	)
+	(wire
+		(pts
+			(xy 114.3 100.33) (xy 118.11 100.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1b2d235d-74be-416d-8245-1bdfa409772e")
+	)
+	(wire
+		(pts
+			(xy 40.64 101.6) (xy 43.18 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1ca272e1-f270-4912-8b05-b2712e8e5a5f")
+	)
+	(wire
+		(pts
+			(xy 40.64 66.04) (xy 40.64 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1ce15dbd-5025-4797-a662-75dd552964bd")
+	)
+	(wire
+		(pts
+			(xy 73.66 139.7) (xy 76.2 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1db2aeb8-2126-455e-916f-ccfa04d0ab9b")
+	)
+	(wire
+		(pts
+			(xy 196.85 64.77) (xy 196.85 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1e361ee1-2e72-4c3f-868a-488b6e97b84d")
+	)
+	(wire
+		(pts
+			(xy 151.13 62.23) (xy 153.67 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1f871636-0717-440e-a846-22a0c7408391")
+	)
+	(wire
+		(pts
+			(xy 153.67 154.94) (xy 153.67 152.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1f8b997d-2758-4801-8dff-b488abf02332")
+	)
+	(wire
+		(pts
+			(xy 151.13 128.27) (xy 153.67 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "204032f2-9291-4d28-9995-9d10c79227fb")
+	)
+	(wire
+		(pts
+			(xy 43.18 40.64) (xy 40.64 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "20ed9892-fcb9-4658-bcae-91a8af702af7")
+	)
+	(wire
+		(pts
+			(xy 229.87 36.83) (xy 232.41 36.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "21c8d294-b7b7-4388-9581-21c6739f10f0")
+	)
+	(wire
+		(pts
+			(xy 114.3 49.53) (xy 114.3 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "229daccb-9047-4c99-97c3-54098a97d430")
+	)
+	(wire
+		(pts
+			(xy 76.2 38.1) (xy 80.01 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2487842f-b449-421f-b786-2d07655d82b2")
+	)
+	(wire
+		(pts
+			(xy 73.66 114.3) (xy 76.2 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "24993527-9aa8-4961-a8d8-b2ce665abde3")
+	)
+	(wire
+		(pts
+			(xy 114.3 25.4) (xy 114.3 36.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "249d8b90-d5cd-475b-b43c-38d12caca952")
+	)
+	(wire
+		(pts
+			(xy 229.87 77.47) (xy 232.41 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "267e9b33-6bd5-4cfd-b0f1-8258bdadbcc5")
+	)
+	(wire
+		(pts
+			(xy 76.2 63.5) (xy 80.01 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "26d515cb-4979-4e51-8642-2e3ff662d498")
+	)
+	(wire
+		(pts
+			(xy 120.65 102.87) (xy 118.11 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "26f50556-bc9e-47cc-a697-462e34f26aea")
+	)
+	(wire
+		(pts
+			(xy 73.66 66.04) (xy 76.2 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "27992cf8-25b4-4b23-bb38-c9e1205226e9")
+	)
+	(wire
+		(pts
+			(xy 232.41 90.17) (xy 232.41 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "283067df-d8e3-4d85-aa80-326ef125a07f")
+	)
+	(wire
+		(pts
+			(xy 36.83 63.5) (xy 40.64 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "289402c1-fe4f-4487-ad97-89ce63a7c824")
+	)
+	(wire
+		(pts
+			(xy 120.65 39.37) (xy 118.11 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "296c6d9f-b9c0-4e08-8011-5b26877d2f1a")
+	)
+	(wire
+		(pts
+			(xy 232.41 25.4) (xy 236.22 25.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2984497a-61ac-4508-b3e2-a1907a00b2a2")
+	)
+	(wire
+		(pts
+			(xy 199.39 77.47) (xy 196.85 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2986802b-d821-4fbb-9294-111e8693d829")
+	)
+	(wire
+		(pts
+			(xy 76.2 53.34) (xy 76.2 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2ab01f55-9b0f-4c05-b7f6-fc6afc1e2e77")
+	)
+	(wire
+		(pts
+			(xy 193.04 17.78) (xy 193.04 25.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2ad1bd9a-a5bd-4db6-8acb-723a5911bca3")
+	)
+	(wire
+		(pts
+			(xy 193.04 25.4) (xy 193.04 36.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2b20a8f5-723b-4a5d-b446-4e74bd4fc1cf")
+	)
+	(wire
+		(pts
+			(xy 120.65 64.77) (xy 118.11 64.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2bff97c3-c7d0-428e-b04d-a5718b2bb872")
+	)
+	(wire
+		(pts
+			(xy 229.87 25.4) (xy 232.41 25.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2d094c38-2b61-4983-a53d-e27e921b08cc")
+	)
+	(wire
+		(pts
+			(xy 114.3 165.1) (xy 114.3 179.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2e738226-af9f-4414-9b5a-e470ee5d5323")
+	)
+	(wire
+		(pts
+			(xy 199.39 39.37) (xy 196.85 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2f27691e-5c22-42ce-9696-16dac9954d8c")
+	)
+	(wire
+		(pts
+			(xy 193.04 49.53) (xy 193.04 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2f55bf3c-8148-4e81-b687-91b6af5b4349")
+	)
+	(wire
+		(pts
+			(xy 76.2 156.21) (xy 76.2 153.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "342fc457-6214-4894-b731-0a4e4c46d0cd")
+	)
+	(wire
+		(pts
+			(xy 153.67 74.93) (xy 157.48 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "347bc409-8301-4ea9-93b9-e1610818a311")
+	)
+	(wire
+		(pts
+			(xy 76.2 78.74) (xy 76.2 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "34c0ebc5-9946-4b11-aaae-e842e8aa9d12")
+	)
+	(wire
+		(pts
+			(xy 118.11 87.63) (xy 120.65 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "34d73e34-79af-4c3c-8800-13e0a2898efe")
+	)
+	(wire
+		(pts
+			(xy 118.11 77.47) (xy 118.11 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "35ba7f35-7325-46ed-8bcc-33dea8e10860")
+	)
+	(wire
+		(pts
+			(xy 118.11 152.4) (xy 120.65 152.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "36f08ccf-7208-4a16-ae50-57727e91587a")
+	)
+	(wire
+		(pts
+			(xy 196.85 49.53) (xy 199.39 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "37111183-f7aa-4d6c-8d76-4b6cc4cc26db")
+	)
+	(wire
+		(pts
+			(xy 232.41 36.83) (xy 236.22 36.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "37719920-77a4-47cc-a44d-85627d63fbd9")
+	)
+	(wire
+		(pts
+			(xy 232.41 27.94) (xy 232.41 25.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "37cbb344-bc7b-4d28-87db-3fab6d87ace1")
+	)
+	(wire
+		(pts
+			(xy 199.39 64.77) (xy 196.85 64.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3a28eec2-7314-4270-8f8f-683feb46d635")
+	)
+	(wire
+		(pts
+			(xy 43.18 104.14) (xy 40.64 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3a3aa0f4-01bc-4db4-bd28-3d6436cbf9c5")
+	)
+	(wire
+		(pts
+			(xy 193.04 36.83) (xy 193.04 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3abc0d7f-982d-43f9-acea-53d2ea441535")
+	)
+	(wire
+		(pts
+			(xy 40.64 180.34) (xy 43.18 180.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3c4a2084-3745-4257-98be-4957f3958ccc")
+	)
+	(wire
+		(pts
+			(xy 76.2 129.54) (xy 76.2 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3cf306cf-3f0a-4a04-9eee-65066b0d0f82")
+	)
+	(wire
+		(pts
+			(xy 76.2 180.34) (xy 80.01 180.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3d60963b-c94f-4296-9648-00f65e22ef23")
+	)
+	(wire
+		(pts
+			(xy 151.13 39.37) (xy 153.67 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3edeedf7-e9f1-49c6-8834-1ad8a0c501e1")
+	)
+	(wire
+		(pts
+			(xy 153.67 140.97) (xy 153.67 138.43)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3f00fcf9-52b0-4226-a4c3-3691b38eca48")
+	)
+	(wire
+		(pts
+			(xy 153.67 165.1) (xy 157.48 165.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3fbec044-f086-4188-adc5-dedb1ce7fa7a")
+	)
+	(wire
+		(pts
+			(xy 36.83 139.7) (xy 36.83 153.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "40272a11-dde5-4691-ae4b-295c9475e321")
+	)
+	(wire
+		(pts
+			(xy 40.64 91.44) (xy 40.64 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "411d4388-1b7d-4706-a09a-8ac42acd668e")
+	)
+	(wire
+		(pts
+			(xy 40.64 78.74) (xy 40.64 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4120ebac-4836-4f33-8044-9d855f999ead")
+	)
+	(wire
+		(pts
+			(xy 76.2 101.6) (xy 80.01 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "42db694c-c16e-4707-8413-5b5439778059")
+	)
+	(wire
+		(pts
+			(xy 73.66 182.88) (xy 76.2 182.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "457c4433-2d3a-445e-9723-8d91f4912a69")
+	)
+	(wire
+		(pts
+			(xy 36.83 26.67) (xy 36.83 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "45dc5fcc-5307-450d-8795-a51ac427b512")
+	)
+	(wire
+		(pts
+			(xy 40.64 139.7) (xy 43.18 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "48206822-8c8d-4880-927f-2c0d52a30d65")
+	)
+	(wire
+		(pts
+			(xy 151.13 125.73) (xy 153.67 125.73)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4841a78f-f588-4bee-9cd5-53c19a760143")
+	)
+	(wire
+		(pts
+			(xy 36.83 166.37) (xy 36.83 180.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "49c0ff20-e1a3-4a6c-a915-00615d0e47f1")
+	)
+	(wire
+		(pts
+			(xy 153.67 128.27) (xy 153.67 125.73)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4a30e8ea-2eb0-4b91-a83b-6c9ec0a31b7f")
+	)
+	(wire
+		(pts
+			(xy 114.3 87.63) (xy 118.11 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4bbc1257-a67d-4016-ab8c-c4b4e152a110")
+	)
+	(wire
+		(pts
+			(xy 118.11 167.64) (xy 118.11 165.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4c044f46-7408-45a3-b975-40e9a84ea9b5")
+	)
+	(wire
+		(pts
+			(xy 114.3 125.73) (xy 114.3 138.43)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4c48aea2-4bad-42df-9f54-1ee36561c4c1")
+	)
+	(wire
+		(pts
+			(xy 76.2 66.04) (xy 76.2 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4e02c49f-fdeb-4614-af5e-410505640109")
+	)
+	(wire
+		(pts
+			(xy 229.87 39.37) (xy 232.41 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "51d1a48c-7038-4e0f-9178-82f783874385")
+	)
+	(wire
+		(pts
+			(xy 76.2 166.37) (xy 80.01 166.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5254a4f0-18ce-48da-a596-865c45476d1f")
+	)
+	(wire
+		(pts
+			(xy 151.13 179.07) (xy 153.67 179.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5255ba95-3874-4ae0-a1ca-6a703c5ca64d")
+	)
+	(wire
+		(pts
+			(xy 232.41 87.63) (xy 236.22 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "52e6d8c7-2f24-4cb0-abf4-90885e9a8ecd")
+	)
+	(wire
+		(pts
+			(xy 118.11 181.61) (xy 118.11 179.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "549f276f-da2d-4a44-90df-271f36a72dc6")
+	)
+	(wire
+		(pts
+			(xy 43.18 168.91) (xy 40.64 168.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "569fbdc8-b5fa-43d4-9ba4-da840ee6c902")
+	)
+	(wire
+		(pts
+			(xy 153.67 62.23) (xy 157.48 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5739835f-cfcc-43ac-8ccb-a9934c761083")
+	)
+	(wire
+		(pts
+			(xy 232.41 49.53) (xy 236.22 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "581c65f5-9394-4244-b208-86854f84d870")
+	)
+	(wire
+		(pts
+			(xy 36.83 88.9) (xy 36.83 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "582518d4-dcd3-4595-9556-888dcfc4a42f")
+	)
+	(wire
+		(pts
+			(xy 40.64 63.5) (xy 43.18 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "58ed65d2-bfd0-404e-8b65-999becdca770")
+	)
+	(wire
+		(pts
+			(xy 36.83 26.67) (xy 40.64 26.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5a2a32a6-3b3e-4002-9263-1e07bcbca6e8")
+	)
+	(wire
+		(pts
+			(xy 73.66 38.1) (xy 76.2 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5a7c11ee-ee10-41ea-8ca6-2b6c336a2cf1")
+	)
+	(wire
+		(pts
+			(xy 151.13 36.83) (xy 153.67 36.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5a822e11-8e02-4fb3-a398-363d8ef917fc")
+	)
+	(wire
+		(pts
+			(xy 73.66 116.84) (xy 76.2 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5aeb1950-3321-495b-bf18-b70d5e6588e2")
+	)
+	(wire
+		(pts
+			(xy 151.13 181.61) (xy 153.67 181.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5b6fb98b-1f48-4c8a-be93-6babc032294b")
+	)
+	(wire
+		(pts
+			(xy 114.3 165.1) (xy 118.11 165.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5d6d6136-8321-4b54-9e35-18de4ac5cfa8")
+	)
+	(wire
+		(pts
+			(xy 36.83 180.34) (xy 40.64 180.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5e86074a-ed8d-4e44-87f2-1e4808cb5ee8")
+	)
+	(wire
+		(pts
+			(xy 193.04 74.93) (xy 196.85 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5f215837-a6ce-40a4-98c7-a48df032254c")
+	)
+	(wire
+		(pts
+			(xy 76.2 139.7) (xy 80.01 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5f52921d-4afe-4c0f-aabb-547267c91318")
+	)
+	(wire
+		(pts
+			(xy 76.2 182.88) (xy 76.2 180.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "60e60066-e898-40db-8754-b1d15fee5f8f")
+	)
+	(wire
+		(pts
+			(xy 73.66 53.34) (xy 76.2 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "62d31551-41a4-413c-9e45-dc9a18e175ef")
+	)
+	(wire
+		(pts
+			(xy 114.3 152.4) (xy 114.3 165.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6364ab3b-e280-48d2-9169-79d774e4c902")
+	)
+	(wire
+		(pts
+			(xy 193.04 62.23) (xy 193.04 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "65a62779-67de-4959-aeaa-fe80dd6de029")
+	)
+	(wire
+		(pts
+			(xy 114.3 62.23) (xy 114.3 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "665af33a-dc43-4423-b1f7-f409b070cb9d")
+	)
+	(wire
+		(pts
+			(xy 118.11 179.07) (xy 120.65 179.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6733e43f-f988-465b-b49c-7835189d64ba")
+	)
+	(wire
+		(pts
+			(xy 193.04 25.4) (xy 196.85 25.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "68b5c7af-2641-4b31-843d-1bb8a04f1ed3")
+	)
+	(wire
+		(pts
+			(xy 193.04 62.23) (xy 196.85 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "69becdef-0fef-42d9-8634-41d1be994e17")
+	)
+	(wire
+		(pts
+			(xy 151.13 102.87) (xy 153.67 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "69e50408-d417-467d-9c45-7c572f62942b")
+	)
+	(wire
+		(pts
+			(xy 151.13 115.57) (xy 153.67 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6b1ddf9f-3de4-4521-837a-2837b888ddb4")
+	)
+	(wire
+		(pts
+			(xy 153.67 49.53) (xy 157.48 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6c2732ba-426c-4d12-b854-36f59bfe9fed")
+	)
+	(wire
+		(pts
+			(xy 73.66 50.8) (xy 76.2 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6d91d044-9655-4cab-a5ce-050a192940e0")
+	)
+	(wire
+		(pts
+			(xy 193.04 87.63) (xy 196.85 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6de28bc3-80af-4778-ab23-f9418746bc1f")
+	)
+	(wire
+		(pts
+			(xy 153.67 36.83) (xy 157.48 36.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6e1e686f-f91e-4e89-a547-6889bc4ab0c1")
+	)
+	(wire
+		(pts
+			(xy 189.23 17.78) (xy 193.04 17.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6e3f9c72-e8be-4d07-a918-0879228575d5")
+	)
+	(wire
+		(pts
+			(xy 43.18 91.44) (xy 40.64 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6eb9007f-2684-46ee-8c7f-2c0328266c2b")
+	)
+	(wire
+		(pts
+			(xy 118.11 74.93) (xy 120.65 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6ef25b19-f869-41f7-bbd6-749ade01bce4")
+	)
+	(wire
+		(pts
+			(xy 76.2 76.2) (xy 80.01 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6f127de0-89a1-4a74-87a2-5c2c1202c40e")
+	)
+	(wire
+		(pts
+			(xy 114.3 62.23) (xy 118.11 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6f4699c0-09df-450c-8e81-078fb3d7b443")
+	)
+	(wire
+		(pts
+			(xy 40.64 26.67) (xy 43.18 26.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "710f576c-e8fe-41d7-b608-d3a4f136fb71")
+	)
+	(wire
+		(pts
+			(xy 114.3 74.93) (xy 118.11 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "74c4d4d0-2174-4a3c-855b-66b01ed1dbf6")
+	)
+	(wire
+		(pts
+			(xy 232.41 77.47) (xy 232.41 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "74fc2137-fe49-43c9-ac37-c71ec774af44")
+	)
+	(wire
+		(pts
+			(xy 151.13 154.94) (xy 153.67 154.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "752632de-7242-4ccc-835b-b88b4befe37b")
+	)
+	(wire
+		(pts
+			(xy 118.11 36.83) (xy 120.65 36.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "766bf699-3091-42d1-8e1e-b3006990da3c")
+	)
+	(wire
+		(pts
+			(xy 76.2 168.91) (xy 76.2 166.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "76b3f7cd-3bdb-4c94-b5aa-746966f4fa64")
+	)
+	(wire
+		(pts
+			(xy 40.64 166.37) (xy 43.18 166.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "772f76e8-9647-4bd1-a2d3-f52735684eaa")
+	)
+	(wire
+		(pts
+			(xy 118.11 138.43) (xy 120.65 138.43)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "78a97652-e5b4-450e-88b6-f941003aabf5")
+	)
+	(wire
+		(pts
+			(xy 118.11 113.03) (xy 120.65 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7a9876a6-4b6b-4c52-bf4a-527cf6f0d254")
+	)
+	(wire
+		(pts
+			(xy 229.87 74.93) (xy 232.41 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7b08d822-3df7-47ce-9d52-f19f5c6c3576")
+	)
+	(wire
+		(pts
+			(xy 193.04 36.83) (xy 196.85 36.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7d1438e9-9c8b-4a07-815a-0b7a240e6de9")
+	)
+	(wire
+		(pts
+			(xy 114.3 113.03) (xy 118.11 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7e2cee64-d295-48b7-9b1d-330cf4fcca8a")
+	)
+	(wire
+		(pts
+			(xy 153.67 167.64) (xy 153.67 165.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7e6beb59-08fa-4810-a89d-3bba16cd490f")
+	)
+	(wire
+		(pts
+			(xy 229.87 90.17) (xy 232.41 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7fc3673e-a30b-4fd5-b54b-67d857e2b65a")
+	)
+	(wire
+		(pts
+			(xy 153.67 125.73) (xy 157.48 125.73)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "80957a67-d15a-432a-a50e-579a7b402770")
+	)
+	(wire
+		(pts
+			(xy 114.3 179.07) (xy 118.11 179.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "819e432a-017b-43d9-9b26-3556908c480a")
+	)
+	(wire
+		(pts
+			(xy 40.64 104.14) (xy 40.64 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "82bcd878-1028-4774-bd76-93e462a555aa")
+	)
+	(wire
+		(pts
+			(xy 120.65 128.27) (xy 118.11 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "839d46e9-5b2b-4436-9cef-bdea549bab52")
+	)
+	(wire
+		(pts
+			(xy 232.41 62.23) (xy 236.22 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "84082d20-dc53-4c3b-b25b-487308d8f943")
+	)
+	(wire
+		(pts
+			(xy 151.13 74.93) (xy 153.67 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "85514e8b-45fe-429c-8d53-a3e2a70bb645")
+	)
+	(wire
+		(pts
+			(xy 151.13 113.03) (xy 153.67 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "856f43c4-4a65-4370-862f-67f7a01b201f")
+	)
+	(wire
+		(pts
+			(xy 199.39 90.17) (xy 196.85 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "863d5888-1e45-4a09-8919-3e9883628b32")
+	)
+	(wire
+		(pts
+			(xy 151.13 87.63) (xy 153.67 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "866e93cb-8237-4bc6-bff4-cf333d9b8e42")
+	)
+	(wire
+		(pts
+			(xy 118.11 64.77) (xy 118.11 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "877ffefc-c9a4-4d88-9b31-445dee5d505c")
+	)
+	(wire
+		(pts
+			(xy 76.2 91.44) (xy 76.2 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "879d68cd-d13c-4d59-82f2-bab890d0cd31")
+	)
+	(wire
+		(pts
+			(xy 196.85 62.23) (xy 199.39 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "87a2f37c-2f83-4c8d-a9e5-c2a097a0b36b")
+	)
+	(wire
+		(pts
+			(xy 73.66 26.67) (xy 76.2 26.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "88283deb-83d2-447c-b4db-1123e0590977")
+	)
+	(wire
+		(pts
+			(xy 36.83 153.67) (xy 40.64 153.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8869f914-f54c-43d3-b00e-5c364373444f")
+	)
+	(wire
+		(pts
+			(xy 232.41 52.07) (xy 232.41 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "88ec8f8a-4835-4aae-8be1-68881fba601f")
+	)
+	(wire
+		(pts
+			(xy 118.11 39.37) (xy 118.11 36.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "89a38f51-c74e-43ee-a7b5-6dc1be7c8b05")
+	)
+	(wire
+		(pts
+			(xy 120.65 27.94) (xy 118.11 27.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "89a8f911-8aef-4d06-b7e7-b9f09f7da78e")
+	)
+	(wire
+		(pts
+			(xy 118.11 100.33) (xy 120.65 100.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8a2eb3bb-8905-46b1-a9a6-63bee478fa46")
+	)
+	(wire
+		(pts
+			(xy 114.3 25.4) (xy 118.11 25.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8adf321f-7371-44e3-b00d-b67d28bb42db")
+	)
+	(wire
+		(pts
+			(xy 151.13 90.17) (xy 153.67 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8b928013-f0fb-42f5-8fb8-3e341a88e627")
+	)
+	(wire
+		(pts
+			(xy 76.2 40.64) (xy 76.2 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8c41d78c-285c-4f48-b79e-2c6a566a4e17")
+	)
+	(wire
+		(pts
+			(xy 114.3 36.83) (xy 118.11 36.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8d581d53-0336-4682-b8e1-b788b909a4fe")
+	)
+	(wire
+		(pts
+			(xy 153.67 152.4) (xy 157.48 152.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8e38f305-7d84-4abd-806f-bec4b76b80b6")
+	)
+	(wire
+		(pts
+			(xy 40.64 142.24) (xy 40.64 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8eb0c383-4ab9-491b-a91b-a39176b331fc")
+	)
+	(wire
+		(pts
+			(xy 114.3 100.33) (xy 114.3 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8ec3b9e1-ff4c-4de6-a3a2-c76d10458c6e")
+	)
+	(wire
+		(pts
+			(xy 36.83 101.6) (xy 36.83 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "90750ef4-c704-491f-abc1-2e51ce6115f9")
+	)
+	(wire
+		(pts
+			(xy 151.13 100.33) (xy 153.67 100.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9081fe6b-5409-4acd-8016-119f0b8f6c9e")
+	)
+	(wire
+		(pts
+			(xy 153.67 25.4) (xy 157.48 25.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "923eb339-5a36-4880-a2fa-caf167039376")
+	)
+	(wire
+		(pts
+			(xy 114.3 152.4) (xy 118.11 152.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "926b16c4-af33-43b6-ad7c-2d2383e0a243")
+	)
+	(wire
+		(pts
+			(xy 73.66 142.24) (xy 76.2 142.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9358521f-0402-4e2c-80b8-eecd77ae1063")
+	)
+	(wire
+		(pts
+			(xy 43.18 142.24) (xy 40.64 142.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "94f28543-9607-4a39-9bf8-24119a68231b")
+	)
+	(wire
+		(pts
+			(xy 118.11 62.23) (xy 120.65 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "95ca04ba-0db2-458f-af58-b76a5a542cc4")
+	)
+	(wire
+		(pts
+			(xy 232.41 74.93) (xy 236.22 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "95d2f34d-4cf7-4451-8202-b7807d7ba301")
+	)
+	(wire
+		(pts
+			(xy 76.2 116.84) (xy 76.2 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "96594ef1-de27-4091-99fc-27af2c820f55")
+	)
+	(wire
+		(pts
+			(xy 114.3 36.83) (xy 114.3 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "96d0f074-559c-443d-aef5-5bd435c8dc81")
+	)
+	(wire
+		(pts
+			(xy 73.66 180.34) (xy 76.2 180.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9731db06-6c32-4d0c-b069-6cb807751a58")
+	)
+	(wire
+		(pts
+			(xy 43.18 129.54) (xy 40.64 129.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "980ac1df-502a-4d4d-a80b-ccfe480b7858")
+	)
+	(wire
+		(pts
+			(xy 120.65 90.17) (xy 118.11 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "98307f42-a9a5-4def-97e7-65c6393de911")
+	)
+	(wire
+		(pts
+			(xy 118.11 165.1) (xy 120.65 165.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9a879fdf-774c-4420-98f0-03ae4969f31e")
+	)
+	(wire
+		(pts
+			(xy 118.11 115.57) (xy 118.11 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9acc8bdc-6a75-4953-9efe-0a4cc483b7aa")
+	)
+	(wire
+		(pts
+			(xy 34.29 17.78) (xy 36.83 17.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9be01654-605a-4c30-be61-65bfac6d0a3b")
+	)
+	(wire
+		(pts
+			(xy 114.3 125.73) (xy 118.11 125.73)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9be0b230-7df0-4b4e-9b21-a1ebcb7372d2")
+	)
+	(wire
+		(pts
+			(xy 120.65 52.07) (xy 118.11 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9c89ac0f-f26f-4614-ad98-9faad8d82756")
+	)
+	(wire
+		(pts
+			(xy 73.66 104.14) (xy 76.2 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9d36c72e-da6d-4d59-b409-f744c605ce30")
+	)
+	(wire
+		(pts
+			(xy 43.18 78.74) (xy 40.64 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9df53f24-9c0d-4e81-ada7-e59f2796a780")
+	)
+	(wire
+		(pts
+			(xy 153.67 102.87) (xy 153.67 100.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9fdbb2d7-6088-4150-af95-e5b687a147d3")
+	)
+	(wire
+		(pts
+			(xy 196.85 25.4) (xy 199.39 25.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a155f30e-6a23-4fd6-a871-8d49bdeefc17")
+	)
+	(wire
+		(pts
+			(xy 120.65 167.64) (xy 118.11 167.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a17d2586-8364-4077-8e7d-6497d283e9aa")
+	)
+	(wire
+		(pts
+			(xy 114.3 74.93) (xy 114.3 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a1dbcb2a-fec9-4cbf-8344-5916c1c6a9c7")
+	)
+	(wire
+		(pts
+			(xy 151.13 49.53) (xy 153.67 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a2804001-f76e-4f03-a9c5-eec39212292b")
+	)
+	(wire
+		(pts
+			(xy 40.64 129.54) (xy 40.64 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a3e65d22-74c2-4141-b512-449bbfda375a")
+	)
+	(wire
+		(pts
+			(xy 196.85 36.83) (xy 199.39 36.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a44f261d-6149-4341-abd2-8b539f517d6a")
+	)
+	(wire
+		(pts
+			(xy 114.3 49.53) (xy 118.11 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a5d7cd53-d065-4cad-8d79-f202bbc6b8fd")
+	)
+	(wire
+		(pts
+			(xy 153.67 87.63) (xy 157.48 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a605d543-77a4-411b-bd78-81d083783639")
+	)
+	(wire
+		(pts
+			(xy 193.04 49.53) (xy 196.85 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a6a3747d-fd81-4977-a738-1f4dbac997bf")
+	)
+	(wire
+		(pts
+			(xy 153.67 113.03) (xy 157.48 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a7b6f18d-3ca5-4cba-bb5b-0df3a0b4e2a5")
+	)
+	(wire
+		(pts
+			(xy 76.2 153.67) (xy 80.01 153.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a7ee4b82-8b1d-4583-be7f-bd8bd3f0b129")
+	)
+	(wire
+		(pts
+			(xy 36.83 17.78) (xy 36.83 26.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a8660135-1f55-4c7e-a009-a5f2b682cf41")
+	)
+	(wire
+		(pts
+			(xy 36.83 50.8) (xy 40.64 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a86a41b1-73ef-40ef-b1c7-f2370a7b44a4")
+	)
+	(wire
+		(pts
+			(xy 199.39 27.94) (xy 196.85 27.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a8e9bbe3-9880-4191-bbd6-859f512f5cd4")
+	)
+	(wire
+		(pts
+			(xy 76.2 142.24) (xy 76.2 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a92db910-5d45-44b1-84ff-b31ce47bf3e6")
+	)
+	(wire
+		(pts
+			(xy 73.66 76.2) (xy 76.2 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a9c923ee-c043-4981-b9cb-062b24d8f622")
+	)
+	(wire
+		(pts
+			(xy 40.64 29.21) (xy 40.64 26.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "aab3d7db-8ede-49b5-b0d5-6c01b82d6872")
+	)
+	(wire
+		(pts
+			(xy 153.67 77.47) (xy 153.67 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "abbc4575-a9fb-4a1d-894c-1bc58309539d")
+	)
+	(wire
+		(pts
+			(xy 40.64 76.2) (xy 43.18 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "abbd040b-ae89-42e5-a2a8-eb7e7636d2d6")
+	)
+	(wire
+		(pts
+			(xy 73.66 40.64) (xy 76.2 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "af459a53-9217-40f9-a235-1dc0a3e27d37")
+	)
+	(wire
+		(pts
+			(xy 36.83 38.1) (xy 40.64 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b04b034f-cda0-4716-b576-bfc56e39aa22")
+	)
+	(wire
+		(pts
+			(xy 153.67 115.57) (xy 153.67 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b0c1d5f4-996a-40a4-be31-8366242ee73c")
+	)
+	(wire
+		(pts
+			(xy 40.64 88.9) (xy 43.18 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b261b8a7-4c72-47f6-8a08-71d9fc3158e3")
+	)
+	(wire
+		(pts
+			(xy 40.64 127) (xy 43.18 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b2f56c5e-6255-43c2-b113-b455769e0465")
+	)
+	(wire
+		(pts
+			(xy 153.67 52.07) (xy 153.67 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b36538f4-18c9-40b7-96e7-ae094e24722c")
+	)
+	(wire
+		(pts
+			(xy 43.18 116.84) (xy 40.64 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b3adc0d1-5af4-4462-9e15-65a8ed3965f8")
+	)
+	(wire
+		(pts
+			(xy 36.83 63.5) (xy 36.83 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b50a8241-adff-47fe-bfc5-520e2f100566")
+	)
+	(wire
+		(pts
+			(xy 40.64 168.91) (xy 40.64 166.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b50ccb22-c2c9-42cd-87f0-d8a414e0e20a")
+	)
+	(wire
+		(pts
+			(xy 40.64 53.34) (xy 40.64 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b566af7a-bed2-42db-84b9-b0bc1fd8de24")
+	)
+	(wire
+		(pts
+			(xy 151.13 77.47) (xy 153.67 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b671604c-815f-450d-bb51-6f41b0ce3d1d")
+	)
+	(wire
+		(pts
+			(xy 151.13 140.97) (xy 153.67 140.97)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b6cdc911-92b2-4a1e-9f30-328fbb0dd0c6")
+	)
+	(wire
+		(pts
+			(xy 118.11 27.94) (xy 118.11 25.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b7a5afde-385d-4440-96b0-74db358afcc4")
+	)
+	(wire
+		(pts
+			(xy 36.83 76.2) (xy 40.64 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b7efa461-5f85-4f0e-9306-124a80c84858")
+	)
+	(wire
+		(pts
+			(xy 114.3 87.63) (xy 114.3 100.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b81990e8-b568-48ba-baae-0bd1566955b9")
+	)
+	(wire
+		(pts
+			(xy 151.13 138.43) (xy 153.67 138.43)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b8590150-73be-4637-b089-c79cdde5a0db")
+	)
+	(wire
+		(pts
+			(xy 73.66 88.9) (xy 76.2 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b9b7a91d-34e0-4457-8950-946292d12984")
+	)
+	(wire
+		(pts
+			(xy 120.65 181.61) (xy 118.11 181.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b9f401c1-ce35-46d0-9101-53d0596e2c62")
+	)
+	(wire
+		(pts
+			(xy 36.83 76.2) (xy 36.83 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bb48d214-acaf-4866-aee2-ca5127033ec5")
+	)
+	(wire
+		(pts
+			(xy 36.83 127) (xy 40.64 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bc051c89-c625-4b8d-aa7f-a972c14a9453")
+	)
+	(wire
+		(pts
+			(xy 73.66 78.74) (xy 76.2 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bc48abd2-c0df-414d-aad0-f23745d799f7")
+	)
+	(wire
+		(pts
+			(xy 43.18 156.21) (xy 40.64 156.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "be0d4659-dd36-4ae4-9596-38e610620cab")
+	)
+	(wire
+		(pts
+			(xy 118.11 90.17) (xy 118.11 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bfee50b4-7bee-4a1f-96d3-b690ea34c36c")
+	)
+	(wire
+		(pts
+			(xy 73.66 29.21) (xy 76.2 29.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c15623b0-0651-47ed-88a9-109b96b34653")
+	)
+	(wire
+		(pts
+			(xy 196.85 77.47) (xy 196.85 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c1ded47b-ed70-4cab-abc2-76fec373a875")
+	)
+	(wire
+		(pts
+			(xy 153.67 138.43) (xy 157.48 138.43)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c1ec6115-79bb-4678-88e0-268e40c2c42e")
+	)
+	(wire
+		(pts
+			(xy 118.11 52.07) (xy 118.11 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c2482cfd-12e6-49cb-b87c-40ca32381d7a")
+	)
+	(wire
+		(pts
+			(xy 73.66 156.21) (xy 76.2 156.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c2c3ab1f-5a47-45cd-8435-1da027254eb0")
+	)
+	(wire
+		(pts
+			(xy 43.18 66.04) (xy 40.64 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c401bff8-91ec-41f3-adac-5a93c0ab5971")
+	)
+	(wire
+		(pts
+			(xy 232.41 39.37) (xy 232.41 36.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c4af3356-88ea-4b07-b8a3-676b8b32c80a")
+	)
+	(wire
+		(pts
+			(xy 36.83 114.3) (xy 40.64 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c4ceb6e5-f7ef-4007-8aea-dda3710cfa76")
+	)
+	(wire
+		(pts
+			(xy 153.67 64.77) (xy 153.67 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c6094e51-6ae6-46a5-a97c-021ca9bf122b")
+	)
+	(wire
+		(pts
+			(xy 73.66 153.67) (xy 76.2 153.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c66e94a9-4fb4-4be1-9458-e72b8e71f828")
+	)
+	(wire
+		(pts
+			(xy 43.18 29.21) (xy 40.64 29.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c6f5d778-4de0-4d09-92f6-fa80699c5baa")
+	)
+	(wire
+		(pts
+			(xy 229.87 49.53) (xy 232.41 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c7396301-1397-4d6d-af3a-8dcae04eccad")
+	)
+	(wire
+		(pts
+			(xy 151.13 165.1) (xy 153.67 165.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c792d531-346a-4fbf-8946-649cc5f53ae6")
+	)
+	(wire
+		(pts
+			(xy 229.87 27.94) (xy 232.41 27.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c79860eb-ff21-4bc8-b20b-dd15651eb8be")
+	)
+	(wire
+		(pts
+			(xy 76.2 29.21) (xy 76.2 26.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c7fc29b6-4f4a-46dc-abc7-867e13c2db18")
+	)
+	(wire
+		(pts
+			(xy 153.67 181.61) (xy 153.67 179.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c82a8bf7-3867-4217-a446-a7b542db149e")
+	)
+	(wire
+		(pts
+			(xy 118.11 125.73) (xy 120.65 125.73)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c8652b19-2993-4e9a-8542-5e1a41773476")
+	)
+	(wire
+		(pts
+			(xy 40.64 116.84) (xy 40.64 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c9db317a-0e53-46e6-8a86-2e5ae51ff211")
+	)
+	(wire
+		(pts
+			(xy 151.13 64.77) (xy 153.67 64.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c9f212f6-aa5c-4115-8e98-420b4189087a")
+	)
+	(wire
+		(pts
+			(xy 229.87 64.77) (xy 232.41 64.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ca847f46-22c5-4011-bd52-7d62c34c7b10")
+	)
+	(wire
+		(pts
+			(xy 196.85 39.37) (xy 196.85 36.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cb78fab0-db76-437b-9a0b-b78861af24ae")
+	)
+	(wire
+		(pts
+			(xy 76.2 127) (xy 80.01 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cc0cc689-fa21-4009-a50b-7305f42603d3")
+	)
+	(wire
+		(pts
+			(xy 40.64 156.21) (xy 40.64 153.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cd57f791-e598-4f15-9e0d-79f7205e1700")
+	)
+	(wire
+		(pts
+			(xy 36.83 114.3) (xy 36.83 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cf1aa418-8691-44a0-a962-e7216b4a4122")
+	)
+	(wire
+		(pts
+			(xy 120.65 140.97) (xy 118.11 140.97)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cf344108-d391-4a45-9d6b-33de3fbef0a8")
+	)
+	(wire
+		(pts
+			(xy 196.85 27.94) (xy 196.85 25.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d1893565-a1ec-495e-9503-4ef54e2214a5")
+	)
+	(wire
+		(pts
+			(xy 36.83 139.7) (xy 40.64 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d39b2943-879b-498c-9f26-558d74298677")
+	)
+	(wire
+		(pts
+			(xy 196.85 90.17) (xy 196.85 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d3b34be7-2bf9-48cd-968f-2136647ffdad")
+	)
+	(wire
+		(pts
+			(xy 120.65 77.47) (xy 118.11 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d4978348-9fbc-40ec-ab2d-4b7e7d57fad3")
+	)
+	(wire
+		(pts
+			(xy 153.67 39.37) (xy 153.67 36.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d49c1287-58f5-4991-8092-27b46a7d6e3f")
+	)
+	(wire
+		(pts
+			(xy 36.83 127) (xy 36.83 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d6d1506d-95a1-4191-9ca6-f92e552030e4")
+	)
+	(wire
+		(pts
+			(xy 229.87 87.63) (xy 232.41 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d71fa13e-fad0-4165-bebe-c404c3376a3b")
+	)
+	(wire
+		(pts
+			(xy 196.85 74.93) (xy 199.39 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d9039693-7bd0-4d46-9158-9bfc786d24e2")
+	)
+	(wire
+		(pts
+			(xy 114.3 138.43) (xy 118.11 138.43)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d97d72e7-cb12-4f02-b08a-0eb2eeebacc7")
+	)
+	(wire
+		(pts
+			(xy 40.64 153.67) (xy 43.18 153.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "da5de24f-2988-4ae4-89be-de4fa03ed0d0")
+	)
+	(wire
+		(pts
+			(xy 193.04 74.93) (xy 193.04 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "db14268f-0738-4b3e-ac1f-e943c5b359d9")
+	)
+	(wire
+		(pts
+			(xy 40.64 50.8) (xy 43.18 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "db76108d-71ee-4c1b-91e9-e260f70632ac")
+	)
+	(wire
+		(pts
+			(xy 153.67 179.07) (xy 157.48 179.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dc8bcb0e-3cef-4314-9cf3-902e659b2107")
+	)
+	(wire
+		(pts
+			(xy 76.2 114.3) (xy 80.01 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dd578037-0f11-4560-a61b-b3427848583c")
+	)
+	(wire
+		(pts
+			(xy 36.83 101.6) (xy 40.64 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ddbfc36b-42fc-4008-a381-1b038cfef2dd")
+	)
+	(wire
+		(pts
+			(xy 114.3 113.03) (xy 114.3 125.73)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e3ce6500-8e17-417e-b7cd-31aa9b74a20a")
+	)
+	(wire
+		(pts
+			(xy 76.2 50.8) (xy 80.01 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e3de839a-aaf3-42f7-80d5-cf8dd87ff379")
+	)
+	(wire
+		(pts
+			(xy 151.13 27.94) (xy 153.67 27.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e3ef35e5-e35c-4e19-ab67-76598766d050")
+	)
+	(wire
+		(pts
+			(xy 36.83 153.67) (xy 36.83 166.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e5228e7c-a70c-4e79-95c8-0d1fbac19c6d")
+	)
+	(wire
+		(pts
+			(xy 73.66 168.91) (xy 76.2 168.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e557bf2c-738a-4661-9d4e-4c9ee12c2909")
+	)
+	(wire
+		(pts
+			(xy 76.2 104.14) (xy 76.2 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ea7480bd-b1b2-4740-944b-66aee4faaeba")
+	)
+	(wire
+		(pts
+			(xy 151.13 167.64) (xy 153.67 167.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ec004cbb-9390-4bcf-a0da-426d2712396f")
+	)
+	(wire
+		(pts
+			(xy 118.11 128.27) (xy 118.11 125.73)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ec4555cc-7296-487f-9541-e85d2052e33b")
+	)
+	(wire
+		(pts
+			(xy 118.11 49.53) (xy 120.65 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ed46cbda-3e40-4da2-a681-88f140ae56b9")
+	)
+	(wire
+		(pts
+			(xy 153.67 90.17) (xy 153.67 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "eed05908-1030-462b-b8cb-0f758d1b4f91")
+	)
+	(wire
+		(pts
+			(xy 111.76 17.78) (xy 114.3 17.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ef1ef6f9-82be-4d9c-96f7-029499e9a6bb")
+	)
+	(wire
+		(pts
+			(xy 40.64 114.3) (xy 43.18 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f122b9b4-a14f-4db3-a4c4-abc041968b6b")
+	)
+	(wire
+		(pts
+			(xy 196.85 87.63) (xy 199.39 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f219f606-88ed-425b-9ed9-b307e3a4c5c5")
+	)
+	(wire
+		(pts
+			(xy 40.64 38.1) (xy 43.18 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f242f015-e909-47c1-97c3-23907c8afb9a")
+	)
+	(wire
+		(pts
+			(xy 120.65 154.94) (xy 118.11 154.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f32ac7d6-0472-4b9a-8554-d9d20d7dca20")
+	)
+	(wire
+		(pts
+			(xy 229.87 62.23) (xy 232.41 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f4285f00-d4e6-4f53-af1e-bc28b3d59188")
+	)
+	(wire
+		(pts
+			(xy 118.11 25.4) (xy 120.65 25.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f68b1a41-89e1-4120-a236-7e761b09cfdb")
+	)
+	(wire
+		(pts
+			(xy 40.64 40.64) (xy 40.64 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f897c489-9584-4e51-8a38-141f6628bf9e")
+	)
+	(wire
+		(pts
+			(xy 73.66 129.54) (xy 76.2 129.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fb00a159-34d5-47c2-b642-1f63594ab012")
+	)
+	(wire
+		(pts
+			(xy 151.13 152.4) (xy 153.67 152.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fbe590cb-6ded-4c66-93e8-0f2a2c8694e1")
+	)
+	(wire
+		(pts
+			(xy 196.85 52.07) (xy 196.85 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fcc66c94-fa3a-475f-9c92-5059a9ca3d2f")
+	)
+	(wire
+		(pts
+			(xy 114.3 138.43) (xy 114.3 152.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fcd1cd26-d9f9-4a93-9b75-57127ce392f6")
+	)
+	(wire
+		(pts
+			(xy 229.87 52.07) (xy 232.41 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fdb1151c-607e-452c-b205-ed135601470f")
+	)
+	(wire
+		(pts
+			(xy 40.64 182.88) (xy 40.64 180.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "feab63c7-cbbb-400b-8f8f-21c19fc12dc6")
+	)
+	(wire
+		(pts
+			(xy 151.13 25.4) (xy 153.67 25.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fecd1497-8cfe-40eb-a4af-64b61f30ab32")
+	)
+	(wire
+		(pts
+			(xy 73.66 91.44) (xy 76.2 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ff985535-8dae-4925-b7cd-d75bb8812f6b")
+	)
+	(global_label "RowK11"
+		(shape output)
+		(at 157.48 125.73 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "011b60a9-0b4b-4c44-8fc7-e66216ee3294")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 166.6942 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "RowK6"
+		(shape output)
+		(at 157.48 62.23 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "103637a3-7168-4503-beb0-060de5e25d62")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 166.6942 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "RowK4"
+		(shape output)
+		(at 236.22 36.83 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "10967b06-d71e-4055-a340-feb6b43c6253")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 245.4342 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "RowK8"
+		(shape output)
+		(at 157.48 87.63 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "14f64dcb-0f97-4c92-afbc-fed5f62dffe6")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 166.6942 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "RowK5"
+		(shape output)
+		(at 80.01 50.8 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "16aaabf7-e6d5-45c2-9e4c-42099329b565")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 89.2242 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "RowK5"
+		(shape output)
+		(at 157.48 49.53 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "33d43daa-528d-4df8-8a91-0a3adb01f1dc")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 166.6942 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "COM1{slash}KS0"
+		(shape output)
+		(at 34.29 17.78 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "40fba2f0-b3a4-4c3a-b082-3fea9eff4a78")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 21.0239 17.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "RowK8"
+		(shape output)
+		(at 236.22 87.63 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "47d08db4-167e-49e5-993a-dc354084a667")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 245.4342 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "RowK12"
+		(shape output)
+		(at 80.01 139.7 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "47efc59e-71fd-409b-92e7-2e9ad8ddf168")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 89.2242 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "RowK13"
+		(shape output)
+		(at 157.48 152.4 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "4bf8c80c-6a20-4bc5-b786-ce3fb69edb02")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 166.6942 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "RowK3"
+		(shape output)
+		(at 80.01 26.67 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "569ddba4-478f-41ca-b857-a1ddfd610e27")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 89.2242 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "RowK7"
+		(shape output)
+		(at 80.01 76.2 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "56e8b89f-9305-454f-9249-fad106125955")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 89.2242 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "RowK11"
+		(shape output)
+		(at 80.01 127 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "633ee3fe-accd-4ee1-8a1a-a3a98cb6b5c8")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 89.2242 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "RowK5"
+		(shape output)
+		(at 236.22 49.53 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "64338eb5-8a29-44bf-a200-b37b5b406cb0")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 245.4342 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "RowK7"
+		(shape output)
+		(at 236.22 74.93 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "66084a48-3269-494e-bfea-0c1db823818e")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 245.4342 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "RowK4"
+		(shape output)
+		(at 157.48 36.83 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "6893ffc8-cb0a-4d7c-93f6-5ee2b532d898")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 166.6942 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "RowK10"
+		(shape output)
+		(at 157.48 113.03 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "7165f253-b212-49f3-8af4-8ad5e9f2a5f8")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 166.6942 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "RowK6"
+		(shape output)
+		(at 80.01 63.5 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "776bed30-5f3f-4f6f-b063-98484ad77729")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 89.2242 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "RowK8"
+		(shape output)
+		(at 80.01 88.9 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "77f43caa-47b8-4115-9f8d-9765c51c46b2")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 89.2242 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "RowK7"
+		(shape output)
+		(at 157.48 74.93 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "79ad18b5-de8e-4a9b-840b-6f958e96230d")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 166.6942 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "RowK9"
+		(shape output)
+		(at 80.01 101.6 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "8a226dbb-9e2c-4027-9847-d9a38cae2c5d")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 89.2242 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "RowK6"
+		(shape output)
+		(at 236.22 62.23 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "93389ff7-79a7-4a81-b0ca-7fc04926cc86")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 245.4342 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "RowK12"
+		(shape output)
+		(at 157.48 138.43 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "9fb842bb-e50e-4820-9f8f-b0677dfff1fe")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 166.6942 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "RowK3"
+		(shape output)
+		(at 157.48 25.4 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "abcbc516-3b6b-4a63-92ce-eba1f1d5c596")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 166.6942 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "COM3/KS2"
+		(shape output)
+		(at 189.23 17.78 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "b5e14203-94af-4eaf-a7ac-9fdec2de55dd")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 175.9639 17.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "RowK4"
+		(shape output)
+		(at 80.01 38.1 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "bff13438-092c-4abb-9c8a-e1665e66f5c1")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 89.2242 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "RowK9"
+		(shape output)
+		(at 157.48 100.33 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "d916642c-eb10-4603-a77e-101945a6ad5b")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 166.6942 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "RowK14"
+		(shape output)
+		(at 80.01 166.37 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "dbcf51a1-f38b-40dd-beb9-37850ac743fb")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 89.2242 166.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "RowK3"
+		(shape output)
+		(at 236.22 25.4 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "dc25cbab-6356-4d25-b6f5-c3d63d70194c")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 245.4342 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "RowK13"
+		(shape output)
+		(at 80.01 153.67 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "dfd0f523-7a47-4775-92c4-2a29daf876bb")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 89.2242 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "RowK15"
+		(shape output)
+		(at 157.48 179.07 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "e1373184-836d-478b-8398-f9d21c730eae")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 166.6942 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "RowK14"
+		(shape output)
+		(at 157.48 165.1 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "e3bf8e2d-8b9f-4c1f-85b4-a1238368987b")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 166.6942 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "COM2/KS1"
+		(shape output)
+		(at 111.76 17.78 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "e460ee01-ace7-4941-a73e-429d52877abd")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 98.4939 17.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "RowK15"
+		(shape output)
+		(at 80.01 180.34 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "e470cd0b-1054-4e27-a997-29264136f99a")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 89.2242 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "RowK10"
+		(shape output)
+		(at 80.01 114.3 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "ee276336-ce17-4a79-82aa-ab206a84853b")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 89.2242 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(symbol
+		(lib_id "SamacSys_Parts:FSM6JSMATR")
+		(at 43.18 166.37 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "070b1821-d307-4bbc-a4dc-dab7ce6a4b44")
+		(property "Reference" "S12"
+			(at 58.42 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "FSM6JSMATR"
+			(at 58.42 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "SamacSys_parts:FSM6JSMATR"
+			(at 69.85 261.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1654270-2&DocType=Catalog%20Section&DocLang=English&PartCntxt=5-1437565-0&DocFormat=pdf"
+			(at 69.85 361.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "Body Features: Actuator Force 160 G | Cover Material Steel | Actuator Force 5.64 OZ | Case Color Brown | Product Orientation Vertical | Case Material Polyamide | Actuator Material Polyamide | Actuator Color Black | Actuator Profile Extended | Configuration Features: Switch Feedback Type Tactile | ESD Grounding Terminal Without | Operating Function NO | Number of Actuators Single | Configuration (Pole-Throw) Single Pole - Single Throw | Support Bracket Without | Ganged With | Contact Features: Switch Contact"
+			(at 43.18 166.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Height" "7.26"
+			(at 69.85 561.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "TE Connectivity"
+			(at 69.85 661.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "FSM6JSMATR"
+			(at 69.85 761.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "N/A"
+			(at 69.85 861.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/TE-Connectivity-Alcoswitch/FSM6JSMATR?qs=Im7Ui%252B8riBUZTeJpDMC8Dg%3D%3D"
+			(at 69.85 961.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Arrow Part Number" "FSM6JSMATR"
+			(at 69.85 1061.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Arrow Price/Stock" "https://www.arrow.com/en/products/fsm6jsmatr/te-connectivity?utm_currency=USD&region=nac"
+			(at 69.85 1161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "4"
+			(uuid "5478cc8a-ea0d-45be-ab38-6fb10cf40baa")
+		)
+		(pin "2"
+			(uuid "e8e5d3fb-f648-447e-9a73-76e0f6d2f83e")
+		)
+		(pin "3"
+			(uuid "446e5415-e7aa-48bc-a73b-2d5e9be834a6")
+		)
+		(pin "1"
+			(uuid "d1476ab5-c99e-4d04-a627-71a209113d7a")
+		)
+		(instances
+			(project "rythemPanelBoard"
+				(path "/b6043b97-033c-4ff5-a42a-dc988563939b/87c842c8-84ba-41f2-8442-7cac73e76249"
+					(reference "S12")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "SamacSys_Parts:FSM6JSMATR")
+		(at 120.65 74.93 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0ab5caa1-9275-49b2-8f87-8e077ec8e678")
+		(property "Reference" "S18"
+			(at 135.89 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "FSM6JSMATR"
+			(at 135.89 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "SamacSys_parts:FSM6JSMATR"
+			(at 147.32 169.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1654270-2&DocType=Catalog%20Section&DocLang=English&PartCntxt=5-1437565-0&DocFormat=pdf"
+			(at 147.32 269.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "Body Features: Actuator Force 160 G | Cover Material Steel | Actuator Force 5.64 OZ | Case Color Brown | Product Orientation Vertical | Case Material Polyamide | Actuator Material Polyamide | Actuator Color Black | Actuator Profile Extended | Configuration Features: Switch Feedback Type Tactile | ESD Grounding Terminal Without | Operating Function NO | Number of Actuators Single | Configuration (Pole-Throw) Single Pole - Single Throw | Support Bracket Without | Ganged With | Contact Features: Switch Contact"
+			(at 120.65 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Height" "7.26"
+			(at 147.32 469.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "TE Connectivity"
+			(at 147.32 569.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "FSM6JSMATR"
+			(at 147.32 669.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "N/A"
+			(at 147.32 769.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/TE-Connectivity-Alcoswitch/FSM6JSMATR?qs=Im7Ui%252B8riBUZTeJpDMC8Dg%3D%3D"
+			(at 147.32 869.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Arrow Part Number" "FSM6JSMATR"
+			(at 147.32 969.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Arrow Price/Stock" "https://www.arrow.com/en/products/fsm6jsmatr/te-connectivity?utm_currency=USD&region=nac"
+			(at 147.32 1069.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "4"
+			(uuid "d3974a2b-5f44-48b0-898f-d566f4b913ca")
+		)
+		(pin "2"
+			(uuid "0257b766-3d29-4d7a-9798-c34dd84aa3c8")
+		)
+		(pin "3"
+			(uuid "0fe2ad84-a936-4d7a-a9ac-4479381ee698")
+		)
+		(pin "1"
+			(uuid "7ab17033-6cd8-4a63-b64c-347ae32f8280")
+		)
+		(instances
+			(project "rythemPanelBoard"
+				(path "/b6043b97-033c-4ff5-a42a-dc988563939b/87c842c8-84ba-41f2-8442-7cac73e76249"
+					(reference "S18")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "SamacSys_Parts:FSM6JSMATR")
+		(at 43.18 139.7 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0bc9bb26-39a7-4437-8335-f3760f08df79")
+		(property "Reference" "S10"
+			(at 58.42 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "FSM6JSMATR"
+			(at 58.42 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "SamacSys_parts:FSM6JSMATR"
+			(at 69.85 234.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1654270-2&DocType=Catalog%20Section&DocLang=English&PartCntxt=5-1437565-0&DocFormat=pdf"
+			(at 69.85 334.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "Body Features: Actuator Force 160 G | Cover Material Steel | Actuator Force 5.64 OZ | Case Color Brown | Product Orientation Vertical | Case Material Polyamide | Actuator Material Polyamide | Actuator Color Black | Actuator Profile Extended | Configuration Features: Switch Feedback Type Tactile | ESD Grounding Terminal Without | Operating Function NO | Number of Actuators Single | Configuration (Pole-Throw) Single Pole - Single Throw | Support Bracket Without | Ganged With | Contact Features: Switch Contact"
+			(at 43.18 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Height" "7.26"
+			(at 69.85 534.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "TE Connectivity"
+			(at 69.85 634.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "FSM6JSMATR"
+			(at 69.85 734.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "N/A"
+			(at 69.85 834.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/TE-Connectivity-Alcoswitch/FSM6JSMATR?qs=Im7Ui%252B8riBUZTeJpDMC8Dg%3D%3D"
+			(at 69.85 934.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Arrow Part Number" "FSM6JSMATR"
+			(at 69.85 1034.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Arrow Price/Stock" "https://www.arrow.com/en/products/fsm6jsmatr/te-connectivity?utm_currency=USD&region=nac"
+			(at 69.85 1134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "4"
+			(uuid "1ff94c6b-53aa-44b6-ab99-fd2c7895b028")
+		)
+		(pin "2"
+			(uuid "97eca8e5-240a-4138-be9b-7229027fd51c")
+		)
+		(pin "3"
+			(uuid "f16720f0-d5df-401a-a31c-a4927a471e06")
+		)
+		(pin "1"
+			(uuid "c318ffae-de51-49c6-a543-5fba5bf07903")
+		)
+		(instances
+			(project "rythemPanelBoard"
+				(path "/b6043b97-033c-4ff5-a42a-dc988563939b/87c842c8-84ba-41f2-8442-7cac73e76249"
+					(reference "S10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "SamacSys_Parts:FSM6JSMATR")
+		(at 120.65 152.4 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "14f13608-5407-4dd6-977a-27f253142815")
+		(property "Reference" "S24"
+			(at 135.89 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "FSM6JSMATR"
+			(at 135.89 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "SamacSys_parts:FSM6JSMATR"
+			(at 147.32 247.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1654270-2&DocType=Catalog%20Section&DocLang=English&PartCntxt=5-1437565-0&DocFormat=pdf"
+			(at 147.32 347.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "Body Features: Actuator Force 160 G | Cover Material Steel | Actuator Force 5.64 OZ | Case Color Brown | Product Orientation Vertical | Case Material Polyamide | Actuator Material Polyamide | Actuator Color Black | Actuator Profile Extended | Configuration Features: Switch Feedback Type Tactile | ESD Grounding Terminal Without | Operating Function NO | Number of Actuators Single | Configuration (Pole-Throw) Single Pole - Single Throw | Support Bracket Without | Ganged With | Contact Features: Switch Contact"
+			(at 120.65 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Height" "7.26"
+			(at 147.32 547.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "TE Connectivity"
+			(at 147.32 647.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "FSM6JSMATR"
+			(at 147.32 747.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "N/A"
+			(at 147.32 847.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/TE-Connectivity-Alcoswitch/FSM6JSMATR?qs=Im7Ui%252B8riBUZTeJpDMC8Dg%3D%3D"
+			(at 147.32 947.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Arrow Part Number" "FSM6JSMATR"
+			(at 147.32 1047.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Arrow Price/Stock" "https://www.arrow.com/en/products/fsm6jsmatr/te-connectivity?utm_currency=USD&region=nac"
+			(at 147.32 1147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "4"
+			(uuid "56f37091-7544-4cd9-b73d-0ac58e090004")
+		)
+		(pin "2"
+			(uuid "579ab26b-579f-457c-9fb6-ee4b96f5eee5")
+		)
+		(pin "3"
+			(uuid "cecbb99c-7fb1-4e10-bda1-296a58083d11")
+		)
+		(pin "1"
+			(uuid "9d8a14e1-63c7-46b3-beed-d9ab30ede803")
+		)
+		(instances
+			(project "rythemPanelBoard"
+				(path "/b6043b97-033c-4ff5-a42a-dc988563939b/87c842c8-84ba-41f2-8442-7cac73e76249"
+					(reference "S24")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "SamacSys_Parts:FSM6JSMATR")
+		(at 43.18 180.34 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "153dd04c-6deb-465f-9023-cb00490d6058")
+		(property "Reference" "S13"
+			(at 58.42 172.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "FSM6JSMATR"
+			(at 58.42 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "SamacSys_parts:FSM6JSMATR"
+			(at 69.85 275.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1654270-2&DocType=Catalog%20Section&DocLang=English&PartCntxt=5-1437565-0&DocFormat=pdf"
+			(at 69.85 375.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "Body Features: Actuator Force 160 G | Cover Material Steel | Actuator Force 5.64 OZ | Case Color Brown | Product Orientation Vertical | Case Material Polyamide | Actuator Material Polyamide | Actuator Color Black | Actuator Profile Extended | Configuration Features: Switch Feedback Type Tactile | ESD Grounding Terminal Without | Operating Function NO | Number of Actuators Single | Configuration (Pole-Throw) Single Pole - Single Throw | Support Bracket Without | Ganged With | Contact Features: Switch Contact"
+			(at 43.18 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Height" "7.26"
+			(at 69.85 575.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "TE Connectivity"
+			(at 69.85 675.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "FSM6JSMATR"
+			(at 69.85 775.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "N/A"
+			(at 69.85 875.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/TE-Connectivity-Alcoswitch/FSM6JSMATR?qs=Im7Ui%252B8riBUZTeJpDMC8Dg%3D%3D"
+			(at 69.85 975.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Arrow Part Number" "FSM6JSMATR"
+			(at 69.85 1075.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Arrow Price/Stock" "https://www.arrow.com/en/products/fsm6jsmatr/te-connectivity?utm_currency=USD&region=nac"
+			(at 69.85 1175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "4"
+			(uuid "42efc563-797d-4326-a3a5-073107d1f7f6")
+		)
+		(pin "2"
+			(uuid "6f66db13-820f-4de4-92d4-92b9b0523876")
+		)
+		(pin "3"
+			(uuid "7aaaafbf-3870-470d-a48e-23f8a87f0836")
+		)
+		(pin "1"
+			(uuid "97f224a2-9cd7-46d6-8c4c-87948900c063")
+		)
+		(instances
+			(project "rythemPanelBoard"
+				(path "/b6043b97-033c-4ff5-a42a-dc988563939b/87c842c8-84ba-41f2-8442-7cac73e76249"
+					(reference "S13")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "SamacSys_Parts:FSM6JSMATR")
+		(at 120.65 49.53 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "236634a9-4ded-4d4d-9f3a-77ed63400916")
+		(property "Reference" "S16"
+			(at 135.89 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "FSM6JSMATR"
+			(at 135.89 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "SamacSys_parts:FSM6JSMATR"
+			(at 147.32 144.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1654270-2&DocType=Catalog%20Section&DocLang=English&PartCntxt=5-1437565-0&DocFormat=pdf"
+			(at 147.32 244.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "Body Features: Actuator Force 160 G | Cover Material Steel | Actuator Force 5.64 OZ | Case Color Brown | Product Orientation Vertical | Case Material Polyamide | Actuator Material Polyamide | Actuator Color Black | Actuator Profile Extended | Configuration Features: Switch Feedback Type Tactile | ESD Grounding Terminal Without | Operating Function NO | Number of Actuators Single | Configuration (Pole-Throw) Single Pole - Single Throw | Support Bracket Without | Ganged With | Contact Features: Switch Contact"
+			(at 120.65 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Height" "7.26"
+			(at 147.32 444.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "TE Connectivity"
+			(at 147.32 544.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "FSM6JSMATR"
+			(at 147.32 644.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "N/A"
+			(at 147.32 744.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/TE-Connectivity-Alcoswitch/FSM6JSMATR?qs=Im7Ui%252B8riBUZTeJpDMC8Dg%3D%3D"
+			(at 147.32 844.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Arrow Part Number" "FSM6JSMATR"
+			(at 147.32 944.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Arrow Price/Stock" "https://www.arrow.com/en/products/fsm6jsmatr/te-connectivity?utm_currency=USD&region=nac"
+			(at 147.32 1044.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "4"
+			(uuid "36f4831d-7aaa-42a9-a2e9-6b5f4eccf78b")
+		)
+		(pin "2"
+			(uuid "8c6811e5-5d42-47e5-a0a9-ca242ef725b7")
+		)
+		(pin "3"
+			(uuid "22800b0d-1683-4f6c-8105-8afd3886aa46")
+		)
+		(pin "1"
+			(uuid "dfc6396d-209c-4055-9016-6ce63702d275")
+		)
+		(instances
+			(project "rythemPanelBoard"
+				(path "/b6043b97-033c-4ff5-a42a-dc988563939b/87c842c8-84ba-41f2-8442-7cac73e76249"
+					(reference "S16")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "SamacSys_Parts:FSM6JSMATR")
+		(at 120.65 36.83 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2518e2c2-b921-48a2-b03e-44574df6af68")
+		(property "Reference" "S15"
+			(at 135.89 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "FSM6JSMATR"
+			(at 135.89 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "SamacSys_parts:FSM6JSMATR"
+			(at 147.32 131.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1654270-2&DocType=Catalog%20Section&DocLang=English&PartCntxt=5-1437565-0&DocFormat=pdf"
+			(at 147.32 231.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "Body Features: Actuator Force 160 G | Cover Material Steel | Actuator Force 5.64 OZ | Case Color Brown | Product Orientation Vertical | Case Material Polyamide | Actuator Material Polyamide | Actuator Color Black | Actuator Profile Extended | Configuration Features: Switch Feedback Type Tactile | ESD Grounding Terminal Without | Operating Function NO | Number of Actuators Single | Configuration (Pole-Throw) Single Pole - Single Throw | Support Bracket Without | Ganged With | Contact Features: Switch Contact"
+			(at 120.65 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Height" "7.26"
+			(at 147.32 431.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "TE Connectivity"
+			(at 147.32 531.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "FSM6JSMATR"
+			(at 147.32 631.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "N/A"
+			(at 147.32 731.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/TE-Connectivity-Alcoswitch/FSM6JSMATR?qs=Im7Ui%252B8riBUZTeJpDMC8Dg%3D%3D"
+			(at 147.32 831.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Arrow Part Number" "FSM6JSMATR"
+			(at 147.32 931.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Arrow Price/Stock" "https://www.arrow.com/en/products/fsm6jsmatr/te-connectivity?utm_currency=USD&region=nac"
+			(at 147.32 1031.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "4"
+			(uuid "c50539f9-59db-417d-acb2-b7fe1f61e8ba")
+		)
+		(pin "2"
+			(uuid "71067a97-6a0b-4659-a68e-60a88df426ad")
+		)
+		(pin "3"
+			(uuid "b58535e5-30db-477e-87ad-1a8822155847")
+		)
+		(pin "1"
+			(uuid "33d6898a-20d2-4981-8afd-1c71d9a27e37")
+		)
+		(instances
+			(project "rythemPanelBoard"
+				(path "/b6043b97-033c-4ff5-a42a-dc988563939b/87c842c8-84ba-41f2-8442-7cac73e76249"
+					(reference "S15")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "SamacSys_Parts:FSM6JSMATR")
+		(at 43.18 114.3 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "30daf8e8-fdc7-4731-aff1-95c8480d413d")
+		(property "Reference" "S8"
+			(at 58.42 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "FSM6JSMATR"
+			(at 58.42 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "SamacSys_parts:FSM6JSMATR"
+			(at 69.85 209.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1654270-2&DocType=Catalog%20Section&DocLang=English&PartCntxt=5-1437565-0&DocFormat=pdf"
+			(at 69.85 309.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "Body Features: Actuator Force 160 G | Cover Material Steel | Actuator Force 5.64 OZ | Case Color Brown | Product Orientation Vertical | Case Material Polyamide | Actuator Material Polyamide | Actuator Color Black | Actuator Profile Extended | Configuration Features: Switch Feedback Type Tactile | ESD Grounding Terminal Without | Operating Function NO | Number of Actuators Single | Configuration (Pole-Throw) Single Pole - Single Throw | Support Bracket Without | Ganged With | Contact Features: Switch Contact"
+			(at 43.18 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Height" "7.26"
+			(at 69.85 509.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "TE Connectivity"
+			(at 69.85 609.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "FSM6JSMATR"
+			(at 69.85 709.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "N/A"
+			(at 69.85 809.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/TE-Connectivity-Alcoswitch/FSM6JSMATR?qs=Im7Ui%252B8riBUZTeJpDMC8Dg%3D%3D"
+			(at 69.85 909.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Arrow Part Number" "FSM6JSMATR"
+			(at 69.85 1009.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Arrow Price/Stock" "https://www.arrow.com/en/products/fsm6jsmatr/te-connectivity?utm_currency=USD&region=nac"
+			(at 69.85 1109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "4"
+			(uuid "5700186c-d11b-4d9c-99bd-50ed7730ec3a")
+		)
+		(pin "2"
+			(uuid "c7011ace-0b95-46bc-b5e7-3dd6022ccf4c")
+		)
+		(pin "3"
+			(uuid "0a199ce7-cf97-4c0f-b00c-2fd34af01630")
+		)
+		(pin "1"
+			(uuid "184c42e4-81bf-4abe-946a-9db3fc2db6c6")
+		)
+		(instances
+			(project "rythemPanelBoard"
+				(path "/b6043b97-033c-4ff5-a42a-dc988563939b/87c842c8-84ba-41f2-8442-7cac73e76249"
+					(reference "S8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "SamacSys_Parts:FSM6JSMATR")
+		(at 43.18 153.67 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3221d6c2-46c7-4f75-8a53-60ddd9f71a5b")
+		(property "Reference" "S11"
+			(at 58.42 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "FSM6JSMATR"
+			(at 58.42 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "SamacSys_parts:FSM6JSMATR"
+			(at 69.85 248.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1654270-2&DocType=Catalog%20Section&DocLang=English&PartCntxt=5-1437565-0&DocFormat=pdf"
+			(at 69.85 348.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "Body Features: Actuator Force 160 G | Cover Material Steel | Actuator Force 5.64 OZ | Case Color Brown | Product Orientation Vertical | Case Material Polyamide | Actuator Material Polyamide | Actuator Color Black | Actuator Profile Extended | Configuration Features: Switch Feedback Type Tactile | ESD Grounding Terminal Without | Operating Function NO | Number of Actuators Single | Configuration (Pole-Throw) Single Pole - Single Throw | Support Bracket Without | Ganged With | Contact Features: Switch Contact"
+			(at 43.18 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Height" "7.26"
+			(at 69.85 548.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "TE Connectivity"
+			(at 69.85 648.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "FSM6JSMATR"
+			(at 69.85 748.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "N/A"
+			(at 69.85 848.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/TE-Connectivity-Alcoswitch/FSM6JSMATR?qs=Im7Ui%252B8riBUZTeJpDMC8Dg%3D%3D"
+			(at 69.85 948.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Arrow Part Number" "FSM6JSMATR"
+			(at 69.85 1048.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Arrow Price/Stock" "https://www.arrow.com/en/products/fsm6jsmatr/te-connectivity?utm_currency=USD&region=nac"
+			(at 69.85 1148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "4"
+			(uuid "6fff2b43-1eb3-400b-a5a1-be7a226fc8ab")
+		)
+		(pin "2"
+			(uuid "c1d96124-a94e-4f21-9930-4ff34038fffd")
+		)
+		(pin "3"
+			(uuid "a781c1cd-e3aa-4078-9360-35d33e111239")
+		)
+		(pin "1"
+			(uuid "468bb096-8184-436a-a4d9-efd98d0b253b")
+		)
+		(instances
+			(project "rythemPanelBoard"
+				(path "/b6043b97-033c-4ff5-a42a-dc988563939b/87c842c8-84ba-41f2-8442-7cac73e76249"
+					(reference "S11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "SamacSys_Parts:FSM6JSMATR")
+		(at 43.18 26.67 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3481b7db-6c4d-4670-996b-f802daf5d0c3")
+		(property "Reference" "S1"
+			(at 58.42 19.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "FSM6JSMATR"
+			(at 58.42 21.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "SamacSys_parts:FSM6JSMATR"
+			(at 69.85 121.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1654270-2&DocType=Catalog%20Section&DocLang=English&PartCntxt=5-1437565-0&DocFormat=pdf"
+			(at 69.85 221.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "Body Features: Actuator Force 160 G | Cover Material Steel | Actuator Force 5.64 OZ | Case Color Brown | Product Orientation Vertical | Case Material Polyamide | Actuator Material Polyamide | Actuator Color Black | Actuator Profile Extended | Configuration Features: Switch Feedback Type Tactile | ESD Grounding Terminal Without | Operating Function NO | Number of Actuators Single | Configuration (Pole-Throw) Single Pole - Single Throw | Support Bracket Without | Ganged With | Contact Features: Switch Contact"
+			(at 43.18 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Height" "7.26"
+			(at 69.85 421.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "TE Connectivity"
+			(at 69.85 521.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "FSM6JSMATR"
+			(at 69.85 621.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "N/A"
+			(at 69.85 721.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/TE-Connectivity-Alcoswitch/FSM6JSMATR?qs=Im7Ui%252B8riBUZTeJpDMC8Dg%3D%3D"
+			(at 69.85 821.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Arrow Part Number" "FSM6JSMATR"
+			(at 69.85 921.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Arrow Price/Stock" "https://www.arrow.com/en/products/fsm6jsmatr/te-connectivity?utm_currency=USD&region=nac"
+			(at 69.85 1021.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "4"
+			(uuid "54d10d29-4266-4cb7-9714-f9b0a4e32b1c")
+		)
+		(pin "2"
+			(uuid "57397023-91d1-4811-a30f-8be6c321b450")
+		)
+		(pin "3"
+			(uuid "cd7bc54b-4525-44e2-a138-5e38c82de7a8")
+		)
+		(pin "1"
+			(uuid "3783f5fd-4bcb-4fb6-a427-e9eea44de2b1")
+		)
+		(instances
+			(project ""
+				(path "/b6043b97-033c-4ff5-a42a-dc988563939b/87c842c8-84ba-41f2-8442-7cac73e76249"
+					(reference "S1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "SamacSys_Parts:FSM6JSMATR")
+		(at 120.65 113.03 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3dbc2fcd-afff-40f5-9bbc-c3b02548b33d")
+		(property "Reference" "S21"
+			(at 135.89 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "FSM6JSMATR"
+			(at 135.89 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "SamacSys_parts:FSM6JSMATR"
+			(at 147.32 207.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1654270-2&DocType=Catalog%20Section&DocLang=English&PartCntxt=5-1437565-0&DocFormat=pdf"
+			(at 147.32 307.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "Body Features: Actuator Force 160 G | Cover Material Steel | Actuator Force 5.64 OZ | Case Color Brown | Product Orientation Vertical | Case Material Polyamide | Actuator Material Polyamide | Actuator Color Black | Actuator Profile Extended | Configuration Features: Switch Feedback Type Tactile | ESD Grounding Terminal Without | Operating Function NO | Number of Actuators Single | Configuration (Pole-Throw) Single Pole - Single Throw | Support Bracket Without | Ganged With | Contact Features: Switch Contact"
+			(at 120.65 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Height" "7.26"
+			(at 147.32 507.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "TE Connectivity"
+			(at 147.32 607.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "FSM6JSMATR"
+			(at 147.32 707.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "N/A"
+			(at 147.32 807.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/TE-Connectivity-Alcoswitch/FSM6JSMATR?qs=Im7Ui%252B8riBUZTeJpDMC8Dg%3D%3D"
+			(at 147.32 907.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Arrow Part Number" "FSM6JSMATR"
+			(at 147.32 1007.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Arrow Price/Stock" "https://www.arrow.com/en/products/fsm6jsmatr/te-connectivity?utm_currency=USD&region=nac"
+			(at 147.32 1107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "4"
+			(uuid "52f79e9d-295e-4705-bb8a-92a2659b686a")
+		)
+		(pin "2"
+			(uuid "114c667e-2093-4ce4-8f39-87c8f8d2749a")
+		)
+		(pin "3"
+			(uuid "1d508e4f-89f5-43b6-9e4f-9f4dad0946ed")
+		)
+		(pin "1"
+			(uuid "33547c0f-9be9-4c4f-bd6f-d476db26a970")
+		)
+		(instances
+			(project "rythemPanelBoard"
+				(path "/b6043b97-033c-4ff5-a42a-dc988563939b/87c842c8-84ba-41f2-8442-7cac73e76249"
+					(reference "S21")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "SamacSys_Parts:FSM6JSMATR")
+		(at 43.18 88.9 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "43eeeb69-5d6a-4e3e-a2c0-e543904cf606")
+		(property "Reference" "S6"
+			(at 58.42 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "FSM6JSMATR"
+			(at 58.42 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "SamacSys_parts:FSM6JSMATR"
+			(at 69.85 183.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1654270-2&DocType=Catalog%20Section&DocLang=English&PartCntxt=5-1437565-0&DocFormat=pdf"
+			(at 69.85 283.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "Body Features: Actuator Force 160 G | Cover Material Steel | Actuator Force 5.64 OZ | Case Color Brown | Product Orientation Vertical | Case Material Polyamide | Actuator Material Polyamide | Actuator Color Black | Actuator Profile Extended | Configuration Features: Switch Feedback Type Tactile | ESD Grounding Terminal Without | Operating Function NO | Number of Actuators Single | Configuration (Pole-Throw) Single Pole - Single Throw | Support Bracket Without | Ganged With | Contact Features: Switch Contact"
+			(at 43.18 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Height" "7.26"
+			(at 69.85 483.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "TE Connectivity"
+			(at 69.85 583.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "FSM6JSMATR"
+			(at 69.85 683.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "N/A"
+			(at 69.85 783.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/TE-Connectivity-Alcoswitch/FSM6JSMATR?qs=Im7Ui%252B8riBUZTeJpDMC8Dg%3D%3D"
+			(at 69.85 883.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Arrow Part Number" "FSM6JSMATR"
+			(at 69.85 983.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Arrow Price/Stock" "https://www.arrow.com/en/products/fsm6jsmatr/te-connectivity?utm_currency=USD&region=nac"
+			(at 69.85 1083.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "4"
+			(uuid "693ea795-3a07-40ca-87d9-676566ed50e2")
+		)
+		(pin "2"
+			(uuid "e4360236-9e29-44bc-85c5-c74bee1f6e4b")
+		)
+		(pin "3"
+			(uuid "fbbcc9bf-dea5-4532-9de1-572b83a87830")
+		)
+		(pin "1"
+			(uuid "53c2d753-23fc-4bb8-ae73-0648707553bc")
+		)
+		(instances
+			(project "rythemPanelBoard"
+				(path "/b6043b97-033c-4ff5-a42a-dc988563939b/87c842c8-84ba-41f2-8442-7cac73e76249"
+					(reference "S6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "SamacSys_Parts:FSM6JSMATR")
+		(at 120.65 125.73 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "46cdec2b-5ee6-41b0-b4ff-aa850334b967")
+		(property "Reference" "S22"
+			(at 135.89 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "FSM6JSMATR"
+			(at 135.89 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "SamacSys_parts:FSM6JSMATR"
+			(at 147.32 220.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1654270-2&DocType=Catalog%20Section&DocLang=English&PartCntxt=5-1437565-0&DocFormat=pdf"
+			(at 147.32 320.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "Body Features: Actuator Force 160 G | Cover Material Steel | Actuator Force 5.64 OZ | Case Color Brown | Product Orientation Vertical | Case Material Polyamide | Actuator Material Polyamide | Actuator Color Black | Actuator Profile Extended | Configuration Features: Switch Feedback Type Tactile | ESD Grounding Terminal Without | Operating Function NO | Number of Actuators Single | Configuration (Pole-Throw) Single Pole - Single Throw | Support Bracket Without | Ganged With | Contact Features: Switch Contact"
+			(at 120.65 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Height" "7.26"
+			(at 147.32 520.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "TE Connectivity"
+			(at 147.32 620.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "FSM6JSMATR"
+			(at 147.32 720.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "N/A"
+			(at 147.32 820.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/TE-Connectivity-Alcoswitch/FSM6JSMATR?qs=Im7Ui%252B8riBUZTeJpDMC8Dg%3D%3D"
+			(at 147.32 920.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Arrow Part Number" "FSM6JSMATR"
+			(at 147.32 1020.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Arrow Price/Stock" "https://www.arrow.com/en/products/fsm6jsmatr/te-connectivity?utm_currency=USD&region=nac"
+			(at 147.32 1120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "4"
+			(uuid "256b21df-6547-4c03-ac73-7e8bf61eeb8a")
+		)
+		(pin "2"
+			(uuid "381ced85-dd64-4c17-8afb-8c971bf25758")
+		)
+		(pin "3"
+			(uuid "d2582251-5c15-43c4-bfc6-51e169b16d53")
+		)
+		(pin "1"
+			(uuid "d0b89fc8-e4b5-4e23-939a-88b476423363")
+		)
+		(instances
+			(project "rythemPanelBoard"
+				(path "/b6043b97-033c-4ff5-a42a-dc988563939b/87c842c8-84ba-41f2-8442-7cac73e76249"
+					(reference "S22")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "SamacSys_Parts:FSM6JSMATR")
+		(at 43.18 101.6 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5109b890-be74-4305-8ada-a343dacf91f6")
+		(property "Reference" "S7"
+			(at 58.42 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "FSM6JSMATR"
+			(at 58.42 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "SamacSys_parts:FSM6JSMATR"
+			(at 69.85 196.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1654270-2&DocType=Catalog%20Section&DocLang=English&PartCntxt=5-1437565-0&DocFormat=pdf"
+			(at 69.85 296.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "Body Features: Actuator Force 160 G | Cover Material Steel | Actuator Force 5.64 OZ | Case Color Brown | Product Orientation Vertical | Case Material Polyamide | Actuator Material Polyamide | Actuator Color Black | Actuator Profile Extended | Configuration Features: Switch Feedback Type Tactile | ESD Grounding Terminal Without | Operating Function NO | Number of Actuators Single | Configuration (Pole-Throw) Single Pole - Single Throw | Support Bracket Without | Ganged With | Contact Features: Switch Contact"
+			(at 43.18 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Height" "7.26"
+			(at 69.85 496.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "TE Connectivity"
+			(at 69.85 596.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "FSM6JSMATR"
+			(at 69.85 696.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "N/A"
+			(at 69.85 796.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/TE-Connectivity-Alcoswitch/FSM6JSMATR?qs=Im7Ui%252B8riBUZTeJpDMC8Dg%3D%3D"
+			(at 69.85 896.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Arrow Part Number" "FSM6JSMATR"
+			(at 69.85 996.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Arrow Price/Stock" "https://www.arrow.com/en/products/fsm6jsmatr/te-connectivity?utm_currency=USD&region=nac"
+			(at 69.85 1096.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "4"
+			(uuid "1d0fd0a7-f776-456d-beab-04d0e3c7be32")
+		)
+		(pin "2"
+			(uuid "34971581-d246-4698-a66f-d98246cb7e08")
+		)
+		(pin "3"
+			(uuid "944085db-064d-4de1-a151-84d3f3700bf3")
+		)
+		(pin "1"
+			(uuid "29dd0e6c-7ed6-4d63-84f8-252e65aa1357")
+		)
+		(instances
+			(project "rythemPanelBoard"
+				(path "/b6043b97-033c-4ff5-a42a-dc988563939b/87c842c8-84ba-41f2-8442-7cac73e76249"
+					(reference "S7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "SamacSys_Parts:FSM6JSMATR")
+		(at 120.65 87.63 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5904da4b-8c53-4f49-94cf-b9df3e030ec4")
+		(property "Reference" "S19"
+			(at 135.89 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "FSM6JSMATR"
+			(at 135.89 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "SamacSys_parts:FSM6JSMATR"
+			(at 147.32 182.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1654270-2&DocType=Catalog%20Section&DocLang=English&PartCntxt=5-1437565-0&DocFormat=pdf"
+			(at 147.32 282.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "Body Features: Actuator Force 160 G | Cover Material Steel | Actuator Force 5.64 OZ | Case Color Brown | Product Orientation Vertical | Case Material Polyamide | Actuator Material Polyamide | Actuator Color Black | Actuator Profile Extended | Configuration Features: Switch Feedback Type Tactile | ESD Grounding Terminal Without | Operating Function NO | Number of Actuators Single | Configuration (Pole-Throw) Single Pole - Single Throw | Support Bracket Without | Ganged With | Contact Features: Switch Contact"
+			(at 120.65 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Height" "7.26"
+			(at 147.32 482.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "TE Connectivity"
+			(at 147.32 582.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "FSM6JSMATR"
+			(at 147.32 682.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "N/A"
+			(at 147.32 782.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/TE-Connectivity-Alcoswitch/FSM6JSMATR?qs=Im7Ui%252B8riBUZTeJpDMC8Dg%3D%3D"
+			(at 147.32 882.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Arrow Part Number" "FSM6JSMATR"
+			(at 147.32 982.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Arrow Price/Stock" "https://www.arrow.com/en/products/fsm6jsmatr/te-connectivity?utm_currency=USD&region=nac"
+			(at 147.32 1082.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "4"
+			(uuid "d96d6196-59bb-4733-81f6-aaca26836c4f")
+		)
+		(pin "2"
+			(uuid "567e42c2-7f53-479d-98bc-f478ce2562ec")
+		)
+		(pin "3"
+			(uuid "250652c9-ab8b-4035-b6fd-afb69b6ad291")
+		)
+		(pin "1"
+			(uuid "f7a18f76-5d3d-4e7a-abb6-a9cc08e8097e")
+		)
+		(instances
+			(project "rythemPanelBoard"
+				(path "/b6043b97-033c-4ff5-a42a-dc988563939b/87c842c8-84ba-41f2-8442-7cac73e76249"
+					(reference "S19")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "SamacSys_Parts:FSM6JSMATR")
+		(at 43.18 76.2 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5f07085d-eb6d-4fb4-a749-9ef40313cd06")
+		(property "Reference" "S5"
+			(at 58.42 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "FSM6JSMATR"
+			(at 58.42 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "SamacSys_parts:FSM6JSMATR"
+			(at 69.85 171.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1654270-2&DocType=Catalog%20Section&DocLang=English&PartCntxt=5-1437565-0&DocFormat=pdf"
+			(at 69.85 271.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "Body Features: Actuator Force 160 G | Cover Material Steel | Actuator Force 5.64 OZ | Case Color Brown | Product Orientation Vertical | Case Material Polyamide | Actuator Material Polyamide | Actuator Color Black | Actuator Profile Extended | Configuration Features: Switch Feedback Type Tactile | ESD Grounding Terminal Without | Operating Function NO | Number of Actuators Single | Configuration (Pole-Throw) Single Pole - Single Throw | Support Bracket Without | Ganged With | Contact Features: Switch Contact"
+			(at 43.18 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Height" "7.26"
+			(at 69.85 471.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "TE Connectivity"
+			(at 69.85 571.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "FSM6JSMATR"
+			(at 69.85 671.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "N/A"
+			(at 69.85 771.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/TE-Connectivity-Alcoswitch/FSM6JSMATR?qs=Im7Ui%252B8riBUZTeJpDMC8Dg%3D%3D"
+			(at 69.85 871.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Arrow Part Number" "FSM6JSMATR"
+			(at 69.85 971.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Arrow Price/Stock" "https://www.arrow.com/en/products/fsm6jsmatr/te-connectivity?utm_currency=USD&region=nac"
+			(at 69.85 1071.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "4"
+			(uuid "13be7a02-4717-4a84-ae7f-4b3fb41679fe")
+		)
+		(pin "2"
+			(uuid "9ec7e24d-3a88-44e0-937e-212ebcb8315a")
+		)
+		(pin "3"
+			(uuid "20936c89-e565-45e5-95e1-0145a733624b")
+		)
+		(pin "1"
+			(uuid "8736d4aa-4434-4e79-b40d-23b9989295ad")
+		)
+		(instances
+			(project "rythemPanelBoard"
+				(path "/b6043b97-033c-4ff5-a42a-dc988563939b/87c842c8-84ba-41f2-8442-7cac73e76249"
+					(reference "S5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "SamacSys_Parts:FSM6JSMATR")
+		(at 120.65 165.1 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7388da7f-391b-4d34-a9f9-369b61cba78b")
+		(property "Reference" "S25"
+			(at 135.89 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "FSM6JSMATR"
+			(at 135.89 160.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "SamacSys_parts:FSM6JSMATR"
+			(at 147.32 260.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1654270-2&DocType=Catalog%20Section&DocLang=English&PartCntxt=5-1437565-0&DocFormat=pdf"
+			(at 147.32 360.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "Body Features: Actuator Force 160 G | Cover Material Steel | Actuator Force 5.64 OZ | Case Color Brown | Product Orientation Vertical | Case Material Polyamide | Actuator Material Polyamide | Actuator Color Black | Actuator Profile Extended | Configuration Features: Switch Feedback Type Tactile | ESD Grounding Terminal Without | Operating Function NO | Number of Actuators Single | Configuration (Pole-Throw) Single Pole - Single Throw | Support Bracket Without | Ganged With | Contact Features: Switch Contact"
+			(at 120.65 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Height" "7.26"
+			(at 147.32 560.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "TE Connectivity"
+			(at 147.32 660.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "FSM6JSMATR"
+			(at 147.32 760.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "N/A"
+			(at 147.32 860.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/TE-Connectivity-Alcoswitch/FSM6JSMATR?qs=Im7Ui%252B8riBUZTeJpDMC8Dg%3D%3D"
+			(at 147.32 960.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Arrow Part Number" "FSM6JSMATR"
+			(at 147.32 1060.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Arrow Price/Stock" "https://www.arrow.com/en/products/fsm6jsmatr/te-connectivity?utm_currency=USD&region=nac"
+			(at 147.32 1160.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "4"
+			(uuid "0c44c60a-3ec8-4080-9dde-4fd61d3f758d")
+		)
+		(pin "2"
+			(uuid "3ef9a815-3d40-4f6e-ae7d-596d8213c7ec")
+		)
+		(pin "3"
+			(uuid "9f66be32-2a51-4580-94ee-7112a7578b0b")
+		)
+		(pin "1"
+			(uuid "d92d529c-d096-4452-97f4-7985137792d2")
+		)
+		(instances
+			(project "rythemPanelBoard"
+				(path "/b6043b97-033c-4ff5-a42a-dc988563939b/87c842c8-84ba-41f2-8442-7cac73e76249"
+					(reference "S25")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "SamacSys_Parts:FSM6JSMATR")
+		(at 120.65 100.33 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7a7be852-8442-465e-b8ae-e610339e7202")
+		(property "Reference" "S20"
+			(at 135.89 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "FSM6JSMATR"
+			(at 135.89 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "SamacSys_parts:FSM6JSMATR"
+			(at 147.32 195.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1654270-2&DocType=Catalog%20Section&DocLang=English&PartCntxt=5-1437565-0&DocFormat=pdf"
+			(at 147.32 295.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "Body Features: Actuator Force 160 G | Cover Material Steel | Actuator Force 5.64 OZ | Case Color Brown | Product Orientation Vertical | Case Material Polyamide | Actuator Material Polyamide | Actuator Color Black | Actuator Profile Extended | Configuration Features: Switch Feedback Type Tactile | ESD Grounding Terminal Without | Operating Function NO | Number of Actuators Single | Configuration (Pole-Throw) Single Pole - Single Throw | Support Bracket Without | Ganged With | Contact Features: Switch Contact"
+			(at 120.65 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Height" "7.26"
+			(at 147.32 495.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "TE Connectivity"
+			(at 147.32 595.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "FSM6JSMATR"
+			(at 147.32 695.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "N/A"
+			(at 147.32 795.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/TE-Connectivity-Alcoswitch/FSM6JSMATR?qs=Im7Ui%252B8riBUZTeJpDMC8Dg%3D%3D"
+			(at 147.32 895.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Arrow Part Number" "FSM6JSMATR"
+			(at 147.32 995.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Arrow Price/Stock" "https://www.arrow.com/en/products/fsm6jsmatr/te-connectivity?utm_currency=USD&region=nac"
+			(at 147.32 1095.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "4"
+			(uuid "c6b300bc-bb6a-4126-9601-a6baf0974851")
+		)
+		(pin "2"
+			(uuid "b411deab-d0d8-4c94-876a-c6434b1dc90d")
+		)
+		(pin "3"
+			(uuid "f15b503f-b959-42b6-9e66-e86eb83eba67")
+		)
+		(pin "1"
+			(uuid "e1a89df1-9a92-4005-9a46-38a962886eff")
+		)
+		(instances
+			(project "rythemPanelBoard"
+				(path "/b6043b97-033c-4ff5-a42a-dc988563939b/87c842c8-84ba-41f2-8442-7cac73e76249"
+					(reference "S20")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "SamacSys_Parts:FSM6JSMATR")
+		(at 43.18 50.8 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "816773a6-ad49-4d4f-95b4-0cd8386a2653")
+		(property "Reference" "S3"
+			(at 58.42 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "FSM6JSMATR"
+			(at 58.42 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "SamacSys_parts:FSM6JSMATR"
+			(at 69.85 145.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1654270-2&DocType=Catalog%20Section&DocLang=English&PartCntxt=5-1437565-0&DocFormat=pdf"
+			(at 69.85 245.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "Body Features: Actuator Force 160 G | Cover Material Steel | Actuator Force 5.64 OZ | Case Color Brown | Product Orientation Vertical | Case Material Polyamide | Actuator Material Polyamide | Actuator Color Black | Actuator Profile Extended | Configuration Features: Switch Feedback Type Tactile | ESD Grounding Terminal Without | Operating Function NO | Number of Actuators Single | Configuration (Pole-Throw) Single Pole - Single Throw | Support Bracket Without | Ganged With | Contact Features: Switch Contact"
+			(at 43.18 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Height" "7.26"
+			(at 69.85 445.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "TE Connectivity"
+			(at 69.85 545.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "FSM6JSMATR"
+			(at 69.85 645.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "N/A"
+			(at 69.85 745.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/TE-Connectivity-Alcoswitch/FSM6JSMATR?qs=Im7Ui%252B8riBUZTeJpDMC8Dg%3D%3D"
+			(at 69.85 845.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Arrow Part Number" "FSM6JSMATR"
+			(at 69.85 945.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Arrow Price/Stock" "https://www.arrow.com/en/products/fsm6jsmatr/te-connectivity?utm_currency=USD&region=nac"
+			(at 69.85 1045.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "4"
+			(uuid "1299edce-91c8-4834-ac6b-33eeaf2a1834")
+		)
+		(pin "2"
+			(uuid "850572e1-fcd6-4ffc-9df3-526d4ee635ff")
+		)
+		(pin "3"
+			(uuid "afb29fa2-ab15-4759-b8d1-91798d362e29")
+		)
+		(pin "1"
+			(uuid "2fec9e5a-3bc5-4db0-94ac-7ead24c5f68b")
+		)
+		(instances
+			(project "rythemPanelBoard"
+				(path "/b6043b97-033c-4ff5-a42a-dc988563939b/87c842c8-84ba-41f2-8442-7cac73e76249"
+					(reference "S3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "SamacSys_Parts:FSM6JSMATR")
+		(at 199.39 74.93 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "87700189-672e-4f76-8073-00bf5e4c0b1d")
+		(property "Reference" "S31"
+			(at 214.63 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "FSM6JSMATR"
+			(at 214.63 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "SamacSys_parts:FSM6JSMATR"
+			(at 226.06 169.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1654270-2&DocType=Catalog%20Section&DocLang=English&PartCntxt=5-1437565-0&DocFormat=pdf"
+			(at 226.06 269.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "Body Features: Actuator Force 160 G | Cover Material Steel | Actuator Force 5.64 OZ | Case Color Brown | Product Orientation Vertical | Case Material Polyamide | Actuator Material Polyamide | Actuator Color Black | Actuator Profile Extended | Configuration Features: Switch Feedback Type Tactile | ESD Grounding Terminal Without | Operating Function NO | Number of Actuators Single | Configuration (Pole-Throw) Single Pole - Single Throw | Support Bracket Without | Ganged With | Contact Features: Switch Contact"
+			(at 199.39 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Height" "7.26"
+			(at 226.06 469.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "TE Connectivity"
+			(at 226.06 569.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "FSM6JSMATR"
+			(at 226.06 669.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "N/A"
+			(at 226.06 769.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/TE-Connectivity-Alcoswitch/FSM6JSMATR?qs=Im7Ui%252B8riBUZTeJpDMC8Dg%3D%3D"
+			(at 226.06 869.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Arrow Part Number" "FSM6JSMATR"
+			(at 226.06 969.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Arrow Price/Stock" "https://www.arrow.com/en/products/fsm6jsmatr/te-connectivity?utm_currency=USD&region=nac"
+			(at 226.06 1069.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "4"
+			(uuid "83cce34b-9b3b-4250-a0b3-0754d935e789")
+		)
+		(pin "2"
+			(uuid "8eff753b-9de3-49c7-add8-2c63e9ed283c")
+		)
+		(pin "3"
+			(uuid "1743bce5-904f-4904-a229-407360be0f21")
+		)
+		(pin "1"
+			(uuid "7a7658fb-3c52-48d4-88b1-ae83ff9ec183")
+		)
+		(instances
+			(project "rythemPanelBoard"
+				(path "/b6043b97-033c-4ff5-a42a-dc988563939b/87c842c8-84ba-41f2-8442-7cac73e76249"
+					(reference "S31")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "SamacSys_Parts:FSM6JSMATR")
+		(at 43.18 63.5 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8992344f-210a-4b5e-9e8f-084a0c9886c6")
+		(property "Reference" "S4"
+			(at 58.42 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "FSM6JSMATR"
+			(at 58.42 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "SamacSys_parts:FSM6JSMATR"
+			(at 69.85 158.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1654270-2&DocType=Catalog%20Section&DocLang=English&PartCntxt=5-1437565-0&DocFormat=pdf"
+			(at 69.85 258.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "Body Features: Actuator Force 160 G | Cover Material Steel | Actuator Force 5.64 OZ | Case Color Brown | Product Orientation Vertical | Case Material Polyamide | Actuator Material Polyamide | Actuator Color Black | Actuator Profile Extended | Configuration Features: Switch Feedback Type Tactile | ESD Grounding Terminal Without | Operating Function NO | Number of Actuators Single | Configuration (Pole-Throw) Single Pole - Single Throw | Support Bracket Without | Ganged With | Contact Features: Switch Contact"
+			(at 43.18 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Height" "7.26"
+			(at 69.85 458.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "TE Connectivity"
+			(at 69.85 558.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "FSM6JSMATR"
+			(at 69.85 658.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "N/A"
+			(at 69.85 758.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/TE-Connectivity-Alcoswitch/FSM6JSMATR?qs=Im7Ui%252B8riBUZTeJpDMC8Dg%3D%3D"
+			(at 69.85 858.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Arrow Part Number" "FSM6JSMATR"
+			(at 69.85 958.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Arrow Price/Stock" "https://www.arrow.com/en/products/fsm6jsmatr/te-connectivity?utm_currency=USD&region=nac"
+			(at 69.85 1058.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "4"
+			(uuid "dad56e32-5a68-4f6b-b116-970c3646ea5e")
+		)
+		(pin "2"
+			(uuid "c65a75ca-2448-4221-967e-fbc66b1f5fc2")
+		)
+		(pin "3"
+			(uuid "5fabad4e-d405-47f1-893d-46e69945cadb")
+		)
+		(pin "1"
+			(uuid "a65b230d-250d-4e71-be62-69156b3c5a79")
+		)
+		(instances
+			(project "rythemPanelBoard"
+				(path "/b6043b97-033c-4ff5-a42a-dc988563939b/87c842c8-84ba-41f2-8442-7cac73e76249"
+					(reference "S4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "SamacSys_Parts:FSM6JSMATR")
+		(at 199.39 62.23 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "90483bfe-f542-4fde-b148-e2d6fbef7091")
+		(property "Reference" "S30"
+			(at 214.63 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "FSM6JSMATR"
+			(at 214.63 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "SamacSys_parts:FSM6JSMATR"
+			(at 226.06 157.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1654270-2&DocType=Catalog%20Section&DocLang=English&PartCntxt=5-1437565-0&DocFormat=pdf"
+			(at 226.06 257.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "Body Features: Actuator Force 160 G | Cover Material Steel | Actuator Force 5.64 OZ | Case Color Brown | Product Orientation Vertical | Case Material Polyamide | Actuator Material Polyamide | Actuator Color Black | Actuator Profile Extended | Configuration Features: Switch Feedback Type Tactile | ESD Grounding Terminal Without | Operating Function NO | Number of Actuators Single | Configuration (Pole-Throw) Single Pole - Single Throw | Support Bracket Without | Ganged With | Contact Features: Switch Contact"
+			(at 199.39 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Height" "7.26"
+			(at 226.06 457.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "TE Connectivity"
+			(at 226.06 557.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "FSM6JSMATR"
+			(at 226.06 657.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "N/A"
+			(at 226.06 757.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/TE-Connectivity-Alcoswitch/FSM6JSMATR?qs=Im7Ui%252B8riBUZTeJpDMC8Dg%3D%3D"
+			(at 226.06 857.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Arrow Part Number" "FSM6JSMATR"
+			(at 226.06 957.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Arrow Price/Stock" "https://www.arrow.com/en/products/fsm6jsmatr/te-connectivity?utm_currency=USD&region=nac"
+			(at 226.06 1057.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "4"
+			(uuid "ce93c516-bea1-4130-a974-399f6d25b786")
+		)
+		(pin "2"
+			(uuid "b4ec2997-89f2-44d9-9c06-4c866ef88e90")
+		)
+		(pin "3"
+			(uuid "c171b887-ce2e-41ba-a797-d6de9c6122b7")
+		)
+		(pin "1"
+			(uuid "826511f3-2bea-4d1f-8390-05a9f5f48db9")
+		)
+		(instances
+			(project "rythemPanelBoard"
+				(path "/b6043b97-033c-4ff5-a42a-dc988563939b/87c842c8-84ba-41f2-8442-7cac73e76249"
+					(reference "S30")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "SamacSys_Parts:FSM6JSMATR")
+		(at 199.39 49.53 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a79b096f-cf4a-48c2-86e2-63467a8fea39")
+		(property "Reference" "S29"
+			(at 214.63 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "FSM6JSMATR"
+			(at 214.63 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "SamacSys_parts:FSM6JSMATR"
+			(at 226.06 144.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1654270-2&DocType=Catalog%20Section&DocLang=English&PartCntxt=5-1437565-0&DocFormat=pdf"
+			(at 226.06 244.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "Body Features: Actuator Force 160 G | Cover Material Steel | Actuator Force 5.64 OZ | Case Color Brown | Product Orientation Vertical | Case Material Polyamide | Actuator Material Polyamide | Actuator Color Black | Actuator Profile Extended | Configuration Features: Switch Feedback Type Tactile | ESD Grounding Terminal Without | Operating Function NO | Number of Actuators Single | Configuration (Pole-Throw) Single Pole - Single Throw | Support Bracket Without | Ganged With | Contact Features: Switch Contact"
+			(at 199.39 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Height" "7.26"
+			(at 226.06 444.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "TE Connectivity"
+			(at 226.06 544.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "FSM6JSMATR"
+			(at 226.06 644.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "N/A"
+			(at 226.06 744.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/TE-Connectivity-Alcoswitch/FSM6JSMATR?qs=Im7Ui%252B8riBUZTeJpDMC8Dg%3D%3D"
+			(at 226.06 844.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Arrow Part Number" "FSM6JSMATR"
+			(at 226.06 944.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Arrow Price/Stock" "https://www.arrow.com/en/products/fsm6jsmatr/te-connectivity?utm_currency=USD&region=nac"
+			(at 226.06 1044.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "4"
+			(uuid "3af2177d-659c-4b9a-af16-77cbccb7c184")
+		)
+		(pin "2"
+			(uuid "a9ab9120-d29b-4c8e-9403-98cce58315a2")
+		)
+		(pin "3"
+			(uuid "ad5cfe9e-f6c3-46f1-a050-49360b28141e")
+		)
+		(pin "1"
+			(uuid "5616fbcc-e033-4eff-bf26-a9cdfaf97332")
+		)
+		(instances
+			(project "rythemPanelBoard"
+				(path "/b6043b97-033c-4ff5-a42a-dc988563939b/87c842c8-84ba-41f2-8442-7cac73e76249"
+					(reference "S29")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "SamacSys_Parts:FSM6JSMATR")
+		(at 120.65 25.4 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b14a90ee-5a5b-4950-a2b2-0e2ae0465a86")
+		(property "Reference" "S14"
+			(at 135.89 17.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "FSM6JSMATR"
+			(at 135.89 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "SamacSys_parts:FSM6JSMATR"
+			(at 147.32 120.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1654270-2&DocType=Catalog%20Section&DocLang=English&PartCntxt=5-1437565-0&DocFormat=pdf"
+			(at 147.32 220.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "Body Features: Actuator Force 160 G | Cover Material Steel | Actuator Force 5.64 OZ | Case Color Brown | Product Orientation Vertical | Case Material Polyamide | Actuator Material Polyamide | Actuator Color Black | Actuator Profile Extended | Configuration Features: Switch Feedback Type Tactile | ESD Grounding Terminal Without | Operating Function NO | Number of Actuators Single | Configuration (Pole-Throw) Single Pole - Single Throw | Support Bracket Without | Ganged With | Contact Features: Switch Contact"
+			(at 120.65 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Height" "7.26"
+			(at 147.32 420.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "TE Connectivity"
+			(at 147.32 520.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "FSM6JSMATR"
+			(at 147.32 620.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "N/A"
+			(at 147.32 720.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/TE-Connectivity-Alcoswitch/FSM6JSMATR?qs=Im7Ui%252B8riBUZTeJpDMC8Dg%3D%3D"
+			(at 147.32 820.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Arrow Part Number" "FSM6JSMATR"
+			(at 147.32 920.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Arrow Price/Stock" "https://www.arrow.com/en/products/fsm6jsmatr/te-connectivity?utm_currency=USD&region=nac"
+			(at 147.32 1020.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "4"
+			(uuid "5f7d0738-b852-4758-92ea-ff358e282563")
+		)
+		(pin "2"
+			(uuid "59f04b8f-3f93-4421-9e1d-ee5e0cf05a47")
+		)
+		(pin "3"
+			(uuid "7766e3e0-3a1a-42d9-8464-382e086ca3c2")
+		)
+		(pin "1"
+			(uuid "92cef668-31ec-4ab4-93ec-2c54f893535f")
+		)
+		(instances
+			(project "rythemPanelBoard"
+				(path "/b6043b97-033c-4ff5-a42a-dc988563939b/87c842c8-84ba-41f2-8442-7cac73e76249"
+					(reference "S14")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "SamacSys_Parts:FSM6JSMATR")
+		(at 120.65 138.43 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c4c94826-e6db-4ee3-827c-bf8b244b763c")
+		(property "Reference" "S23"
+			(at 135.89 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "FSM6JSMATR"
+			(at 135.89 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "SamacSys_parts:FSM6JSMATR"
+			(at 147.32 233.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1654270-2&DocType=Catalog%20Section&DocLang=English&PartCntxt=5-1437565-0&DocFormat=pdf"
+			(at 147.32 333.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "Body Features: Actuator Force 160 G | Cover Material Steel | Actuator Force 5.64 OZ | Case Color Brown | Product Orientation Vertical | Case Material Polyamide | Actuator Material Polyamide | Actuator Color Black | Actuator Profile Extended | Configuration Features: Switch Feedback Type Tactile | ESD Grounding Terminal Without | Operating Function NO | Number of Actuators Single | Configuration (Pole-Throw) Single Pole - Single Throw | Support Bracket Without | Ganged With | Contact Features: Switch Contact"
+			(at 120.65 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Height" "7.26"
+			(at 147.32 533.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "TE Connectivity"
+			(at 147.32 633.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "FSM6JSMATR"
+			(at 147.32 733.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "N/A"
+			(at 147.32 833.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/TE-Connectivity-Alcoswitch/FSM6JSMATR?qs=Im7Ui%252B8riBUZTeJpDMC8Dg%3D%3D"
+			(at 147.32 933.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Arrow Part Number" "FSM6JSMATR"
+			(at 147.32 1033.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Arrow Price/Stock" "https://www.arrow.com/en/products/fsm6jsmatr/te-connectivity?utm_currency=USD&region=nac"
+			(at 147.32 1133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "4"
+			(uuid "4983a813-a3e9-4e00-8fc6-6c32ab382344")
+		)
+		(pin "2"
+			(uuid "7d2c14ca-d7e9-473f-bf15-6c2dc4b26d68")
+		)
+		(pin "3"
+			(uuid "dd671887-98de-4eeb-8ceb-d47850404799")
+		)
+		(pin "1"
+			(uuid "d43d833d-aba9-4652-b8c4-cc297017753e")
+		)
+		(instances
+			(project "rythemPanelBoard"
+				(path "/b6043b97-033c-4ff5-a42a-dc988563939b/87c842c8-84ba-41f2-8442-7cac73e76249"
+					(reference "S23")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "SamacSys_Parts:FSM6JSMATR")
+		(at 199.39 87.63 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c6558777-d6f8-4c2b-a2ee-204128d9982d")
+		(property "Reference" "S32"
+			(at 214.63 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "FSM6JSMATR"
+			(at 214.63 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "SamacSys_parts:FSM6JSMATR"
+			(at 226.06 182.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1654270-2&DocType=Catalog%20Section&DocLang=English&PartCntxt=5-1437565-0&DocFormat=pdf"
+			(at 226.06 282.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "Body Features: Actuator Force 160 G | Cover Material Steel | Actuator Force 5.64 OZ | Case Color Brown | Product Orientation Vertical | Case Material Polyamide | Actuator Material Polyamide | Actuator Color Black | Actuator Profile Extended | Configuration Features: Switch Feedback Type Tactile | ESD Grounding Terminal Without | Operating Function NO | Number of Actuators Single | Configuration (Pole-Throw) Single Pole - Single Throw | Support Bracket Without | Ganged With | Contact Features: Switch Contact"
+			(at 199.39 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Height" "7.26"
+			(at 226.06 482.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "TE Connectivity"
+			(at 226.06 582.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "FSM6JSMATR"
+			(at 226.06 682.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "N/A"
+			(at 226.06 782.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/TE-Connectivity-Alcoswitch/FSM6JSMATR?qs=Im7Ui%252B8riBUZTeJpDMC8Dg%3D%3D"
+			(at 226.06 882.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Arrow Part Number" "FSM6JSMATR"
+			(at 226.06 982.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Arrow Price/Stock" "https://www.arrow.com/en/products/fsm6jsmatr/te-connectivity?utm_currency=USD&region=nac"
+			(at 226.06 1082.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "4"
+			(uuid "e317d025-c1e2-4567-8608-ff9edd053b57")
+		)
+		(pin "2"
+			(uuid "68b48d44-074a-4924-9bfe-e8febc4be5fa")
+		)
+		(pin "3"
+			(uuid "e2ab740c-995d-4807-9f5a-736ccc0741da")
+		)
+		(pin "1"
+			(uuid "483e6eec-f6ad-4ee3-b689-0c2c6128fdeb")
+		)
+		(instances
+			(project "rythemPanelBoard"
+				(path "/b6043b97-033c-4ff5-a42a-dc988563939b/87c842c8-84ba-41f2-8442-7cac73e76249"
+					(reference "S32")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "SamacSys_Parts:FSM6JSMATR")
+		(at 199.39 25.4 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ca839916-a939-41eb-84a3-98adba2ebd98")
+		(property "Reference" "S27"
+			(at 214.63 17.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "FSM6JSMATR"
+			(at 214.63 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "SamacSys_parts:FSM6JSMATR"
+			(at 226.06 120.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1654270-2&DocType=Catalog%20Section&DocLang=English&PartCntxt=5-1437565-0&DocFormat=pdf"
+			(at 226.06 220.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "Body Features: Actuator Force 160 G | Cover Material Steel | Actuator Force 5.64 OZ | Case Color Brown | Product Orientation Vertical | Case Material Polyamide | Actuator Material Polyamide | Actuator Color Black | Actuator Profile Extended | Configuration Features: Switch Feedback Type Tactile | ESD Grounding Terminal Without | Operating Function NO | Number of Actuators Single | Configuration (Pole-Throw) Single Pole - Single Throw | Support Bracket Without | Ganged With | Contact Features: Switch Contact"
+			(at 199.39 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Height" "7.26"
+			(at 226.06 420.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "TE Connectivity"
+			(at 226.06 520.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "FSM6JSMATR"
+			(at 226.06 620.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "N/A"
+			(at 226.06 720.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/TE-Connectivity-Alcoswitch/FSM6JSMATR?qs=Im7Ui%252B8riBUZTeJpDMC8Dg%3D%3D"
+			(at 226.06 820.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Arrow Part Number" "FSM6JSMATR"
+			(at 226.06 920.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Arrow Price/Stock" "https://www.arrow.com/en/products/fsm6jsmatr/te-connectivity?utm_currency=USD&region=nac"
+			(at 226.06 1020.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "4"
+			(uuid "383e37cc-a225-4efe-9ee5-99c236507283")
+		)
+		(pin "2"
+			(uuid "67b6ff1f-0425-449b-9540-caf9f7def537")
+		)
+		(pin "3"
+			(uuid "13151342-48d0-40c5-8db2-bd2bc39141dd")
+		)
+		(pin "1"
+			(uuid "cbaf6a95-8417-4b59-ad66-7a9662071bc3")
+		)
+		(instances
+			(project "rythemPanelBoard"
+				(path "/b6043b97-033c-4ff5-a42a-dc988563939b/87c842c8-84ba-41f2-8442-7cac73e76249"
+					(reference "S27")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "SamacSys_Parts:FSM6JSMATR")
+		(at 199.39 36.83 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "cae5791d-4d78-4ec7-ac0f-456596b26b76")
+		(property "Reference" "S28"
+			(at 214.63 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "FSM6JSMATR"
+			(at 214.63 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "SamacSys_parts:FSM6JSMATR"
+			(at 226.06 131.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1654270-2&DocType=Catalog%20Section&DocLang=English&PartCntxt=5-1437565-0&DocFormat=pdf"
+			(at 226.06 231.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "Body Features: Actuator Force 160 G | Cover Material Steel | Actuator Force 5.64 OZ | Case Color Brown | Product Orientation Vertical | Case Material Polyamide | Actuator Material Polyamide | Actuator Color Black | Actuator Profile Extended | Configuration Features: Switch Feedback Type Tactile | ESD Grounding Terminal Without | Operating Function NO | Number of Actuators Single | Configuration (Pole-Throw) Single Pole - Single Throw | Support Bracket Without | Ganged With | Contact Features: Switch Contact"
+			(at 199.39 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Height" "7.26"
+			(at 226.06 431.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "TE Connectivity"
+			(at 226.06 531.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "FSM6JSMATR"
+			(at 226.06 631.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "N/A"
+			(at 226.06 731.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/TE-Connectivity-Alcoswitch/FSM6JSMATR?qs=Im7Ui%252B8riBUZTeJpDMC8Dg%3D%3D"
+			(at 226.06 831.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Arrow Part Number" "FSM6JSMATR"
+			(at 226.06 931.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Arrow Price/Stock" "https://www.arrow.com/en/products/fsm6jsmatr/te-connectivity?utm_currency=USD&region=nac"
+			(at 226.06 1031.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "4"
+			(uuid "af4c216f-112e-43a1-8730-d2456d95f368")
+		)
+		(pin "2"
+			(uuid "a23cffe9-f8b1-4302-b724-ff841475a44a")
+		)
+		(pin "3"
+			(uuid "06f3e70f-16dd-4473-afa7-17af2c6430d4")
+		)
+		(pin "1"
+			(uuid "6173deb5-2d9e-4045-a66e-bf3a33347b13")
+		)
+		(instances
+			(project "rythemPanelBoard"
+				(path "/b6043b97-033c-4ff5-a42a-dc988563939b/87c842c8-84ba-41f2-8442-7cac73e76249"
+					(reference "S28")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "SamacSys_Parts:FSM6JSMATR")
+		(at 120.65 62.23 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "cc10346e-3b1c-4796-9cd6-d402a84a5425")
+		(property "Reference" "S17"
+			(at 135.89 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "FSM6JSMATR"
+			(at 135.89 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "SamacSys_parts:FSM6JSMATR"
+			(at 147.32 157.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1654270-2&DocType=Catalog%20Section&DocLang=English&PartCntxt=5-1437565-0&DocFormat=pdf"
+			(at 147.32 257.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "Body Features: Actuator Force 160 G | Cover Material Steel | Actuator Force 5.64 OZ | Case Color Brown | Product Orientation Vertical | Case Material Polyamide | Actuator Material Polyamide | Actuator Color Black | Actuator Profile Extended | Configuration Features: Switch Feedback Type Tactile | ESD Grounding Terminal Without | Operating Function NO | Number of Actuators Single | Configuration (Pole-Throw) Single Pole - Single Throw | Support Bracket Without | Ganged With | Contact Features: Switch Contact"
+			(at 120.65 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Height" "7.26"
+			(at 147.32 457.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "TE Connectivity"
+			(at 147.32 557.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "FSM6JSMATR"
+			(at 147.32 657.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "N/A"
+			(at 147.32 757.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/TE-Connectivity-Alcoswitch/FSM6JSMATR?qs=Im7Ui%252B8riBUZTeJpDMC8Dg%3D%3D"
+			(at 147.32 857.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Arrow Part Number" "FSM6JSMATR"
+			(at 147.32 957.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Arrow Price/Stock" "https://www.arrow.com/en/products/fsm6jsmatr/te-connectivity?utm_currency=USD&region=nac"
+			(at 147.32 1057.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "4"
+			(uuid "e336e91f-1c5f-480c-b423-f6d6621e23e2")
+		)
+		(pin "2"
+			(uuid "3cfebfe3-c24a-4eae-a993-36eb00e2a0bc")
+		)
+		(pin "3"
+			(uuid "cd8feb65-31a5-4431-9cee-4047a3561863")
+		)
+		(pin "1"
+			(uuid "ffd21d3f-f138-4121-93ea-ea3253f66280")
+		)
+		(instances
+			(project "rythemPanelBoard"
+				(path "/b6043b97-033c-4ff5-a42a-dc988563939b/87c842c8-84ba-41f2-8442-7cac73e76249"
+					(reference "S17")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "SamacSys_Parts:FSM6JSMATR")
+		(at 43.18 127 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ce792e86-f4aa-4f53-9a6a-131751cc659f")
+		(property "Reference" "S9"
+			(at 58.42 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "FSM6JSMATR"
+			(at 58.42 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "SamacSys_parts:FSM6JSMATR"
+			(at 69.85 221.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1654270-2&DocType=Catalog%20Section&DocLang=English&PartCntxt=5-1437565-0&DocFormat=pdf"
+			(at 69.85 321.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "Body Features: Actuator Force 160 G | Cover Material Steel | Actuator Force 5.64 OZ | Case Color Brown | Product Orientation Vertical | Case Material Polyamide | Actuator Material Polyamide | Actuator Color Black | Actuator Profile Extended | Configuration Features: Switch Feedback Type Tactile | ESD Grounding Terminal Without | Operating Function NO | Number of Actuators Single | Configuration (Pole-Throw) Single Pole - Single Throw | Support Bracket Without | Ganged With | Contact Features: Switch Contact"
+			(at 43.18 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Height" "7.26"
+			(at 69.85 521.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "TE Connectivity"
+			(at 69.85 621.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "FSM6JSMATR"
+			(at 69.85 721.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "N/A"
+			(at 69.85 821.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/TE-Connectivity-Alcoswitch/FSM6JSMATR?qs=Im7Ui%252B8riBUZTeJpDMC8Dg%3D%3D"
+			(at 69.85 921.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Arrow Part Number" "FSM6JSMATR"
+			(at 69.85 1021.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Arrow Price/Stock" "https://www.arrow.com/en/products/fsm6jsmatr/te-connectivity?utm_currency=USD&region=nac"
+			(at 69.85 1121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "4"
+			(uuid "9eae4577-5a2b-41d0-ab31-c065f2cee2f2")
+		)
+		(pin "2"
+			(uuid "69f068f0-1503-4ba6-a6e0-97bac5530b9e")
+		)
+		(pin "3"
+			(uuid "dd9b908a-8698-445f-a9f2-76735665a876")
+		)
+		(pin "1"
+			(uuid "c10afe14-de19-490c-b4cf-24688be8447b")
+		)
+		(instances
+			(project "rythemPanelBoard"
+				(path "/b6043b97-033c-4ff5-a42a-dc988563939b/87c842c8-84ba-41f2-8442-7cac73e76249"
+					(reference "S9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "SamacSys_Parts:FSM6JSMATR")
+		(at 43.18 38.1 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "eb9242c0-aad4-4155-abfe-a2f9d6870f0e")
+		(property "Reference" "S2"
+			(at 58.42 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "FSM6JSMATR"
+			(at 58.42 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "SamacSys_parts:FSM6JSMATR"
+			(at 69.85 133.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1654270-2&DocType=Catalog%20Section&DocLang=English&PartCntxt=5-1437565-0&DocFormat=pdf"
+			(at 69.85 233.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "Body Features: Actuator Force 160 G | Cover Material Steel | Actuator Force 5.64 OZ | Case Color Brown | Product Orientation Vertical | Case Material Polyamide | Actuator Material Polyamide | Actuator Color Black | Actuator Profile Extended | Configuration Features: Switch Feedback Type Tactile | ESD Grounding Terminal Without | Operating Function NO | Number of Actuators Single | Configuration (Pole-Throw) Single Pole - Single Throw | Support Bracket Without | Ganged With | Contact Features: Switch Contact"
+			(at 43.18 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Height" "7.26"
+			(at 69.85 433.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "TE Connectivity"
+			(at 69.85 533.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "FSM6JSMATR"
+			(at 69.85 633.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "N/A"
+			(at 69.85 733.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/TE-Connectivity-Alcoswitch/FSM6JSMATR?qs=Im7Ui%252B8riBUZTeJpDMC8Dg%3D%3D"
+			(at 69.85 833.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Arrow Part Number" "FSM6JSMATR"
+			(at 69.85 933.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Arrow Price/Stock" "https://www.arrow.com/en/products/fsm6jsmatr/te-connectivity?utm_currency=USD&region=nac"
+			(at 69.85 1033.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "4"
+			(uuid "afe771a5-40ad-42d7-b7bf-9f4436f96877")
+		)
+		(pin "2"
+			(uuid "49dc79b1-f46c-4b4b-8ef1-f621f4f43dc0")
+		)
+		(pin "3"
+			(uuid "9b8a272a-3b52-4137-937e-681f96c8e7c1")
+		)
+		(pin "1"
+			(uuid "a3a07b39-d8b1-4393-9abc-3aa6d1fc2985")
+		)
+		(instances
+			(project "rythemPanelBoard"
+				(path "/b6043b97-033c-4ff5-a42a-dc988563939b/87c842c8-84ba-41f2-8442-7cac73e76249"
+					(reference "S2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "SamacSys_Parts:FSM6JSMATR")
+		(at 120.65 179.07 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "fa563c3b-a84b-4362-bcc0-a73c8c1c4b8b")
+		(property "Reference" "S26"
+			(at 135.89 171.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "FSM6JSMATR"
+			(at 135.89 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "SamacSys_parts:FSM6JSMATR"
+			(at 147.32 273.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1654270-2&DocType=Catalog%20Section&DocLang=English&PartCntxt=5-1437565-0&DocFormat=pdf"
+			(at 147.32 373.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "Body Features: Actuator Force 160 G | Cover Material Steel | Actuator Force 5.64 OZ | Case Color Brown | Product Orientation Vertical | Case Material Polyamide | Actuator Material Polyamide | Actuator Color Black | Actuator Profile Extended | Configuration Features: Switch Feedback Type Tactile | ESD Grounding Terminal Without | Operating Function NO | Number of Actuators Single | Configuration (Pole-Throw) Single Pole - Single Throw | Support Bracket Without | Ganged With | Contact Features: Switch Contact"
+			(at 120.65 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Height" "7.26"
+			(at 147.32 573.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "TE Connectivity"
+			(at 147.32 673.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "FSM6JSMATR"
+			(at 147.32 773.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "N/A"
+			(at 147.32 873.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/TE-Connectivity-Alcoswitch/FSM6JSMATR?qs=Im7Ui%252B8riBUZTeJpDMC8Dg%3D%3D"
+			(at 147.32 973.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Arrow Part Number" "FSM6JSMATR"
+			(at 147.32 1073.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Arrow Price/Stock" "https://www.arrow.com/en/products/fsm6jsmatr/te-connectivity?utm_currency=USD&region=nac"
+			(at 147.32 1173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "4"
+			(uuid "46f55410-3844-497c-a26a-73c8a705cdeb")
+		)
+		(pin "2"
+			(uuid "306f36f2-a21d-47d5-a635-db5bccb2cd71")
+		)
+		(pin "3"
+			(uuid "5b1d6543-7e79-440d-967b-cd4bb585c0c0")
+		)
+		(pin "1"
+			(uuid "04350a59-5dab-4254-a66c-4f3787a46c5e")
+		)
+		(instances
+			(project "rythemPanelBoard"
+				(path "/b6043b97-033c-4ff5-a42a-dc988563939b/87c842c8-84ba-41f2-8442-7cac73e76249"
+					(reference "S26")
+					(unit 1)
+				)
+			)
+		)
+	)
+)

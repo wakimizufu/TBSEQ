@@ -69,16 +69,19 @@
         "copper_edge_clearance": "error",
         "copper_sliver": "warning",
         "courtyards_overlap": "error",
+        "creepage": "error",
         "diff_pair_gap_out_of_range": "error",
         "diff_pair_uncoupled_length_too_long": "error",
         "drill_out_of_range": "error",
         "duplicate_footprints": "warning",
         "extra_footprint": "warning",
         "footprint": "error",
+        "footprint_filters_mismatch": "ignore",
         "footprint_symbol_mismatch": "warning",
         "footprint_type_mismatch": "ignore",
         "hole_clearance": "error",
         "hole_near_hole": "error",
+        "hole_to_hole": "error",
         "holes_co_located": "warning",
         "invalid_outline": "error",
         "isolated_copper": "warning",
@@ -89,9 +92,11 @@
         "lib_footprint_mismatch": "warning",
         "malformed_courtyard": "error",
         "microvia_drill_out_of_range": "error",
+        "mirrored_text_on_front_layer": "warning",
         "missing_courtyard": "ignore",
         "missing_footprint": "warning",
         "net_conflict": "warning",
+        "nonmirrored_text_on_back_layer": "warning",
         "npth_inside_courtyard": "ignore",
         "padstack": "warning",
         "pth_inside_courtyard": "ignore",
@@ -103,10 +108,13 @@
         "solder_mask_bridge": "error",
         "starved_thermal": "error",
         "text_height": "warning",
+        "text_on_edge_cuts": "error",
         "text_thickness": "warning",
         "through_hole_pad_without_hole": "error",
         "too_many_vias": "error",
+        "track_angle": "error",
         "track_dangling": "warning",
+        "track_segment_length": "error",
         "track_width": "error",
         "tracks_crossing": "error",
         "unconnected_items": "error",
@@ -119,11 +127,12 @@
         "min_clearance": 0.0,
         "min_connection": 0.0,
         "min_copper_edge_clearance": 0.5,
+        "min_groove_width": 0.0,
         "min_hole_clearance": 0.25,
         "min_hole_to_hole": 0.25,
         "min_microvia_diameter": 0.2,
         "min_microvia_drill": 0.1,
-        "min_resolved_spokes": 2,
+        "min_resolved_spokes": 1,
         "min_silk_clearance": 0.0,
         "min_text_height": 0.8,
         "min_text_thickness": 0.08,
@@ -136,10 +145,11 @@
       },
       "teardrop_options": [
         {
-          "td_onpadsmd": true,
+          "td_onpthpad": true,
           "td_onroundshapesonly": false,
+          "td_onsmdpad": true,
           "td_ontrackend": false,
-          "td_onviapad": true
+          "td_onvia": true
         }
       ],
       "teardrop_parameters": [
@@ -455,7 +465,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "panelBoard.kicad_pro",
+    "filename": "mainBorad_R1.kicad_pro",
     "version": 3
   },
   "net_settings": {
@@ -477,6 +487,24 @@
         "via_diameter": 0.6,
         "via_drill": 0.3,
         "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "clearance": 0.2,
+        "diff_pair_gap": 0.25,
+        "diff_pair_via_gap": 0.25,
+        "diff_pair_width": 0.2,
+        "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "Power",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 0,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.4,
+        "via_diameter": 0.6,
+        "via_drill": 0.3,
+        "wire_width": 6
       }
     ],
     "meta": {
@@ -484,14 +512,27 @@
     },
     "net_colors": null,
     "netclass_assignments": null,
-    "netclass_patterns": []
+    "netclass_patterns": [
+      {
+        "netclass": "Power",
+        "pattern": "A+12V"
+      },
+      {
+        "netclass": "Power",
+        "pattern": "D+5V"
+      },
+      {
+        "netclass": "Power",
+        "pattern": "D+3.3V"
+      }
+    ]
   },
   "pcbnew": {
     "last_paths": {
       "gencad": "",
       "idf": "",
       "netlist": "",
-      "plot": "gabarData/",
+      "plot": "gaberData/",
       "pos_files": "",
       "specctra_dsn": "",
       "step": "",
@@ -630,6 +671,12 @@
           "label": "説明",
           "name": "Description",
           "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Sim.Type",
+          "name": "Sim.Type",
+          "show": false
         }
       ],
       "filter_string": "",
@@ -681,24 +728,40 @@
   },
   "sheets": [
     [
-      "e4888aad-78d5-4afc-b382-d3fab1889a4d",
+      "83af791a-9776-40a7-82ad-9528ff7474b8",
       "Root"
     ],
     [
-      "357f53c3-9934-46e1-a766-db83fe7e83fd",
-      "HT16K33"
+      "2a7aa622-1b89-4529-84ec-ef6853ee06a0",
+      "RasPico"
     ],
     [
-      "32d24ddb-6f9c-4c4b-9223-e81aaaf5df19",
-      "LEDMatrix"
+      "823be519-bdcf-42c8-a9bd-38752cead0eb",
+      "MIDIRxTx"
     ],
     [
-      "8ab7d7d0-8f62-497e-9d72-72d99ca807cc",
-      "SwitchMatrix"
+      "df077139-68fe-4311-bd8c-6d4deac1eeeb",
+      "FRAM"
     ],
     [
-      "1a1a0aa4-57dd-497b-b0ec-216c90fc74ae",
+      "d05b3b8c-5b48-43e4-97e3-e56a41468e03",
+      "CV"
+    ],
+    [
+      "762c6d25-4ca5-4dbd-82b1-8f7efbb1590c",
+      "LevelConvert"
+    ],
+    [
+      "84399fb9-099f-4a2f-878a-57c8535f6267",
       "Jack"
+    ],
+    [
+      "7067d32e-232c-4c33-be2e-744ed9661c4e",
+      "PowerSupply"
+    ],
+    [
+      "67c88aa0-cd33-4e9c-b3f5-33809b562701",
+      "TEMPO"
     ]
   ],
   "text_variables": {}

@@ -59,6 +59,15 @@
 					(hide yes)
 				)
 			)
+			(property "Sim.Pins" "1=K 2=A"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
 			(property "ki_keywords" "LED diode"
 				(at 0 0 0)
 				(effects
@@ -180,257 +189,117 @@
 			(embedded_fonts no)
 		)
 	)
-	(text "14:UP"
+	(text "22:BANK B"
 		(exclude_from_sim no)
-		(at 72.136 146.05 0)
+		(at 127 74.93 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 		)
-		(uuid "07725e81-2b7e-4227-8527-ff512ace5cc0")
+		(uuid "012f0ae6-9722-4c33-8dc8-3c1afa4b2dce")
 	)
-	(text "18:SLIDE"
+	(text "16:STEP16"
 		(exclude_from_sim no)
-		(at 130.556 38.608 0)
+		(at 71.374 162.814 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 		)
-		(uuid "2ca9f23c-4dd6-44c3-808c-58aacda5a742")
+		(uuid "025c6637-1f32-411e-9af4-27d68b59c779")
 	)
-	(text "31:STEP2"
+	(text "9:STEP9"
 		(exclude_from_sim no)
-		(at 130.302 153.67 0)
+		(at 71.12 100.076 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 		)
-		(uuid "371a592b-32f6-492a-a7c2-be2bed4d3522")
+		(uuid "037f5618-ce67-4285-befb-0916b507a6ea")
 	)
-	(text "3:D"
+	(text "1:STEP1"
 		(exclude_from_sim no)
-		(at 71.12 47.498 0)
+		(at 71.628 28.702 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 		)
-		(uuid "39cb3ae5-a718-4c01-ba8a-0333e1bb277c")
+		(uuid "0eb1f7bd-7d58-43da-a3a9-34f341223da5")
 	)
-	(text "28:BANK D"
+	(text "25:SCALE A"
 		(exclude_from_sim no)
-		(at 130.556 127 0)
+		(at 127 102.362 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 		)
-		(uuid "41f58a9a-0a79-45af-b891-971441a752bb")
+		(uuid "0f78a29b-312c-4355-9320-0724740a53ae")
 	)
-	(text "13:C2"
+	(text "4:STEP4"
 		(exclude_from_sim no)
-		(at 72.136 136.906 0)
+		(at 70.866 56.134 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 		)
-		(uuid "48afb807-bf4b-483d-a8be-24e769f5b094")
+		(uuid "0f966479-91c7-4f1e-8f81-9ce7b96a9a8d")
 	)
-	(text "32:STEP1"
+	(text "20:WRITE"
 		(exclude_from_sim no)
-		(at 131.318 163.068 0)
+		(at 127 56.134 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 		)
-		(uuid "6cb23e35-9092-4843-a604-245e3731ce94")
+		(uuid "14b11e09-73c1-4723-a83d-291574dee857")
 	)
-	(text "21:RUN_STOP"
+	(text "14:STEP14"
 		(exclude_from_sim no)
-		(at 131.572 65.532 0)
+		(at 71.374 144.78 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 		)
-		(uuid "7b84cdde-2fa8-442d-a4bd-19e5b1163542")
+		(uuid "1d5260a9-a8e6-43b7-9a8a-76fff399f054")
 	)
-	(text "25:BANK A"
+	(text "5:STEP5"
 		(exclude_from_sim no)
-		(at 130.81 100.33 0)
+		(at 71.374 65.024 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 		)
-		(uuid "869472f4-1371-4112-b917-c4899f2b4c92")
+		(uuid "42fa36b4-a00a-45f2-8da1-c42a01d93ad2")
 	)
-	(text "6:F\n"
+	(text "17:RUN/STOP"
 		(exclude_from_sim no)
-		(at 71.12 73.914 0)
+		(at 128.524 29.21 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 		)
-		(uuid "95ccbb12-d542-482b-90d0-11be04a9fb49")
+		(uuid "47aac1fe-0349-4234-917b-76a432a271de")
 	)
-	(text "15:DOWN"
+	(text "13:STEP13"
 		(exclude_from_sim no)
-		(at 72.39 154.432 0)
+		(at 71.628 135.382 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 		)
-		(uuid "a34c420e-a5b8-4417-94d5-b68bce6ad544")
+		(uuid "5574a3d7-d3f4-4aab-869b-17fc43fdbd8f")
 	)
-	(text "30:STEP4"
-		(exclude_from_sim no)
-		(at 130.048 145.034 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "a477453d-7e56-46c4-8c88-a7cf7c6d7cd0")
-	)
-	(text "22:TRACK"
-		(exclude_from_sim no)
-		(at 130.81 73.914 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "a55f53f3-1f94-4ecd-9e34-1fc42bb601dd")
-	)
-	(text "11:A#"
-		(exclude_from_sim no)
-		(at 71.882 118.872 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "a6323084-9e2e-457e-a449-002c68836331")
-	)
-	(text "5:E"
-		(exclude_from_sim no)
-		(at 71.628 65.278 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "a6b38c19-9821-40ce-b7ad-74b0d04c49c5")
-	)
-	(text "19:ACC"
-		(exclude_from_sim no)
-		(at 129.794 47.752 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "a7b19ffc-6013-4529-9f8c-0e2c822b0b05")
-	)
-	(text "17:NOTE_TIE"
-		(exclude_from_sim no)
-		(at 131.318 29.21 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "b02249fb-2ff0-413f-b48d-23fd10c3e95f")
-	)
-	(text "20:LEN_MAX"
-		(exclude_from_sim no)
-		(at 131.064 56.642 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "b55b0828-aa0e-4f2c-9b6e-7f08b883b1ef")
-	)
-	(text "10:A"
-		(exclude_from_sim no)
-		(at 71.374 109.982 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "bc69304a-98ec-445b-9a7a-07b0417ea8c6")
-	)
-	(text "29:STEP8"
-		(exclude_from_sim no)
-		(at 130.048 136.144 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "bd8a67be-76eb-4aea-8083-c4daa552afdf")
-	)
-	(text "12:B"
-		(exclude_from_sim no)
-		(at 71.628 128.016 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "cb13c994-13da-4711-9c75-786362e141ad")
-	)
-	(text "8:G"
-		(exclude_from_sim no)
-		(at 71.628 91.948 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "cf496996-858c-401f-aaf9-1d96542e9c74")
-	)
-	(text "4:D#"
-		(exclude_from_sim no)
-		(at 71.628 56.388 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "d613ec46-18c9-45a9-a694-fe8bdf29db8f")
-	)
-	(text "26:BANK B"
-		(exclude_from_sim no)
-		(at 130.556 109.728 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "d7c91577-77ad-4aeb-a8bd-b30d296913db")
-	)
-	(text "9:G#"
-		(exclude_from_sim no)
-		(at 71.374 100.584 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "d8c54054-0520-4b77-8984-a212e3d8a1e6")
-	)
-	(text "2:C#"
+	(text "2:STEP2"
 		(exclude_from_sim no)
 		(at 71.12 38.354 0)
 		(effects
@@ -438,85 +307,173 @@
 				(size 1.27 1.27)
 			)
 		)
-		(uuid "dad24837-5744-4c20-9527-85cf7f7c60a1")
+		(uuid "6c21e5e9-6d58-44da-b768-66611a9061d5")
 	)
-	(text "1:C"
+	(text "3:STEP3"
 		(exclude_from_sim no)
-		(at 71.12 29.718 0)
+		(at 70.866 47.752 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 		)
-		(uuid "dfd82e6a-354f-42d7-a1fd-249e014af51c")
+		(uuid "6cf779bb-e33c-406a-8914-0bd1fd5d7252")
 	)
-	(text "7:F#\n"
+	(text "23:BANK C"
 		(exclude_from_sim no)
-		(at 70.866 82.804 0)
+		(at 127.254 84.328 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 		)
-		(uuid "e5e01a52-5aed-45cb-881e-dce91cb13738")
+		(uuid "7d87b16d-15ac-4d01-843c-38cc9bbd6ec3")
 	)
-	(text "27:BANK C"
+	(text "26:SCALE B"
 		(exclude_from_sim no)
-		(at 130.81 118.618 0)
+		(at 127.254 110.998 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 		)
-		(uuid "f123608d-5f0c-413c-bfd7-1b45ae5c1995")
+		(uuid "82298ff1-045a-4eb4-b05d-4e0ac032f524")
 	)
-	(text "16:NOTE_ON"
+	(text "10:STEP10"
 		(exclude_from_sim no)
-		(at 71.374 163.576 0)
+		(at 71.374 108.966 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 		)
-		(uuid "f4d7d015-7751-4fb7-baf2-6974e8c8d21a")
+		(uuid "9694aa15-acdd-46ce-8dee-9bd1fb0aabaf")
 	)
-	(text "24:PLAY_WRITE"
+	(text "21:BANK A"
 		(exclude_from_sim no)
-		(at 131.826 91.948 0)
+		(at 127 66.548 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 		)
-		(uuid "f6cf150e-a601-4828-b702-5b3d77682d5e")
+		(uuid "a154f574-d8d9-4dbe-9693-946c5596badf")
 	)
-	(text "23:PATTERN"
+	(text "18:TRACK"
 		(exclude_from_sim no)
-		(at 131.572 83.312 0)
+		(at 126.746 38.354 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 		)
-		(uuid "f7e4b6b8-65db-4df0-ab5a-45907c414e1b")
+		(uuid "b85f748c-5568-41fb-a8c2-3cd770ed85f1")
+	)
+	(text "28:SCALE D"
+		(exclude_from_sim no)
+		(at 128.016 129.032 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "b947b2b4-703b-4137-9221-01b984449fae")
+	)
+	(text "27:SCALE C"
+		(exclude_from_sim no)
+		(at 128.016 119.38 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "bb94b2d0-966b-4f75-8909-7ee44fe4daac")
+	)
+	(text "19:PATTERN"
+		(exclude_from_sim no)
+		(at 127.762 46.99 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "bf77189c-9d9e-4c7d-833a-3e9224361f8a")
+	)
+	(text "7:STEP7"
+		(exclude_from_sim no)
+		(at 71.628 82.804 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "c1a3ad48-3113-4a77-bb28-8a67c3bb3f84")
+	)
+	(text "11:STEP11"
+		(exclude_from_sim no)
+		(at 71.374 117.856 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "d62afc97-fcfb-4d3b-968c-4ba17136a483")
+	)
+	(text "24:BANK D"
+		(exclude_from_sim no)
+		(at 126.746 92.71 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "d714510b-0be9-4bdf-8aa8-d952da6709fe")
+	)
+	(text "15:STEP15"
+		(exclude_from_sim no)
+		(at 71.882 153.416 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "d76cf71d-e0f8-4f21-a470-4259cbfe5026")
+	)
+	(text "6:STEP6"
+		(exclude_from_sim no)
+		(at 71.374 73.66 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "ea10e4f7-b6fc-45ed-b10d-6983d7be80a5")
+	)
+	(text "12:STEP12"
+		(exclude_from_sim no)
+		(at 70.612 127.254 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "ec5fd7bd-8368-4f88-a006-ac21a2767589")
+	)
+	(text "8:STEP8"
+		(exclude_from_sim no)
+		(at 71.882 91.694 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "fbb274ee-c8b8-4d57-8701-f2818215d8b0")
 	)
 	(junction
 		(at 66.04 148.59)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "0220f086-211f-4b50-a4e5-5bd6222036aa")
-	)
-	(junction
-		(at 119.38 157.48)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "046dcce6-a742-40de-b479-fa7c7f411eff")
-	)
-	(junction
-		(at 119.38 139.7)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "310477ac-09d5-4380-b2f2-6bf367ebe95d")
 	)
 	(junction
 		(at 119.38 104.14)
@@ -541,12 +498,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "55f2721c-8e91-4bc9-806f-760069655c11")
-	)
-	(junction
-		(at 119.38 148.59)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "65e54bd2-3e7e-4c0e-b05a-d8963d9bf31e")
 	)
 	(junction
 		(at 66.04 77.47)
@@ -639,12 +590,6 @@
 		(uuid "c29134d8-5e94-4d5d-b797-f88889c56cf8")
 	)
 	(junction
-		(at 119.38 130.81)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "c41a231d-30de-4af9-831b-07c33ac1eda7")
-	)
-	(junction
 		(at 66.04 68.58)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -679,16 +624,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "fe023a57-1a21-4769-b638-6ef518534fa8")
-	)
-	(wire
-		(pts
-			(xy 119.38 148.59) (xy 119.38 157.48)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "019f2d5c-03da-4754-aba0-10cbfd64fe05")
 	)
 	(wire
 		(pts
@@ -729,16 +664,6 @@
 			(type default)
 		)
 		(uuid "1d4dbef1-7bed-4305-8f11-421aa8f11456")
-	)
-	(wire
-		(pts
-			(xy 119.38 139.7) (xy 119.38 148.59)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2d79d4b4-d0f5-485b-ac10-8508ff6e33cb")
 	)
 	(wire
 		(pts
@@ -792,16 +717,6 @@
 	)
 	(wire
 		(pts
-			(xy 119.38 139.7) (xy 137.16 139.7)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4c558d50-4973-4f6e-ba2f-294a40780cb4")
-	)
-	(wire
-		(pts
 			(xy 66.04 41.91) (xy 66.04 50.8)
 		)
 		(stroke
@@ -819,16 +734,6 @@
 			(type default)
 		)
 		(uuid "4d28480d-da2b-47f1-b48a-431d9053b1ba")
-	)
-	(wire
-		(pts
-			(xy 119.38 166.37) (xy 137.16 166.37)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4f920f3f-804f-42cb-9970-2ba31a2ff490")
 	)
 	(wire
 		(pts
@@ -942,16 +847,6 @@
 	)
 	(wire
 		(pts
-			(xy 119.38 130.81) (xy 119.38 139.7)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "76786816-fc91-4f60-9e55-30e770bff69b")
-	)
-	(wire
-		(pts
 			(xy 76.2 130.81) (xy 66.04 130.81)
 		)
 		(stroke
@@ -1062,16 +957,6 @@
 	)
 	(wire
 		(pts
-			(xy 119.38 157.48) (xy 119.38 166.37)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8b890418-3655-48f9-a120-d7dc9eb01451")
-	)
-	(wire
-		(pts
 			(xy 119.38 50.8) (xy 119.38 59.69)
 		)
 		(stroke
@@ -1129,16 +1014,6 @@
 			(type default)
 		)
 		(uuid "a75be085-e56f-4350-afeb-12b1ede2be75")
-	)
-	(wire
-		(pts
-			(xy 119.38 157.48) (xy 137.16 157.48)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a8682fce-978b-4b57-b4b9-7de4a9357a88")
 	)
 	(wire
 		(pts
@@ -1219,16 +1094,6 @@
 			(type default)
 		)
 		(uuid "d6074ee5-1510-47de-a74c-77a40bd8e7a2")
-	)
-	(wire
-		(pts
-			(xy 119.38 148.59) (xy 137.16 148.59)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "dc84d7bf-0d8e-4478-a668-93d48cb06ad2")
 	)
 	(wire
 		(pts
@@ -1463,28 +1328,6 @@
 		(uuid "2c2a2fc4-0c7d-44b1-8925-aff372688a7b")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 91.7642 86.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "Row14"
-		(shape output)
-		(at 144.78 157.48 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "2ebfaca7-2b81-4bcf-9c13-89f7c7f38b3e")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 152.7242 157.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1758,28 +1601,6 @@
 			)
 		)
 	)
-	(global_label "Row12"
-		(shape output)
-		(at 144.78 139.7 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "83d0e7b0-2100-4a5d-afc9-423d015c3785")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 152.7242 139.7 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "COM1"
 		(shape output)
 		(at 116.84 27.94 180)
@@ -1815,28 +1636,6 @@
 		(uuid "9342af19-3572-42e6-acd2-ec60f85c96dc")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 152.7242 86.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "Row15"
-		(shape output)
-		(at 144.78 166.37 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "a527efd4-1920-4939-8c01-1e5cb6bc661d")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 152.7242 166.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2022,28 +1821,6 @@
 			)
 		)
 	)
-	(global_label "Row13"
-		(shape output)
-		(at 144.78 148.59 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "ec4da38b-4415-40e2-9210-eebab4f1ed3f")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 152.7242 148.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "Row4"
 		(shape output)
 		(at 144.78 68.58 0)
@@ -2090,16 +1867,16 @@
 	)
 	(symbol
 		(lib_id "Device:LED")
-		(at 140.97 104.14 0)
-		(mirror x)
+		(at 140.97 77.47 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "0733a9a7-86df-45f4-8583-42f9eb5b3b43")
-		(property "Reference" "D28"
-			(at 143.256 99.06 0)
+		(fields_autoplaced yes)
+		(uuid "04eb612f-81c4-452d-858d-b8ed1d7d2ead")
+		(property "Reference" "D25"
+			(at 139.3825 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2107,7 +1884,7 @@
 			)
 		)
 		(property "Value" "LED"
-			(at 139.3825 99.06 0)
+			(at 139.3825 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2115,7 +1892,7 @@
 			)
 		)
 		(property "Footprint" "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
-			(at 140.97 104.14 0)
+			(at 140.97 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2124,7 +1901,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 140.97 104.14 0)
+			(at 140.97 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2133,7 +1910,16 @@
 			)
 		)
 		(property "Description" "Light emitting diode"
-			(at 140.97 104.14 0)
+			(at 140.97 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 140.97 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2142,1707 +1928,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "b14373d7-51bc-4439-82ad-e24486588e32")
+			(uuid "ac19c19c-d18f-46bc-bfd1-b7877bf0337c")
 		)
 		(pin "2"
-			(uuid "a3c60865-a65f-4b98-8508-1c726a43459f")
+			(uuid "2617e67a-bc9d-4d19-8094-aa774653c48d")
 		)
 		(instances
-			(project "HT16K33Panel"
-				(path "/2a3172f4-85fe-4c47-84d4-31ed69e3089f/223877be-349d-4a96-9b8e-69982b6691ab"
-					(reference "D28")
-					(unit 1)
-				)
-			)
-			(project "frontPanel"
-				(path "/cb8e3fb6-70fc-4f13-8abd-15b04d6c762c/c6933512-cdb7-4e74-b027-d78b94b49bf4"
-					(reference "D28")
-					(unit 1)
-				)
-			)
-			(project "HT16K33Panel"
-				(path "/e4888aad-78d5-4afc-b382-d3fab1889a4d/32d24ddb-6f9c-4c4b-9223-e81aaaf5df19"
-					(reference "D28")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:LED")
-		(at 80.01 139.7 0)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "093092a1-bce3-43cd-9196-933fdf5bcab8")
-		(property "Reference" "D16"
-			(at 82.296 134.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "KT-0603R"
-			(at 78.4225 134.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
-			(at 80.01 139.7 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 80.01 139.7 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Light emitting diode"
-			(at 80.01 139.7 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "542008ec-269d-4b07-87a2-a772c223dcf9")
-		)
-		(pin "2"
-			(uuid "1200ae93-9fca-495c-82f2-1841c03062c6")
-		)
-		(instances
-			(project "HT16K33Panel"
-				(path "/2a3172f4-85fe-4c47-84d4-31ed69e3089f/223877be-349d-4a96-9b8e-69982b6691ab"
-					(reference "D16")
-					(unit 1)
-				)
-			)
-			(project "frontPanel"
-				(path "/cb8e3fb6-70fc-4f13-8abd-15b04d6c762c/c6933512-cdb7-4e74-b027-d78b94b49bf4"
-					(reference "D16")
-					(unit 1)
-				)
-			)
-			(project "HT16K33Panel"
-				(path "/e4888aad-78d5-4afc-b382-d3fab1889a4d/32d24ddb-6f9c-4c4b-9223-e81aaaf5df19"
-					(reference "D16")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:LED")
-		(at 140.97 148.59 0)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "0a12df36-a3c2-4223-a743-177c349514ae")
-		(property "Reference" "D33"
-			(at 143.256 143.51 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "LED"
-			(at 139.3825 143.51 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
-			(at 140.97 148.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 140.97 148.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Light emitting diode"
-			(at 140.97 148.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "dad1b43d-8565-4574-be94-ce9d5c6ef64e")
-		)
-		(pin "2"
-			(uuid "0b4476d7-bc1d-4a41-8b11-9c7711706027")
-		)
-		(instances
-			(project "HT16K33Panel"
-				(path "/2a3172f4-85fe-4c47-84d4-31ed69e3089f/223877be-349d-4a96-9b8e-69982b6691ab"
-					(reference "D33")
-					(unit 1)
-				)
-			)
-			(project "frontPanel"
-				(path "/cb8e3fb6-70fc-4f13-8abd-15b04d6c762c/c6933512-cdb7-4e74-b027-d78b94b49bf4"
-					(reference "D33")
-					(unit 1)
-				)
-			)
-			(project "HT16K33Panel"
-				(path "/e4888aad-78d5-4afc-b382-d3fab1889a4d/32d24ddb-6f9c-4c4b-9223-e81aaaf5df19"
-					(reference "D33")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:LED")
-		(at 80.01 166.37 0)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "0c4cceb6-ef65-4c1b-986f-28e4ed46f4f4")
-		(property "Reference" "D19"
-			(at 82.296 161.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "KT-0603R"
-			(at 78.4225 161.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
-			(at 80.01 166.37 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 80.01 166.37 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Light emitting diode"
-			(at 80.01 166.37 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "02c0b164-e145-458c-b858-08d1d897da02")
-		)
-		(pin "2"
-			(uuid "0310fe69-860e-4280-987f-bb30ace351aa")
-		)
-		(instances
-			(project "HT16K33Panel"
-				(path "/2a3172f4-85fe-4c47-84d4-31ed69e3089f/223877be-349d-4a96-9b8e-69982b6691ab"
-					(reference "D19")
-					(unit 1)
-				)
-			)
-			(project "frontPanel"
-				(path "/cb8e3fb6-70fc-4f13-8abd-15b04d6c762c/c6933512-cdb7-4e74-b027-d78b94b49bf4"
-					(reference "D19")
-					(unit 1)
-				)
-			)
-			(project "HT16K33Panel"
-				(path "/e4888aad-78d5-4afc-b382-d3fab1889a4d/32d24ddb-6f9c-4c4b-9223-e81aaaf5df19"
-					(reference "D19")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:LED")
-		(at 80.01 157.48 0)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "0ee84783-ed3d-4e87-a45d-88717618d693")
-		(property "Reference" "D18"
-			(at 82.296 152.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "KT-0603R"
-			(at 78.4225 152.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
-			(at 80.01 157.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 80.01 157.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Light emitting diode"
-			(at 80.01 157.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "d22aa99e-0d49-4c67-bfca-2e7ebcacc767")
-		)
-		(pin "2"
-			(uuid "130eb762-9cd0-49c8-bf55-1ecc5cdebcb0")
-		)
-		(instances
-			(project "HT16K33Panel"
-				(path "/2a3172f4-85fe-4c47-84d4-31ed69e3089f/223877be-349d-4a96-9b8e-69982b6691ab"
-					(reference "D18")
-					(unit 1)
-				)
-			)
-			(project "frontPanel"
-				(path "/cb8e3fb6-70fc-4f13-8abd-15b04d6c762c/c6933512-cdb7-4e74-b027-d78b94b49bf4"
-					(reference "D18")
-					(unit 1)
-				)
-			)
-			(project "HT16K33Panel"
-				(path "/e4888aad-78d5-4afc-b382-d3fab1889a4d/32d24ddb-6f9c-4c4b-9223-e81aaaf5df19"
-					(reference "D18")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:LED")
-		(at 80.01 113.03 0)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "1a5ef51a-0cd3-4604-a41b-af7dce5e9dcb")
-		(property "Reference" "D13"
-			(at 82.296 107.95 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "KT-0603R"
-			(at 78.4225 107.95 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
-			(at 80.01 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 80.01 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Light emitting diode"
-			(at 80.01 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "70860565-7189-48ba-b81d-e36a8cbdaf3b")
-		)
-		(pin "2"
-			(uuid "9e700c63-a41d-4811-89b6-107636f51c74")
-		)
-		(instances
-			(project "HT16K33Panel"
-				(path "/2a3172f4-85fe-4c47-84d4-31ed69e3089f/223877be-349d-4a96-9b8e-69982b6691ab"
-					(reference "D13")
-					(unit 1)
-				)
-			)
-			(project "frontPanel"
-				(path "/cb8e3fb6-70fc-4f13-8abd-15b04d6c762c/c6933512-cdb7-4e74-b027-d78b94b49bf4"
-					(reference "D13")
-					(unit 1)
-				)
-			)
-			(project "HT16K33Panel"
-				(path "/e4888aad-78d5-4afc-b382-d3fab1889a4d/32d24ddb-6f9c-4c4b-9223-e81aaaf5df19"
-					(reference "D13")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:LED")
-		(at 140.97 59.69 0)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "22e699af-2dce-49b9-a841-81d7d0bba2ec")
-		(property "Reference" "D23"
-			(at 143.256 54.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "KT-0603R"
-			(at 139.3825 54.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
-			(at 140.97 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 140.97 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Light emitting diode"
-			(at 140.97 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "54b886fe-45e0-44ab-ae5b-4bb982d9ec67")
-		)
-		(pin "2"
-			(uuid "02b2acd6-83b7-450c-be83-10a7506c9fa9")
-		)
-		(instances
-			(project "HT16K33Panel"
-				(path "/2a3172f4-85fe-4c47-84d4-31ed69e3089f/223877be-349d-4a96-9b8e-69982b6691ab"
-					(reference "D23")
-					(unit 1)
-				)
-			)
-			(project "frontPanel"
-				(path "/cb8e3fb6-70fc-4f13-8abd-15b04d6c762c/c6933512-cdb7-4e74-b027-d78b94b49bf4"
-					(reference "D23")
-					(unit 1)
-				)
-			)
-			(project "HT16K33Panel"
-				(path "/e4888aad-78d5-4afc-b382-d3fab1889a4d/32d24ddb-6f9c-4c4b-9223-e81aaaf5df19"
-					(reference "D23")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:LED")
-		(at 140.97 157.48 0)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "26a9b829-57e4-4477-b459-880653199a67")
-		(property "Reference" "D34"
-			(at 143.256 152.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "LED"
-			(at 139.3825 152.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
-			(at 140.97 157.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 140.97 157.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Light emitting diode"
-			(at 140.97 157.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "c3e0c32e-7448-45e7-8a51-ffc7b2d70e87")
-		)
-		(pin "2"
-			(uuid "5553c325-bd64-4b40-84aa-f2ca6edfd3d0")
-		)
-		(instances
-			(project "HT16K33Panel"
-				(path "/2a3172f4-85fe-4c47-84d4-31ed69e3089f/223877be-349d-4a96-9b8e-69982b6691ab"
-					(reference "D34")
-					(unit 1)
-				)
-			)
-			(project "frontPanel"
-				(path "/cb8e3fb6-70fc-4f13-8abd-15b04d6c762c/c6933512-cdb7-4e74-b027-d78b94b49bf4"
-					(reference "D34")
-					(unit 1)
-				)
-			)
-			(project "HT16K33Panel"
-				(path "/e4888aad-78d5-4afc-b382-d3fab1889a4d/32d24ddb-6f9c-4c4b-9223-e81aaaf5df19"
-					(reference "D34")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:LED")
-		(at 140.97 130.81 0)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "36b4dba4-a9af-4aa1-8005-7b0d3b4e2f4a")
-		(property "Reference" "D31"
-			(at 143.256 125.73 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "LED"
-			(at 139.3825 125.73 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
-			(at 140.97 130.81 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 140.97 130.81 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Light emitting diode"
-			(at 140.97 130.81 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "97b55c69-7590-4777-af1c-7fdf2000ab09")
-		)
-		(pin "2"
-			(uuid "45c83079-0238-41fe-9fdd-1e4224d7ba5d")
-		)
-		(instances
-			(project "HT16K33Panel"
-				(path "/2a3172f4-85fe-4c47-84d4-31ed69e3089f/223877be-349d-4a96-9b8e-69982b6691ab"
-					(reference "D31")
-					(unit 1)
-				)
-			)
-			(project "frontPanel"
-				(path "/cb8e3fb6-70fc-4f13-8abd-15b04d6c762c/c6933512-cdb7-4e74-b027-d78b94b49bf4"
-					(reference "D31")
-					(unit 1)
-				)
-			)
-			(project "HT16K33Panel"
-				(path "/e4888aad-78d5-4afc-b382-d3fab1889a4d/32d24ddb-6f9c-4c4b-9223-e81aaaf5df19"
-					(reference "D31")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:LED")
-		(at 80.01 104.14 0)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "3b1b153e-5ef6-4231-9f18-3cc2fb18e24b")
-		(property "Reference" "D12"
-			(at 82.296 99.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "KT-0603R"
-			(at 78.4225 99.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
-			(at 80.01 104.14 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 80.01 104.14 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Light emitting diode"
-			(at 80.01 104.14 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "0253aa0e-4f13-4027-8a04-cad6bfd469e0")
-		)
-		(pin "2"
-			(uuid "ef466d68-6c30-4444-97da-1a260fa7fa39")
-		)
-		(instances
-			(project "HT16K33Panel"
-				(path "/2a3172f4-85fe-4c47-84d4-31ed69e3089f/223877be-349d-4a96-9b8e-69982b6691ab"
-					(reference "D12")
-					(unit 1)
-				)
-			)
-			(project "frontPanel"
-				(path "/cb8e3fb6-70fc-4f13-8abd-15b04d6c762c/c6933512-cdb7-4e74-b027-d78b94b49bf4"
-					(reference "D12")
-					(unit 1)
-				)
-			)
-			(project "HT16K33Panel"
-				(path "/e4888aad-78d5-4afc-b382-d3fab1889a4d/32d24ddb-6f9c-4c4b-9223-e81aaaf5df19"
-					(reference "D12")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:LED")
-		(at 140.97 113.03 0)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "3c4856df-8d8a-47af-ba95-d4ee418fc0d4")
-		(property "Reference" "D29"
-			(at 143.256 107.95 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "LED"
-			(at 139.3825 107.95 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
-			(at 140.97 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 140.97 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Light emitting diode"
-			(at 140.97 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "4d00f4c4-a1b7-4e4d-a1e4-96577b339d56")
-		)
-		(pin "2"
-			(uuid "250b0589-1e55-466a-aa79-d1862fc97a74")
-		)
-		(instances
-			(project "HT16K33Panel"
-				(path "/2a3172f4-85fe-4c47-84d4-31ed69e3089f/223877be-349d-4a96-9b8e-69982b6691ab"
-					(reference "D29")
-					(unit 1)
-				)
-			)
-			(project "frontPanel"
-				(path "/cb8e3fb6-70fc-4f13-8abd-15b04d6c762c/c6933512-cdb7-4e74-b027-d78b94b49bf4"
-					(reference "D29")
-					(unit 1)
-				)
-			)
-			(project "HT16K33Panel"
-				(path "/e4888aad-78d5-4afc-b382-d3fab1889a4d/32d24ddb-6f9c-4c4b-9223-e81aaaf5df19"
-					(reference "D29")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:LED")
-		(at 80.01 41.91 0)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "45735968-7980-47bb-8525-c30a0b9650bb")
-		(property "Reference" "D5"
-			(at 82.296 36.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "KT-0603R"
-			(at 78.4225 36.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
-			(at 80.01 41.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 80.01 41.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Light emitting diode"
-			(at 80.01 41.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "c89a7714-94bc-4ef8-a3da-410c76b5b767")
-		)
-		(pin "2"
-			(uuid "34635314-19d9-4a59-bab3-26c68ce15762")
-		)
-		(instances
-			(project "HT16K33Panel"
-				(path "/2a3172f4-85fe-4c47-84d4-31ed69e3089f/223877be-349d-4a96-9b8e-69982b6691ab"
-					(reference "D5")
-					(unit 1)
-				)
-			)
-			(project "frontPanel"
-				(path "/cb8e3fb6-70fc-4f13-8abd-15b04d6c762c/c6933512-cdb7-4e74-b027-d78b94b49bf4"
-					(reference "D5")
-					(unit 1)
-				)
-			)
-			(project "HT16K33Panel"
-				(path "/e4888aad-78d5-4afc-b382-d3fab1889a4d/32d24ddb-6f9c-4c4b-9223-e81aaaf5df19"
-					(reference "D5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:LED")
-		(at 80.01 68.58 0)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "597ab88c-04ba-45e0-9bd8-af87852db913")
-		(property "Reference" "D8"
-			(at 82.296 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "KT-0603R"
-			(at 78.4225 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
-			(at 80.01 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 80.01 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Light emitting diode"
-			(at 80.01 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "8b818952-1146-4203-8d88-6263c87e2a1f")
-		)
-		(pin "2"
-			(uuid "a39c4e8c-b68f-49f6-9cdd-52045dfb1dcb")
-		)
-		(instances
-			(project "HT16K33Panel"
-				(path "/2a3172f4-85fe-4c47-84d4-31ed69e3089f/223877be-349d-4a96-9b8e-69982b6691ab"
-					(reference "D8")
-					(unit 1)
-				)
-			)
-			(project "frontPanel"
-				(path "/cb8e3fb6-70fc-4f13-8abd-15b04d6c762c/c6933512-cdb7-4e74-b027-d78b94b49bf4"
-					(reference "D8")
-					(unit 1)
-				)
-			)
-			(project "HT16K33Panel"
-				(path "/e4888aad-78d5-4afc-b382-d3fab1889a4d/32d24ddb-6f9c-4c4b-9223-e81aaaf5df19"
-					(reference "D8")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:LED")
-		(at 80.01 95.25 0)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "5a02aec8-e2a4-4e62-a1ae-358d5c23e97e")
-		(property "Reference" "D11"
-			(at 82.296 90.17 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "KT-0603R"
-			(at 78.4225 90.17 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
-			(at 80.01 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 80.01 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Light emitting diode"
-			(at 80.01 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "f8a48634-e8ac-47c8-af0d-05a1e6524598")
-		)
-		(pin "2"
-			(uuid "c601fe8c-2157-49fa-9bc0-eba7f586688d")
-		)
-		(instances
-			(project "HT16K33Panel"
-				(path "/2a3172f4-85fe-4c47-84d4-31ed69e3089f/223877be-349d-4a96-9b8e-69982b6691ab"
-					(reference "D11")
-					(unit 1)
-				)
-			)
-			(project "frontPanel"
-				(path "/cb8e3fb6-70fc-4f13-8abd-15b04d6c762c/c6933512-cdb7-4e74-b027-d78b94b49bf4"
-					(reference "D11")
-					(unit 1)
-				)
-			)
-			(project "HT16K33Panel"
-				(path "/e4888aad-78d5-4afc-b382-d3fab1889a4d/32d24ddb-6f9c-4c4b-9223-e81aaaf5df19"
-					(reference "D11")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:LED")
-		(at 140.97 86.36 0)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "5ffaff0f-0b2e-4c5b-9fb7-4daf95694071")
-		(property "Reference" "D26"
-			(at 143.256 81.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "LED"
-			(at 139.3825 81.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
-			(at 140.97 86.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 140.97 86.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Light emitting diode"
-			(at 140.97 86.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "bf4a8aaa-25dc-4ec0-8716-8fce5874f71c")
-		)
-		(pin "2"
-			(uuid "7234134d-1488-4f36-9f0a-0483a31fbc19")
-		)
-		(instances
-			(project "HT16K33Panel"
-				(path "/2a3172f4-85fe-4c47-84d4-31ed69e3089f/223877be-349d-4a96-9b8e-69982b6691ab"
-					(reference "D26")
-					(unit 1)
-				)
-			)
-			(project "frontPanel"
-				(path "/cb8e3fb6-70fc-4f13-8abd-15b04d6c762c/c6933512-cdb7-4e74-b027-d78b94b49bf4"
-					(reference "D26")
-					(unit 1)
-				)
-			)
-			(project "HT16K33Panel"
-				(path "/e4888aad-78d5-4afc-b382-d3fab1889a4d/32d24ddb-6f9c-4c4b-9223-e81aaaf5df19"
-					(reference "D26")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:LED")
-		(at 80.01 86.36 0)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "671aa834-b303-41fd-b422-0f5718e03f98")
-		(property "Reference" "D10"
-			(at 82.296 81.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "KT-0603R"
-			(at 78.4225 81.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
-			(at 80.01 86.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 80.01 86.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Light emitting diode"
-			(at 80.01 86.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "f906ef3a-cdec-4b68-a992-dd47b4892eca")
-		)
-		(pin "2"
-			(uuid "b0556c08-56c7-4d2f-87c9-127670ec725f")
-		)
-		(instances
-			(project "HT16K33Panel"
-				(path "/2a3172f4-85fe-4c47-84d4-31ed69e3089f/223877be-349d-4a96-9b8e-69982b6691ab"
-					(reference "D10")
-					(unit 1)
-				)
-			)
-			(project "frontPanel"
-				(path "/cb8e3fb6-70fc-4f13-8abd-15b04d6c762c/c6933512-cdb7-4e74-b027-d78b94b49bf4"
-					(reference "D10")
-					(unit 1)
-				)
-			)
-			(project "HT16K33Panel"
-				(path "/e4888aad-78d5-4afc-b382-d3fab1889a4d/32d24ddb-6f9c-4c4b-9223-e81aaaf5df19"
-					(reference "D10")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:LED")
-		(at 140.97 68.58 0)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "69aff9ee-a328-4e6c-b15d-875ec3068ec3")
-		(property "Reference" "D24"
-			(at 143.256 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "LED"
-			(at 139.3825 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
-			(at 140.97 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 140.97 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Light emitting diode"
-			(at 140.97 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "24c89e95-0a08-4521-ace7-5b7d50fdc42c")
-		)
-		(pin "2"
-			(uuid "ec291d2b-42e1-43dc-a849-1246d6beef6d")
-		)
-		(instances
-			(project "HT16K33Panel"
-				(path "/2a3172f4-85fe-4c47-84d4-31ed69e3089f/223877be-349d-4a96-9b8e-69982b6691ab"
-					(reference "D24")
-					(unit 1)
-				)
-			)
-			(project "frontPanel"
-				(path "/cb8e3fb6-70fc-4f13-8abd-15b04d6c762c/c6933512-cdb7-4e74-b027-d78b94b49bf4"
-					(reference "D24")
-					(unit 1)
-				)
-			)
-			(project "HT16K33Panel"
-				(path "/e4888aad-78d5-4afc-b382-d3fab1889a4d/32d24ddb-6f9c-4c4b-9223-e81aaaf5df19"
-					(reference "D24")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:LED")
-		(at 140.97 50.8 0)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "782c81e1-c5ad-445a-841f-46c0606ac8c3")
-		(property "Reference" "D22"
-			(at 143.256 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "KT-0603R"
-			(at 139.3825 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
-			(at 140.97 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 140.97 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Light emitting diode"
-			(at 140.97 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "15ea4bc9-c3e9-480d-86f5-2c35bf9510e7")
-		)
-		(pin "2"
-			(uuid "91a07bba-7794-4bab-8f9a-136d2f5a3637")
-		)
-		(instances
-			(project "HT16K33Panel"
-				(path "/2a3172f4-85fe-4c47-84d4-31ed69e3089f/223877be-349d-4a96-9b8e-69982b6691ab"
-					(reference "D22")
-					(unit 1)
-				)
-			)
-			(project "frontPanel"
-				(path "/cb8e3fb6-70fc-4f13-8abd-15b04d6c762c/c6933512-cdb7-4e74-b027-d78b94b49bf4"
-					(reference "D22")
-					(unit 1)
-				)
-			)
-			(project "HT16K33Panel"
-				(path "/e4888aad-78d5-4afc-b382-d3fab1889a4d/32d24ddb-6f9c-4c4b-9223-e81aaaf5df19"
-					(reference "D22")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:LED")
-		(at 140.97 166.37 0)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "7c2e22da-5b0d-4a53-817f-ee7a63584639")
-		(property "Reference" "D35"
-			(at 143.256 161.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "LED"
-			(at 139.3825 161.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
-			(at 140.97 166.37 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 140.97 166.37 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Light emitting diode"
-			(at 140.97 166.37 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "d520eaa7-8379-4067-8f67-0577d80c49b9")
-		)
-		(pin "2"
-			(uuid "b2a03926-2702-40b9-ac96-643f9a33a9ec")
-		)
-		(instances
-			(project "HT16K33Panel"
-				(path "/2a3172f4-85fe-4c47-84d4-31ed69e3089f/223877be-349d-4a96-9b8e-69982b6691ab"
-					(reference "D35")
-					(unit 1)
-				)
-			)
-			(project "frontPanel"
-				(path "/cb8e3fb6-70fc-4f13-8abd-15b04d6c762c/c6933512-cdb7-4e74-b027-d78b94b49bf4"
-					(reference "D35")
-					(unit 1)
-				)
-			)
-			(project "HT16K33Panel"
-				(path "/e4888aad-78d5-4afc-b382-d3fab1889a4d/32d24ddb-6f9c-4c4b-9223-e81aaaf5df19"
-					(reference "D35")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:LED")
-		(at 80.01 148.59 0)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "8e7eb089-8c98-426d-8090-0ce188c6468b")
-		(property "Reference" "D17"
-			(at 82.296 143.51 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "KT-0603R"
-			(at 78.4225 143.51 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
-			(at 80.01 148.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 80.01 148.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Light emitting diode"
-			(at 80.01 148.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "8a5c6f96-e19e-4988-9d5a-90b1b47ee976")
-		)
-		(pin "2"
-			(uuid "f1de154d-483e-483d-95e1-fe1a20191421")
-		)
-		(instances
-			(project "HT16K33Panel"
-				(path "/2a3172f4-85fe-4c47-84d4-31ed69e3089f/223877be-349d-4a96-9b8e-69982b6691ab"
-					(reference "D17")
-					(unit 1)
-				)
-			)
-			(project "frontPanel"
-				(path "/cb8e3fb6-70fc-4f13-8abd-15b04d6c762c/c6933512-cdb7-4e74-b027-d78b94b49bf4"
-					(reference "D17")
-					(unit 1)
-				)
-			)
-			(project "HT16K33Panel"
-				(path "/e4888aad-78d5-4afc-b382-d3fab1889a4d/32d24ddb-6f9c-4c4b-9223-e81aaaf5df19"
-					(reference "D17")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:LED")
-		(at 80.01 33.02 0)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "9669f767-f376-4e5e-b109-d3b0fc1af793")
-		(property "Reference" "D4"
-			(at 82.296 27.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "KT-0603R"
-			(at 78.4225 27.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
-			(at 80.01 33.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 80.01 33.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Light emitting diode"
-			(at 80.01 33.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "a43dc2f5-2e85-435e-9576-f9c36fee20e1")
-		)
-		(pin "2"
-			(uuid "f256f816-7cd4-41ed-9243-91bb0033a2f7")
-		)
-		(instances
-			(project "HT16K33Panel"
-				(path "/2a3172f4-85fe-4c47-84d4-31ed69e3089f/223877be-349d-4a96-9b8e-69982b6691ab"
-					(reference "D4")
-					(unit 1)
-				)
-			)
-			(project "frontPanel"
-				(path "/cb8e3fb6-70fc-4f13-8abd-15b04d6c762c/c6933512-cdb7-4e74-b027-d78b94b49bf4"
-					(reference "D4")
-					(unit 1)
-				)
-			)
-			(project "HT16K33Panel"
-				(path "/e4888aad-78d5-4afc-b382-d3fab1889a4d/32d24ddb-6f9c-4c4b-9223-e81aaaf5df19"
-					(reference "D4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:LED")
-		(at 140.97 121.92 0)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "a5b377e7-0d27-4a48-9b4f-d6262b49b848")
-		(property "Reference" "D30"
-			(at 143.256 116.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "LED"
-			(at 139.3825 116.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
-			(at 140.97 121.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 140.97 121.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Light emitting diode"
-			(at 140.97 121.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "ad343c71-e72f-46bb-adf3-8f4050ed147a")
-		)
-		(pin "2"
-			(uuid "6b0fddf1-164a-4fbe-9691-7835f2d33048")
-		)
-		(instances
-			(project "HT16K33Panel"
-				(path "/2a3172f4-85fe-4c47-84d4-31ed69e3089f/223877be-349d-4a96-9b8e-69982b6691ab"
-					(reference "D30")
-					(unit 1)
-				)
-			)
-			(project "frontPanel"
-				(path "/cb8e3fb6-70fc-4f13-8abd-15b04d6c762c/c6933512-cdb7-4e74-b027-d78b94b49bf4"
-					(reference "D30")
-					(unit 1)
-				)
-			)
-			(project "HT16K33Panel"
-				(path "/e4888aad-78d5-4afc-b382-d3fab1889a4d/32d24ddb-6f9c-4c4b-9223-e81aaaf5df19"
-					(reference "D30")
+			(project "rythemPanelBoard"
+				(path "/b6043b97-033c-4ff5-a42a-dc988563939b/dcdca6b2-c402-4156-b726-79ac708e13db"
+					(reference "D25")
 					(unit 1)
 				)
 			)
@@ -3851,23 +1945,23 @@
 	(symbol
 		(lib_id "Device:LED")
 		(at 80.01 59.69 0)
-		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "ad5d5877-8d40-40c2-9b7f-8b6e45bf300c")
+		(fields_autoplaced yes)
+		(uuid "054f90b8-7bb1-469b-9ec1-334242a79dd3")
 		(property "Reference" "D7"
-			(at 82.296 54.61 0)
+			(at 78.4225 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "KT-0603R"
-			(at 78.4225 54.61 0)
+		(property "Value" "LED"
+			(at 78.4225 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3901,27 +1995,24 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 80.01 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
-			(uuid "0d7d7b48-a7d7-4891-92c6-f1a6fe7ed93c")
+			(uuid "d0e4a52c-2536-4503-a7d8-3374697d18c7")
 		)
 		(pin "2"
-			(uuid "d4b60393-4294-43f3-91f6-879d8a2f5249")
+			(uuid "f70a50e2-7982-4545-9535-a57ad81b34f6")
 		)
 		(instances
-			(project "HT16K33Panel"
-				(path "/2a3172f4-85fe-4c47-84d4-31ed69e3089f/223877be-349d-4a96-9b8e-69982b6691ab"
-					(reference "D7")
-					(unit 1)
-				)
-			)
-			(project "frontPanel"
-				(path "/cb8e3fb6-70fc-4f13-8abd-15b04d6c762c/c6933512-cdb7-4e74-b027-d78b94b49bf4"
-					(reference "D7")
-					(unit 1)
-				)
-			)
-			(project "HT16K33Panel"
-				(path "/e4888aad-78d5-4afc-b382-d3fab1889a4d/32d24ddb-6f9c-4c4b-9223-e81aaaf5df19"
+			(project "rythemPanelBoard"
+				(path "/b6043b97-033c-4ff5-a42a-dc988563939b/dcdca6b2-c402-4156-b726-79ac708e13db"
 					(reference "D7")
 					(unit 1)
 				)
@@ -3930,16 +2021,16 @@
 	)
 	(symbol
 		(lib_id "Device:LED")
-		(at 140.97 77.47 0)
-		(mirror x)
+		(at 140.97 121.92 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "b1034633-9f88-4e10-b6e9-5e71fb72f7a9")
-		(property "Reference" "D25"
-			(at 143.256 72.39 0)
+		(fields_autoplaced yes)
+		(uuid "1968930c-93ea-4cb7-9150-755a04fc2e0b")
+		(property "Reference" "D30"
+			(at 139.3825 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3947,7 +2038,7 @@
 			)
 		)
 		(property "Value" "LED"
-			(at 139.3825 72.39 0)
+			(at 139.3825 118.11 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3955,7 +2046,7 @@
 			)
 		)
 		(property "Footprint" "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
-			(at 140.97 77.47 0)
+			(at 140.97 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3964,7 +2055,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 140.97 77.47 0)
+			(at 140.97 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3973,7 +2064,16 @@
 			)
 		)
 		(property "Description" "Light emitting diode"
-			(at 140.97 77.47 0)
+			(at 140.97 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 140.97 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3982,27 +2082,169 @@
 			)
 		)
 		(pin "1"
-			(uuid "354e56b3-a946-40aa-ad1a-7e12e6e90492")
+			(uuid "c77137af-1842-430e-afba-df938e3144cd")
 		)
 		(pin "2"
-			(uuid "2f9f9c38-6164-40f6-bf29-470c00f1d9d1")
+			(uuid "e1b3d6fe-f942-48de-a54d-5860d1d6e143")
 		)
 		(instances
-			(project "HT16K33Panel"
-				(path "/2a3172f4-85fe-4c47-84d4-31ed69e3089f/223877be-349d-4a96-9b8e-69982b6691ab"
-					(reference "D25")
+			(project "rythemPanelBoard"
+				(path "/b6043b97-033c-4ff5-a42a-dc988563939b/dcdca6b2-c402-4156-b726-79ac708e13db"
+					(reference "D30")
 					(unit 1)
 				)
 			)
-			(project "frontPanel"
-				(path "/cb8e3fb6-70fc-4f13-8abd-15b04d6c762c/c6933512-cdb7-4e74-b027-d78b94b49bf4"
-					(reference "D25")
+		)
+	)
+	(symbol
+		(lib_id "Device:LED")
+		(at 80.01 166.37 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1bf96bae-15f7-442a-9b0f-7fdbabd7cbf2")
+		(property "Reference" "D19"
+			(at 78.4225 160.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED"
+			(at 78.4225 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
+			(at 80.01 166.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 80.01 166.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 80.01 166.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 80.01 166.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "11f9f5e8-0ade-492d-918e-1a8540b5915b")
+		)
+		(pin "2"
+			(uuid "2a3834fb-4c8f-4534-9855-9674143a45d3")
+		)
+		(instances
+			(project "rythemPanelBoard"
+				(path "/b6043b97-033c-4ff5-a42a-dc988563939b/dcdca6b2-c402-4156-b726-79ac708e13db"
+					(reference "D19")
 					(unit 1)
 				)
 			)
-			(project "HT16K33Panel"
-				(path "/e4888aad-78d5-4afc-b382-d3fab1889a4d/32d24ddb-6f9c-4c4b-9223-e81aaaf5df19"
-					(reference "D25")
+		)
+	)
+	(symbol
+		(lib_id "Device:LED")
+		(at 140.97 86.36 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1f92170a-9b00-4916-a776-53b9cc02f727")
+		(property "Reference" "D26"
+			(at 139.3825 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED"
+			(at 139.3825 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
+			(at 140.97 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 140.97 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 140.97 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 140.97 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "684d0e35-4295-4d16-b5e4-8f4643e1b1c0")
+		)
+		(pin "2"
+			(uuid "c27bc7d1-a1a1-4481-b6b2-af06773624a9")
+		)
+		(instances
+			(project "rythemPanelBoard"
+				(path "/b6043b97-033c-4ff5-a42a-dc988563939b/dcdca6b2-c402-4156-b726-79ac708e13db"
+					(reference "D26")
 					(unit 1)
 				)
 			)
@@ -4011,23 +2253,23 @@
 	(symbol
 		(lib_id "Device:LED")
 		(at 80.01 130.81 0)
-		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "be0fe3bd-420a-443b-934b-fd4a6efb9dd7")
+		(fields_autoplaced yes)
+		(uuid "29d065d1-a8d4-40dc-a973-52dde3924270")
 		(property "Reference" "D15"
-			(at 82.296 125.73 0)
+			(at 78.4225 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "KT-0603R"
-			(at 78.4225 125.73 0)
+		(property "Value" "LED"
+			(at 78.4225 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4061,27 +2303,24 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 80.01 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
-			(uuid "8ed8d3d9-d1cf-49c3-bda3-e85492bc4067")
+			(uuid "6c84aaa7-7c37-47f3-aabe-aa6e7041e249")
 		)
 		(pin "2"
-			(uuid "fab961d2-8742-4782-acb3-f50fe36576e4")
+			(uuid "48bbe463-c2d7-4eb5-b041-dfef8a0ca64e")
 		)
 		(instances
-			(project "HT16K33Panel"
-				(path "/2a3172f4-85fe-4c47-84d4-31ed69e3089f/223877be-349d-4a96-9b8e-69982b6691ab"
-					(reference "D15")
-					(unit 1)
-				)
-			)
-			(project "frontPanel"
-				(path "/cb8e3fb6-70fc-4f13-8abd-15b04d6c762c/c6933512-cdb7-4e74-b027-d78b94b49bf4"
-					(reference "D15")
-					(unit 1)
-				)
-			)
-			(project "HT16K33Panel"
-				(path "/e4888aad-78d5-4afc-b382-d3fab1889a4d/32d24ddb-6f9c-4c4b-9223-e81aaaf5df19"
+			(project "rythemPanelBoard"
+				(path "/b6043b97-033c-4ff5-a42a-dc988563939b/dcdca6b2-c402-4156-b726-79ac708e13db"
 					(reference "D15")
 					(unit 1)
 				)
@@ -4091,15 +2330,15 @@
 	(symbol
 		(lib_id "Device:LED")
 		(at 140.97 95.25 0)
-		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "c04a52f1-b71e-49a7-8304-f56d0b3ad852")
+		(fields_autoplaced yes)
+		(uuid "32a39b7d-8c27-41ab-987b-994f896c70ce")
 		(property "Reference" "D27"
-			(at 143.256 90.17 0)
+			(at 139.3825 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4107,7 +2346,7 @@
 			)
 		)
 		(property "Value" "LED"
-			(at 139.3825 90.17 0)
+			(at 139.3825 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4141,28 +2380,179 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 140.97 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
-			(uuid "a5cc702f-81a0-4a28-9f05-bfcbd4e975a7")
+			(uuid "f02f7191-6dfb-4bdd-9142-6b317d8dc777")
 		)
 		(pin "2"
-			(uuid "e0873635-2d33-49a8-a03e-f2bfe0844aab")
+			(uuid "d526ec77-8db6-4eeb-9ede-adab40786a7d")
 		)
 		(instances
-			(project "HT16K33Panel"
-				(path "/2a3172f4-85fe-4c47-84d4-31ed69e3089f/223877be-349d-4a96-9b8e-69982b6691ab"
+			(project "rythemPanelBoard"
+				(path "/b6043b97-033c-4ff5-a42a-dc988563939b/dcdca6b2-c402-4156-b726-79ac708e13db"
 					(reference "D27")
 					(unit 1)
 				)
 			)
-			(project "frontPanel"
-				(path "/cb8e3fb6-70fc-4f13-8abd-15b04d6c762c/c6933512-cdb7-4e74-b027-d78b94b49bf4"
-					(reference "D27")
+		)
+	)
+	(symbol
+		(lib_id "Device:LED")
+		(at 80.01 139.7 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "33d269f3-aa25-4351-aa43-56bc5ddb68f8")
+		(property "Reference" "D16"
+			(at 78.4225 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED"
+			(at 78.4225 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
+			(at 80.01 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 80.01 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 80.01 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 80.01 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "59e666c1-5048-457f-931b-e0dc2be6cf98")
+		)
+		(pin "2"
+			(uuid "cf4d8ab5-70a9-470e-9670-47b7b1c688f9")
+		)
+		(instances
+			(project "rythemPanelBoard"
+				(path "/b6043b97-033c-4ff5-a42a-dc988563939b/dcdca6b2-c402-4156-b726-79ac708e13db"
+					(reference "D16")
 					(unit 1)
 				)
 			)
-			(project "HT16K33Panel"
-				(path "/e4888aad-78d5-4afc-b382-d3fab1889a4d/32d24ddb-6f9c-4c4b-9223-e81aaaf5df19"
-					(reference "D27")
+		)
+	)
+	(symbol
+		(lib_id "Device:LED")
+		(at 140.97 68.58 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "375f3899-25b7-4eb1-a84a-6a6bf5c455b5")
+		(property "Reference" "D24"
+			(at 139.3825 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED"
+			(at 139.3825 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
+			(at 140.97 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 140.97 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 140.97 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 140.97 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3a3a931d-5285-454a-941e-69cdbe51c409")
+		)
+		(pin "2"
+			(uuid "466f63cf-f2c0-4440-9d41-72cdca75af9a")
+		)
+		(instances
+			(project "rythemPanelBoard"
+				(path "/b6043b97-033c-4ff5-a42a-dc988563939b/dcdca6b2-c402-4156-b726-79ac708e13db"
+					(reference "D24")
 					(unit 1)
 				)
 			)
@@ -4171,95 +2561,15 @@
 	(symbol
 		(lib_id "Device:LED")
 		(at 80.01 121.92 0)
-		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "d5a78a44-a6de-4c04-a531-6c0608c2affd")
+		(fields_autoplaced yes)
+		(uuid "41a58dbd-6714-4d5e-9433-26fcc3c36f97")
 		(property "Reference" "D14"
-			(at 82.296 116.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "KT-0603R"
-			(at 78.4225 116.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
-			(at 80.01 121.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 80.01 121.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Light emitting diode"
-			(at 80.01 121.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "22b42fe3-38c1-42a8-9eea-a179021fee35")
-		)
-		(pin "2"
-			(uuid "cd9b9d00-2491-4e97-85c3-d84c36443334")
-		)
-		(instances
-			(project "HT16K33Panel"
-				(path "/2a3172f4-85fe-4c47-84d4-31ed69e3089f/223877be-349d-4a96-9b8e-69982b6691ab"
-					(reference "D14")
-					(unit 1)
-				)
-			)
-			(project "frontPanel"
-				(path "/cb8e3fb6-70fc-4f13-8abd-15b04d6c762c/c6933512-cdb7-4e74-b027-d78b94b49bf4"
-					(reference "D14")
-					(unit 1)
-				)
-			)
-			(project "HT16K33Panel"
-				(path "/e4888aad-78d5-4afc-b382-d3fab1889a4d/32d24ddb-6f9c-4c4b-9223-e81aaaf5df19"
-					(reference "D14")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:LED")
-		(at 140.97 139.7 0)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "dd2e7267-76eb-4c54-9437-9073846f097d")
-		(property "Reference" "D32"
-			(at 143.256 134.62 0)
+			(at 78.4225 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4267,7 +2577,7 @@
 			)
 		)
 		(property "Value" "LED"
-			(at 139.3825 134.62 0)
+			(at 78.4225 118.11 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4275,7 +2585,7 @@
 			)
 		)
 		(property "Footprint" "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
-			(at 140.97 139.7 0)
+			(at 80.01 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4284,7 +2594,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 140.97 139.7 0)
+			(at 80.01 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4293,7 +2603,16 @@
 			)
 		)
 		(property "Description" "Light emitting diode"
-			(at 140.97 139.7 0)
+			(at 80.01 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 80.01 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4302,27 +2621,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "49546e56-fb9a-4e69-8232-fb2ba53ff4d2")
+			(uuid "1b3d1648-577a-499e-b7af-05ac7a007106")
 		)
 		(pin "2"
-			(uuid "baede9e5-8b35-4e2c-bbcd-a35a6928364a")
+			(uuid "9ff151f6-b957-4968-a2b0-06e128d2e8ed")
 		)
 		(instances
-			(project "HT16K33Panel"
-				(path "/2a3172f4-85fe-4c47-84d4-31ed69e3089f/223877be-349d-4a96-9b8e-69982b6691ab"
-					(reference "D32")
-					(unit 1)
-				)
-			)
-			(project "frontPanel"
-				(path "/cb8e3fb6-70fc-4f13-8abd-15b04d6c762c/c6933512-cdb7-4e74-b027-d78b94b49bf4"
-					(reference "D32")
-					(unit 1)
-				)
-			)
-			(project "HT16K33Panel"
-				(path "/e4888aad-78d5-4afc-b382-d3fab1889a4d/32d24ddb-6f9c-4c4b-9223-e81aaaf5df19"
-					(reference "D32")
+			(project "rythemPanelBoard"
+				(path "/b6043b97-033c-4ff5-a42a-dc988563939b/dcdca6b2-c402-4156-b726-79ac708e13db"
+					(reference "D14")
 					(unit 1)
 				)
 			)
@@ -4331,23 +2638,23 @@
 	(symbol
 		(lib_id "Device:LED")
 		(at 80.01 50.8 0)
-		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "e4725bfa-ddbc-42f4-9286-02c014c8b84e")
+		(fields_autoplaced yes)
+		(uuid "41d99819-2303-4145-8162-d39724cc8af4")
 		(property "Reference" "D6"
-			(at 82.296 45.72 0)
+			(at 78.4225 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "KT-0603R"
-			(at 78.4225 45.72 0)
+		(property "Value" "LED"
+			(at 78.4225 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4381,28 +2688,256 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 80.01 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
-			(uuid "1f790d7c-9e9e-4bae-a8d8-043134394f80")
+			(uuid "ef70b881-4fcc-41be-ad77-7e3d26f241f2")
 		)
 		(pin "2"
-			(uuid "6ef61ea7-56d9-4f3b-9add-7306467b6241")
+			(uuid "e828e5eb-f9cf-4cf8-9098-d121f2c677b4")
 		)
 		(instances
-			(project "HT16K33Panel"
-				(path "/2a3172f4-85fe-4c47-84d4-31ed69e3089f/223877be-349d-4a96-9b8e-69982b6691ab"
+			(project "rythemPanelBoard"
+				(path "/b6043b97-033c-4ff5-a42a-dc988563939b/dcdca6b2-c402-4156-b726-79ac708e13db"
 					(reference "D6")
 					(unit 1)
 				)
 			)
-			(project "frontPanel"
-				(path "/cb8e3fb6-70fc-4f13-8abd-15b04d6c762c/c6933512-cdb7-4e74-b027-d78b94b49bf4"
-					(reference "D6")
+		)
+	)
+	(symbol
+		(lib_id "Device:LED")
+		(at 80.01 104.14 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "596ae137-2866-4c46-b020-494a19e8bd64")
+		(property "Reference" "D12"
+			(at 78.4225 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED"
+			(at 78.4225 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
+			(at 80.01 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 80.01 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 80.01 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 80.01 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b9e23188-818d-4adf-9102-4950fbf133f6")
+		)
+		(pin "2"
+			(uuid "16384c4e-7c2c-4713-8aa1-429eaedf398f")
+		)
+		(instances
+			(project "rythemPanelBoard"
+				(path "/b6043b97-033c-4ff5-a42a-dc988563939b/dcdca6b2-c402-4156-b726-79ac708e13db"
+					(reference "D12")
 					(unit 1)
 				)
 			)
-			(project "HT16K33Panel"
-				(path "/e4888aad-78d5-4afc-b382-d3fab1889a4d/32d24ddb-6f9c-4c4b-9223-e81aaaf5df19"
-					(reference "D6")
+		)
+	)
+	(symbol
+		(lib_id "Device:LED")
+		(at 140.97 50.8 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "60d0f67b-49d4-4fae-be3f-8082d1960afe")
+		(property "Reference" "D22"
+			(at 139.3825 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED"
+			(at 139.3825 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
+			(at 140.97 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 140.97 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 140.97 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 140.97 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3d996f01-ec0b-4152-9c10-195218214ba7")
+		)
+		(pin "2"
+			(uuid "8f3e05b1-adae-4d05-a540-2d752cfcd181")
+		)
+		(instances
+			(project "rythemPanelBoard"
+				(path "/b6043b97-033c-4ff5-a42a-dc988563939b/dcdca6b2-c402-4156-b726-79ac708e13db"
+					(reference "D22")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED")
+		(at 140.97 130.81 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "67fabeae-36a6-4188-a8b6-1d35025a0496")
+		(property "Reference" "D31"
+			(at 139.3825 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED"
+			(at 139.3825 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
+			(at 140.97 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 140.97 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 140.97 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 140.97 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "633d84ea-34b0-4e74-b980-cba551f6db5c")
+		)
+		(pin "2"
+			(uuid "08566c92-a620-4134-a885-f09295ec93c5")
+		)
+		(instances
+			(project "rythemPanelBoard"
+				(path "/b6043b97-033c-4ff5-a42a-dc988563939b/dcdca6b2-c402-4156-b726-79ac708e13db"
+					(reference "D31")
 					(unit 1)
 				)
 			)
@@ -4411,23 +2946,23 @@
 	(symbol
 		(lib_id "Device:LED")
 		(at 140.97 41.91 0)
-		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "e7166394-72f6-479a-9185-f70844f387fc")
+		(fields_autoplaced yes)
+		(uuid "6cf0e4c1-29d1-44ed-b0a6-285632995725")
 		(property "Reference" "D21"
-			(at 143.256 36.83 0)
+			(at 139.3825 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "KT-0603R"
-			(at 139.3825 36.83 0)
+		(property "Value" "LED"
+			(at 139.3825 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4461,27 +2996,24 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 140.97 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
-			(uuid "f32f0cf6-6f83-487b-a5a9-07e1a810d7fb")
+			(uuid "c32bc9e1-0057-467a-b7da-de982f540d9a")
 		)
 		(pin "2"
-			(uuid "37e0bc6a-c334-497f-8482-dcf7cb6fa401")
+			(uuid "e47e7ad5-e460-4ba9-9ec3-685270881a2f")
 		)
 		(instances
-			(project "HT16K33Panel"
-				(path "/2a3172f4-85fe-4c47-84d4-31ed69e3089f/223877be-349d-4a96-9b8e-69982b6691ab"
-					(reference "D21")
-					(unit 1)
-				)
-			)
-			(project "frontPanel"
-				(path "/cb8e3fb6-70fc-4f13-8abd-15b04d6c762c/c6933512-cdb7-4e74-b027-d78b94b49bf4"
-					(reference "D21")
-					(unit 1)
-				)
-			)
-			(project "HT16K33Panel"
-				(path "/e4888aad-78d5-4afc-b382-d3fab1889a4d/32d24ddb-6f9c-4c4b-9223-e81aaaf5df19"
+			(project "rythemPanelBoard"
+				(path "/b6043b97-033c-4ff5-a42a-dc988563939b/dcdca6b2-c402-4156-b726-79ac708e13db"
 					(reference "D21")
 					(unit 1)
 				)
@@ -4490,24 +3022,332 @@
 	)
 	(symbol
 		(lib_id "Device:LED")
-		(at 140.97 33.02 0)
-		(mirror x)
+		(at 80.01 41.91 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "f341cc3a-78e9-48c4-a386-293037a0d950")
-		(property "Reference" "D20"
-			(at 143.256 27.94 0)
+		(fields_autoplaced yes)
+		(uuid "76e68b6b-ea50-4d11-abd4-0eee01dbffeb")
+		(property "Reference" "D5"
+			(at 78.4225 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "KT-0603R"
-			(at 139.3825 27.94 0)
+		(property "Value" "LED"
+			(at 78.4225 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
+			(at 80.01 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 80.01 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 80.01 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 80.01 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a2450613-8a37-4d5b-906c-6471c3f06074")
+		)
+		(pin "2"
+			(uuid "9c735cff-e623-4b73-baa7-5a8c8250cc22")
+		)
+		(instances
+			(project "rythemPanelBoard"
+				(path "/b6043b97-033c-4ff5-a42a-dc988563939b/dcdca6b2-c402-4156-b726-79ac708e13db"
+					(reference "D5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED")
+		(at 80.01 113.03 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "77c65dc0-b90f-4591-83be-04c5b71797fa")
+		(property "Reference" "D13"
+			(at 78.4225 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED"
+			(at 78.4225 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
+			(at 80.01 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 80.01 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 80.01 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 80.01 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0ad5bee1-1af2-4fe3-b223-91861036c694")
+		)
+		(pin "2"
+			(uuid "f258f0b1-c3ef-49df-b354-bb4440f30e4b")
+		)
+		(instances
+			(project "rythemPanelBoard"
+				(path "/b6043b97-033c-4ff5-a42a-dc988563939b/dcdca6b2-c402-4156-b726-79ac708e13db"
+					(reference "D13")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED")
+		(at 80.01 148.59 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "797cb19b-78a8-4990-8b20-f1dd31e0ab3b")
+		(property "Reference" "D17"
+			(at 78.4225 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED"
+			(at 78.4225 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
+			(at 80.01 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 80.01 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 80.01 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 80.01 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "fb6ad7ad-37cb-48a2-b789-528fb0cd652a")
+		)
+		(pin "2"
+			(uuid "5f9ea83a-f159-4185-a466-b997392b1a1c")
+		)
+		(instances
+			(project "rythemPanelBoard"
+				(path "/b6043b97-033c-4ff5-a42a-dc988563939b/dcdca6b2-c402-4156-b726-79ac708e13db"
+					(reference "D17")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED")
+		(at 140.97 104.14 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "847a87cd-b6a5-46f5-bebf-cec355e0ad20")
+		(property "Reference" "D28"
+			(at 139.3825 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED"
+			(at 139.3825 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
+			(at 140.97 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 140.97 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 140.97 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 140.97 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7d53efde-3bea-4cdd-9c9c-c69e37dd6a4b")
+		)
+		(pin "2"
+			(uuid "67742775-0c06-425e-9086-6868a5eb5dcd")
+		)
+		(instances
+			(project "rythemPanelBoard"
+				(path "/b6043b97-033c-4ff5-a42a-dc988563939b/dcdca6b2-c402-4156-b726-79ac708e13db"
+					(reference "D28")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED")
+		(at 140.97 33.02 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a3eddc0d-aaf1-4daf-a8e6-1b2c953f93b5")
+		(property "Reference" "D20"
+			(at 139.3825 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED"
+			(at 139.3825 29.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4541,27 +3381,24 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 140.97 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
-			(uuid "b7941545-c160-45e3-b15d-6ecdc3b9b105")
+			(uuid "c46a2bc3-c38f-4648-bff8-1b2b7c8054c6")
 		)
 		(pin "2"
-			(uuid "7f88d7f7-93c8-47ae-a69d-e1c38f294f4d")
+			(uuid "bf71d567-3310-4360-8bc2-5d97272fd4e3")
 		)
 		(instances
-			(project "HT16K33Panel"
-				(path "/2a3172f4-85fe-4c47-84d4-31ed69e3089f/223877be-349d-4a96-9b8e-69982b6691ab"
-					(reference "D20")
-					(unit 1)
-				)
-			)
-			(project "frontPanel"
-				(path "/cb8e3fb6-70fc-4f13-8abd-15b04d6c762c/c6933512-cdb7-4e74-b027-d78b94b49bf4"
-					(reference "D20")
-					(unit 1)
-				)
-			)
-			(project "HT16K33Panel"
-				(path "/e4888aad-78d5-4afc-b382-d3fab1889a4d/32d24ddb-6f9c-4c4b-9223-e81aaaf5df19"
+			(project "rythemPanelBoard"
+				(path "/b6043b97-033c-4ff5-a42a-dc988563939b/dcdca6b2-c402-4156-b726-79ac708e13db"
 					(reference "D20")
 					(unit 1)
 				)
@@ -4571,23 +3408,23 @@
 	(symbol
 		(lib_id "Device:LED")
 		(at 80.01 77.47 0)
-		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "fcbc2ff3-c950-459d-8804-a04bebf5da18")
+		(fields_autoplaced yes)
+		(uuid "b2bc51df-3b33-4849-bb38-d101922978dd")
 		(property "Reference" "D9"
-			(at 82.296 72.39 0)
+			(at 78.4225 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "KT-0603R"
-			(at 78.4225 72.39 0)
+		(property "Value" "LED"
+			(at 78.4225 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4621,28 +3458,564 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 80.01 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
-			(uuid "d2bf3fe3-e4da-41af-88d1-0e9d43fa64f9")
+			(uuid "f5d5723a-7cbc-4f87-86a6-05385f4becd8")
 		)
 		(pin "2"
-			(uuid "7189fb8c-1f31-40f2-b959-280e6b266d44")
+			(uuid "fc0729ea-d4e7-4752-a0fc-46805a262cbb")
 		)
 		(instances
-			(project "HT16K33Panel"
-				(path "/2a3172f4-85fe-4c47-84d4-31ed69e3089f/223877be-349d-4a96-9b8e-69982b6691ab"
+			(project "rythemPanelBoard"
+				(path "/b6043b97-033c-4ff5-a42a-dc988563939b/dcdca6b2-c402-4156-b726-79ac708e13db"
 					(reference "D9")
 					(unit 1)
 				)
 			)
-			(project "frontPanel"
-				(path "/cb8e3fb6-70fc-4f13-8abd-15b04d6c762c/c6933512-cdb7-4e74-b027-d78b94b49bf4"
-					(reference "D9")
+		)
+	)
+	(symbol
+		(lib_id "Device:LED")
+		(at 80.01 86.36 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b44709df-0197-47d4-af7c-06b087150e09")
+		(property "Reference" "D10"
+			(at 78.4225 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED"
+			(at 78.4225 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
+			(at 80.01 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 80.01 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 80.01 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 80.01 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1b643489-06ec-422d-8505-8a0c5eaf8f09")
+		)
+		(pin "2"
+			(uuid "1b118005-bc91-4e3f-b283-05c24de24442")
+		)
+		(instances
+			(project "rythemPanelBoard"
+				(path "/b6043b97-033c-4ff5-a42a-dc988563939b/dcdca6b2-c402-4156-b726-79ac708e13db"
+					(reference "D10")
 					(unit 1)
 				)
 			)
-			(project "HT16K33Panel"
-				(path "/e4888aad-78d5-4afc-b382-d3fab1889a4d/32d24ddb-6f9c-4c4b-9223-e81aaaf5df19"
-					(reference "D9")
+		)
+	)
+	(symbol
+		(lib_id "Device:LED")
+		(at 80.01 68.58 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d853e068-3244-4607-9d7d-e82d724a0bc7")
+		(property "Reference" "D8"
+			(at 78.4225 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED"
+			(at 78.4225 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
+			(at 80.01 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 80.01 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 80.01 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 80.01 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4d2cd377-82bd-4b1a-862a-6a331354810e")
+		)
+		(pin "2"
+			(uuid "31f04e66-55ec-4d98-b345-3708b1d93e76")
+		)
+		(instances
+			(project "rythemPanelBoard"
+				(path "/b6043b97-033c-4ff5-a42a-dc988563939b/dcdca6b2-c402-4156-b726-79ac708e13db"
+					(reference "D8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED")
+		(at 80.01 95.25 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ee9f9a89-f79a-4859-90d1-7f7e929c4a7b")
+		(property "Reference" "D11"
+			(at 78.4225 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED"
+			(at 78.4225 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
+			(at 80.01 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 80.01 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 80.01 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 80.01 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "bfb19b1a-d433-49a5-b2ea-9542751ea65b")
+		)
+		(pin "2"
+			(uuid "f8a5e477-317b-48d7-b76f-744fa0edbb95")
+		)
+		(instances
+			(project "rythemPanelBoard"
+				(path "/b6043b97-033c-4ff5-a42a-dc988563939b/dcdca6b2-c402-4156-b726-79ac708e13db"
+					(reference "D11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED")
+		(at 80.01 157.48 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f0c1d8e8-fbca-4063-a4e6-4426d969b0e0")
+		(property "Reference" "D18"
+			(at 78.4225 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED"
+			(at 78.4225 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
+			(at 80.01 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 80.01 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 80.01 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 80.01 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "631e236f-ec30-4d15-bbc9-da49f73387d0")
+		)
+		(pin "2"
+			(uuid "5996e902-602c-41cb-93c0-fc28a32e2dd1")
+		)
+		(instances
+			(project "rythemPanelBoard"
+				(path "/b6043b97-033c-4ff5-a42a-dc988563939b/dcdca6b2-c402-4156-b726-79ac708e13db"
+					(reference "D18")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED")
+		(at 140.97 59.69 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f61bce8a-57b0-4a0b-be59-944a4a641679")
+		(property "Reference" "D23"
+			(at 139.3825 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED"
+			(at 139.3825 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
+			(at 140.97 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 140.97 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 140.97 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 140.97 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ebba6174-20ae-4388-adab-29a8e8c022ad")
+		)
+		(pin "2"
+			(uuid "678657b5-90c1-48bc-a793-45636a251f88")
+		)
+		(instances
+			(project "rythemPanelBoard"
+				(path "/b6043b97-033c-4ff5-a42a-dc988563939b/dcdca6b2-c402-4156-b726-79ac708e13db"
+					(reference "D23")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED")
+		(at 80.01 33.02 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f85d9fda-25fb-46c5-96a6-6f711139b524")
+		(property "Reference" "D4"
+			(at 78.4225 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED"
+			(at 78.4225 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
+			(at 80.01 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 80.01 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 80.01 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 80.01 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1598503f-b3a0-48ce-94cf-0518a6f72471")
+		)
+		(pin "2"
+			(uuid "9224cd46-218f-4a41-87a1-48317c2de877")
+		)
+		(instances
+			(project ""
+				(path "/b6043b97-033c-4ff5-a42a-dc988563939b/dcdca6b2-c402-4156-b726-79ac708e13db"
+					(reference "D4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED")
+		(at 140.97 113.03 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ff89bbb2-1755-4f6a-8222-af7d1f76f689")
+		(property "Reference" "D29"
+			(at 139.3825 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED"
+			(at 139.3825 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
+			(at 140.97 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 140.97 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 140.97 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 140.97 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "be0efc87-5294-434c-9ccf-b309dd7ae927")
+		)
+		(pin "2"
+			(uuid "21c445d3-3bb1-4ec7-8d09-8ed8dd7be4f1")
+		)
+		(instances
+			(project "rythemPanelBoard"
+				(path "/b6043b97-033c-4ff5-a42a-dc988563939b/dcdca6b2-c402-4156-b726-79ac708e13db"
+					(reference "D29")
 					(unit 1)
 				)
 			)
